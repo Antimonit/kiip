@@ -30,6 +30,9 @@
   --accent-soft: #dbeceb;
   --accent-ink: #12403e;
   --mark: #f2e3b6;
+  --anno: #d3e7e5;
+  --anno-hover: #b9dcd8;
+  --anno-open: #f2e3b6;
   --aside: #f1eff6;
   --aside-chip: #6f62a8;
   --aside-ink: #574a8c;
@@ -54,6 +57,9 @@
     --accent-soft: #1c3a38;
     --accent-ink: #a9e2dc;
     --mark: #4c3f1c;
+    --anno: #21433f;
+    --anno-hover: #2c5852;
+    --anno-open: #4c3f1c;
     --aside: #1f1e26;
     --aside-chip: #6f62a8;
     --aside-ink: #b3a9df;
@@ -98,6 +104,7 @@ a { color: var(--accent); }
 
 .masthead h1 a { color: inherit; text-decoration: none; }
 .masthead .sub { color: var(--ink-faint); font-size: 0.85rem; margin: 0; }
+.masthead .spacer { flex: 1; }
 
 .backlink { display: inline-block; margin-top: 2rem; font-size: 0.85rem; text-decoration: none; }
 
@@ -365,6 +372,69 @@ h5.sub-title { font-size: calc(0.97rem * var(--scale)); color: var(--ink-soft); 
   border-left: 2px solid var(--accent-soft);
 }
 
+/* English controls in the masthead, and the per-paragraph fold.
+   PROTOTYPE: the mode switch goes away once one of the two is chosen. */
+
+.en-controls {
+  display: flex; align-items: center; flex-wrap: wrap; gap: 0.5rem;
+}
+
+.en-label {
+  font-size: 0.7rem; letter-spacing: 0.1em; text-transform: uppercase;
+  color: var(--ink-faint);
+}
+
+.mode-toggle {
+  display: inline-flex; border: 1px solid var(--rule);
+  border-radius: 999px; overflow: hidden;
+}
+
+.mode-toggle button {
+  font: inherit; font-size: 0.75rem; padding: 0.2rem 0.7rem;
+  background: transparent; border: 0; color: var(--ink-soft); cursor: pointer;
+}
+
+.mode-toggle button[aria-pressed="true"] { background: var(--accent); color: var(--paper); }
+
+/* A quiet disclosure rather than a button: a caret and a label, no chrome,
+   so it does not compete with the passage it sits in. */
+
+.en-fold {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font: inherit;
+  font-family: var(--ui);
+  font-size: calc(0.76rem * var(--aux-scale));
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+  background: none;
+  border: 0;
+  padding: 0.1rem 0;
+  margin: 0 0 0.5rem;
+  cursor: pointer;
+}
+
+.en-fold:hover { color: var(--accent); }
+
+.en-fold::before {
+  content: "";
+  width: 0.36em;
+  height: 0.36em;
+  border-right: 1.5px solid currentColor;
+  border-bottom: 1.5px solid currentColor;
+  transform: translateY(-0.12em) rotate(45deg);
+  transition: transform 0.15s;
+}
+
+.en-fold[aria-expanded="true"]::before {
+  transform: translateY(0.06em) rotate(-135deg);
+}
+
+/* per-paragraph, the control sits between the two languages */
+.para-pair .en-fold { margin: 0.1rem 0 0.35rem; }
+
 /* the English name of a section or subsection, under its Korean heading */
 .en-title {
   display: block;
@@ -576,17 +646,31 @@ details.trans p { margin: 0.7rem 0; }
    ANNOTATIONS
    ================================================================== */
 
+/* An annotated word is highlighted rather than underlined: the band fills
+   the line so it reads as a marked word at a glance. Vertical padding on an
+   inline box paints without disturbing the line, and box-decoration-break
+   keeps a word highlighted on both lines when it wraps. */
+
 button.anno {
-  font: inherit; color: inherit; background: none; border: 0; padding: 0;
-  cursor: pointer; border-radius: 2px;
-  border-bottom: 2px solid var(--accent-soft);
+  font: inherit;
+  color: inherit;
+  display: inline;
+  border: 0;
+  padding: 0.32em 0.16em;
+  margin: 0 -0.02em;
+  border-radius: 3px;
+  background: var(--anno);
+  cursor: pointer;
   transition: background 0.12s;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
 }
 
-button.anno:hover { background: var(--accent-soft); }
+button.anno:hover { background: var(--anno-hover); }
 
 button.anno[aria-expanded="true"] {
-  background: var(--mark); border-bottom-color: var(--accent);
+  background: var(--anno-open);
+  box-shadow: inset 0 -2px 0 var(--accent);
 }
 
 .anno-card {

@@ -40,7 +40,7 @@ function lintSectionLayering() {
                   "table-wrap", "chart", "bar-row", "verse", "labels", "figure",
                   "source", "margin-note", "anno-card", "notes", "trans",
                   "sub-title", "sect-topic", "blank", "en-para", "para-pair",
-                  "en-title"];
+                  "en-title", "en-fold"];
   const problems = [];
 
   for (const m of css.matchAll(/([^{}]+)\{([^{}]*)\}/g)) {
@@ -136,7 +136,8 @@ function checkChapter(file) {
   // each translated paragraph must be paired with its own Korean paragraph,
   // in that order, rather than pooled into one block for the section
   d.querySelectorAll(".para-pair").forEach(function (pair) {
-    const kids = [...pair.children].map(function (c) { return c.className; });
+    const kids = [...pair.children].map(function (c) { return c.className; })
+      .filter(function (c) { return c !== "en-fold"; });
     if (kids.length !== 2 || !/ko-para/.test(kids[0]) || kids[1] !== "en-para") {
       problems.push("a paragraph pair is not [korean, english]: " + kids.join(","));
     }
@@ -152,6 +153,32 @@ function checkChapter(file) {
       problems.push("a translation kept its surrounding quotes");
     }
   });
+
+  // translations start hidden, and a control reveals exactly its own run
+  const folds = [...d.querySelectorAll(".en-fold")];
+  const hidden = [...d.querySelectorAll(".en-para")].filter(function (en) {
+    return en.hidden;
+  });
+  if (d.querySelectorAll(".en-para").length !== hidden.length) {
+    problems.push("a translation starts visible");
+  }
+  if (d.querySelectorAll(".en-para").length && !folds.length) {
+    problems.push("translations present but nothing reveals them");
+  }
+  if (folds.length) {
+    folds[0].click();
+    const shown = [...d.querySelectorAll(".en-para")].filter(function (en) {
+      return !en.hidden;
+    });
+    if (!shown.length) problems.push("a translation control revealed nothing");
+    if (folds[0].getAttribute("aria-expanded") !== "true") {
+      problems.push("a translation control did not report being open");
+    }
+    folds[0].click();
+    if ([...d.querySelectorAll(".en-para")].some(function (en) { return !en.hidden; })) {
+      problems.push("a translation control did not close again");
+    }
+  }
 
   // a real parenthetical must not be mistaken for a gap
   if (d.body.textContent.indexOf("(2020년 기준)") === -1 &&
@@ -186,6 +213,7 @@ function checkChapter(file) {
     " tables=" + d.querySelectorAll(".table-wrap table").length +
     " annotations=" + buttons.length +
     " paired=" + d.querySelectorAll(".para-pair").length +
+    " folds=" + d.querySelectorAll(".en-fold").length +
     " whole=" + d.querySelectorAll("details.trans").length +
     " gaps=" + d.querySelectorAll(".blank").length +
     "/" + d.querySelectorAll("button.blank").length + " answered");
