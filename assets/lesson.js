@@ -153,7 +153,9 @@
         if (b.trans) {
           var pair = el("div", "para-pair");
           pair.appendChild(p);
-          pair.appendChild(el("p", "en-para", b.trans));
+          var wrap = el("div", "en-wrap");
+          wrap.appendChild(el("p", "en-para", b.trans));
+          pair.appendChild(wrap);
           host.appendChild(pair);
         } else {
           host.appendChild(p);
@@ -330,10 +332,10 @@
     var b = el("button", "en-fold", "English");
     b.type = "button";
     b.setAttribute("aria-expanded", "false");
-    targets.forEach(function (en) { en.hidden = true; });
+    targets.forEach(function (w) { w.classList.remove("is-open"); });
     b.addEventListener("click", function () {
-      var show = targets[0].hidden;
-      targets.forEach(function (en) { en.hidden = !show; });
+      var show = !targets[0].classList.contains("is-open");
+      targets.forEach(function (w) { w.classList.toggle("is-open", show); });
       b.setAttribute("aria-expanded", String(show));
     });
     return b;
@@ -366,12 +368,12 @@
 
       runs.forEach(function (run) {
         if (mode === "article") {
-          var all = run.map(function (p) { return p.querySelector(".en-para"); });
+          var all = run.map(function (p) { return p.querySelector(".en-wrap"); });
           run[0].parentNode.insertBefore(fold(all), run[0]);
         } else {
           run.forEach(function (pair) {
-            var en = pair.querySelector(".en-para");
-            pair.insertBefore(fold([en]), en);
+            var wrap = pair.querySelector(".en-wrap");
+            pair.insertBefore(fold([wrap]), wrap);
           });
         }
       });
@@ -405,8 +407,9 @@
     if (reopening) return;
     openBtn = btn;
     btn.setAttribute("aria-expanded", "true");
-    var anchor = btn.closest(".para-pair") || btn.closest(CARD_HOSTS) || btn;
-    anchor.after(buildCard(btn.dataset.key));
+    // between the Korean and its translation: the word first, then the
+    // whole paragraph's English below it
+    (btn.closest(CARD_HOSTS) || btn).after(buildCard(btn.dataset.key));
   }
 
   buttons.forEach(function (b) {

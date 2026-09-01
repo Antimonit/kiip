@@ -363,6 +363,35 @@ h5.sub-title { font-size: calc(0.97rem * var(--scale)); color: var(--ink-soft); 
 .para-pair { margin: 0 0 var(--flow); }
 .para-pair .ko-para { margin-bottom: 0.4rem; }
 
+/* The translation is collapsed by animating a grid track from 0fr to 1fr,
+   which needs no measured height. Visibility follows on a delay so the text
+   leaves the accessibility tree only once it has finished closing. */
+
+.en-wrap {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.18s ease;
+}
+
+.en-wrap > * {
+  overflow: hidden;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s 0.18s, opacity 0.14s ease;
+}
+
+.en-wrap.is-open { grid-template-rows: 1fr; }
+
+.en-wrap.is-open > * {
+  visibility: visible;
+  opacity: 1;
+  transition: visibility 0s 0s, opacity 0.18s ease 0.04s;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .en-wrap, .en-wrap > * { transition-duration: 0s; }
+}
+
 .en-para {
   font-size: calc(0.98rem * var(--aux-scale));
   line-height: 1.65;

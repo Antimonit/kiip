@@ -40,7 +40,7 @@ function lintSectionLayering() {
                   "table-wrap", "chart", "bar-row", "verse", "labels", "figure",
                   "source", "margin-note", "anno-card", "notes", "trans",
                   "sub-title", "sect-topic", "blank", "en-para", "para-pair",
-                  "en-title", "en-fold"];
+                  "en-title", "en-fold", "en-wrap"];
   const problems = [];
 
   for (const m of css.matchAll(/([^{}]+)\{([^{}]*)\}/g)) {
@@ -138,7 +138,7 @@ function checkChapter(file) {
   d.querySelectorAll(".para-pair").forEach(function (pair) {
     const kids = [...pair.children].map(function (c) { return c.className; })
       .filter(function (c) { return c !== "en-fold"; });
-    if (kids.length !== 2 || !/ko-para/.test(kids[0]) || kids[1] !== "en-para") {
+    if (kids.length !== 2 || !/ko-para/.test(kids[0]) || !/^en-wrap/.test(kids[1])) {
       problems.push("a paragraph pair is not [korean, english]: " + kids.join(","));
     }
     if (!pair.querySelector(".en-para").textContent.trim()) {
@@ -146,38 +146,51 @@ function checkChapter(file) {
     }
   });
   d.querySelectorAll(".en-para").forEach(function (en) {
-    if (!en.parentNode.classList.contains("para-pair")) {
-      problems.push("a translation is not paired with a paragraph");
+    if (!en.parentNode.classList.contains("en-wrap")) {
+      problems.push("a translation is not inside a collapsible wrapper");
     }
     if (/^["\u201c]|["\u201d]$/.test(en.textContent.trim())) {
       problems.push("a translation kept its surrounding quotes");
     }
   });
 
-  // translations start hidden, and a control reveals exactly its own run
+  // translations start collapsed, and a control reveals exactly its own run
   const folds = [...d.querySelectorAll(".en-fold")];
-  const hidden = [...d.querySelectorAll(".en-para")].filter(function (en) {
-    return en.hidden;
-  });
-  if (d.querySelectorAll(".en-para").length !== hidden.length) {
-    problems.push("a translation starts visible");
-  }
+  const open = [...d.querySelectorAll(".en-wrap.is-open")];
+  if (open.length) problems.push(open.length + " translations start open");
   if (d.querySelectorAll(".en-para").length && !folds.length) {
     problems.push("translations present but nothing reveals them");
   }
   if (folds.length) {
     folds[0].click();
-    const shown = [...d.querySelectorAll(".en-para")].filter(function (en) {
-      return !en.hidden;
-    });
-    if (!shown.length) problems.push("a translation control revealed nothing");
+    if (!d.querySelectorAll(".en-wrap.is-open").length) {
+      problems.push("a translation control revealed nothing");
+    }
     if (folds[0].getAttribute("aria-expanded") !== "true") {
       problems.push("a translation control did not report being open");
     }
     folds[0].click();
-    if ([...d.querySelectorAll(".en-para")].some(function (en) { return !en.hidden; })) {
+    if (d.querySelectorAll(".en-wrap.is-open").length) {
       problems.push("a translation control did not close again");
     }
+  }
+
+  // a word's explanation belongs between the Korean and its translation
+  const marked = d.querySelector(".para-pair button.anno");
+  if (marked) {
+    marked.click();
+    const pair = marked.closest(".para-pair");
+    const order = [...pair.children].map(function (c) {
+      return c.className.split(" ")[0];
+    });
+    const card = order.indexOf("anno-card");
+    if (card === -1) {
+      problems.push("a card opened outside the paragraph pair");
+    } else if (card < order.indexOf("ko-para") || card > order.indexOf("en-wrap")) {
+      problems.push("card is not between the Korean and its translation: " +
+                    order.join(" > "));
+    }
+    marked.click();
   }
 
   // a real parenthetical must not be mistaken for a gap
