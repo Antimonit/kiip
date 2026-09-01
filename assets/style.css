@@ -393,6 +393,40 @@ h5.sub-title { font-size: calc(0.97rem * var(--scale)); color: var(--ink-soft); 
   .gloss-row { grid-template-columns: 1fr; }
 }
 
+/* fill-in gaps in 주요 내용정리 ---------------------------------------
+   An answer stays covered until it is asked for. The text is still there,
+   so it copies and reads to a screen reader — it is only hidden from the
+   eye, which is the point of the exercise. */
+
+.blank {
+  font: inherit;
+  font-family: var(--ko);
+  padding: 0 0.35em;
+  border: 0;
+  border-radius: 2px;
+  background: var(--ink-soft);
+  color: transparent;
+  cursor: pointer;
+  transition: background 0.12s, color 0.12s;
+}
+
+.blank:hover { background: var(--ink); }
+
+.blank.is-shown {
+  background: var(--mark);
+  color: var(--ink);
+  cursor: pointer;
+}
+
+.blank.is-empty {
+  display: inline-block;
+  min-width: 5em;
+  padding: 0;
+  background: none;
+  border-bottom: 1px solid var(--ink-faint);
+  cursor: default;
+}
+
 /* tables ------------------------------------------------------------- */
 
 .table-wrap { overflow-x: auto; margin: 0 0 var(--flow); }
@@ -412,7 +446,10 @@ h5.sub-title { font-size: calc(0.97rem * var(--scale)); color: var(--ink-soft); 
   word-break: keep-all;
 }
 
-.table-wrap th { background: var(--rule-soft); font-weight: 600; white-space: nowrap; }
+.table-wrap th {
+  background: var(--rule-soft); font-weight: 600;
+  white-space: nowrap; text-align: center;
+}
 .table-wrap td:first-child { white-space: nowrap; color: var(--ink-soft); }
 
 /* bar chart ---------------------------------------------------------- */

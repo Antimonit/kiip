@@ -39,7 +39,7 @@ function lintSectionLayering() {
   const BLOCKS = ["ko-para", "ko-list", "ko-bullet", "glossbox", "gloss-row",
                   "table-wrap", "chart", "bar-row", "verse", "labels", "figure",
                   "source", "margin-note", "anno-card", "notes", "trans",
-                  "sub-title", "sect-topic"];
+                  "sub-title", "sect-topic", "blank"];
   const problems = [];
 
   for (const m of css.matchAll(/([^{}]+)\{([^{}]*)\}/g)) {
@@ -109,6 +109,48 @@ function checkChapter(file) {
     b.click();
   });
 
+  // an answer written into a review gap must start covered, reveal when
+  // asked for, and still be present in the text so it can be copied
+  d.querySelectorAll("button.blank").forEach(function (b) {
+    if (!b.textContent.trim()) problems.push("a covered gap has no answer in it");
+    if (b.classList.contains("is-shown")) {
+      problems.push("gap “" + b.textContent + "” starts revealed");
+    }
+    b.click();
+    if (!b.classList.contains("is-shown")) {
+      problems.push("gap “" + b.textContent + "” did not reveal");
+    }
+    if (b.getAttribute("aria-pressed") !== "true") {
+      problems.push("gap “" + b.textContent + "” did not report being revealed");
+    }
+    b.click();
+    if (b.classList.contains("is-shown")) {
+      problems.push("gap “" + b.textContent + "” did not cover again");
+    }
+  });
+  d.querySelectorAll("span.blank.is-empty").forEach(function (s) {
+    if (s.textContent) problems.push("an unanswered gap carries text");
+  });
+
+  // a real parenthetical must not be mistaken for a gap
+  if (d.body.textContent.indexOf("(2020년 기준)") === -1 &&
+      /2020년 기준/.test(d.body.textContent)) {
+    problems.push("(2020년 기준) was treated as a fill-in gap");
+  }
+
+  // a header cell that spans must actually span
+  d.querySelectorAll(".table-wrap th").forEach(function (th) {
+    const cols = th.closest("table").querySelector("tbody tr");
+    if (!cols) return;
+    const total = [...th.parentNode.children].reduce(function (n, c) {
+      return n + (c.colSpan || 1);
+    }, 0);
+    if (total !== cols.children.length) {
+      problems.push("header spans " + total + " columns but the body has " +
+                    cols.children.length);
+    }
+  });
+
   // leftovers that should never reach the reader (the corrections list is
   // exempt: it quotes the placeholders it replaced)
   const notes = d.querySelector(".sect-notes");
@@ -122,7 +164,9 @@ function checkChapter(file) {
     " glosses=" + d.querySelectorAll(".gloss-row").length +
     " tables=" + d.querySelectorAll(".table-wrap table").length +
     " translations=" + d.querySelectorAll("details.trans").length +
-    " annotations=" + buttons.length);
+    " annotations=" + buttons.length +
+    " gaps=" + d.querySelectorAll(".blank").length +
+    "/" + d.querySelectorAll("button.blank").length + " answered");
 }
 
 /* A bad address must say so rather than rendering a blank page. */

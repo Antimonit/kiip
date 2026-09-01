@@ -288,6 +288,46 @@ def gloss_term(text):
     return t, None
 
 
+# In 주요 내용정리 a parenthesised group is a gap for the student to fill.
+# A real parenthetical such as (2020년 기준) has no padding inside the
+# brackets, which is what separates the two.
+BLANK = re.compile(r"\(\s*\)|\(\s+[^()]*?\s+\)")
+
+
+def split_blanks(text):
+    out, pos = [], 0
+    for m in BLANK.finditer(text):
+        if m.start() > pos:
+            out.append(text[pos:m.start()])
+        out.append({"blank": m.group(0)[1:-1].strip()})
+        pos = m.end()
+    if pos < len(text):
+        out.append(text[pos:])
+    return out
+
+
+def mark_blanks(blocks):
+    """Turn the gaps in the review section into blank spans.
+
+    An answer already written into the Doc is carried through as the blank's
+    content, for the page to keep covered until the reader asks for it.
+    """
+    in_review = False
+    for b in blocks:
+        if b["t"] == "section":
+            in_review = b["kind"] == "review"
+        if not in_review or b["t"] not in ("p", "bullet"):
+            continue
+        out = []
+        for seg in b["s"]:
+            if isinstance(seg, str):
+                out.extend(split_blanks(seg))
+            else:
+                out.append(seg)
+        b["s"] = out
+    return blocks
+
+
 def promote_topics(blocks):
     """Fold a section's first heading into the section itself as its topic.
 
@@ -463,10 +503,12 @@ def build(cfg, srcdir):
             else:
                 rows = [[" ".join(block_text(bl).strip() for bl in cell) for cell in row]
                         for row in cells]
-                # the 관련 단원 header merges its first cell across two columns,
-                # so a short header row is padded just after that cell
+                # 관련 단원 prints 영역 across the two columns it heads, so a
+                # header row short of the body's width spans its first cell
                 width = max(len(r) for r in rows)
-                head = rows[0][:1] + [""] * (width - len(rows[0])) + rows[0][1:]
+                head = list(rows[0])
+                if head and len(head) < width:
+                    head[0] = {"text": head[0], "span": width - len(head) + 1}
                 emit({"t": "table", "head": head, "rows": rows[1:]})
             i += 1
             continue
@@ -524,8 +566,8 @@ def build(cfg, srcdir):
     shown = {f[0]: f[3] for f in fixes if len(f) > 3}
     blocks = apply_fixes(blocks, fixes, hits)
     # appended blocks are transcribed by hand, so they skip the corrections
-    blocks = promote_topics(
-        normalize_spans(blocks + copy.deepcopy(cfg.get("append", []))))
+    blocks = mark_blanks(promote_topics(
+        normalize_spans(blocks + copy.deepcopy(cfg.get("append", [])))))
     annotations = apply_fixes(annotations, fixes, hits)
 
     for key, extra in cfg.get("extraAnnotations", {}).items():

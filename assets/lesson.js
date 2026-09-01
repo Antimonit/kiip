@@ -36,10 +36,29 @@
     return b;
   }
 
+  /* A gap in the review section. An answer is kept covered until asked
+     for — still present in the text, so copying it works. */
+  function blankSlot(answer) {
+    if (!answer) return el("span", "blank is-empty");
+
+    var b = el("button", "blank", answer);
+    b.type = "button";
+    b.setAttribute("aria-pressed", "false");
+    b.title = "Show the answer";
+    b.addEventListener("click", function () {
+      var shown = b.classList.toggle("is-shown");
+      b.setAttribute("aria-pressed", String(shown));
+      b.title = shown ? "Hide the answer" : "Show the answer";
+    });
+    return b;
+  }
+
   function fillSpans(node, segs) {
     (segs || []).forEach(function (seg) {
       if (typeof seg === "string") {
         node.appendChild(document.createTextNode(seg));
+      } else if (seg.blank !== undefined) {
+        node.appendChild(blankSlot(seg.blank));
       } else {
         node.appendChild(annoButton(seg));
       }
@@ -163,7 +182,11 @@
         if (b.head) {
           var thead = el("thead");
           var tr = el("tr");
-          b.head.forEach(function (c) { tr.appendChild(el("th", null, c)); });
+          b.head.forEach(function (c) {
+            var th = el("th", null, typeof c === "string" ? c : c.text);
+            if (c.span) th.colSpan = c.span;
+            tr.appendChild(th);
+          });
           thead.appendChild(tr);
           t.appendChild(thead);
         }
