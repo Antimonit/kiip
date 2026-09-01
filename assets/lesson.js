@@ -110,7 +110,11 @@
     var sec = el("section", "sect sect-" + b.kind);
     var header = el("header", "sect-head");
     header.appendChild(el("h3", "sect-title", b.text));
-    if (b.topic) header.appendChild(el("p", "sect-topic", b.topic));
+    if (b.topic) {
+      var topic = el("p", "sect-topic", b.topic);
+      if (b.transTitle) topic.appendChild(el("span", "en-title", b.transTitle));
+      header.appendChild(topic);
+    }
     sec.appendChild(header);
     docEl.appendChild(sec);
     host = sec;
@@ -133,16 +137,27 @@
         return;
 
       case "heading": {
-        host.appendChild(el(b.level <= 2 ? "h4" : "h5",
-                            "sub-title sub-level-" + b.level, b.text));
+        var h = el(b.level <= 2 ? "h4" : "h5",
+                   "sub-title sub-level-" + b.level, b.text);
+        if (b.transTitle) h.appendChild(el("span", "en-title", b.transTitle));
+        host.appendChild(h);
         if (b.trans) host.appendChild(translationBlock(b.trans));
         return;
       }
 
+      /* A paragraph and its translation are one unit: the English follows
+         the Korean it renders, rather than the whole section's English
+         sitting in a block of its own. */
       case "p": {
-        var cls = "ko-para" + (b.role ? " is-" + b.role : "");
-        host.appendChild(fillSpans(el("p", cls), b.s));
-        if (b.trans) host.appendChild(translationBlock(b.trans));
+        var p = fillSpans(el("p", "ko-para" + (b.role ? " is-" + b.role : "")), b.s);
+        if (b.trans) {
+          var pair = el("div", "para-pair");
+          pair.appendChild(p);
+          pair.appendChild(el("p", "en-para", b.trans));
+          host.appendChild(pair);
+        } else {
+          host.appendChild(p);
+        }
         return;
       }
 
@@ -313,7 +328,8 @@
     if (reopening) return;
     openBtn = btn;
     btn.setAttribute("aria-expanded", "true");
-    (btn.closest(CARD_HOSTS) || btn).after(buildCard(btn.dataset.key));
+    var anchor = btn.closest(".para-pair") || btn.closest(CARD_HOSTS) || btn;
+    anchor.after(buildCard(btn.dataset.key));
   }
 
   buttons.forEach(function (b) {

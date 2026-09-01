@@ -348,7 +348,32 @@ h5.sub-title { font-size: calc(0.97rem * var(--scale)); color: var(--ink-soft); 
   word-break: keep-all;
 }
 
-.ko-para.prompt { font-weight: 600; margin-top: 1.6rem; }
+.ko-para.is-prompt { font-weight: 600; margin-top: 1.6rem; }
+
+/* A paragraph and its English read as one unit, so they sit closer to each
+   other than to the next paragraph. */
+
+.para-pair { margin: 0 0 var(--flow); }
+.para-pair .ko-para { margin-bottom: 0.4rem; }
+
+.en-para {
+  font-size: calc(0.98rem * var(--aux-scale));
+  line-height: 1.65;
+  color: var(--ink-soft);
+  margin: 0;
+  padding-left: 0.9rem;
+  border-left: 2px solid var(--accent-soft);
+}
+
+/* the English name of a section or subsection, under its Korean heading */
+.en-title {
+  display: block;
+  font-family: var(--ui);
+  font-weight: 400;
+  font-size: calc(0.85rem * var(--aux-scale));
+  color: var(--ink-faint);
+  margin-top: 0.15rem;
+}
 
 .ko-list {
   font-family: var(--ko);

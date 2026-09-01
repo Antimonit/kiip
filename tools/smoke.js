@@ -39,7 +39,8 @@ function lintSectionLayering() {
   const BLOCKS = ["ko-para", "ko-list", "ko-bullet", "glossbox", "gloss-row",
                   "table-wrap", "chart", "bar-row", "verse", "labels", "figure",
                   "source", "margin-note", "anno-card", "notes", "trans",
-                  "sub-title", "sect-topic", "blank"];
+                  "sub-title", "sect-topic", "blank", "en-para", "para-pair",
+                  "en-title"];
   const problems = [];
 
   for (const m of css.matchAll(/([^{}]+)\{([^{}]*)\}/g)) {
@@ -132,6 +133,26 @@ function checkChapter(file) {
     if (s.textContent) problems.push("an unanswered gap carries text");
   });
 
+  // each translated paragraph must be paired with its own Korean paragraph,
+  // in that order, rather than pooled into one block for the section
+  d.querySelectorAll(".para-pair").forEach(function (pair) {
+    const kids = [...pair.children].map(function (c) { return c.className; });
+    if (kids.length !== 2 || !/ko-para/.test(kids[0]) || kids[1] !== "en-para") {
+      problems.push("a paragraph pair is not [korean, english]: " + kids.join(","));
+    }
+    if (!pair.querySelector(".en-para").textContent.trim()) {
+      problems.push("a paragraph pair has an empty translation");
+    }
+  });
+  d.querySelectorAll(".en-para").forEach(function (en) {
+    if (!en.parentNode.classList.contains("para-pair")) {
+      problems.push("a translation is not paired with a paragraph");
+    }
+    if (/^["\u201c]|["\u201d]$/.test(en.textContent.trim())) {
+      problems.push("a translation kept its surrounding quotes");
+    }
+  });
+
   // a real parenthetical must not be mistaken for a gap
   if (d.body.textContent.indexOf("(2020년 기준)") === -1 &&
       /2020년 기준/.test(d.body.textContent)) {
@@ -163,8 +184,9 @@ function checkChapter(file) {
     " paragraphs=" + d.querySelectorAll(".ko-para").length +
     " glosses=" + d.querySelectorAll(".gloss-row").length +
     " tables=" + d.querySelectorAll(".table-wrap table").length +
-    " translations=" + d.querySelectorAll("details.trans").length +
     " annotations=" + buttons.length +
+    " paired=" + d.querySelectorAll(".para-pair").length +
+    " whole=" + d.querySelectorAll("details.trans").length +
     " gaps=" + d.querySelectorAll(".blank").length +
     "/" + d.querySelectorAll("button.blank").length + " answered");
 }
