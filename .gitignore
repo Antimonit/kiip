@@ -2,3 +2,17 @@
 /shelf/
 /workspace.xml
 /.idea
+
+# Python bytecode caches, regenerated on every build
+__pycache__/
+*.pyc
+
+# macOS directory metadata
+.DS_Store
+
+# jsdom, installed only to run tools/smoke.js
+node_modules/
+
+# Textbook page photos, around 8MB a chapter. Kept locally under
+# source/<slug>/ rather than committed; drop this rule to track them.
+source/
