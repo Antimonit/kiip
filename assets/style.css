@@ -104,7 +104,6 @@ a { color: var(--accent); }
 
 .masthead h1 a { color: inherit; text-decoration: none; }
 .masthead .sub { color: var(--ink-faint); font-size: 0.85rem; margin: 0; }
-.masthead .spacer { flex: 1; }
 
 .backlink { display: inline-block; margin-top: 2rem; font-size: 0.85rem; text-decoration: none; }
 
@@ -400,30 +399,6 @@ h5.sub-title { font-size: calc(0.97rem * var(--scale)); color: var(--ink-soft); 
   padding-left: 0.9rem;
   border-left: 2px solid var(--accent-soft);
 }
-
-/* English controls in the masthead, and the per-paragraph fold.
-   PROTOTYPE: the mode switch goes away once one of the two is chosen. */
-
-.en-controls {
-  display: flex; align-items: center; flex-wrap: wrap; gap: 0.5rem;
-}
-
-.en-label {
-  font-size: 0.7rem; letter-spacing: 0.1em; text-transform: uppercase;
-  color: var(--ink-faint);
-}
-
-.mode-toggle {
-  display: inline-flex; border: 1px solid var(--rule);
-  border-radius: 999px; overflow: hidden;
-}
-
-.mode-toggle button {
-  font: inherit; font-size: 0.75rem; padding: 0.2rem 0.7rem;
-  background: transparent; border: 0; color: var(--ink-soft); cursor: pointer;
-}
-
-.mode-toggle button[aria-pressed="true"] { background: var(--accent); color: var(--paper); }
 
 /* A quiet disclosure rather than a button: a caret and a label, no chrome,
    so it does not compete with the passage it sits in. */

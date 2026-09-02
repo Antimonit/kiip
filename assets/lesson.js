@@ -325,82 +325,25 @@
     docEl.appendChild(sec);
   }
 
-  /* --- English: two granularities, for comparison ------------------
-     PROTOTYPE. One of these is to be deleted once chosen.
-       "article"    one control per article, revealing its whole run
-       "paragraph"  one control per paragraph                        */
+  /* --- English: folded behind a control on each paragraph ---------- */
 
-  var EN_MODE = "kiip-en-mode";
-  var enMode = localStorage.getItem(EN_MODE) || "article";
-
-  /* Runs of consecutive pairs — each run is the prose of one article. */
-  function englishRuns() {
-    var runs = [];
-    docEl.querySelectorAll(".para-pair").forEach(function (pair) {
-      var last = runs[runs.length - 1];
-      if (last && last[last.length - 1].nextElementSibling === pair) last.push(pair);
-      else runs.push([pair]);
-    });
-    return runs;
-  }
-
-  function fold(targets) {
+  function fold(wrap) {
     var b = el("button", "en-fold", "English");
     b.type = "button";
     b.setAttribute("aria-expanded", "false");
-    targets.forEach(function (w) { w.classList.remove("is-open"); });
+    wrap.classList.remove("is-open");
     b.addEventListener("click", function () {
-      var show = !targets[0].classList.contains("is-open");
-      targets.forEach(function (w) { w.classList.toggle("is-open", show); });
+      var show = !wrap.classList.contains("is-open");
+      wrap.classList.toggle("is-open", show);
       b.setAttribute("aria-expanded", String(show));
     });
     return b;
   }
 
-  var controls = document.querySelector("[data-en-controls]");
-  var runs = englishRuns();
-
-  if (controls && runs.length) {
-    var modeBox = el("div", "mode-toggle");
-    var modeButtons = [
-      { mode: "article", label: "Per article" },
-      { mode: "paragraph", label: "Per paragraph" }
-    ].map(function (spec) {
-      var b = el("button", null, spec.label);
-      b.type = "button";
-      b.dataset.mode = spec.mode;
-      b.addEventListener("click", function () { applyEnMode(spec.mode); });
-      modeBox.appendChild(b);
-      return b;
-    });
-
-    controls.appendChild(el("span", "en-label", "English"));
-    controls.appendChild(modeBox);
-
-    var applyEnMode = function (mode) {
-      enMode = mode;
-      localStorage.setItem(EN_MODE, mode);
-      docEl.querySelectorAll(".en-fold").forEach(function (b) { b.remove(); });
-
-      runs.forEach(function (run) {
-        if (mode === "article") {
-          var all = run.map(function (p) { return p.querySelector(".en-wrap"); });
-          run[0].parentNode.insertBefore(fold(all), run[0]);
-        } else {
-          run.forEach(function (pair) {
-            var wrap = pair.querySelector(".en-wrap");
-            pair.insertBefore(fold([wrap]), wrap);
-          });
-        }
-      });
-
-      modeButtons.forEach(function (b) {
-        b.setAttribute("aria-pressed", String(b.dataset.mode === mode));
-      });
-    };
-
-    applyEnMode(enMode);
-  }
+  docEl.querySelectorAll(".para-pair").forEach(function (pair) {
+    var wrap = pair.querySelector(".en-wrap");
+    pair.insertBefore(fold(wrap), wrap);
+  });
 
   /* --- interaction ------------------------------------------------ */
 
