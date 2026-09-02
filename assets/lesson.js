@@ -254,9 +254,15 @@
         return;
       }
 
-      case "figure":
-        host.appendChild(el("p", "figure", b.text));
+      /* The page has a photo here. It is not reproduced, but the caption
+         needs something to caption or it reads as a stray sentence. */
+      case "figure": {
+        var fig = el("figure", "figure");
+        fig.appendChild(el("div", "figure-slot"));
+        fig.appendChild(el("figcaption", null, b.text));
+        host.appendChild(fig);
         return;
+      }
 
       case "source":
         host.appendChild(el("p", "source", b.text));
@@ -292,19 +298,16 @@
   /* --- transcription notes ---------------------------------------- */
 
   if (lesson.notes && lesson.notes.length) {
-    var unchecked = lesson.notes.filter(function (n) { return !n.checked; }).length;
     var sec = el("section", "sect sect-notes");
     var header = el("header", "sect-head");
     header.appendChild(el("h3", "sect-title", "Transcription notes"));
-    if (unchecked) {
-      header.appendChild(el("p", "sect-topic",
-        unchecked + (unchecked === 1 ? " still needs" : " still need") +
-        " checking against the page"));
-    }
+    header.appendChild(el("p", "sect-topic",
+      lesson.notes.length === 1 ? "1 still to check against the page"
+                                : lesson.notes.length + " still to check against the page"));
     sec.appendChild(header);
     var ul = el("ul", "notes");
     lesson.notes.forEach(function (n) {
-      var li = el("li", n.checked ? "is-checked" : "is-unchecked");
+      var li = el("li");
       if (n.was) {
         li.appendChild(el("span", "ko", n.was + " → " + n.now));
         li.appendChild(document.createTextNode(" — "));
@@ -313,7 +316,6 @@
       if (n.count > 1) {
         li.appendChild(el("span", "count", " (×" + n.count + ")"));
       }
-      if (n.checked) li.appendChild(el("span", "checked", "checked"));
       ul.appendChild(li);
     });
     sec.appendChild(ul);

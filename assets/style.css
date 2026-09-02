@@ -624,7 +624,38 @@ h5.sub-title { font-size: calc(0.97rem * var(--scale)); color: var(--ink-soft); 
   padding: 0.15rem 0.55rem; color: var(--ink-soft);
 }
 
-p.figure, p.source {
+/* A figure from the page: the photo itself is not reproduced, so the caption
+   is given an empty frame to sit under rather than floating on its own. */
+
+.figure { margin: 0 0 var(--flow); }
+
+.figure-slot {
+  aspect-ratio: 16 / 6;
+  border: 1px dashed var(--rule);
+  border-radius: 4px;
+  background: var(--rule-soft);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.figure-slot::after {
+  content: "photo";
+  font-size: calc(0.7rem * var(--aux-scale));
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+  opacity: 0.7;
+}
+
+.figure figcaption {
+  font-family: var(--ko);
+  font-size: calc(0.85rem * var(--aux-scale));
+  color: var(--ink-faint);
+  margin-top: 0.5rem;
+}
+
+p.source {
   font-family: var(--ko);
   font-size: calc(0.85rem * var(--aux-scale));
   color: var(--ink-faint);
@@ -669,21 +700,6 @@ details.trans p { margin: 0.7rem 0; }
 .notes li { margin-bottom: 0.45rem; }
 .notes .count { font-variant-numeric: tabular-nums; }
 
-/* a correction that has been read against the page and accepted */
-.notes .checked {
-  margin-left: 0.5rem;
-  padding: 0.05rem 0.4rem;
-  border-radius: 999px;
-  background: var(--accent-soft);
-  color: var(--accent-ink);
-  font-size: 0.78em;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  white-space: nowrap;
-}
-
-.notes li.is-unchecked { color: var(--ink-soft); }
-.notes li.is-checked { opacity: 0.72; }
 .notes .ko { font-family: var(--ko); color: var(--ink-soft); }
 
 /* ==================================================================

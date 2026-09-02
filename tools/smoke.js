@@ -40,7 +40,7 @@ function lintSectionLayering() {
                   "table-wrap", "chart", "bar-row", "verse", "labels", "figure",
                   "source", "margin-note", "anno-card", "notes", "trans",
                   "sub-title", "sect-topic", "blank", "en-para", "para-pair",
-                  "en-title", "en-fold", "en-wrap"];
+                  "en-title", "en-fold", "en-wrap", "figure-slot"];
   const problems = [];
 
   for (const m of css.matchAll(/([^{}]+)\{([^{}]*)\}/g)) {
@@ -199,6 +199,14 @@ function checkChapter(file) {
     }
     marked.click();
   }
+
+  // a caption has something to caption
+  d.querySelectorAll("figure.figure").forEach(function (f) {
+    if (!f.querySelector(".figure-slot")) problems.push("a caption has no figure above it");
+    if (!f.querySelector("figcaption").textContent.trim()) {
+      problems.push("an empty caption");
+    }
+  });
 
   // no handwritten English is printed beside a term; it belongs in the entry
   d.querySelectorAll(".gloss-en").forEach(function () {
