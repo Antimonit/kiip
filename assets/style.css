@@ -668,6 +668,22 @@ details.trans p { margin: 0.7rem 0; }
 .notes { font-size: calc(0.9rem * var(--scale)); color: var(--ink-faint); padding-left: 1.1rem; }
 .notes li { margin-bottom: 0.45rem; }
 .notes .count { font-variant-numeric: tabular-nums; }
+
+/* a correction that has been read against the page and accepted */
+.notes .checked {
+  margin-left: 0.5rem;
+  padding: 0.05rem 0.4rem;
+  border-radius: 999px;
+  background: var(--accent-soft);
+  color: var(--accent-ink);
+  font-size: 0.78em;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.notes li.is-unchecked { color: var(--ink-soft); }
+.notes li.is-checked { opacity: 0.72; }
 .notes .ko { font-family: var(--ko); color: var(--ink-soft); }
 
 /* ==================================================================

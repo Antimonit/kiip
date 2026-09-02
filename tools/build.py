@@ -711,14 +711,20 @@ def build(cfg, srcdir):
         a["headword"] = a["headword"].strip()
 
     # Notes are data, not markup: the page decides how to present them.
+    # "checked" records that the correction has been read against the page
+    # photos and accepted; the rest still want reviewing.
+    approved = set(cfg.get("approved", ()))
     notes = []
     for (old, new, why), count in hits.items():
         if why is None:
             continue
         was, now = shown.get(old, (old.lstrip("="), new))
-        notes.append({"was": was, "now": now, "why": why, "count": count})
-    notes += [{"why": n} if isinstance(n, str) else dict(n)
-              for n in cfg.get("extraNotes", [])]
+        notes.append({"was": was, "now": now, "why": why, "count": count,
+                      "checked": old in approved})
+    for n in cfg.get("extraNotes", []):
+        note = {"why": n} if isinstance(n, str) else dict(n)
+        note.setdefault("checked", False)
+        notes.append(note)
     unused = [f for f in fixes
               if (f[0], f[1], f[2]) not in hits and f[0] != f[1] and f[2]]
 
