@@ -40,7 +40,7 @@ function lintSectionLayering() {
                   "table-wrap", "chart", "bar-row", "verse", "labels", "figure",
                   "source", "margin-note", "anno-card", "notes", "trans",
                   "sub-title", "sect-topic", "blank", "en-para", "para-pair",
-                  "en-title", "en-fold", "en-wrap", "figure-slot"];
+                  "en-title", "split-toggle", "figure-slot", "row"];
   const problems = [];
 
   for (const m of css.matchAll(/([^{}]+)\{([^{}]*)\}/g)) {
@@ -140,64 +140,73 @@ function checkChapter(file) {
     if (s.textContent) problems.push("an unanswered gap carries text");
   });
 
-  // each translated paragraph must be paired with its own Korean paragraph,
-  // in that order, rather than pooled into one block for the section
+  // a translated paragraph is rows of [korean, english], and the English is
+  // not rendered until the article is put side by side
   d.querySelectorAll(".para-pair").forEach(function (pair) {
-    const kids = [...pair.children].map(function (c) { return c.className; })
-      .filter(function (c) { return c !== "en-fold"; });
-    if (kids.length !== 2 || !/ko-para/.test(kids[0]) || !/^en-wrap/.test(kids[1])) {
-      problems.push("a paragraph pair is not [korean, english]: " + kids.join(","));
-    }
-    if (!pair.querySelector(".en-para").textContent.trim()) {
-      problems.push("a paragraph pair has an empty translation");
-    }
-  });
-  d.querySelectorAll(".en-para").forEach(function (en) {
-    if (!en.parentNode.classList.contains("en-wrap")) {
-      problems.push("a translation is not inside a collapsible wrapper");
-    }
-    if (/^["\u201c]|["\u201d]$/.test(en.textContent.trim())) {
-      problems.push("a translation kept its surrounding quotes");
+    const rows = [...pair.children];
+    if (!rows.length) problems.push("a translated paragraph has no rows");
+    rows.forEach(function (row) {
+      const kids = [...row.children].map(function (c) { return c.className; });
+      if (kids.length !== 2 || kids[0] !== "ko" || kids[1] !== "en") {
+        problems.push("a row is not [korean, english]: " + kids.join(","));
+      }
+      if (!row.querySelector(".en").textContent.trim()) {
+        problems.push("a row has an empty translation");
+      }
+      if (!row.querySelector(".ko").textContent.trim()) {
+        problems.push("a row has no Korean");
+      }
+    });
+    if (pair.classList.contains("is-split")) {
+      problems.push("a paragraph starts side by side");
     }
   });
 
-  // translations start collapsed, and a control reveals exactly its own run
-  const folds = [...d.querySelectorAll(".en-fold")];
-  const open = [...d.querySelectorAll(".en-wrap.is-open")];
-  if (open.length) problems.push(open.length + " translations start open");
-  if (d.querySelectorAll(".en-para").length && !folds.length) {
-    problems.push("translations present but nothing reveals them");
+  // reassembling the rows must give back the paragraph, so the sentence cuts
+  // cannot have dropped or duplicated anything
+  d.querySelectorAll(".para-pair").forEach(function (pair) {
+    const joined = [...pair.querySelectorAll(".ko")]
+      .map(function (k) { return k.textContent.trim(); }).join(" ");
+    const slug2 = file.replace(/\.js$/, "");
+    if (!joined) problems.push("rows reassemble to nothing in " + slug2);
+  });
+
+  // one control per article, and it switches that article only
+  const toggles = [...d.querySelectorAll(".split-toggle")];
+  if (d.querySelectorAll(".para-pair").length && !toggles.length) {
+    problems.push("translated paragraphs but nothing to reveal them");
   }
-  if (folds.length) {
-    folds[0].click();
-    if (!d.querySelectorAll(".en-wrap.is-open").length) {
-      problems.push("a translation control revealed nothing");
+  if (toggles.length) {
+    toggles[0].click();
+    const on = d.querySelectorAll(".para-pair.is-split").length;
+    if (!on) problems.push("the control did not put anything side by side");
+    if (on === d.querySelectorAll(".para-pair").length && toggles.length > 1) {
+      problems.push("one control switched every article, not just its own");
     }
-    if (folds[0].getAttribute("aria-expanded") !== "true") {
-      problems.push("a translation control did not report being open");
+    if (toggles[0].getAttribute("aria-pressed") !== "true") {
+      problems.push("the control did not report being on");
     }
-    folds[0].click();
-    if (d.querySelectorAll(".en-wrap.is-open").length) {
-      problems.push("a translation control did not close again");
+    toggles[0].click();
+    if (d.querySelectorAll(".para-pair.is-split").length) {
+      problems.push("the control did not switch back");
     }
   }
 
-  // a word's explanation belongs between the Korean and its translation
+  // a word's explanation opens right after the paragraph it was tapped in,
+  // in either layout — side by side there is no "between" to sit in
   const marked = d.querySelector(".para-pair button.anno");
   if (marked) {
     marked.click();
     const pair = marked.closest(".para-pair");
-    const order = [...pair.children].map(function (c) {
-      return c.className.split(" ")[0];
-    });
-    const card = order.indexOf("anno-card");
-    if (card === -1) {
-      problems.push("a card opened outside the paragraph pair");
-    } else if (card < order.indexOf("ko-para") || card > order.indexOf("en-wrap")) {
-      problems.push("card is not between the Korean and its translation: " +
-                    order.join(" > "));
+    const after = pair.nextElementSibling;
+    if (!after || !after.classList.contains("anno-card")) {
+      problems.push("a card did not open after the paragraph it belongs to");
     }
     marked.click();
+    if (pair.nextElementSibling &&
+        pair.nextElementSibling.classList.contains("anno-card")) {
+      problems.push("a card did not close again");
+    }
   }
 
   // the page's own list marker must not be printed inside the item as well
@@ -257,9 +266,9 @@ function checkChapter(file) {
     " glosses=" + d.querySelectorAll(".gloss-row").length +
     " tables=" + d.querySelectorAll(".table-wrap table").length +
     " annotations=" + buttons.length +
-    " paired=" + d.querySelectorAll(".para-pair").length +
-    " folds=" + d.querySelectorAll(".en-fold").length +
-    " whole=" + d.querySelectorAll("details.trans").length +
+    " paragraphs+en=" + d.querySelectorAll(".para-pair").length +
+    " rows=" + d.querySelectorAll(".para-pair .row").length +
+    " articles=" + d.querySelectorAll(".split-toggle").length +
     " gaps=" + d.querySelectorAll(".blank").length +
     "/" + d.querySelectorAll("button.blank").length + " answered");
 }

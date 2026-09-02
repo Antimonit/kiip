@@ -360,65 +360,75 @@ h5.sub-title { font-size: calc(0.97rem * var(--scale)); color: var(--ink-soft); 
 
 .ko-para.is-prompt { font-weight: 600; margin-top: 1.6rem; }
 
-/* A paragraph and its English read as one unit, so they sit closer to each
-   other than to the next paragraph. */
+/* A translated paragraph is rows of sentence pairs. Left alone the rows are
+   inline, so the Korean reads as a paragraph and the English is not
+   rendered; side by side turns each row into two columns. */
 
-.para-pair { margin: 0 0 var(--flow); }
-.para-pair .ko-para { margin-bottom: 0.4rem; }
+.para-pair {
+  font-family: var(--ko);
+  font-size: calc(1.12rem * var(--scale));
+  line-height: var(--lead);
+  margin: 0 0 var(--flow);
+  word-break: keep-all;
+}
 
-/* The translation is collapsed by animating a grid track from 0fr to 1fr,
-   which needs no measured height. Visibility follows on a delay so the text
-   leaves the accessibility tree only once it has finished closing. */
+.para-pair .row { display: inline; }
+.para-pair .en { display: none; }
 
-.en-wrap {
+.para-pair.is-split .row {
   display: grid;
-  grid-template-rows: 0fr;
-  transition: grid-template-rows 0.18s ease;
+  grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
+  gap: 0 1.1rem;
+  align-items: start;
 }
 
-.en-wrap > * {
-  overflow: hidden;
-  min-height: 0;
-  visibility: hidden;
-  opacity: 0;
-  transition: visibility 0s 0.18s, opacity 0.14s ease;
-}
+.para-pair.is-split .ko { display: block; padding: 0.5rem 0; }
 
-.en-wrap.is-open { grid-template-rows: 1fr; }
-
-.en-wrap.is-open > * {
-  visibility: visible;
-  opacity: 1;
-  transition: visibility 0s 0s, opacity 0.18s ease 0.04s;
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .en-wrap, .en-wrap > * { transition-duration: 0s; }
-}
-
-/* The translation is a different layer of the page, not an aside to the
-   paragraph, so it sits on its own tinted surface. It has to read as
-   distinct from an annotation card too, which is why that one is a raised
-   white card with an accent edge and this is a recessed panel. */
-
-.en-para {
-  font-size: calc(0.98rem * var(--aux-scale));
+.para-pair.is-split .en {
+  display: block;
+  font-family: var(--ui);
+  font-size: calc(0.94rem * var(--aux-scale));
   line-height: 1.7;
   color: var(--ink-soft);
   background: var(--en-surface);
   border: 1px solid var(--en-edge);
-  border-radius: 5px;
-  padding: 0.7rem 0.9rem;
-  margin: 0;
+  border-bottom: 0;
+  padding: 0.5rem 0.8rem;
+  animation: en-appear 0.22s ease both;
 }
 
-/* A quiet disclosure rather than a button: a caret and a label, no chrome,
-   so it does not compete with the passage it sits in. */
+/* the tint reads as one column per paragraph, closed top and bottom */
+.para-pair.is-split .row:last-child .en { border-bottom: 1px solid var(--en-edge); }
+.para-pair.is-split .row:first-child .en { border-radius: 5px 5px 0 0; }
+.para-pair.is-split .row:last-child .en { border-radius: 0 0 5px 5px; }
+.para-pair.is-split .row:only-child .en { border-radius: 5px; }
 
-.en-fold {
+@keyframes en-appear {
+  from { opacity: 0; transform: translateX(-0.4rem); }
+  to { opacity: 1; transform: none; }
+}
+
+/* too narrow for two columns: the row folds, and each translation becomes
+   its own panel under the sentence it renders */
+@media (max-width: 46rem) {
+  .para-pair.is-split .row { grid-template-columns: 1fr; gap: 0.25rem; }
+  .para-pair.is-split .ko { padding-bottom: 0; }
+  .para-pair.is-split .en {
+    border: 1px solid var(--en-edge);
+    border-radius: 5px;
+    margin-bottom: 0.9rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .para-pair.is-split .en { animation: none; }
+}
+
+/* the control that turns an article side by side */
+.split-toggle {
   display: inline-flex;
   align-items: center;
-  gap: 0.4rem;
+  gap: 0.45rem;
   font: inherit;
   font-family: var(--ui);
   font-size: calc(0.76rem * var(--aux-scale));
@@ -428,28 +438,22 @@ h5.sub-title { font-size: calc(0.97rem * var(--scale)); color: var(--ink-soft); 
   background: none;
   border: 0;
   padding: 0.1rem 0;
-  margin: 0 0 0.5rem;
+  margin: 0 0 0.6rem;
   cursor: pointer;
 }
 
-.en-fold:hover { color: var(--accent); }
+.split-toggle:hover { color: var(--accent); }
+.split-toggle[aria-pressed="true"] { color: var(--accent); }
 
-.en-fold::before {
+.split-toggle::before {
   content: "";
-  width: 0.36em;
-  height: 0.36em;
-  border-right: 1.5px solid currentColor;
-  border-bottom: 1.5px solid currentColor;
-  transform: translateY(-0.12em) rotate(45deg);
-  transition: transform 0.15s;
+  width: 0.8em;
+  height: 0.62em;
+  border: 1.5px solid currentColor;
+  border-radius: 1px;
+  background:
+    linear-gradient(to right, transparent 45%, currentColor 45%, currentColor 55%, transparent 55%);
 }
-
-.en-fold[aria-expanded="true"]::before {
-  transform: translateY(0.06em) rotate(-135deg);
-}
-
-/* per-paragraph, the control sits between the two languages */
-.para-pair .en-fold { margin: 0.1rem 0 0.35rem; }
 
 /* the English name of a section or subsection, under its Korean heading */
 .en-title {

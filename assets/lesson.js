@@ -148,27 +148,31 @@
         return;
       }
 
-      /* A paragraph and its translation are one unit: the English follows
-         the Korean it renders, rather than the whole section's English
-         sitting in a block of its own. */
+      /* A translated paragraph is built as rows of sentence pairs. In its
+         default state the rows are inline, so the Korean reads as one
+         paragraph and the English is out of the way; side by side turns each
+         row into two columns. One structure, two layouts. */
       case "paragraph": {
-        var p = fillSpans(el("p", "ko-para" + (b.role ? " is-" + b.role : "")), b.spans);
-        if (b.translation) {
-          var pair = el("div", "para-pair");
-          pair.appendChild(p);
-          var wrap = el("div", "en-wrap");
-          wrap.appendChild(el("p", "en-para", b.translation));
-          pair.appendChild(wrap);
-          host.appendChild(pair);
-        } else {
-          host.appendChild(p);
+        if (!b.translation) {
+          host.appendChild(fillSpans(
+            el("p", "ko-para" + (b.role ? " is-" + b.role : "")), b.spans));
+          return;
         }
+        var pair = el("div", "para-pair");
+        var units = b.sentences ||
+          [{ spans: b.spans, translation: b.translation }];
+        units.forEach(function (unit) {
+          var row = el("div", "row");
+          var ko = fillSpans(el("span", "ko"), unit.spans);
+          ko.appendChild(document.createTextNode(" "));
+          row.appendChild(ko);
+          row.appendChild(el("span", "en", unit.translation));
+          pair.appendChild(row);
+        });
+        host.appendChild(pair);
         return;
       }
 
-      /* The page's own bullet or number has been taken off the text, so the
-         list supplies the marker — numbered items become a real ordered list
-         rather than a bulleted one with a number typed in front. */
       case "bullet": {
         var wanted = b.ordered ? "OL" : "UL";
         var list = host.lastElementChild;
@@ -325,32 +329,50 @@
     docEl.appendChild(sec);
   }
 
-  /* --- English: folded behind a control on each paragraph ---------- */
+  /* --- English: side by side, one control per article ---------------
+     An article is a run of consecutive translated paragraphs, which is
+     exactly the prose one translation covers. */
 
-  function fold(wrap) {
-    var b = el("button", "en-fold", "English");
-    b.type = "button";
-    b.setAttribute("aria-expanded", "false");
-    wrap.classList.remove("is-open");
-    b.addEventListener("click", function () {
-      var show = !wrap.classList.contains("is-open");
-      wrap.classList.toggle("is-open", show);
-      b.setAttribute("aria-expanded", String(show));
+  function runs() {
+    var found = [];
+    docEl.querySelectorAll(".para-pair").forEach(function (pair) {
+      var last = found[found.length - 1];
+      if (last && last[last.length - 1].nextElementSibling === pair) last.push(pair);
+      else found.push([pair]);
     });
-    return b;
+    return found;
   }
 
-  docEl.querySelectorAll(".para-pair").forEach(function (pair) {
-    var wrap = pair.querySelector(".en-wrap");
-    pair.insertBefore(fold(wrap), wrap);
+  runs().forEach(function (run) {
+    var b = el("button", "split-toggle", "Side by side");
+    b.type = "button";
+    b.setAttribute("aria-pressed", "false");
+
+    b.addEventListener("click", function () {
+      var on = b.getAttribute("aria-pressed") !== "true";
+      var apply = function () {
+        run.forEach(function (pair) { pair.classList.toggle("is-split", on); });
+        b.setAttribute("aria-pressed", String(on));
+      };
+      // where the browser can morph the reflow, let it; the columns fade in
+      // either way
+      if (document.startViewTransition &&
+          !window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+        document.startViewTransition(apply);
+      } else {
+        apply();
+      }
+    });
+
+    run[0].parentNode.insertBefore(b, run[0]);
   });
 
   /* --- interaction ------------------------------------------------ */
 
   /* One card is open at a time; it drops in after the block the word sits in. */
 
-  var CARD_HOSTS = ".ko-para, .ko-list, .gloss-row, .sub-title, .sect-title," +
-                   " .aside-topic, .verse, .labels, .margin-note";
+  var CARD_HOSTS = ".para-pair, .ko-para, .ko-list, .gloss-row, .sub-title," +
+                   " .sect-title, .aside-topic, .verse, .labels, .margin-note";
   var openBtn = null;
 
   function close() {
