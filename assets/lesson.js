@@ -166,14 +166,17 @@
         return;
       }
 
+      /* The page's own bullet or number has been taken off the text, so the
+         list supplies the marker — numbered items become a real ordered list
+         rather than a bulleted one with a number typed in front. */
       case "bullet": {
-        var li = fillSpans(el("li", "ko-bullet"), b.spans);
-        var prev = host.lastElementChild;
-        if (!prev || prev.tagName !== "UL") {
-          prev = el("ul", "ko-list");
-          host.appendChild(prev);
+        var wanted = b.ordered ? "OL" : "UL";
+        var list = host.lastElementChild;
+        if (!list || list.tagName !== wanted) {
+          list = el(b.ordered ? "ol" : "ul", "ko-list");
+          host.appendChild(list);
         }
-        prev.appendChild(li);
+        list.appendChild(fillSpans(el("li", "ko-bullet"), b.spans));
         return;
       }
 

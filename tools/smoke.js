@@ -200,6 +200,18 @@ function checkChapter(file) {
     marked.click();
   }
 
+  // the page's own list marker must not be printed inside the item as well
+  d.querySelectorAll(".ko-bullet").forEach(function (li) {
+    const t = li.textContent.trim();
+    if (/^[•·]/.test(t)) problems.push("a list item still starts with a bullet: " + t.slice(0, 30));
+    if (/^\d+\.\s/.test(t)) {
+      problems.push("a list item still starts with its number: " + t.slice(0, 30));
+    }
+  });
+  d.querySelectorAll("ul.ko-list > li").forEach(function (li) {
+    if (/^\d/.test(li.textContent.trim())) return;
+  });
+
   // a caption has something to caption
   d.querySelectorAll("figure.figure").forEach(function (f) {
     if (!f.querySelector(".figure-slot")) problems.push("a caption has no figure above it");

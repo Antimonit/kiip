@@ -279,6 +279,26 @@ def first_key(block, anno_key):
     return None
 
 
+# The page prints its own list markers into the text. They are the list's
+# markers, not its content, so they come off and the list carries them.
+BULLET_MARK = re.compile(r"^\s*[•·]\s*")
+NUMBER_MARK = re.compile(r"^\s*\d+\.\s+")
+
+
+def strip_list_marker(span_list):
+    """-> (spans without the marker, whether the list was numbered)."""
+    if not span_list or not isinstance(span_list[0], str):
+        return span_list, False
+    first = span_list[0]
+    m = NUMBER_MARK.match(first)
+    if m:
+        return [first[m.end():]] + span_list[1:], True
+    m = BULLET_MARK.match(first)
+    if m:
+        return [first[m.end():]] + span_list[1:], False
+    return span_list, False
+
+
 def gloss_term(text):
     """'A married' -> ('A', 'married')."""
     t = text.lstrip("• ").strip()
@@ -655,13 +675,13 @@ def build(cfg, srcdir):
                 emit({"type": "glossary", "entries": entries})
                 continue
 
-        if tag == "li" or bulleted:
-            emit({"type": "bullet", "spans": spans(block, anno_key)})
-            i += 1
-            continue
-
-        if section_kind == "goals" and re.match(r"^\d+\.\s", text):
-            emit({"type": "bullet", "spans": spans(block, anno_key)})
+        if tag == "li" or bulleted or (section_kind == "goals"
+                                       and re.match(r"^\d+\.\s", text)):
+            span_list, ordered = strip_list_marker(spans(block, anno_key))
+            item = {"type": "bullet", "spans": span_list}
+            if ordered:
+                item["ordered"] = True
+            emit(item)
             i += 1
             continue
 

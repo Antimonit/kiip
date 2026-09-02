@@ -478,8 +478,11 @@ h5.sub-title { font-size: calc(0.97rem * var(--scale)); color: var(--ink-soft); 
   font-family: var(--ko);
   font-size: calc(1.05rem * var(--scale));
   margin: 0 0 var(--flow);
-  padding-left: 1.2rem;
+  padding-left: 1.4rem;
 }
+
+ol.ko-list { padding-left: 1.6rem; }
+ol.ko-list li::marker { color: var(--ink-faint); }
 
 .ko-bullet {
   line-height: var(--lead);
