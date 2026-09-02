@@ -98,6 +98,12 @@ def SPAN(text, columns):
     return {"text": text, "span": columns}
 
 
+def CHART(caption, unit, rows):
+    """A figure on the page whose values are read off it."""
+    return {"type": "chart", "caption": caption, "unit": unit,
+            "rows": [list(r) for r in rows]}
+
+
 def GLOSS(*entries):
     """The glossary printed in the margin beside an article.
 
