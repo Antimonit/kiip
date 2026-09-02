@@ -9,7 +9,7 @@
  * carries only the site and the tooling.
  */
 
-const { JSDOM } = require("jsdom");
+const { JSDOM, VirtualConsole } = require("jsdom");
 const fs = require("fs");
 const path = require("path");
 
@@ -84,9 +84,24 @@ function lintDataPurity(file) {
 
 /* --- page rendering -------------------------------------------------- */
 
+/* pretendToBeVisual gives the page requestAnimationFrame, and the virtual
+   console turns anything the page throws into a failure — without it a
+   script error inside an event listener passes silently. */
 function page(file, url) {
-  const dom = new JSDOM(read(file),
-    { runScripts: "outside-only", url: "https://example.invalid/" + url });
+  const failures = [];
+  const console_ = new VirtualConsole();
+  console_.on("jsdomError", function (e) { failures.push("threw: " + e.message); });
+  console_.on("error", function () {
+    failures.push("logged an error: " + [...arguments].join(" "));
+  });
+
+  const dom = new JSDOM(read(file), {
+    runScripts: "outside-only",
+    pretendToBeVisual: true,
+    virtualConsole: console_,
+    url: "https://example.invalid/" + url,
+  });
+  dom.failures = failures;
   dom.window.eval(read("assets", "kiip.js"));
   return dom;
 }
@@ -265,6 +280,8 @@ function checkChapter(file) {
   const stray = d.body.textContent.match(/undefined|\[object |NaN/);
   if (stray) problems.push("stray " + stray[0]);
 
+  problems.push(...dom.failures);
+
   report(slug, problems,
     "sections=" + d.querySelectorAll("section.sect").length +
     " paragraphs=" + d.querySelectorAll(".ko-para").length +
@@ -372,6 +389,8 @@ function checkIndex(chapters) {
   if (!chapters.length && d.querySelector("[data-empty]").hidden) {
     problems.push("no chapters, but the empty state is hidden");
   }
+
+  problems.push(...dom.failures);
 
   report("index.html", problems,
     "chapters=" + chapters.length + " tags=" + tags.length);
