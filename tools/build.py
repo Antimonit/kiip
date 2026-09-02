@@ -672,7 +672,19 @@ def build(cfg, srcdir):
             group = [g for g in group if g["tag"] != "table"]
             texts = [block_text(g).strip() for g in group]
             rich = [spans(g, anno_key) for g in group]
-            if name == "heading":
+            if name == "join":
+                # the Doc broke one paragraph in two, mid-sentence
+                for g in group:
+                    prev = next((x for x in reversed(blocks)
+                                 if x["type"] == "paragraph"), None)
+                    if prev is None:
+                        continue
+                    tail = spans(g, anno_key)
+                    if prev["spans"] and isinstance(prev["spans"][-1], str) \
+                            and not prev["spans"][-1].endswith(" "):
+                        prev["spans"].append(" ")
+                    prev["spans"].extend(tail)
+            elif name == "heading":
                 emit({"type": "heading", "level": 3, "text": texts[0]})
             elif name == "labels":
                 emit({"type": "labels", "items": rich})
