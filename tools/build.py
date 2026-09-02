@@ -688,7 +688,14 @@ def build(cfg, srcdir):
     # entries written by hand in the chapter module, before the handwriting
     # on the page is folded in, so an entry can be given a proper breakdown
     # and still keep the note that was scribbled beside the word
+    known = {"headword", "hanja", "meaning", "characters", "notes", "surfaces"}
     for key, extra in cfg.get("extraAnnotations", {}).items():
+        unknown = set(extra) - known
+        if unknown:
+            raise SystemExit(
+                "%s: entry %r uses unknown field(s) %s — expected %s"
+                % (cfg["module"], key, ", ".join(sorted(unknown)),
+                   ", ".join(sorted(known))))
         annotations[key] = {
             "headword": extra.get("headword", key),
             "hanja": extra.get("hanja"),
