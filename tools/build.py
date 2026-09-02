@@ -816,7 +816,7 @@ def build(cfg, srcdir):
     # ---- corrections --------------------------------------------------
     hits = {}
     # the trailing entry collapses double spaces left behind by the fixes above
-    fixes = list(cfg["fixes"]) + [("  ", " ", None)]
+    fixes = list(cfg.get("fixes", ())) + [("  ", " ", None)]
     shown = {f[0]: f[3] for f in fixes if len(f) > 3}
     blocks = apply_fixes(blocks, fixes, hits)
     annotations = apply_fixes(annotations, fixes, hits)
