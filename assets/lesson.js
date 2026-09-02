@@ -78,7 +78,8 @@
 
     var hw = el("p");
     hw.appendChild(el("span", "headword", a.headword + (a.hanja ? "(" + a.hanja + ")" : "")));
-    // with no meaning of its own, the note written beside the word stands in
+    // the note written beside the word stands in only where the word has no
+    // definition of its own; otherwise it just repeats it
     var gloss = a.meaning || a.handwritten;
     if (gloss) hw.appendChild(document.createTextNode(" — " + gloss));
     card.appendChild(hw);
@@ -93,10 +94,6 @@
     (a.notes || []).forEach(function (t) {
       card.appendChild(el("p", "usage", t));
     });
-
-    if (a.handwritten && a.meaning) {
-      card.appendChild(el("p", "handwritten", a.handwritten));
-    }
 
     if (a.surfaces && a.surfaces.length) {
       card.appendChild(el("p", "surfaces", "in the text: " + a.surfaces.join(", ")));

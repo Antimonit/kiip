@@ -734,19 +734,6 @@ button.anno[aria-expanded="true"] {
 .anno-card .hanja { font-family: var(--ko); color: var(--ink-soft); }
 .anno-card .hanja b { color: var(--ink); font-weight: 600; }
 .anno-card .usage { color: var(--ink-soft); white-space: pre-line; }
-.anno-card .handwritten {
-  font-style: italic;
-  color: var(--ink-faint);
-}
-
-.anno-card .handwritten::before {
-  content: "note: ";
-  font-style: normal;
-  font-size: 0.85em;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-}
-
 .anno-card .surfaces { color: var(--ink-faint); font-size: 0.9em; font-family: var(--ko); }
 
 @media (max-width: 34rem) {
