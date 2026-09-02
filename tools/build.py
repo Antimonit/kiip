@@ -589,7 +589,12 @@ def promote_topics(blocks):
 
 
 def build(cfg, srcdir):
-    doc = parse(os.path.join(srcdir, cfg["src"]))
+    # A chapter with no Doc is transcribed entirely into `append`; the empty
+    # block stands in for the title line the parser would have produced.
+    if cfg.get("src"):
+        doc = parse(os.path.join(srcdir, cfg["src"]))
+    else:
+        doc = {"blocks": [{"tag": "p", "runs": []}], "comments": {}}
 
     # ---- annotations -------------------------------------------------
     anchors, anchor_tag = {}, {}

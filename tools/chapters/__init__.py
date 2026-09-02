@@ -2,7 +2,9 @@
 """Chapter registry and the helpers chapter modules are written with.
 
 One module per chapter, named `chNN_slug.py`, each defining a single
-`CHAPTER` dict. They are discovered automatically and ordered by chapter
+`CHAPTER` dict. A chapter with a Google Doc names it in `src` and is built
+from that; a chapter without one leaves `src` out and is transcribed from the
+page photos straight into `append`. They are discovered automatically and ordered by chapter
 number, so adding a chapter means adding a file and nothing else.
 
 Everything in a chapter module is content: its title and tags, its
@@ -59,8 +61,11 @@ def P(text):
     return {"type": "paragraph", "spans": _spans(text)}
 
 
-def B(text):
-    return {"type": "bullet", "spans": _spans(text)}
+def B(text, ordered=False):
+    item = {"type": "bullet", "spans": _spans(text)}
+    if ordered:
+        item["ordered"] = True
+    return item
 
 
 def SRC(text):
@@ -71,6 +76,42 @@ def SRC(text):
 def LABELS(*texts):
     """Short labels printed on a photo or diagram."""
     return {"type": "labels", "items": [_spans(t) for t in texts]}
+
+
+def MARGIN(*texts):
+    """Something written in the margin of the page by hand."""
+    return {"type": "margin", "items": [_spans(t) for t in texts]}
+
+
+def FIG(caption):
+    """A photo on the page, which is not reproduced."""
+    return {"type": "figure", "text": caption}
+
+
+def TABLE(header, rows):
+    return {"type": "table", "header": list(header),
+            "rows": [list(r) for r in rows]}
+
+
+def SPAN(text, columns):
+    """A header cell printed across more than one column."""
+    return {"text": text, "span": columns}
+
+
+def GLOSS(*entries):
+    """The glossary printed in the margin beside an article.
+
+    Each entry is (term, definition) or (term, definition, headword) where
+    the third names the entry the term should open.
+    """
+    out = []
+    for entry in entries:
+        out.append({
+            "term": entry[0],
+            "definition": _spans(entry[1]),
+            "annotation": entry[2] if len(entry) > 2 else None,
+        })
+    return {"type": "glossary", "entries": out}
 
 
 # --- registry ---------------------------------------------------------
