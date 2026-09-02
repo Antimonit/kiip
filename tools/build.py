@@ -314,12 +314,13 @@ def gloss_term(text):
 BLANK = re.compile(r"\(\s*\)|\(\s+[^()]*?\s+\)")
 
 
-def split_blanks(text):
+def split_blanks(text, clear=()):
     out, pos = [], 0
     for m in BLANK.finditer(text):
         if m.start() > pos:
             out.append(text[pos:m.start()])
-        out.append({"blank": m.group(0)[1:-1].strip()})
+        answer = m.group(0)[1:-1].strip()
+        out.append({"blank": "" if answer in clear else answer})
         pos = m.end()
     if pos < len(text):
         out.append(text[pos:])
@@ -399,11 +400,13 @@ def align_translations(blocks, unaligned):
     return blocks
 
 
-def mark_blanks(blocks):
+def mark_blanks(blocks, clear=()):
     """Turn the gaps in the review section into blank spans.
 
     An answer already written into the Doc is carried through as the blank's
-    content, for the page to keep covered until the reader asks for it.
+    content, for the page to keep covered until the reader asks for it. An
+    answer named in the chapter's clearGaps is dropped instead, leaving the
+    gap open again.
     """
     in_review = False
     for b in blocks:
@@ -414,7 +417,7 @@ def mark_blanks(blocks):
         out = []
         for seg in b["spans"]:
             if isinstance(seg, str):
-                out.extend(split_blanks(seg))
+                out.extend(split_blanks(seg, clear))
             else:
                 out.append(seg)
         b["spans"] = out
@@ -732,7 +735,7 @@ def build(cfg, srcdir):
         absorb_handwriting(
             normalize_spans(blocks + copy.deepcopy(cfg.get("append", []))),
             annotations)),
-        unaligned))
+        unaligned), set(cfg.get("clearGaps", ())))
 
     for a in annotations.values():
         a["headword"] = a["headword"].strip()
