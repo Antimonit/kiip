@@ -20,15 +20,15 @@
   var head = document.querySelector(".lesson-head");
   head.appendChild(el("div", "eyebrow", "Chapter " + lesson.number + " · " + lesson.unit));
   head.appendChild(el("h2", null, lesson.title));
-  head.appendChild(el("p", "en", lesson.titleEn));
+  head.appendChild(el("p", "en", lesson.titleEnglish));
 
   /* --- annotation buttons ---------------------------------------- */
 
   var buttons = [];
 
   function annoButton(seg) {
-    var key = seg.a || seg.w;
-    var b = el("button", "anno", seg.w);
+    var key = seg.annotation || seg.word;
+    var b = el("button", "anno", seg.word);
     b.type = "button";
     b.dataset.key = key;
     b.setAttribute("aria-expanded", "false");
@@ -78,12 +78,14 @@
 
     var hw = el("p");
     hw.appendChild(el("span", "headword", a.headword + (a.hanja ? "(" + a.hanja + ")" : "")));
-    if (a.meaning) hw.appendChild(document.createTextNode(" — " + a.meaning));
+    // with no meaning of its own, the note written beside the word stands in
+    var gloss = a.meaning || a.handwritten;
+    if (gloss) hw.appendChild(document.createTextNode(" — " + gloss));
     card.appendChild(hw);
 
-    (a.hanjaList || []).forEach(function (h) {
+    (a.characters || []).forEach(function (h) {
       var line = el("p", "hanja");
-      line.appendChild(el("b", null, h.read ? h.read + "(" + h.char + ")" : h.char));
+      line.appendChild(el("b", null, h.reading ? h.reading + "(" + h.char + ")" : h.char));
       line.appendChild(document.createTextNode(" (" + h.gloss + ")"));
       card.appendChild(line);
     });
@@ -91,6 +93,10 @@
     (a.notes || []).forEach(function (t) {
       card.appendChild(el("p", "usage", t));
     });
+
+    if (a.handwritten && a.meaning) {
+      card.appendChild(el("p", "handwritten", a.handwritten));
+    }
 
     if (a.surfaces && a.surfaces.length) {
       card.appendChild(el("p", "surfaces", "in the text: " + a.surfaces.join(", ")));
@@ -112,13 +118,13 @@
     header.appendChild(el("h3", "sect-title", b.text));
     if (b.topic) {
       var topic = el("p", "sect-topic", b.topic);
-      if (b.transTitle) topic.appendChild(el("span", "en-title", b.transTitle));
+      if (b.titleTranslation) topic.appendChild(el("span", "en-title", b.titleTranslation));
       header.appendChild(topic);
     }
     sec.appendChild(header);
     docEl.appendChild(sec);
     host = sec;
-    if (b.trans) host.appendChild(translationBlock(b.trans));
+    if (b.translation) host.appendChild(translationBlock(b.translation));
   }
 
   function translationBlock(text) {
@@ -131,7 +137,7 @@
   }
 
   (lesson.blocks || []).forEach(function (b) {
-    switch (b.t) {
+    switch (b.type) {
       case "section":
         openSection(b);
         return;
@@ -139,22 +145,22 @@
       case "heading": {
         var h = el(b.level <= 2 ? "h4" : "h5",
                    "sub-title sub-level-" + b.level, b.text);
-        if (b.transTitle) h.appendChild(el("span", "en-title", b.transTitle));
+        if (b.titleTranslation) h.appendChild(el("span", "en-title", b.titleTranslation));
         host.appendChild(h);
-        if (b.trans) host.appendChild(translationBlock(b.trans));
+        if (b.translation) host.appendChild(translationBlock(b.translation));
         return;
       }
 
       /* A paragraph and its translation are one unit: the English follows
          the Korean it renders, rather than the whole section's English
          sitting in a block of its own. */
-      case "p": {
-        var p = fillSpans(el("p", "ko-para" + (b.role ? " is-" + b.role : "")), b.s);
-        if (b.trans) {
+      case "paragraph": {
+        var p = fillSpans(el("p", "ko-para" + (b.role ? " is-" + b.role : "")), b.spans);
+        if (b.translation) {
           var pair = el("div", "para-pair");
           pair.appendChild(p);
           var wrap = el("div", "en-wrap");
-          wrap.appendChild(el("p", "en-para", b.trans));
+          wrap.appendChild(el("p", "en-para", b.translation));
           pair.appendChild(wrap);
           host.appendChild(pair);
         } else {
@@ -164,7 +170,7 @@
       }
 
       case "bullet": {
-        var li = fillSpans(el("li", "ko-bullet"), b.s);
+        var li = fillSpans(el("li", "ko-bullet"), b.spans);
         var prev = host.lastElementChild;
         if (!prev || prev.tagName !== "UL") {
           prev = el("ul", "ko-list");
@@ -174,19 +180,18 @@
         return;
       }
 
-      case "gloss": {
+      case "glossary": {
         var box = el("div", "glossbox");
-        b.items.forEach(function (it) {
+        b.entries.forEach(function (it) {
           var row = el("div", "gloss-row");
           var term = el("div", "gloss-term");
-          if (it.a) {
-            term.appendChild(annoButton({ w: it.term, a: it.a }));
+          if (it.annotation) {
+            term.appendChild(annoButton({ word: it.term, annotation: it.annotation }));
           } else {
             term.appendChild(document.createTextNode(it.term));
           }
-          if (it.en) term.appendChild(el("span", "gloss-en", " " + it.en));
           row.appendChild(term);
-          row.appendChild(fillSpans(el("div", "gloss-def"), it.def));
+          row.appendChild(fillSpans(el("div", "gloss-def"), it.definition));
           box.appendChild(row);
         });
         host.appendChild(box);
@@ -196,10 +201,10 @@
       case "table": {
         var wrapEl = el("div", "table-wrap");
         var t = el("table");
-        if (b.head) {
+        if (b.header) {
           var thead = el("thead");
           var tr = el("tr");
-          b.head.forEach(function (c) {
+          b.header.forEach(function (c) {
             var th = el("th", null, typeof c === "string" ? c : c.text);
             if (c.span) th.colSpan = c.span;
             tr.appendChild(th);
@@ -272,14 +277,14 @@
 
   /* --- chapter-level glosses (annotations anchored on the title) -- */
 
-  if (lesson.chapterGloss && lesson.chapterGloss.length) {
+  if (lesson.chapterGlossary && lesson.chapterGlossary.length) {
     var first = docEl.querySelector("section");
     var box2 = el("div", "glossbox");
-    lesson.chapterGloss.forEach(function (key) {
+    lesson.chapterGlossary.forEach(function (key) {
       var a = lesson.annotations[key] || {};
       var row = el("div", "gloss-row");
       var term = el("div", "gloss-term");
-      term.appendChild(annoButton({ w: key, a: key }));
+      term.appendChild(annoButton({ word: key, annotation: key }));
       row.appendChild(term);
       row.appendChild(el("div", "gloss-def", a.meaning || ""));
       box2.appendChild(row);

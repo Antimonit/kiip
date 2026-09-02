@@ -68,7 +68,7 @@ def as_hanja_line(text):
     """Recognise a standalone hanja-breakdown line."""
     m = re.match(r"^([가-힣])\s*\(([%s])\)\s*%s\s*(.+)$" % (HANJA, DASH), text, re.S)
     if m:
-        return {"read": m.group(1), "char": m.group(2), "gloss": m.group(3).strip()}
+        return {"reading": m.group(1), "char": m.group(2), "gloss": m.group(3).strip()}
     m = re.match(r"^([%s]{1,4})\s*%s\s*(.+)$" % (HANJA, DASH), text, re.S)
     if m:
         return {"char": m.group(1), "gloss": m.group(2).strip()}
@@ -79,8 +79,8 @@ def as_hanja_line(text):
 
 
 def parse_comment(paras):
-    """Turn one Docs comment into {headword, hanja, meaning, hanjaList, notes}."""
-    out = {"headword": None, "hanja": None, "meaning": None, "hanjaList": [], "notes": []}
+    """Turn one Docs comment into {headword, hanja, meaning, characters, notes}."""
+    out = {"headword": None, "hanja": None, "meaning": None, "characters": [], "notes": []}
     rest = list(paras)
 
     first = rest.pop(0) if rest else ""
@@ -89,7 +89,7 @@ def parse_comment(paras):
     if head and re.search(r"[가-힣]", head):
         m = re.match(r"^(.*?)\s+((?:[%s]\s*\([^)]*\)\s*)+)$" % HANJA, head)
         if m:
-            out["hanjaList"] += [{"char": c, "gloss": g.strip()} for c, g in
+            out["characters"] += [{"char": c, "gloss": g.strip()} for c, g in
                                  re.findall(r"([%s])\s*\(([^)]*)\)" % HANJA, m.group(2))]
             head = m.group(1).strip()
         m = re.match(r"^(.*?)\s*[\(（]([%s]+[가-힣]*)[\)）]\s*$" % HANJA, head)
@@ -99,21 +99,21 @@ def parse_comment(paras):
             out["headword"] = head
         pairs, tail = hanja_run(meaning)
         if pairs:
-            out["hanjaList"] += pairs
+            out["characters"] += pairs
             meaning = tail
         out["meaning"] = meaning
     else:
         pairs, tail = hanja_run(first)
         only = hanja_only(first)
         if pairs:
-            out["hanjaList"] += pairs
+            out["characters"] += pairs
             out["meaning"] = tail
         elif only:
-            out["hanjaList"] += only
+            out["characters"] += only
         elif head:
             line = as_hanja_line(first)
             if line:
-                out["hanjaList"].append(line)
+                out["characters"].append(line)
             else:
                 out["meaning"] = first.strip()
         else:
@@ -122,7 +122,7 @@ def parse_comment(paras):
     for p in rest:
         line = as_hanja_line(p)
         if line and len(p) < 160:
-            out["hanjaList"].append(line)
+            out["characters"].append(line)
         else:
             out["notes"].append(p)
     return out
@@ -148,7 +148,7 @@ def merge(into, new):
         elif into.get(k) and new.get(k) and k == "meaning" and new[k] != into[k]:
             label = new.get("headword")
             new["notes"].insert(0, ("%s — %s" % (label, new[k])) if label else new[k])
-    into["hanjaList"] += [h for h in new["hanjaList"] if h not in into["hanjaList"]]
+    into["characters"] += [h for h in new["characters"] if h not in into["characters"]]
     into["notes"] += new["notes"]
     return into
 
@@ -178,7 +178,7 @@ def block_text(block):
     return "".join(r["text"] for r in block["runs"])
 
 
-SKIP_KEYS = {"a", "t", "kind", "slug"}
+SKIP_KEYS = {"annotation", "type", "kind", "slug"}
 
 
 def apply_fixes(tree, fixes, hits):
@@ -217,8 +217,8 @@ def normalize_spans(node):
     """Move whitespace out of annotated words and off the ends of a span list."""
     if isinstance(node, dict):
         for k, v in node.items():
-            if k in ("s", "def", "items", "lines") and isinstance(v, list):
-                node[k] = tidy(v) if k in ("s", "def") else [normalize_spans(x) for x in v]
+            if k in ("spans", "definition", "items", "lines") and isinstance(v, list):
+                node[k] = tidy(v) if k in ("spans", "definition") else [normalize_spans(x) for x in v]
             else:
                 normalize_spans(v)
     elif isinstance(node, list):
@@ -235,11 +235,11 @@ def tidy(segs):
         if isinstance(seg, str):
             out.append(seg)
             continue
-        w = seg["w"]
+        w = seg["word"]
         lead, w, trail = w[:len(w) - len(w.lstrip())], w.strip(), w[len(w.rstrip()):]
         if lead:
             out.append(lead)
-        out.append(dict(seg, w=w))
+        out.append(dict(seg, word=w))
         if trail:
             out.append(trail)
     merged = []
@@ -266,7 +266,7 @@ def spans(block, anno_key):
             else:
                 out.append(text)
         else:
-            out.append({"w": text, "a": key})
+            out.append({"word": text, "annotation": key})
     return [s for s in out if s != ""]
 
 
@@ -309,7 +309,7 @@ def split_blanks(text):
 # A translation comment opens by naming the section, then quotes the body.
 # The body is matched paragraph for paragraph against the prose it translates;
 # anything that is not running prose ends the run.
-PROSE_STOP = {"section", "heading", "gloss", "table", "chart", "verse",
+PROSE_STOP = {"section", "heading", "glossary", "table", "chart", "verse",
               "labels", "figure", "source", "margin", "bullet"}
 
 
@@ -339,9 +339,9 @@ def align_translations(blocks, unaligned):
     for i, b in enumerate(blocks):
         # only a heading or a section carries a whole-section translation;
         # a paragraph's own trans is what this pass produces
-        if b["t"] not in ("section", "heading") or not b.get("trans"):
+        if b["type"] not in ("section", "heading") or not b.get("translation"):
             continue
-        paras = [p.strip() for p in b["trans"].split("\n\n") if p.strip()]
+        paras = [p.strip() for p in b["translation"].split("\n\n") if p.strip()]
         if not paras:
             continue
 
@@ -358,22 +358,22 @@ def align_translations(blocks, unaligned):
 
         targets = []
         for nxt in blocks[i + 1:]:
-            if nxt["t"] == "p" and not nxt.get("role"):
+            if nxt["type"] == "paragraph" and not nxt.get("role"):
                 targets.append(nxt)
-            elif nxt["t"] in PROSE_STOP or nxt["t"] == "p":
+            elif nxt["type"] in PROSE_STOP or nxt["type"] == "paragraph":
                 break
 
         if title:
             title = clean_trans_title(title, b.get("text") or "", b.get("topic") or "")
             if title:
-                b["transTitle"] = title
+                b["titleTranslation"] = title
 
         if targets and len(body) == len(targets):
             for target, english in zip(targets, body):
-                target["trans"] = english
-            del b["trans"]
+                target["translation"] = english
+            del b["translation"]
         else:
-            b["trans"] = "\n\n".join(body)
+            b["translation"] = "\n\n".join(body)
             unaligned.append((b.get("text") or b.get("topic") or "?",
                               len(body), len(targets)))
     return blocks
@@ -387,17 +387,61 @@ def mark_blanks(blocks):
     """
     in_review = False
     for b in blocks:
-        if b["t"] == "section":
+        if b["type"] == "section":
             in_review = b["kind"] == "review"
-        if not in_review or b["t"] not in ("p", "bullet"):
+        if not in_review or b["type"] not in ("paragraph", "bullet"):
             continue
         out = []
-        for seg in b["s"]:
+        for seg in b["spans"]:
             if isinstance(seg, str):
                 out.extend(split_blanks(seg))
             else:
                 out.append(seg)
-        b["s"] = out
+        b["spans"] = out
+    return blocks
+
+
+LABEL_ENGLISH = re.compile(r"^(.+?)\s*\(([A-Za-z][^()]*)\)\s*$")
+
+
+def absorb_handwriting(blocks, annotations):
+    """Move a handwritten English gloss off the page and into its entry.
+
+    The glosses written beside a margin term, or in brackets after a diagram
+    label, are notes to self rather than part of the textbook, so they belong
+    behind the word instead of printed next to it. A word with no entry yet
+    gets one, so the gloss stays reachable.
+    """
+    def stow(key, headword, english):
+        entry = annotations.get(key)
+        if entry is None:
+            entry = annotations[key] = {
+                "headword": headword, "hanja": None, "meaning": None,
+                "characters": [], "notes": [], "surfaces": [],
+            }
+        if english and not entry.get("handwritten"):
+            entry["handwritten"] = english
+        return key
+
+    for b in blocks:
+        if b["type"] == "glossary":
+            for entry in b["entries"]:
+                english = entry.pop("handwritten", None)
+                if not english:
+                    continue
+                entry["annotation"] = stow(entry.get("annotation") or entry["term"],
+                                           entry["term"], english)
+
+        elif b["type"] == "labels":
+            for k, item in enumerate(b["items"]):
+                if len(item) != 1 or not isinstance(item[0], str):
+                    continue
+                m = LABEL_ENGLISH.match(item[0])
+                if not m:
+                    continue
+                term, english = m.group(1).strip(), m.group(2).strip()
+                b["items"][k] = [{"word": term,
+                                  "annotation": stow(term, term, english)}]
     return blocks
 
 
@@ -411,15 +455,15 @@ def promote_topics(blocks):
     out = []
     waiting = None
     for b in blocks:
-        if waiting is not None and b["t"] == "heading":
+        if waiting is not None and b["type"] == "heading":
             waiting["topic"] = b["text"]
-            if b.get("trans"):
-                waiting["trans"] = b["trans"]
+            if b.get("translation"):
+                waiting["translation"] = b["translation"]
             waiting = None
             continue
-        if b["t"] == "section":
+        if b["type"] == "section":
             waiting = b if b["kind"] in PROMOTE_TOPIC else None
-        elif b["t"] not in ("labels", "margin", "figure", "source"):
+        elif b["type"] not in ("labels", "margin", "figure", "source"):
             waiting = None
         out.append(b)
     return out
@@ -515,30 +559,30 @@ def build(cfg, srcdir):
             texts = [block_text(g).strip() for g in group]
             rich = [spans(g, anno_key) for g in group]
             if name == "heading":
-                emit({"t": "heading", "level": 3, "text": texts[0]})
+                emit({"type": "heading", "level": 3, "text": texts[0]})
             elif name == "labels":
-                emit({"t": "labels", "items": rich})
+                emit({"type": "labels", "items": rich})
             elif name == "margin":
-                emit({"t": "margin", "items": rich})
+                emit({"type": "margin", "items": rich})
             elif name == "figure":
-                emit({"t": "figure",
+                emit({"type": "figure",
                       "text": " ".join(t.lstrip("^• ").strip() for t in texts)})
             elif name == "source":
-                emit({"t": "source", "text": " ".join(texts)})
+                emit({"type": "source", "text": " ".join(texts)})
             elif name == "verse":
-                emit({"t": "verse", "lines": rich})
+                emit({"type": "verse", "lines": rich})
             elif name == "table2":
                 rows = [re.split(r"\s{2,}|\t", t, maxsplit=1) for t in texts]
-                emit({"t": "table", "rows": [[c.strip() for c in r] for r in rows]})
+                emit({"type": "table", "rows": [[c.strip() for c in r] for r in rows]})
             elif name == "chart":
                 c = cfg["chart"]
-                emit({"t": "chart", "caption": c["caption"], "unit": c["unit"],
+                emit({"type": "chart", "caption": c["caption"], "unit": c["unit"],
                       "rows": [list(r) for r in c["rows"]]})
             elif name == "kinship":
                 for t in cfg["kinship"]:
-                    emit({"t": "heading", "level": 3, "text": t["title"]})
-                    emit({"t": "table", "rows": [list(r) for r in t["rows"]],
-                          "head": ["가족", "호칭"]})
+                    emit({"type": "heading", "level": 3, "text": t["title"]})
+                    emit({"type": "table", "rows": [list(r) for r in t["rows"]],
+                          "header": ["가족", "호칭"]})
             i = end + 1
             continue
 
@@ -548,15 +592,15 @@ def build(cfg, srcdir):
             kind = SPECIAL.get(text)
             if kind:
                 section_kind = kind
-                emit({"t": "section", "kind": kind, "text": text})
+                emit({"type": "section", "kind": kind, "text": text})
             elif tag == "h1":
                 section_kind = "part"
-                emit({"t": "section", "kind": "part", "text": text})
+                emit({"type": "section", "kind": "part", "text": text})
             else:
-                b = {"t": "heading", "level": int(tag[1]), "text": text}
+                b = {"type": "heading", "level": int(tag[1]), "text": text}
                 tr = run_translation(block)
                 if tr:
-                    b["trans"] = tr
+                    b["translation"] = tr
                 emit(b)
             i += 1
             continue
@@ -565,14 +609,15 @@ def build(cfg, srcdir):
             cells = block["rows"]
             if len(cells) == 1 and len(cells[0]) == 1:
                 inner = cells[0][0]
-                items, j = [], 0
+                entries, j = [], 0
                 while j < len(inner):
-                    term, en = gloss_term(block_text(inner[j]).strip())
+                    term, handwritten = gloss_term(block_text(inner[j]).strip())
                     definition = spans(inner[j + 1], anno_key) if j + 1 < len(inner) else []
-                    key = first_key(inner[j], anno_key)
-                    items.append({"term": term, "en": en, "def": definition, "a": key})
+                    entries.append({"term": term, "handwritten": handwritten,
+                                    "definition": definition,
+                                    "annotation": first_key(inner[j], anno_key)})
                     j += 2
-                emit({"t": "gloss", "items": items})
+                emit({"type": "glossary", "entries": entries})
             else:
                 rows = [[" ".join(block_text(bl).strip() for bl in cell) for cell in row]
                         for row in cells]
@@ -582,7 +627,7 @@ def build(cfg, srcdir):
                 head = list(rows[0])
                 if head and len(head) < width:
                     head[0] = {"text": head[0], "span": width - len(head) + 1}
-                emit({"t": "table", "head": head, "rows": rows[1:]})
+                emit({"type": "table", "header": head, "rows": rows[1:]})
             i += 1
             continue
 
@@ -591,7 +636,7 @@ def build(cfg, srcdir):
             nxt = doc["blocks"][i + 1]
             nxt_text = block_text(nxt).strip()
             if nxt["tag"] == "p" and not nxt_text.startswith("•"):
-                items = []
+                entries = []
                 while i < n:
                     b = doc["blocks"][i]
                     t = block_text(b).strip()
@@ -602,30 +647,30 @@ def build(cfg, srcdir):
                     d = doc["blocks"][i + 1]
                     if d["tag"] != "p" or block_text(d).strip().startswith("•"):
                         break
-                    term, en = gloss_term(t)
-                    key = first_key(b, anno_key)
-                    items.append({"term": term, "en": en,
-                                  "def": spans(d, anno_key), "a": key})
+                    term, handwritten = gloss_term(t)
+                    entries.append({"term": term, "handwritten": handwritten,
+                                    "definition": spans(d, anno_key),
+                                    "annotation": first_key(b, anno_key)})
                     i += 2
-                emit({"t": "gloss", "items": items})
+                emit({"type": "glossary", "entries": entries})
                 continue
 
         if tag == "li" or bulleted:
-            emit({"t": "bullet", "s": spans(block, anno_key)})
+            emit({"type": "bullet", "spans": spans(block, anno_key)})
             i += 1
             continue
 
         if section_kind == "goals" and re.match(r"^\d+\.\s", text):
-            emit({"t": "bullet", "s": spans(block, anno_key)})
+            emit({"type": "bullet", "spans": spans(block, anno_key)})
             i += 1
             continue
 
-        b = {"t": "p", "s": spans(block, anno_key)}
+        b = {"type": "paragraph", "spans": spans(block, anno_key)}
         if text.startswith("★"):
             b["role"] = "prompt"
         tr = run_translation(block)
         if tr:
-            b["trans"] = tr
+            b["translation"] = tr
         emit(b)
         i += 1
 
@@ -638,23 +683,30 @@ def build(cfg, srcdir):
     fixes = list(cfg["fixes"]) + [("  ", " ", None)]
     shown = {f[0]: f[3] for f in fixes if len(f) > 3}
     blocks = apply_fixes(blocks, fixes, hits)
-    # appended blocks are transcribed by hand, so they skip the corrections
-    unaligned = []
-    blocks = mark_blanks(align_translations(promote_topics(
-        normalize_spans(blocks + copy.deepcopy(cfg.get("append", [])))),
-        unaligned))
     annotations = apply_fixes(annotations, fixes, hits)
 
+    # entries written by hand in the chapter module, before the handwriting
+    # on the page is folded in, so an entry can be given a proper breakdown
+    # and still keep the note that was scribbled beside the word
     for key, extra in cfg.get("extraAnnotations", {}).items():
         annotations[key] = {
             "headword": extra.get("headword", key),
             "hanja": extra.get("hanja"),
             "meaning": extra.get("meaning"),
-            "hanjaList": [{"char": c, "read": r, "gloss": g}
-                          for c, r, g in extra.get("hanjaList", [])],
+            "characters": [{"char": c, "reading": r, "gloss": g}
+                           for c, r, g in extra.get("characters", [])],
             "notes": list(extra.get("notes", [])),
             "surfaces": list(extra.get("surfaces", [])),
         }
+
+    # appended blocks are transcribed by hand, so they skip the corrections
+    unaligned = []
+    blocks = mark_blanks(align_translations(promote_topics(
+        absorb_handwriting(
+            normalize_spans(blocks + copy.deepcopy(cfg.get("append", []))),
+            annotations)),
+        unaligned))
+
     for a in annotations.values():
         a["headword"] = a["headword"].strip()
 
@@ -672,8 +724,8 @@ def build(cfg, srcdir):
 
     lesson = {
         "number": cfg["number"], "unit": cfg["unit"], "title": cfg["title"],
-        "titleEn": cfg["titleEn"], "tags": cfg["tags"],
-        "chapterGloss": orphans,
+        "titleEnglish": cfg["titleEn"], "tags": cfg["tags"],
+        "chapterGlossary": orphans,
         "blocks": blocks, "annotations": annotations, "notes": notes,
     }
     return lesson, unused, unaligned

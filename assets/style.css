@@ -510,7 +510,6 @@ h5.sub-title { font-size: calc(0.97rem * var(--scale)); color: var(--ink-soft); 
 .gloss-row:first-child { border-top: 0; }
 
 .gloss-term { font-family: var(--ko); font-weight: 600; }
-.gloss-en { font-weight: 400; color: var(--ink-faint); font-size: 0.85em; }
 .gloss-def { font-family: var(--ko); color: var(--ink-soft); word-break: keep-all; }
 
 @media (max-width: 34rem) {
@@ -719,6 +718,19 @@ button.anno[aria-expanded="true"] {
 .anno-card .hanja { font-family: var(--ko); color: var(--ink-soft); }
 .anno-card .hanja b { color: var(--ink); font-weight: 600; }
 .anno-card .usage { color: var(--ink-soft); white-space: pre-line; }
+.anno-card .handwritten {
+  font-style: italic;
+  color: var(--ink-faint);
+}
+
+.anno-card .handwritten::before {
+  content: "note: ";
+  font-style: normal;
+  font-size: 0.85em;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
 .anno-card .surfaces { color: var(--ink-faint); font-size: 0.9em; font-family: var(--ko); }
 
 @media (max-width: 34rem) {

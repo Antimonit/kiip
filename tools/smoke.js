@@ -67,10 +67,17 @@ function lintDataPurity(file) {
   if (/<[a-z/][^>]*>/.test(raw)) {
     problems.push("markup in " + file + " — text and notes should be plain data");
   }
-  const tagLike = raw.match(/"t":\s*"(h[1-6]|div|span|b|i|em|strong)"/g);
+  const tagLike = raw.match(/"type":\s*"(h[1-6]|div|span|b|i|em|strong)"/g);
   if (tagLike) {
     problems.push("HTML tag names as block types in " + file + ": " +
                   [...new Set(tagLike)].join(", "));
+  }
+  const cryptic = ['"t":', '"s":', '"trans":', '"transTitle":', '"def":',
+                   '"a":', '"w":', '"hanjaList":'].filter(function (k) {
+    return raw.indexOf(k) !== -1;
+  });
+  if (cryptic.length) {
+    problems.push("abbreviated keys in " + file + ": " + cryptic.join(" "));
   }
   return problems;
 }
@@ -192,6 +199,11 @@ function checkChapter(file) {
     }
     marked.click();
   }
+
+  // no handwritten English is printed beside a term; it belongs in the entry
+  d.querySelectorAll(".gloss-en").forEach(function () {
+    problems.push("a handwritten gloss is still printed inline");
+  });
 
   // a real parenthetical must not be mistaken for a gap
   if (d.body.textContent.indexOf("(2020년 기준)") === -1 &&

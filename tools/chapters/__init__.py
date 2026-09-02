@@ -35,7 +35,7 @@ def _spans(text):
             continue
         if part.startswith("{"):
             surface, _, key = part[1:-1].partition("|")
-            out.append({"w": surface, "a": key or surface})
+            out.append({"word": surface, "annotation": key or surface})
         else:
             out.append(part)
     return out
@@ -43,29 +43,29 @@ def _spans(text):
 
 def SECT(kind, text):
     """A section of the given kind — see SPECIAL in tools/build.py."""
-    return {"t": "section", "kind": kind, "text": text}
+    return {"type": "section", "kind": kind, "text": text}
 
 
 def H(level, text):
-    return {"t": "heading", "level": level, "text": text}
+    return {"type": "heading", "level": level, "text": text}
 
 
 def P(text):
-    return {"t": "p", "s": _spans(text)}
+    return {"type": "paragraph", "spans": _spans(text)}
 
 
 def B(text):
-    return {"t": "bullet", "s": _spans(text)}
+    return {"type": "bullet", "spans": _spans(text)}
 
 
 def SRC(text):
     """A source or citation line."""
-    return {"t": "source", "text": text}
+    return {"type": "source", "text": text}
 
 
 def LABELS(*texts):
     """Short labels printed on a photo or diagram."""
-    return {"t": "labels", "items": [_spans(t) for t in texts]}
+    return {"type": "labels", "items": [_spans(t) for t in texts]}
 
 
 # --- registry ---------------------------------------------------------
