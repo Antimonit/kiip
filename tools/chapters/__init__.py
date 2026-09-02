@@ -11,6 +11,11 @@ inflected, and any blocks transcribed from the page photos. Nothing here
 describes appearance — blocks say what a thing is, and assets/style.css
 decides how it looks.
 
+`english` holds translations written by hand, keyed by the heading of the
+article they translate: {"title": "...", "paragraphs": [...]} with one
+paragraph per Korean paragraph. Chapters transcribed from the Doc may already
+carry translations as comments on their headings; this is for the rest.
+
 `fixes` are deliberately per-chapter and deliberately visible: each one is
 listed on the page it applies to, and each is meant to be reviewed against
 the photos and then retired by correcting the transcription upstream. A

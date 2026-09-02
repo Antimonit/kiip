@@ -351,31 +351,41 @@ def clean_trans_title(title, *korean):
     return t or None
 
 
-def align_translations(blocks, unaligned):
+def align_translations(blocks, unaligned, authored=None):
     """Attach each English paragraph to the Korean paragraph it translates.
 
-    Falls back to leaving the whole translation on the heading when the two
-    do not divide the same way, rather than pairing them up wrongly.
+    A translation either came from a comment left on the heading in the Doc,
+    or was written into the chapter module under `english`. Falls back to
+    leaving the whole translation on the heading when the two do not divide
+    the same way, rather than pairing them up wrongly.
     """
+    authored = authored or {}
     for i, b in enumerate(blocks):
         # only a heading or a section carries a whole-section translation;
-        # a paragraph's own trans is what this pass produces
-        if b["type"] not in ("section", "heading") or not b.get("translation"):
-            continue
-        paras = [p.strip() for p in b["translation"].split("\n\n") if p.strip()]
-        if not paras:
+        # a paragraph's own translation is what this pass produces
+        if b["type"] not in ("section", "heading"):
             continue
 
-        quoted = next((k for k, p in enumerate(paras)
-                       if p[0] in "\"\u201c"), None)
-        if quoted is not None:
-            title = " ".join(paras[:quoted]) or None
-            body = paras[quoted:]
-        elif len(paras) > 1 and len(paras[0]) < 90:
-            title, body = paras[0], paras[1:]
+        if b.get("translation"):
+            paras = [p.strip() for p in b["translation"].split("\n\n") if p.strip()]
+            if not paras:
+                continue
+            quoted = next((k for k, p in enumerate(paras)
+                           if p[0] in "\"\u201c"), None)
+            if quoted is not None:
+                title = " ".join(paras[:quoted]) or None
+                body = paras[quoted:]
+            elif len(paras) > 1 and len(paras[0]) < 90:
+                title, body = paras[0], paras[1:]
+            else:
+                title, body = None, paras
+            body = [strip_quotes(p) for p in body]
+        elif b.get("text") in authored:
+            entry = authored[b["text"]]
+            title = entry.get("title")
+            body = list(entry["paragraphs"])
         else:
-            title, body = None, paras
-        body = [strip_quotes(p) for p in body]
+            continue
 
         targets = []
         for nxt in blocks[i + 1:]:
@@ -392,7 +402,7 @@ def align_translations(blocks, unaligned):
         if targets and len(body) == len(targets):
             for target, english in zip(targets, body):
                 target["translation"] = english
-            del b["translation"]
+            b.pop("translation", None)
         else:
             b["translation"] = "\n\n".join(body)
             unaligned.append((b.get("text") or b.get("topic") or "?",
@@ -816,7 +826,7 @@ def build(cfg, srcdir):
         absorb_handwriting(
             normalize_spans(blocks + copy.deepcopy(cfg.get("append", []))),
             annotations)),
-        unaligned), unpaired), set(cfg.get("clearGaps", ())))
+        unaligned, cfg.get("english")), unpaired), set(cfg.get("clearGaps", ())))
 
     for a in annotations.values():
         a["headword"] = a["headword"].strip()
