@@ -375,17 +375,34 @@ h5.sub-title { font-size: calc(0.97rem * var(--scale)); color: var(--ink-soft); 
 .para-pair .row { display: inline; }
 .para-pair .en { display: none; }
 
+/* The second column opens from nothing, so the Korean narrows and rewraps
+   as the English arrives rather than being re-laid-out in one jump. The
+   row must already be a grid for that to animate, which is why the layout
+   and the opening are two classes. */
+
 .para-pair.is-split .row {
   display: grid;
-  grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
-  gap: 0 1.1rem;
-  align-items: start;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 0fr);
+  column-gap: 0;
+  transition: grid-template-columns 0.3s ease, column-gap 0.3s ease;
 }
 
-.para-pair.is-split .ko { display: block; padding: 0.5rem 0; }
+.para-pair.is-split.is-open .row {
+  grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
+  column-gap: 1.1rem;
+}
 
+.para-pair.is-split .ko {
+  display: block;
+  padding: 0.5rem 0;
+  animation: ko-settle 0.3s ease both;
+}
+
+/* the cell fills the row, so the tint runs unbroken down the column even
+   where the Korean sentence is the taller of the two */
 .para-pair.is-split .en {
   display: block;
+  overflow: hidden;
   font-family: var(--ui);
   font-size: calc(0.94rem * var(--aux-scale));
   line-height: 1.7;
@@ -394,8 +411,11 @@ h5.sub-title { font-size: calc(0.97rem * var(--scale)); color: var(--ink-soft); 
   border: 1px solid var(--en-edge);
   border-bottom: 0;
   padding: 0.5rem 0.8rem;
-  animation: en-appear 0.22s ease both;
+  opacity: 0;
+  transition: opacity 0.22s ease 0.06s;
 }
+
+.para-pair.is-split.is-open .en { opacity: 1; }
 
 /* the tint reads as one column per paragraph, closed top and bottom */
 .para-pair.is-split .row:last-child .en { border-bottom: 1px solid var(--en-edge); }
@@ -403,9 +423,9 @@ h5.sub-title { font-size: calc(0.97rem * var(--scale)); color: var(--ink-soft); 
 .para-pair.is-split .row:last-child .en { border-radius: 0 0 5px 5px; }
 .para-pair.is-split .row:only-child .en { border-radius: 5px; }
 
-@keyframes en-appear {
-  from { opacity: 0; transform: translateX(-0.4rem); }
-  to { opacity: 1; transform: none; }
+@keyframes ko-settle {
+  from { opacity: 0.4; }
+  to { opacity: 1; }
 }
 
 /* too narrow for two columns: the row folds, and each translation becomes
@@ -421,7 +441,9 @@ h5.sub-title { font-size: calc(0.97rem * var(--scale)); color: var(--ink-soft); 
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .para-pair.is-split .en { animation: none; }
+  .para-pair.is-split .row,
+  .para-pair.is-split .en { transition: none; }
+  .para-pair.is-split .ko { animation: none; }
 }
 
 /* the control that turns an article side by side */

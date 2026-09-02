@@ -343,27 +343,51 @@
     return found;
   }
 
+  var OPEN_MS = 300;   // must match the transition in assets/style.css
+
+  function still() {
+    return window.matchMedia &&
+      window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  }
+
+  /* Two steps, because a row has to be a grid before its columns can be
+     animated: the layout is applied with the second column at zero width,
+     and opening it on a later frame is what the eye follows. */
+  function setSplit(run, button, on) {
+    button.setAttribute("aria-pressed", String(on));
+
+    if (still()) {
+      run.forEach(function (pair) {
+        pair.classList.toggle("is-split", on);
+        pair.classList.toggle("is-open", on);
+      });
+      return;
+    }
+
+    if (on) {
+      run.forEach(function (pair) { pair.classList.add("is-split"); });
+      requestAnimationFrame(function () {
+        requestAnimationFrame(function () {
+          run.forEach(function (pair) { pair.classList.add("is-open"); });
+        });
+      });
+    } else {
+      run.forEach(function (pair) { pair.classList.remove("is-open"); });
+      window.setTimeout(function () {
+        run.forEach(function (pair) {
+          if (!pair.classList.contains("is-open")) pair.classList.remove("is-split");
+        });
+      }, OPEN_MS);
+    }
+  }
+
   runs().forEach(function (run) {
     var b = el("button", "split-toggle", "Side by side");
     b.type = "button";
     b.setAttribute("aria-pressed", "false");
-
     b.addEventListener("click", function () {
-      var on = b.getAttribute("aria-pressed") !== "true";
-      var apply = function () {
-        run.forEach(function (pair) { pair.classList.toggle("is-split", on); });
-        b.setAttribute("aria-pressed", String(on));
-      };
-      // where the browser can morph the reflow, let it; the columns fade in
-      // either way
-      if (document.startViewTransition &&
-          !window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
-        document.startViewTransition(apply);
-      } else {
-        apply();
-      }
+      setSplit(run, b, b.getAttribute("aria-pressed") !== "true");
     });
-
     run[0].parentNode.insertBefore(b, run[0]);
   });
 

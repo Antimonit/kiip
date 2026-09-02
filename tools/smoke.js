@@ -157,7 +157,7 @@ function checkChapter(file) {
         problems.push("a row has no Korean");
       }
     });
-    if (pair.classList.contains("is-split")) {
+    if (pair.classList.contains("is-split") || pair.classList.contains("is-open")) {
       problems.push("a paragraph starts side by side");
     }
   });
@@ -187,8 +187,13 @@ function checkChapter(file) {
       problems.push("the control did not report being on");
     }
     toggles[0].click();
-    if (d.querySelectorAll(".para-pair.is-split").length) {
+    // is-split is dropped once the closing transition has run; is-open is
+    // the state the control actually reports
+    if (d.querySelectorAll(".para-pair.is-open").length) {
       problems.push("the control did not switch back");
+    }
+    if (toggles[0].getAttribute("aria-pressed") !== "false") {
+      problems.push("the control did not report being off");
     }
   }
 
