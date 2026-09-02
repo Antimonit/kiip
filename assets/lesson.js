@@ -343,17 +343,22 @@
     return found;
   }
 
-  var FADE_MS = 150;   // must match the transition in assets/style.css
+  var FADE_MS = 150;     // must match the opacity transition in style.css
+  var RESIZE_MS = 260;   // must match the height transition in style.css
 
   function still() {
     return window.matchMedia &&
       window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   }
 
-  /* Fade through: the layout changes while the paragraph is invisible, so
-     the reflow is never seen. Nothing about going from a paragraph to a
-     column of sentences can be interpolated, and pretending otherwise only
-     drew attention to the jump. */
+  /* Fade through, and animate the height the change costs.
+  
+     Nothing about turning a paragraph into a column of sentences can be
+     interpolated, so the paragraph fades out, changes layout while it cannot
+     be seen, and fades back. But the change also makes the paragraph taller
+     or shorter, and left alone that moves everything below it in one frame.
+     So the height is measured before and after and animated between the two,
+     which is the only part of this that the eye can actually follow. */
   function setSplit(run, button, on) {
     button.setAttribute("aria-pressed", String(on));
 
@@ -366,8 +371,34 @@
 
     if (still()) return swap();
 
-    run.forEach(function (pair) { pair.classList.add("is-fading"); });
-    window.setTimeout(swap, FADE_MS);
+    var before = run.map(function (pair) {
+      return pair.getBoundingClientRect().height;
+    });
+
+    run.forEach(function (pair, i) {
+      pair.style.height = before[i] + "px";
+      pair.classList.add("is-fading");
+    });
+
+    window.setTimeout(function () {
+      run.forEach(function (pair, i) {
+        pair.classList.toggle("is-split", on);
+
+        pair.style.height = "auto";
+        var after = pair.getBoundingClientRect().height;
+
+        pair.style.height = before[i] + "px";
+        void pair.offsetHeight;          // commit the starting height
+        pair.classList.add("is-resizing");
+        pair.style.height = after + "px";
+        pair.classList.remove("is-fading");
+
+        window.setTimeout(function () {
+          pair.classList.remove("is-resizing");
+          pair.style.height = "";
+        }, RESIZE_MS);
+      });
+    }, FADE_MS);
   }
 
   runs().forEach(function (run) {

@@ -383,6 +383,13 @@ h5.sub-title { font-size: calc(0.97rem * var(--scale)); color: var(--ink-soft); 
 .para-pair { transition: opacity 0.15s ease; }
 .para-pair.is-fading { opacity: 0; }
 
+/* while the height is being animated the paragraph is clipped, so growing
+   content does not spill past the box it is growing into */
+.para-pair.is-resizing {
+  overflow: hidden;
+  transition: opacity 0.15s ease, height 0.26s ease;
+}
+
 /* Even columns. Giving the English the wider half left it short of the row,
    which the cell then had to pad out; at 1:1 it wraps to about the depth the
    Korean takes and the two sit level. */
@@ -428,7 +435,7 @@ h5.sub-title { font-size: calc(0.97rem * var(--scale)); color: var(--ink-soft); 
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .para-pair { transition: none; }
+  .para-pair, .para-pair.is-resizing { transition: none; }
 }
 
 /* the control that turns an article side by side */

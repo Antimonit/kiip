@@ -26,9 +26,10 @@ function report(name, problems, stats) {
   }
 }
 
-/* the toggle changes layout after its fade, so the checks have to wait for
-   it; comfortably longer than the 150ms in assets/style.css */
-const SETTLE = 300;
+/* the toggle changes layout after its fade and then animates the height, so
+   the checks have to wait it out; comfortably longer than the 150ms fade plus
+   the 260ms resize in assets/style.css */
+const SETTLE = 550;
 const settle = () => new Promise(function (r) { setTimeout(r, SETTLE); });
 
 function read(...parts) {
@@ -179,6 +180,9 @@ async function checkChapter(file) {
     });
     if (pair.classList.contains("is-split")) {
       problems.push("a paragraph starts side by side");
+    }
+    if (pair.style.height) {
+      problems.push("a paragraph was left with a measured height on it");
     }
   });
 
