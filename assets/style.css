@@ -30,6 +30,8 @@
   --accent-soft: #dbeceb;
   --accent-ink: #12403e;
   --mark: #f2e3b6;
+  --en-surface: #edf4f3;
+  --en-edge: #cfe4e1;
   --anno: #d3e7e5;
   --anno-hover: #b9dcd8;
   --anno-open: #f2e3b6;
@@ -57,6 +59,8 @@
     --accent-soft: #1c3a38;
     --accent-ink: #a9e2dc;
     --mark: #4c3f1c;
+    --en-surface: #1a2523;
+    --en-edge: #27403c;
     --anno: #21433f;
     --anno-hover: #2c5852;
     --anno-open: #4c3f1c;
@@ -374,6 +378,7 @@ h5.sub-title { font-size: calc(0.97rem * var(--scale)); color: var(--ink-soft); 
 
 .en-wrap > * {
   overflow: hidden;
+  min-height: 0;
   visibility: hidden;
   opacity: 0;
   transition: visibility 0s 0.18s, opacity 0.14s ease;
@@ -391,13 +396,20 @@ h5.sub-title { font-size: calc(0.97rem * var(--scale)); color: var(--ink-soft); 
   .en-wrap, .en-wrap > * { transition-duration: 0s; }
 }
 
+/* The translation is a different layer of the page, not an aside to the
+   paragraph, so it sits on its own tinted surface. It has to read as
+   distinct from an annotation card too, which is why that one is a raised
+   white card with an accent edge and this is a recessed panel. */
+
 .en-para {
   font-size: calc(0.98rem * var(--aux-scale));
-  line-height: 1.65;
+  line-height: 1.7;
   color: var(--ink-soft);
+  background: var(--en-surface);
+  border: 1px solid var(--en-edge);
+  border-radius: 5px;
+  padding: 0.7rem 0.9rem;
   margin: 0;
-  padding-left: 0.9rem;
-  border-left: 2px solid var(--accent-soft);
 }
 
 /* A quiet disclosure rather than a button: a caret and a label, no chrome,
