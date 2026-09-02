@@ -343,42 +343,31 @@
     return found;
   }
 
-  var OPEN_MS = 300;   // must match the transition in assets/style.css
+  var FADE_MS = 150;   // must match the transition in assets/style.css
 
   function still() {
     return window.matchMedia &&
       window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   }
 
-  /* Two steps, because a row has to be a grid before its columns can be
-     animated: the layout is applied with the second column at zero width,
-     and opening it on a later frame is what the eye follows. */
+  /* Fade through: the layout changes while the paragraph is invisible, so
+     the reflow is never seen. Nothing about going from a paragraph to a
+     column of sentences can be interpolated, and pretending otherwise only
+     drew attention to the jump. */
   function setSplit(run, button, on) {
     button.setAttribute("aria-pressed", String(on));
 
-    if (still()) {
+    var swap = function () {
       run.forEach(function (pair) {
         pair.classList.toggle("is-split", on);
-        pair.classList.toggle("is-open", on);
+        pair.classList.remove("is-fading");
       });
-      return;
-    }
+    };
 
-    if (on) {
-      run.forEach(function (pair) { pair.classList.add("is-split"); });
-      requestAnimationFrame(function () {
-        requestAnimationFrame(function () {
-          run.forEach(function (pair) { pair.classList.add("is-open"); });
-        });
-      });
-    } else {
-      run.forEach(function (pair) { pair.classList.remove("is-open"); });
-      window.setTimeout(function () {
-        run.forEach(function (pair) {
-          if (!pair.classList.contains("is-open")) pair.classList.remove("is-split");
-        });
-      }, OPEN_MS);
-    }
+    if (still()) return swap();
+
+    run.forEach(function (pair) { pair.classList.add("is-fading"); });
+    window.setTimeout(swap, FADE_MS);
   }
 
   runs().forEach(function (run) {

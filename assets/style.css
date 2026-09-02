@@ -375,28 +375,24 @@ h5.sub-title { font-size: calc(0.97rem * var(--scale)); color: var(--ink-soft); 
 .para-pair .row { display: inline; }
 .para-pair .en { display: none; }
 
-/* The second column opens from nothing, so the Korean narrows and rewraps
-   as the English arrives rather than being re-laid-out in one jump. The
-   row must already be a grid for that to animate, which is why the layout
-   and the opening are two classes. */
+/* Going between the two layouts means re-flowing the sentences of a
+   paragraph into a column, which cannot be interpolated — animating around
+   it only decorated the jump. So the paragraph fades out, changes layout
+   while it cannot be seen, and fades back. */
 
+.para-pair { transition: opacity 0.15s ease; }
+.para-pair.is-fading { opacity: 0; }
+
+/* Even columns. Giving the English the wider half left it short of the row,
+   which the cell then had to pad out; at 1:1 it wraps to about the depth the
+   Korean takes and the two sit level. */
 .para-pair.is-split .row {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(0, 0fr);
-  column-gap: 0;
-  transition: grid-template-columns 0.3s ease, column-gap 0.3s ease;
-}
-
-.para-pair.is-split.is-open .row {
-  grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
   column-gap: 1.1rem;
 }
 
-.para-pair.is-split .ko {
-  display: block;
-  padding: 0.5rem 0;
-  animation: ko-settle 0.3s ease both;
-}
+.para-pair.is-split .ko { display: block; padding: 0.5rem 0; }
 
 /* the cell fills the row, so the tint runs unbroken down the column even
    where the Korean sentence is the taller of the two */
@@ -411,22 +407,13 @@ h5.sub-title { font-size: calc(0.97rem * var(--scale)); color: var(--ink-soft); 
   border: 1px solid var(--en-edge);
   border-bottom: 0;
   padding: 0.5rem 0.8rem;
-  opacity: 0;
-  transition: opacity 0.22s ease 0.06s;
 }
-
-.para-pair.is-split.is-open .en { opacity: 1; }
 
 /* the tint reads as one column per paragraph, closed top and bottom */
 .para-pair.is-split .row:last-child .en { border-bottom: 1px solid var(--en-edge); }
 .para-pair.is-split .row:first-child .en { border-radius: 5px 5px 0 0; }
 .para-pair.is-split .row:last-child .en { border-radius: 0 0 5px 5px; }
 .para-pair.is-split .row:only-child .en { border-radius: 5px; }
-
-@keyframes ko-settle {
-  from { opacity: 0.4; }
-  to { opacity: 1; }
-}
 
 /* too narrow for two columns: the row folds, and each translation becomes
    its own panel under the sentence it renders */
@@ -441,9 +428,7 @@ h5.sub-title { font-size: calc(0.97rem * var(--scale)); color: var(--ink-soft); 
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .para-pair.is-split .row,
-  .para-pair.is-split .en { transition: none; }
-  .para-pair.is-split .ko { animation: none; }
+  .para-pair { transition: none; }
 }
 
 /* the control that turns an article side by side */

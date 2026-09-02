@@ -26,6 +26,11 @@ function report(name, problems, stats) {
   }
 }
 
+/* the toggle changes layout after its fade, so the checks have to wait for
+   it; comfortably longer than the 150ms in assets/style.css */
+const SETTLE = 300;
+const settle = () => new Promise(function (r) { setTimeout(r, SETTLE); });
+
 function read(...parts) {
   return fs.readFileSync(path.join(ROOT, ...parts), "utf8");
 }
@@ -106,7 +111,7 @@ function page(file, url) {
   return dom;
 }
 
-function checkChapter(file) {
+async function checkChapter(file) {
   const slug = file.replace(/\.js$/, "");
   const dom = page("lesson.html", "lesson.html?ch=" + slug);
   const w = dom.window;
@@ -172,7 +177,7 @@ function checkChapter(file) {
         problems.push("a row has no Korean");
       }
     });
-    if (pair.classList.contains("is-split") || pair.classList.contains("is-open")) {
+    if (pair.classList.contains("is-split")) {
       problems.push("a paragraph starts side by side");
     }
   });
@@ -193,6 +198,7 @@ function checkChapter(file) {
   }
   if (toggles.length) {
     toggles[0].click();
+    await settle();
     const on = d.querySelectorAll(".para-pair.is-split").length;
     if (!on) problems.push("the control did not put anything side by side");
     if (on === d.querySelectorAll(".para-pair").length && toggles.length > 1) {
@@ -202,9 +208,8 @@ function checkChapter(file) {
       problems.push("the control did not report being on");
     }
     toggles[0].click();
-    // is-split is dropped once the closing transition has run; is-open is
-    // the state the control actually reports
-    if (d.querySelectorAll(".para-pair.is-open").length) {
+    await settle();
+    if (d.querySelectorAll(".para-pair.is-split").length) {
       problems.push("the control did not switch back");
     }
     if (toggles[0].getAttribute("aria-pressed") !== "false") {
@@ -398,16 +403,18 @@ function checkIndex(chapters) {
 
 /* --- run ------------------------------------------------------------- */
 
-lintSectionLayering();
+(async function () {
+  lintSectionLayering();
 
-const chapters = fs.existsSync(LESSONS)
-  ? fs.readdirSync(LESSONS).filter(function (f) {
-      return f.endsWith(".js") && f !== "manifest.js";
-    }).sort()
-  : [];
+  const chapters = fs.existsSync(LESSONS)
+    ? fs.readdirSync(LESSONS).filter(function (f) {
+        return f.endsWith(".js") && f !== "manifest.js";
+      }).sort()
+    : [];
 
-chapters.forEach(checkChapter);
-checkAddressHandling();
-checkIndex(chapters);
+  for (const file of chapters) await checkChapter(file);
+  checkAddressHandling();
+  checkIndex(chapters);
 
-process.exit(failed ? 1 : 0);
+  process.exit(failed ? 1 : 0);
+})();
