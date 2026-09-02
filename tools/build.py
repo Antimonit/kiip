@@ -387,11 +387,16 @@ def align_translations(blocks, unaligned, authored=None):
         else:
             continue
 
+        # An article's prose may be preceded by its margin glossary, a figure
+        # or a chart, so those are stepped over; once the prose has started,
+        # anything that is not more prose ends it.
         targets = []
         for nxt in blocks[i + 1:]:
             if nxt["type"] == "paragraph" and not nxt.get("role"):
                 targets.append(nxt)
-            elif nxt["type"] in PROSE_STOP or nxt["type"] == "paragraph":
+            elif nxt["type"] in ("section", "heading") or nxt["type"] == "paragraph":
+                break
+            elif targets:
                 break
 
         if title:
