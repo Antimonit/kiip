@@ -172,6 +172,18 @@ def is_translation(paras, tag):
 # blocks
 # --------------------------------------------------------------------------
 
+LEAD = re.compile(r"^[\^>•]\s*")
+
+
+def strip_lead(spans):
+    """Drop the marker a Doc line uses to flag a margin note or a caption."""
+    if spans and isinstance(spans[0], str):
+        stripped = LEAD.sub("", spans[0])
+        if stripped != spans[0]:
+            spans = [stripped] + list(spans[1:])
+    return spans
+
+
 def block_text(block):
     if "runs" not in block:
         return ""
@@ -351,6 +363,26 @@ def clean_trans_title(title, *korean):
     return t or None
 
 
+def regroup_translation(body, targets):
+    """Redivide a translation that paragraphs differently from the Korean.
+
+    A translation written alongside the Doc often breaks its paragraphs where
+    the Korean does not — an opening sentence set on its own, or two Korean
+    paragraphs answered by one English one. When the two agree on sentences
+    even though they disagree on paragraphs, the English is cut again to the
+    Korean's shape. When they do not agree, nothing is guessed.
+    """
+    wanted = [len(split_korean(t["spans"])) for t in targets]
+    english = [s for para in body for s in split_english(para)]
+    if sum(wanted) != len(english):
+        return None
+    out, at = [], 0
+    for n in wanted:
+        out.append(" ".join(english[at:at + n]))
+        at += n
+    return out
+
+
 def align_translations(blocks, unaligned, authored=None):
     """Attach each English paragraph to the Korean paragraph it translates.
 
@@ -404,6 +436,19 @@ def align_translations(blocks, unaligned, authored=None):
             if title:
                 b["titleTranslation"] = title
 
+        if targets and len(body) != len(targets):
+            regrouped = regroup_translation(body, targets)
+            if regrouped:
+                body = regrouped
+            elif b.get("text") in authored:
+                # the Doc's translation does not answer this section paragraph
+                # for paragraph — usually because it stops part-way through —
+                # so the one written into the chapter stands in for it
+                entry = authored[b["text"]]
+                if len(entry["paragraphs"]) == len(targets):
+                    title = entry.get("title") or title
+                    body = list(entry["paragraphs"])
+
         if targets and len(body) == len(targets):
             for target, english in zip(targets, body):
                 target["translation"] = english
@@ -421,9 +466,18 @@ def align_translations(blocks, unaligned, authored=None):
 SENTENCE_END = re.compile(r"([.?!])(\s+)(?=[^\s)\]”’])")
 
 
+# What an English sentence may begin with. A lower-case word means the stop
+# before it belonged to an abbreviation — "to 4 p.m., and", "(daycare vs.
+# kindergarten)" — and an em dash means the clause carries on. Hangul counts,
+# because a translation often opens on the Korean term it is explaining.
+SENTENCE_START = re.compile(r"[A-Z0-9\"'\u201c\u2018\uac00-\ud7a3]")
+
+
 def split_english(text):
     parts, last = [], 0
     for m in SENTENCE_END.finditer(text):
+        if not SENTENCE_START.match(text, m.end()):
+            continue
         parts.append(text[last:m.start() + 1].strip())
         last = m.end()
     if last < len(text):
@@ -494,6 +548,67 @@ def pair_sentences(blocks, unpaired):
         else:
             unpaired.append((len(korean), len(english)))
     return blocks
+
+
+def attach_extras(blocks, extras):
+    """Point an annotation written in the chapter module at its word.
+
+    A Doc leaves a comment on the words it explains, and those anchor
+    themselves. An entry written into the chapter has no anchor, so the word
+    is found in the prose instead — the first time it is said, and only where
+    it is not already annotated. An entry whose word is never said stays
+    unattached, and the build reports it.
+    """
+    wanted = [k for k in extras if k]
+    if not wanted:
+        return blocks
+    taken = set()
+    for b in blocks:
+        if b["type"] not in ("paragraph", "bullet"):
+            continue
+        for span in b["spans"]:
+            if isinstance(span, dict) and span.get("annotation") in wanted:
+                taken.add(span["annotation"])
+    # longest first, so 단독 주택 wins over 주택 where the two overlap
+    for key in sorted(set(wanted) - taken, key=len, reverse=True):
+        for b in blocks:
+            if b["type"] not in ("paragraph", "bullet"):
+                continue
+            out, done = [], False
+            for span in b["spans"]:
+                at = -1 if done or not isinstance(span, str) else word_start(span, key)
+                if at < 0:
+                    out.append(span)
+                    continue
+                if span[:at]:
+                    out.append(span[:at])
+                out.append({"word": key, "annotation": key})
+                if span[at + len(key):]:
+                    out.append(span[at + len(key):])
+                done = True
+            if done:
+                b["spans"] = out
+                taken.add(key)
+                break
+    return blocks
+
+
+HANGUL = re.compile(r"[\uac00-\ud7a3]")
+
+
+def word_start(text, key):
+    """Where the key is said as a word, not buried inside a longer one.
+
+    A particle may follow it — 세를, 태교라고 — so only what comes before is
+    tested: another Hangul syllable there means this is the middle of a word,
+    the 음 of 다음 or the 유아 of 영유아, and not the word being explained.
+    """
+    at = text.find(key)
+    while at >= 0:
+        if at == 0 or not HANGUL.match(text[at - 1]):
+            return at
+        at = text.find(key, at + 1)
+    return -1
 
 
 def mark_blanks(blocks, clear=()):
@@ -696,13 +811,17 @@ def build(cfg, srcdir):
                     prev["spans"].extend(tail)
             elif name == "heading":
                 emit({"type": "heading", "level": 3, "text": texts[0]})
+            elif name == "heading4":
+                emit({"type": "heading", "level": 4, "text": texts[0]})
+            elif name == "drop":
+                pass            # a stray note in the Doc that the page has not
             elif name == "labels":
                 emit({"type": "labels", "items": rich})
             elif name == "margin":
-                emit({"type": "margin", "items": rich})
+                emit({"type": "margin", "items": [strip_lead(r) for r in rich]})
             elif name == "figure":
                 emit({"type": "figure",
-                      "text": " ".join(t.lstrip("^• ").strip() for t in texts)})
+                      "text": " ".join(t.lstrip("^>• ").strip() for t in texts)})
             elif name == "source":
                 emit({"type": "source", "text": " ".join(texts)})
             elif name == "verse":
@@ -841,6 +960,8 @@ def build(cfg, srcdir):
             "notes": list(extra.get("notes", [])),
             "surfaces": list(extra.get("surfaces", [])),
         }
+
+    blocks = attach_extras(blocks, cfg.get("extraAnnotations", {}))
 
     # appended blocks are transcribed by hand, so they skip the corrections
     unaligned, unpaired = [], []

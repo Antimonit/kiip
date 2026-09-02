@@ -67,8 +67,21 @@ is how each comment is tied back to the word it annotates.
 - parses each comment into a headword, a hanja breakdown and usage notes,
   keyed by the word it is anchored to, merging multiple comments on one word;
 - treats a long English comment left on a *heading* as a section translation
-  rather than a word note;
+  rather than a word note, cutting it to the shape of the Korean paragraphs —
+  and, where it divides differently but agrees sentence for sentence, cutting
+  it again by sentence;
+- falls back to the English written into the chapter under `english` when the
+  Doc's translation does not answer the section paragraph for paragraph;
+- attaches an annotation written under `extraAnnotations` to the first place
+  its word is said, so an entry does not need a Docs comment to be reachable;
 - applies the chapter's corrections and lists every one of them on the page.
+
+A block that the Doc sets as ordinary text can be given its real part by
+`roles`, keyed by a `(first, last)` range of source block indices:
+`join` folds a paragraph the Doc broke in two back into the one before it,
+`heading` and `heading4` promote a line, `labels`, `margin`, `figure`,
+`source`, `verse`, `chart`, `table2` and `kinship` name what a group of lines
+really is, and `drop` removes a line the page does not have.
 
 ### Adding a chapter
 
