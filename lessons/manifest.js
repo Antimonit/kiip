@@ -121,5 +121,11 @@ KIIP.manifest([
   "slug": "20-democratic-politics",
   "title": "한국의 민주 정치",
   "titleEn": "Democratic politics in Korea"
+ },
+ {
+  "number": 21,
+  "slug": "21-legislature",
+  "title": "입법부",
+  "titleEn": "The legislature"
  }
 ]);
