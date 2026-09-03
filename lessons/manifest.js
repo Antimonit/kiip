@@ -37,5 +37,11 @@ KIIP.manifest([
   "slug": "06-city-and-country",
   "title": "도시와 농촌",
   "titleEn": "The city and the countryside"
+ },
+ {
+  "number": 7,
+  "slug": "07-welfare",
+  "title": "복지",
+  "titleEn": "Welfare"
  }
 ]);
