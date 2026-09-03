@@ -140,7 +140,8 @@ module falls back to listing whatever is built.
 ### The pages that close a 편
 
 Every 편 ends with four pages of its own — 대단원 정리 and a 가로세로 퀴즈, then
-단원 종합 평가, then a page or two of illustrated features. Those are not
+단원 종합 평가, then a page or two of the part's own material: illustrated
+features in 제4편, the coins and notes of 화폐 이야기 in 제5편. Those are not
 chapters, so they are not in the book's fifty, but they are built and read
 exactly as a chapter is: `tools/chapters/ptNN_slug.py` defines a `PART` dict
 with the same keys, plus `part=True`, and the build writes
