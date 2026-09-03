@@ -61,5 +61,11 @@ KIIP.manifest([
   "slug": "10-school-education",
   "title": "초·중등 교육",
   "titleEn": "Primary and secondary education"
+ },
+ {
+  "number": 11,
+  "slug": "11-higher-education",
+  "title": "고등 교육과 입시",
+  "titleEn": "Higher education and entrance exams"
  }
 ]);
