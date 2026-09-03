@@ -5,10 +5,17 @@ not resolve. Newest first. Delete a line once it is settled.
 
 ## Where things stand
 
-Chapters 1 to 19 are built. Chapters 1 to 12 come from your Google Docs, with
-chapter 10 as the exception — its Doc carries no comments and six typos, so it
-stays as I transcribed it. Chapters 13 to 19 have no Doc at all: your
-transcriptions stop at chapter 12, so their Korean is my reading of the pages.
+Chapters 1 to 24 are built — 제1편 사회, 제2편 교육, 제3편 문화 and 제4편 정치
+complete. Chapters 1 to 12 come from your Google Docs, with chapter 10 as the
+exception — its Doc carries no comments and six typos, so it stays as I
+transcribed it. Chapters 13 to 24 have no Doc at all: your transcriptions stop
+at chapter 12, so their Korean is my reading of the pages.
+
+Every chapter but 1 to 4 now carries its own text: the Docs for 5 to 9, 11 and
+12 were read one last time and written into the modules, so the build no
+longer needs anything in ~/Downloads and the payloads did not change by a
+byte. Chapters 1 to 4 still read their exports, which are not on this machine
+— re-export 1.html to 4.html when convenient and I will convert those too.
 
 | ch | title | annotations | articles | rows | gaps | corrections open |
 |----|-------|------------:|---------:|-----:|-----:|-----------------:|
@@ -31,8 +38,13 @@ transcriptions stop at chapter 12, so their Korean is my reading of the pages.
 | 17 | 종교 | 115 | 6 | 35 | 9 | – |
 | 18 | 대중문화 | 134 | 4 | 31 | 6 | – |
 | 19 | 여가문화 | 112 | 4 | 24 | 6 | – |
+| 20 | 한국의 민주 정치 | 115 | 4 | 28 | 11 | – |
+| 21 | 입법부 | 113 | 6 | 29 | 6 | – |
+| 22 | 행정부 | 129 | 5 | 25 | 6 | – |
+| 23 | 사법부 | 122 | 5 | 34 | 7 | – |
+| 24 | 선거와 지방자치 | 60 | 5 | 13 | 8 | – |
 
-Chapters 10 and 13 to 19 have no corrections column because there was no
+Chapters 10 and 13 to 24 have no corrections column because there was no
 transcription to correct. Errors there are in the text itself, and they are
 mine.
 
@@ -225,6 +237,20 @@ Then 정답보기 at 262 and 찾아보기 at 272.
   one paragraph the Doc broke in two mid-sentence. They are rejoined, which
   changes the paragraph count against the Doc.
 
+## The part-closing spreads
+
+Pages 130 to 133 are not a chapter. They close 제4편 with 대단원 정리 (a table
+of what each chapter covered, and four government web addresses), a
+가로세로 퀴즈 crossword, and 단원 종합 평가 — multiple-choice questions over the
+whole part. The page gaps I had put down to part openers are these: every 편
+ends with such a spread. Nothing in the site has a home for them yet. Worth
+building as a page of its own per 편, I think, but it is your call.
+
+Chapter 21's review gaps hold your own pencilled answers — 입법부, 300, 법,
+예산, 감사 — since the book leaves them blank and you filled them in. The one
+you left blank, 국회의원, is blank here too. Chapters 22 to 24 are blank
+throughout, as the book has them.
+
 ## Still to review
 
 - Chapters 1, 2, 4, 5, 6 and 7 have been all the way through you. What was
@@ -236,8 +262,18 @@ Then 정답보기 at 262 and 찾아보기 at 272.
   and chapter 7's twelve were all accepted.
 - Chapters 11 and 12: 14 and 21 corrections, all found by reading the Doc
   against the pages, none of them checked by you.
-- Chapters 13 to 19: no corrections to review, but the Korean itself is my
+- Chapters 13 to 24: no corrections to review, but the Korean itself is my
   transcription and has been read by nobody else.
+- Chapter 22's 국가 재정 article on p. 116 reads 적절한지 살펴다, which is not a
+  form; it is set as 살펴본다. Chapter 21's 국정 감사 article prints 궁금한,
+  which is how the book spells it in chapter 8 too, so it stands.
+- Chapter 22's aside on 청와대 is left as the book has it. The president's
+  office moved to 용산 in 2022, two years after this printing, and the grounds
+  are open to visitors now.
+- Three tables are set as lists because the book prints them with no header
+  row: chapter 23's three principles of a suspect's rights, and chapter 24's
+  four principles of an election and their opposites. Each names itself in
+  bold instead.
 - Chapter 18's p. 98 reads 뛰어난 춤 실력을 뽑을 수 있다 as far as I can make
   out, which would be a slip for 꼽을; the book writes 꼽을 수 있다 elsewhere,
   so it is set that way. Its 기생충 box says 4개 부분 where 부문 is the word,
