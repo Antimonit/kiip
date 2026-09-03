@@ -5,17 +5,16 @@ not resolve. Newest first. Delete a line once it is settled.
 
 ## Where things stand
 
-Chapters 1 to 24 are built — 제1편 사회, 제2편 교육, 제3편 문화 and 제4편 정치
-complete. Chapters 1 to 12 come from your Google Docs, with chapter 10 as the
-exception — its Doc carries no comments and six typos, so it stays as I
-transcribed it. Chapters 13 to 24 have no Doc at all: your transcriptions stop
-at chapter 12, so their Korean is my reading of the pages.
+Chapters 1 to 29 are built — 제1편 사회, 제2편 교육, 제3편 문화, 제4편 정치 and
+제5편 경제 complete, with the spreads that close 제4편 and 제5편. Chapters 1 to
+12 come from your Google Docs, with chapter 10 as the exception — its Doc
+carries no comments and six typos, so it stays as I transcribed it. Chapters
+13 to 29 have no Doc at all: your transcriptions stop at chapter 12, so their
+Korean is my reading of the pages.
 
-Every chapter but 1 to 4 now carries its own text: the Docs for 5 to 9, 11 and
-12 were read one last time and written into the modules, so the build no
-longer needs anything in ~/Downloads and the payloads did not change by a
-byte. Chapters 1 to 4 still read their exports, which are not on this machine
-— re-export 1.html to 4.html when convenient and I will convert those too.
+Every chapter now carries its own text. The Docs were read one last time and
+written into the modules, so the build needs nothing outside the repository,
+and no payload changed by a byte in the process.
 
 | ch | title | annotations | articles | rows | gaps | corrections open |
 |----|-------|------------:|---------:|-----:|-----:|-----------------:|
@@ -43,8 +42,13 @@ byte. Chapters 1 to 4 still read their exports, which are not on this machine
 | 22 | 행정부 | 129 | 5 | 25 | 6 | – |
 | 23 | 사법부 | 122 | 5 | 34 | 7 | – |
 | 24 | 선거와 지방자치 | 60 | 5 | 13 | 8 | – |
+| 25 | 일상생활과 경제 활동 | 103 | 4 | 27 | 9 | – |
+| 26 | 경제 성장 | 130 | 4 | 28 | 7 | – |
+| 27 | 장보기와 소비자 보호 | 97 | 4 | 28 | 7 | – |
+| 28 | 금융기관 이용하기 | 110 | 4 | 33 | 7 | – |
+| 29 | 취업하기 | 96 | 4 | 26 | 5 | – |
 
-Chapters 10 and 13 to 24 have no corrections column because there was no
+Chapters 10 and 13 to 29 have no corrections column because there was no
 transcription to correct. Errors there are in the text itself, and they are
 mine.
 
@@ -246,16 +250,23 @@ part — and two illustrated features, 일상생활과 민주주의 and
 한국 대통령과 만난 정상들. The page gaps I had put down to part openers are
 these: every 편 ends with such a spread.
 
-제4편's is built, at `lesson.html?ch=part-4`, linked from the part's header on
-the contents. It is built and read exactly as a chapter is; only what the page
-calls itself differs. The other seven wait on photographs.
+제4편's and 제5편's are built, at `lesson.html?ch=part-4` and `?ch=part-5`,
+linked from each part's header on the contents. They are built and read
+exactly as a chapter is; only what the page calls itself differs. The other
+six wait on photographs.
+
+제5편's closing pages run to four as well, the last two being 화폐 이야기 — the
+coins and the notes, with what is pictured on each. Those two tables are the
+book's own words; the coins and notes themselves are not reproduced.
 
 Two things in it are mine rather than the book's. The crossword grid is not
 reproduced — only its clues, with the answers covered — and every answer,
 crossword and 종합 평가 alike, is worked out from the chapters, because the
 book's own key is in 정답보기 on p. 262 and that page is not photographed. If
-one of them is wrong the book is not to blame. Question 04 asks about ㉠ and
-㉡ while its 〈보기〉 box is labelled ㄱ and ㄴ; that slip is the book's own.
+one of them is wrong the book is not to blame. Two slips in them are the
+book's own and stand as printed: 제4편's question 04 asks about ㉠ and ㉡ while
+its 〈보기〉 box is labelled ㄱ and ㄴ, and 제5편's clue ㉲ prints 반듯이 where
+반드시 is the word.
 
 Chapter 21's review gaps hold your own pencilled answers — 입법부, 300, 법,
 예산, 감사 — since the book leaves them blank and you filled them in. The one
@@ -273,8 +284,19 @@ throughout, as the book has them.
   and chapter 7's twelve were all accepted.
 - Chapters 11 and 12: 14 and 21 corrections, all found by reading the Doc
   against the pages, none of them checked by you.
-- Chapters 13 to 24: no corrections to review, but the Korean itself is my
+- Chapters 13 to 29: no corrections to review, but the Korean itself is my
   transcription and has been read by nobody else.
+- Chapter 25's 공공 요금 gloss prints 목적하는 하는, with 하는 twice over. That
+  is the book's own slip and stands as printed.
+- Chapter 26's margin heads its OECD entry 경제협력기구, one word short of
+  경제협력개발기구, which is how the article itself writes it. Both stand as
+  printed, and the entry is filed under the full name.
+- Four figures in 제5편 are not reproduced — chapter 25's 소비자물가 추이 line
+  chart and 간편 결제 chart, chapter 27's 모바일쇼핑 거래액 graphic and
+  오프라인·온라인 쇼핑 현황 chart. Their figures are too small to read off the
+  photographs with any confidence. Every other chart in the part is drawn.
+- Chapter 28's ATM gloss is my own wording: the book heads the entry
+  ATM(현금자동입출금기) and leaves the definition to the article.
 - Chapter 21's 국정 감사 article prints 궁금한, which is how the book spells it
   in chapter 8 too, so it stands.
 - Chapter 22's aside on 청와대 is left as the book has it. The president's

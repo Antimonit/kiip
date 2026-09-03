@@ -327,7 +327,8 @@ KIIP.contents({
      ],
      "built": true
     }
-   ]
+   ],
+   "closing": "part-5"
   },
   {
    "number": 6,
