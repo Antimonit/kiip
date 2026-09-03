@@ -305,7 +305,7 @@ KIIP.contents({
       "어디에서 장을 보면 될까?",
       "소비자의 권리와 책임에는 어떤 것이 있을까?"
      ],
-     "built": false
+     "built": true
     },
     {
      "number": 28,

@@ -157,5 +157,11 @@ KIIP.manifest([
   "slug": "26-economic-growth",
   "title": "경제 성장",
   "titleEn": "Economic growth"
+ },
+ {
+  "number": 27,
+  "slug": "27-shopping-and-consumers",
+  "title": "장보기와 소비자 보호",
+  "titleEn": "Shopping and consumer protection"
  }
 ]);
