@@ -55,10 +55,10 @@ python3 tools/build.py                  # writes lessons/*.js
 That writes `lessons/<slug>.js` for each chapter, `lessons/manifest.js` and
 `lessons/contents.js`.
 
-A chapter that still names a Doc in `src` is read from the HTML export
-instead, which has to be sitting in `~/Downloads` (or in the directory given
-as the build's first argument). Only chapters 1-4 still do; the rest were
-converted with
+A chapter may still name a Doc in `src`, in which case it is read from the
+HTML export, which has to be sitting in `~/Downloads` (or in the directory
+given as the build's first argument). None does any more: every Doc-sourced
+chapter was converted with
 
 ```
 python3 tools/convert.py --src ~/Downloads 05-housing
@@ -70,9 +70,9 @@ on working exactly as they did. Every block it writes is read back with the
 same helpers the module uses and compared against what the Doc gave, so a
 chapter it cannot round-trip is refused rather than half-written.
 
-Nothing names a `src` any more, so the conversion no longer runs over
-anything; `python3 tools/convert.py --selftest` writes one block of every
-shape and reads it back, which keeps the writer honest for the next Doc that
+Because nothing names a `src`, the conversion no longer runs over anything;
+`python3 tools/convert.py --selftest` writes one block of every shape and
+reads it back, which is what keeps the writer honest for the next Doc that
 arrives.
 
 ### The pipeline
