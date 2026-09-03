@@ -257,7 +257,7 @@ KIIP.contents({
       "재판은 누가 할까?",
       "법원은 어떤 일을 할까?"
      ],
-     "built": false
+     "built": true
     },
     {
      "number": 24,

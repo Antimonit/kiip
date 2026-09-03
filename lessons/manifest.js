@@ -133,5 +133,11 @@ KIIP.manifest([
   "slug": "22-executive",
   "title": "행정부",
   "titleEn": "The executive"
+ },
+ {
+  "number": 23,
+  "slug": "23-judiciary",
+  "title": "사법부",
+  "titleEn": "The judiciary"
  }
 ]);
