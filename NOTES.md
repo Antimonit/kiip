@@ -241,10 +241,21 @@ Then 정답보기 at 262 and 찾아보기 at 272.
 
 Pages 130 to 133 are not a chapter. They close 제4편 with 대단원 정리 (a table
 of what each chapter covered, and four government web addresses), a
-가로세로 퀴즈 crossword, and 단원 종합 평가 — multiple-choice questions over the
-whole part. The page gaps I had put down to part openers are these: every 편
-ends with such a spread. Nothing in the site has a home for them yet. Worth
-building as a page of its own per 편, I think, but it is your call.
+가로세로 퀴즈 crossword, 단원 종합 평가 — multiple-choice questions over the whole
+part — and two illustrated features, 일상생활과 민주주의 and
+한국 대통령과 만난 정상들. The page gaps I had put down to part openers are
+these: every 편 ends with such a spread.
+
+제4편's is built, at `lesson.html?ch=part-4`, linked from the part's header on
+the contents. It is built and read exactly as a chapter is; only what the page
+calls itself differs. The other seven wait on photographs.
+
+Two things in it are mine rather than the book's. The crossword grid is not
+reproduced — only its clues, with the answers covered — and every answer,
+crossword and 종합 평가 alike, is worked out from the chapters, because the
+book's own key is in 정답보기 on p. 262 and that page is not photographed. If
+one of them is wrong the book is not to blame. Question 04 asks about ㉠ and
+㉡ while its 〈보기〉 box is labelled ㄱ and ㄴ; that slip is the book's own.
 
 Chapter 21's review gaps hold your own pencilled answers — 입법부, 300, 법,
 예산, 감사 — since the book leaves them blank and you filled them in. The one
@@ -264,9 +275,8 @@ throughout, as the book has them.
   against the pages, none of them checked by you.
 - Chapters 13 to 24: no corrections to review, but the Korean itself is my
   transcription and has been read by nobody else.
-- Chapter 22's 국가 재정 article on p. 116 reads 적절한지 살펴다, which is not a
-  form; it is set as 살펴본다. Chapter 21's 국정 감사 article prints 궁금한,
-  which is how the book spells it in chapter 8 too, so it stands.
+- Chapter 21's 국정 감사 article prints 궁금한, which is how the book spells it
+  in chapter 8 too, so it stands.
 - Chapter 22's aside on 청와대 is left as the book has it. The president's
   office moved to 용산 in 2022, two years after this printing, and the grounds
   are open to visitors now.
