@@ -61,10 +61,13 @@ def P(text):
     return {"type": "paragraph", "spans": _spans(text)}
 
 
-def B(text, ordered=False):
+def B(text, ordered=False, level=1):
+    """A list item. level=2 nests it under the item before it."""
     item = {"type": "bullet", "spans": _spans(text)}
     if ordered:
         item["ordered"] = True
+    if level != 1:
+        item["level"] = level
     return item
 
 

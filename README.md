@@ -86,8 +86,11 @@ A block that the Doc sets as ordinary text can be given its real part by
 `roles`, keyed by a `(first, last)` range of source block indices:
 `join` folds a paragraph the Doc broke in two back into the one before it,
 `heading` and `heading4` promote a line, `labels`, `margin`, `figure`,
-`source`, `verse`, `chart`, `table2` and `kinship` name what a group of lines
-really is, and `drop` removes a line the page does not have.
+`source`, `verse`, `chart`, `table2`, `sublist` and `kinship` name what a
+group of lines really is, and `drop` removes a line the page does not have.
+`sublist` reads a group as a two-level list, the Doc's plain lines becoming
+the outer items and its list items the inner ones — which is how a page that
+draws a bracket is set here.
 
 ### Adding a chapter
 

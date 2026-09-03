@@ -494,6 +494,14 @@ h5.sub-title { font-size: calc(0.97rem * var(--scale)); color: var(--ink-soft); 
 ol.ko-list { padding-left: 1.6rem; }
 ol.ko-list li::marker { color: var(--ink-faint); }
 
+/* a sub-list sits under its parent item, marked apart from it */
+.ko-sublist {
+  margin: calc(0.3rem * var(--scale)) 0 0;
+  padding-left: 1.1rem;
+  font-size: calc(0.95rem * var(--scale));
+  list-style-type: "\2013\a0";
+}
+
 .ko-bullet {
   line-height: var(--lead);
   margin-bottom: calc(0.4rem * var(--scale));

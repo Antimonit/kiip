@@ -181,7 +181,20 @@
           list = el(b.ordered ? "ol" : "ul", "ko-list");
           host.appendChild(list);
         }
-        list.appendChild(fillSpans(el("li", "ko-bullet"), b.spans));
+        var item = fillSpans(el("li", "ko-bullet"), b.spans);
+        /* a nested item hangs off the item above it, which is how the page
+           draws a bracketed sub-list */
+        var over = b.level > 1 ? list.lastElementChild : null;
+        if (over) {
+          var sub = over.lastElementChild;
+          if (!sub || sub.tagName !== "UL") {
+            sub = el("ul", "ko-list ko-sublist");
+            over.appendChild(sub);
+          }
+          sub.appendChild(item);
+          return;
+        }
+        list.appendChild(item);
         return;
       }
 

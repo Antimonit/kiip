@@ -936,6 +936,15 @@ def build(cfg, srcdir):
                 pass            # a stray note in the Doc that the page has not
             elif name == "labels":
                 emit({"type": "labels", "items": rich})
+            elif name == "sublist":
+                # the Doc sets the outer items as plain lines and the inner
+                # ones as list items, which is the nesting the page draws
+                # with a bracket
+                for g, r in zip(group, rich):
+                    item = {"type": "bullet", "spans": r}
+                    if g["tag"] == "li":
+                        item["level"] = 2
+                    emit(item)
             elif name == "margin":
                 emit({"type": "margin", "items": [strip_lead(r) for r in rich]})
             elif name == "figure":
