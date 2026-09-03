@@ -315,7 +315,7 @@ KIIP.contents({
       "금융기관에는 어떤 것이 있을까?",
       "금융 거래는 어떻게 하면 될까?"
      ],
-     "built": false
+     "built": true
     },
     {
      "number": 29,

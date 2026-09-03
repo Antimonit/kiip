@@ -163,5 +163,11 @@ KIIP.manifest([
   "slug": "27-shopping-and-consumers",
   "title": "장보기와 소비자 보호",
   "titleEn": "Shopping and consumer protection"
+ },
+ {
+  "number": 28,
+  "slug": "28-banking",
+  "title": "금융기관 이용하기",
+  "titleEn": "Using a financial institution"
  }
 ]);
