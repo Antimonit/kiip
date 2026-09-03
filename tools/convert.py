@@ -321,6 +321,22 @@ def fold(pad, opening, pieces, closing):
 
 # --- rewriting the module ---------------------------------------------
 
+def matched(text, j):
+    """The position just past the bracket opened at `j`."""
+    depth = 0
+    while True:
+        ch = text[j]
+        if ch in "([{":
+            depth += 1
+        elif ch in ")]}":
+            depth -= 1
+            if depth == 0:
+                return j + 1
+        elif ch == '"':
+            j = text.index('"', j + 1)
+        j += 1
+
+
 def drop_key(text, key):
     """Remove a top-level `key=<value>,` from the CHAPTER dict."""
     m = re.search(r"^    %s=" % key, text, re.M)
@@ -331,20 +347,11 @@ def drop_key(text, key):
         j += 1
     if text[j] == '"':
         j = text.index('"', j + 1) + 1
+    elif re.match(r"[A-Za-z_]+\(", text[j:]):
+        j = text.index("(", j)
+        j = matched(text, j)
     elif text[j] in "([{":
-        depth = 0
-        while True:
-            ch = text[j]
-            if ch in "([{":
-                depth += 1
-            elif ch in ")]}":
-                depth -= 1
-                if depth == 0:
-                    j += 1
-                    break
-            elif ch == '"':
-                j = text.index('"', j + 1)
-            j += 1
+        j = matched(text, j)
     else:
         j = text.index("\n", j)
     while j < len(text) and text[j] in ", ":
