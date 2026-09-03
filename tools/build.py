@@ -69,7 +69,8 @@ def as_hanja_line(text):
     """Recognise a standalone hanja-breakdown line."""
     m = re.match(r"^([가-힣])\s*\(([%s])\)\s*%s\s*(.+)$" % (HANJA, DASH), text, re.S)
     if m:
-        return {"reading": m.group(1), "char": m.group(2), "gloss": m.group(3).strip()}
+        return {"char": m.group(2), "reading": m.group(1),
+                "gloss": m.group(3).strip()}
     m = re.match(r"^([%s]{1,4})\s*%s\s*(.+)$" % (HANJA, DASH), text, re.S)
     if m:
         return {"char": m.group(1), "gloss": m.group(2).strip()}
@@ -820,7 +821,42 @@ def promote_topics(blocks):
     return out
 
 
-def build(cfg, srcdir):
+ENTRY_FIELDS = {"headword", "hanja", "meaning", "characters", "notes",
+                "surfaces"}
+
+
+def written_entries(written, module):
+    """The annotation entries a chapter module writes out, in payload shape."""
+    out = {}
+    for key, extra in written.items():
+        unknown = set(extra) - ENTRY_FIELDS
+        if unknown:
+            raise SystemExit(
+                "%s: entry %r uses unknown field(s) %s — expected %s"
+                % (module, key, ", ".join(sorted(unknown)),
+                   ", ".join(sorted(ENTRY_FIELDS))))
+        out[key] = {
+            "headword": extra.get("headword", key),
+            "hanja": extra.get("hanja"),
+            "meaning": extra.get("meaning"),
+            "characters": [
+                {"char": c, "reading": r, "gloss": g} if r else
+                {"char": c, "gloss": g}
+                for c, r, g in extra.get("characters", [])],
+            "notes": list(extra.get("notes", [])),
+            "surfaces": list(extra.get("surfaces", [])),
+        }
+    return out
+
+
+def from_doc(cfg, srcdir):
+    """The chapter's text and comment glossary as the Google Doc has them.
+
+    Returns the blocks before any correction is applied, the annotations the
+    Doc's comments carry, the words glossed on the title line, the list of
+    corrections to apply and the tally they fill in. A converted chapter
+    carries all of this in the module itself and does not come through here.
+    """
     # A chapter with no Doc is transcribed entirely into `append`; the empty
     # block stands in for the title line the parser would have produced.
     if cfg.get("src"):
@@ -999,9 +1035,11 @@ def build(cfg, srcdir):
                 while j < len(inner):
                     term, handwritten = gloss_term(block_text(inner[j]).strip())
                     definition = spans(inner[j + 1], anno_key) if j + 1 < len(inner) else []
-                    entries.append({"term": term, "handwritten": handwritten,
-                                    "definition": definition,
-                                    "annotation": first_key(inner[j], anno_key)})
+                    entry = {"term": term, "definition": definition,
+                             "annotation": first_key(inner[j], anno_key)}
+                    if handwritten:
+                        entry["handwritten"] = handwritten
+                    entries.append(entry)
                     j += 2
                 emit({"type": "glossary", "entries": entries})
             else:
@@ -1034,9 +1072,11 @@ def build(cfg, srcdir):
                     if d["tag"] != "p" or block_text(d).strip().startswith("•"):
                         break
                     term, handwritten = gloss_term(t)
-                    entries.append({"term": term, "handwritten": handwritten,
-                                    "definition": spans(d, anno_key),
-                                    "annotation": first_key(b, anno_key)})
+                    entry = {"term": term, "definition": spans(d, anno_key),
+                             "annotation": first_key(b, anno_key)}
+                    if handwritten:
+                        entry["handwritten"] = handwritten
+                    entries.append(entry)
                     i += 2
                 emit({"type": "glossary", "entries": entries})
                 continue
@@ -1063,6 +1103,31 @@ def build(cfg, srcdir):
     for extra in inserts.get(n, []):
         emit(copy.deepcopy(extra))
 
+    return blocks, annotations, orphans, fixes, hits
+
+def build(cfg, srcdir):
+    """One chapter's payload, from its module and — until converted — its Doc.
+
+    A chapter carries its text either in `blocks`, transcribed into the
+    module, or in a Google Doc named by `src`. Either way what arrives here
+    is the text before correction, so `fixes` applies to both and a
+    correction can still be reviewed and retired.
+    """
+    heads = cfg.get("headwords", {})
+
+    if cfg.get("blocks") is not None:
+        blocks = copy.deepcopy(cfg["blocks"])
+        # the entries the Doc's comments carried, still under correction:
+        # `fixes` reaches them exactly as it reached the Doc
+        annotations = written_entries(cfg.get("annotations", {}),
+                                      cfg["module"])
+        orphans = list(cfg.get("chapterGlossary", ()))
+        # the trailing entry collapses double spaces left behind by the fixes
+        fixes = list(cfg.get("fixes", ())) + [("  ", " ", None)]
+        hits = {}
+    else:
+        blocks, annotations, orphans, fixes, hits = from_doc(cfg, srcdir)
+
     # ---- corrections --------------------------------------------------
     shown = {f[0]: f[3] for f in fixes if len(f) > 3}
     blocks = apply_fixes(blocks, fixes, hits)
@@ -1071,23 +1136,8 @@ def build(cfg, srcdir):
     # entries written by hand in the chapter module, before the handwriting
     # on the page is folded in, so an entry can be given a proper breakdown
     # and still keep the note that was scribbled beside the word
-    known = {"headword", "hanja", "meaning", "characters", "notes", "surfaces"}
-    for key, extra in cfg.get("extraAnnotations", {}).items():
-        unknown = set(extra) - known
-        if unknown:
-            raise SystemExit(
-                "%s: entry %r uses unknown field(s) %s — expected %s"
-                % (cfg["module"], key, ", ".join(sorted(unknown)),
-                   ", ".join(sorted(known))))
-        annotations[key] = {
-            "headword": extra.get("headword", key),
-            "hanja": extra.get("hanja"),
-            "meaning": extra.get("meaning"),
-            "characters": [{"char": c, "reading": r, "gloss": g}
-                           for c, r, g in extra.get("characters", [])],
-            "notes": list(extra.get("notes", [])),
-            "surfaces": list(extra.get("surfaces", [])),
-        }
+    annotations.update(
+        written_entries(cfg.get("extraAnnotations", {}), cfg["module"]))
 
     # appended blocks are transcribed by hand, so they skip the corrections
     unaligned, unpaired, orphaned = [], [], []

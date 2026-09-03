@@ -2,12 +2,21 @@
 """Chapter registry and the helpers chapter modules are written with.
 
 One module per chapter, named `chNN_slug.py`, each defining a single
-`CHAPTER` dict. A chapter with a Google Doc names it in `src` and is built
-from that; a chapter without one leaves `src` out and is transcribed from the
-page photos straight into `append`. They are discovered automatically and ordered by chapter
-number, so adding a chapter means adding a file and nothing else.
+`CHAPTER` dict. A chapter carries its text itself: `blocks` for text that came
+from a Google Doc, written into the module by tools/convert.py, and `append`
+for text transcribed straight from the page photos. A chapter that still names
+a Doc in `src` is read from the HTML export instead, which is where chapters
+1-4 stand until they are converted too. Modules are discovered automatically
+and ordered by chapter number, so adding a chapter means adding a file and
+nothing else.
 
-Everything in a chapter module is content: its title and tags, its
+`blocks` arrives before correction, exactly as the Doc had it, so `fixes` and
+`approved` reach it and a correction can still be reviewed against the page
+and then retired. `append` is transcribed from the page, so it skips the
+corrections. `annotations` holds the entries the Doc's comments carried, in
+the same shape as `extraAnnotations`, and is likewise still under correction.
+
+Everything in a chapter module is content: its title, its
 transcription corrections, the dictionary forms of words that appear
 inflected, and any blocks transcribed from the page photos. Nothing here
 describes appearance — blocks say what a thing is, and assets/style.css
@@ -53,12 +62,22 @@ def SECT(kind, text):
     return {"type": "section", "kind": kind, "text": text}
 
 
-def H(level, text):
-    return {"type": "heading", "level": level, "text": text}
+def H(level, text, translation=None):
+    """A heading. `translation` is the English written beside it."""
+    block = {"type": "heading", "level": level, "text": text}
+    if translation:
+        block["translation"] = translation
+    return block
 
 
-def P(text):
-    return {"type": "paragraph", "spans": _spans(text)}
+def P(text, translation=None):
+    """A paragraph. A ★ opens the question a section closes with."""
+    block = {"type": "paragraph", "spans": _spans(text)}
+    if text.startswith("\u2605"):
+        block["role"] = "prompt"
+    if translation:
+        block["translation"] = translation
+    return block
 
 
 def B(text, ordered=False, level=1):
@@ -97,12 +116,20 @@ def MARGIN(*texts):
     return {"type": "margin", "items": [_spans(t) for t in texts]}
 
 
+def VERSE(*lines):
+    """A quoted text set line by line — an anthem, an article of the law."""
+    return {"type": "verse", "lines": [_spans(t) for t in lines]}
+
+
 def FIG(caption):
     """A photo on the page, which is not reproduced."""
     return {"type": "figure", "text": caption}
 
 
-def TABLE(header, rows):
+def TABLE(header, rows=None):
+    """A table. Called with one argument when the book prints no header row."""
+    if rows is None:
+        return {"type": "table", "rows": [list(r) for r in header]}
     return {"type": "table", "header": list(header),
             "rows": [list(r) for r in rows]}
 
@@ -131,15 +158,19 @@ def GLOSS(*entries):
     """The glossary printed in the margin beside an article.
 
     Each entry is (term, definition) or (term, definition, headword) where
-    the third names the entry the term should open.
+    the third names the entry the term should open. A fourth element is the
+    English written beside the term on the page by hand.
     """
     out = []
     for entry in entries:
-        out.append({
+        item = {
             "term": entry[0],
             "definition": _spans(entry[1]),
             "annotation": entry[2] if len(entry) > 2 else None,
-        })
+        }
+        if len(entry) > 3 and entry[3]:
+            item["handwritten"] = entry[3]
+        out.append(item)
     return {"type": "glossary", "entries": out}
 
 

@@ -41,20 +41,39 @@ publishes. `.nojekyll` keeps Pages from running Jekyll over the files.
 
 ## Where the content comes from
 
-Chapters are transcribed from the textbook photos into Google Docs, with
-vocabulary notes left as Docs comments. `tools/build.py` turns an HTML export of
-such a doc into the chapter's data file, so a chapter is regenerated from its
-source rather than edited by hand.
+Chapters are transcribed from the textbook photos — the earlier ones into
+Google Docs, with vocabulary notes left as Docs comments; the later ones
+straight into the chapter module. Either way the text lives in
+`tools/chapters/chNN_slug.py` now, under `blocks` (or `append`), and
+`tools/build.py` turns a chapter module into its data file, so a chapter is
+regenerated from its source rather than edited by hand.
 
 ```
-python3 tools/build.py ~/Downloads      # directory holding 1.html … 4.html
+python3 tools/build.py                  # writes lessons/*.js
 ```
 
-That writes `lessons/<slug>.js` for each chapter and `lessons/manifest.js`.
+That writes `lessons/<slug>.js` for each chapter, `lessons/manifest.js` and
+`lessons/contents.js`.
+
+A chapter that still names a Doc in `src` is read from the HTML export
+instead, which has to be sitting in `~/Downloads` (or in the directory given
+as the build's first argument). Only chapters 1-4 still do; the rest were
+converted with
+
+```
+python3 tools/convert.py --src ~/Downloads 05-housing
+```
+
+which reads the Doc one last time and writes what it found into the module as
+`blocks` and `annotations`, *before* correction, so `fixes` and `approved` go
+on working exactly as they did. Every block it writes is read back with the
+same helpers the module uses and compared against what the Doc gave, so a
+chapter it cannot round-trip is refused rather than half-written.
 
 ### The pipeline
 
-`tools/parse_gdoc.py` reads the export. Two things survive it that the pipeline
+For a chapter still built from a Doc, `tools/parse_gdoc.py` reads the export.
+Two things survive it that the pipeline
 depends on: heading and paragraph structure, and comment anchors — the commented
 run is left as its own `<span>` immediately before the `[a]` superscript, which
 is how each comment is tied back to the word it annotates.
@@ -82,8 +101,10 @@ is how each comment is tied back to the word it annotates.
   and margin notes, so a word is marked where it is read;
 - applies the chapter's corrections and lists every one of them on the page.
 
-A block that the Doc sets as ordinary text can be given its real part by
-`roles`, keyed by a `(first, last)` range of source block indices:
+`roles` and `insert` belong to the Doc path and apply only while a chapter
+names a `src`; conversion resolves both and leaves the blocks they produced in
+the module. A block that the Doc sets as ordinary text can be given its real
+part by `roles`, keyed by a `(first, last)` range of source block indices:
 `join` folds a paragraph the Doc broke in two back into the one before it,
 `heading` and `heading4` promote a line, `labels`, `margin`, `figure`,
 `source`, `verse`, `chart`, `table2`, `sublist` and `kinship` name what a
@@ -113,23 +134,25 @@ module falls back to listing whatever is built.
 
 ### Adding a chapter
 
-1. Export the Doc as HTML, and put the page photos in `source/<slug>/`. The
-   build looks for the export in `~/Downloads` by default, or in the
-   directory given as its first argument. A chapter whose export is not there
-   is skipped with a warning and keeps the file it generated before, since
-   `lessons/*.js` is checked in — so a missing export cannot delete a
-   chapter, but it cannot rebuild one either.
-2. Add `tools/chapters/chNN_slug.py` defining one `CHAPTER` dict. `src`,
-   `number`, `slug`, `unit`, `title`, `titleEn` are enough to start;
-   modules are discovered automatically and ordered by chapter number.
-3. Run the build, read the page, and add `fixes`, `headwords` and `roles`
-   entries until it reads correctly. Every fix is reported on the page, and the
-   build warns about fixes that never matched anything.
+1. Put the page photos in `source/<slug>/`.
+2. Add `tools/chapters/chNN_slug.py` defining one `CHAPTER` dict. `number`,
+   `slug`, `unit`, `title`, `titleEn` are enough to start; modules are
+   discovered automatically and ordered by chapter number.
+3. Transcribe the pages into `append`, and add `extraAnnotations` entries for
+   the words the chapter teaches. Run the build and read the page.
 
-Where a Doc does not cover the whole chapter, `insert` and `append` add blocks
-transcribed straight from the photos — `insert` by source block index, `append`
-at the end — and `extraAnnotations` supplies entries for words those blocks
-introduce. Both use the `P` / `B` / `H` / `SECT` / `LABELS` helpers, in whose
+A chapter whose text is a Doc export names it in `src` instead, and one whose
+export is not on the machine is skipped with a warning and keeps the file it
+generated before, since `lessons/*.js` is checked in — so a missing export
+cannot delete a chapter, but it cannot rebuild one either. `fixes`,
+`headwords` and `roles` are how such a chapter is brought into line; every fix
+is reported on the page, and the build warns about fixes that never matched
+anything.
+
+Blocks are transcribed straight from the photos in `append`, at the end of
+whatever the chapter already has, and `extraAnnotations` supplies entries for
+words those blocks introduce. Both use the `P` / `B` / `H` / `SECT` / `LABELS`
+helpers, in whose
 text `{word}` marks an annotation and `{surface|headword}` files one under a
 different headword. `LABELS` takes `GROUP(name, *labels)` in place of plain
 labels where the page sorts its pictures into named kinds, and the grouping
@@ -215,6 +238,7 @@ assets/index.js         renders the chapter list
 assets/lesson.js        renders a chapter
 tools/parse_gdoc.py     Google Docs HTML export -> blocks + comments
 tools/build.py          the generator
+tools/convert.py        writes a Doc's text into the chapter module
 tools/smoke.js          render check and boundary lints
 tools/chapters/
   __init__.py           registry, and the helpers chapter modules use
