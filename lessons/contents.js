@@ -285,7 +285,7 @@ KIIP.contents({
       "경제 활동이란 무엇일까?",
       "경제 활동을 위한 합리적인 선택은 왜 필요할까?"
      ],
-     "built": false
+     "built": true
     },
     {
      "number": 26,

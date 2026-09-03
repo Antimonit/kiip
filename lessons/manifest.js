@@ -145,5 +145,11 @@ KIIP.manifest([
   "slug": "24-elections-and-local-government",
   "title": "선거와 지방자치",
   "titleEn": "Elections and local self-government"
+ },
+ {
+  "number": 25,
+  "slug": "25-daily-economic-life",
+  "title": "일상생활과 경제 활동",
+  "titleEn": "Everyday life and economic activity"
  }
 ]);
