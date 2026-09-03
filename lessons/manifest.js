@@ -103,5 +103,11 @@ KIIP.manifest([
   "slug": "17-religion",
   "title": "종교",
   "titleEn": "Religion"
+ },
+ {
+  "number": 18,
+  "slug": "18-popular-culture",
+  "title": "대중문화",
+  "titleEn": "Popular culture"
  }
 ]);
