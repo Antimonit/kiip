@@ -79,5 +79,11 @@ KIIP.manifest([
   "slug": "13-traditional-values",
   "title": "전통 가치",
   "titleEn": "Traditional values"
+ },
+ {
+  "number": 14,
+  "slug": "14-food-dress-and-housing",
+  "title": "전통 의식주",
+  "titleEn": "Traditional food, dress and housing"
  }
 ]);
