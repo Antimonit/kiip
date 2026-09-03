@@ -73,7 +73,9 @@ is how each comment is tied back to the word it annotates.
 - falls back to the English written into the chapter under `english` when the
   Doc's translation does not answer the section paragraph for paragraph;
 - attaches an annotation written under `extraAnnotations` to the first place
-  its word is said, so an entry does not need a Docs comment to be reachable;
+  its word is said — or to the margin-glossary term of the same name, where a
+  page carries no comments at all — so an entry does not need a Docs comment
+  to be reachable, and reports any entry nothing points at;
 - applies the chapter's corrections and lists every one of them on the page.
 
 A block that the Doc sets as ordinary text can be given its real part by
@@ -113,7 +115,9 @@ transcription upstream. **A chapter with an empty `fixes` list is a finished
 chapter.** Two mechanics are worth knowing while they are still there:
 
 - The export splits runs mid-phrase, so corrections are applied *after* the
-  spans are assembled.
+  spans are assembled. A section heading is the exception: a section is
+  recognised by its heading, so a slip there is corrected before the name is
+  looked up.
 - A fix written as `"=word"` must match a whole string exactly, which is how a
   single annotated word gets corrected without touching the same characters
   elsewhere.

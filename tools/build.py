@@ -550,47 +550,94 @@ def pair_sentences(blocks, unpaired):
     return blocks
 
 
-def attach_extras(blocks, extras):
+def attach_extras(blocks, extras, heads=None, orphaned=None):
     """Point an annotation written in the chapter module at its word.
 
     A Doc leaves a comment on the words it explains, and those anchor
     themselves. An entry written into the chapter has no anchor, so the word
     is found in the prose instead — the first time it is said, and only where
-    it is not already annotated. An entry whose word is never said stays
-    unattached, and the build reports it.
+    it is not already annotated there. Failing that it claims the margin
+    glossary term of the same name, which is bare on a page the Doc left
+    uncommented. An entry whose word is never said stays unattached, and the
+    build reports it.
     """
     wanted = [k for k in extras if k]
     if not wanted:
         return blocks
+    # a word may be written in the prose in an inflected form and filed under
+    # its dictionary form, so the surfaces that headwords maps to this entry
+    # are worth looking for too
+    heads = heads or {}
+    surfaces = {}
+    for surface, head in heads.items():
+        if head in extras:
+            surfaces.setdefault(head, []).append(surface)
+
     taken = set()
-    for b in blocks:
-        if b["type"] not in ("paragraph", "bullet"):
-            continue
-        for span in b["spans"]:
-            if isinstance(span, dict) and span.get("annotation") in wanted:
+    for spans in every_span_list(blocks):
+        for span in spans:
+            if isinstance(span, dict) and span.get("annotation") in extras:
                 taken.add(span["annotation"])
+
     # longest first, so 단독 주택 wins over 주택 where the two overlap
     for key in sorted(set(wanted) - taken, key=len, reverse=True):
-        for b in blocks:
-            if b["type"] not in ("paragraph", "bullet"):
-                continue
-            out, done = [], False
-            for span in b["spans"]:
-                at = -1 if done or not isinstance(span, str) else word_start(span, key)
-                if at < 0:
-                    out.append(span)
-                    continue
-                if span[:at]:
-                    out.append(span[:at])
-                out.append({"word": key, "annotation": key})
-                if span[at + len(key):]:
-                    out.append(span[at + len(key):])
-                done = True
-            if done:
-                b["spans"] = out
-                taken.add(key)
+        for said in [key] + surfaces.get(key, []):
+            for spans in every_span_list(blocks):
+                out, done = [], False
+                for span in spans:
+                    at = -1 if done or not isinstance(span, str) \
+                        else word_start(span, said)
+                    if at < 0:
+                        out.append(span)
+                        continue
+                    if span[:at]:
+                        out.append(span[:at])
+                    out.append({"word": said, "annotation": key})
+                    if span[at + len(said):]:
+                        out.append(span[at + len(said):])
+                    done = True
+                if done:
+                    spans[:] = out
+                    taken.add(key)
+                    break
+            if key in taken:
                 break
+
+    # a margin glossary term with nothing anchored to it — a Doc with no
+    # comments on that page leaves every term bare — takes the entry written
+    # for the same word
+    for b in blocks:
+        for entry in b.get("entries", ()):
+            term = entry.get("term", "")
+            if not entry.get("annotation") and term in extras:
+                entry["annotation"] = term
+                taken.add(term)
+
+    if orphaned is not None:
+        # for the report, an entry counts as reached if anything at all points
+        # at it — a glossary term the Doc anchored, a table cell, a caption
+        def reached(node):
+            if isinstance(node, dict):
+                if node.get("annotation") in extras:
+                    taken.add(node["annotation"])
+                for v in node.values():
+                    reached(v)
+            elif isinstance(node, list):
+                for v in node:
+                    reached(v)
+        reached(blocks)
+        orphaned.extend(sorted(set(wanted) - taken))
     return blocks
+
+
+def every_span_list(blocks):
+    """Each run of spans a reader can click a word in."""
+    for b in blocks:
+        if b["type"] in ("paragraph", "bullet"):
+            yield b["spans"]
+        elif b["type"] in ("margin", "labels", "verse"):
+            for item in b.get("items") or b.get("lines") or ():
+                yield item
 
 
 HANGUL = re.compile(r"[\uac00-\ud7a3]")
@@ -778,6 +825,9 @@ def build(cfg, srcdir):
     inserts = cfg.get("insert", {})
     blocks, i, n = [], 1, len(doc["blocks"])
     section_kind = "intro"
+    hits = {}
+    # the trailing entry collapses double spaces left behind by the fixes
+    fixes = list(cfg.get("fixes", ())) + [("  ", " ", None)]
 
     def emit(b):
         blocks.append(b)
@@ -844,7 +894,9 @@ def build(cfg, srcdir):
         tag, text = block["tag"], block_text(block).strip()
 
         if tag in ("h1", "h2", "h3", "h4"):
-            kind = SPECIAL.get(text)
+            # a section is recognised by its heading, so a slip in that
+            # heading has to be corrected before the name is looked up
+            kind = SPECIAL.get(text) or SPECIAL.get(apply_fixes(text, fixes, {}))
             if kind:
                 section_kind = kind
                 emit({"type": "section", "kind": kind, "text": text})
@@ -933,9 +985,6 @@ def build(cfg, srcdir):
         emit(copy.deepcopy(extra))
 
     # ---- corrections --------------------------------------------------
-    hits = {}
-    # the trailing entry collapses double spaces left behind by the fixes above
-    fixes = list(cfg.get("fixes", ())) + [("  ", " ", None)]
     shown = {f[0]: f[3] for f in fixes if len(f) > 3}
     blocks = apply_fixes(blocks, fixes, hits)
     annotations = apply_fixes(annotations, fixes, hits)
@@ -961,15 +1010,16 @@ def build(cfg, srcdir):
             "surfaces": list(extra.get("surfaces", [])),
         }
 
-    blocks = attach_extras(blocks, cfg.get("extraAnnotations", {}))
-
     # appended blocks are transcribed by hand, so they skip the corrections
-    unaligned, unpaired = [], []
-    blocks = mark_blanks(pair_sentences(align_translations(promote_topics(
-        absorb_handwriting(
-            normalize_spans(blocks + copy.deepcopy(cfg.get("append", []))),
-            annotations)),
-        unaligned, cfg.get("english")), unpaired), set(cfg.get("clearGaps", ())))
+    unaligned, unpaired, orphaned = [], [], []
+    blocks = normalize_spans(blocks + copy.deepcopy(cfg.get("append", [])))
+    blocks = absorb_handwriting(blocks, annotations)
+    blocks = attach_extras(blocks, cfg.get("extraAnnotations", {}), heads,
+                           orphaned)
+    blocks = promote_topics(blocks)
+    blocks = align_translations(blocks, unaligned, cfg.get("english"))
+    blocks = pair_sentences(blocks, unpaired)
+    blocks = mark_blanks(blocks, set(cfg.get("clearGaps", ())))
 
     for a in annotations.values():
         a["headword"] = a["headword"].strip()
@@ -998,7 +1048,7 @@ def build(cfg, srcdir):
         "chapterGlossary": orphans,
         "blocks": blocks, "annotations": annotations, "notes": notes,
     }
-    return lesson, unused, unaligned, unpaired
+    return lesson, unused, unaligned, unpaired, orphaned
 
 
 BANNER = ("/* Generated by tools/build.py — do not edit.\n"
@@ -1021,7 +1071,7 @@ def main():
 
     manifest = []
     for cfg in CHAPTERS:
-        lesson, unused, unaligned, unpaired = build(cfg, srcdir)
+        lesson, unused, unaligned, unpaired, orphaned = build(cfg, srcdir)
         lesson["slug"] = cfg["slug"]
         write_payload(os.path.join(out, cfg["slug"] + ".js"), "chapter", lesson,
                       cfg["module"])
@@ -1036,6 +1086,8 @@ def main():
         for where, got, want in unaligned:
             print("    translation left whole on %r: %d English paragraphs "
                   "against %d Korean" % (where[:40], got, want))
+        if orphaned:
+            print("    annotations nothing points at: %s" % orphaned)
 
     write_payload(os.path.join(out, "manifest.js"), "manifest", manifest,
                   "chNN_*.py")
