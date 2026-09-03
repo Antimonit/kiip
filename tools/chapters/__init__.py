@@ -74,8 +74,19 @@ def SRC(text):
 
 
 def LABELS(*texts):
-    """Short labels printed on a photo or diagram."""
+    """Short labels printed on a photo or diagram.
+
+    Pass GROUP(...) instead of plain text where the page sorts the pictures
+    into named kinds, and the labels keep that grouping.
+    """
+    if texts and isinstance(texts[0], dict):
+        return {"type": "labels", "groups": list(texts)}
     return {"type": "labels", "items": [_spans(t) for t in texts]}
+
+
+def GROUP(name, *texts):
+    """Labels that the page gathers under one heading."""
+    return {"name": _spans(name), "items": [_spans(t) for t in texts]}
 
 
 def MARGIN(*texts):

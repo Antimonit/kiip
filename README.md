@@ -104,7 +104,9 @@ transcribed straight from the photos — `insert` by source block index, `append
 at the end — and `extraAnnotations` supplies entries for words those blocks
 introduce. Both use the `P` / `B` / `H` / `SECT` / `LABELS` helpers, in whose
 text `{word}` marks an annotation and `{surface|headword}` files one under a
-different headword.
+different headword. `LABELS` takes `GROUP(name, *labels)` in place of plain
+labels where the page sorts its pictures into named kinds, and the grouping
+survives into the data rather than being flattened into a row of chips.
 
 ### Corrections
 

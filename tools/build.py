@@ -699,6 +699,10 @@ def every_span_list(blocks):
         if b["type"] in ("margin", "labels", "verse"):
             for item in b.get("items") or b.get("lines") or ():
                 yield item
+            for group in b.get("groups") or ():
+                yield group["name"]
+                for item in group["items"]:
+                    yield item
 
 
 HANGUL = re.compile(r"[\uac00-\ud7a3]")
@@ -775,15 +779,19 @@ def absorb_handwriting(blocks, annotations):
                                            entry["term"], english)
 
         elif b["type"] == "labels":
-            for k, item in enumerate(b["items"]):
-                if len(item) != 1 or not isinstance(item[0], str):
-                    continue
-                m = LABEL_ENGLISH.match(item[0])
-                if not m:
-                    continue
-                term, english = m.group(1).strip(), m.group(2).strip()
-                b["items"][k] = [{"word": term,
-                                  "annotation": stow(term, term, english)}]
+            runs = [b["items"]] if "items" in b else \
+                [g["items"] for g in b["groups"]] + \
+                [[g["name"]] for g in b["groups"]]
+            for items in runs:
+                for k, item in enumerate(items):
+                    if len(item) != 1 or not isinstance(item[0], str):
+                        continue
+                    m = LABEL_ENGLISH.match(item[0])
+                    if not m:
+                        continue
+                    term, english = m.group(1).strip(), m.group(2).strip()
+                    items[k] = [{"word": term,
+                                 "annotation": stow(term, term, english)}]
     return blocks
 
 

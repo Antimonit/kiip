@@ -632,6 +632,22 @@ ol.ko-list li::marker { color: var(--ink-faint); }
   padding: 0.15rem 0.55rem; color: var(--ink-soft);
 }
 
+/* Grouped labels: the page sorts its pictures into kinds, so the kind is
+   named once and its pictures sit under it. The groups sit side by side and
+   wrap onto their own lines when there is no room. */
+
+.labels.is-grouped { gap: 0.7rem 1.8rem; align-items: flex-start; }
+
+.label-group { display: flex; flex-direction: column; gap: 0.35rem; }
+
+.label-group-name {
+  margin: 0; color: var(--ink);
+  font-size: calc(0.82rem * var(--aux-scale));
+  border-bottom: 1px solid var(--rule); padding-bottom: 0.2rem;
+}
+
+.label-group-items { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+
 /* A figure from the page: the photo itself is not reproduced, so the caption
    is given an empty frame to sit under rather than floating on its own. */
 

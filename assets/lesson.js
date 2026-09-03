@@ -255,9 +255,24 @@
         return;
       }
 
+      /* Photo labels. Where the page sorts the pictures into named kinds,
+         the data says so and each kind keeps its own heading. */
       case "labels": {
-        var lb = el("div", "labels");
-        b.items.forEach(function (x) { lb.appendChild(fillSpans(el("span"), x)); });
+        var lb = el("div", "labels" + (b.groups ? " is-grouped" : ""));
+        function chips(into, items) {
+          items.forEach(function (x) { into.appendChild(fillSpans(el("span"), x)); });
+          return into;
+        }
+        if (b.groups) {
+          b.groups.forEach(function (g) {
+            var box = el("div", "label-group");
+            box.appendChild(fillSpans(el("p", "label-group-name"), g.name));
+            box.appendChild(chips(el("div", "label-group-items"), g.items));
+            lb.appendChild(box);
+          });
+        } else {
+          chips(lb, b.items);
+        }
         host.appendChild(lb);
         return;
       }
