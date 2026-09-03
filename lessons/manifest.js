@@ -55,5 +55,11 @@ KIIP.manifest([
   "slug": "09-childcare",
   "title": "보육 제도",
   "titleEn": "Childcare"
+ },
+ {
+  "number": 10,
+  "slug": "10-school-education",
+  "title": "초·중등 교육",
+  "titleEn": "Primary and secondary education"
  }
 ]);
