@@ -265,11 +265,15 @@ async function checkChapter(file) {
     problems.push("a handwritten gloss is still printed inline");
   });
 
-  // a real parenthetical must not be mistaken for a gap
-  if (d.body.textContent.indexOf("(2020년 기준)") === -1 &&
-      /2020년 기준/.test(d.body.textContent)) {
-    problems.push("(2020년 기준) was treated as a fill-in gap");
-  }
+  /* A real parenthetical must not be mistaken for a gap. A gap's answer is a
+     word the reader is meant to supply, never a citation — so a date or a
+     기준/출처 inside one means the blank detector ate a parenthesis. */
+  d.querySelectorAll(".blank").forEach(function (b) {
+    if (/\d{4}년|기준|출처|단위/.test(b.textContent)) {
+      problems.push("a parenthetical was treated as a fill-in gap: " +
+                    b.textContent.trim());
+    }
+  });
 
   // a header cell that spans must actually span
   d.querySelectorAll(".table-wrap th").forEach(function (th) {
