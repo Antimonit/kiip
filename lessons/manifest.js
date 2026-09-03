@@ -73,5 +73,11 @@ KIIP.manifest([
   "slug": "12-lifelong-learning",
   "title": "평생 교육",
   "titleEn": "Lifelong learning"
+ },
+ {
+  "number": 13,
+  "slug": "13-traditional-values",
+  "title": "전통 가치",
+  "titleEn": "Traditional values"
  }
 ]);
