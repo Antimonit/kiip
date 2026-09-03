@@ -67,5 +67,11 @@ KIIP.manifest([
   "slug": "11-higher-education",
   "title": "고등 교육과 입시",
   "titleEn": "Higher education and entrance exams"
+ },
+ {
+  "number": 12,
+  "slug": "12-lifelong-learning",
+  "title": "평생 교육",
+  "titleEn": "Lifelong learning"
  }
 ]);
