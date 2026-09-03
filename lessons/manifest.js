@@ -85,5 +85,11 @@ KIIP.manifest([
   "slug": "14-food-dress-and-housing",
   "title": "전통 의식주",
   "titleEn": "Traditional food, dress and housing"
+ },
+ {
+  "number": 15,
+  "slug": "15-rites-of-passage",
+  "title": "의례",
+  "titleEn": "Rites of passage"
  }
 ]);
