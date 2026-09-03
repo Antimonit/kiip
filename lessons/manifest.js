@@ -127,5 +127,11 @@ KIIP.manifest([
   "slug": "21-legislature",
   "title": "입법부",
   "titleEn": "The legislature"
+ },
+ {
+  "number": 22,
+  "slug": "22-executive",
+  "title": "행정부",
+  "titleEn": "The executive"
  }
 ]);

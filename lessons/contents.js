@@ -247,7 +247,7 @@ KIIP.contents({
       "법은 누가 집행할까?",
       "정부는 어떤 일을 할까?"
      ],
-     "built": false
+     "built": true
     },
     {
      "number": 23,
