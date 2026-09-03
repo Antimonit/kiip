@@ -267,7 +267,7 @@ KIIP.contents({
       "선거는 어떻게 이루어지고 있을까?",
       "우리 지역을 위한 정치는 어떻게 할까?"
      ],
-     "built": false
+     "built": true
     }
    ]
   },

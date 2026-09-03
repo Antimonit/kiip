@@ -139,5 +139,11 @@ KIIP.manifest([
   "slug": "23-judiciary",
   "title": "사법부",
   "titleEn": "The judiciary"
+ },
+ {
+  "number": 24,
+  "slug": "24-elections-and-local-government",
+  "title": "선거와 지방자치",
+  "titleEn": "Elections and local self-government"
  }
 ]);
