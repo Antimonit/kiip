@@ -151,5 +151,11 @@ KIIP.manifest([
   "slug": "25-daily-economic-life",
   "title": "일상생활과 경제 활동",
   "titleEn": "Everyday life and economic activity"
+ },
+ {
+  "number": 26,
+  "slug": "26-economic-growth",
+  "title": "경제 성장",
+  "titleEn": "Economic growth"
  }
 ]);

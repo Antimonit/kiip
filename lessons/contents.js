@@ -295,7 +295,7 @@ KIIP.contents({
       "한국 경제는 어떻게 성장해 왔을까?",
       "한국은 세계 여러 나라와 어떻게 교류하고 있을까?"
      ],
-     "built": false
+     "built": true
     },
     {
      "number": 27,
