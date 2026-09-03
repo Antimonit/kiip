@@ -325,7 +325,7 @@ KIIP.contents({
       "한국의 일자리 상황은 어떠할까?",
       "취업하기 위해서는 무엇을 준비해야 할까?"
      ],
-     "built": false
+     "built": true
     }
    ]
   },

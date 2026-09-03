@@ -169,5 +169,11 @@ KIIP.manifest([
   "slug": "28-banking",
   "title": "금융기관 이용하기",
   "titleEn": "Using a financial institution"
+ },
+ {
+  "number": 29,
+  "slug": "29-finding-work",
+  "title": "취업하기",
+  "titleEn": "Finding work"
  }
 ]);
