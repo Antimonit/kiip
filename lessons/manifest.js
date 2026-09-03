@@ -97,5 +97,11 @@ KIIP.manifest([
   "slug": "16-seasonal-festivals",
   "title": "명절",
   "titleEn": "The seasonal festivals"
+ },
+ {
+  "number": 17,
+  "slug": "17-religion",
+  "title": "종교",
+  "titleEn": "Religion"
  }
 ]);
