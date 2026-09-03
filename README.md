@@ -76,6 +76,10 @@ is how each comment is tied back to the word it annotates.
   its word is said — or to the margin-glossary term of the same name, where a
   page carries no comments at all — so an entry does not need a Docs comment
   to be reachable, and reports any entry nothing points at;
+- marks a margin-glossary word where the article goes on to say it, so the
+  textbook's own vocabulary is clickable in the prose and not only in the
+  margin. Running prose is searched first, then headings, then photo labels
+  and margin notes, so a word is marked where it is read;
 - applies the chapter's corrections and lists every one of them on the page.
 
 A block that the Doc sets as ordinary text can be given its real part by

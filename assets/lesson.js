@@ -141,7 +141,8 @@
 
       case "heading": {
         var h = el(b.level <= 2 ? "h4" : "h5",
-                   "sub-title sub-level-" + b.level, b.text);
+                   "sub-title sub-level-" + b.level, b.spans ? "" : b.text);
+        if (b.spans) fillSpans(h, b.spans);
         if (b.titleTranslation) h.appendChild(el("span", "en-title", b.titleTranslation));
         host.appendChild(h);
         if (b.translation) host.appendChild(translationBlock(b.translation));

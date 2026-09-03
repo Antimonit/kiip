@@ -630,12 +630,73 @@ def attach_extras(blocks, extras, heads=None, orphaned=None):
     return blocks
 
 
+def attach_glossary(blocks, heads=None):
+    """Point a margin-glossary term at the place the article says it.
+
+    The textbook glosses a word in the margin and then uses it in the prose a
+    line or two later. The gloss carries the annotation, but the word in the
+    prose is left plain unless the Doc happened to comment on it there too.
+    This marks the first place the article says it, so the word is clickable
+    where it is read.
+    """
+    heads = heads or {}
+    terms = {}
+    for b in blocks:
+        for entry in b.get("entries", ()):
+            key = entry.get("annotation")
+            if key:
+                terms[key] = entry.get("term", key)
+    if not terms:
+        return blocks
+    for spans in every_span_list(blocks):
+        for span in spans:
+            if isinstance(span, dict):
+                terms.pop(span.get("annotation"), None)
+
+    surfaces = {}
+    for surface, head in heads.items():
+        if head in terms:
+            surfaces.setdefault(head, []).append(surface)
+
+    for key in sorted(terms, key=len, reverse=True):
+        for said in [terms[key], key] + surfaces.get(key, []):
+            done = False
+            for spans in every_span_list(blocks):
+                out = []
+                for span in spans:
+                    at = -1 if done or not isinstance(span, str) \
+                        else word_start(span, said)
+                    if at < 0:
+                        out.append(span)
+                        continue
+                    if span[:at]:
+                        out.append(span[:at])
+                    out.append({"word": said, "annotation": key})
+                    if span[at + len(said):]:
+                        out.append(span[at + len(said):])
+                    done = True
+                if done:
+                    spans[:] = out
+                    break
+            if done:
+                break
+    return blocks
+
+
 def every_span_list(blocks):
-    """Each run of spans a reader can click a word in."""
+    """Each run of spans a reader can click a word in.
+
+    Running prose comes first, so that a word looked for across the whole
+    chapter is marked where it is read rather than on a photo label.
+    """
     for b in blocks:
         if b["type"] in ("paragraph", "bullet"):
             yield b["spans"]
-        elif b["type"] in ("margin", "labels", "verse"):
+    for b in blocks:
+        if b["type"] == "heading" and "spans" in b:
+            yield b["spans"]
+    for b in blocks:
+        if b["type"] in ("margin", "labels", "verse"):
             for item in b.get("items") or b.get("lines") or ():
                 yield item
 
@@ -1014,8 +1075,18 @@ def build(cfg, srcdir):
     unaligned, unpaired, orphaned = [], [], []
     blocks = normalize_spans(blocks + copy.deepcopy(cfg.get("append", [])))
     blocks = absorb_handwriting(blocks, annotations)
+    # a heading is prose too, so it takes part in the search for a word; it
+    # keeps its plain text either way, which is what the English is keyed on
+    for b in blocks:
+        if b["type"] == "heading":
+            b["spans"] = [b["text"]]
     blocks = attach_extras(blocks, cfg.get("extraAnnotations", {}), heads,
                            orphaned)
+    blocks = attach_glossary(blocks, heads)
+    for b in blocks:
+        if b["type"] == "heading" and not any(
+                isinstance(x, dict) for x in b["spans"]):
+            del b["spans"]
     blocks = promote_topics(blocks)
     blocks = align_translations(blocks, unaligned, cfg.get("english"))
     blocks = pair_sentences(blocks, unpaired)
