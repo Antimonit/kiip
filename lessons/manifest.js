@@ -7,5 +7,11 @@ KIIP.manifest([
   "slug": "01-symbols-of-korea",
   "title": "한국의 상징",
   "titleEn": "Symbols of Korea"
+ },
+ {
+  "number": 2,
+  "slug": "02-family",
+  "title": "가족",
+  "titleEn": "Family"
  }
 ]);
