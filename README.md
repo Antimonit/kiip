@@ -132,6 +132,21 @@ and `index.html` lists every chapter the book has: the built ones link, the
 rest are set back with their page number. A checkout without the contents
 module falls back to listing whatever is built.
 
+### The pages that close a 편
+
+Every 편 ends with four pages of its own — 대단원 정리 and a 가로세로 퀴즈, then
+단원 종합 평가, then a page or two of illustrated features. Those are not
+chapters, so they are not in the book's fifty, but they are built and read
+exactly as a chapter is: `tools/chapters/ptNN_slug.py` defines a `PART` dict
+with the same keys, plus `part=True`, and the build writes
+`lessons/part-N.js`. The page is `lesson.html?ch=part-N`, which the index
+links from the part's own header, and the only thing `part=True` changes is
+that the page calls itself 제N편 rather than Chapter N.
+
+A gap written `( 답 )` is covered in a `quiz` or `exam` section as it is in
+`review`, so the answers to a crossword or a multiple-choice question can be
+carried in the data and still be asked for rather than given.
+
 ### Adding a chapter
 
 1. Put the page photos in `source/<slug>/`.
@@ -243,6 +258,7 @@ tools/smoke.js          render check and boundary lints
 tools/chapters/
   __init__.py           registry, and the helpers chapter modules use
   chNN_slug.py          one editorial module per chapter        (content)
+  ptNN_slug.py          the spread that closes one 편            (content)
 lessons/
   manifest.js           generated chapter list                  (content)
   <slug>.js             generated chapter data                  (content)

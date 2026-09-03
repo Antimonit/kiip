@@ -182,6 +182,19 @@ a { color: var(--accent); }
   text-transform: uppercase;
 }
 
+/* the four pages that close the part, in the part's own colour */
+.part-link {
+  margin-left: auto;
+  font-family: var(--ko); font-size: 0.8rem;
+  color: var(--part); text-decoration: none;
+  border: 1px solid var(--part); border-radius: 5px;
+  padding: 0.22rem 0.6rem;
+}
+
+.part-link:hover, .part-link:focus-visible {
+  background: var(--part); color: #fff;
+}
+
 /* the part's colour carries down its chapters as a spine */
 .entries { border-left: 2px solid var(--part); padding-left: 0.9rem; }
 
@@ -385,6 +398,45 @@ a.entry:hover { background: var(--raised); }
   --head-gap: 1rem;
   --topic-align: center;
   --topic-size: 1.2rem;
+}
+
+/* --- the spread that closes a 편 ------------------------------------ */
+
+/* 대단원 정리 — what the part covered, tabulated as the book tabulates it. */
+.sect-summary {
+  --surface: var(--raised);
+  --edge: var(--rule);
+  --pad: 1.9rem 2rem 1.5rem;
+  --radius: 8px;
+  --title-size: 1.4rem;
+  --title-color: var(--accent);
+  --title-rule: 0;
+  --title-gap: 1.4rem;
+}
+
+/* 가로 세로 퀴즈 · 단원 종합 평가 — questions with their answers covered, set
+   like 주요 내용정리, which is the other place a gap is filled in. */
+.sect-quiz,
+.sect-exam {
+  --lead: 2.15;
+  --flow: 0.75rem;
+  --surface: var(--raised);
+  --edge: var(--rule);
+  --pad: 1.9rem 2rem 1.5rem;
+  --radius: 8px;
+  --title-size: 1.4rem;
+  --title-color: var(--accent);
+  --title-rule: 0;
+  --title-gap: 1.4rem;
+}
+
+/* 일상생활과 민주주의 · 한국 대통령과 만난 정상들 — the part's own features,
+   which read as articles of their own. */
+.sect-feature {
+  --title-size: 1.5rem;
+  --title-weight: 700;
+  --title-rule: 2px solid var(--accent);
+  --title-gap: 1.5rem;
 }
 
 /* generated commentary, not textbook content */

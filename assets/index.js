@@ -73,6 +73,12 @@
       chip.appendChild(el("h2", "part-name", part.title));
       head.appendChild(chip);
       if (part.titleEn) head.appendChild(el("span", "part-en", part.titleEn));
+      /* the four pages that close the part, where they are built */
+      if (part.closing) {
+        var link = el("a", "part-link", "대단원 마무리");
+        link.href = "lesson.html?ch=" + encodeURIComponent(part.closing);
+        head.appendChild(link);
+      }
       sec.appendChild(head);
     }
 

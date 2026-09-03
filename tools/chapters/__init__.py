@@ -176,16 +176,31 @@ def GLOSS(*entries):
 
 # --- registry ---------------------------------------------------------
 
-def load():
+def _load(prefix, attr):
     found = []
     for info in pkgutil.iter_modules(__path__):
-        if not info.name.startswith("ch"):
+        if not info.name.startswith(prefix):
             continue
         module = importlib.import_module("%s.%s" % (__name__, info.name))
-        chapter = dict(module.CHAPTER)
-        chapter["module"] = info.name + ".py"
-        found.append(chapter)
+        entry = dict(getattr(module, attr))
+        entry["module"] = info.name + ".py"
+        found.append(entry)
     return sorted(found, key=lambda c: c["number"])
+
+
+def load():
+    """The chapters, `chNN_slug.py`, ordered by chapter number."""
+    return _load("ch", "CHAPTER")
+
+
+def load_parts():
+    """The spreads that close each 편, `ptNN_slug.py`, ordered by part.
+
+    A part page is built exactly as a chapter is — same blocks, same
+    annotations, same corrections — and differs only in carrying `part=True`,
+    which is what the page reads to say 제N편 rather than Chapter N.
+    """
+    return _load("pt", "PART")
 
 
 def contents():
@@ -202,3 +217,4 @@ def contents():
 
 
 CHAPTERS = load()
+PARTS = load_parts()

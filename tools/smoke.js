@@ -350,7 +350,7 @@ function checkAddressHandling() {
   report("address handling", problems, "missing, malformed and absent slugs");
 }
 
-function checkIndex(chapters) {
+function checkIndex(chapters, parts) {
   const dom = page("index.html", "index.html");
   const w = dom.window;
   ["manifest.js", "contents.js"].forEach(function (f) {
@@ -400,6 +400,18 @@ function checkIndex(chapters) {
     }
   });
 
+  /* a part whose closing spread is built links to it */
+  const partLinks = [...d.querySelectorAll(".part-link")];
+  if (partLinks.length !== parts.length) {
+    problems.push(partLinks.length + " parts link to their closing pages, but "
+                  + parts.length + " are built");
+  }
+  partLinks.forEach(function (a) {
+    if (!/^lesson\.html\?ch=part-\d+$/.test(a.getAttribute("href"))) {
+      problems.push("bad part link: " + a.getAttribute("href"));
+    }
+  });
+
   if (!chapters.length && d.querySelector("[data-empty]").hidden) {
     problems.push("no chapters, but the empty state is hidden");
   }
@@ -408,7 +420,8 @@ function checkIndex(chapters) {
 
   report("index.html", problems,
     "built=" + chapters.length + " listed=" + rows.length +
-    " parts=" + d.querySelectorAll(".part").length);
+    " parts=" + d.querySelectorAll(".part").length +
+    " closing=" + partLinks.length);
 }
 
 /* --- run ------------------------------------------------------------- */
@@ -416,16 +429,20 @@ function checkIndex(chapters) {
 (async function () {
   lintSectionLayering();
 
-  const chapters = fs.existsSync(LESSONS)
+  const pages = fs.existsSync(LESSONS)
     ? fs.readdirSync(LESSONS).filter(function (f) {
         return f.endsWith(".js") && f !== "manifest.js" &&
                f !== "contents.js";
       }).sort()
     : [];
+  /* a part page is built and rendered as a chapter, but it is not one of the
+     book's fifty, so the index does not list it as a row */
+  const parts = pages.filter(function (f) { return f.startsWith("part-"); });
+  const chapters = pages.filter(function (f) { return !parts.includes(f); });
 
-  for (const file of chapters) await checkChapter(file);
+  for (const file of pages) await checkChapter(file);
   checkAddressHandling();
-  checkIndex(chapters);
+  checkIndex(chapters, parts);
 
   process.exit(failed ? 1 : 0);
 })();

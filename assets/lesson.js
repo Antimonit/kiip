@@ -15,10 +15,16 @@
 
   /* --- head ------------------------------------------------------ */
 
-  document.title = lesson.number + ". " + lesson.title + " — KIIP 5";
+  /* a part page is addressed and rendered as a chapter; only what it calls
+     itself differs */
+  var name = lesson.part ? "제" + lesson.number + "편 " + lesson.unit
+                         : lesson.number + ". " + lesson.title;
+  document.title = name + " — KIIP 5";
 
   var head = document.querySelector(".lesson-head");
-  head.appendChild(el("div", "eyebrow", "Chapter " + lesson.number + " · " + lesson.unit));
+  head.appendChild(el("div", "eyebrow", lesson.part
+    ? "제" + lesson.number + "편 · " + lesson.unit
+    : "Chapter " + lesson.number + " · " + lesson.unit));
   head.appendChild(el("h2", null, lesson.title));
   head.appendChild(el("p", "en", lesson.titleEnglish));
 

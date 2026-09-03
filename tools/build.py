@@ -17,7 +17,7 @@ import sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from parse_gdoc import parse
 import chapters
-from chapters import CHAPTERS
+from chapters import CHAPTERS, PARTS
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 HANJA = r"一-鿿"
@@ -726,18 +726,18 @@ def word_start(text, key):
 
 
 def mark_blanks(blocks, clear=()):
-    """Turn the gaps in the review section into blank spans.
+    """Turn the gaps in a section of questions into blank spans.
 
     An answer already written into the Doc is carried through as the blank's
     content, for the page to keep covered until the reader asks for it. An
     answer named in the chapter's clearGaps is dropped instead, leaving the
     gap open again.
     """
-    in_review = False
+    in_gaps = False
     for b in blocks:
         if b["type"] == "section":
-            in_review = b["kind"] == "review"
-        if not in_review or b["type"] not in ("paragraph", "bullet"):
+            in_gaps = b["kind"] in ("review", "quiz", "exam")
+        if not in_gaps or b["type"] not in ("paragraph", "bullet"):
             continue
         out = []
         for seg in b["spans"]:
@@ -1203,6 +1203,35 @@ def write_payload(path, call, payload, source):
         f.write(");\n")
 
 
+def emit_payload(cfg, srcdir, out):
+    """Build one chapter or part page, write it, and say how it went."""
+    # the Doc this chapter was built from is not on this machine;
+    # the generated file is checked in, so leave it as it stands
+    if cfg.get("src") and not os.path.exists(os.path.join(srcdir, cfg["src"])):
+        print("%-34s SOURCE MISSING (%s) — kept the generated file" % (
+            cfg["slug"], cfg["src"]))
+        return
+
+    lesson, unused, unaligned, unpaired, orphaned = build(cfg, srcdir)
+    lesson["slug"] = cfg["slug"]
+    if cfg.get("part"):
+        lesson["part"] = True
+    write_payload(os.path.join(out, cfg["slug"] + ".js"), "chapter", lesson,
+                  cfg["module"])
+    print("%-34s %3d blocks %3d annotations %2d notes %s" % (
+        cfg["slug"], len(lesson["blocks"]), len(lesson["annotations"]),
+        len(lesson["notes"]),
+        "UNUSED FIXES: %s" % [u[0] for u in unused] if unused else ""))
+    for got, want in unpaired:
+        print("    paragraph rendered whole: %d Korean sentences against "
+              "%d English" % (got, want))
+    for where, got, want in unaligned:
+        print("    translation left whole on %r: %d English paragraphs "
+              "against %d Korean" % (where[:40], got, want))
+    if orphaned:
+        print("    annotations nothing points at: %s" % orphaned)
+
+
 def main():
     srcdir = os.path.expanduser(sys.argv[1] if len(sys.argv) > 1 else "~/Downloads")
     out = os.path.join(ROOT, "lessons")
@@ -1221,29 +1250,21 @@ def main():
                 cfg["slug"], cfg["src"]))
             continue
 
-        lesson, unused, unaligned, unpaired, orphaned = build(cfg, srcdir)
-        lesson["slug"] = cfg["slug"]
-        write_payload(os.path.join(out, cfg["slug"] + ".js"), "chapter", lesson,
-                      cfg["module"])
-        print("%-34s %3d blocks %3d annotations %2d notes %s" % (
-            cfg["slug"], len(lesson["blocks"]), len(lesson["annotations"]),
-            len(lesson["notes"]),
-            "UNUSED FIXES: %s" % [u[0] for u in unused] if unused else ""))
-        for got, want in unpaired:
-            print("    paragraph rendered whole: %d Korean sentences against "
-                  "%d English" % (got, want))
-        for where, got, want in unaligned:
-            print("    translation left whole on %r: %d English paragraphs "
-                  "against %d Korean" % (where[:40], got, want))
-        if orphaned:
-            print("    annotations nothing points at: %s" % orphaned)
+        emit_payload(cfg, srcdir, out)
+
+    # the spread that closes each 편, built and addressed as a chapter is
+    for cfg in PARTS:
+        emit_payload(cfg, srcdir, out)
 
     parts, back = chapters.contents()
     if parts:
         done = {c["number"] for c in CHAPTERS}
+        closing = {p["number"]: p["slug"] for p in PARTS}
         for part in parts:
             for c in part["chapters"]:
                 c["built"] = c["number"] in done
+            if part["number"] in closing:
+                part["closing"] = closing[part["number"]]
         print("%-34s %3d chapters in %d parts, %d built" % (
             "contents", sum(len(p["chapters"]) for p in parts), len(parts),
             len(done)))
