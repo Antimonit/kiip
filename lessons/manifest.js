@@ -115,5 +115,11 @@ KIIP.manifest([
   "slug": "19-leisure",
   "title": "여가문화",
   "titleEn": "Leisure"
+ },
+ {
+  "number": 20,
+  "slug": "20-democratic-politics",
+  "title": "한국의 민주 정치",
+  "titleEn": "Democratic politics in Korea"
  }
 ]);

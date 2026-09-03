@@ -227,7 +227,7 @@ KIIP.contents({
       "한국의 주인은 누구일까?",
       "한국은 왜 국가 기관의 권력을 나누어 놓았을까?"
      ],
-     "built": false
+     "built": true
     },
     {
      "number": 21,
