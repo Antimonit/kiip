@@ -19,5 +19,11 @@ KIIP.manifest([
   "slug": "03-workplace",
   "title": "일터",
   "titleEn": "The workplace"
+ },
+ {
+  "number": 4,
+  "slug": "04-transport-and-communication",
+  "title": "교통과 통신",
+  "titleEn": "Transport and communication"
  }
 ]);
