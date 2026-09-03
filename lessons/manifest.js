@@ -91,5 +91,11 @@ KIIP.manifest([
   "slug": "15-rites-of-passage",
   "title": "의례",
   "titleEn": "Rites of passage"
+ },
+ {
+  "number": 16,
+  "slug": "16-seasonal-festivals",
+  "title": "명절",
+  "titleEn": "The seasonal festivals"
  }
 ]);
