@@ -226,6 +226,7 @@ a { color: var(--accent); }
   --topic-size: 1.13rem;
   --topic-color: var(--ink);
   --topic-align: left;
+  --cell-align: left;
 
   background: var(--surface);
   border: 1px solid var(--edge);
@@ -328,6 +329,10 @@ a { color: var(--accent); }
 }
 
 /* generated commentary, not textbook content */
+/* the unit table is set centred on the page, unlike the tables in an
+   article, which run to the left with their prose */
+.sect-related { --cell-align: center; }
+
 .sect-notes {
   --scale: 0.88;
   --title-size: 1rem;
@@ -572,7 +577,7 @@ ol.ko-list li::marker { color: var(--ink-faint); }
 .table-wrap th, .table-wrap td {
   border: 1px solid var(--rule);
   padding: 0.45rem 0.7rem;
-  text-align: left;
+  text-align: var(--cell-align, left);
   vertical-align: top;
   word-break: keep-all;
 }
