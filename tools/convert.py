@@ -133,7 +133,7 @@ def cell(c):
         args = args + [", columns=%d" % c["span"]]
     if c.get("spanDown"):
         args = args + [", down=%d" % c["spanDown"]]
-    return ["SPAN("] + args + [")"]
+    return ["CELL("] + args + [")"]
 
 
 def rows(table_rows):
@@ -174,14 +174,14 @@ def block_source(b, indent=8):
 
     if kind == "section":
         only("kind", "text")
-        return call("SECT", [literal(b["kind"]), literal(b["text"])], indent)
+        return call("SECTION", [literal(b["kind"]), literal(b["text"])], indent)
 
     if kind == "heading":
         only("level", "text", "translation")
         args = [str(b["level"]), literal(b["text"])]
         if b.get("translation"):
             args.append(["translation="] + literal(b["translation"]))
-        return call("H", args, indent)
+        return call("HEADING", args, indent)
 
     if kind == "paragraph":
         only("spans", "role", "translation")
@@ -193,7 +193,7 @@ def block_source(b, indent=8):
         args = [literal(text)]
         if b.get("translation"):
             args.append(["translation="] + literal(b["translation"]))
-        return call("P", args, indent)
+        return call("PARAGRAPH", args, indent)
 
     if kind == "bullet":
         only("spans", "ordered", "level")
@@ -202,7 +202,7 @@ def block_source(b, indent=8):
             args.append("ordered=True")
         if b.get("level", 1) != 1:
             args.append("level=%d" % b["level"])
-        return call("B", args, indent)
+        return call("BULLET", args, indent)
 
     if kind == "glossary":
         only("entries")
@@ -219,7 +219,7 @@ def block_source(b, indent=8):
             if e.get("handwritten"):
                 piece += [", "] + literal(e["handwritten"])
             args.append(([BREAK] if args else []) + piece + [")"])
-        return call("GLOSS", args, indent)
+        return call("GLOSSARY", args, indent)
 
     if kind == "table":
         only("header", "rows")
@@ -250,11 +250,11 @@ def block_source(b, indent=8):
 
     if kind == "figure":
         only("text")
-        return call("FIG", [literal(b["text"])], indent)
+        return call("FIGURE", [literal(b["text"])], indent)
 
     if kind == "source":
         only("text")
-        return call("SRC", [literal(b["text"])], indent)
+        return call("SOURCE", [literal(b["text"])], indent)
 
     if kind == "chart":
         only("caption", "unit", "rows")
@@ -264,10 +264,11 @@ def block_source(b, indent=8):
     raise SystemExit("no helper writes a %s block" % kind)
 
 
-HELPERS = {"section": "SECT", "heading": "H", "paragraph": "P",
-           "bullet": "B", "glossary": "GLOSS", "table": "TABLE",
+HELPERS = {"section": "SECTION", "heading": "HEADING",
+           "paragraph": "PARAGRAPH", "bullet": "BULLET",
+           "glossary": "GLOSSARY", "table": "TABLE",
            "labels": "LABELS", "margin": "MARGIN", "verse": "VERSE",
-           "figure": "FIG", "source": "SRC", "chart": "CHART"}
+           "figure": "FIGURE", "source": "SOURCE", "chart": "CHART"}
 
 
 # --- annotations ------------------------------------------------------
@@ -361,8 +362,9 @@ def drop_key(text, key):
     return text[:m.start()] + "    " + text[j:], True
 
 
-ORDER = ("SECT", "H", "P", "B", "SRC", "FIG", "LABELS", "GROUP", "MARGIN",
-         "VERSE", "TABLE", "SPAN", "CHART", "GLOSS")
+ORDER = ("SECTION", "HEADING", "PARAGRAPH", "BULLET", "SOURCE", "FIGURE",
+         "LABELS", "GROUP", "MARGIN", "VERSE", "TABLE", "CELL", "CHART",
+         "GLOSSARY")
 
 
 def imports(text, used):
@@ -418,7 +420,7 @@ def convert(cfg, srcdir):
         if b["type"] == "table":
             for c in list(b.get("header", [])) + [x for r in b["rows"] for x in r]:
                 if isinstance(c, dict):
-                    used.add("SPAN")
+                    used.add("CELL")
         lines.extend(block_source(b))
 
     # read it back the way the module will, and refuse anything that differs
@@ -458,11 +460,64 @@ def convert(cfg, srcdir):
     return len(blocks), len(annotations)
 
 
+SHAPES = [
+    {"type": "section", "kind": "warmup", "text": "생각해 봅시다"},
+    {"type": "heading", "level": 3, "text": "국회",
+     "translation": "The Assembly\n\nBody text."},
+    {"type": "paragraph", "translation": "Making law.",
+     "spans": ["법을 ", {"word": "만드는", "annotation": "만들다"}, " 일"]},
+    {"type": "paragraph", "spans": ["★ 이야기해 봅시다."], "role": "prompt"},
+    {"type": "bullet", "spans": ["첫째"], "ordered": True},
+    {"type": "bullet", "spans": ["안쪽"], "level": 2},
+    {"type": "glossary", "entries": [{"term": "세", "definition": ["내는 돈"],
+                                      "annotation": "세",
+                                      "handwritten": "rent"}]},
+    {"type": "table", "header": [{"text": "영역", "span": 2}, "제목"],
+     "rows": [[{"text": "기본", "spanDown": 2}, "정치", "20. 한국의 민주 정치"]]},
+    {"type": "table", "rows": [["가", "나"]]},
+    {"type": "labels",
+     "groups": [{"name": [{"word": "단독 주택", "annotation": "단독 주택"}],
+                 "items": [["양옥"], ["한옥"]]}]},
+    {"type": "labels", "items": [["엿"], ["찹쌀떡"]]},
+    {"type": "margin", "items": [["스세권"]]},
+    {"type": "verse", "lines": [["대한민국은 민주공화국이다."]]},
+    {"type": "figure", "text": "국회의사당"},
+    {"type": "source", "text": "[출처] 한겨레"},
+    {"type": "chart", "caption": "도시화율", "unit": "%",
+     "rows": [["1960년", 39.1]]},
+]
+
+
+def selftest():
+    """Write one block of every shape and read it back.
+
+    Nothing has a `src` any more, so the conversion itself no longer runs
+    over anything. This keeps the writer honest for the next Doc that
+    arrives, and catches a helper renamed out from under it.
+    """
+    lines = []
+    for b in SHAPES:
+        lines.extend(block_source(b))
+    scope = {n: getattr(chapters, n) for n in dir(chapters) if n.isupper()}
+    read = eval("[\n%s\n]" % "\n".join(lines), dict(scope))       # noqa: S307
+    for want, got in zip(SHAPES, read):
+        if want != got:
+            raise SystemExit("round-trip differs:\n  %r\n  %r" % (want, got))
+    if len(read) != len(SHAPES):
+        raise SystemExit("round-trip lost a block")
+    print("%d block shapes written and read back" % len(SHAPES))
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("slugs", nargs="*")
     ap.add_argument("--src", default=os.path.expanduser("~/Downloads"))
+    ap.add_argument("--selftest", action="store_true",
+                    help="write one block of every shape and read it back")
     args = ap.parse_args()
+
+    if args.selftest:
+        return selftest()
 
     for cfg in CHAPTERS:
         if args.slugs and cfg["slug"] not in args.slugs:

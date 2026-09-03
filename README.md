@@ -70,6 +70,11 @@ on working exactly as they did. Every block it writes is read back with the
 same helpers the module uses and compared against what the Doc gave, so a
 chapter it cannot round-trip is refused rather than half-written.
 
+Nothing names a `src` any more, so the conversion no longer runs over
+anything; `python3 tools/convert.py --selftest` writes one block of every
+shape and reads it back, which keeps the writer honest for the next Doc that
+arrives.
+
 ### The pipeline
 
 For a chapter still built from a Doc, `tools/parse_gdoc.py` reads the export.
@@ -113,8 +118,8 @@ group of lines really is, and `drop` removes a line the page does not have.
 the outer items and its list items the inner ones — which is how a page that
 draws a bracket is set here.
 
-A table cell is plain text, or `SPAN(text, columns)` where the book merges it
-across columns, or `SPAN(text, down=rows)` where it merges down rows. A
+A table cell is plain text, or `CELL(text, columns)` where the book merges it
+across columns, or `CELL(text, down=rows)` where it merges down rows. A
 merged cell is written once, in the first row it covers, and the rows below
 it are that much shorter.
 
@@ -166,8 +171,8 @@ anything.
 
 Blocks are transcribed straight from the photos in `append`, at the end of
 whatever the chapter already has, and `extraAnnotations` supplies entries for
-words those blocks introduce. Both use the `P` / `B` / `H` / `SECT` / `LABELS`
-helpers, in whose
+words those blocks introduce. Both use the `PARAGRAPH` / `BULLET` /
+`HEADING` / `SECTION` / `LABELS` helpers, in whose
 text `{word}` marks an annotation and `{surface|headword}` files one under a
 different headword. `LABELS` takes `GROUP(name, *labels)` in place of plain
 labels where the page sorts its pictures into named kinds, and the grouping

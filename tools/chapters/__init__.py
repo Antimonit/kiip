@@ -57,12 +57,12 @@ def _spans(text):
     return out
 
 
-def SECT(kind, text):
+def SECTION(kind, text):
     """A section of the given kind — see SPECIAL in tools/build.py."""
     return {"type": "section", "kind": kind, "text": text}
 
 
-def H(level, text, translation=None):
+def HEADING(level, text, translation=None):
     """A heading. `translation` is the English written beside it."""
     block = {"type": "heading", "level": level, "text": text}
     if translation:
@@ -70,7 +70,7 @@ def H(level, text, translation=None):
     return block
 
 
-def P(text, translation=None):
+def PARAGRAPH(text, translation=None):
     """A paragraph. A ★ opens the question a section closes with."""
     block = {"type": "paragraph", "spans": _spans(text)}
     if text.startswith("\u2605"):
@@ -80,7 +80,7 @@ def P(text, translation=None):
     return block
 
 
-def B(text, ordered=False, level=1):
+def BULLET(text, ordered=False, level=1):
     """A list item. level=2 nests it under the item before it."""
     item = {"type": "bullet", "spans": _spans(text)}
     if ordered:
@@ -90,7 +90,7 @@ def B(text, ordered=False, level=1):
     return item
 
 
-def SRC(text):
+def SOURCE(text):
     """A source or citation line."""
     return {"type": "source", "text": text}
 
@@ -121,7 +121,7 @@ def VERSE(*lines):
     return {"type": "verse", "lines": [_spans(t) for t in lines]}
 
 
-def FIG(caption):
+def FIGURE(caption):
     """A photo on the page, which is not reproduced."""
     return {"type": "figure", "text": caption}
 
@@ -134,7 +134,7 @@ def TABLE(header, rows=None):
             "rows": [list(r) for r in rows]}
 
 
-def SPAN(text, columns=None, down=None):
+def CELL(text, columns=None, down=None):
     """A cell printed across more than one column, or down more than one row.
 
     The book merges cells both ways: 영역 sits across two columns of a unit
@@ -154,7 +154,7 @@ def CHART(caption, unit, rows):
             "rows": [list(r) for r in rows]}
 
 
-def GLOSS(*entries):
+def GLOSSARY(*entries):
     """The glossary printed in the margin beside an article.
 
     Each entry is (term, definition) or (term, definition, headword) where
