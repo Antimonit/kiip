@@ -13,5 +13,11 @@ KIIP.manifest([
   "slug": "02-family",
   "title": "가족",
   "titleEn": "Family"
+ },
+ {
+  "number": 3,
+  "slug": "03-workplace",
+  "title": "일터",
+  "titleEn": "The workplace"
  }
 ]);
