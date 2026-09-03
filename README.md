@@ -120,7 +120,7 @@ module falls back to listing whatever is built.
    `lessons/*.js` is checked in — so a missing export cannot delete a
    chapter, but it cannot rebuild one either.
 2. Add `tools/chapters/chNN_slug.py` defining one `CHAPTER` dict. `src`,
-   `number`, `slug`, `unit`, `title`, `titleEn`, `tags` are enough to start;
+   `number`, `slug`, `unit`, `title`, `titleEn` are enough to start;
    modules are discovered automatically and ordered by chapter number.
 3. Run the build, read the page, and add `fixes`, `headwords` and `roles`
    entries until it reads correctly. Every fix is reported on the page, and the
@@ -207,7 +207,7 @@ npm install jsdom && node tools/smoke.js
 ## Layout
 
 ```
-index.html              chapter list, filterable by topic tag
+index.html              the book's contents, part by part
 lesson.html             one page for every chapter: lesson.html?ch=<slug>
 assets/style.css        all appearance
 assets/kiip.js          content registry and loader

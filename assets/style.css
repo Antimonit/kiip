@@ -39,6 +39,20 @@
   --aside-chip: #6f62a8;
   --aside-ink: #574a8c;
 
+  /* The eight 편, in the colours the book gives them on its contents pages
+     (read off the photographs, so near rather than exact). The book sets
+     white on them; at screen sizes that needs a deeper shade than print, so
+     each is carried a step down from what the page shows. The hues, which
+     are what identifies a part, are the book's. */
+  --part-1: #517f3c;   /* 사회   green */
+  --part-2: #9a6c12;   /* 교육   amber */
+  --part-3: #4f549b;   /* 문화   blue-violet */
+  --part-4: #a4502f;   /* 정치   terracotta */
+  --part-5: #514080;   /* 경제   deep purple */
+  --part-6: #a94459;   /* 법     rose */
+  --part-7: #3f755d;   /* 역사   sage green */
+  --part-8: #9c3663;   /* 지리   magenta */
+
   --ko: "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif;
   --ui: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
 
@@ -67,6 +81,17 @@
     --aside: #1f1e26;
     --aside-chip: #6f62a8;
     --aside-ink: #b3a9df;
+
+    /* lifted, so a part reads against the dark ground as it does against
+       the light one */
+    --part-1: #6fa552;
+    --part-2: #c69433;
+    --part-3: #7176bb;
+    --part-4: #c8724f;
+    --part-5: #7b68b4;
+    --part-6: #cf6a80;
+    --part-7: #5b9b7d;
+    --part-8: #c2537f;
   }
 }
 
@@ -113,54 +138,52 @@ a { color: var(--accent); }
 
 /* --- index page ---------------------------------------------------- */
 
-.filters {
-  display: flex; flex-wrap: wrap; gap: 0.4rem;
-  margin-bottom: 2rem; align-items: center;
-}
-
-.filters .label {
-  font-size: 0.72rem; letter-spacing: 0.1em; text-transform: uppercase;
-  color: var(--ink-faint); margin-right: 0.4rem;
-}
-
-.tag {
-  font: inherit; font-size: 0.8rem; font-family: var(--ko);
-  padding: 0.2rem 0.7rem; border: 1px solid var(--rule);
-  border-radius: 999px; background: transparent; color: var(--ink-soft);
-  cursor: pointer;
-}
-
-.tag[aria-pressed="true"] {
-  background: var(--accent-soft); border-color: var(--accent); color: var(--accent-ink);
-}
-
 .progress {
   font-size: 0.8rem; color: var(--ink-faint); margin: 0 0 2.5rem;
 }
 
-/* The contents run part by part, as the book prints them. A part's number
-   and name head its chapters and nothing else marks the division. */
+/* The contents run part by part, as the book prints them: a coloured chip
+   naming the 편, and its chapters under it. The part supplies its own colour
+   through --part, so every rule below is written once. */
 
-.part { margin-bottom: 2.75rem; }
+.part { margin-bottom: 2.75rem; --part: var(--ink-soft); }
+
+.part[data-part="1"] { --part: var(--part-1); }
+.part[data-part="2"] { --part: var(--part-2); }
+.part[data-part="3"] { --part: var(--part-3); }
+.part[data-part="4"] { --part: var(--part-4); }
+.part[data-part="5"] { --part: var(--part-5); }
+.part[data-part="6"] { --part: var(--part-6); }
+.part[data-part="7"] { --part: var(--part-7); }
+.part[data-part="8"] { --part: var(--part-8); }
 
 .part-head {
-  display: flex; align-items: baseline; gap: 0.6rem;
-  margin-bottom: 0.5rem;
+  display: flex; align-items: center; gap: 0.7rem;
+  margin-bottom: 0.6rem;
+}
+
+.part-chip {
+  display: inline-flex; align-items: baseline; gap: 0.45rem;
+  background: var(--part); color: #fff;
+  border-radius: 6px; padding: 0.3rem 0.75rem 0.35rem;
 }
 
 .part-num {
-  font-family: var(--ko); font-size: 0.75rem; color: var(--ink-faint);
-  letter-spacing: 0.06em;
+  font-family: var(--ko); font-size: 0.72rem; opacity: 0.85;
 }
 
 .part-name {
-  font-family: var(--ko); font-size: 1.05rem; font-weight: 600; margin: 0;
+  font-family: var(--ko); font-size: 1rem; font-weight: 700; margin: 0;
+  color: inherit;
 }
 
 .part-en {
-  font-size: 0.78rem; color: var(--ink-faint); letter-spacing: 0.06em;
+  font-size: 0.75rem; color: var(--ink-faint); letter-spacing: 0.08em;
   text-transform: uppercase;
 }
+
+/* the part's colour carries down its chapters as a spine */
+.entries { border-left: 2px solid var(--part); padding-left: 0.9rem; }
 
 .entries > .entry { border-top: 1px solid var(--rule); }
 .entries > .entry:last-child { border-bottom: 1px solid var(--rule); }
@@ -197,15 +220,6 @@ a.entry:hover { background: var(--raised); }
 .entry .page {
   font-size: 0.78rem; color: var(--ink-faint);
   font-variant-numeric: tabular-nums; padding-top: 0.3rem;
-}
-
-.entry .tags {
-  margin-top: 0.4rem; display: flex; gap: 0.35rem; flex-wrap: wrap;
-}
-
-.entry .tags span {
-  font-size: 0.7rem; color: var(--ink-faint); font-family: var(--ko);
-  border: 1px solid var(--rule); border-radius: 999px; padding: 0.05rem 0.5rem;
 }
 
 .empty { color: var(--ink-faint); padding: 2rem 0; }

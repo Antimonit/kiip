@@ -1,9 +1,12 @@
-/* Landing page: the book's own contents, part by part, filterable by topic.
+/* Landing page: the book's own contents, part by part.
 
    Every chapter the book has is listed, whether or not it has been built —
    an unbuilt one shows what it covers and where it is in the book, so the
    contents read as the contents and not as a list of what happens to exist.
-   The two questions under each title are the book's own 본문 headings. */
+   The two questions under each title are the book's own 본문 headings.
+
+   The parts are the only grouping. Each carries its number as data, and the
+   stylesheet gives it the colour the book prints it in. */
 
 (function () {
   var built = (window.KIIP ? KIIP.all() : []) || [];
@@ -11,9 +14,7 @@
 
   var listEl = document.querySelector("[data-list]");
   var emptyEl = document.querySelector("[data-empty]");
-  var filtersEl = document.querySelector("[data-filters]");
   var progressEl = document.querySelector("[data-progress]");
-  var active = null;
 
   var byNumber = {};
   built.forEach(function (l) { byNumber[l.number] = l; });
@@ -22,7 +23,7 @@
      That is the state of a checkout that carries only the site. */
   var parts = book.parts.length ? book.parts : [{
     chapters: built.map(function (l) {
-      return { number: l.number, title: l.title, articles: [], built: true };
+      return { number: l.number, title: l.title, articles: [] };
     })
   }];
 
@@ -34,31 +35,6 @@
     if (text != null) n.textContent = text;
     return n;
   }
-
-  /* --- topic filter ----------------------------------------------- */
-
-  var tags = [];
-  built.forEach(function (l) {
-    (l.tags || []).forEach(function (t) {
-      if (tags.indexOf(t) === -1) tags.push(t);
-    });
-  });
-
-  tags.forEach(function (t) {
-    var b = el("button", "tag", t);
-    b.type = "button";
-    b.setAttribute("aria-pressed", "false");
-    b.addEventListener("click", function () {
-      active = active === t ? null : t;
-      filtersEl.querySelectorAll(".tag").forEach(function (x) {
-        x.setAttribute("aria-pressed", String(x.textContent === active));
-      });
-      render();
-    });
-    filtersEl.appendChild(b);
-  });
-
-  /* --- rows -------------------------------------------------------- */
 
   function chapterRow(c) {
     var lesson = byNumber[c.number];
@@ -76,56 +52,41 @@
     (c.articles || []).forEach(function (q) {
       body.appendChild(el("span", "question", q));
     });
-
-    if (lesson && lesson.tags && lesson.tags.length) {
-      var tagWrap = el("span", "tags");
-      lesson.tags.forEach(function (t) { tagWrap.appendChild(el("span", null, t)); });
-      body.appendChild(tagWrap);
-    }
     row.appendChild(body);
 
     if (c.page) row.appendChild(el("span", "page", "p. " + c.page));
     return row;
   }
 
-  function render() {
-    listEl.replaceChildren();
-    var shown = 0;
+  var sections = 0;
+  parts.forEach(function (part) {
+    if (!part.chapters.length) return;
+    sections += 1;
 
-    parts.forEach(function (part) {
-      var keep = part.chapters.filter(function (c) {
-        if (!active) return true;
-        var lesson = byNumber[c.number];
-        return lesson && (lesson.tags || []).indexOf(active) !== -1;
-      });
-      if (!keep.length) return;
-      shown += keep.length;
+    var sec = el("section", "part");
+    if (part.number) sec.dataset.part = String(part.number);
 
-      var sec = el("section", "part");
-      if (part.title) {
-        var head = el("header", "part-head");
-        head.appendChild(el("span", "part-num", "제" + part.number + "편"));
-        head.appendChild(el("h2", "part-name", part.title));
-        if (part.titleEn) head.appendChild(el("span", "part-en", part.titleEn));
-        sec.appendChild(head);
-      }
-      var rows = el("div", "entries");
-      keep.forEach(function (c) { rows.appendChild(chapterRow(c)); });
-      sec.appendChild(rows);
-      listEl.appendChild(sec);
-    });
-
-    if (progressEl) {
-      progressEl.textContent = active
-        ? shown + (shown === 1 ? " chapter" : " chapters") + " on ‘" + active + "’"
-        : built.length + " of " + total + " chapters written up";
+    if (part.title) {
+      var head = el("header", "part-head");
+      var chip = el("span", "part-chip");
+      chip.appendChild(el("span", "part-num", "제" + part.number + "편"));
+      chip.appendChild(el("h2", "part-name", part.title));
+      head.appendChild(chip);
+      if (part.titleEn) head.appendChild(el("span", "part-en", part.titleEn));
+      sec.appendChild(head);
     }
 
-    emptyEl.textContent = total === 0
-      ? "No chapters yet. Run the build to generate them."
-      : "No chapters match that topic.";
-    emptyEl.hidden = shown > 0;
+    var rows = el("div", "entries");
+    part.chapters.forEach(function (c) { rows.appendChild(chapterRow(c)); });
+    sec.appendChild(rows);
+    listEl.appendChild(sec);
+  });
+
+  if (progressEl) {
+    progressEl.textContent =
+      built.length + " of " + total + " chapters written up";
   }
 
-  render();
+  emptyEl.textContent = "No chapters yet. Run the build to generate them.";
+  emptyEl.hidden = sections > 0;
 })();

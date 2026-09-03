@@ -1133,7 +1133,7 @@ def build(cfg, srcdir):
 
     lesson = {
         "number": cfg["number"], "unit": cfg["unit"], "title": cfg["title"],
-        "titleEnglish": cfg["titleEn"], "tags": cfg["tags"],
+        "titleEnglish": cfg["titleEn"],
         "chapterGlossary": orphans,
         "blocks": blocks, "annotations": annotations, "notes": notes,
     }
@@ -1161,7 +1161,7 @@ def main():
     manifest = []
     for cfg in CHAPTERS:
         manifest.append({k: cfg[k]
-                         for k in ("number", "slug", "title", "titleEn", "tags")})
+                         for k in ("number", "slug", "title", "titleEn")})
 
         # the Doc this chapter was built from is not on this machine;
         # the generated file is checked in, so leave it as it stands

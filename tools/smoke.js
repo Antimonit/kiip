@@ -391,37 +391,14 @@ function checkIndex(chapters) {
     problems.push("the contents are not grouped into the book's parts");
   }
 
-  // filtering must show exactly the chapters carrying that tag, and clearing
-  // it must restore the list — a count that merely changes is not enough,
-  // since with one chapter it cannot
-  const manifest = w.KIIP.all();
-  const tags = d.querySelectorAll(".filters .tag");
-  if (tags.length) {
-    const label = tags[0].textContent;
-    tags[0].click();
-    const expected = manifest.filter(function (c) {
-      return (c.tags || []).indexOf(label) !== -1;
-    }).length;
-    const shown = [...d.querySelectorAll(".entry")];
-    if (shown.length !== expected) {
-      problems.push("filtering by " + label + " shows " + shown.length +
-                    " chapters, expected " + expected);
+  /* the parts are the only grouping, and each names itself in the data so
+     the stylesheet can give it the book's colour */
+  d.querySelectorAll(".part").forEach(function (sec) {
+    if (!sec.dataset.part) problems.push("a part does not say which part it is");
+    if (!sec.querySelector(".part-chip .part-name")) {
+      problems.push("a part has no name");
     }
-    shown.forEach(function (li) {
-      const rowTags = [...li.querySelectorAll(".tags span")].map(function (s) {
-        return s.textContent;
-      });
-      if (rowTags.indexOf(label) === -1) {
-        problems.push("a chapter without " + label + " survived filtering");
-      }
-    });
-    tags[0].click();
-    if (d.querySelectorAll(".entry").length !== (inBook || manifest.length)) {
-      problems.push("clearing the filter did not restore the full contents");
-    }
-  } else if (chapters.length) {
-    problems.push("chapters present but no topic filters were built");
-  }
+  });
 
   if (!chapters.length && d.querySelector("[data-empty]").hidden) {
     problems.push("no chapters, but the empty state is hidden");
@@ -431,8 +408,7 @@ function checkIndex(chapters) {
 
   report("index.html", problems,
     "built=" + chapters.length + " listed=" + rows.length +
-    " parts=" + d.querySelectorAll(".part").length +
-    " tags=" + tags.length);
+    " parts=" + d.querySelectorAll(".part").length);
 }
 
 /* --- run ------------------------------------------------------------- */
