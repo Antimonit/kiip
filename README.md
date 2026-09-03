@@ -97,9 +97,28 @@ across columns, or `SPAN(text, down=rows)` where it merges down rows. A
 merged cell is written once, in the first row it covers, and the rows below
 it are that much shorter.
 
+### The contents
+
+`tools/chapters/contents.py` holds the book's own contents, from 교재 구성 and
+차례: fifty chapters in eight 편, each with the page it starts on and the two
+questions the book prints in its 본문 column. Those two questions are a
+chapter's article headings, so for a chapter that is built they should match
+its own — which makes the file a check on the transcriptions as well as the
+spine of the index.
+
+The build writes it to `lessons/contents.js`, marking which chapters exist,
+and `index.html` lists every chapter the book has: the built ones link, the
+rest are set back with their page number. A checkout without the contents
+module falls back to listing whatever is built.
+
 ### Adding a chapter
 
-1. Export the Doc as HTML, and put the page photos in `source/<slug>/`.
+1. Export the Doc as HTML, and put the page photos in `source/<slug>/`. The
+   build looks for the export in `~/Downloads` by default, or in the
+   directory given as its first argument. A chapter whose export is not there
+   is skipped with a warning and keeps the file it generated before, since
+   `lessons/*.js` is checked in — so a missing export cannot delete a
+   chapter, but it cannot rebuild one either.
 2. Add `tools/chapters/chNN_slug.py` defining one `CHAPTER` dict. `src`,
    `number`, `slug`, `unit`, `title`, `titleEn`, `tags` are enough to start;
    modules are discovered automatically and ordered by chapter number.

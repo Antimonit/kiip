@@ -353,21 +353,43 @@ function checkAddressHandling() {
 function checkIndex(chapters) {
   const dom = page("index.html", "index.html");
   const w = dom.window;
-  if (fs.existsSync(path.join(LESSONS, "manifest.js"))) {
-    w.eval(fs.readFileSync(path.join(LESSONS, "manifest.js"), "utf8"));
-  }
+  ["manifest.js", "contents.js"].forEach(function (f) {
+    if (fs.existsSync(path.join(LESSONS, f))) {
+      w.eval(fs.readFileSync(path.join(LESSONS, f), "utf8"));
+    }
+  });
   w.eval(read("assets", "index.js"));
   const d = w.document;
 
   const problems = [];
-  const rows = d.querySelectorAll(".lesson-list li");
-  if (rows.length !== chapters.length) {
-    problems.push("index lists " + rows.length + " of " + chapters.length + " chapters");
+  const book = w.KIIP.book();
+  const inBook = book.parts.reduce(function (n, p) {
+    return n + p.chapters.length;
+  }, 0);
+
+  /* every chapter the book has is listed, and only the built ones link */
+  const rows = [...d.querySelectorAll(".entry")];
+  if (rows.length !== (inBook || chapters.length)) {
+    problems.push("index lists " + rows.length + " of " +
+                  (inBook || chapters.length) + " chapters");
   }
-  rows.forEach(function (li) {
-    const href = li.querySelector("a").getAttribute("href");
+  const links = rows.filter(function (r) { return r.tagName === "A"; });
+  if (links.length !== chapters.length) {
+    problems.push(links.length + " chapters link, but " + chapters.length +
+                  " are built");
+  }
+  links.forEach(function (a) {
+    const href = a.getAttribute("href");
     if (!/^lesson\.html\?ch=/.test(href)) problems.push("bad chapter link: " + href);
   });
+  rows.filter(function (r) { return r.tagName !== "A"; }).forEach(function (r) {
+    if (!r.classList.contains("is-pending")) {
+      problems.push("a chapter neither links nor is marked pending");
+    }
+  });
+  if (inBook && d.querySelectorAll(".part").length !== book.parts.length) {
+    problems.push("the contents are not grouped into the book's parts");
+  }
 
   // filtering must show exactly the chapters carrying that tag, and clearing
   // it must restore the list — a count that merely changes is not enough,
@@ -380,7 +402,7 @@ function checkIndex(chapters) {
     const expected = manifest.filter(function (c) {
       return (c.tags || []).indexOf(label) !== -1;
     }).length;
-    const shown = [...d.querySelectorAll(".lesson-list li")];
+    const shown = [...d.querySelectorAll(".entry")];
     if (shown.length !== expected) {
       problems.push("filtering by " + label + " shows " + shown.length +
                     " chapters, expected " + expected);
@@ -394,8 +416,8 @@ function checkIndex(chapters) {
       }
     });
     tags[0].click();
-    if (d.querySelectorAll(".lesson-list li").length !== manifest.length) {
-      problems.push("clearing the filter did not restore the full list");
+    if (d.querySelectorAll(".entry").length !== (inBook || manifest.length)) {
+      problems.push("clearing the filter did not restore the full contents");
     }
   } else if (chapters.length) {
     problems.push("chapters present but no topic filters were built");
@@ -408,7 +430,9 @@ function checkIndex(chapters) {
   problems.push(...dom.failures);
 
   report("index.html", problems,
-    "chapters=" + chapters.length + " tags=" + tags.length);
+    "built=" + chapters.length + " listed=" + rows.length +
+    " parts=" + d.querySelectorAll(".part").length +
+    " tags=" + tags.length);
 }
 
 /* --- run ------------------------------------------------------------- */
@@ -418,7 +442,8 @@ function checkIndex(chapters) {
 
   const chapters = fs.existsSync(LESSONS)
     ? fs.readdirSync(LESSONS).filter(function (f) {
-        return f.endsWith(".js") && f !== "manifest.js";
+        return f.endsWith(".js") && f !== "manifest.js" &&
+               f !== "contents.js";
       }).sort()
     : [];
 

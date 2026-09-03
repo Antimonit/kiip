@@ -134,31 +134,76 @@ a { color: var(--accent); }
   background: var(--accent-soft); border-color: var(--accent); color: var(--accent-ink);
 }
 
-.lesson-list { list-style: none; margin: 0; padding: 0; }
-.lesson-list li { border-top: 1px solid var(--rule); }
-.lesson-list li:last-child { border-bottom: 1px solid var(--rule); }
-
-.lesson-list a {
-  display: grid; grid-template-columns: 3rem 1fr; gap: 0 1rem;
-  padding: 1rem 0.5rem; text-decoration: none; color: inherit;
+.progress {
+  font-size: 0.8rem; color: var(--ink-faint); margin: 0 0 2.5rem;
 }
 
-.lesson-list a:hover { background: var(--raised); }
+/* The contents run part by part, as the book prints them. A part's number
+   and name head its chapters and nothing else marks the division. */
 
-.lesson-list .num {
+.part { margin-bottom: 2.75rem; }
+
+.part-head {
+  display: flex; align-items: baseline; gap: 0.6rem;
+  margin-bottom: 0.5rem;
+}
+
+.part-num {
+  font-family: var(--ko); font-size: 0.75rem; color: var(--ink-faint);
+  letter-spacing: 0.06em;
+}
+
+.part-name {
+  font-family: var(--ko); font-size: 1.05rem; font-weight: 600; margin: 0;
+}
+
+.part-en {
+  font-size: 0.78rem; color: var(--ink-faint); letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.entries > .entry { border-top: 1px solid var(--rule); }
+.entries > .entry:last-child { border-bottom: 1px solid var(--rule); }
+
+.entry {
+  display: grid; grid-template-columns: 2.5rem 1fr auto; gap: 0 1rem;
+  padding: 0.85rem 0.5rem; text-decoration: none; color: inherit;
+}
+
+a.entry:hover { background: var(--raised); }
+
+/* A chapter that is not written up yet still belongs in the contents; it is
+   set back rather than left out, so the shape of the book stays visible. */
+.entry.is-pending { color: var(--ink-faint); }
+.entry.is-pending .ko { font-weight: 500; }
+
+.entry .num {
   font-variant-numeric: tabular-nums; color: var(--ink-faint);
-  font-size: 0.9rem; padding-top: 0.2rem;
+  font-size: 0.9rem; padding-top: 0.15rem;
 }
 
-.lesson-list .ko { font-family: var(--ko); font-size: 1.15rem; font-weight: 600; }
-.lesson-list .en { color: var(--ink-soft); font-size: 0.9rem; }
-
-.lesson-list .tags {
-  grid-column: 2; margin-top: 0.35rem;
-  display: flex; gap: 0.35rem; flex-wrap: wrap;
+.entry .head {
+  display: flex; align-items: baseline; gap: 0.6rem; flex-wrap: wrap;
 }
 
-.lesson-list .tags span {
+.entry .ko { font-family: var(--ko); font-size: 1.1rem; font-weight: 600; }
+.entry .en { color: var(--ink-soft); font-size: 0.85rem; }
+
+.entry .question {
+  display: block; font-family: var(--ko); font-size: 0.85rem;
+  color: var(--ink-faint); margin-top: 0.2rem; word-break: keep-all;
+}
+
+.entry .page {
+  font-size: 0.78rem; color: var(--ink-faint);
+  font-variant-numeric: tabular-nums; padding-top: 0.3rem;
+}
+
+.entry .tags {
+  margin-top: 0.4rem; display: flex; gap: 0.35rem; flex-wrap: wrap;
+}
+
+.entry .tags span {
   font-size: 0.7rem; color: var(--ink-faint); font-family: var(--ko);
   border: 1px solid var(--rule); border-radius: 999px; padding: 0.05rem 0.5rem;
 }

@@ -16,6 +16,7 @@ import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from parse_gdoc import parse
+import chapters
 from chapters import CHAPTERS
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -1159,11 +1160,21 @@ def main():
 
     manifest = []
     for cfg in CHAPTERS:
+        manifest.append({k: cfg[k]
+                         for k in ("number", "slug", "title", "titleEn", "tags")})
+
+        # the Doc this chapter was built from is not on this machine;
+        # the generated file is checked in, so leave it as it stands
+        if cfg.get("src") and not os.path.exists(
+                os.path.join(srcdir, cfg["src"])):
+            print("%-34s SOURCE MISSING (%s) — kept the generated file" % (
+                cfg["slug"], cfg["src"]))
+            continue
+
         lesson, unused, unaligned, unpaired, orphaned = build(cfg, srcdir)
         lesson["slug"] = cfg["slug"]
         write_payload(os.path.join(out, cfg["slug"] + ".js"), "chapter", lesson,
                       cfg["module"])
-        manifest.append({k: cfg[k] for k in ("number", "slug", "title", "titleEn", "tags")})
         print("%-34s %3d blocks %3d annotations %2d notes %s" % (
             cfg["slug"], len(lesson["blocks"]), len(lesson["annotations"]),
             len(lesson["notes"]),
@@ -1176,6 +1187,18 @@ def main():
                   "against %d Korean" % (where[:40], got, want))
         if orphaned:
             print("    annotations nothing points at: %s" % orphaned)
+
+    parts, back = chapters.contents()
+    if parts:
+        done = {c["number"] for c in CHAPTERS}
+        for part in parts:
+            for c in part["chapters"]:
+                c["built"] = c["number"] in done
+        print("%-34s %3d chapters in %d parts, %d built" % (
+            "contents", sum(len(p["chapters"]) for p in parts), len(parts),
+            len(done)))
+    write_payload(os.path.join(out, "contents.js"), "contents",
+                  {"parts": parts, "back": back}, "contents.py")
 
     write_payload(os.path.join(out, "manifest.js"), "manifest", manifest,
                   "chNN_*.py")

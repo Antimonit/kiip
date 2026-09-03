@@ -1,9 +1,10 @@
 /* ------------------------------------------------------------------
    Content registry.
 
-   Chapter files call KIIP.chapter({...}) and the manifest calls
-   KIIP.manifest([...]), so the content files hold a pure data payload
-   and nothing mutable is exposed for them to clobber.
+   Chapter files call KIIP.chapter({...}), the manifest calls
+   KIIP.manifest([...]) and the book's own contents call KIIP.contents({...}),
+   so the content files hold a pure data payload and nothing mutable is
+   exposed for them to clobber.
 
    Chapters are loaded by appending a script tag rather than fetching,
    because fetch() is blocked on file:// and the site is meant to work
@@ -13,6 +14,7 @@
 window.KIIP = (function () {
   var chapters = {};
   var list = [];
+  var book = { parts: [], back: [] };
   var pending = {};
 
   return {
@@ -29,10 +31,19 @@ window.KIIP = (function () {
       list = entries || [];
     },
 
+    contents: function (data) {
+      book = data || { parts: [], back: [] };
+    },
+
     /* --- called by the pages ------------------------------------ */
 
     all: function () {
       return list;
+    },
+
+    /* The book's own contents: every chapter it has, built or not. */
+    book: function () {
+      return book;
     },
 
     /* Hand `slug`'s data to `done`, loading it first if needed.

@@ -157,4 +157,17 @@ def load():
     return sorted(found, key=lambda c: c["number"])
 
 
+def contents():
+    """The book's own contents, when the content branch supplies them.
+
+    Returns (parts, back). Empty on a checkout that carries only the site and
+    the tooling, so the build works there too.
+    """
+    try:
+        module = importlib.import_module("%s.contents" % __name__)
+    except ModuleNotFoundError:
+        return [], []
+    return module.PARTS, module.BACK
+
+
 CHAPTERS = load()
