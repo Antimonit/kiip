@@ -43,5 +43,11 @@ KIIP.manifest([
   "slug": "07-welfare",
   "title": "복지",
   "titleEn": "Welfare"
+ },
+ {
+  "number": 8,
+  "slug": "08-health-and-safety",
+  "title": "의료와 안전",
+  "titleEn": "Health care and safety"
  }
 ]);
