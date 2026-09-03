@@ -107,9 +107,18 @@ def TABLE(header, rows):
             "rows": [list(r) for r in rows]}
 
 
-def SPAN(text, columns):
-    """A header cell printed across more than one column."""
-    return {"text": text, "span": columns}
+def SPAN(text, columns=None, down=None):
+    """A cell printed across more than one column, or down more than one row.
+
+    The book merges cells both ways: 영역 sits across two columns of a unit
+    table, and 기본 sits down both of its rows.
+    """
+    cell = {"text": text}
+    if columns:
+        cell["span"] = columns
+    if down:
+        cell["spanDown"] = down
+    return cell
 
 
 def CHART(caption, unit, rows):

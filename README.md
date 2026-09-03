@@ -92,6 +92,11 @@ group of lines really is, and `drop` removes a line the page does not have.
 the outer items and its list items the inner ones — which is how a page that
 draws a bracket is set here.
 
+A table cell is plain text, or `SPAN(text, columns)` where the book merges it
+across columns, or `SPAN(text, down=rows)` where it merges down rows. A
+merged cell is written once, in the first row it covers, and the rows below
+it are that much shorter.
+
 ### Adding a chapter
 
 1. Export the Doc as HTML, and put the page photos in `source/<slug>/`.

@@ -596,6 +596,10 @@ ol.ko-list li::marker { color: var(--ink-faint); }
 }
 .table-wrap td:first-child { white-space: nowrap; color: var(--ink-soft); }
 
+/* a cell merged down its rows sits in the middle of what it covers, the way
+   the bracket it stands for does */
+.table-wrap td[rowspan] { vertical-align: middle; }
+
 /* bar chart ---------------------------------------------------------- */
 
 .chart { margin: 0 0 var(--flow); padding: 0; }

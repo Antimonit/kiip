@@ -216,24 +216,28 @@
         return;
       }
 
+      /* A cell is plain text, or text that the book merges across columns
+         or down rows. */
       case "table": {
+        function cell(tag, c) {
+          var n = el(tag, null, typeof c === "string" ? c : c.text);
+          if (c.span) n.colSpan = c.span;
+          if (c.spanDown) n.rowSpan = c.spanDown;
+          return n;
+        }
         var wrapEl = el("div", "table-wrap");
         var t = el("table");
         if (b.header) {
           var thead = el("thead");
           var tr = el("tr");
-          b.header.forEach(function (c) {
-            var th = el("th", null, typeof c === "string" ? c : c.text);
-            if (c.span) th.colSpan = c.span;
-            tr.appendChild(th);
-          });
+          b.header.forEach(function (c) { tr.appendChild(cell("th", c)); });
           thead.appendChild(tr);
           t.appendChild(thead);
         }
         var tb = el("tbody");
         b.rows.forEach(function (row) {
           var tr2 = el("tr");
-          row.forEach(function (c) { tr2.appendChild(el("td", null, c)); });
+          row.forEach(function (c) { tr2.appendChild(cell("td", c)); });
           tb.appendChild(tr2);
         });
         t.appendChild(tb);
