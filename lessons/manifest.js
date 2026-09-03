@@ -109,5 +109,11 @@ KIIP.manifest([
   "slug": "18-popular-culture",
   "title": "대중문화",
   "titleEn": "Popular culture"
+ },
+ {
+  "number": 19,
+  "slug": "19-leisure",
+  "title": "여가문화",
+  "titleEn": "Leisure"
  }
 ]);
