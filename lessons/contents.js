@@ -2,6 +2,572 @@
    Content lives in tools/chapters/contents.py; rebuild after changing it. */
 
 KIIP.contents({
- "parts": [],
- "back": []
+ "parts": [
+  {
+   "number": 1,
+   "title": "사회",
+   "titleEn": "Society",
+   "chapters": [
+    {
+     "number": 1,
+     "title": "한국의 상징",
+     "page": 16,
+     "articles": [
+      "한국의 국기와 국가는 무엇일까?",
+      "한국의 국화와 문자는 무엇일까?"
+     ],
+     "built": true
+    },
+    {
+     "number": 2,
+     "title": "가족",
+     "page": 20,
+     "articles": [
+      "한국의 가족은 어떤 특징을 가지고 있을까?",
+      "한국의 가족과 친척은 서로를 어떻게 부를까?"
+     ],
+     "built": true
+    },
+    {
+     "number": 3,
+     "title": "일터",
+     "page": 24,
+     "articles": [
+      "한국인은 어떤 일터에서 일할까?",
+      "한국인의 직장 생활은 어떤 모습일까?"
+     ],
+     "built": true
+    },
+    {
+     "number": 4,
+     "title": "교통과 통신",
+     "page": 28,
+     "articles": [
+      "한국에서 많이 이용하는 교통수단은 무엇일까?",
+      "한국에서 많이 사용하는 통신수단은 무엇일까?"
+     ],
+     "built": true
+    },
+    {
+     "number": 5,
+     "title": "주거",
+     "page": 32,
+     "articles": [
+      "한국인이 많이 살고 있는 집의 형태는 무엇일까?",
+      "한국에서는 집을 어떻게 구할까?"
+     ],
+     "built": true
+    },
+    {
+     "number": 6,
+     "title": "도시와 농촌",
+     "page": 36,
+     "articles": [
+      "한국 도시는 어떤 특징이 있을까?",
+      "한국 농촌은 어떤 특징이 있을까?"
+     ],
+     "built": true
+    },
+    {
+     "number": 7,
+     "title": "복지",
+     "page": 40,
+     "articles": [
+      "한국의 사회 복지 제도에는 어떤 것들이 있을까?",
+      "다문화 가족 및 외국인을 위한 기관과 지원 서비스에는 어떤 것들이 있을까?"
+     ],
+     "built": true
+    },
+    {
+     "number": 8,
+     "title": "의료와 안전",
+     "page": 44,
+     "articles": [
+      "한국에서 의료 기관은 어떻게 이용할까?",
+      "안전한 생활을 위해서는 어떻게 해야 할까?"
+     ],
+     "built": true
+    }
+   ]
+  },
+  {
+   "number": 2,
+   "title": "교육",
+   "titleEn": "Education",
+   "chapters": [
+    {
+     "number": 9,
+     "title": "보육 제도",
+     "page": 54,
+     "articles": [
+      "출산과 보육을 지원하는 제도에는 무엇이 있을까?",
+      "영·유아를 위한 보육과 교육은 어디에서 담당할까?"
+     ],
+     "built": true
+    },
+    {
+     "number": 10,
+     "title": "초·중등 교육",
+     "page": 58,
+     "articles": [
+      "한국 교육 제도의 특징은 무엇일까?",
+      "한국의 초·중등 교육 기관에는 어떤 것이 있을까?"
+     ],
+     "built": true
+    },
+    {
+     "number": 11,
+     "title": "고등 교육과 입시",
+     "page": 62,
+     "articles": [
+      "한국은 왜 대학 진학률이 높을까?",
+      "한국의 고등 교육 기관에는 어떤 것이 있을까?"
+     ],
+     "built": true
+    },
+    {
+     "number": 12,
+     "title": "평생 교육",
+     "page": 66,
+     "articles": [
+      "평생 교육이란 무엇일까?",
+      "이주민을 위한 교육에는 무엇이 있을까?"
+     ],
+     "built": true
+    }
+   ]
+  },
+  {
+   "number": 3,
+   "title": "문화",
+   "titleEn": "Culture",
+   "chapters": [
+    {
+     "number": 13,
+     "title": "전통 가치",
+     "page": 76,
+     "articles": [
+      "효와 예절은 무엇일까?",
+      "공동체와 연고를 중요하게 여기는 모습은 어떻게 나타날까?"
+     ],
+     "built": true
+    },
+    {
+     "number": 14,
+     "title": "전통 의식주",
+     "page": 80,
+     "articles": [
+      "한국 음식의 종류와 특징은 무엇일까?",
+      "한복과 한옥의 특징은 무엇일까?"
+     ],
+     "built": true
+    },
+    {
+     "number": 15,
+     "title": "의례",
+     "page": 84,
+     "articles": [
+      "결혼식, 돌잔치, 성년식은 어떤 모습일까?",
+      "장례식과 제사는 어떤 모습일까?"
+     ],
+     "built": true
+    },
+    {
+     "number": 16,
+     "title": "명절",
+     "page": 88,
+     "articles": [
+      "설날에는 무엇을 할까?",
+      "추석에는 무엇을 할까?"
+     ],
+     "built": true
+    },
+    {
+     "number": 17,
+     "title": "종교",
+     "page": 92,
+     "articles": [
+      "한국에는 어떤 종교가 있을까?",
+      "종교 간의 배려와 존중이 왜 필요할까?"
+     ],
+     "built": true
+    },
+    {
+     "number": 18,
+     "title": "대중문화",
+     "page": 96,
+     "articles": [
+      "한국에는 어떤 대중문화가 있을까?",
+      "세계인이 좋아하는 한국 대중문화에는 무엇이 있을까?"
+     ],
+     "built": true
+    },
+    {
+     "number": 19,
+     "title": "여가문화",
+     "page": 100,
+     "articles": [
+      "한국에는 어떤 여가문화가 있을까?",
+      "여가활동에는 어떻게 참여할 수 있을까?"
+     ],
+     "built": true
+    }
+   ]
+  },
+  {
+   "number": 4,
+   "title": "정치",
+   "titleEn": "Politics",
+   "chapters": [
+    {
+     "number": 20,
+     "title": "한국의 민주 정치",
+     "page": 110,
+     "articles": [
+      "한국의 주인은 누구일까?",
+      "한국은 왜 국가 기관의 권력을 나누어 놓았을까?"
+     ],
+     "built": false
+    },
+    {
+     "number": 21,
+     "title": "입법부",
+     "page": 114,
+     "articles": [
+      "법은 누가, 어디서 만들까?",
+      "국회는 어떤 일을 할까?"
+     ],
+     "built": false
+    },
+    {
+     "number": 22,
+     "title": "행정부",
+     "page": 118,
+     "articles": [
+      "법은 누가 집행할까?",
+      "정부는 어떤 일을 할까?"
+     ],
+     "built": false
+    },
+    {
+     "number": 23,
+     "title": "사법부",
+     "page": 122,
+     "articles": [
+      "재판은 누가 할까?",
+      "법원은 어떤 일을 할까?"
+     ],
+     "built": false
+    },
+    {
+     "number": 24,
+     "title": "선거와 지방자치",
+     "page": 126,
+     "articles": [
+      "선거는 어떻게 이루어지고 있을까?",
+      "우리 지역을 위한 정치는 어떻게 할까?"
+     ],
+     "built": false
+    }
+   ]
+  },
+  {
+   "number": 5,
+   "title": "경제",
+   "titleEn": "The economy",
+   "chapters": [
+    {
+     "number": 25,
+     "title": "일상생활과 경제 활동",
+     "page": 136,
+     "articles": [
+      "경제 활동이란 무엇일까?",
+      "경제 활동을 위한 합리적인 선택은 왜 필요할까?"
+     ],
+     "built": false
+    },
+    {
+     "number": 26,
+     "title": "경제 성장",
+     "page": 140,
+     "articles": [
+      "한국 경제는 어떻게 성장해 왔을까?",
+      "한국은 세계 여러 나라와 어떻게 교류하고 있을까?"
+     ],
+     "built": false
+    },
+    {
+     "number": 27,
+     "title": "장보기와 소비자 보호",
+     "page": 144,
+     "articles": [
+      "어디에서 장을 보면 될까?",
+      "소비자의 권리와 책임에는 어떤 것이 있을까?"
+     ],
+     "built": false
+    },
+    {
+     "number": 28,
+     "title": "금융기관 이용하기",
+     "page": 148,
+     "articles": [
+      "금융기관에는 어떤 것이 있을까?",
+      "금융 거래는 어떻게 하면 될까?"
+     ],
+     "built": false
+    },
+    {
+     "number": 29,
+     "title": "취업하기",
+     "page": 152,
+     "articles": [
+      "한국의 일자리 상황은 어떠할까?",
+      "취업하기 위해서는 무엇을 준비해야 할까?"
+     ],
+     "built": false
+    }
+   ]
+  },
+  {
+   "number": 6,
+   "title": "법",
+   "titleEn": "Law",
+   "chapters": [
+    {
+     "number": 30,
+     "title": "외국인과 법",
+     "page": 162,
+     "articles": [
+      "한국에서 법은 어떤 의미를 가지고 있을까?",
+      "외국인에게는 어떤 법적 권리와 의무가 있을까?"
+     ],
+     "built": false
+    },
+    {
+     "number": 31,
+     "title": "한국 체류와 법",
+     "page": 166,
+     "articles": [
+      "외국인이 한국에 머무르려면 어떤 절차가 필요할까?",
+      "외국인의 정착을 돕는 법에는 어떤 것이 있을까?"
+     ],
+     "built": false
+    },
+    {
+     "number": 32,
+     "title": "한국 국적과 법",
+     "page": 170,
+     "articles": [
+      "한국 국적은 어떤 의미를 가지며 어떤 기준으로 결정될까?",
+      "귀화는 어떤 절차로 이루어질까?"
+     ],
+     "built": false
+    },
+    {
+     "number": 33,
+     "title": "가족과 법",
+     "page": 174,
+     "articles": [
+      "법은 결혼생활에 어떤 영향을 줄까?",
+      "가족관계에서 생기는 문제를 법으로 어떻게 해결할 수 있을까?"
+     ],
+     "built": false
+    },
+    {
+     "number": 34,
+     "title": "재산과 법",
+     "page": 178,
+     "articles": [
+      "금전 거래를 할 때 무엇을 알아 두어야 할까?",
+      "부동산 거래를 할 때 무엇을 알아 두어야 할까?"
+     ],
+     "built": false
+    },
+    {
+     "number": 35,
+     "title": "생활 법률",
+     "page": 182,
+     "articles": [
+      "경범죄에는 무엇이 있을까?",
+      "음주운전과 학교폭력은 무엇일까?"
+     ],
+     "built": false
+    },
+    {
+     "number": 36,
+     "title": "범죄와 법",
+     "page": 186,
+     "articles": [
+      "한국에서 형법은 어떤 기능을 할까?",
+      "범죄를 막기 위해 경찰과 검찰은 어떤 일을 할까?"
+     ],
+     "built": false
+    },
+    {
+     "number": 37,
+     "title": "권리 보호와 법",
+     "page": 190,
+     "articles": [
+      "재판은 분쟁 해결에 어떤 도움을 줄까?",
+      "재판 외에 분쟁을 해결하는 방법에는 어떤 것이 있을까?"
+     ],
+     "built": false
+    }
+   ]
+  },
+  {
+   "number": 7,
+   "title": "역사",
+   "titleEn": "History",
+   "chapters": [
+    {
+     "number": 38,
+     "title": "고조선의 건국",
+     "page": 200,
+     "articles": [
+      "한국 역사는 어떻게 변해 왔을까?",
+      "고조선의 생활 모습은 어떠했을까?"
+     ],
+     "built": false
+    },
+    {
+     "number": 39,
+     "title": "삼국 시대와 남북국 시대",
+     "page": 204,
+     "articles": [
+      "삼국은 어떻게 발전했을까?",
+      "남북국 시대에는 어떤 나라들이 발전했을까?"
+     ],
+     "built": false
+    },
+    {
+     "number": 40,
+     "title": "고려 시대",
+     "page": 208,
+     "articles": [
+      "고려는 어떻게 발전했을까?",
+      "고려 시대 사람들은 어떻게 살았을까?"
+     ],
+     "built": false
+    },
+    {
+     "number": 41,
+     "title": "조선의 건국과 발전",
+     "page": 212,
+     "articles": [
+      "조선은 나라의 기틀을 어떻게 마련하였을까?",
+      "조선 후기에는 어떤 변화가 나타났을까?"
+     ],
+     "built": false
+    },
+    {
+     "number": 42,
+     "title": "일제 강점과 독립운동",
+     "page": 216,
+     "articles": [
+      "근대 국가 수립을 위해 어떤 노력을 펼쳤을까?",
+      "한국인은 독립운동을 어떻게 펼쳐 나갔을까?"
+     ],
+     "built": false
+    },
+    {
+     "number": 43,
+     "title": "한국의 역사 인물",
+     "page": 220,
+     "articles": [
+      "국가를 위기에서 구한 사람들에는 누가 있을까?",
+      "한국 역사에서 여성들은 어떤 활동을 했을까?"
+     ],
+     "built": false
+    },
+    {
+     "number": 44,
+     "title": "한국의 문화유산",
+     "page": 224,
+     "articles": [
+      "불교와 유교 문화유산에는 어떤 것들이 있을까?",
+      "과학기술을 알 수 있는 문화유산에는 어떤 것들이 있을까?"
+     ],
+     "built": false
+    }
+   ]
+  },
+  {
+   "number": 8,
+   "title": "지리",
+   "titleEn": "Geography",
+   "chapters": [
+    {
+     "number": 45,
+     "title": "한국의 기후와 지형",
+     "page": 234,
+     "articles": [
+      "한국의 기후와 계절은 어떠할까?",
+      "한국의 지형은 어떠할까?"
+     ],
+     "built": false
+    },
+    {
+     "number": 46,
+     "title": "수도권",
+     "page": 238,
+     "articles": [
+      "수도권의 모습은 어떠할까?",
+      "수도권의 관광 명소와 축제에는 무엇이 있을까?"
+     ],
+     "built": false
+    },
+    {
+     "number": 47,
+     "title": "충청 지역",
+     "page": 242,
+     "articles": [
+      "충청 지역의 모습은 어떠할까?",
+      "충청 지역의 관광 명소와 축제에는 무엇이 있을까?"
+     ],
+     "built": false
+    },
+    {
+     "number": 48,
+     "title": "전라 지역",
+     "page": 246,
+     "articles": [
+      "전라 지역의 모습은 어떠할까?",
+      "전라 지역의 관광 명소와 축제에는 무엇이 있을까?"
+     ],
+     "built": false
+    },
+    {
+     "number": 49,
+     "title": "경상 지역",
+     "page": 250,
+     "articles": [
+      "경상 지역의 모습은 어떠할까?",
+      "경상 지역의 관광 명소와 축제에는 무엇이 있을까?"
+     ],
+     "built": false
+    },
+    {
+     "number": 50,
+     "title": "강원, 제주 지역",
+     "page": 254,
+     "articles": [
+      "강원 지역의 모습은 어떠할까?",
+      "제주 지역의 모습은 어떠할까?"
+     ],
+     "built": false
+    }
+   ]
+  }
+ ],
+ "back": [
+  {
+   "title": "정답보기",
+   "page": 262
+  },
+  {
+   "title": "찾아보기",
+   "page": 272
+  }
+ ]
 });
