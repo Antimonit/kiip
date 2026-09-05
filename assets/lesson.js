@@ -484,30 +484,40 @@
   var CARD_HOSTS = ".para-pair, .ko-para, .ko-list, .gloss-row, .sub-title," +
                    " .sect-title, .aside-topic, .verse, .labels, .margin-note";
   var openBtn = null;
-  var card = null;              // there is only ever one, and it moves
-  var folding = null;           // and at most one on its way out
+  var card = null;              // the open one, if any
+  var CARD_MS = 220;            // must match the transition in style.css
 
-  /* must match the transition on .anno-card in style.css */
-  var CARD_MS = 220;
+  /* A card is not there and then it is, which on a long page reads as the
+     text having jumped. So it grows out of the line it belongs to and folds
+     back into it. Two things make that harder than it sounds.
 
-  /* The card is not there and then it is, which on a long page reads as the
-     text having jumped. So its height is animated — out of nothing when it
-     first opens, from one size to the next when another word replaces its
-     contents, and back into nothing when it closes.
+     Height is driven from here and only from here: an inline height outranks
+     a class, so a class that sets height 0 would be ignored and the card
+     would refuse to fold. The class carries the rest of the closed state.
 
-     Height is driven from here and only from here: a class cannot set it,
-     because an inline height would outrank the class and the card would
-     refuse to fold. The class carries what is left, the margins and the
-     fade. */
+     And a closed card still parts the margins around it. Margins of adjacent
+     blocks collapse to the larger of the two, but not across a box that has
+     content in it — so a card folded to nothing still holds a paragraph and
+     the heading below it apart, and removing it lets them snap together.
+     slack() measures what that snap would be and the closed state carries it
+     as a negative margin, so a folded card and no card at all take up the
+     same room. */
   function measure(el) {
     return el.getBoundingClientRect().height;
   }
 
+  function slack(el) {
+    var above = el.previousElementSibling, below = el.nextElementSibling;
+    var a = above ? parseFloat(getComputedStyle(above).marginBottom) : 0;
+    var b = below ? parseFloat(getComputedStyle(below).marginTop) : 0;
+    return Math.min(a || 0, b || 0);
+  }
+
   /* Set a starting state without animating into it. Going from `auto` to a
      number is the one step that must not be animated: an engine that can
-     interpolate it starts a transition of its own, and the card is caught
-     half way when the real one begins — which looked like the card jumping
-     to half its height and growing from there. */
+     interpolate it starts a transition of its own, and the real one then
+     interrupts it half way — which looked like the card jumping to half its
+     height and growing from there. */
   function frozen(el, set) {
     el.style.transition = "none";
     set();
@@ -515,23 +525,20 @@
     el.style.transition = "";
   }
 
-  /* Animate to a height from wherever the element is now, then hand it back
-     to auto so the text can rewrap. */
+  /* Animate to a height from wherever the element is now, then finish on the
+     transition rather than on the clock: a timer that fires a frame early
+     cuts the last of the movement off, which is seen as a jump. The clock
+     stays as a fallback for a transition that never runs. */
   function toHeight(el, h, then) {
-    window.clearTimeout(el.timer);        // its own, not one shared with the
+    window.clearTimeout(el.timer);
     if (el.ending) el.removeEventListener("transitionend", el.ending);
-
-    /* Finish on the transition rather than on the clock: a timer that fires
-       a frame early cuts the last of the movement off, which is seen as a
-       jump. The clock is kept as a fallback for a transition that never
-       runs, and for engines that do not report one. */
     var done = function (e) {
       if (e && e.propertyName !== "height") return;
       el.removeEventListener("transitionend", done);
       window.clearTimeout(el.timer);
       el.ending = null;
       if (then) then();
-      else el.style.height = "";          // auto, so it can rewrap
+      else el.style.height = "";        // auto, so it can rewrap
     };
     el.ending = done;
     el.addEventListener("transitionend", done);
@@ -539,33 +546,44 @@
     el.style.height = h + "px";
   }
 
-  function sweep() {
-    if (!folding) return;
-    window.clearTimeout(folding.timer);
-    folding.remove();
-    folding = null;
+  function shut(el) {
+    el.classList.add("is-collapsed");
+    el.style.marginTop = -slack(el) + "px";
   }
 
-  function fill(host, key) {
+  function open(host, key) {
     var fresh = buildCard(key);
-    sweep();                    // never two cards in the page at once
+    var stale = host.nextElementSibling;  // one still folding away here
+    if (stale && stale.classList.contains("anno-card")) stale.remove();
 
-    if (!card) {                          // nothing open yet: grow from the line
-      card = fresh;
-      host.after(card);
-      if (still()) return;
-      var full = measure(card);
-      frozen(card, function () {
-        card.classList.add("is-collapsed");
-        card.style.height = "0px";
-      });
-      card.classList.remove("is-collapsed");
-      toHeight(card, full);
-      return;
+    card = fresh;
+    host.after(card);
+    if (still()) return;
+    var full = measure(card);
+    frozen(card, function () {
+      shut(card);
+      card.style.height = "0px";
+    });
+    card.classList.remove("is-collapsed");
+    card.style.marginTop = "";
+    toHeight(card, full);
+  }
+
+  /* Another word in the same place only changes what the card says, so the
+     card stays where it is and resizes. Another word somewhere else is
+     somewhere else: that card folds away where it stands and a new one grows
+     where the word is. */
+  function fill(host, key) {
+    if (!card || card.previousElementSibling !== host) {
+      if (card) {                       // fold it where it stands; the button
+        var going = card;               // state belongs to the new card now
+        card = null;
+        foldAway(going);
+      }
+      return open(host, key);
     }
-
-    var from = measure(card);             // already open: swap and resize
-    if (card.previousElementSibling !== host) host.after(card);
+    var fresh = buildCard(key);
+    var from = measure(card);
     while (card.firstChild) card.removeChild(card.firstChild);
     while (fresh.firstChild) card.appendChild(fresh.firstChild);
     if (still()) return;
@@ -578,24 +596,23 @@
     toHeight(card, to);
   }
 
-  function close(atOnce) {
-    if (!card) return drop();
-    var going = card;
-    card = null;
-    sweep();
+  function foldAway(el, atOnce) {
     if (atOnce || still()) {
-      window.clearTimeout(going.timer);
-      going.remove();
-    } else {
-      folding = going;
-      frozen(going, function () {
-        going.style.height = measure(going) + "px";
-      });
-      going.classList.add("is-collapsed");
-      toHeight(going, 0, function () {
-        going.remove();
-        if (folding === going) folding = null;
-      });
+      window.clearTimeout(el.timer);
+      return el.remove();
+    }
+    frozen(el, function () {
+      el.style.height = measure(el) + "px";
+    });
+    shut(el);
+    toHeight(el, 0, function () { el.remove(); });
+  }
+
+  function close(atOnce) {
+    if (card) {
+      var going = card;
+      card = null;
+      foldAway(going, atOnce);
     }
     drop();
   }

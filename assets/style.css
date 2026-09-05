@@ -932,9 +932,9 @@ button.anno[aria-expanded="true"] {
    card takes up exactly as much room as no card at all. */
 .anno-card {
   clip-path: inset(0);
-  transition: height 0.22s ease, margin-block 0.22s ease,
-              padding-block 0.22s ease, border-block-width 0.22s ease,
-              opacity 0.16s ease;
+  transition: height 0.22s ease, margin-top 0.22s ease,
+              margin-bottom 0.22s ease, padding-block 0.22s ease,
+              border-block-width 0.22s ease, opacity 0.16s ease;
 }
 
 /* Everything that holds the box open, closed. The padding matters as much
@@ -947,7 +947,9 @@ button.anno[aria-expanded="true"] {
    here: an inline height outranks a class, and the card would refuse to
    fold. */
 .anno-card.is-collapsed {
-  margin-block: 0;
+  margin-top: 0;                /* the script may make this negative, to give
+                                   back the margin the card is parting */
+  margin-bottom: 0;
   padding-block: 0;
   border-block-width: 0;
   opacity: 0;
