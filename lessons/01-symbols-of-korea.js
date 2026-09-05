@@ -169,7 +169,8 @@ KIIP.chapter({
   {
    "type": "heading",
    "level": 3,
-   "text": "한국의 국기"
+   "text": "한국의 국기",
+   "titleTranslation": "The 태극기"
   },
   {
    "type": "figure",
@@ -293,6 +294,95 @@ KIIP.chapter({
      "annotation": "국가기념일에"
     },
     "는 태극기를 집 대문이나 창문 등에 단다."
+   ],
+   "translation": "Korea's flag is called the 태극기(太極旗). It has a white ground with a red and blue 태극 at the centre and four black trigrams around it. White stands for brightness, purity and peace. Red stands for nobility and blue for hope, and the 태극 in which the two are joined represents a universe in harmony. The four trigrams point to sky (건), earth (곤), water (감) and fire (리), and stand for the harmony of nature. From all this one can see that the flag emphasises peace and unity. On national holidays and days of remembrance the 태극기 is hung at the gate of the house or in a window.",
+   "sentences": [
+    {
+     "spans": [
+      "한국의 ",
+      {
+       "word": "국기",
+       "annotation": "국기"
+      },
+      "를 태극기(太極旗)라고 부른다. "
+     ],
+     "translation": "Korea's flag is called the 태극기(太極旗)."
+    },
+    {
+     "spans": [
+      "태극기는 흰색 바탕에 빨강과 파랑의 태극 모양이 중앙에 있고, 그 주변에 검은색의 4괘가 있다. "
+     ],
+     "translation": "It has a white ground with a red and blue 태극 at the centre and four black trigrams around it."
+    },
+    {
+     "spans": [
+      "흰색은 밝음과 순수, ",
+      {
+       "word": "평화",
+       "annotation": "평화"
+      },
+      "를 의미한다. "
+     ],
+     "translation": "White stands for brightness, purity and peace."
+    },
+    {
+     "spans": [
+      "빨강은 ",
+      {
+       "word": "존귀",
+       "annotation": "존귀"
+      },
+      "를, 파랑은 희망을, 빨강과 파랑이 합쳐진 태극은 ",
+      {
+       "word": "조화로운",
+       "annotation": "조화롭다"
+      },
+      " 우주를 나타낸다. "
+     ],
+     "translation": "Red stands for nobility and blue for hope, and the 태극 in which the two are joined represents a universe in harmony."
+    },
+    {
+     "spans": [
+      "4괘는 각각 하늘(건), 땅(곤), 물(감), 불(리)을 가리키며 자연의 ",
+      {
+       "word": "조화",
+       "annotation": "조화"
+      },
+      "를 의미한다. "
+     ],
+     "translation": "The four trigrams point to sky (건), earth (곤), water (감) and fire (리), and stand for the harmony of nature."
+    },
+    {
+     "spans": [
+      "이를 통해 태극기는 평화와 ",
+      {
+       "word": "화합",
+       "annotation": "화합"
+      },
+      "을 ",
+      {
+       "word": "강조",
+       "annotation": "강조"
+      },
+      "하고 있음을 알 수 있다. "
+     ],
+     "translation": "From all this one can see that the flag emphasises peace and unity."
+    },
+    {
+     "spans": [
+      {
+       "word": "국경일",
+       "annotation": "국경일"
+      },
+      "이나 ",
+      {
+       "word": "국가기념일에",
+       "annotation": "국가기념일에"
+      },
+      "는 태극기를 집 대문이나 창문 등에 단다."
+     ],
+     "translation": "On national holidays and days of remembrance the 태극기 is hung at the gate of the house or in a window."
+    }
    ]
   },
   {

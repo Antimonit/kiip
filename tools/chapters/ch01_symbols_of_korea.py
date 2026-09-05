@@ -388,7 +388,9 @@ CHAPTER = dict(
                 "distinction from North Korea.",
             ],
         ),
-        "태극기": dict(
+        # keyed on the heading the article runs under; the flag itself is a
+        # figure now, not a heading of its own
+        "한국의 국기": dict(
             title="The 태극기",
             paragraphs=[
                 "Korea's flag is called the 태극기(太極旗). It has a white ground with "
