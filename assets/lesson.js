@@ -86,7 +86,7 @@
 
   function buildCard(key) {
     var a = (lesson.annotations || {})[key];
-    var card = el("div", "anno-card");
+    var card = el("div", "anno-card" + (glossed[key] ? " is-glossed" : ""));
     if (!a) {
       card.appendChild(el("p", null, key));
       return card;
@@ -584,6 +584,7 @@
     }
     var fresh = buildCard(key);
     var from = measure(card);
+    card.classList.toggle("is-glossed", fresh.classList.contains("is-glossed"));
     while (card.firstChild) card.removeChild(card.firstChild);
     while (fresh.firstChild) card.appendChild(fresh.firstChild);
     if (still()) return;
