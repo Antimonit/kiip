@@ -46,12 +46,7 @@ KIIP.chapter({
      "word": "공식",
      "annotation": "공식"
     },
-    " ",
-    {
-     "word": "국가",
-     "annotation": "국가"
-    },
-    "명과 그 의미를 설명할 수 있다."
+    " 국가명과 그 의미를 설명할 수 있다."
    ],
    "ordered": true
   },
@@ -321,7 +316,12 @@ KIIP.chapter({
   {
    "type": "paragraph",
    "spans": [
-    "나라마다 그 나라를 대표하는 노래인 국가가 있다. 한국에서는 국가를 애국가라고 하는데, '나라를 사랑하는 마음을 담은 노래'라는 뜻이다. 1900년대 초에 만들어진 ",
+    "나라마다 그 나라를 대표하는 노래인 ",
+    {
+     "word": "국가",
+     "annotation": "국가"
+    },
+    "가 있다. 한국에서는 국가를 애국가라고 하는데, '나라를 사랑하는 마음을 담은 노래'라는 뜻이다. 1900년대 초에 만들어진 ",
     {
      "word": "애국가",
      "annotation": "애국가"
@@ -332,7 +332,12 @@ KIIP.chapter({
    "sentences": [
     {
      "spans": [
-      "나라마다 그 나라를 대표하는 노래인 국가가 있다. "
+      "나라마다 그 나라를 대표하는 노래인 ",
+      {
+       "word": "국가",
+       "annotation": "국가"
+      },
+      "가 있다. "
      ],
      "translation": "Every country has a national anthem, a song that stands for it."
     },
