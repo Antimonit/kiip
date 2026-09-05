@@ -899,8 +899,11 @@ CHAPTER = dict(
     },
 
     extraNotes=[
-        "This is the first chapter of the 교육 unit rather than 사회 — the page header "
-        "reads 9 교육 and the footer 02 교육.",
+        "This is the first chapter of 제2편 교육 rather than 제1편 사회: the "
+        "footer of every page reads 02 교육. The running head reads 9 보육 제도, "
+        "the chapter's own title, as on every other page — I had that part "
+        "wrong. Neither line is in your Doc, because a Doc carries the text "
+        "and not the page furniture.",
         "Pages 52-53, the opener for 제2편 교육, are not transcribed: they carry "
         "the part's name and nothing else.",
     ],
