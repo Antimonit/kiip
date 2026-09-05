@@ -921,9 +921,17 @@ button.anno[aria-expanded="true"] {
   box-shadow: inset 0 -2px 0 var(--accent);
 }
 
-/* it grows out of the line it belongs to; see fill() in assets/lesson.js */
+/* It grows out of the line it belongs to; see fill() in assets/lesson.js.
+   The clipping is a clip-path rather than overflow, and that is the whole
+   trick: overflow other than visible makes the card a block formatting
+   context, and a block formatting context sitting between a paragraph and
+   the heading below it stops their margins collapsing. The fully closed
+   card would then still be holding those two margins apart, and removing it
+   let them collapse — a jump of one margin, at the very end of the fold.
+   clip-path clips what is painted and leaves the layout alone, so a closed
+   card takes up exactly as much room as no card at all. */
 .anno-card {
-  overflow: hidden;
+  clip-path: inset(0);
   transition: height 0.22s ease, margin-block 0.22s ease,
               padding-block 0.22s ease, border-block-width 0.22s ease,
               opacity 0.16s ease;
