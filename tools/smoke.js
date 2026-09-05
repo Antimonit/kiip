@@ -48,7 +48,7 @@ function lintSectionLayering() {
                   "sub-title", "sect-topic", "blank", "en-para", "para-pair",
                   "en-title", "split-toggle", "figure-slot", "row",
                   "label-group", "label-group-name", "label-group-items",
-                  "ko-sublist"];
+                  "ko-sublist", "columns", "column", "column-title"];
   const problems = [];
 
   for (const m of css.matchAll(/([^{}]+)\{([^{}]*)\}/g)) {

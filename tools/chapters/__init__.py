@@ -111,6 +111,17 @@ def GROUP(name, *texts):
     return {"name": _spans(name), "items": [_spans(t) for t in texts]}
 
 
+def COLUMNS(*columns):
+    """Prose the book sets side by side, each column under its own title."""
+    return {"type": "columns", "columns": list(columns)}
+
+
+def COLUMN(title, *paragraphs):
+    """One column of COLUMNS: a title and the prose beneath it."""
+    return {"title": _spans(title),
+            "paragraphs": [_spans(t) for t in paragraphs]}
+
+
 def MARGIN(*texts):
     """Something written in the margin of the page by hand."""
     return {"type": "margin", "items": [_spans(t) for t in texts]}

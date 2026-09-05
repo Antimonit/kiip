@@ -320,6 +320,22 @@
         return;
       }
 
+      /* Prose the book sets side by side — two columns of an aside, three
+         of a news page. Each column keeps its own title. */
+      case "columns": {
+        var cols = el("div", "columns");
+        b.columns.forEach(function (c) {
+          var col = el("div", "column");
+          col.appendChild(fillSpans(el("h5", "column-title"), c.title));
+          (c.paragraphs || []).forEach(function (p) {
+            col.appendChild(fillSpans(el("p", "ko-para"), p));
+          });
+          cols.appendChild(col);
+        });
+        host.appendChild(cols);
+        return;
+      }
+
       case "source":
         host.appendChild(el("p", "source", b.text));
         return;

@@ -694,6 +694,11 @@ def every_span_list(blocks):
     for b in blocks:
         if b["type"] in ("paragraph", "bullet"):
             yield b["spans"]
+        if b["type"] == "columns":
+            for column in b["columns"]:
+                yield column["title"]
+                for para in column["paragraphs"]:
+                    yield para
     for b in blocks:
         if b["type"] == "heading" and "spans" in b:
             yield b["spans"]

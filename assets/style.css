@@ -303,6 +303,7 @@ a.entry:hover { background: var(--raised); }
   --topic-color: var(--ink);
   --topic-align: left;
   --cell-align: left;
+  --column-title: var(--accent);
 
   background: var(--surface);
   border: 1px solid var(--edge);
@@ -376,6 +377,7 @@ a.entry:hover { background: var(--raised); }
   --title-rule: 0;
   --title-gap: 0.7rem;
   --topic-color: var(--aside-ink);
+  --column-title: var(--aside-ink);
 
   margin-bottom: 2.5rem;
 }
@@ -650,6 +652,23 @@ ol.ko-list li::marker { color: var(--ink-faint); }
 
 @media (max-width: 34rem) {
   .gloss-row { grid-template-columns: 1fr; }
+}
+
+/* prose the book sets side by side; one column on a narrow screen */
+.columns {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  gap: calc(1.4rem * var(--scale));
+  margin-bottom: var(--flow);
+}
+
+.column > .ko-para:last-child { margin-bottom: 0; }
+
+.column-title {
+  font-family: var(--ko); font-weight: 700;
+  font-size: calc(0.97rem * var(--scale));
+  color: var(--column-title);
+  margin: 0 0 calc(0.5rem * var(--scale));
 }
 
 /* fill-in gaps in 주요 내용정리 ---------------------------------------
