@@ -275,6 +275,14 @@ throughout, as the book has them.
 
 ## Still to review
 
+- Chapter 1's p. 19 was missing until now: the Doc stops at the foot of p. 18,
+  so 주요 내용정리 and 이야기 나누기 are transcribed from the photo and appended.
+  The review gaps carry your own pencilled answers; the first, 대한민국, you
+  left blank, so it is blank here.
+- Chapter 1's flag was set as a heading over the article, 태극기 above prose
+  that begins 한국의 국기를 태극기라고 부른다. It is the caption of the diagram,
+  so it is a figure now, like every other picture the site does not
+  reproduce.
 - Chapters 1, 2, 4, 5, 6 and 7 have been all the way through you. What was
   rejected and reverted: 이 때 in chapter 1; 대중교통안 and 버스도착 in chapter
   4; and in chapter 5, 어떤 것 입니까, 수 천, 초대 받은 and 이야기 해 봅시다, all

@@ -450,35 +450,41 @@ KIIP.chapter({
    ]
   },
   {
+   "type": "source",
+   "text": "▶ 긴급 신고 전화"
+  },
+  {
    "type": "table",
-   "header": [
-    "긴급 신고 전화",
-    "번호",
-    "그 밖에",
-    "번호"
-   ],
    "rows": [
     [
      "화재 구조 · 응급 환자 · 긴급 인명 사고",
-     "119",
+     "119"
+    ],
+    [
+     "범죄",
+     "112"
+    ],
+    [
+     "해양 긴급",
+     "122"
+    ],
+    [
+     "마약 범죄",
+     "1301"
+    ],
+    [
      "사이버 테러",
      "118"
     ],
     [
-     "범죄",
-     "112",
      "시설물",
      "120"
     ],
     [
-     "해양 긴급",
-     "122",
      "수도 고장",
      "121"
     ],
     [
-     "마약 범죄",
-     "1301",
      "전기 고장",
      "123"
     ]
@@ -1212,7 +1218,12 @@ KIIP.chapter({
   {
    "type": "paragraph",
    "spans": [
-    "혹시 누군가가 어린이에게 몰래 다가가 어린이의 안전을 해치고 달아나거나 사람이 없는 밤 시간에 자동차 사고를 내고 아무런 ",
+    "혹시 누군가가 어린이에게 몰래 다가가 어린이의 안전을 해치고 ",
+    {
+     "word": "달아나거나",
+     "annotation": "달아나다"
+    },
+    " 사람이 없는 밤 시간에 자동차 사고를 내고 아무런 ",
     {
      "word": "조치",
      "annotation": "조치"
@@ -2204,11 +2215,18 @@ KIIP.chapter({
   },
   "해치다": {
    "headword": "해치다",
-   "hanja": null,
-   "meaning": "to harm, damage",
-   "characters": [],
+   "hanja": "害치다",
+   "meaning": "to harm, to do damage to",
+   "characters": [
+    {
+     "char": "害",
+     "reading": "해",
+     "gloss": "harm — the same 害 as in 해롭다, 피해, 산업재해"
+    }
+   ],
    "notes": [
-    "The verb to 해롭다's adjective: 안전을 해치다 is to endanger safety, 건강을 해치다 to damage one's health."
+    "The verb to 해롭다's adjective: 해롭다 is that a thing is harmful, 해치다 that someone does the harm. 안전을 해치다 to endanger safety, 건강을 해치다 to ruin one's health, 기분을 해치다 to spoil a mood.",
+    "Not 해지다 “to wear out, to fray”, which is what the Doc had here — one letter apart, and the reason this page carries a correction."
    ],
    "surfaces": []
   },
@@ -2701,6 +2719,17 @@ KIIP.chapter({
    ],
    "surfaces": []
   },
+  "달아나다": {
+   "headword": "달아나다",
+   "hanja": null,
+   "meaning": "to run away, to make off",
+   "characters": [],
+   "notes": [
+    "Of someone leaving the scene: 몰래 다가가 안전을 해치고 달아나다 — to slip up to a child, do them harm and make off. The hit-and-run driver of the same paragraph 아무런 조치도 없이 달아난다.",
+    "달아나다 is the running; 도망가다 is the same act seen as escape, and 도주하다 the word a news report would use."
+   ],
+   "surfaces": []
+  },
   "예방": {
    "headword": "예방",
    "hanja": "豫防",
@@ -3051,115 +3080,7 @@ KIIP.chapter({
  },
  "notes": [
   {
-   "was": "한국에서 의료기관은",
-   "now": "한국에서 의료 기관은",
-   "why": "spacing — the review heading for the same article has it open",
-   "count": 1
-  },
-  {
-   "was": "여기 서는",
-   "now": "여기서는",
-   "why": "spacing",
-   "count": 1
-  },
-  {
-   "was": "건강 보험 제도를",
-   "now": "건강보험 제도를",
-   "why": "spacing — set closed elsewhere in the sentence",
-   "count": 1
-  },
-  {
-   "was": "사항 을",
-   "now": "사항을",
-   "why": "spacing",
-   "count": 1
-  },
-  {
-   "was": "정리학 것",
-   "now": "정리한 것",
-   "why": "typo — 학 for 한",
-   "count": 1
-  },
-  {
-   "was": "태 도나",
-   "now": "태도나",
-   "why": "spacing",
-   "count": 1
-  },
-  {
-   "was": "•",
-   "now": "·",
-   "why": "bullet used for a middle dot",
-   "count": 1
-  },
-  {
-   "was": "•공공 7관",
-   "now": "·공공 기관",
-   "why": "bullet used for a middle dot, and 7 for 기",
-   "count": 1
-  },
-  {
-   "was": "원전안전사고",
-   "now": "원전 안전사고",
-   "why": "spacing",
-   "count": 1
-  },
-  {
-   "was": "긴급신고전화등을",
-   "now": "긴급신고전화 등을",
-   "why": "spacing",
-   "count": 1
-  },
-  {
-   "was": "살피고그러한",
-   "now": "살피고 그러한",
-   "why": "missing space, lost at an annotation boundary",
-   "count": 1
-  },
-  {
-   "was": "안전•보건",
-   "now": "안전·보건",
-   "why": "bullet used for a middle dot",
-   "count": 2
-  },
-  {
-   "was": "으로포착해서",
-   "now": "으로 포착해서",
-   "why": "spacing",
-   "count": 1
-  },
-  {
-   "was": "데도기여할",
-   "now": "데도 기여할",
-   "why": "spacing",
-   "count": 1
-  },
-  {
-   "was": "물래 다가가",
-   "now": "몰래 다가가",
-   "why": "typo — 물래 for 몰래",
-   "count": 1
-  },
-  {
-   "was": "안전을 해지고",
-   "now": "안전을 해치고",
-   "why": "typo — 해지고 for 해치고",
-   "count": 1
-  },
-  {
-   "was": "고용노동부•안전보건공단",
-   "now": "고용노동부·안전보건공단",
-   "why": "bullet used for a middle dot",
-   "count": 1
-  },
-  {
-   "was": "* 본인이",
-   "now": "★ 본인이",
-   "why": "the page uses a star for the discussion prompt",
-   "count": 1
-  },
-  {
-   "why": "The 긴급 신고 전화 box on p. 45 is a two-by-four grid of number pairs. It is set here as a four-column table, which keeps the pairs but not the layout."
+   "why": "The 긴급 신고 전화 box on p. 45 is one titled box holding eight number pairs, laid out two pairs to a row to fit the margin. It is set here as a headerless table of eight rows, the book's left-hand column first — the emergency lines — then its right, the faults and enquiries. The book gives those two groups no names, so neither does this."
   },
   {
    "why": "The figure on p. 47 plots total casualties and deaths on one graphic at very different scales. It is split into two here, because a single bar chart would flatten the death figures to nothing."

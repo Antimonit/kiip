@@ -86,11 +86,15 @@ CHAPTER = dict(
         GLOSSARY(("약초", "약으로 쓰는 풀", "약초"),
               ("응급 처치", "위급한 상황에 있는 환자에게 당장 필요한 치료를 하는 것", "응급 처치"),
               ("피부양자", "다른 사람에게서 부양을 받는 사람", "피부양자")),
-        TABLE(["긴급 신고 전화", "번호", "그 밖에", "번호"], [["화재 구조 · 응급 환자 · 긴급 인명 사고",
-              "119", "사이버 테러", "118"],
-              ["범죄", "112", "시설물", "120"],
-              ["해양 긴급", "122", "수도 고장", "121"],
-              ["마약 범죄", "1301", "전기 고장", "123"]]),
+        SOURCE("▶ 긴급 신고 전화"),
+        TABLE([["화재 구조 · 응급 환자 · 긴급 인명 사고", "119"],
+               ["범죄", "112"],
+               ["해양 긴급", "122"],
+               ["마약 범죄", "1301"],
+               ["사이버 테러", "118"],
+               ["시설물", "120"],
+               ["수도 고장", "121"],
+               ["전기 고장", "123"]]),
         PARAGRAPH("한국은 {소득} 및 {재산} 등에 따라 매달 일정 금액의 {보험료}를 납부하는 건강 보험 제도를 실시하고 "
           "있다. 건강보험에 가입하면 질병 관련 검사, 치료, 아이 출산 등과 같이 병원이나 약국을 이용할 때 "
           "{국민건강보험공단}에서 진료비의 일부를 부담해 주기 때문에 적은 비용으로 의료 기관을 이용할 수 있다. "
@@ -624,7 +628,14 @@ CHAPTER = dict(
         ("고용노동부•안전보건공단", "고용노동부·안전보건공단", "bullet used for a middle dot"),
         ("* 본인이", "★ 본인이", "the page uses a star for the discussion prompt"),
     ],
+    approved={
+        # read against the photos of pp. 44-47 and accepted
+        "한국에서 의료기관은", "건강 보험 제도를", "여기 서는", "원전안전사고", "으로포착해서", "데도기여할", "사항 을",
+        "정리학 것", "태 도나", "=•", "•공공 7관", "긴급신고전화등을", "=살피고", "물래 다가가", "안전을 해지고",
+        "안전•보건", "고용노동부•안전보건공단", "* 본인이",
+    },
     headwords={"해로운": "해롭다", "해칠": "해치다", "달여서": "달이다",
+               "달아나거나": "달아나다",
                "건의하여": "건의", "의무적으로": "의무적",
                # the Doc comments on half of a compound; file it under the whole
                "접종": "예방 접종", "의뢰서": "진료 의뢰서", "검진": "건강 검진"},
@@ -1004,9 +1015,22 @@ CHAPTER = dict(
                    "해치다 is the verb: to do the harm."],
         ),
         "해치다": dict(
-            headword="해치다", meaning="to harm, damage",
-            notes=["The verb to 해롭다's adjective: 안전을 해치다 is to endanger safety, "
-                   "건강을 해치다 to damage one's health."],
+            hanja="害치다", meaning="to harm, to do damage to",
+            characters=[("害", "해", "harm — the same 害 as in 해롭다, 피해, 산업재해")],
+            notes=["The verb to 해롭다's adjective: 해롭다 is that a thing is harmful, "
+                   "해치다 that someone does the harm. 안전을 해치다 to endanger safety, "
+                   "건강을 해치다 to ruin one's health, 기분을 해치다 to spoil a mood.",
+                   "Not 해지다 “to wear out, to fray”, which is what the Doc had "
+                   "here — one letter apart, and the reason this page carries a "
+                   "correction."],
+        ),
+        "달아나다": dict(
+            meaning="to run away, to make off",
+            notes=["Of someone leaving the scene: 몰래 다가가 안전을 해치고 달아나다 — "
+                   "to slip up to a child, do them harm and make off. The hit-and-run "
+                   "driver of the same paragraph 아무런 조치도 없이 달아난다.",
+                   "달아나다 is the running; 도망가다 is the same act seen as escape, "
+                   "and 도주하다 the word a news report would use."],
         ),
         "당국": dict(
             hanja="當局", meaning="the authorities",
@@ -1150,8 +1174,11 @@ CHAPTER = dict(
     },
 
     extraNotes=[
-        "The 긴급 신고 전화 box on p. 45 is a two-by-four grid of number pairs. It is "
-        "set here as a four-column table, which keeps the pairs but not the layout.",
+        "The 긴급 신고 전화 box on p. 45 is one titled box holding eight number "
+        "pairs, laid out two pairs to a row to fit the margin. It is set here as a "
+        "headerless table of eight rows, the book's left-hand column first — the "
+        "emergency lines — then its right, the faults and enquiries. The book gives "
+        "those two groups no names, so neither does this.",
         "The figure on p. 47 plots total casualties and deaths on one graphic at very "
         "different scales. It is split into two here, because a single bar chart would "
         "flatten the death figures to nothing.",

@@ -70,7 +70,12 @@ KIIP.chapter({
      "word": "공식",
      "annotation": "공식"
     },
-    " 국가명과 그 의미를 설명할 수 있다."
+    " ",
+    {
+     "word": "국가",
+     "annotation": "국가"
+    },
+    "명과 그 의미를 설명할 수 있다."
    ],
    "ordered": true
   },
@@ -196,10 +201,8 @@ KIIP.chapter({
    "text": "한국의 국기"
   },
   {
-   "type": "heading",
-   "level": 4,
-   "text": "태극기",
-   "titleTranslation": "The 태극기"
+   "type": "figure",
+   "text": "태극기"
   },
   {
    "type": "labels",
@@ -238,7 +241,7 @@ KIIP.chapter({
      "definition": [
       "나라를 상징하는 깃발"
      ],
-     "annotation": null
+     "annotation": "국기"
     },
     {
      "term": "존귀",
@@ -252,14 +255,14 @@ KIIP.chapter({
      "definition": [
       "서로 잘 어울림"
      ],
-     "annotation": null
+     "annotation": "조화"
     },
     {
      "term": "평화",
      "definition": [
       "갈등이 없이 평온함"
      ],
-     "annotation": null
+     "annotation": "평화"
     },
     {
      "term": "화합",
@@ -273,7 +276,17 @@ KIIP.chapter({
   {
    "type": "paragraph",
    "spans": [
-    "한국의 국기를 태극기(太極旗)라고 부른다. 태극기는 흰색 바탕에 빨강과 파랑의 태극 모양이 중앙에 있고, 그 주변에 검은색의 4괘가 있다. 흰색은 밝음과 순수, 평화를 의미한다. 빨강은 ",
+    "한국의 ",
+    {
+     "word": "국기",
+     "annotation": "국기"
+    },
+    "를 태극기(太極旗)라고 부른다. 태극기는 흰색 바탕에 빨강과 파랑의 태극 모양이 중앙에 있고, 그 주변에 검은색의 4괘가 있다. 흰색은 밝음과 순수, ",
+    {
+     "word": "평화",
+     "annotation": "평화"
+    },
+    "를 의미한다. 빨강은 ",
     {
      "word": "존귀",
      "annotation": "존귀"
@@ -283,7 +296,12 @@ KIIP.chapter({
      "word": "조화로운",
      "annotation": "조화롭다"
     },
-    " 우주를 나타낸다. 4괘는 각각 하늘(건), 땅(곤), 물(감), 불(리)을 가리키며 자연의 조화를 의미한다. 이를 통해 태극기는 평화와 ",
+    " 우주를 나타낸다. 4괘는 각각 하늘(건), 땅(곤), 물(감), 불(리)을 가리키며 자연의 ",
+    {
+     "word": "조화",
+     "annotation": "조화"
+    },
+    "를 의미한다. 이를 통해 태극기는 평화와 ",
     {
      "word": "화합",
      "annotation": "화합"
@@ -304,80 +322,6 @@ KIIP.chapter({
      "annotation": "국가기념일에"
     },
     "는 태극기를 집 대문이나 창문 등에 단다."
-   ],
-   "translation": "Korea's flag is called the 태극기(太極旗). It has a white ground with a red and blue 태극 at the centre and four black trigrams around it. White stands for brightness, purity and peace. Red stands for nobility and blue for hope, and the 태극 in which the two are joined represents a universe in harmony. The four trigrams point to sky (건), earth (곤), water (감) and fire (리), and stand for the harmony of nature. From all this one can see that the flag emphasises peace and unity. On national holidays and days of remembrance the 태극기 is hung at the gate of the house or in a window.",
-   "sentences": [
-    {
-     "spans": [
-      "한국의 국기를 태극기(太極旗)라고 부른다. "
-     ],
-     "translation": "Korea's flag is called the 태극기(太極旗)."
-    },
-    {
-     "spans": [
-      "태극기는 흰색 바탕에 빨강과 파랑의 태극 모양이 중앙에 있고, 그 주변에 검은색의 4괘가 있다. "
-     ],
-     "translation": "It has a white ground with a red and blue 태극 at the centre and four black trigrams around it."
-    },
-    {
-     "spans": [
-      "흰색은 밝음과 순수, 평화를 의미한다. "
-     ],
-     "translation": "White stands for brightness, purity and peace."
-    },
-    {
-     "spans": [
-      "빨강은 ",
-      {
-       "word": "존귀",
-       "annotation": "존귀"
-      },
-      "를, 파랑은 희망을, 빨강과 파랑이 합쳐진 태극은 ",
-      {
-       "word": "조화로운",
-       "annotation": "조화롭다"
-      },
-      " 우주를 나타낸다. "
-     ],
-     "translation": "Red stands for nobility and blue for hope, and the 태극 in which the two are joined represents a universe in harmony."
-    },
-    {
-     "spans": [
-      "4괘는 각각 하늘(건), 땅(곤), 물(감), 불(리)을 가리키며 자연의 조화를 의미한다. "
-     ],
-     "translation": "The four trigrams point to sky (건), earth (곤), water (감) and fire (리), and stand for the harmony of nature."
-    },
-    {
-     "spans": [
-      "이를 통해 태극기는 평화와 ",
-      {
-       "word": "화합",
-       "annotation": "화합"
-      },
-      "을 ",
-      {
-       "word": "강조",
-       "annotation": "강조"
-      },
-      "하고 있음을 알 수 있다. "
-     ],
-     "translation": "From all this one can see that the flag emphasises peace and unity."
-    },
-    {
-     "spans": [
-      {
-       "word": "국경일",
-       "annotation": "국경일"
-      },
-      "이나 ",
-      {
-       "word": "국가기념일에",
-       "annotation": "국가기념일에"
-      },
-      "는 태극기를 집 대문이나 창문 등에 단다."
-     ],
-     "translation": "On national holidays and days of remembrance the 태극기 is hung at the gate of the house or in a window."
-    }
    ]
   },
   {
@@ -394,7 +338,7 @@ KIIP.chapter({
      "definition": [
       "국가는 '나라'라는 의미와 '나라를 대표하는 노래'라는 두 가지 의미가 있다."
      ],
-     "annotation": null
+     "annotation": "국가"
     }
    ]
   },
@@ -930,54 +874,228 @@ KIIP.chapter({
    ]
   },
   {
-   "type": "heading",
-   "level": 4,
-   "text": "국기에 대한 경례"
+   "type": "columns",
+   "columns": [
+    {
+     "title": [
+      "국기에 대한 ",
+      {
+       "word": "경례",
+       "annotation": "경례"
+      }
+     ],
+     "paragraphs": [
+      [
+       {
+        "word": "차렷",
+        "annotation": "차렷"
+       },
+       {
+        "word": "자세",
+        "annotation": "자세"
+       },
+       "에서 시선은 국기를 ",
+       {
+        "word": "향하",
+        "annotation": "향하다"
+       },
+       "고, 오른손을 펴서 왼쪽 가슴에 댄다."
+      ]
+     ]
+    },
+    {
+     "title": [
+      "국기에 대한 ",
+      {
+       "word": "맹세",
+       "annotation": "맹세"
+      }
+     ],
+     "paragraphs": [
+      [
+       "나는 자랑스러운 태극기 앞에 자유롭고 정의로운 대한민국의 무궁한 ",
+       {
+        "word": "영광",
+        "annotation": "영향"
+       },
+       "을 위하여 ",
+       {
+        "word": "충성",
+        "annotation": "출성"
+       },
+       "을 다할 것을 굳게 ",
+       {
+        "word": "다짐",
+        "annotation": "다짐"
+       },
+       "합니다."
+      ]
+     ]
+    }
+   ]
   },
   {
-   "type": "paragraph",
+   "type": "section",
+   "kind": "review",
+   "text": "주요 내용정리"
+  },
+  {
+   "type": "heading",
+   "level": 3,
+   "text": "01 한국의 국기와 국가는 무엇일까?"
+  },
+  {
+   "type": "bullet",
    "spans": [
+    "한국의 공식 국가명은 ",
     {
-     "word": "차렷",
-     "annotation": "차렷"
+     "blank": ""
     },
+    "이다."
+   ]
+  },
+  {
+   "type": "bullet",
+   "spans": [
+    "한국의 국기인 ",
     {
-     "word": "자세",
-     "annotation": "자세"
+     "blank": "태극기"
     },
-    "에서 시선은 국기를 ",
+    "에는 ",
     {
-     "word": "향하",
-     "annotation": "향하다"
+     "blank": "평화"
     },
-    "고, 오른손을 펴서 왼쪽 가슴에 댄다."
+    "와 ",
+    {
+     "blank": "화합"
+    },
+    "의 의미가 담겨 있다."
+   ]
+  },
+  {
+   "type": "bullet",
+   "spans": [
+    "한국의 국가는 ",
+    {
+     "blank": "애국가"
+    },
+    "라고 불리는데 이것은 ",
+    {
+     "blank": "나라"
+    },
+    "를 사랑하는 마음을 담은 노래라는 의미를 가진다."
    ]
   },
   {
    "type": "heading",
-   "level": 4,
-   "text": "국기에 대한 맹세"
+   "level": 3,
+   "text": "02 한국의 국화와 문자는 무엇일까?"
+  },
+  {
+   "type": "bullet",
+   "spans": [
+    "한국을 상징하는 꽃은 ",
+    {
+     "blank": "무궁화"
+    },
+    "이다."
+   ]
+  },
+  {
+   "type": "bullet",
+   "spans": [
+    "한국의 국가 문장은 ",
+    {
+     "blank": "무궁화"
+    },
+    "와 ",
+    {
+     "blank": "태극기"
+    },
+    " 모양을 기초로 하고 있다."
+   ]
+  },
+  {
+   "type": "bullet",
+   "spans": [
+    "한국의 고유한 문자인 ",
+    {
+     "blank": "한글"
+    },
+    "은 1443년에 조선의 ",
+    {
+     "blank": "세종대왕"
+    },
+    "이 만들었다."
+   ]
+  },
+  {
+   "type": "bullet",
+   "spans": [
+    "한글의 자음과 모음은 사람의 ",
+    {
+     "blank": "발음기관"
+    },
+    "과 하늘, 땅, ",
+    {
+     "blank": "사람"
+    },
+    "의 모양을 본떠 만들어졌다."
+   ]
+  },
+  {
+   "type": "bullet",
+   "spans": [
+    "한글은 ",
+    {
+     "blank": "자음"
+    },
+    " 14개와 ",
+    {
+     "blank": "모음"
+    },
+    " 10개 모두 24개의 문자로 구성되어 있다."
+   ]
+  },
+  {
+   "type": "section",
+   "kind": "discuss",
+   "text": "이야기 나누기",
+   "topic": "여러 나라의 국기"
+  },
+  {
+   "type": "labels",
+   "items": [
+    [
+     "중국"
+    ],
+    [
+     "베트남"
+    ],
+    [
+     "필리핀"
+    ],
+    [
+     "몽골"
+    ],
+    [
+     "캄보디아"
+    ],
+    [
+     "태국"
+    ]
+   ]
+  },
+  {
+   "type": "figure",
+   "text": "여섯 나라의 국기 — 중국, 베트남, 필리핀, 몽골, 캄보디아, 태국"
   },
   {
    "type": "paragraph",
    "spans": [
-    "나는 자랑스러운 태극기 앞에 자유롭고 정의로운 대한민국의 무궁한 ",
-    {
-     "word": "영광",
-     "annotation": "영향"
-    },
-    "을 위하여 ",
-    {
-     "word": "충성",
-     "annotation": "출성"
-    },
-    "을 다할 것을 굳게 ",
-    {
-     "word": "다짐",
-     "annotation": "다짐"
-    },
-    "합니다."
-   ]
+    "★ 자신의 고향 나라 국기의 의미나 특징을 소개해 봅시다."
+   ],
+   "role": "prompt"
   }
  ],
  "annotations": {
@@ -991,11 +1109,23 @@ KIIP.chapter({
   },
   "공식": {
    "headword": "공식",
-   "hanja": null,
-   "meaning": "formal/official",
-   "characters": [],
+   "hanja": "公式",
+   "meaning": "official, formal",
+   "characters": [
+    {
+     "char": "公",
+     "reading": "공",
+     "gloss": "public — as in 공공, 공무원, 공개"
+    },
+    {
+     "char": "式",
+     "reading": "식",
+     "gloss": "form, ceremony — as in 방식, 결혼식"
+    }
+   ],
    "notes": [
-    "official"
+    "공식 국가명 is the name the state goes by in law, against the everyday 한국. Also a formula in mathematics.",
+    "The margin glosses it 국가적이나 사회적으로 인정된 공적인 방식."
    ],
    "surfaces": []
   },
@@ -1148,11 +1278,32 @@ KIIP.chapter({
   },
   "발음기관": {
    "headword": "발음기관",
-   "hanja": null,
-   "meaning": "발음(pronunciation) 기관(organ/organization) = vocal organs",
-   "characters": [],
+   "hanja": "發音器官",
+   "meaning": "the organs of speech",
+   "characters": [
+    {
+     "char": "發",
+     "reading": "발",
+     "gloss": "to issue forth — as in 발행, 발달"
+    },
+    {
+     "char": "音",
+     "reading": "음",
+     "gloss": "sound — as in 음악, 모음, 자음"
+    },
+    {
+     "char": "器",
+     "reading": "기",
+     "gloss": "vessel, implement — as in 용기, 소화기"
+    },
+    {
+     "char": "官",
+     "reading": "관",
+     "gloss": "organ; official — as in 기관, 장관"
+    }
+   ],
    "notes": [
-    "The parts of the body used to produce speech sounds — lips, tongue, throat, teeth, etc. The key point: when King Sejong designed Hangeul's consonants (ㄱ, ㄴ, ㅁ, ㅅ, ㅇ, etc.), he based their shapes on these articulatory organs. For example, ㄱ mimics the shape of the tongue root blocking the throat, and ㄴ mimics the tongue tip touching the upper gum ridge."
+    "The tongue, throat and lips the consonants were drawn from: ㄱ the back of the tongue, ㄴ the tip, ㅁ the mouth."
    ],
    "surfaces": []
   },
@@ -1401,6 +1552,91 @@ KIIP.chapter({
    "meaning": "promise / pledge",
    "characters": [],
    "notes": [],
+   "surfaces": []
+  },
+  "국기": {
+   "headword": "국기",
+   "hanja": "國旗",
+   "meaning": "a national flag",
+   "characters": [
+    {
+     "char": "國",
+     "reading": "국",
+     "gloss": "country — as in 국가, 국민, 한국"
+    },
+    {
+     "char": "旗",
+     "reading": "기",
+     "gloss": "flag, banner — as in 태극기, 깃발's 旗"
+    }
+   ],
+   "notes": [
+    "국기 the flag and 국가 the country are a syllable apart and share their 國; the flag's 旗 is the one to hold on to."
+   ],
+   "surfaces": []
+  },
+  "조화": {
+   "headword": "조화",
+   "hanja": "調和",
+   "meaning": "harmony, things sitting well together",
+   "characters": [
+    {
+     "char": "調",
+     "reading": "조",
+     "gloss": "to tune, to adjust — as in 조정, 조사"
+    },
+    {
+     "char": "和",
+     "reading": "화",
+     "gloss": "harmony, peace — as in 화합, 평화"
+    }
+   ],
+   "notes": [
+    "Of parts that suit one another: 자연의 조화, 색의 조화. 화합 is people coming together instead, and the two share 和."
+   ],
+   "surfaces": []
+  },
+  "평화": {
+   "headword": "평화",
+   "hanja": "平和",
+   "meaning": "peace",
+   "characters": [
+    {
+     "char": "平",
+     "reading": "평",
+     "gloss": "level, even — as in 평등, 공평, 평일"
+    },
+    {
+     "char": "和",
+     "reading": "화",
+     "gloss": "harmony — the same 和 as in 조화, 화합"
+    }
+   ],
+   "notes": [
+    "Literally level and harmonious. The flag's white stands for 밝음과 순수, 평화."
+   ],
+   "surfaces": []
+  },
+  "국가": {
+   "headword": "국가",
+   "hanja": "國家 / 國歌",
+   "meaning": "a country; a national anthem — two words, one sound",
+   "characters": [
+    {
+     "char": "家",
+     "reading": "가",
+     "gloss": "house, household — as in 가족, 국가's 家"
+    },
+    {
+     "char": "歌",
+     "reading": "가",
+     "gloss": "song — as in 노래's 歌, 가수 “singer”"
+    }
+   ],
+   "notes": [
+    "The margin says as much: 국가 means both ‘나라’ and ‘나라를 대표하는 노래’. They are different words — 國家 the state, 國歌 the anthem — and only the writing tells them apart.",
+    "This article is about the second: Korea's 국가 is 애국가."
+   ],
    "surfaces": []
   },
   "존귀": {

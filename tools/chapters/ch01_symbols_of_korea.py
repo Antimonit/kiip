@@ -5,6 +5,7 @@ Source: 1.html (Google Docs HTML export)
 """
 
 from . import (SECTION, HEADING, PARAGRAPH, BULLET, SOURCE, FIGURE, LABELS,
+               COLUMNS, COLUMN,
                MARGIN, VERSE, TABLE, CELL, GLOSSARY)
 
 CHAPTER = dict(
@@ -33,7 +34,7 @@ CHAPTER = dict(
           "국가명을 줄여서 한국이라고 한다. 한자로는 XXXX, 영어로는 Republic of Korea라고 한다. "
           "남한이나 South Korea라고 하는 경우도 있는데, 이것은 북한과 {구별}하여 부르는 {명칭}이다."),
         HEADING(3, "한국의 국기"),
-        HEADING(4, "태국기"),
+        FIGURE("태국기"),
         LABELS("건 : 하늘", "감 : 물", "리 : 불", "곤 : 땅", "양 (positive)",
                "음 (negative)"),
         GLOSSARY(("국기", "나라를 상징하는 깃발"),
@@ -98,11 +99,36 @@ CHAPTER = dict(
         HEADING(3, "국경일, 기념식, 국제행사, 스포츠 경기는 어떻게 시작할까?"),
         PARAGRAPH("한국에서는 중요한 행사를 할 때 국기(태극기)에 대한 {경례}를 한다. 이 때 국기에 대한 {맹세}를 "
           "함께 하기도 한다."),
-        HEADING(4, "국기에 대한 경례"),
-        PARAGRAPH("{차렷}{자세}에서 시선은 국기를 {향하|향하다}고, 오른손을 펴서 왼쪽 가슴에 댄다."),
-        HEADING(4, "국기에 대한 맹세"),
-        PARAGRAPH("나는 자랑스러운 태극기 앞에 자유롭고 정의로운 대한민국의 무궁한 {영향}을 위하여 {출성}을 다할 것을 "
-          "굳게 {다짐}합니다."),
+        COLUMNS(
+            COLUMN("국기에 대한 {경례}",
+                   "{차렷}{자세}에서 시선은 국기를 {향하|향하다}고, 오른손을 펴서 왼쪽 가슴에 "
+                   "댄다."),
+            COLUMN("국기에 대한 {맹세}",
+                   "나는 자랑스러운 태극기 앞에 자유롭고 정의로운 대한민국의 무궁한 {영향}을 "
+                   "위하여 {출성}을 다할 것을 굳게 {다짐}합니다.")),
+    ],
+
+    # p. 19 is not in the Doc, which stops at the foot of p. 18
+    append=[
+        SECTION("review", "주요 내용정리"),
+        HEADING(3, "01 한국의 국기와 국가는 무엇일까?"),
+        BULLET("한국의 공식 국가명은 (          )이다."),
+        BULLET("한국의 국기인 ( 태극기 )에는 ( 평화 )와 ( 화합 )의 의미가 담겨 있다."),
+        BULLET("한국의 국가는 ( 애국가 )라고 불리는데 이것은 ( 나라 )를 사랑하는 마음을 담은 "
+               "노래라는 의미를 가진다."),
+        HEADING(3, "02 한국의 국화와 문자는 무엇일까?"),
+        BULLET("한국을 상징하는 꽃은 ( 무궁화 )이다."),
+        BULLET("한국의 국가 문장은 ( 무궁화 )와 ( 태극기 ) 모양을 기초로 하고 있다."),
+        BULLET("한국의 고유한 문자인 ( 한글 )은 1443년에 조선의 ( 세종대왕 )이 만들었다."),
+        BULLET("한글의 자음과 모음은 사람의 ( 발음기관 )과 하늘, 땅, ( 사람 )의 모양을 본떠 "
+               "만들어졌다."),
+        BULLET("한글은 ( 자음 ) 14개와 ( 모음 ) 10개 모두 24개의 문자로 구성되어 있다."),
+
+        SECTION("discuss", "이야기 나누기"),
+        HEADING(3, "여러 나라의 국기"),
+        LABELS("중국", "베트남", "필리핀", "몽골", "캄보디아", "태국"),
+        FIGURE("여섯 나라의 국기 — 중국, 베트남, 필리핀, 몽골, 캄보디아, 태국"),
+        PARAGRAPH("★ 자신의 고향 나라 국기의 의미나 특징을 소개해 봅시다."),
     ],
     annotations={
         "무궁화": dict(
@@ -426,6 +452,55 @@ CHAPTER = dict(
         ),
     },
     extraAnnotations={
+        # the margin glosses the book leaves without a breakdown of their own
+        "국기": dict(
+            hanja="國旗", meaning="a national flag",
+            characters=[("國", "국", "country — as in 국가, 국민, 한국"),
+                        ("旗", "기", "flag, banner — as in 태극기, 깃발's 旗")],
+            notes=["국기 the flag and 국가 the country are a syllable apart and "
+                   "share their 國; the flag's 旗 is the one to hold on to."],
+        ),
+        "조화": dict(
+            hanja="調和", meaning="harmony, things sitting well together",
+            characters=[("調", "조", "to tune, to adjust — as in 조정, 조사"),
+                        ("和", "화", "harmony, peace — as in 화합, 평화")],
+            notes=["Of parts that suit one another: 자연의 조화, 색의 조화. 화합 is "
+                   "people coming together instead, and the two share 和."],
+        ),
+        "평화": dict(
+            hanja="平和", meaning="peace",
+            characters=[("平", "평", "level, even — as in 평등, 공평, 평일"),
+                        ("和", "화", "harmony — the same 和 as in 조화, 화합")],
+            notes=["Literally level and harmonious. The flag's white stands for "
+                   "밝음과 순수, 평화."],
+        ),
+        "국가": dict(
+            hanja="國家 / 國歌",
+            meaning="a country; a national anthem — two words, one sound",
+            characters=[("家", "가", "house, household — as in 가족, 국가's 家"),
+                        ("歌", "가", "song — as in 노래's 歌, 가수 “singer”")],
+            notes=["The margin says as much: 국가 means both ‘나라’ and ‘나라를 "
+                   "대표하는 노래’. They are different words — 國家 the state, "
+                   "國歌 the anthem — and only the writing tells them apart.",
+                   "This article is about the second: Korea's 국가 is 애국가."],
+        ),
+        "공식": dict(
+            hanja="公式", meaning="official, formal",
+            characters=[("公", "공", "public — as in 공공, 공무원, 공개"),
+                        ("式", "식", "form, ceremony — as in 방식, 결혼식")],
+            notes=["공식 국가명 is the name the state goes by in law, against the "
+                   "everyday 한국. Also a formula in mathematics.",
+                   "The margin glosses it 국가적이나 사회적으로 인정된 공적인 방식."],
+        ),
+        "발음기관": dict(
+            hanja="發音器官", meaning="the organs of speech",
+            characters=[("發", "발", "to issue forth — as in 발행, 발달"),
+                        ("音", "음", "sound — as in 음악, 모음, 자음"),
+                        ("器", "기", "vessel, implement — as in 용기, 소화기"),
+                        ("官", "관", "organ; official — as in 기관, 장관")],
+            notes=["The tongue, throat and lips the consonants were drawn from: "
+                   "ㄱ the back of the tongue, ㄴ the tip, ㅁ the mouth."],
+        ),
         "존귀": dict(
             hanja="尊貴", meaning="noble, held in honour",
             characters=[("尊", "존", "to revere, hold high — as in 존경 “respect”, 존중 “esteem”, and the 존 of 존댓말"),
