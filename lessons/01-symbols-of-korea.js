@@ -20,37 +20,13 @@ KIIP.chapter({
    ]
   },
   {
-   "type": "paragraph",
-   "spans": [
-    "대한민국 여권"
-   ]
-  },
-  {
-   "type": "paragraph",
-   "spans": [
-    "REPUBLIC OF KOREA"
-   ]
-  },
-  {
-   "type": "paragraph",
-   "spans": [
-    "PASSPORT"
-   ]
+   "type": "figure",
+   "text": "차세대 전자여권 — 남색 표지에 나라 문장과 대한민국 여권, REPUBLIC OF KOREA, PASSPORT"
   },
   {
    "type": "heading",
    "level": 3,
    "text": "01 여권에서 찾을 수 있는 한국의 상징은 무엇입니까?"
-  },
-  {
-   "type": "paragraph",
-   "spans": [
-    "국화 ",
-    {
-     "word": "무궁화",
-     "annotation": "무궁화"
-    }
-   ]
   },
   {
    "type": "heading",
@@ -518,7 +494,12 @@ KIIP.chapter({
      "word": "상징하",
      "annotation": "상징하다"
     },
-    "는 꽃은 무궁화이다. 무궁화는 '영원히 피고 또 피어서 지지 않는 꽃'이라는 뜻을 담고 있다."
+    "는 꽃은 ",
+    {
+     "word": "무궁화",
+     "annotation": "무궁화"
+    },
+    "이다. 무궁화는 '영원히 피고 또 피어서 지지 않는 꽃'이라는 뜻을 담고 있다."
    ],
    "translation": "The flower that stands for Korea is the 무궁화, the rose of Sharon. Its name carries the sense of “a flower that blooms and blooms forever and never falls”.",
    "sentences": [
@@ -529,7 +510,12 @@ KIIP.chapter({
        "word": "상징하",
        "annotation": "상징하다"
       },
-      "는 꽃은 무궁화이다. "
+      "는 꽃은 ",
+      {
+       "word": "무궁화",
+       "annotation": "무궁화"
+      },
+      "이다. "
      ],
      "translation": "The flower that stands for Korea is the 무궁화, the rose of Sharon."
     },
@@ -949,7 +935,7 @@ KIIP.chapter({
    "spans": [
     "한국의 공식 국가명은 ",
     {
-     "blank": ""
+     "blank": "대한민국"
     },
     "이다."
    ]
@@ -1101,10 +1087,29 @@ KIIP.chapter({
  "annotations": {
   "무궁화": {
    "headword": "무궁화",
-   "hanja": null,
-   "meaning": "chrysanthemum",
-   "characters": [],
-   "notes": [],
+   "hanja": "無窮花",
+   "meaning": "the rose of Sharon, Korea's national flower",
+   "characters": [
+    {
+     "char": "無",
+     "reading": "무",
+     "gloss": "not, without — as in 무료, 무선"
+    },
+    {
+     "char": "窮",
+     "reading": "궁",
+     "gloss": "to exhaust, to run out — as in 무궁무진"
+    },
+    {
+     "char": "花",
+     "reading": "화",
+     "gloss": "flower — as in 국화, 화초"
+    }
+   ],
+   "notes": [
+    "Literally the flower without end, which is what the article says of it: 영원히 피고 또 피어서 지지 않는 꽃. One tree opens some two thousand blooms between July and October.",
+    "Hibiscus syriacus, not the chrysanthemum — that is 국화(菊花), a homonym of 국화(國花) “national flower”."
+   ],
    "surfaces": []
   },
   "공식": {

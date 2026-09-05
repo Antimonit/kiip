@@ -15,11 +15,9 @@ CHAPTER = dict(
     blocks=[
         SECTION("warmup", "생각해 봅시다"),
         PARAGRAPH("다음은 대한민국 여권 사진입니다."),
-        PARAGRAPH("대한민국 여권"),
-        PARAGRAPH("REPUBLIC OF KOREA"),
-        PARAGRAPH("PASSPORT"),
+        FIGURE("차세대 전자여권 — 남색 표지에 나라 문장과 대한민국 여권, "
+               "REPUBLIC OF KOREA, PASSPORT"),
         HEADING(3, "01 여권에서 찾을 수 있는 한국의 상징은 무엇입니까?"),
-        PARAGRAPH("국화 {무궁화}"),
         HEADING(3, "02 한국의 국기, 국화, 국가에 대해 보거나 들은 경험에 대해 이야기 해 봅시다!"),
         SECTION("goals", "학습목표"),
         BULLET("한국의 {공식} 국가명과 그 의미를 설명할 수 있다.", ordered=True),
@@ -112,7 +110,7 @@ CHAPTER = dict(
     append=[
         SECTION("review", "주요 내용정리"),
         HEADING(3, "01 한국의 국기와 국가는 무엇일까?"),
-        BULLET("한국의 공식 국가명은 (          )이다."),
+        BULLET("한국의 공식 국가명은 ( 대한민국 )이다."),
         BULLET("한국의 국기인 ( 태극기 )에는 ( 평화 )와 ( 화합 )의 의미가 담겨 있다."),
         BULLET("한국의 국가는 ( 애국가 )라고 불리는데 이것은 ( 나라 )를 사랑하는 마음을 담은 "
                "노래라는 의미를 가진다."),
@@ -452,6 +450,17 @@ CHAPTER = dict(
         ),
     },
     extraAnnotations={
+        "무궁화": dict(
+            hanja="無窮花", meaning="the rose of Sharon, Korea's national flower",
+            characters=[("無", "무", "not, without — as in 무료, 무선"),
+                        ("窮", "궁", "to exhaust, to run out — as in 무궁무진"),
+                        ("花", "화", "flower — as in 국화, 화초")],
+            notes=["Literally the flower without end, which is what the article "
+                   "says of it: 영원히 피고 또 피어서 지지 않는 꽃. One tree opens "
+                   "some two thousand blooms between July and October.",
+                   "Hibiscus syriacus, not the chrysanthemum — that is 국화(菊花), "
+                   "a homonym of 국화(國花) “national flower”."],
+        ),
         # the margin glosses the book leaves without a breakdown of their own
         "국기": dict(
             hanja="國旗", meaning="a national flag",
