@@ -921,16 +921,27 @@ button.anno[aria-expanded="true"] {
   box-shadow: inset 0 -2px 0 var(--accent);
 }
 
-/* it grows out of the line it belongs to; see grow() in assets/lesson.js */
+/* it grows out of the line it belongs to; see fill() in assets/lesson.js */
 .anno-card {
   overflow: hidden;
-  transition: height 0.22s ease, margin-block 0.22s ease, opacity 0.16s ease;
+  transition: height 0.22s ease, margin-block 0.22s ease,
+              padding-block 0.22s ease, border-block-width 0.22s ease,
+              opacity 0.16s ease;
 }
 
-/* the height is driven from the script, which is why it is not set here:
-   an inline height outranks a class, and the card would refuse to fold */
+/* Everything that holds the box open, closed. The padding matters as much
+   as the height: box-sizing is border-box, so a card with 1rem of padding
+   cannot be shorter than about 34px however small a height it is given —
+   which the animation met as a jump at each end, and a short card met as a
+   jump through half its height.
+
+   The height itself is driven from the script and is deliberately not set
+   here: an inline height outranks a class, and the card would refuse to
+   fold. */
 .anno-card.is-collapsed {
   margin-block: 0;
+  padding-block: 0;
+  border-block-width: 0;
   opacity: 0;
 }
 

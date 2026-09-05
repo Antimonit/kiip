@@ -519,11 +519,24 @@
      to auto so the text can rewrap. */
   function toHeight(el, h, then) {
     window.clearTimeout(el.timer);        // its own, not one shared with the
-    el.style.height = h + "px";           // card that may be replacing it
-    el.timer = window.setTimeout(function () {
+    if (el.ending) el.removeEventListener("transitionend", el.ending);
+
+    /* Finish on the transition rather than on the clock: a timer that fires
+       a frame early cuts the last of the movement off, which is seen as a
+       jump. The clock is kept as a fallback for a transition that never
+       runs, and for engines that do not report one. */
+    var done = function (e) {
+      if (e && e.propertyName !== "height") return;
+      el.removeEventListener("transitionend", done);
+      window.clearTimeout(el.timer);
+      el.ending = null;
       if (then) then();
-      else el.style.height = "";
-    }, CARD_MS);
+      else el.style.height = "";          // auto, so it can rewrap
+    };
+    el.ending = done;
+    el.addEventListener("transitionend", done);
+    el.timer = window.setTimeout(done, CARD_MS + 80);
+    el.style.height = h + "px";
   }
 
   function sweep() {
