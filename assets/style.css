@@ -35,6 +35,8 @@
   --anno: #d3e7e5;
   --anno-hover: #b9dcd8;
   --anno-open: #f2e3b6;
+  --anno-gloss: #e2dbf1;
+  --anno-gloss-hover: #d0c6e8;
   --aside: #f1eff6;
   --aside-chip: #6f62a8;
   --aside-ink: #574a8c;
@@ -78,6 +80,8 @@
     --anno: #21433f;
     --anno-hover: #2c5852;
     --anno-open: #4c3f1c;
+    --anno-gloss: #332c52;
+    --anno-gloss-hover: #443a69;
     --aside: #1f1e26;
     --aside-chip: #6f62a8;
     --aside-ink: #b3a9df;
@@ -879,6 +883,11 @@ button.anno {
 }
 
 button.anno:hover { background: var(--anno-hover); }
+
+/* a word the textbook glosses in the margin beside the article, as against
+   one marked in the text for another reason */
+button.anno.is-glossed { background: var(--anno-gloss); }
+button.anno.is-glossed:hover { background: var(--anno-gloss-hover); }
 
 button.anno[aria-expanded="true"] {
   background: var(--anno-open);

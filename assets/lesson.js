@@ -32,9 +32,19 @@
 
   var buttons = [];
 
+  /* The words the textbook itself glosses in the margin beside an article,
+     as against the ones marked in the text for other reasons. Both are
+     annotations and behave alike; the stylesheet tells them apart. */
+  var glossed = {};
+  (lesson.blocks || []).forEach(function (b) {
+    (b.entries || []).forEach(function (e) {
+      if (e.annotation) glossed[e.annotation] = true;
+    });
+  });
+
   function annoButton(seg) {
     var key = seg.annotation || seg.word;
-    var b = el("button", "anno", seg.word);
+    var b = el("button", "anno" + (glossed[key] ? " is-glossed" : ""), seg.word);
     b.type = "button";
     b.dataset.key = key;
     b.setAttribute("aria-expanded", "false");
