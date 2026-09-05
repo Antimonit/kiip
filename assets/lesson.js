@@ -471,7 +471,7 @@
     b.type = "button";
     b.setAttribute("aria-pressed", "false");
     b.addEventListener("click", function () {
-      close();          // it may be sitting in a row about to be re-laid
+      close(true);      // it sits in a row whose height is about to be read
       setSplit(run, b, b.getAttribute("aria-pressed") !== "true");
     });
     run[0].parentNode.insertBefore(b, run[0]);
@@ -484,28 +484,124 @@
   var CARD_HOSTS = ".para-pair, .ko-para, .ko-list, .gloss-row, .sub-title," +
                    " .sect-title, .aside-topic, .verse, .labels, .margin-note";
   var openBtn = null;
+  var card = null;              // there is only ever one, and it moves
+  var folding = null;           // and at most one on its way out
 
-  function close() {
-    var c = docEl.querySelector(".anno-card");
-    if (c) c.remove();
+  /* must match the transition on .anno-card in style.css */
+  var CARD_MS = 220;
+
+  /* The card is not there and then it is, which on a long page reads as the
+     text having jumped. So its height is animated — out of nothing when it
+     first opens, from one size to the next when another word replaces its
+     contents, and back into nothing when it closes.
+
+     Height is driven from here and only from here: a class cannot set it,
+     because an inline height would outrank the class and the card would
+     refuse to fold. The class carries what is left, the margins and the
+     fade. */
+  function measure(el) {
+    return el.getBoundingClientRect().height;
+  }
+
+  /* Set a starting state without animating into it. Going from `auto` to a
+     number is the one step that must not be animated: an engine that can
+     interpolate it starts a transition of its own, and the card is caught
+     half way when the real one begins — which looked like the card jumping
+     to half its height and growing from there. */
+  function frozen(el, set) {
+    el.style.transition = "none";
+    set();
+    void el.offsetHeight;
+    el.style.transition = "";
+  }
+
+  /* Animate to a height from wherever the element is now, then hand it back
+     to auto so the text can rewrap. */
+  function toHeight(el, h, then) {
+    window.clearTimeout(el.timer);        // its own, not one shared with the
+    el.style.height = h + "px";           // card that may be replacing it
+    el.timer = window.setTimeout(function () {
+      if (then) then();
+      else el.style.height = "";
+    }, CARD_MS);
+  }
+
+  function sweep() {
+    if (!folding) return;
+    window.clearTimeout(folding.timer);
+    folding.remove();
+    folding = null;
+  }
+
+  function fill(host, key) {
+    var fresh = buildCard(key);
+    sweep();                    // never two cards in the page at once
+
+    if (!card) {                          // nothing open yet: grow from the line
+      card = fresh;
+      host.after(card);
+      if (still()) return;
+      var full = measure(card);
+      frozen(card, function () {
+        card.classList.add("is-collapsed");
+        card.style.height = "0px";
+      });
+      card.classList.remove("is-collapsed");
+      toHeight(card, full);
+      return;
+    }
+
+    var from = measure(card);             // already open: swap and resize
+    if (card.previousElementSibling !== host) host.after(card);
+    while (card.firstChild) card.removeChild(card.firstChild);
+    while (fresh.firstChild) card.appendChild(fresh.firstChild);
+    if (still()) return;
+    var to;
+    frozen(card, function () {
+      card.style.height = "auto";
+      to = measure(card);
+      card.style.height = from + "px";
+    });
+    toHeight(card, to);
+  }
+
+  function close(atOnce) {
+    if (!card) return drop();
+    var going = card;
+    card = null;
+    sweep();
+    if (atOnce || still()) {
+      window.clearTimeout(going.timer);
+      going.remove();
+    } else {
+      folding = going;
+      frozen(going, function () {
+        going.style.height = measure(going) + "px";
+      });
+      going.classList.add("is-collapsed");
+      toHeight(going, 0, function () {
+        going.remove();
+        if (folding === going) folding = null;
+      });
+    }
+    drop();
+  }
+
+  function drop() {
     buttons.forEach(function (b) { b.setAttribute("aria-expanded", "false"); });
     openBtn = null;
   }
 
   function select(btn) {
-    var reopening = btn === openBtn;
-    close();
-    if (reopening) return;
+    if (btn === openBtn) return close();
+    drop();
     openBtn = btn;
     btn.setAttribute("aria-expanded", "true");
-    // between the Korean and its translation: the word first, then the
-    // whole paragraph's English below it
     /* Side by side, a paragraph is a column of sentence rows and can run
-       longer than a phone screen, so the card drops in under the row the
-       word is in rather than under the whole paragraph. */
-    var host = btn.closest(".para-pair.is-split .row") ||
-               btn.closest(CARD_HOSTS) || btn;
-    host.after(buildCard(btn.dataset.key));
+       longer than a phone screen, so the card sits under the row the word is
+       in rather than under the whole paragraph. */
+    fill(btn.closest(".para-pair.is-split .row") ||
+         btn.closest(CARD_HOSTS) || btn, btn.dataset.key);
   }
 
   buttons.forEach(function (b) {

@@ -234,6 +234,12 @@ async function checkChapter(file) {
       problems.push("a card did not open after the paragraph it belongs to");
     }
     marked.click();
+    const closing = pair.nextElementSibling;
+    if (closing && closing.classList.contains("anno-card") &&
+        !closing.classList.contains("is-collapsed")) {
+      problems.push("a card did not begin to close again");
+    }
+    await settle();               // it folds away before it is removed
     if (pair.nextElementSibling &&
         pair.nextElementSibling.classList.contains("anno-card")) {
       problems.push("a card did not close again");
