@@ -886,6 +886,14 @@ details.trans p { margin: 0.7rem 0; }
    inline box paints without disturbing the line, and box-decoration-break
    keeps a word highlighted on both lines when it wraps. */
 
+/* A button, but a word first: the browser makes button text unselectable,
+   which quietly drops every marked word from anything copied out of the
+   page. */
+button.anno, button.blank {
+  -webkit-user-select: text;
+  user-select: text;
+}
+
 button.anno {
   font: inherit;
   color: inherit;

@@ -471,6 +471,7 @@
     b.type = "button";
     b.setAttribute("aria-pressed", "false");
     b.addEventListener("click", function () {
+      close();          // it may be sitting in a row about to be re-laid
       setSplit(run, b, b.getAttribute("aria-pressed") !== "true");
     });
     run[0].parentNode.insertBefore(b, run[0]);
@@ -499,7 +500,12 @@
     btn.setAttribute("aria-expanded", "true");
     // between the Korean and its translation: the word first, then the
     // whole paragraph's English below it
-    (btn.closest(CARD_HOSTS) || btn).after(buildCard(btn.dataset.key));
+    /* Side by side, a paragraph is a column of sentence rows and can run
+       longer than a phone screen, so the card drops in under the row the
+       word is in rather than under the whole paragraph. */
+    var host = btn.closest(".para-pair.is-split .row") ||
+               btn.closest(CARD_HOSTS) || btn;
+    host.after(buildCard(btn.dataset.key));
   }
 
   buttons.forEach(function (b) {
