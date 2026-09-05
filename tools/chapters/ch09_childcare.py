@@ -446,7 +446,6 @@ CHAPTER = dict(
     fixes=[
         ("한국의 임신 출산", "한국의 임신·출산", "the middle dot is missing"),
         ("영유아 보육·교육기관", "영유아 보육·교육 기관", "spacing"),
-        ("무료 산전검사", "무료 산전 검사", "spacing"),
         ("30분까", "30분까지", "the Doc drops 지 at the line break"),
         ("통제 하거나", "통제하거나", "spacing"),
         ("조손가정", "조손 가정", "spacing"),
@@ -455,6 +454,12 @@ CHAPTER = dict(
         ("에서 저정한", "에서 지정한", "typo — 저정 for 지정"),
         ("* 자신의", "★ 자신의", "the page uses a star for the discussion prompt"),
     ],
+    approved={
+        # read against the photos of pp. 54-57 and accepted
+        "한국의 임신 출산", "영유아 보육·교육기관", "30분까", "통제 하거나",
+        "조손가정", "거점형 이간보육", "0세부터,만 5세까지", "에서 저정한",
+        "* 자신의",
+    },
     headwords={"불가피한": "불가피하다", "저렴한": "저렴하다", "풍부한": "풍부하다",
                "담임 교사가": "담임"},
     english={
@@ -896,7 +901,7 @@ CHAPTER = dict(
     extraNotes=[
         "This is the first chapter of the 교육 unit rather than 사회 — the page header "
         "reads 9 교육 and the footer 02 교육.",
-        "Pages 48-53 are missing from the photos, between chapter 8 and this one. See "
-        "NOTES.md.",
+        "Pages 52-53, the opener for 제2편 교육, are not transcribed: they carry "
+        "the part's name and nothing else.",
     ],
 )

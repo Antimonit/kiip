@@ -88,7 +88,8 @@ KIIP.contents({
      ],
      "built": true
     }
-   ]
+   ],
+   "closing": "part-1"
   },
   {
    "number": 2,

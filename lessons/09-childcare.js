@@ -219,7 +219,7 @@ KIIP.chapter({
      "word": "산전",
      "annotation": "산전"
     },
-    " 검사를 받을 수 있으며 임신 중에 필요한 ",
+    "검사를 받을 수 있으며 임신 중에 필요한 ",
     {
      "word": "영양제",
      "annotation": "영양제"
@@ -249,7 +249,7 @@ KIIP.chapter({
        "word": "산전",
        "annotation": "산전"
       },
-      " 검사를 받을 수 있으며 임신 중에 필요한 ",
+      "검사를 받을 수 있으며 임신 중에 필요한 ",
       {
        "word": "영양제",
        "annotation": "영양제"
@@ -2391,70 +2391,10 @@ KIIP.chapter({
  },
  "notes": [
   {
-   "was": "한국의 임신 출산",
-   "now": "한국의 임신·출산",
-   "why": "the middle dot is missing",
-   "count": 1
-  },
-  {
-   "was": "영유아 보육·교육기관",
-   "now": "영유아 보육·교육 기관",
-   "why": "spacing",
-   "count": 1
-  },
-  {
-   "was": "무료 산전검사",
-   "now": "무료 산전 검사",
-   "why": "spacing",
-   "count": 1
-  },
-  {
-   "was": "30분까",
-   "now": "30분까지",
-   "why": "the Doc drops 지 at the line break",
-   "count": 1
-  },
-  {
-   "was": "통제 하거나",
-   "now": "통제하거나",
-   "why": "spacing",
-   "count": 1
-  },
-  {
-   "was": "조손가정",
-   "now": "조손 가정",
-   "why": "spacing",
-   "count": 1
-  },
-  {
-   "was": "거점형 이간보육",
-   "now": "거점형 야간보육",
-   "why": "typo — 이간 for 야간",
-   "count": 1
-  },
-  {
-   "was": "0세부터,만 5세까지",
-   "now": "0세부터 만 5세까지",
-   "why": "a comma stands where a space belongs",
-   "count": 1
-  },
-  {
-   "was": "에서 저정한",
-   "now": "에서 지정한",
-   "why": "typo — 저정 for 지정",
-   "count": 1
-  },
-  {
-   "was": "* 자신의",
-   "now": "★ 자신의",
-   "why": "the page uses a star for the discussion prompt",
-   "count": 1
-  },
-  {
    "why": "This is the first chapter of the 교육 unit rather than 사회 — the page header reads 9 교육 and the footer 02 교육."
   },
   {
-   "why": "Pages 48-53 are missing from the photos, between chapter 8 and this one. See NOTES.md."
+   "why": "Pages 52-53, the opener for 제2편 교육, are not transcribed: they carry the part's name and nothing else."
   }
  ],
  "slug": "09-childcare"
