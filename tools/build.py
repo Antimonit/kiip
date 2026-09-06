@@ -15,7 +15,6 @@ import re
 import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from parse_gdoc import parse
 import chapters
 from chapters import CHAPTERS, PARTS
 
@@ -38,140 +37,6 @@ SPECIAL = {
 
 # --------------------------------------------------------------------------
 # annotations
-# --------------------------------------------------------------------------
-
-def split_meaning(text):
-    """Split 'head - meaning' / 'head = meaning' into its two halves."""
-    m = re.match(r"^(.{1,40}?)\s+%s\s+(.+)$" % DASH, text, re.S)
-    if not m:
-        m = re.match(r"^(.{1,40}?)\s*=\s*(.+)$", text, re.S)
-    return (m.group(1).strip(), m.group(2).strip()) if m else (None, text.strip())
-
-
-def hanja_run(text):
-    """'A(power) B(dignity) = authority' -> ([(A,power),(B,dignity)], 'authority')."""
-    m = re.match(r"^((?:[%s]\s*\([^)]*\)\s*)+)=\s*(.+)$" % HANJA, text, re.S)
-    if not m:
-        return None, None
-    pairs = re.findall(r"([%s])\s*\(([^)]*)\)" % HANJA, m.group(1))
-    return [{"char": c, "gloss": g.strip()} for c, g in pairs], m.group(2).strip()
-
-
-def hanja_only(text):
-    """'A(explain) B(example) C(book)' with no gloss after it."""
-    if not re.match(r"^(?:[%s]\s*\([^)]*\)\s*)+$" % HANJA, text):
-        return None
-    return [{"char": c, "gloss": g.strip()} for c, g in
-            re.findall(r"([%s])\s*\(([^)]*)\)" % HANJA, text)]
-
-
-def as_hanja_line(text):
-    """Recognise a standalone hanja-breakdown line."""
-    m = re.match(r"^([가-힣])\s*\(([%s])\)\s*%s\s*(.+)$" % (HANJA, DASH), text, re.S)
-    if m:
-        return {"char": m.group(2), "reading": m.group(1),
-                "gloss": m.group(3).strip()}
-    m = re.match(r"^([%s]{1,4})\s*%s\s*(.+)$" % (HANJA, DASH), text, re.S)
-    if m:
-        return {"char": m.group(1), "gloss": m.group(2).strip()}
-    m = re.match(r"^([%s]{1,4})\s*=\s*(.+)$" % HANJA, text, re.S)
-    if m:
-        return {"char": m.group(1), "gloss": m.group(2).strip()}
-    return None
-
-
-def parse_comment(paras):
-    """Turn one Docs comment into {headword, hanja, meaning, characters, notes}."""
-    out = {"headword": None, "hanja": None, "meaning": None, "characters": [], "notes": []}
-    rest = list(paras)
-
-    first = rest.pop(0) if rest else ""
-    head, meaning = split_meaning(first)
-
-    if head and re.search(r"[가-힣]", head):
-        m = re.match(r"^(.*?)\s+((?:[%s]\s*\([^)]*\)\s*)+)$" % HANJA, head)
-        if m:
-            out["characters"] += [{"char": c, "gloss": g.strip()} for c, g in
-                                 re.findall(r"([%s])\s*\(([^)]*)\)" % HANJA, m.group(2))]
-            head = m.group(1).strip()
-        m = re.match(r"^(.*?)\s*[\(（]([%s]+[가-힣]*)[\)）]\s*$" % HANJA, head)
-        if m:
-            out["headword"], out["hanja"] = m.group(1).strip(), m.group(2)
-        else:
-            out["headword"] = head
-        pairs, tail = hanja_run(meaning)
-        if pairs:
-            out["characters"] += pairs
-            meaning = tail
-        out["meaning"] = meaning
-    else:
-        pairs, tail = hanja_run(first)
-        only = hanja_only(first)
-        if pairs:
-            out["characters"] += pairs
-            out["meaning"] = tail
-        elif only:
-            out["characters"] += only
-        elif head:
-            line = as_hanja_line(first)
-            if line:
-                out["characters"].append(line)
-            else:
-                out["meaning"] = first.strip()
-        else:
-            out["meaning"] = first.strip()
-
-    for p in rest:
-        line = as_hanja_line(p)
-        if line and len(p) < 160:
-            out["characters"].append(line)
-        else:
-            out["notes"].append(p)
-    return out
-
-
-def display_headword(surface, parsed):
-    """Prefer the dictionary form from the comment, when it really is one."""
-    if not parsed or parsed == surface:
-        return surface
-    if len(parsed) > 12 or re.search(r"[(=]", parsed):
-        return surface
-    if not re.search(r"[가-힣]", parsed):
-        return surface
-    if parsed[0] != surface[0]:
-        return surface
-    return parsed
-
-
-def merge(into, new):
-    for k in ("headword", "hanja", "meaning"):
-        if not into.get(k) and new.get(k):
-            into[k] = new[k]
-        elif into.get(k) and new.get(k) and k == "meaning" and new[k] != into[k]:
-            label = new.get("headword")
-            new["notes"].insert(0, ("%s — %s" % (label, new[k])) if label else new[k])
-    into["characters"] += [h for h in new["characters"] if h not in into["characters"]]
-    into["notes"] += new["notes"]
-    return into
-
-
-def is_translation(paras, tag):
-    """A whole-section translation: a long English comment left on a heading.
-
-    Long English comments on an ordinary word are usage notes, not
-    translations, so the anchor's block tag decides.
-    """
-    if tag not in ("h1", "h2", "h3", "h4"):
-        return False
-    text = " ".join(paras)
-    if len(text) < 240:
-        return False
-    korean = len(re.findall(r"[가-힣]", text))
-    return korean / max(len(text), 1) < 0.12
-
-
-# --------------------------------------------------------------------------
-# blocks
 # --------------------------------------------------------------------------
 
 LEAD = re.compile(r"^[\^>•]\s*")
@@ -269,57 +134,10 @@ def tidy(segs):
     return [x for x in merged if x != ""]
 
 
-def spans(block, anno_key):
-    out = []
-    for r in block["runs"]:
-        text = r["text"]
-        key = anno_key(r) if r["anno"] else None
-        if key is None:
-            if out and isinstance(out[-1], str):
-                out[-1] += text
-            else:
-                out.append(text)
-        else:
-            out.append({"word": text, "annotation": key})
-    return [s for s in out if s != ""]
-
-
-def first_key(block, anno_key):
-    for r in block.get("runs", []):
-        if r["anno"]:
-            k = anno_key(r)
-            if k:
-                return k
-    return None
-
-
 # The page prints its own list markers into the text. They are the list's
 # markers, not its content, so they come off and the list carries them.
 BULLET_MARK = re.compile(r"^\s*[•·]\s*")
 NUMBER_MARK = re.compile(r"^\s*\d+\.\s+")
-
-
-def strip_list_marker(span_list):
-    """-> (spans without the marker, whether the list was numbered)."""
-    if not span_list or not isinstance(span_list[0], str):
-        return span_list, False
-    first = span_list[0]
-    m = NUMBER_MARK.match(first)
-    if m:
-        return [first[m.end():]] + span_list[1:], True
-    m = BULLET_MARK.match(first)
-    if m:
-        return [first[m.end():]] + span_list[1:], False
-    return span_list, False
-
-
-def gloss_term(text):
-    """'A married' -> ('A', 'married')."""
-    t = text.lstrip("• ").strip()
-    m = re.match(r"^([^A-Za-z(]+?)\s*([A-Za-z(].*)$", t)
-    if m and re.search(r"[가-힣]", m.group(1)):
-        return m.group(1).strip(), m.group(2).strip()
-    return t, None
 
 
 # In 주요 내용정리 a parenthesised group is a gap for the student to fill.
@@ -854,284 +672,30 @@ def written_entries(written, module):
     return out
 
 
-def from_doc(cfg, srcdir):
-    """The chapter's text and comment glossary as the Google Doc has them.
+def build(cfg):
+    """One chapter's payload, from the text its module carries.
 
-    Returns the blocks before any correction is applied, the annotations the
-    Doc's comments carry, the words glossed on the title line, the list of
-    corrections to apply and the tally they fill in. A converted chapter
-    carries all of this in the module itself and does not come through here.
+    A chapter's text arrives here before correction — as `blocks`, or, for a
+    chapter transcribed straight from the photographs, as `append` alone —
+    so `fixes` still reaches it and a correction can be reviewed and retired.
     """
-    # A chapter with no Doc is transcribed entirely into `append`; the empty
-    # block stands in for the title line the parser would have produced.
-    if cfg.get("src"):
-        doc = parse(os.path.join(srcdir, cfg["src"]))
-    else:
-        doc = {"blocks": [{"tag": "p", "runs": []}], "comments": {}}
-
-    # ---- annotations -------------------------------------------------
-    anchors, anchor_tag = {}, {}
-    def collect(blocks):
-        for b in blocks:
-            if b["tag"] == "table":
-                for row in b["rows"]:
-                    for cell in row:
-                        collect(cell)
-                continue
-            for r in b["runs"]:
-                for _cid, label in r["anno"]:
-                    anchors[label] = r["text"].strip()
-                    anchor_tag[label] = b["tag"]
-    collect(doc["blocks"])
-
     heads = cfg.get("headwords", {})
-    annotations, key_of_label, translations, surfaces = {}, {}, {}, {}
 
-    for label, paras in doc["comments"].items():
-        surface = anchors.get(label, "")
-        if is_translation(paras, anchor_tag.get(label)):
-            translations[label] = "\n\n".join(paras)
-            key_of_label[label] = None
-            continue
-        parsed = parse_comment(paras)
-        key = heads.get(surface) or surface or label
-        key_of_label[label] = key
-        annotations[key] = merge(annotations.get(key, parse_comment([])), parsed)
-        surfaces.setdefault(key, [])
-        if surface and surface not in surfaces[key]:
-            surfaces[key].append(surface)
+    if cfg.get("src"):
+        raise SystemExit(
+            "%s names src=%r, but the Google Doc reader was removed once "
+            "every chapter carried its own text. Recover tools/convert.py "
+            "and tools/parse_gdoc.py from an earlier revision to convert it."
+            % (cfg["module"], cfg["src"]))
 
-    for key, a in annotations.items():
-        parsed = heads.get(key) or a.get("headword")
-        shown = display_headword(key, parsed)
-        if parsed and shown != parsed and a.get("meaning"):
-            a["meaning"] = "%s — %s" % (parsed, a["meaning"])
-        a["headword"] = shown
-        a["notes"] = [n for n in a["notes"] if n.strip()]
-        a["surfaces"] = [s for s in surfaces.get(key, []) if s != key]
-
-    def anno_key(run):
-        for _cid, label in run["anno"]:
-            k = key_of_label.get(label)
-            if k:
-                return k
-        return None
-
-    def run_translation(block):
-        for r in block["runs"]:
-            for _cid, label in r["anno"]:
-                if label in translations:
-                    return translations[label]
-        return None
-
-    # ---- block roles -------------------------------------------------
-    roles = {}
-    for (a, b), role in cfg.get("roles", {}).items():
-        for i in range(a, b + 1):
-            roles[i] = (role, a, b)
-
-    title_labels = {lb for r in doc["blocks"][0]["runs"] for _c, lb in r["anno"]}
-    orphans = sorted({key_of_label[l] for l in title_labels if key_of_label.get(l)})
-
-    inserts = cfg.get("insert", {})
-    blocks, i, n = [], 1, len(doc["blocks"])
-    section_kind = "intro"
-    hits = {}
+    blocks = copy.deepcopy(cfg.get("blocks", []))
+    # the entries the Doc's comments carried, still under correction:
+    # `fixes` reaches them exactly as it reached the Doc
+    annotations = written_entries(cfg.get("annotations", {}), cfg["module"])
+    orphans = list(cfg.get("chapterGlossary", ()))
     # the trailing entry collapses double spaces left behind by the fixes
     fixes = list(cfg.get("fixes", ())) + [("  ", " ", None)]
-
-    def emit(b):
-        blocks.append(b)
-
-    while i < n:
-        for extra in inserts.get(i, []):
-            emit(copy.deepcopy(extra))
-        block = doc["blocks"][i]
-        role = roles.get(i)
-
-        if role:
-            name, start, end = role
-            if i != start:
-                i += 1
-                continue
-            group = doc["blocks"][start:end + 1]
-            group = [g for g in group if g["tag"] != "table"]
-            texts = [block_text(g).strip() for g in group]
-            rich = [spans(g, anno_key) for g in group]
-            if name == "join":
-                # the Doc broke one paragraph in two, mid-sentence
-                for g in group:
-                    prev = next((x for x in reversed(blocks)
-                                 if x["type"] == "paragraph"), None)
-                    if prev is None:
-                        continue
-                    tail = spans(g, anno_key)
-                    if prev["spans"] and isinstance(prev["spans"][-1], str) \
-                            and not prev["spans"][-1].endswith(" "):
-                        prev["spans"].append(" ")
-                    prev["spans"].extend(tail)
-            elif name == "heading":
-                emit({"type": "heading", "level": 3, "text": texts[0]})
-            elif name == "heading4":
-                emit({"type": "heading", "level": 4, "text": texts[0]})
-            elif name == "drop":
-                pass            # a stray note in the Doc that the page has not
-            elif name == "labels":
-                emit({"type": "labels", "items": rich})
-            elif name == "sublist":
-                # the Doc sets the outer items as plain lines and the inner
-                # ones as list items, which is the nesting the page draws
-                # with a bracket
-                for g, r in zip(group, rich):
-                    item = {"type": "bullet", "spans": r}
-                    if g["tag"] == "li":
-                        item["level"] = 2
-                    emit(item)
-            elif name == "margin":
-                emit({"type": "margin", "items": [strip_lead(r) for r in rich]})
-            elif name == "figure":
-                emit({"type": "figure",
-                      "text": " ".join(t.lstrip("^>• ").strip() for t in texts)})
-            elif name == "source":
-                emit({"type": "source", "text": " ".join(texts)})
-            elif name == "verse":
-                emit({"type": "verse", "lines": rich})
-            elif name == "table2":
-                rows = [re.split(r"\s{2,}|\t", t, maxsplit=1) for t in texts]
-                emit({"type": "table", "rows": [[c.strip() for c in r] for r in rows]})
-            elif name == "chart":
-                c = cfg["chart"]
-                emit({"type": "chart", "caption": c["caption"], "unit": c["unit"],
-                      "rows": [list(r) for r in c["rows"]]})
-            elif name == "kinship":
-                for t in cfg["kinship"]:
-                    emit({"type": "heading", "level": 3, "text": t["title"]})
-                    emit({"type": "table", "rows": [list(r) for r in t["rows"]],
-                          "header": ["가족", "호칭"]})
-            i = end + 1
-            continue
-
-        tag, text = block["tag"], block_text(block).strip()
-
-        if tag in ("h1", "h2", "h3", "h4"):
-            # a section is recognised by its heading, so a slip in that
-            # heading has to be corrected before the name is looked up
-            kind = SPECIAL.get(text) or SPECIAL.get(apply_fixes(text, fixes, {}))
-            if kind:
-                section_kind = kind
-                emit({"type": "section", "kind": kind, "text": text})
-            elif tag == "h1":
-                section_kind = "part"
-                emit({"type": "section", "kind": "part", "text": text})
-            else:
-                b = {"type": "heading", "level": int(tag[1]), "text": text}
-                tr = run_translation(block)
-                if tr:
-                    b["translation"] = tr
-                emit(b)
-            i += 1
-            continue
-
-        if tag == "table":
-            cells = block["rows"]
-            if len(cells) == 1 and len(cells[0]) == 1:
-                inner = cells[0][0]
-                entries, j = [], 0
-                while j < len(inner):
-                    term, handwritten = gloss_term(block_text(inner[j]).strip())
-                    definition = spans(inner[j + 1], anno_key) if j + 1 < len(inner) else []
-                    entry = {"term": term, "definition": definition,
-                             "annotation": first_key(inner[j], anno_key)}
-                    if handwritten:
-                        entry["handwritten"] = handwritten
-                    entries.append(entry)
-                    j += 2
-                emit({"type": "glossary", "entries": entries})
-            else:
-                rows = [[" ".join(block_text(bl).strip() for bl in cell) for cell in row]
-                        for row in cells]
-                # 관련 단원 prints 영역 across the two columns it heads, so a
-                # header row short of the body's width spans its first cell
-                width = max(len(r) for r in rows)
-                head = list(rows[0])
-                if head and len(head) < width:
-                    head[0] = {"text": head[0], "span": width - len(head) + 1}
-                emit({"type": "table", "header": head, "rows": rows[1:]})
-            i += 1
-            continue
-
-        bulleted = text.startswith("•")
-        if section_kind in ("part", "intro") and (tag == "li" or bulleted) and i + 1 < n:
-            nxt = doc["blocks"][i + 1]
-            nxt_text = block_text(nxt).strip()
-            if nxt["tag"] == "p" and not nxt_text.startswith("•"):
-                entries = []
-                while i < n:
-                    b = doc["blocks"][i]
-                    t = block_text(b).strip()
-                    if i in roles or not (b["tag"] == "li" or t.startswith("•")):
-                        break
-                    if i + 1 >= n:
-                        break
-                    d = doc["blocks"][i + 1]
-                    if d["tag"] != "p" or block_text(d).strip().startswith("•"):
-                        break
-                    term, handwritten = gloss_term(t)
-                    entry = {"term": term, "definition": spans(d, anno_key),
-                             "annotation": first_key(b, anno_key)}
-                    if handwritten:
-                        entry["handwritten"] = handwritten
-                    entries.append(entry)
-                    i += 2
-                emit({"type": "glossary", "entries": entries})
-                continue
-
-        if tag == "li" or bulleted or (section_kind == "goals"
-                                       and re.match(r"^\d+\.\s", text)):
-            span_list, ordered = strip_list_marker(spans(block, anno_key))
-            item = {"type": "bullet", "spans": span_list}
-            if ordered:
-                item["ordered"] = True
-            emit(item)
-            i += 1
-            continue
-
-        b = {"type": "paragraph", "spans": spans(block, anno_key)}
-        if text.startswith("★"):
-            b["role"] = "prompt"
-        tr = run_translation(block)
-        if tr:
-            b["translation"] = tr
-        emit(b)
-        i += 1
-
-    for extra in inserts.get(n, []):
-        emit(copy.deepcopy(extra))
-
-    return blocks, annotations, orphans, fixes, hits
-
-def build(cfg, srcdir):
-    """One chapter's payload, from its module and — until converted — its Doc.
-
-    A chapter carries its text either in `blocks`, transcribed into the
-    module, or in a Google Doc named by `src`. Either way what arrives here
-    is the text before correction, so `fixes` applies to both and a
-    correction can still be reviewed and retired.
-    """
-    heads = cfg.get("headwords", {})
-
-    if cfg.get("blocks") is not None:
-        blocks = copy.deepcopy(cfg["blocks"])
-        # the entries the Doc's comments carried, still under correction:
-        # `fixes` reaches them exactly as it reached the Doc
-        annotations = written_entries(cfg.get("annotations", {}),
-                                      cfg["module"])
-        orphans = list(cfg.get("chapterGlossary", ()))
-        # the trailing entry collapses double spaces left behind by the fixes
-        fixes = list(cfg.get("fixes", ())) + [("  ", " ", None)]
-        hits = {}
-    else:
-        blocks, annotations, orphans, fixes, hits = from_doc(cfg, srcdir)
+    hits = {}
 
     # ---- corrections --------------------------------------------------
     shown = {f[0]: f[3] for f in fixes if len(f) > 3}
@@ -1208,16 +772,9 @@ def write_payload(path, call, payload, source):
         f.write(");\n")
 
 
-def emit_payload(cfg, srcdir, out):
+def emit_payload(cfg, out):
     """Build one chapter or part page, write it, and say how it went."""
-    # the Doc this chapter was built from is not on this machine;
-    # the generated file is checked in, so leave it as it stands
-    if cfg.get("src") and not os.path.exists(os.path.join(srcdir, cfg["src"])):
-        print("%-34s SOURCE MISSING (%s) — kept the generated file" % (
-            cfg["slug"], cfg["src"]))
-        return
-
-    lesson, unused, unaligned, unpaired, orphaned = build(cfg, srcdir)
+    lesson, unused, unaligned, unpaired, orphaned = build(cfg)
     lesson["slug"] = cfg["slug"]
     if cfg.get("part"):
         lesson["part"] = True
@@ -1238,7 +795,6 @@ def emit_payload(cfg, srcdir, out):
 
 
 def main():
-    srcdir = os.path.expanduser(sys.argv[1] if len(sys.argv) > 1 else "~/Downloads")
     out = os.path.join(ROOT, "lessons")
     os.makedirs(out, exist_ok=True)
 
@@ -1247,19 +803,11 @@ def main():
         manifest.append({k: cfg[k]
                          for k in ("number", "slug", "title", "titleEn")})
 
-        # the Doc this chapter was built from is not on this machine;
-        # the generated file is checked in, so leave it as it stands
-        if cfg.get("src") and not os.path.exists(
-                os.path.join(srcdir, cfg["src"])):
-            print("%-34s SOURCE MISSING (%s) — kept the generated file" % (
-                cfg["slug"], cfg["src"]))
-            continue
-
-        emit_payload(cfg, srcdir, out)
+        emit_payload(cfg, out)
 
     # the spread that closes each 편, built and addressed as a chapter is
     for cfg in PARTS:
-        emit_payload(cfg, srcdir, out)
+        emit_payload(cfg, out)
 
     parts, back = chapters.contents()
     if parts:

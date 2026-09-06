@@ -3,10 +3,9 @@
 
 One module per chapter, named `chNN_slug.py`, each defining a single
 `CHAPTER` dict. A chapter carries its text itself: `blocks` for text that came
-from a Google Doc, written into the module by tools/convert.py, and `append`
-for text transcribed straight from the page photos. A chapter may still name a
-Doc in `src`, in which case it is read from the HTML export instead; none does
-any more, all of them having been converted. Modules are discovered automatically
+from a Google Doc, written into the module when the Doc pipeline was retired,
+and `append` for text transcribed straight from the page photos. Modules are
+discovered automatically
 and ordered by chapter number, so adding a chapter means adding a file and
 nothing else.
 

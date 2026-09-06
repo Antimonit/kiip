@@ -55,35 +55,16 @@ python3 tools/build.py                  # writes lessons/*.js
 That writes `lessons/<slug>.js` for each chapter, `lessons/manifest.js` and
 `lessons/contents.js`.
 
-A chapter may still name a Doc in `src`, in which case it is read from the
-HTML export, which has to be sitting in `~/Downloads` (or in the directory
-given as the build's first argument). None does any more: every Doc-sourced
-chapter was converted with
-
-```
-python3 tools/convert.py --src ~/Downloads 05-housing
-```
-
-which reads the Doc one last time and writes what it found into the module as
-`blocks` and `annotations`, *before* correction, so `fixes` and `approved` go
-on working exactly as they did. Every block it writes is read back with the
-same helpers the module uses and compared against what the Doc gave, so a
-chapter it cannot round-trip is refused rather than half-written.
-
-Because nothing names a `src`, the conversion no longer runs over anything;
-`python3 tools/convert.py --selftest` writes one block of every shape and
-reads it back, which is what keeps the writer honest for the next Doc that
-arrives.
-
 ### The pipeline
 
-For a chapter still built from a Doc, `tools/parse_gdoc.py` reads the export.
-Two things survive it that the pipeline
-depends on: heading and paragraph structure, and comment anchors — the commented
-run is left as its own `<span>` immediately before the `[a]` superscript, which
-is how each comment is tied back to the word it annotates.
+Every chapter now carries its own text, so the build reads nothing outside
+the repository. The reader that turned a Google Docs HTML export into blocks
+and comments (`tools/parse_gdoc.py`) and the converter that wrote a Doc into
+its module (`tools/convert.py`) were removed once the last chapter was
+converted; `git log` still has them if another Doc ever turns up, and naming
+a `src` in a chapter now stops the build with a note saying so.
 
-`tools/build.py` then:
+`tools/build.py`:
 
 - groups blocks into sections (생각해 봅시다, 학습목표, 관련 단원 확인하기, the
   numbered parts, 알아두면 좋아요, 주요 내용정리, 이야기 나누기);
@@ -105,18 +86,6 @@ is how each comment is tied back to the word it annotates.
   margin. Running prose is searched first, then headings, then photo labels
   and margin notes, so a word is marked where it is read;
 - applies the chapter's corrections and lists every one of them on the page.
-
-`roles` and `insert` belong to the Doc path and apply only while a chapter
-names a `src`; conversion resolves both and leaves the blocks they produced in
-the module. A block that the Doc sets as ordinary text can be given its real
-part by `roles`, keyed by a `(first, last)` range of source block indices:
-`join` folds a paragraph the Doc broke in two back into the one before it,
-`heading` and `heading4` promote a line, `labels`, `margin`, `figure`,
-`source`, `verse`, `chart`, `table2`, `sublist` and `kinship` name what a
-group of lines really is, and `drop` removes a line the page does not have.
-`sublist` reads a group as a two-level list, the Doc's plain lines becoming
-the outer items and its list items the inner ones — which is how a page that
-draws a bracket is set here.
 
 A table cell is plain text, or `CELL(text, columns)` where the book merges it
 across columns, or `CELL(text, down=rows)` where it merges down rows. A
@@ -162,13 +131,9 @@ carried in the data and still be asked for rather than given.
 3. Transcribe the pages into `append`, and add `extraAnnotations` entries for
    the words the chapter teaches. Run the build and read the page.
 
-A chapter whose text is a Doc export names it in `src` instead, and one whose
-export is not on the machine is skipped with a warning and keeps the file it
-generated before, since `lessons/*.js` is checked in — so a missing export
-cannot delete a chapter, but it cannot rebuild one either. `fixes`,
-`headwords` and `roles` are how such a chapter is brought into line; every fix
-is reported on the page, and the build warns about fixes that never matched
-anything.
+`fixes` and `headwords` are how a chapter is brought into line with the book:
+every fix is reported on the page, and the build warns about fixes that never
+matched anything.
 
 Blocks are transcribed straight from the photos in `append`, at the end of
 whatever the chapter already has, and `extraAnnotations` supplies entries for
@@ -264,9 +229,7 @@ assets/style.css        all appearance
 assets/kiip.js          content registry and loader
 assets/index.js         renders the chapter list
 assets/lesson.js        renders a chapter
-tools/parse_gdoc.py     Google Docs HTML export -> blocks + comments
 tools/build.py          the generator
-tools/convert.py        writes a Doc's text into the chapter module
 tools/smoke.js          render check and boundary lints
 tools/chapters/
   __init__.py           registry, and the helpers chapter modules use

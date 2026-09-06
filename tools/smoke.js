@@ -74,7 +74,7 @@ function lintSectionLayering() {
  * A commit belongs to one side or the other. `master` carries the site, the
  * tooling and the design; `content` carries the chapters and what is
  * generated from them. Nothing carries both. */
-const SITE = /^(README\.md|index\.html|lesson\.html|\.gitignore|\.nojekyll|assets\/|tools\/(build|convert|parse_gdoc|smoke)\.|tools\/chapters\/__init__\.py$)/;
+const SITE = /^(README\.md|index\.html|lesson\.html|\.gitignore|\.nojekyll|assets\/|tools\/(build|smoke)\.|tools\/chapters\/__init__\.py$)/;
 const CONTENT = /^(NOTES\.md|lessons\/|tools\/chapters\/(ch\d|pt\d|contents\.py))/;
 const MODULE = /^tools\/chapters\/(ch|pt)\d.*\.py$/;
 
