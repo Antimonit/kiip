@@ -29,12 +29,7 @@
 
   var total = parts.reduce(function (n, p) { return n + p.chapters.length; }, 0);
 
-  function el(tag, cls, text) {
-    var n = document.createElement(tag);
-    if (cls) n.className = cls;
-    if (text != null) n.textContent = text;
-    return n;
-  }
+  var el = KIIP.el;
 
   function chapterRow(c) {
     var lesson = byNumber[c.number];

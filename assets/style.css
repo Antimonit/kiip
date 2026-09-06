@@ -750,8 +750,18 @@ ol.ko-list li::marker { color: var(--ink-faint); }
   font-size: calc(0.88rem * var(--aux-scale));
 }
 
-.bar-track { background: var(--rule-soft); border-radius: 3px; height: 0.85rem; }
-.bar-fill { display: block; height: 100%; background: var(--accent); border-radius: 3px; }
+.bar-track {
+  position: relative;
+  background: var(--rule-soft); border-radius: 3px; height: 0.85rem;
+}
+
+/* placed from the zero line, which the script works out from the data */
+.bar-fill {
+  position: absolute; top: 0; height: 100%;
+  background: var(--accent); border-radius: 3px;
+}
+
+.bar-fill.is-below { background: var(--anno-gloss-ink); }
 .bar-value { text-align: right; color: var(--ink-soft); font-variant-numeric: tabular-nums; }
 
 .chart figcaption {

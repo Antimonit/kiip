@@ -4,12 +4,7 @@
    ------------------------------------------------------------------ */
 
 (function () {
-  function el(tag, cls, text) {
-    var n = document.createElement(tag);
-    if (cls) n.className = cls;
-    if (text != null) n.textContent = text;
-    return n;
-  }
+  var el = KIIP.el;
 
   function render(lesson) {
 
@@ -42,12 +37,15 @@
     });
   });
 
+  var cardId = "anno-card";        // there is one card, so one id will do
+
   function annoButton(seg) {
     var key = seg.annotation || seg.word;
     var b = el("button", "anno" + (glossed[key] ? " is-glossed" : ""), seg.word);
     b.type = "button";
     b.dataset.key = key;
     b.setAttribute("aria-expanded", "false");
+    b.setAttribute("aria-controls", cardId);
     buttons.push(b);
     return b;
   }
@@ -87,6 +85,12 @@
   function buildCard(key) {
     var a = (lesson.annotations || {})[key];
     var card = el("div", "anno-card" + (glossed[key] ? " is-glossed" : ""));
+    /* a region of its own, named for the word, so a screen reader announces
+       what has just appeared and can be told to jump to it */
+    card.id = cardId;
+    card.setAttribute("role", "region");
+    card.setAttribute("aria-label", ((a && a.headword) || key) + " — explanation");
+    card.tabIndex = -1;
     if (!a) {
       card.appendChild(el("p", null, key));
       return card;
@@ -262,15 +266,25 @@
         return;
       }
 
+      /* Bars run from a zero line, which is at the left edge until a value
+         falls below it — 그리스 at -0.3% in chapter 25 — and then moves in far
+         enough for the negative ones to run backwards from it. */
       case "chart": {
         var fig = el("figure", "chart");
-        var max = Math.max.apply(null, b.rows.map(function (r) { return r[1]; }));
+        var values = b.rows.map(function (r) { return r[1]; });
+        var top = Math.max.apply(null, values.concat(0));
+        var base = Math.min.apply(null, values.concat(0));
+        var span = top - base;
+        var zero = span ? (-base / span) * 100 : 0;
+
         b.rows.forEach(function (r) {
           var row = el("div", "bar-row");
           row.appendChild(el("span", "bar-label", r[0]));
           var track = el("span", "bar-track");
-          var fill = el("span", "bar-fill");
-          fill.style.width = (r[1] / max * 100) + "%";
+          var fill = el("span", "bar-fill" + (r[1] < 0 ? " is-below" : ""));
+          var size = span ? Math.abs(r[1]) / span * 100 : 0;
+          fill.style.width = size + "%";
+          fill.style.left = (r[1] < 0 ? zero - size : zero) + "%";
           track.appendChild(fill);
           row.appendChild(track);
           row.appendChild(el("span", "bar-value", r[1] + b.unit));
@@ -598,6 +612,7 @@
   }
 
   function foldAway(el, atOnce) {
+    el.removeAttribute("id");         // it is no longer the one being pointed at
     if (atOnce || still()) {
       window.clearTimeout(el.timer);
       return el.remove();

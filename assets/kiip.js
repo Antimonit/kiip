@@ -18,6 +18,17 @@ window.KIIP = (function () {
   var pending = {};
 
   return {
+    /* --- shared by the pages ------------------------------------ */
+
+    /* Both pages build their markup the same way, from the same three
+       arguments; there is no reason for two copies of it. */
+    el: function (tag, cls, text) {
+      var n = document.createElement(tag);
+      if (cls) n.className = cls;
+      if (text != null) n.textContent = text;
+      return n;
+    },
+
     /* --- called by the content files ---------------------------- */
 
     chapter: function (data) {
