@@ -5,6 +5,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>KIIP 5</title>
 <link rel="stylesheet" href="assets/style.css">
+<script>
+/* The theme before the first paint, so a chosen light page never flashes
+   dark. KIIP.theme owns everything else about it. */
+try {
+  var t = localStorage.getItem("kiip-theme");
+  if (t) document.documentElement.setAttribute("data-theme", t);
+} catch (e) { /* no storage: the system setting stands */ }
+</script>
 </head>
 <body>
 <div class="wrap">

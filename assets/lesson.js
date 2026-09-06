@@ -6,6 +6,8 @@
 (function () {
   var el = KIIP.el;
 
+  KIIP.theme.mount();
+
   function render(lesson) {
 
   /* --- head ------------------------------------------------------ */

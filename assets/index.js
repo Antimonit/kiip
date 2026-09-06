@@ -31,6 +31,8 @@
 
   var el = KIIP.el;
 
+  KIIP.theme.mount();
+
   function chapterRow(c) {
     var lesson = byNumber[c.number];
     var row = el(lesson ? "a" : "div", "entry" + (lesson ? "" : " is-pending"));

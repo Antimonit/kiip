@@ -19,42 +19,48 @@
 /* --- palette and fonts -------------------------------------------- */
 
 :root {
-  --paper: #fbf9f4;
-  --raised: #ffffff;
-  --ink: #23201b;
-  --ink-soft: #5c564c;
-  --ink-faint: #8b8478;
-  --rule: #e3ddd0;
-  --rule-soft: #efeade;
-  --accent: #1f6f6b;
-  --accent-soft: #dbeceb;
-  --accent-ink: #12403e;
-  --mark: #f2e3b6;
-  --en-surface: #edf4f3;
-  --en-edge: #cfe4e1;
-  --anno: #d3e7e5;
-  --anno-hover: #b9dcd8;
-  --anno-open: #f2e3b6;
-  --anno-gloss: #e2dbf1;
-  --anno-gloss-hover: #d0c6e8;
-  --anno-gloss-ink: #5b4c9c;
-  --aside: #f1eff6;
+  /* Every colour is written once, as its light value and then its dark one.
+     The page follows the system unless the reader has chosen otherwise, in
+     which case data-theme on <html> flips color-scheme, and light-dark()
+     with it. */
+  color-scheme: light dark;
+
+  --paper: light-dark(#fbf9f4, #15171a);
+  --raised: light-dark(#ffffff, #1d2024);
+  --ink: light-dark(#23201b, #e7e3db);
+  --ink-soft: light-dark(#5c564c, #a8a196);
+  --ink-faint: light-dark(#8b8478, #7c7669);
+  --rule: light-dark(#e3ddd0, #2e3338);
+  --rule-soft: light-dark(#efeade, #24282c);
+  --accent: light-dark(#1f6f6b, #63c7bf);
+  --accent-soft: light-dark(#dbeceb, #1c3a38);
+  --accent-ink: light-dark(#12403e, #a9e2dc);
+  --mark: light-dark(#f2e3b6, #4c3f1c);
+  --en-surface: light-dark(#edf4f3, #1a2523);
+  --en-edge: light-dark(#cfe4e1, #27403c);
+  --anno: light-dark(#d3e7e5, #21433f);
+  --anno-hover: light-dark(#b9dcd8, #2c5852);
+  --anno-open: light-dark(#f2e3b6, #4c3f1c);
+  --anno-gloss: light-dark(#e2dbf1, #332c52);
+  --anno-gloss-hover: light-dark(#d0c6e8, #443a69);
+  --anno-gloss-ink: light-dark(#5b4c9c, #b6a9e8);
+  --aside: light-dark(#f1eff6, #1f1e26);
   --aside-chip: #6f62a8;
-  --aside-ink: #574a8c;
+  --aside-ink: light-dark(#574a8c, #b3a9df);
 
   /* The eight 편, in the colours the book gives them on its contents pages
      (read off the photographs, so near rather than exact). The book sets
      white on them; at screen sizes that needs a deeper shade than print, so
      each is carried a step down from what the page shows. The hues, which
      are what identifies a part, are the book's. */
-  --part-1: #517f3c;   /* 사회   green */
-  --part-2: #9a6c12;   /* 교육   amber */
-  --part-3: #4f549b;   /* 문화   blue-violet */
-  --part-4: #a4502f;   /* 정치   terracotta */
-  --part-5: #514080;   /* 경제   deep purple */
-  --part-6: #a94459;   /* 법     rose */
-  --part-7: #3f755d;   /* 역사   sage green */
-  --part-8: #9c3663;   /* 지리   magenta */
+  --part-1: light-dark(#517f3c, #6fa552);   /* 사회   green */
+  --part-2: light-dark(#9a6c12, #c69433);   /* 교육   amber */
+  --part-3: light-dark(#4f549b, #7176bb);   /* 문화   blue-violet */
+  --part-4: light-dark(#a4502f, #c8724f);   /* 정치   terracotta */
+  --part-5: light-dark(#514080, #7b68b4);   /* 경제   deep purple */
+  --part-6: light-dark(#a94459, #cf6a80);   /* 법     rose */
+  --part-7: light-dark(#3f755d, #5b9b7d);   /* 역사   sage green */
+  --part-8: light-dark(#9c3663, #c2537f);   /* 지리   magenta */
 
   --ko: "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif;
   --ui: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
@@ -63,43 +69,8 @@
   --section-gap: 3rem;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --paper: #15171a;
-    --raised: #1d2024;
-    --ink: #e7e3db;
-    --ink-soft: #a8a196;
-    --ink-faint: #7c7669;
-    --rule: #2e3338;
-    --rule-soft: #24282c;
-    --accent: #63c7bf;
-    --accent-soft: #1c3a38;
-    --accent-ink: #a9e2dc;
-    --mark: #4c3f1c;
-    --en-surface: #1a2523;
-    --en-edge: #27403c;
-    --anno: #21433f;
-    --anno-hover: #2c5852;
-    --anno-open: #4c3f1c;
-    --anno-gloss: #332c52;
-    --anno-gloss-hover: #443a69;
-    --anno-gloss-ink: #b6a9e8;
-    --aside: #1f1e26;
-    --aside-chip: #6f62a8;
-    --aside-ink: #b3a9df;
-
-    /* lifted, so a part reads against the dark ground as it does against
-       the light one */
-    --part-1: #6fa552;
-    --part-2: #c69433;
-    --part-3: #7176bb;
-    --part-4: #c8724f;
-    --part-5: #7b68b4;
-    --part-6: #cf6a80;
-    --part-7: #5b9b7d;
-    --part-8: #c2537f;
-  }
-}
+:root[data-theme="light"] { color-scheme: light; }
+:root[data-theme="dark"] { color-scheme: dark; }
 
 /* --- base ---------------------------------------------------------- */
 
@@ -139,6 +110,26 @@ a { color: var(--accent); }
 
 .masthead h1 a { color: inherit; text-decoration: none; }
 .masthead .sub { color: var(--ink-faint); font-size: 0.85rem; margin: 0; }
+
+/* The reader's own light/dark choice, kept at the far end of the masthead
+   so it is out of the way of the reading and in the same place on both
+   pages. It carries the theme it would switch to, not the one in force. */
+.theme {
+  margin-left: auto;
+  font: inherit;
+  font-size: 0.8rem;
+  font-family: var(--ui);
+  color: var(--ink-soft);
+  background: none;
+  border: 1px solid var(--rule);
+  border-radius: 999px;
+  padding: 0.25rem 0.7rem;
+  cursor: pointer;
+  line-height: 1.6;
+}
+
+.theme:hover { border-color: var(--ink-faint); color: var(--ink); }
+.theme:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
 
 .backlink { display: inline-block; margin-top: 2rem; font-size: 0.85rem; text-decoration: none; }
 
