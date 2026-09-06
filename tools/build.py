@@ -370,6 +370,37 @@ def pair_sentences(blocks, unpaired):
     return blocks
 
 
+def mark_first(blocks, key, saids, inside):
+    """Mark the first place the chapter says a word, article prose first.
+
+    A word is often said in 생각해 봅시다 or 학습목표 a page before the
+    article that teaches it, and marking it there leaves the word plain
+    where the reader actually meets it. So the numbered articles are
+    searched first and the rest of the page only if the word is never said
+    in one. `saids` are the forms to look for, in order of preference.
+    """
+    for scope in (inside, None):
+        for said in saids:
+            for spans in every_span_list(blocks, scope):
+                out, done = [], False
+                for span in spans:
+                    at = -1 if done or not isinstance(span, str) \
+                        else word_start(span, said)
+                    if at < 0:
+                        out.append(span)
+                        continue
+                    if span[:at]:
+                        out.append(span[:at])
+                    out.append({"word": said, "annotation": key})
+                    if span[at + len(said):]:
+                        out.append(span[at + len(said):])
+                    done = True
+                if done:
+                    spans[:] = out
+                    return True
+    return False
+
+
 def attach_extras(blocks, extras, heads=None, orphaned=None):
     """Point an annotation written in the chapter module at its word.
 
@@ -400,28 +431,10 @@ def attach_extras(blocks, extras, heads=None, orphaned=None):
                 taken.add(span["annotation"])
 
     # longest first, so 단독 주택 wins over 주택 where the two overlap
+    inside = in_article(blocks)
     for key in sorted(set(wanted) - taken, key=len, reverse=True):
-        for said in [key] + surfaces.get(key, []):
-            for spans in every_span_list(blocks):
-                out, done = [], False
-                for span in spans:
-                    at = -1 if done or not isinstance(span, str) \
-                        else word_start(span, said)
-                    if at < 0:
-                        out.append(span)
-                        continue
-                    if span[:at]:
-                        out.append(span[:at])
-                    out.append({"word": said, "annotation": key})
-                    if span[at + len(said):]:
-                        out.append(span[at + len(said):])
-                    done = True
-                if done:
-                    spans[:] = out
-                    taken.add(key)
-                    break
-            if key in taken:
-                break
+        if mark_first(blocks, key, [key] + surfaces.get(key, []), inside):
+            taken.add(key)
 
     # a margin glossary term with nothing anchored to it — a Doc with no
     # comments on that page leaves every term bare — takes the entry written
@@ -478,38 +491,42 @@ def attach_glossary(blocks, heads=None):
         if head in terms:
             surfaces.setdefault(head, []).append(surface)
 
+    inside = in_article(blocks)
     for key in sorted(terms, key=len, reverse=True):
-        for said in [terms[key], key] + surfaces.get(key, []):
-            done = False
-            for spans in every_span_list(blocks):
-                out = []
-                for span in spans:
-                    at = -1 if done or not isinstance(span, str) \
-                        else word_start(span, said)
-                    if at < 0:
-                        out.append(span)
-                        continue
-                    if span[:at]:
-                        out.append(span[:at])
-                    out.append({"word": said, "annotation": key})
-                    if span[at + len(said):]:
-                        out.append(span[at + len(said):])
-                    done = True
-                if done:
-                    spans[:] = out
-                    break
-            if done:
-                break
+        mark_first(blocks, key, [terms[key], key] + surfaces.get(key, []),
+                   inside)
     return blocks
 
 
-def every_span_list(blocks):
+def in_article(blocks):
+    """Which blocks stand inside a numbered article, section by section.
+
+    Everything from a `part` heading until the next section belongs to the
+    article; 생각해 봅시다, 학습목표, 알아두면 좋아요 and the closing pages
+    do not.
+    """
+    inside, at = {}, False
+    for b in blocks:
+        if b["type"] == "section":
+            at = b.get("kind") == "part"
+        inside[id(b)] = at
+    return inside
+
+
+def every_span_list(blocks, only=None):
     """Each run of spans a reader can click a word in.
 
     Running prose comes first, so that a word looked for across the whole
-    chapter is marked where it is read rather than on a photo label.
+    chapter is marked where it is read rather than on a photo label. `only`
+    is a set of block ids to stay within — the article's own prose, when a
+    word is wanted there before anywhere else.
     """
+    def wanted(b):
+        return only is None or only.get(id(b))
+
     for b in blocks:
+        if not wanted(b):
+            continue
         if b["type"] in ("paragraph", "bullet"):
             yield b["spans"]
         if b["type"] == "columns":
@@ -518,9 +535,11 @@ def every_span_list(blocks):
                 for para in column["paragraphs"]:
                     yield para
     for b in blocks:
-        if b["type"] == "heading" and "spans" in b:
+        if wanted(b) and b["type"] == "heading" and "spans" in b:
             yield b["spans"]
     for b in blocks:
+        if not wanted(b):
+            continue
         if b["type"] in ("margin", "labels", "verse"):
             for item in b.get("items") or b.get("lines") or ():
                 yield item
