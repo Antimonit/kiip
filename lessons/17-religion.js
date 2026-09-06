@@ -82,12 +82,7 @@ KIIP.chapter({
   {
    "type": "bullet",
    "spans": [
-    "한국의 다양한 ",
-    {
-     "word": "종교",
-     "annotation": "종교"
-    },
-    "의 특징을 설명할 수 있다."
+    "한국의 다양한 종교의 특징을 설명할 수 있다."
    ],
    "ordered": true
   },
@@ -281,7 +276,12 @@ KIIP.chapter({
      "word": "석가모니",
      "annotation": "석가모니"
     },
-    "가 만든 종교로, 중국을 거쳐 4세기 무렵 ",
+    "가 만든 ",
+    {
+     "word": "종교",
+     "annotation": "종교"
+    },
+    "로, 중국을 거쳐 4세기 무렵 ",
     {
      "word": "삼국 시대",
      "annotation": "삼국 시대"
@@ -386,7 +386,12 @@ KIIP.chapter({
        "word": "석가모니",
        "annotation": "석가모니"
       },
-      "가 만든 종교로, 중국을 거쳐 4세기 무렵 ",
+      "가 만든 ",
+      {
+       "word": "종교",
+       "annotation": "종교"
+      },
+      "로, 중국을 거쳐 4세기 무렵 ",
       {
        "word": "삼국 시대",
        "annotation": "삼국 시대"

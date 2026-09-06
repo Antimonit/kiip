@@ -37,12 +37,7 @@ KIIP.chapter({
   {
    "type": "paragraph",
    "spans": [
-    "다음은 한국의 출산 및 ",
-    {
-     "word": "보육",
-     "annotation": "보육"
-    },
-    " 제도 관련 사진입니다."
+    "다음은 한국의 출산 및 보육 제도 관련 사진입니다."
    ]
   },
   {
@@ -323,7 +318,12 @@ KIIP.chapter({
      "word": "아이행복카드",
      "annotation": "아이행복카드"
     },
-    "’를 신청하고 이 카드로 어린이집 보육비나 유치원 유아 학비를 결제할 수 있다."
+    "’를 신청하고 이 카드로 어린이집 ",
+    {
+     "word": "보육",
+     "annotation": "보육"
+    },
+    "비나 유치원 유아 학비를 결제할 수 있다."
    ],
    "translation": "Childcare fees or preschool tuition are supported for citizens' infant/toddler children (ages 0 to 5 and under) attending daycare centers or kindergartens before entering elementary school. You can apply for the 'Children's Happiness Card' at a bank, online, or by phone, and use this card to pay for daycare center childcare fees or kindergarten tuition.",
    "sentences": [
@@ -355,7 +355,12 @@ KIIP.chapter({
        "word": "아이행복카드",
        "annotation": "아이행복카드"
       },
-      "’를 신청하고 이 카드로 어린이집 보육비나 유치원 유아 학비를 결제할 수 있다."
+      "’를 신청하고 이 카드로 어린이집 ",
+      {
+       "word": "보육",
+       "annotation": "보육"
+      },
+      "비나 유치원 유아 학비를 결제할 수 있다."
      ],
      "translation": "You can apply for the 'Children's Happiness Card' at a bank, online, or by phone, and use this card to pay for daycare center childcare fees or kindergarten tuition."
     }

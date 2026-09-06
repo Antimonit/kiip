@@ -60,22 +60,14 @@ KIIP.chapter({
   {
    "type": "bullet",
    "spans": [
-    {
-     "word": "평생 교육",
-     "annotation": "평생 교육"
-    },
-    "과 평생 교육 기관에 대해 설명할 수 있다."
+    "평생 교육과 평생 교육 기관에 대해 설명할 수 있다."
    ],
    "ordered": true
   },
   {
    "type": "bullet",
    "spans": [
-    {
-     "word": "이주민",
-     "annotation": "이주민"
-    },
-    "을 위한 교육 기관과 프로그램을 설명할 수 있다."
+    "이주민을 위한 교육 기관과 프로그램을 설명할 수 있다."
    ],
    "ordered": true
   },
@@ -202,7 +194,12 @@ KIIP.chapter({
      "word": "자아실현",
      "annotation": "자아실현"
     },
-    "을 하기 위해서는 새로운 지식이나 기술을 배울 필요가 있기 때문이다. 이처럼 나이나 상황에 관계없이 본인이 관심을 가지거나 필요로 하는 분야에 대해 계속 공부하는 것을 평생 교육이라고 한다."
+    "을 하기 위해서는 새로운 지식이나 기술을 배울 필요가 있기 때문이다. 이처럼 나이나 상황에 관계없이 본인이 관심을 가지거나 필요로 하는 분야에 대해 계속 공부하는 것을 ",
+    {
+     "word": "평생 교육",
+     "annotation": "평생 교육"
+    },
+    "이라고 한다."
    ],
    "translation": "Many people carry on studying while in work after finishing their schooling, or even after retiring. It is because, to keep up with rapid social change like the fourth industrial revolution and to realise oneself over a lengthening life expectancy, one needs to learn new knowledge and new skills. Studying on in a field one is interested in or has need of, whatever one's age or circumstances, is what is meant by lifelong learning.",
    "sentences": [
@@ -234,7 +231,12 @@ KIIP.chapter({
     },
     {
      "spans": [
-      "이처럼 나이나 상황에 관계없이 본인이 관심을 가지거나 필요로 하는 분야에 대해 계속 공부하는 것을 평생 교육이라고 한다."
+      "이처럼 나이나 상황에 관계없이 본인이 관심을 가지거나 필요로 하는 분야에 대해 계속 공부하는 것을 ",
+      {
+       "word": "평생 교육",
+       "annotation": "평생 교육"
+      },
+      "이라고 한다."
      ],
      "translation": "Studying on in a field one is interested in or has need of, whatever one's age or circumstances, is what is meant by lifelong learning."
     }
@@ -433,7 +435,11 @@ KIIP.chapter({
   {
    "type": "paragraph",
    "spans": [
-    "이주민의 한국 사회 적응을 돕기 위한 교육 서비스도 확대되고 있다. 대표적으로는 이민자 ",
+    {
+     "word": "이주민",
+     "annotation": "이주민"
+    },
+    "의 한국 사회 적응을 돕기 위한 교육 서비스도 확대되고 있다. 대표적으로는 이민자 ",
     {
      "word": "조기",
      "annotation": "조기"
@@ -454,7 +460,11 @@ KIIP.chapter({
    "sentences": [
     {
      "spans": [
-      "이주민의 한국 사회 적응을 돕기 위한 교육 서비스도 확대되고 있다. "
+      {
+       "word": "이주민",
+       "annotation": "이주민"
+      },
+      "의 한국 사회 적응을 돕기 위한 교육 서비스도 확대되고 있다. "
      ],
      "translation": "Educational services helping migrants adapt to Korean society are also being widened."
     },

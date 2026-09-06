@@ -41,11 +41,7 @@ KIIP.chapter({
   {
    "type": "bullet",
    "spans": [
-    {
-     "word": "선거",
-     "annotation": "선거"
-    },
-    "의 ",
+    "선거의 ",
     {
      "word": "원칙",
      "annotation": "원칙"
@@ -121,7 +117,11 @@ KIIP.chapter({
   {
    "type": "paragraph",
    "spans": [
-    "선거는 국민이 자신을 대표할 사람을 직접 뽑는 것으로, 민주주의 국가에서 국민이 정치에 참여하는 기본적인 방법이다. 한국에서는 ",
+    {
+     "word": "선거",
+     "annotation": "선거"
+    },
+    "는 국민이 자신을 대표할 사람을 직접 뽑는 것으로, 민주주의 국가에서 국민이 정치에 참여하는 기본적인 방법이다. 한국에서는 ",
     {
      "word": "만 18세",
      "annotation": "만 18세"
@@ -132,7 +132,11 @@ KIIP.chapter({
    "sentences": [
     {
      "spans": [
-      "선거는 국민이 자신을 대표할 사람을 직접 뽑는 것으로, 민주주의 국가에서 국민이 정치에 참여하는 기본적인 방법이다. "
+      {
+       "word": "선거",
+       "annotation": "선거"
+      },
+      "는 국민이 자신을 대표할 사람을 직접 뽑는 것으로, 민주주의 국가에서 국민이 정치에 참여하는 기본적인 방법이다. "
      ],
      "translation": "An election is the people choosing directly those who are to represent them, and it is the basic way in which the people of a democracy take part in politics."
     },

@@ -73,12 +73,7 @@ KIIP.chapter({
   {
    "type": "bullet",
    "spans": [
-    "한국에서 ",
-    {
-     "word": "취업",
-     "annotation": "취업"
-    },
-    "을 하기 위한 방법을 이해하고 활용할 수 있다."
+    "한국에서 취업을 하기 위한 방법을 이해하고 활용할 수 있다."
    ],
    "ordered": true
   },
@@ -506,7 +501,12 @@ KIIP.chapter({
      "word": "개인별",
      "annotation": "개인별"
     },
-    "로 취업 계획을 세우고 ",
+    "로 ",
+    {
+     "word": "취업",
+     "annotation": "취업"
+    },
+    " 계획을 세우고 ",
     {
      "word": "단계적",
      "annotation": "단계적"
@@ -558,7 +558,12 @@ KIIP.chapter({
        "word": "개인별",
        "annotation": "개인별"
       },
-      "로 취업 계획을 세우고 ",
+      "로 ",
+      {
+       "word": "취업",
+       "annotation": "취업"
+      },
+      " 계획을 세우고 ",
       {
        "word": "단계적",
        "annotation": "단계적"

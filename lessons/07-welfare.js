@@ -41,12 +41,7 @@ KIIP.chapter({
   {
    "type": "bullet",
    "spans": [
-    "최소한의 인간다운 삶을 ",
-    {
-     "word": "보장",
-     "annotation": "보장"
-    },
-    "하는 한국의 사회 복지 제도를 설명할 수 있다."
+    "최소한의 인간다운 삶을 보장하는 한국의 사회 복지 제도를 설명할 수 있다."
    ],
    "ordered": true
   },
@@ -411,7 +406,12 @@ KIIP.chapter({
      "word": "수준",
      "annotation": "수준"
     },
-    "을 보장해주기 위해 국가나 지방자치단체에서 생활비, 교육비, 의료비 등을 지원해 주는 제도이다. ",
+    "을 ",
+    {
+     "word": "보장",
+     "annotation": "보장"
+    },
+    "해주기 위해 국가나 지방자치단체에서 생활비, 교육비, 의료비 등을 지원해 주는 제도이다. ",
     {
      "word": "소득",
      "annotation": "소득"
@@ -442,7 +442,12 @@ KIIP.chapter({
        "word": "수준",
        "annotation": "수준"
       },
-      "을 보장해주기 위해 국가나 지방자치단체에서 생활비, 교육비, 의료비 등을 지원해 주는 제도이다. "
+      "을 ",
+      {
+       "word": "보장",
+       "annotation": "보장"
+      },
+      "해주기 위해 국가나 지방자치단체에서 생활비, 교육비, 의료비 등을 지원해 주는 제도이다. "
      ],
      "translation": "Public assistance is a system under which the state or a local authority supports living costs, education costs and medical costs, so as to guarantee a basic standard of living to people whose circumstances are hard."
     },
