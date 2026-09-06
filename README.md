@@ -236,6 +236,13 @@ defaults on `.sect`, however many block types it contains.
 
 ## Checking it
 
+It also reads the git history, because the two branches are kept apart by
+hand and by hand they drift. A commit that touches both sides — the site or
+the tooling on one, a chapter or what is generated from it on the other —
+fails the run, and so does a commit that adds more than one chapter module,
+which is what a rebuild looks like when it has folded a run of chapters into
+one and lost who added what. Both have happened here.
+
 `tools/smoke.js` renders every page in jsdom, clicks every annotation, and fails
 if any of them has no card or an empty card, if a page leaves `undefined` in the
 output, or if a bad address renders a blank page instead of an explanation. It

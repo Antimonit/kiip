@@ -67,6 +67,61 @@ function lintSectionLayering() {
     "checked against " + BLOCKS.length + " block types");
 }
 
+/* The two branches are kept apart by hand, and by hand they drift: the site
+ * lands in a chapter's commit, or a rebuild of `content` flattens thirty
+ * chapters into one. Both have happened. These read the history and say so.
+ *
+ * A commit belongs to one side or the other. `master` carries the site, the
+ * tooling and the design; `content` carries the chapters and what is
+ * generated from them. Nothing carries both. */
+const SITE = /^(README\.md|index\.html|lesson\.html|\.gitignore|\.nojekyll|assets\/|tools\/(build|convert|parse_gdoc|smoke)\.|tools\/chapters\/__init__\.py$)/;
+const CONTENT = /^(NOTES\.md|lessons\/|tools\/chapters\/(ch\d|pt\d|contents\.py))/;
+const MODULE = /^tools\/chapters\/(ch|pt)\d.*\.py$/;
+
+function lintHistory() {
+  let log;
+  try {
+    log = require("child_process").execFileSync(
+      "git", ["log", "--format=%x00%h %s", "--name-status"],
+      { cwd: ROOT, encoding: "utf8", stdio: ["ignore", "pipe", "ignore"] });
+  } catch (e) {
+    return report("git history", [], "no repository to read");   // a copy, not a clone
+  }
+
+  const problems = [];
+  const commits = log.split("\0").filter(function (c) { return c.trim(); });
+  commits.forEach(function (commit) {
+    const lines = commit.trim().split("\n");
+    const [hash, ...subject] = lines[0].split(" ");
+    const changed = lines.slice(1).filter(Boolean).map(function (l) {
+      const [status, ...rest] = l.split("\t");
+      return { status: status[0], path: rest[rest.length - 1] };
+    });
+    const say = hash + " " + subject.join(" ").slice(0, 44);
+
+    const site = changed.filter(function (c) { return SITE.test(c.path); });
+    const content = changed.filter(function (c) { return CONTENT.test(c.path); });
+    if (site.length && content.length) {
+      problems.push(say + " — touches the site (" + site[0].path +
+                    ") and the content (" + content[0].path + ")");
+    }
+
+    /* One chapter to a commit. More than one means a rebuild has folded a
+     * run of them together and lost who added what. */
+    const added = changed.filter(function (c) {
+      return c.status === "A" && MODULE.test(c.path);
+    });
+    if (added.length > 1) {
+      problems.push(say + " — adds " + added.length + " chapters at once (" +
+                    added.slice(0, 3).map(function (c) {
+                      return c.path.replace("tools/chapters/", "");
+                    }).join(", ") + "…)");
+    }
+  });
+
+  report("git history", problems, commits.length + " commits, both sides apart");
+}
+
 /* Generated chapter data must stay presentation-free: no markup, and no HTML
  * tag names standing in for block types. Design changes belong in CSS. */
 function lintDataPurity(file) {
@@ -434,6 +489,7 @@ function checkIndex(chapters, parts) {
 
 (async function () {
   lintSectionLayering();
+  lintHistory();
 
   const pages = fs.existsSync(LESSONS)
     ? fs.readdirSync(LESSONS).filter(function (f) {
