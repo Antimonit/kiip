@@ -218,27 +218,6 @@ def align_translations(blocks, unaligned, authored=None):
         if b["type"] not in ("section", "heading"):
             continue
 
-        if b.get("translation"):
-            paras = [p.strip() for p in b["translation"].split("\n\n") if p.strip()]
-            if not paras:
-                continue
-            quoted = next((k for k, p in enumerate(paras)
-                           if p[0] in "\"\u201c"), None)
-            if quoted is not None:
-                title = " ".join(paras[:quoted]) or None
-                body = paras[quoted:]
-            elif len(paras) > 1 and len(paras[0]) < 90:
-                title, body = paras[0], paras[1:]
-            else:
-                title, body = None, paras
-            body = [strip_quotes(p) for p in body]
-        elif b.get("text") in authored:
-            entry = authored[b["text"]]
-            title = entry.get("title")
-            body = list(entry["paragraphs"])
-        else:
-            continue
-
         # An article's prose may be preceded by its margin glossary, a figure
         # or a chart, so those are stepped over; once the prose has started,
         # anything that is not more prose ends it.
@@ -250,6 +229,37 @@ def align_translations(blocks, unaligned, authored=None):
                 break
             elif targets:
                 break
+
+        if b.get("translation"):
+            paras = [p.strip() for p in b["translation"].split("\n\n") if p.strip()]
+            if not paras:
+                continue
+            quoted = next((k for k, p in enumerate(paras)
+                           if p[0] in "\"\u201c"), None)
+            # the first paragraph is the heading's own line, either because a
+            # quote opens the body under it, or because there is one more
+            # paragraph here than there is prose to put it against, or
+            # because it is short enough to be a title and not a paragraph
+            if quoted is not None:
+                title = " ".join(paras[:quoted]) or None
+                body = paras[quoted:]
+            elif len(paras) > 1 and (len(paras) == len(targets) + 1
+                                     or len(paras[0]) < 90):
+                title, body = paras[0], paras[1:]
+            else:
+                title, body = None, paras
+            body = [strip_quotes(p) for p in body]
+        elif b.get("text") in authored:
+            entry = authored[b["text"]]
+            title = entry.get("title")
+            body = list(entry["paragraphs"])
+        else:
+            continue
+
+        # a heading whose section has no prose to translate — a page of
+        # labels, a table, a list — carries the English of its own line
+        if not targets and title is None and len(body) == 1:
+            title, body = body[0], []
 
         if title:
             title = clean_trans_title(title, b.get("text") or "", b.get("topic") or "")
@@ -269,7 +279,7 @@ def align_translations(blocks, unaligned, authored=None):
                     title = entry.get("title") or title
                     body = list(entry["paragraphs"])
 
-        if targets and len(body) == len(targets):
+        if len(body) == len(targets):
             for target, english in zip(targets, body):
                 target["translation"] = english
             b.pop("translation", None)
@@ -283,7 +293,7 @@ def align_translations(blocks, unaligned, authored=None):
 # Sentence-final punctuation, then whitespace, then something that is not a
 # closing bracket or quote. That last condition is what keeps “…먹자.”라는 and
 # (2018년 5월 기준). in one piece.
-SENTENCE_END = re.compile(r"([.?!])(\s+)(?=[^\s)\]”’])")
+SENTENCE_END = re.compile(r"([.?!][”’\"']?)(\s+)(?=[^\s)\]”’])")
 
 
 # What an English sentence may begin with. A lower-case word means the stop
@@ -293,10 +303,17 @@ SENTENCE_END = re.compile(r"([.?!])(\s+)(?=[^\s)\]”’])")
 SENTENCE_START = re.compile(r"[A-Z0-9\"'\u201c\u2018\uac00-\ud7a3]")
 
 
+# A stop that belongs to an abbreviation rather than to the end of a
+# sentence. 'Cell No. 7' is one title, not two sentences.
+ABBREV = re.compile(r"\b(No|Nos|Mr|Mrs|Ms|Dr|St|vs|Fig)\.$")
+
+
 def split_english(text):
     parts, last = [], 0
     for m in SENTENCE_END.finditer(text):
         if not SENTENCE_START.match(text, m.end()):
+            continue
+        if ABBREV.search(text[:m.end(1)]):
             continue
         parts.append(text[last:m.start() + 1].strip())
         last = m.end()
@@ -358,7 +375,20 @@ def pair_sentences(blocks, unpaired):
     translation and is rendered as a single row.
     """
     for b in blocks:
-        if b["type"] != "paragraph" or not b.get("translation"):
+        # a verse is paired line by line, each line standing on its own
+        if b["type"] == "verse" and b.get("translations"):
+            for k, line in enumerate(b["lines"]):
+                korean = split_korean(line)
+                english = split_english(b["translations"][k])
+                if len(korean) == len(english):
+                    b.setdefault("sentences", []).append(
+                        [{"spans": ko, "translation": en}
+                         for ko, en in zip(korean, english)])
+                else:
+                    b.setdefault("sentences", []).append(None)
+                    unpaired.append((len(korean), len(english)))
+            continue
+        if b["type"] not in ("paragraph", "bullet") or not b.get("translation"):
             continue
         korean = split_korean(b["spans"])
         english = split_english(b["translation"])
@@ -754,6 +784,14 @@ def build(cfg):
     unaligned, unpaired, orphaned = [], [], []
     blocks = normalize_spans(blocks + copy.deepcopy(cfg.get("append", [])))
     blocks = absorb_handwriting(blocks, annotations)
+    # the ★ that opens a section's closing question. Decided here rather than
+    # in the helper because a Doc sometimes typed it as an asterisk and it is
+    # a fix that puts the star back.
+    for b in blocks:
+        if b["type"] == "paragraph" and b["spans"] \
+                and isinstance(b["spans"][0], str) \
+                and b["spans"][0].startswith("\u2605"):
+            b["role"] = "prompt"
     # a heading is prose too, so it takes part in the search for a word; it
     # keeps its plain text either way, which is what the English is keyed on.
     # A heading that marks its own words arrives with spans already and is

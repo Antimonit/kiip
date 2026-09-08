@@ -146,6 +146,22 @@
     if (b.translation) host.appendChild(translationBlock(b.translation));
   }
 
+  /* The Korean and its English, sentence by sentence where they divide the
+     same way and as one row where they do not. */
+  function paired(b) {
+    var pair = el("div", "para-pair" + (b.role ? " is-" + b.role : ""));
+    var units = b.sentences || [{ spans: b.spans, translation: b.translation }];
+    units.forEach(function (unit) {
+      var row = el("div", "row");
+      var ko = fillSpans(el("span", "ko"), unit.spans);
+      ko.appendChild(document.createTextNode(" "));
+      row.appendChild(ko);
+      row.appendChild(el("span", "en", unit.translation));
+      pair.appendChild(row);
+    });
+    return pair;
+  }
+
   function translationBlock(text) {
     var d = el("details", "trans");
     d.appendChild(el("summary", null, "English"));
@@ -174,25 +190,15 @@
       /* A translated paragraph is built as rows of sentence pairs. In its
          default state the rows are inline, so the Korean reads as one
          paragraph and the English is out of the way; side by side turns each
-         row into two columns. One structure, two layouts. */
+         row into two columns. One structure, two layouts. A list item is
+         translated the same way, which is why this is a function. */
       case "paragraph": {
         if (!b.translation) {
           host.appendChild(fillSpans(
             el("p", "ko-para" + (b.role ? " is-" + b.role : "")), b.spans));
           return;
         }
-        var pair = el("div", "para-pair");
-        var units = b.sentences ||
-          [{ spans: b.spans, translation: b.translation }];
-        units.forEach(function (unit) {
-          var row = el("div", "row");
-          var ko = fillSpans(el("span", "ko"), unit.spans);
-          ko.appendChild(document.createTextNode(" "));
-          row.appendChild(ko);
-          row.appendChild(el("span", "en", unit.translation));
-          pair.appendChild(row);
-        });
-        host.appendChild(pair);
+        host.appendChild(paired(b));
         return;
       }
 
@@ -203,7 +209,9 @@
           list = el(b.ordered ? "ol" : "ul", "ko-list");
           host.appendChild(list);
         }
-        var item = fillSpans(el("li", "ko-bullet"), b.spans);
+        var item = el("li", "ko-bullet");
+        if (b.translation) item.appendChild(paired(b));
+        else fillSpans(item, b.spans);
         /* a nested item hangs off the item above it, which is how the page
            draws a bracketed sub-list */
         var over = b.level > 1 ? list.lastElementChild : null;
@@ -303,7 +311,18 @@
 
       case "verse": {
         var v = el("div", "verse");
-        b.lines.forEach(function (l) { v.appendChild(fillSpans(el("p"), l)); });
+        b.lines.forEach(function (l, k) {
+          var en = b.translations && b.translations[k];
+          if (!en) {
+            v.appendChild(fillSpans(el("p"), l));
+            return;
+          }
+          v.appendChild(paired({
+            spans: l,
+            translation: en,
+            sentences: b.sentences && b.sentences[k]
+          }));
+        });
         host.appendChild(v);
         return;
       }

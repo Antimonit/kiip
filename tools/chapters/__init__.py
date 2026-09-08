@@ -83,18 +83,20 @@ def HEADING(level, text, translation=None):
 
 
 def PARAGRAPH(text, translation=None):
-    """A paragraph. A ★ opens the question a section closes with."""
+    """A paragraph. A ★ opens the question a section closes with — the build
+    marks that one, after the corrections, since a Doc sometimes typed the
+    star as an asterisk."""
     block = {"type": "paragraph", "spans": _spans(text)}
-    if text.startswith("\u2605"):
-        block["role"] = "prompt"
     if translation:
         block["translation"] = translation
     return block
 
 
-def BULLET(text, ordered=False, level=1):
+def BULLET(text, ordered=False, level=1, translation=None):
     """A list item. level=2 nests it under the item before it."""
     item = {"type": "bullet", "spans": _spans(text)}
+    if translation:
+        item["translation"] = translation
     if ordered:
         item["ordered"] = True
     if level != 1:
@@ -139,9 +141,22 @@ def MARGIN(*texts):
     return {"type": "margin", "items": [_spans(t) for t in texts]}
 
 
-def VERSE(*lines):
-    """A quoted text set line by line — an anthem, an article of the law."""
-    return {"type": "verse", "lines": [_spans(t) for t in lines]}
+def VERSE(*lines, **kw):
+    """A quoted text set line by line — an anthem, an article of the law.
+
+    `translation` gives the English one paragraph per line, separated by a
+    blank line, so a case study reads beside its Korean like prose does.
+    """
+    block = {"type": "verse", "lines": [_spans(t) for t in lines]}
+    english = kw.pop("translation", None)
+    assert not kw, "VERSE: unexpected %s" % ", ".join(sorted(kw))
+    if english:
+        paras = [p.strip() for p in english.split("\n\n") if p.strip()]
+        assert len(paras) == len(block["lines"]), (
+            "VERSE: %d English paragraphs against %d lines"
+            % (len(paras), len(block["lines"])))
+        block["translations"] = paras
+    return block
 
 
 def FIGURE(caption):

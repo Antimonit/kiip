@@ -473,7 +473,8 @@ h5.sub-title { font-size: calc(0.97rem * var(--scale)); color: var(--ink-soft); 
   word-break: keep-all;
 }
 
-.ko-para.is-prompt { font-weight: 600; margin-top: 1.6rem; }
+.ko-para.is-prompt,
+.para-pair.is-prompt { font-weight: 600; margin-top: 1.6rem; }
 
 /* A translated paragraph is rows of sentence pairs. Left alone the rows are
    inline, so the Korean reads as a paragraph and the English is not
