@@ -434,15 +434,32 @@
   }
 
   /* --- English: side by side, one control per article ---------------
-     An article is a run of consecutive translated paragraphs, which is
-     exactly the prose one translation covers. */
+     An article is everything under one heading: its prose, the lists and
+     the quoted boxes in it, and the question it closes with. They are
+     turned over together, because they are one piece of reading — 이야기
+     나누기 in chapter 28 is an article, a case study, a list of five rules
+     and a question, and it took nine buttons before this. A heading starts
+     the next article; a section that has none is one article. */
 
   function runs() {
     var found = [];
-    docEl.querySelectorAll(".para-pair").forEach(function (pair) {
-      var last = found[found.length - 1];
-      if (last && last[last.length - 1].nextElementSibling === pair) last.push(pair);
-      else found.push([pair]);
+    docEl.querySelectorAll(".sect").forEach(function (sec) {
+      var group = null;
+      Array.prototype.forEach.call(sec.children, function (block) {
+        if (/^H[1-6]$/.test(block.tagName)) {
+          group = null;                       // the next article starts here
+          return;
+        }
+        var pairs = block.classList.contains("para-pair")
+          ? [block]
+          : Array.prototype.slice.call(block.querySelectorAll(".para-pair"));
+        if (!pairs.length) return;
+        if (!group) {
+          group = { at: block, pairs: [] };
+          found.push(group);
+        }
+        group.pairs = group.pairs.concat(pairs);
+      });
     });
     return found;
   }
@@ -505,15 +522,15 @@
     }, FADE_MS);
   }
 
-  runs().forEach(function (run) {
+  runs().forEach(function (group) {
     var b = el("button", "split-toggle", "Side by side");
     b.type = "button";
     b.setAttribute("aria-pressed", "false");
     b.addEventListener("click", function () {
       close(true);      // it sits in a row whose height is about to be read
-      setSplit(run, b, b.getAttribute("aria-pressed") !== "true");
+      setSplit(group.pairs, b, b.getAttribute("aria-pressed") !== "true");
     });
-    run[0].parentNode.insertBefore(b, run[0]);
+    group.at.parentNode.insertBefore(b, group.at);
   });
 
   /* --- interaction ------------------------------------------------ */
