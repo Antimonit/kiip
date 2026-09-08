@@ -16,12 +16,7 @@ KIIP.chapter({
   {
    "type": "paragraph",
    "spans": [
-    "다음은 사회통합프로그램 수업 교실 모습입니다. 학생들이 스마트폰 사용 ",
-    {
-     "word": "규칙",
-     "annotation": "규칙"
-    },
-    "을 정하자는 ",
+    "다음은 사회통합프로그램 수업 교실 모습입니다. 학생들이 스마트폰 사용 규칙을 정하자는 ",
     {
      "word": "의견",
      "annotation": "의견"
@@ -197,12 +192,7 @@ KIIP.chapter({
      "word": "조정",
      "annotation": "조정"
     },
-    "하는 것을 가리킨다. 학교나 회사에서 어떤 ",
-    {
-     "word": "규칙",
-     "annotation": "규칙"
-    },
-    "을 정하는 것, 지역의 문제 해결을 위해 주민 ",
+    "하는 것을 가리킨다. 학교나 회사에서 어떤 규칙을 정하는 것, 지역의 문제 해결을 위해 주민 ",
     {
      "word": "회의",
      "annotation": "회의"
@@ -282,12 +272,7 @@ KIIP.chapter({
     },
     {
      "spans": [
-      "학교나 회사에서 어떤 ",
-      {
-       "word": "규칙",
-       "annotation": "규칙"
-      },
-      "을 정하는 것, 지역의 문제 해결을 위해 주민 ",
+      "학교나 회사에서 어떤 규칙을 정하는 것, 지역의 문제 해결을 위해 주민 ",
       {
        "word": "회의",
        "annotation": "회의"
@@ -1369,15 +1354,39 @@ KIIP.chapter({
    "rows": [
     [
      "입법부(국회)",
-     "법률 제정"
+     {
+      "spans": [
+       "법률 ",
+       {
+        "word": "제정",
+        "annotation": "제정"
+       }
+      ]
+     }
     ],
     [
      "행정부(정부)",
-     "법률 집행"
+     {
+      "spans": [
+       "법률 ",
+       {
+        "word": "집행",
+        "annotation": "집행"
+       }
+      ]
+     }
     ],
     [
      "사법부(법원)",
-     "법률 적용"
+     {
+      "spans": [
+       "법률 ",
+       {
+        "word": "적용",
+        "annotation": "적용"
+       }
+      ]
+     }
     ]
    ]
   },
@@ -1462,7 +1471,17 @@ KIIP.chapter({
     {
      "blank": ""
     },
-    "는 일상생활에서 사람들 사이의 서로 다른 이해관계를 조정하는 것이다."
+    "는 일상생활에서 사람들 사이의 서로 다른 ",
+    {
+     "word": "이해관계",
+     "annotation": "이해관계"
+    },
+    "를 ",
+    {
+     "word": "조정",
+     "annotation": "조정"
+    },
+    "하는 것이다."
    ]
   },
   {
@@ -1472,13 +1491,33 @@ KIIP.chapter({
     {
      "blank": ""
     },
-    " 원리에 따라 모든 국민이 차별 없이 자유롭게 한국 사회에 대해 다양한 목소리를 표출하고 해결 과정에 참여할 수 있다."
+    " ",
+    {
+     "word": "원리",
+     "annotation": "원리"
+    },
+    "에 따라 모든 국민이 차별 없이 자유롭게 한국 사회에 대해 다양한 목소리를 ",
+    {
+     "word": "표출",
+     "annotation": "표출"
+    },
+    "하고 해결 과정에 참여할 수 있다."
    ]
   },
   {
    "type": "bullet",
    "spans": [
-    "한국에서는 특정 개인이나 정치인이 아니라 한국 국민이 ",
+    "한국에서는 ",
+    {
+     "word": "특정",
+     "annotation": "특정"
+    },
+    " 개인이나 ",
+    {
+     "word": "정치인",
+     "annotation": "정치인"
+    },
+    "이 아니라 한국 국민이 ",
     {
      "blank": ""
     },
@@ -1493,7 +1532,22 @@ KIIP.chapter({
   {
    "type": "bullet",
    "spans": [
-    "한국은 민주주의 실현을 위해서 국가 권력을 ",
+    "한국은 ",
+    {
+     "word": "민주주의",
+     "annotation": "민주주의"
+    },
+    " ",
+    {
+     "word": "실현",
+     "annotation": "실현"
+    },
+    "을 위해서 국가 ",
+    {
+     "word": "권력",
+     "annotation": "권력"
+    },
+    "을 ",
     {
      "blank": ""
     },
@@ -1515,7 +1569,17 @@ KIIP.chapter({
     {
      "blank": ""
     },
-    " 원칙이라고 한다. 한국은 국가 권력을 세 개로 분리해 놓았다는 점에서 ",
+    " ",
+    {
+     "word": "원칙",
+     "annotation": "원칙"
+    },
+    "이라고 한다. 한국은 국가 권력을 세 개로 ",
+    {
+     "word": "분리",
+     "annotation": "분리"
+    },
+    "해 놓았다는 점에서 ",
     {
      "blank": ""
     },
@@ -1525,19 +1589,53 @@ KIIP.chapter({
   {
    "type": "bullet",
    "spans": [
-    "입법부는 국가 운영의 기본이 되는 법을 ",
+    {
+     "word": "입법부",
+     "annotation": "입법부"
+    },
+    "는 국가 ",
+    {
+     "word": "운영",
+     "annotation": "운영"
+    },
+    "의 기본이 되는 법을 ",
     {
      "blank": ""
     },
-    "하고 행정부는 법에 따라 정책을 ",
+    "하고 ",
+    {
+     "word": "행정부",
+     "annotation": "행정부"
+    },
+    "는 법에 따라 ",
+    {
+     "word": "정책",
+     "annotation": "정책"
+    },
+    "을 ",
     {
      "blank": ""
     },
-    "하며 사법부는 법을 해석하고 ",
+    "하며 ",
+    {
+     "word": "사법부",
+     "annotation": "사법부"
+    },
+    "는 법을 ",
+    {
+     "word": "해석",
+     "annotation": "해석"
+    },
+    "하고 ",
     {
      "blank": ""
     },
-    "하여 재판을 한다."
+    "하여 ",
+    {
+     "word": "재판",
+     "annotation": "재판"
+    },
+    "을 한다."
    ]
   },
   {
@@ -1795,25 +1893,6 @@ KIIP.chapter({
    "hanja": null,
    "meaning": "to come to mind; to rise up",
    "characters": [],
-   "notes": [],
-   "surfaces": []
-  },
-  "규칙": {
-   "headword": "규칙",
-   "hanja": "規則",
-   "meaning": "a rule",
-   "characters": [
-    {
-     "char": "規",
-     "reading": "규",
-     "gloss": "rule, compass — as in 규제, 대규모"
-    },
-    {
-     "char": "則",
-     "reading": "칙",
-     "gloss": "rule, law — as in 원칙 “principle”"
-    }
-   ],
    "notes": [],
    "surfaces": []
   },
@@ -3303,9 +3382,6 @@ KIIP.chapter({
  "notes": [
   {
    "why": "Chapter 20 has no Google Doc: the Korean is transcribed from the photos of pp. 110-113 rather than from a transcription of yours, so mistakes in it are mine and it is worth reading against the pages."
-  },
-  {
-   "why": "Where the unit changes from 문화 to 정치, and the first chapter of 제4편."
   },
   {
    "why": "The 권력 분립 diagram on p. 112 puts 국민 at the centre with the three branches around it and 견제 arrows between them. The three branches and what each does are set as a table; the arrows are described in the caption."
