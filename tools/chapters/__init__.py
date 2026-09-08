@@ -61,9 +61,22 @@ def SECTION(kind, text):
     return {"type": "section", "kind": kind, "text": text}
 
 
+def _plain(text):
+    """The text with the annotation braces taken out."""
+    return "".join(p["word"] if isinstance(p, dict) else p
+                   for p in _spans(text))
+
+
 def HEADING(level, text, translation=None):
-    """A heading. `translation` is the English written beside it."""
-    block = {"type": "heading", "level": level, "text": text}
+    """A heading. `translation` is the English written beside it.
+
+    A heading may mark a word like any other line — the 생각해 봅시다
+    questions do. `text` stays the plain reading of it, which is what the
+    build matches headings on, and the marks ride alongside in `spans`.
+    """
+    block = {"type": "heading", "level": level, "text": _plain(text)}
+    if "{" in text:
+        block["spans"] = _spans(text)
     if translation:
         block["translation"] = translation
     return block

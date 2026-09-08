@@ -424,8 +424,12 @@ def attach_extras(blocks, extras, heads=None, orphaned=None):
         if head in extras:
             surfaces.setdefault(head, []).append(surface)
 
+    # a mark already on the page satisfies the search — unless it sits in
+    # the opening boxes, which name a word before the article teaches it
+    preface = before_articles(blocks)
     taken = set()
-    for spans in every_span_list(blocks):
+    for spans in every_span_list(blocks, only={
+            k: not v for k, v in preface.items()}):
         for span in spans:
             if isinstance(span, dict) and span.get("annotation") in extras:
                 taken.add(span["annotation"])
@@ -498,6 +502,10 @@ def attach_glossary(blocks, heads=None):
     return blocks
 
 
+# the boxes the chapter opens with, before its numbered articles
+PREFACE = {"warmup", "goals", "related"}
+
+
 def in_article(blocks):
     """Which blocks stand inside a numbered article, section by section.
 
@@ -511,6 +519,21 @@ def in_article(blocks):
             at = b.get("kind") == "part"
         inside[id(b)] = at
     return inside
+
+
+def before_articles(blocks):
+    """Which blocks stand in the boxes the chapter opens with.
+
+    A word marked there — 생각해 봅시다 names it in a question, 학습목표 in
+    an aim — is not yet marked where it is taught, so it does not satisfy
+    the search for it.
+    """
+    seen, at = {}, False
+    for b in blocks:
+        if b["type"] == "section":
+            at = b.get("kind") in PREFACE
+        seen[id(b)] = at
+    return seen
 
 
 def every_span_list(blocks, only=None):
@@ -732,9 +755,11 @@ def build(cfg):
     blocks = normalize_spans(blocks + copy.deepcopy(cfg.get("append", [])))
     blocks = absorb_handwriting(blocks, annotations)
     # a heading is prose too, so it takes part in the search for a word; it
-    # keeps its plain text either way, which is what the English is keyed on
+    # keeps its plain text either way, which is what the English is keyed on.
+    # A heading that marks its own words arrives with spans already and is
+    # left alone — overwriting them threw the marks away.
     for b in blocks:
-        if b["type"] == "heading":
+        if b["type"] == "heading" and "spans" not in b:
             b["spans"] = [b["text"]]
     blocks = attach_extras(blocks, cfg.get("extraAnnotations", {}), heads,
                            orphaned)
