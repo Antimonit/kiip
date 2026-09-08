@@ -1581,7 +1581,8 @@ KIIP.chapter({
    "type": "section",
    "kind": "discuss",
    "text": "이야기 나누기",
-   "topic": "마을을 지켜주는 장승과 솟대"
+   "topic": "마을을 지켜주는 장승과 솟대",
+   "titleTranslation": "장승 and 솟대, which keep watch over the village"
   },
   {
    "type": "paragraph",
@@ -1602,6 +1603,36 @@ KIIP.chapter({
      "annotation": "솟대"
     },
     "를 볼 수 있다. 장승과 솟대는 한국의 전통 신앙을 보여주는 중요한 사례이다."
+   ],
+   "translation": "Leave the city in Korea for the countryside and you can see a 장승 and a 솟대 standing at the entrance to a village. They are an important example of Korea’s traditional beliefs.",
+   "sentences": [
+    {
+     "spans": [
+      "한국에서 도시를 벗어나 시골에 가면 마을 ",
+      {
+       "word": "입구",
+       "annotation": "입구"
+      },
+      "에 있는 ",
+      {
+       "word": "장승",
+       "annotation": "장승"
+      },
+      "과 ",
+      {
+       "word": "솟대",
+       "annotation": "솟대"
+      },
+      "를 볼 수 있다. "
+     ],
+     "translation": "Leave the city in Korea for the countryside and you can see a 장승 and a 솟대 standing at the entrance to a village."
+    },
+    {
+     "spans": [
+      "장승과 솟대는 한국의 전통 신앙을 보여주는 중요한 사례이다."
+     ],
+     "translation": "They are an important example of Korea’s traditional beliefs."
+    }
    ]
   },
   {
@@ -1613,6 +1644,32 @@ KIIP.chapter({
      "annotation": "기둥"
     },
     "을 가리킨다. 옛날 사람들은 장승이 마을 입구에서 마을을 안전하게 지켜준다고 믿었다. 장승은 길을 알려주는 기능도 담당했다."
+   ],
+   "translation": "A 장승 is a post carved in the shape of a human head. People long ago believed that from the village entrance it kept the village safe. It also served to show the way.",
+   "sentences": [
+    {
+     "spans": [
+      "장승은 사람 머리 모양의 ",
+      {
+       "word": "기둥",
+       "annotation": "기둥"
+      },
+      "을 가리킨다. "
+     ],
+     "translation": "A 장승 is a post carved in the shape of a human head."
+    },
+    {
+     "spans": [
+      "옛날 사람들은 장승이 마을 입구에서 마을을 안전하게 지켜준다고 믿었다. "
+     ],
+     "translation": "People long ago believed that from the village entrance it kept the village safe."
+    },
+    {
+     "spans": [
+      "장승은 길을 알려주는 기능도 담당했다."
+     ],
+     "translation": "It also served to show the way."
+    }
    ]
   },
   {
@@ -1654,6 +1711,62 @@ KIIP.chapter({
      "annotation": "보호"
     },
     "한다는 의미도 담고 있다."
+   ],
+   "translation": "A 솟대, on the other hand, is a bird made of stone or wood set on top of a long wooden pole. It was thought of above all as something that brought a good harvest — a year in which the farming went well — and good fortune. Like the 장승, it also carries the sense of protecting the village from misfortune, disease and natural disaster.",
+   "sentences": [
+    {
+     "spans": [
+      "한편, 솟대는 긴 나무 ",
+      {
+       "word": "막대기",
+       "annotation": "막대기"
+      },
+      " 위에 돌이나 나무로 만든 새로 올려놓은 것이다. "
+     ],
+     "translation": "A 솟대, on the other hand, is a bird made of stone or wood set on top of a long wooden pole."
+    },
+    {
+     "spans": [
+      "솟대는 특히 농사 일이 잘된 것을 가리키는 ",
+      {
+       "word": "풍년",
+       "annotation": "풍년"
+      },
+      "과 ",
+      {
+       "word": "행운",
+       "annotation": "행운"
+      },
+      "을 가져다주는 ",
+      {
+       "word": "존재",
+       "annotation": "존재"
+      },
+      "로 여겨졌다. "
+     ],
+     "translation": "It was thought of above all as something that brought a good harvest — a year in which the farming went well — and good fortune."
+    },
+    {
+     "spans": [
+      "또한 장승과 마찬가지로 나쁜 일이나 ",
+      {
+       "word": "질병",
+       "annotation": "질병"
+      },
+      ", ",
+      {
+       "word": "자연재해",
+       "annotation": "자연재해"
+      },
+      "로부터 마을을 ",
+      {
+       "word": "보호",
+       "annotation": "보호"
+      },
+      "한다는 의미도 담고 있다."
+     ],
+     "translation": "Like the 장승, it also carries the sense of protecting the village from misfortune, disease and natural disaster."
+    }
    ]
   },
   {
@@ -1669,7 +1782,16 @@ KIIP.chapter({
    "spans": [
     "★ 장승이나 솟대와 같이 자신의 고향 나라에서 전통 신앙에 해당하는 것이 있다면 소개해 봅시다."
    ],
-   "role": "prompt"
+   "translation": "If your home country has something belonging to its traditional beliefs, as 장승 and 솟대 do, introduce it.",
+   "role": "prompt",
+   "sentences": [
+    {
+     "spans": [
+      "★ 장승이나 솟대와 같이 자신의 고향 나라에서 전통 신앙에 해당하는 것이 있다면 소개해 봅시다."
+     ],
+     "translation": "If your home country has something belonging to its traditional beliefs, as 장승 and 솟대 do, introduce it."
+    }
+   ]
   }
  ],
  "annotations": {

@@ -901,7 +901,8 @@ KIIP.chapter({
    "type": "section",
    "kind": "discuss",
    "text": "이야기 나누기",
-   "topic": "‘우리동네 시민경찰’로 임명된 외국인 자율방범대!"
+   "topic": "‘우리동네 시민경찰’로 임명된 외국인 자율방범대!",
+   "titleTranslation": "A foreign neighbourhood watch appointed ‘our neighbourhood’s citizen police’!"
   },
   {
    "type": "paragraph",
@@ -942,6 +943,68 @@ KIIP.chapter({
      "annotation": "소감"
     },
     "을 밝혔다."
+   ],
+   "translation": "○○ police station has chosen the foreign neighbourhood watch as ‘our neighbourhood’s citizen police’. This is the first time in the country that a foreign neighbourhood watch has been appointed our neighbourhood’s citizen police. The foreign neighbourhood watch at ○○ police station is a body made up of fifty foreigners of Chinese, Filipino, Vietnamese, Nepalese and other nationalities. A watch member of Chinese nationality gave his thoughts: “I am glad to be able to work, beyond nationality and all together, to make our neighbourhood safe and good to live in.",
+   "sentences": [
+    {
+     "spans": [
+      "○○경찰서는 외국인 ",
+      {
+       "word": "자율방범대",
+       "annotation": "자율방범대"
+      },
+      "를 ‘우리동네 ",
+      {
+       "word": "시민경찰",
+       "annotation": "시민경찰"
+      },
+      "’로 ",
+      {
+       "word": "선정",
+       "annotation": "선정"
+      },
+      "했다. "
+     ],
+     "translation": "○○ police station has chosen the foreign neighbourhood watch as ‘our neighbourhood’s citizen police’."
+    },
+    {
+     "spans": [
+      "외국인 자율방범대가 우리동네 시민경찰로 임명된 것은 전국에서 이번이 처음이다. "
+     ],
+     "translation": "This is the first time in the country that a foreign neighbourhood watch has been appointed our neighbourhood’s citizen police."
+    },
+    {
+     "spans": [
+      "○○경찰서 외국인 자율방범대는 중국, 필리핀, 베트남, 네팔 등 ",
+      {
+       "word": "국적",
+       "annotation": "국적"
+      },
+      "의 외국인 50명으로 구성된 ",
+      {
+       "word": "단체",
+       "annotation": "단체"
+      },
+      "이다. "
+     ],
+     "translation": "The foreign neighbourhood watch at ○○ police station is a body made up of fifty foreigners of Chinese, Filipino, Vietnamese, Nepalese and other nationalities."
+    },
+    {
+     "spans": [
+      "중국 국적 자율방법대원은 “국적을 ",
+      {
+       "word": "초월",
+       "annotation": "초월"
+      },
+      "해서 다 같이 안전하고 살기 좋은 우리 동네를 만들기 위해 노력할 수 있어 기쁘다.”고 ",
+      {
+       "word": "소감",
+       "annotation": "소감"
+      },
+      "을 밝혔다."
+     ],
+     "translation": "A watch member of Chinese nationality gave his thoughts: “I am glad to be able to work, beyond nationality and all together, to make our neighbourhood safe and good to live in."
+    }
    ]
   },
   {
@@ -957,7 +1020,16 @@ KIIP.chapter({
    "spans": [
     "★ 지역 주민으로서 자신이 살고 있는 지역을 위해 할 수 있는 일이 무엇인지 이야기해 봅시다."
    ],
-   "role": "prompt"
+   "translation": "Talk about what you can do, as a resident, for the area where you live.",
+   "role": "prompt",
+   "sentences": [
+    {
+     "spans": [
+      "★ 지역 주민으로서 자신이 살고 있는 지역을 위해 할 수 있는 일이 무엇인지 이야기해 봅시다."
+     ],
+     "translation": "Talk about what you can do, as a resident, for the area where you live."
+    }
+   ]
   }
  ],
  "annotations": {

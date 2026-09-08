@@ -244,7 +244,9 @@ CHAPTER = dict(
               ["2019년", 3612],
               ["2020년", 5000]]),
         SOURCE("[출처] 농민신문(2019.12.18)"),
-        PARAGRAPH("* 계절 근로자 제도의 좋은 점과 보완되어야 할 점에 대해 이야기해 봅시다."),
+        PARAGRAPH("* 계절 근로자 제도의 좋은 점과 보완되어야 할 점에 대해 이야기해 봅시다.",
+          "Talk about what is good about the seasonal worker system and what "
+          "still needs to be put right."),
     ],
     annotations={
         "도시화": dict(

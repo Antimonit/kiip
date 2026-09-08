@@ -131,7 +131,19 @@ CHAPTER = dict(
         BULLET("지방자치단체는 (            )와 (            )로 구분한다."),
 
         SECTION("discuss", "이야기 나누기"),
-        HEADING(3, "‘우리동네 시민경찰’로 임명된 외국인 자율방범대!"),
+        HEADING(3, "‘우리동네 시민경찰’로 임명된 외국인 자율방범대!", translation=
+          "A foreign neighbourhood watch appointed ‘our neighbourhood’s "
+          "citizen police’!" "\n\n"
+          "○○ police station has chosen the foreign neighbourhood watch as "
+          "‘our neighbourhood’s citizen police’. This is the first time in "
+          "the country that a foreign neighbourhood watch has been appointed "
+          "our neighbourhood’s citizen police. The foreign neighbourhood "
+          "watch at ○○ police station is a body made up of fifty foreigners "
+          "of Chinese, Filipino, Vietnamese, Nepalese and other "
+          "nationalities. A watch member of Chinese nationality gave his "
+          "thoughts: “I am glad to be able to work, beyond nationality and "
+          "all together, to make our neighbourhood safe and good to live "
+          "in.”"),
         PARAGRAPH("○○경찰서는 외국인 {자율방범대}를 ‘우리동네 {시민경찰}’로 {선정}했다. 외국인 "
           "자율방범대가 우리동네 시민경찰로 임명된 것은 전국에서 이번이 처음이다. ○○경찰서 "
           "외국인 자율방범대는 중국, 필리핀, 베트남, 네팔 등 {국적}의 외국인 50명으로 구성된 "
@@ -140,7 +152,9 @@ CHAPTER = dict(
         FIGURE("외국인 자율방범대 발대식(사진 출처: 〈연합뉴스〉)"),
         SOURCE("[출처] 경기일보 (2019.08.28)"),
         PARAGRAPH("★ 지역 주민으로서 자신이 살고 있는 지역을 위해 할 수 있는 일이 무엇인지 이야기해 "
-          "봅시다."),
+          "봅시다.",
+          "Talk about what you can do, as a resident, for the area where you "
+          "live."),
     ],
 
     english={

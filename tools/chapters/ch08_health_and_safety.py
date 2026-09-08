@@ -205,7 +205,21 @@ CHAPTER = dict(
         BULLET("평상시에는 ( 비상구 )와 구급상자, ( 소화기 ) 설치 위치를 확인하며 안전•보건 표지의 의미도 미리 "
           "알아두도록 한다."),
         SECTION("discuss", "이야기 나누기"),
-        HEADING(3, "외국인이 겪는 산업 재해 발생 비율, 내국인보다 6배 높아 언어적 차이를 고려한 작업장 안전 교육 필요"),
+        HEADING(3, "외국인이 겪는 산업 재해 발생 비율, 내국인보다 6배 높아 언어적 차이를 고려한 작업장 안전 교육 필요",
+          translation=
+          "Industrial accidents among foreigners run six times higher than "
+          "among Koreans — workplace safety training that takes language "
+          "differences into account is needed" "\n\n"
+          "According to figures from the Ministry of Employment and Labour "
+          "and the Korea Occupational Safety and Health Agency, the accident "
+          "rate among Korean workers covered by industrial accident "
+          "insurance was 0.18%, while among foreign workers it was 1.16% — "
+          "about six times higher. From 2012 to May 2017 a total of 33,708 "
+          "foreign workers were injured at work, 511 of them fatally. One "
+          "reason accidents are relatively frequent appears to be that "
+          "workplace safety training is given without sufficient regard for "
+          "language or cultural differences. Measures to deal with this are "
+          "needed."),
         PARAGRAPH("고용노동부•안전보건공단 자료에 따르면 산재 보험에 가입된 내국인 근로자의 산재 발생률은 0.18%인 반면 "
           "외국인근로자는 1.16%로 6배 정도 높았다. 2012년부터 2017년 5월까지 산재를 당한 외국인 "
           "근로자 수는 총 33,708명이고 이 중 사망자는 511명이다. 사고 발생이 상대적으로 많은 이유 중 "
@@ -225,7 +239,10 @@ CHAPTER = dict(
               ["2017년", 107]]),
         SOURCE("[출처] 연합뉴스(2017. 10. 12)"),
         PARAGRAPH("* 본인이 직장에서 받았던 안전 교육의 내용이나 방법에 대해 이야기해 봅시다. 또는 가정이나 직장에 꼭 "
-          "필요하다고 생각하는 안전 교육 내용을 이야기해 봅시다."),
+          "필요하다고 생각하는 안전 교육 내용을 이야기해 봅시다.",
+          "Talk about what the safety training you were given at work "
+          "covered, and how it was given. Or talk about the safety training "
+          "you think is really needed at home or at work."),
     ],
     annotations={
         "정밀하다": dict(

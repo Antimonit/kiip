@@ -130,7 +130,16 @@ CHAPTER = dict(
           "한다."),
 
         SECTION("discuss", "이야기 나누기"),
-        HEADING(3, "부모님, 오래 오래 사세요!"),
+        HEADING(3, "부모님, 오래 오래 사세요!", translation=
+          "Mother, Father, may you live long!" "\n\n"
+          "In Korea the sixtieth birthday one meets after being born is "
+          "called 환갑, or 회갑. In the old days, when average life "
+          "expectancy was short, sixty and over meant a long life, and that "
+          "was regarded as a great blessing. So when a parent reached 환갑, "
+          "the children would invite relatives and friends and hold a feast, "
+          "wishing their parent long life. Now that life expectancy has "
+          "grown longer, a 환갑 feast is rarely held, and it is more common "
+          "to hold a 칠순 feast (고희연) celebrating the seventieth year."),
         PARAGRAPH("한국에서는 태어나서 60번째 맞이하는 생일을 {환갑} 또는 {회갑}이라 한다. 평균 "
           "{수명}이 짧았던 옛날에는 60살 이상은 {장수}를 의미했고, 이는 큰 {복}으로 여겨졌다. "
           "그래서 부모가 환갑을 맞이하면 자녀들은 친척과 친구들을 초대하여 잔치를 열어 부모가 "
@@ -142,7 +151,9 @@ CHAPTER = dict(
                ["40세", "불혹"], ["50세", "지천명"], ["60세", "육순/이순"],
                ["61세", "환갑/회갑"], ["70세", "칠순/고희"], ["80세", "팔순"],
                ["90세", "구순"], ["100세", "상수"], ["120세", "천수"]]),
-        PARAGRAPH("★ 자신의 고향 나라에서 부모의 장수를 기원하는 의식이 있다면 소개해 봅시다."),
+        PARAGRAPH("★ 자신의 고향 나라에서 부모의 장수를 기원하는 의식이 있다면 소개해 봅시다.",
+          "If your home country has a rite that wishes a parent long life, "
+          "introduce it."),
     ],
 
     english={

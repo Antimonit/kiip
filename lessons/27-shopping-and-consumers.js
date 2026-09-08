@@ -1374,7 +1374,8 @@ KIIP.chapter({
    "type": "section",
    "kind": "discuss",
    "text": "이야기 나누기",
-   "topic": "소비자 스스로 안전과 권리 지키기"
+   "topic": "소비자 스스로 안전과 권리 지키기",
+   "titleTranslation": "Consumers looking after their own safety and rights"
   },
   {
    "type": "paragraph",
@@ -1395,6 +1396,42 @@ KIIP.chapter({
      "annotation": "지다"
     },
     " 한다. 한국에서는 소비자의 권리와 이익을 위해 다음과 같이 여러 가지 제도를 마련해 놓고 있다."
+   ],
+   "translation": "To look after their own safety and rights, consumers should examine price and quality carefully before buying goods. And the producer and the seller of the goods must take responsibility for quality and safety. Korea has put a number of schemes in place for consumers’ rights and interests, as follows.",
+   "sentences": [
+    {
+     "spans": [
+      "소비자는 스스로 자신의 안전과 권리를 지키기 위해 상품을 구매하기 전에 가격과 품질을 ",
+      {
+       "word": "꼼꼼하게",
+       "annotation": "꼼꼼하다"
+      },
+      " 살펴야 한다. "
+     ],
+     "translation": "To look after their own safety and rights, consumers should examine price and quality carefully before buying goods."
+    },
+    {
+     "spans": [
+      "그리고 상품의 생산자와 ",
+      {
+       "word": "판매자",
+       "annotation": "판매자"
+      },
+      "는 품질과 안전에 대해 책임을 ",
+      {
+       "word": "져야",
+       "annotation": "지다"
+      },
+      " 한다. "
+     ],
+     "translation": "And the producer and the seller of the goods must take responsibility for quality and safety."
+    },
+    {
+     "spans": [
+      "한국에서는 소비자의 권리와 이익을 위해 다음과 같이 여러 가지 제도를 마련해 놓고 있다."
+     ],
+     "translation": "Korea has put a number of schemes in place for consumers’ rights and interests, as follows."
+    }
    ]
   },
   {
@@ -1417,7 +1454,16 @@ KIIP.chapter({
    "spans": [
     "★ 자신의 고향 나라에서는 소비자를 보호하는 제도가 무엇이 있는지 이야기해 봅시다."
    ],
-   "role": "prompt"
+   "translation": "Talk about what schemes your home country has for protecting consumers.",
+   "role": "prompt",
+   "sentences": [
+    {
+     "spans": [
+      "★ 자신의 고향 나라에서는 소비자를 보호하는 제도가 무엇이 있는지 이야기해 봅시다."
+     ],
+     "translation": "Talk about what schemes your home country has for protecting consumers."
+    }
+   ]
   }
  ],
  "annotations": {

@@ -149,7 +149,13 @@ CHAPTER = dict(
         BULLET("같은 학교를 졸업한 사람들이 모여 만든 조직을 (        )라고 한다."),
 
         SECTION("discuss", "이야기 나누기"),
-        HEADING(3, "공동체 의식을 담고 있는 한국의 속담"),
+        HEADING(3, "공동체 의식을 담고 있는 한국의 속담", translation=
+          "Korean proverbs that carry a sense of community" "\n\n"
+          "A 속담 is a short, plain saying handed down from long ago that "
+          "carries a lesson or a satire. Every country in the world has "
+          "proverbs that express its own culture and feeling. In Korea, "
+          "where a sense of community is held to matter, proverbs carrying "
+          "that meaning have been handed down too."),
         PARAGRAPH("{속담}은 예로부터 전해 오는 짧고 쉬우면서 {교훈}이나 {풍자}를 담고 있는 말을 "
           "뜻한다. 세계 여러 나라에는 그 나라만의 문화와 {정서}를 표현하는 속담이 존재한다. "
           "공동체 의식을 중요하게 생각하는 한국에서도 이러한 의미를 담은 속담이 전해 내려오고 "
@@ -158,7 +164,8 @@ CHAPTER = dict(
               [["작고 사소한 음식이라도 다른 사람을 배려하는 마음으로 서로 나눠 먹음",
                 "백지장처럼 가벼운 것이라도 서로 돕고 협력한다면 훨씬 쉽고 효과적임",
                 "여러 사람들이 모여 힘을 합치면 무슨 일이든 쉽게 해결할 수 있음"]]),
-        PARAGRAPH("★ 자신의 고향 나라에서 전해 내려오는 속담을 소개해 봅시다."),
+        PARAGRAPH("★ 자신의 고향 나라에서 전해 내려오는 속담을 소개해 봅시다.",
+          "Introduce a proverb handed down in your home country."),
     ],
 
     english={

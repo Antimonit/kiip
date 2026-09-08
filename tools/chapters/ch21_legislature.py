@@ -150,7 +150,18 @@ CHAPTER = dict(
         BULLET("국회에서는 정부가 법에 따라 일을 잘하고 있는지 확인하기 위해 ( 감사 )를 실시한다."),
 
         SECTION("discuss", "이야기 나누기"),
-        HEADING(3, "나의 의견도 법에 반영될 수 있다"),
+        HEADING(3, "나의 의견도 법에 반영될 수 있다", translation=
+          "My opinion too can be reflected in the law" "\n\n"
+          "“Abolish the ‘payment after departure’ rule for migrant workers’ "
+          "severance pay”" "\n\n"
+          "It has been pointed out that because of the ‘severance pay on "
+          "departure’ rule, migrant workers often have difficulty receiving "
+          "their severance pay. The Joint Committee with Migrants in Korea, "
+          "the Joint Action for Abolishing Discrimination against Migrant "
+          "Workers and Realising Human and Labour Rights, and the Solidarity "
+          "for Migrants’ Human Rights made this case at a briefing on their "
+          "survey of how the post-departure severance pay system works in "
+          "practice."),
         PARAGRAPH("“이주민 근로자 {퇴직금} ‘{출국} 후 {수령제}’ {폐지}를”"),
         PARAGRAPH("‘퇴직금 출국 후 수령제’ 때문에 이주민 근로자들이 퇴직금을 받는 데 어려움을 겪는 일이 "
           "많다는 {지적}이 나왔다. ‘외국인 이주·노동운동협의회’, ‘이주노동자 {차별철폐}와 "
@@ -160,7 +171,9 @@ CHAPTER = dict(
             "(사진 출처: 〈연합뉴스〉)"),
         SOURCE("[출처] 한겨레(2019.08.12)"),
         PARAGRAPH("★ 자신의 생활, 일, 공부 등과 관련하여 제안하고 싶은 법이 있다면 그 내용을 이야기해 "
-          "봅시다."),
+          "봅시다.",
+          "If there is a law you would like to propose to do with your life, "
+          "your work or your studies, talk about what it would say."),
     ],
 
     english={

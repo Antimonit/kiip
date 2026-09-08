@@ -139,7 +139,20 @@ CHAPTER = dict(
           "기념일인 (        )을 휴일로 지정하고 있다."),
 
         SECTION("discuss", "이야기 나누기"),
-        HEADING(3, "마을을 지켜주는 장승과 솟대"),
+        HEADING(3, "마을을 지켜주는 장승과 솟대", translation=
+          "장승 and 솟대, which keep watch over the village" "\n\n"
+          "Leave the city in Korea for the countryside and you can see a "
+          "장승 and a 솟대 standing at the entrance to a village. They are "
+          "an important example of Korea’s traditional beliefs." "\n\n"
+          "A 장승 is a post carved in the shape of a human head. People long "
+          "ago believed that from the village entrance it kept the village "
+          "safe. It also served to show the way." "\n\n"
+          "A 솟대, on the other hand, is a bird made of stone or wood set on "
+          "top of a long wooden pole. It was thought of above all as "
+          "something that brought a good harvest — a year in which the "
+          "farming went well — and good fortune. Like the 장승, it also "
+          "carries the sense of protecting the village from misfortune, "
+          "disease and natural disaster."),
         PARAGRAPH("한국에서 도시를 벗어나 시골에 가면 마을 {입구}에 있는 {장승}과 {솟대}를 볼 수 있다. "
           "장승과 솟대는 한국의 전통 신앙을 보여주는 중요한 사례이다."),
         PARAGRAPH("장승은 사람 머리 모양의 {기둥}을 가리킨다. 옛날 사람들은 장승이 마을 입구에서 마을을 "
@@ -151,7 +164,9 @@ CHAPTER = dict(
         FIGURE("장승"),
         FIGURE("솟대"),
         PARAGRAPH("★ 장승이나 솟대와 같이 자신의 고향 나라에서 전통 신앙에 해당하는 것이 있다면 소개해 "
-          "봅시다."),
+          "봅시다.",
+          "If your home country has something belonging to its traditional "
+          "beliefs, as 장승 and 솟대 do, introduce it."),
     ],
 
     english={

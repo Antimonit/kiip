@@ -1588,7 +1588,8 @@ KIIP.chapter({
    "type": "section",
    "kind": "discuss",
    "text": "이야기 나누기",
-   "topic": "한국의 세계 수출시장 점유율 1위 제품에는 무엇이 있을까?"
+   "topic": "한국의 세계 수출시장 점유율 1위 제품에는 무엇이 있을까?",
+   "titleTranslation": "Which Korean products lead the world export market?"
   },
   {
    "type": "paragraph",
@@ -1629,6 +1630,62 @@ KIIP.chapter({
      "annotation": "의약"
     },
     " 캡슐, 스키 장갑, 텐트, 낚싯대, 컬러 모니터, 전자레인지, 부탄가스 등이 있다."
+   ],
+   "translation": "As of 2018 Korea held first place in the world export market in 63 product lines in all, which puts it thirteenth in the world. Among those first-place lines, chemical products (27), steel (12) and textile products (5) made up 69.8%. Representative products include memory semiconductors, ships, washing machines, motorcycle helmets, nail clippers, medicine capsules, ski gloves, tents, fishing rods, colour monitors, microwave ovens and butane gas.",
+   "sentences": [
+    {
+     "spans": [
+      "한국의 세계 수출시장 ",
+      {
+       "word": "점유율",
+       "annotation": "점유율"
+      },
+      " 1위 품목은 2018년 기준, 총 63개로 세계 13위를 ",
+      {
+       "word": "차지",
+       "annotation": "차지"
+      },
+      "하고 있다. "
+     ],
+     "translation": "As of 2018 Korea held first place in the world export market in 63 product lines in all, which puts it thirteenth in the world."
+    },
+    {
+     "spans": [
+      "1위 품목 중 ",
+      {
+       "word": "화학제품",
+       "annotation": "화학제품"
+      },
+      "(27개), 철강(12개), ",
+      {
+       "word": "섬유제품",
+       "annotation": "섬유제품"
+      },
+      "(5개)이 69.8%의 비중을 보였다. "
+     ],
+     "translation": "Among those first-place lines, chemical products (27), steel (12) and textile products (5) made up 69.8%."
+    },
+    {
+     "spans": [
+      "대표적인 제품으로는 ",
+      {
+       "word": "메모리 반도체",
+       "annotation": "메모리 반도체"
+      },
+      ", ",
+      {
+       "word": "선박",
+       "annotation": "선박"
+      },
+      ", 세탁기, 오토바이 헬멧, 손톱깎이, ",
+      {
+       "word": "의약",
+       "annotation": "의약"
+      },
+      " 캡슐, 스키 장갑, 텐트, 낚싯대, 컬러 모니터, 전자레인지, 부탄가스 등이 있다."
+     ],
+     "translation": "Representative products include memory semiconductors, ships, washing machines, motorcycle helmets, nail clippers, medicine capsules, ski gloves, tents, fishing rods, colour monitors, microwave ovens and butane gas."
+    }
    ]
   },
   {
@@ -1645,6 +1702,25 @@ KIIP.chapter({
      "annotation": "소전"
     },
     "’도 세계의 50%를 점유하고 있다."
+   ],
+   "translation": "Korean-grown laver in particular holds first place in the world, and ‘소전’, the raw material of coins, also holds 50% of the world market.",
+   "sentences": [
+    {
+     "spans": [
+      "특히, 한국산 김은 세계 점유율 1위를 차지하고 있으며, 동전의 ",
+      {
+       "word": "원자재",
+       "annotation": "원자재"
+      },
+      "인 ‘",
+      {
+       "word": "소전",
+       "annotation": "소전"
+      },
+      "’도 세계의 50%를 점유하고 있다."
+     ],
+     "translation": "Korean-grown laver in particular holds first place in the world, and ‘소전’, the raw material of coins, also holds 50% of the world market."
+    }
    ]
   },
   {
@@ -1702,7 +1778,16 @@ KIIP.chapter({
    "spans": [
     "★ 자신의 고향 나라에서 한국으로 수출하거나 수입하는 제품에 대해 이야기해 봅시다."
    ],
-   "role": "prompt"
+   "translation": "Talk about the products your home country exports to Korea or imports from it.",
+   "role": "prompt",
+   "sentences": [
+    {
+     "spans": [
+      "★ 자신의 고향 나라에서 한국으로 수출하거나 수입하는 제품에 대해 이야기해 봅시다."
+     ],
+     "translation": "Talk about the products your home country exports to Korea or imports from it."
+    }
+   ]
   }
  ],
  "annotations": {

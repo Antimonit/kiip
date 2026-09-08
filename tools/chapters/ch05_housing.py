@@ -183,7 +183,27 @@ CHAPTER = dict(
           "편의 시설 등이 있다."),
         MARGIN("{스세권}", "{학세권}", "{역세권}"),
         SECTION("discuss", "이야기 나누기"),
-        HEADING(3, "여러 나라의 다양한 이사 문화"),
+        HEADING(3, "여러 나라의 다양한 이사 문화", translation=
+          "Moving-house customs in various countries" "\n\n"
+          "In Korea, after moving house people sometimes invite relatives "
+          "and friends round for a small party called a 집들이, and in the "
+          "past they would share 시루떡, a steamed rice cake coated in red "
+          "bean, with the neighbours as ‘moving-house cake’. Those invited "
+          "to a 집들이 usually bring detergent or toilet paper as a gift." "\n\n"
+          "In the United States it is called a house warming: when people "
+          "move or have built a new house they invite friends and family "
+          "and hold a party." "\n\n"
+          "In China there is a custom of setting off firecrackers after "
+          "moving in. They let off loud firecrackers for anything from a "
+          "few seconds to a few minutes, which is a way of telling the "
+          "neighbours that the family has moved in. It also serves to keep "
+          "bad things from coming near, since they hear the din. China too "
+          "has a custom of inviting friends and other families round to "
+          "warm the house." "\n\n"
+          "In Russia the cat is thought of as something that brings good "
+          "fortune. So when people move they take the cat in with them, or "
+          "send the cat into the house first to see what the spirit of the "
+          "place is like."),
         PARAGRAPH("한국에서는 이사를 하고 나면 친척이나 친지들을 초대해 ‘집들이’라는 간단한 잔치를 베풀기도 하고 예전 "
           "에는 ‘이사떡’이라 하여 붉은 팔고물을 묻힌 시루떡을 이웃과 나누어 먹기도 하였다. 집들이에 초대 받은 "
           "사람들은 보통 세제나 화장지를 선물로 사 들고 간다."),
@@ -195,7 +215,9 @@ CHAPTER = dict(
           "집들이 하는 문화가 있다."),
         PARAGRAPH("러시아에서는 고양이가 행운을 가져다주는 존재라고 생각한다. 그래서 이사를 하게 되면 고양이를 데리고 "
           "들어가거나 고양이를 집안에 먼저 들여보내 그 집안의 기운을 살펴보기도 한다."),
-        PARAGRAPH("* 자신의 고향 나라의 이사 문화를 한국의 이사 문화와 비교하여 이야기 해 봅시다."),
+        PARAGRAPH("* 자신의 고향 나라의 이사 문화를 한국의 이사 문화와 비교하여 이야기 해 봅시다.",
+          "Compare the moving-house customs of your home country with "
+          "Korea’s and talk about them."),
     ],
     annotations={
         "형태": dict(
@@ -376,6 +398,7 @@ CHAPTER = dict(
         ),
     },
     fixes=[
+        ("* 자신의", "★ 자신의", "the page uses a star for the discussion prompt"),
         ("치어지는", "지어지는", "typo — 치 for 지 in 지어지는 “are built”"),
         ("붉은 팔고물", "붉은 팥고물", "typo — 팔 for 팥; 팥고물 is the red-bean topping"),
         ("발생한 소리 가", "발생한 소리가", "spacing"),
@@ -387,7 +410,6 @@ CHAPTER = dict(
         ("부동산/중개 업소", "부동산 중개 업소",
          "the margin entry runs two words together with a slash"),
         ("예전 에는", "예전에는", "spacing"),
-        ("* 자신의", "★ 자신의", "the page uses a star for the discussion prompt"),
     ],
     approved={
         # read against the photos of pp. 32-35 and accepted

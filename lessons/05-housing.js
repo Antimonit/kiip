@@ -1194,7 +1194,8 @@ KIIP.chapter({
    "type": "section",
    "kind": "discuss",
    "text": "이야기 나누기",
-   "topic": "여러 나라의 다양한 이사 문화"
+   "topic": "여러 나라의 다양한 이사 문화",
+   "titleTranslation": "Moving-house customs in various countries"
   },
   {
    "type": "paragraph",
@@ -1225,12 +1226,61 @@ KIIP.chapter({
      "annotation": "세제"
     },
     "나 화장지를 선물로 사 들고 간다."
+   ],
+   "translation": "In Korea, after moving house people sometimes invite relatives and friends round for a small party called a 집들이, and in the past they would share 시루떡, a steamed rice cake coated in red bean, with the neighbours as ‘moving-house cake’. Those invited to a 집들이 usually bring detergent or toilet paper as a gift.",
+   "sentences": [
+    {
+     "spans": [
+      "한국에서는 이사를 하고 나면 ",
+      {
+       "word": "친척",
+       "annotation": "친척"
+      },
+      "이나 ",
+      {
+       "word": "친지",
+       "annotation": "친지"
+      },
+      "들을 초대해 ‘",
+      {
+       "word": "집들이",
+       "annotation": "집들이"
+      },
+      "’라는 간단한 잔치를 베풀기도 하고 예전에는 ‘",
+      {
+       "word": "이사떡",
+       "annotation": "이사떡"
+      },
+      "’이라 하여 붉은 팥고물을 묻힌 시루떡을 이웃과 나누어 먹기도 하였다. "
+     ],
+     "translation": "In Korea, after moving house people sometimes invite relatives and friends round for a small party called a 집들이, and in the past they would share 시루떡, a steamed rice cake coated in red bean, with the neighbours as ‘moving-house cake’."
+    },
+    {
+     "spans": [
+      "집들이에 초대 받은 사람들은 보통 ",
+      {
+       "word": "세제",
+       "annotation": "세제"
+      },
+      "나 화장지를 선물로 사 들고 간다."
+     ],
+     "translation": "Those invited to a 집들이 usually bring detergent or toilet paper as a gift."
+    }
    ]
   },
   {
    "type": "paragraph",
    "spans": [
     "미국에서는 House warming이라고 하여 이사를 하거나 집을 새로 지었을 경우 친구나 가족들을 초청하여 파티를 연다."
+   ],
+   "translation": "In the United States it is called a house warming: when people move or have built a new house they invite friends and family and hold a party.",
+   "sentences": [
+    {
+     "spans": [
+      "미국에서는 House warming이라고 하여 이사를 하거나 집을 새로 지었을 경우 친구나 가족들을 초청하여 파티를 연다."
+     ],
+     "translation": "In the United States it is called a house warming: when people move or have built a new house they invite friends and family and hold a party."
+    }
    ]
   },
   {
@@ -1242,18 +1292,75 @@ KIIP.chapter({
      "annotation": "풍습"
     },
     "이 있다. 짧게는 몇 초에서 길게는 몇 분까지 요란한 소리의 폭죽을 터트리는데 이는 이웃에게 우리 가족이 이사를 왔다고 알리는 의미이다. 또한 나쁜 것들이 요란한 소리를 듣고서 다가오지 못하게 하기 위한 목적도 있다. 중국에도 친구나 다른 가족을 초대하여 집들이 하는 문화가 있다."
+   ],
+   "translation": "In China there is a custom of setting off firecrackers after moving in. They let off loud firecrackers for anything from a few seconds to a few minutes, which is a way of telling the neighbours that the family has moved in. It also serves to keep bad things from coming near, since they hear the din. China too has a custom of inviting friends and other families round to warm the house.",
+   "sentences": [
+    {
+     "spans": [
+      "중국에서는 이사를 간 후에 폭죽을 터트리는 ",
+      {
+       "word": "풍습",
+       "annotation": "풍습"
+      },
+      "이 있다. "
+     ],
+     "translation": "In China there is a custom of setting off firecrackers after moving in."
+    },
+    {
+     "spans": [
+      "짧게는 몇 초에서 길게는 몇 분까지 요란한 소리의 폭죽을 터트리는데 이는 이웃에게 우리 가족이 이사를 왔다고 알리는 의미이다. "
+     ],
+     "translation": "They let off loud firecrackers for anything from a few seconds to a few minutes, which is a way of telling the neighbours that the family has moved in."
+    },
+    {
+     "spans": [
+      "또한 나쁜 것들이 요란한 소리를 듣고서 다가오지 못하게 하기 위한 목적도 있다. "
+     ],
+     "translation": "It also serves to keep bad things from coming near, since they hear the din."
+    },
+    {
+     "spans": [
+      "중국에도 친구나 다른 가족을 초대하여 집들이 하는 문화가 있다."
+     ],
+     "translation": "China too has a custom of inviting friends and other families round to warm the house."
+    }
    ]
   },
   {
    "type": "paragraph",
    "spans": [
     "러시아에서는 고양이가 행운을 가져다주는 존재라고 생각한다. 그래서 이사를 하게 되면 고양이를 데리고 들어가거나 고양이를 집안에 먼저 들여보내 그 집안의 기운을 살펴보기도 한다."
+   ],
+   "translation": "In Russia the cat is thought of as something that brings good fortune. So when people move they take the cat in with them, or send the cat into the house first to see what the spirit of the place is like.",
+   "sentences": [
+    {
+     "spans": [
+      "러시아에서는 고양이가 행운을 가져다주는 존재라고 생각한다. "
+     ],
+     "translation": "In Russia the cat is thought of as something that brings good fortune."
+    },
+    {
+     "spans": [
+      "그래서 이사를 하게 되면 고양이를 데리고 들어가거나 고양이를 집안에 먼저 들여보내 그 집안의 기운을 살펴보기도 한다."
+     ],
+     "translation": "So when people move they take the cat in with them, or send the cat into the house first to see what the spirit of the place is like."
+    }
    ]
   },
   {
    "type": "paragraph",
    "spans": [
     "★ 자신의 고향 나라의 이사 문화를 한국의 이사 문화와 비교하여 이야기 해 봅시다."
+   ],
+   "translation": "Compare the moving-house customs of your home country with Korea’s and talk about them.",
+   "role": "prompt",
+   "sentences": [
+    {
+     "spans": [
+      "★ 자신의 고향 나라의 이사 문화를 한국의 이사 문화와 비교하여 이야기 해 봅시다."
+     ],
+     "translation": "Compare the moving-house customs of your home country with Korea’s and talk about them."
+    }
    ]
   }
  ],

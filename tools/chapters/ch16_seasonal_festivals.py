@@ -125,7 +125,12 @@ CHAPTER = dict(
         BULLET("추석 밤에는 보름달을 보면서 소원을 비는 (        )를 하는 사람도 많다."),
 
         SECTION("discuss", "이야기 나누기"),
-        HEADING(3, "새해 첫날, 세계 여러 나라에서는 어떤 음식을 먹을까?"),
+        HEADING(3, "새해 첫날, 세계 여러 나라에서는 어떤 음식을 먹을까?", translation=
+          "On New Year’s Day, what do people eat around the world?" "\n\n"
+          "Korea eats 떡국 at 설날, wishing for health and long life. "
+          "Similarly, countries around the world begin the new year eating "
+          "food that carries their hopes and expectations for the year. "
+          "Here are some examples."),
         PARAGRAPH("한국은 설날에 떡국을 먹으며 건강과 장수를 기원한다. 이와 비슷하게 세계 각 나라에서는 "
           "한 해에 대한 {소망}과 기대를 담은 음식을 먹으며 새해를 시작한다. 그 예는 다음과 "
           "같다."),
@@ -134,7 +139,9 @@ CHAPTER = dict(
                 "찹쌀떡 안에 돼지고기와 녹두를 넣고 쪄서 만든 음식이며, 한 해의 안녕과 복을 기원함",
                 "검은콩, 쌀, 돼지고기에 채소를 끓여 만든 음식이며, 부와 행운의 의미가 담겨있음",
                 "신년 종소리에 맞춰 포도 12알을 먹으며, 1년 12달을 무사히 보내기를 기원함"]]),
-        PARAGRAPH("★ 자신의 고향 나라에서 새해 첫날에 특별히 먹는 음식을 소개해 봅시다."),
+        PARAGRAPH("★ 자신의 고향 나라에서 새해 첫날에 특별히 먹는 음식을 소개해 봅시다.",
+          "Introduce the food eaten especially on New Year’s Day in your "
+          "home country."),
     ],
 
     english={

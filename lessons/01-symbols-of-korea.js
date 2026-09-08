@@ -1152,7 +1152,8 @@ KIIP.chapter({
    "type": "section",
    "kind": "discuss",
    "text": "이야기 나누기",
-   "topic": "여러 나라의 국기"
+   "topic": "여러 나라의 국기",
+   "titleTranslation": "The flags of several countries"
   },
   {
    "type": "labels",
@@ -1186,7 +1187,16 @@ KIIP.chapter({
    "spans": [
     "★ 자신의 고향 나라 국기의 의미나 특징을 소개해 봅시다."
    ],
-   "role": "prompt"
+   "translation": "Introduce the meaning or the distinctive features of your home country’s flag.",
+   "role": "prompt",
+   "sentences": [
+    {
+     "spans": [
+      "★ 자신의 고향 나라 국기의 의미나 특징을 소개해 봅시다."
+     ],
+     "translation": "Introduce the meaning or the distinctive features of your home country’s flag."
+    }
+   ]
   }
  ],
  "annotations": {

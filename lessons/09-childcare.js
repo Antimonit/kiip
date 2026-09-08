@@ -1205,6 +1205,16 @@ KIIP.chapter({
    "type": "paragraph",
    "spans": [
     "★ 자신의 고향 나라와 한국의 태교 문화나 산후 조리 문화를 비교하여 이야기해 봅시다."
+   ],
+   "translation": "Compare the 태교 customs or the postpartum-care customs of your home country with Korea’s and talk about them.",
+   "role": "prompt",
+   "sentences": [
+    {
+     "spans": [
+      "★ 자신의 고향 나라와 한국의 태교 문화나 산후 조리 문화를 비교하여 이야기해 봅시다."
+     ],
+     "translation": "Compare the 태교 customs or the postpartum-care customs of your home country with Korea’s and talk about them."
+    }
    ]
   }
  ],

@@ -1416,7 +1416,8 @@ KIIP.chapter({
    "type": "section",
    "kind": "discuss",
    "text": "이야기 나누기",
-   "topic": "피의자(범죄를 저질렀을 것으로 의심받는 사람)의 인권도 보호해요!"
+   "topic": "피의자(범죄를 저질렀을 것으로 의심받는 사람)의 인권도 보호해요!",
+   "titleTranslation": "The human rights of a suspect — someone suspected of having committed a crime — are protected too!"
   },
   {
    "type": "bullet",
@@ -1456,6 +1457,49 @@ KIIP.chapter({
      "annotation": "제시"
     },
     "해야 해요."
+   ],
+   "translation": "The warrant principle: to arrest or detain someone, to seize someone’s property or to search a place, a warrant — a document carrying the order — issued by a court must always be produced.",
+   "sentences": [
+    {
+     "spans": [
+      {
+       "word": "영장주의",
+       "annotation": "영장주의"
+      },
+      ": 사람을 체포하거나 ",
+      {
+       "word": "구속",
+       "annotation": "구속"
+      },
+      "할 때, 누군가의 물건을 ",
+      {
+       "word": "압수",
+       "annotation": "압수"
+      },
+      "하거나 어떤 장소를 ",
+      {
+       "word": "수색",
+       "annotation": "수색"
+      },
+      "(찾아서 조사)할 때는 반드시 법원이 ",
+      {
+       "word": "발행",
+       "annotation": "발행"
+      },
+      "한 ",
+      {
+       "word": "영장",
+       "annotation": "영장"
+      },
+      "(명령을 담은 문서)을 ",
+      {
+       "word": "제시",
+       "annotation": "제시"
+      },
+      "해야 해요."
+     ],
+     "translation": "The warrant principle: to arrest or detain someone, to seize someone’s property or to search a place, a warrant — a document carrying the order — issued by a court must always be produced."
+    }
    ]
   },
   {
@@ -1491,6 +1535,56 @@ KIIP.chapter({
      "annotation": "요청"
     },
     "할 권리가 있다.”"
+   ],
+   "translation": "The Miranda rule: when arresting someone the following must be said to them. “You have the right to appoint a lawyer and the chance to speak in your defence. If you think this arrest is unjust, you have the right to ask a court to review it.”",
+   "sentences": [
+    {
+     "spans": [
+      {
+       "word": "미란다원칙",
+       "annotation": "미란다원칙"
+      },
+      ": 사람을 체포할 때는 다음과 같은 내용을 말해 주어야 한다. "
+     ],
+     "translation": "The Miranda rule: when arresting someone the following must be said to them."
+    },
+    {
+     "spans": [
+      "“당신은 ",
+      {
+       "word": "변호인",
+       "annotation": "변호인"
+      },
+      "을 ",
+      {
+       "word": "선임",
+       "annotation": "선임"
+      },
+      "할 권리가 있고 ",
+      {
+       "word": "변명",
+       "annotation": "변명"
+      },
+      "의 기회가 있다. "
+     ],
+     "translation": "“You have the right to appoint a lawyer and the chance to speak in your defence."
+    },
+    {
+     "spans": [
+      "이 체포가 부당하다고 생각하면 법원에 ",
+      {
+       "word": "심사",
+       "annotation": "심사"
+      },
+      "를 ",
+      {
+       "word": "요청",
+       "annotation": "요청"
+      },
+      "할 권리가 있다.”"
+     ],
+     "translation": "If you think this arrest is unjust, you have the right to ask a court to review it.”"
+    }
    ]
   },
   {
@@ -1516,6 +1610,34 @@ KIIP.chapter({
      "annotation": "추측"
     },
     "하여 판단한다."
+   ],
+   "translation": "The presumption of innocence: until a verdict of guilt is finally settled through a trial, one is taken to be innocent.",
+   "sentences": [
+    {
+     "spans": [
+      {
+       "word": "무죄추정의 원칙",
+       "annotation": "무죄추정의 원칙"
+      },
+      ": 재판을 통해 최종적으로 ",
+      {
+       "word": "유죄",
+       "annotation": "유죄"
+      },
+      " 판결이 확정되기 전까지는 ",
+      {
+       "word": "무죄",
+       "annotation": "무죄"
+      },
+      "인 것으로 ",
+      {
+       "word": "추측",
+       "annotation": "추측"
+      },
+      "하여 판단한다."
+     ],
+     "translation": "The presumption of innocence: until a verdict of guilt is finally settled through a trial, one is taken to be innocent."
+    }
    ]
   },
   {
@@ -1532,7 +1654,27 @@ KIIP.chapter({
     },
     "의 인권을 보호해야 하는 이유는 무엇일까요? 자신의 고향 나라에서는 피의자의 인권을 어떻게 보호하는지 이야기해 봅시다."
    ],
-   "role": "prompt"
+   "translation": "Why must a suspect’s human rights be protected? Talk about how your home country protects the human rights of a suspect.",
+   "role": "prompt",
+   "sentences": [
+    {
+     "spans": [
+      "★ ",
+      {
+       "word": "피의자",
+       "annotation": "피의자"
+      },
+      "의 인권을 보호해야 하는 이유는 무엇일까요? "
+     ],
+     "translation": "Why must a suspect’s human rights be protected?"
+    },
+    {
+     "spans": [
+      "자신의 고향 나라에서는 피의자의 인권을 어떻게 보호하는지 이야기해 봅시다."
+     ],
+     "translation": "Talk about how your home country protects the human rights of a suspect."
+    }
+   ]
   }
  ],
  "annotations": {

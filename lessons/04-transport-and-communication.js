@@ -1018,7 +1018,93 @@ KIIP.chapter({
     },
     ")’의 준말로 그날 그날 자신이 입은 패션을 소개하는 영상이다. 그 다음은 ‘먹방’, ‘뷰티’ 영상 순으로 인기를 끌었다."
    ],
-   "translation": "Among the countless genres of solo broadcasts, which content draws viewers' clicks? On the video platform YouTube, the most-viewed broadcast content type was 'cover' videos, which recorded 81.98 million views (as of May 2018). A cover video is content that imitates or reinterprets a famous singer's song or dance. Second place went to 'ASMR' videos, which stimulate the brain with sounds like wind blowing, the sound of writing with a pencil, or rustling sounds, inducing psychological calm. Third place is 'HOW TO' videos, which teach 'methods' related to various fields such as interpersonal relationships, work, games, romance, and DIY. Fourth place is 'OOTD' videos — short for 'Outfit Of The Day' (오늘의 의상), videos introducing the outfit one wore that day. Following that, 'mukbang' (eating broadcast) and 'beauty' videos ranked in popularity."
+   "translation": "Among the countless genres of solo broadcasts, which content draws viewers' clicks? On the video platform YouTube, the most-viewed broadcast content type was 'cover' videos, which recorded 81.98 million views (as of May 2018). A cover video is content that imitates or reinterprets a famous singer's song or dance. Second place went to 'ASMR' videos, which stimulate the brain with sounds like wind blowing, the sound of writing with a pencil, or rustling sounds, inducing psychological calm. Third place is 'HOW TO' videos. They teach 'methods' related to various fields such as interpersonal relationships, work, games, romance, and DIY. Fourth place is 'OOTD' videos. Short for 'Outfit Of The Day' (오늘의 의상), they introduce the outfit one wore that day. Following that, 'mukbang' (eating broadcast) and 'beauty' videos ranked in popularity.",
+   "sentences": [
+    {
+     "spans": [
+      "수많은 ",
+      {
+       "word": "장르",
+       "annotation": "장르"
+      },
+      "의 1인 방송 중 어떤 콘텐츠가 시청자들의 클릭을 ",
+      {
+       "word": "유도했",
+       "annotation": "유도하다"
+      },
+      "을까? "
+     ],
+     "translation": "Among the countless genres of solo broadcasts, which content draws viewers' clicks?"
+    },
+    {
+     "spans": [
+      "동영상 플랫폼인 유튜브에서 가장 많이 조회된 방송 콘텐츠 유형은 8198만 회를 기록한 ‘커버’ 영상이었다(2018년 5월 기준). "
+     ],
+     "translation": "On the video platform YouTube, the most-viewed broadcast content type was 'cover' videos, which recorded 81.98 million views (as of May 2018)."
+    },
+    {
+     "spans": [
+      "커버 영상이란 유명 가수의 노래나 춤을 ",
+      {
+       "word": "모방하",
+       "annotation": "모방하다"
+      },
+      "거나 ",
+      {
+       "word": "재해석한",
+       "annotation": "재해석하다"
+      },
+      " 콘텐츠이다. "
+     ],
+     "translation": "A cover video is content that imitates or reinterprets a famous singer's song or dance."
+    },
+    {
+     "spans": [
+      "2위는 바람이 부는 소리, 연필로 글씨를 쓰는 소리, 바스락거리",
+      {
+       "word": "는",
+       "annotation": "는"
+      },
+      " 소리 등으로 뇌를 자극해 심리적인 안정을 유도하는 ‘ASMR’ 영상이 기록했다. "
+     ],
+     "translation": "Second place went to 'ASMR' videos, which stimulate the brain with sounds like wind blowing, the sound of writing with a pencil, or rustling sounds, inducing psychological calm."
+    },
+    {
+     "spans": [
+      "3위는 ‘HOW TO’ 영상이다. "
+     ],
+     "translation": "Third place is 'HOW TO' videos."
+    },
+    {
+     "spans": [
+      "대인관계, 업무, 게임, 연애, DIY 등 여러 분야와 관련된 ‘방법’을 알려준다. "
+     ],
+     "translation": "They teach 'methods' related to various fields such as interpersonal relationships, work, games, romance, and DIY."
+    },
+    {
+     "spans": [
+      "4위는 ‘OOTD’ 영상이다. "
+     ],
+     "translation": "Fourth place is 'OOTD' videos."
+    },
+    {
+     "spans": [
+      "‘Outfit Of The Day(오늘의 ",
+      {
+       "word": "의상",
+       "annotation": "의상"
+      },
+      ")’의 준말로 그날 그날 자신이 입은 패션을 소개하는 영상이다. "
+     ],
+     "translation": "Short for 'Outfit Of The Day' (오늘의 의상), they introduce the outfit one wore that day."
+    },
+    {
+     "spans": [
+      "그 다음은 ‘먹방’, ‘뷰티’ 영상 순으로 인기를 끌었다."
+     ],
+     "translation": "Following that, 'mukbang' (eating broadcast) and 'beauty' videos ranked in popularity."
+    }
+   ]
   },
   {
    "type": "source",
@@ -1040,12 +1126,30 @@ KIIP.chapter({
    "spans": [
     "★ 본인이 시청한 1인 미디어 중 도움이 되었거나 좋았던 방송을 이야기해 봅시다."
    ],
-   "role": "prompt"
+   "translation": "Talk about a solo broadcast you have watched that was useful or that you liked.",
+   "role": "prompt",
+   "sentences": [
+    {
+     "spans": [
+      "★ 본인이 시청한 1인 미디어 중 도움이 되었거나 좋았던 방송을 이야기해 봅시다."
+     ],
+     "translation": "Talk about a solo broadcast you have watched that was useful or that you liked."
+    }
+   ]
   },
   {
    "type": "paragraph",
    "spans": [
     "(또 본인이 직접 만들어 보고 싶은 방송 분야는 무엇인지 생각해 봅시다.)"
+   ],
+   "translation": "(And think about what kind of broadcast you would like to make yourself.)",
+   "sentences": [
+    {
+     "spans": [
+      "(또 본인이 직접 만들어 보고 싶은 방송 분야는 무엇인지 생각해 봅시다.)"
+     ],
+     "translation": "(And think about what kind of broadcast you would like to make yourself.)"
+    }
    ]
   }
  ],

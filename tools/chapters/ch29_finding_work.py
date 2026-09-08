@@ -145,7 +145,9 @@ CHAPTER = dict(
                "근로자의 권리를 보호 받을 수 있도록 한다."),
 
         SECTION("discuss", "이야기 나누기"),
-        HEADING(3, "외국인 인력 지원센터에 고마움을 나눕니다."),
+        HEADING(3, "외국인 인력 지원센터에 고마움을 나눕니다.",
+          translation="Sharing our thanks with the foreign workforce "
+                      "support centre."),
         VERSE("“빈은 현재 직장에서 4년 10개월을 일하고 나서 베트남으로 {귀국}했다가 {성실} "
               "근로자로 다시 한국에 들어왔습니다. {어느덧} 9년이라는 시간 동안 같은 직장에서 "
               "일했습니다.",
@@ -156,10 +158,27 @@ CHAPTER = dict(
               "베트남 {커뮤니티} 활동에 참여하였고 한국 생활에도 점점 잘 적응했습니다.",
               "빈은 자신이 그랬던 것처럼, 자신이 했던 고민을 하고 있는 외국인 친구들을 위해 "
               "이제는 먼저 {다가가|다가가다} 돕고 있습니다. 베트남에서 온 빈은 그렇게 외국인 "
-              "인력 지원센터에서 고마움을 나누고 있습니다.”"),
+              "인력 지원센터에서 고마움을 나누고 있습니다.”",
+              translation=
+              "“Bình worked four years and ten months at his present "
+              "workplace, went home to Vietnam, and then came back to Korea "
+              "as a diligent worker. Before he knew it he had worked nine "
+              "years at the same place." "\n\n"
+              "But life in Korea was not easy for Bình at first either. He "
+              "found Korean particularly hard, and his workmates came to our "
+              "foreign workforce support centre to help him." "\n\n"
+              "Every Sunday Bình joined me for the Korean study and the "
+              "Vietnamese community activities held at the centre, and he "
+              "settled into life in Korea better and better." "\n\n"
+              "Now, just as he once was, Bình is the one who goes to "
+              "foreign friends worrying about what he worried about and "
+              "helps them. That is how Bình, who came from Vietnam, shares "
+              "his thanks at the foreign workforce support centre.”"),
         SOURCE("[출처] 한국산업인력공단(2015). HRDKOREA Newsletter 3호."),
         PARAGRAPH("★ 자신이 한국에 잘 적응할 수 있도록 도움을 주었던 사람이나 기관에 대해 "
-                  "이야기해 봅시다."),
+                  "이야기해 봅시다.",
+          "Talk about a person or an organisation that helped you settle "
+          "into Korea."),
     ],
 
     english={

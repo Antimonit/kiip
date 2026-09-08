@@ -132,14 +132,30 @@ CHAPTER = dict(
           "여름을 시원하게 보낼 수 있는 (        )가 있다."),
 
         SECTION("discuss", "이야기 나누기"),
-        HEADING(3, "한국의 식사예절에는 무엇이 있을까?"),
-        BULLET("웃어른이 먼저 수저를 들 때까지 기다린다."),
-        BULLET("밥그릇이나 국그릇을 손으로 들고 먹지 않는다."),
-        BULLET("기침이나 {재채기}는 얼굴을 옆으로 돌리고 손으로 입을 가리고 한다."),
-        BULLET("숟가락과 젓가락을 동시에 들지 않고 한 번에 하나씩만 들고 사용한다."),
-        BULLET("입안에 음식이 있을 때는 {가급적} 말하지 않는다."),
-        BULLET("사용하던 수저로 반찬을 너무 {뒤적이지|뒤적이다} 않고 깨끗이 집어서 먹는다."),
-        PARAGRAPH("★ 자신의 고향 나라와 한국의 식사예절의 공통점과 차이점에 대해 이야기해 봅시다."),
+        HEADING(3, "한국의 식사예절에는 무엇이 있을까?",
+          translation="What table manners does Korea have?"),
+        BULLET("웃어른이 먼저 수저를 들 때까지 기다린다.",
+          translation="Wait until the eldest present has picked up their "
+                      "spoon and chopsticks first."),
+        BULLET("밥그릇이나 국그릇을 손으로 들고 먹지 않는다.",
+          translation="Do not lift the rice bowl or the soup bowl in your "
+                      "hand to eat from it."),
+        BULLET("기침이나 {재채기}는 얼굴을 옆으로 돌리고 손으로 입을 가리고 한다.",
+          translation="Turn your face aside and cover your mouth with your "
+                      "hand to cough or sneeze."),
+        BULLET("숟가락과 젓가락을 동시에 들지 않고 한 번에 하나씩만 들고 사용한다.",
+          translation="Do not hold the spoon and the chopsticks at the same "
+                      "time; pick up and use one at a time."),
+        BULLET("입안에 음식이 있을 때는 {가급적} 말하지 않는다.",
+          translation="Avoid speaking as far as possible while there is food "
+                      "in your mouth."),
+        BULLET("사용하던 수저로 반찬을 너무 {뒤적이지|뒤적이다} 않고 깨끗이 집어서 먹는다.",
+          translation="Do not root around too much in the side dishes with "
+                      "the spoon or chopsticks you have been eating from; "
+                      "take a piece cleanly and eat it."),
+        PARAGRAPH("★ 자신의 고향 나라와 한국의 식사예절의 공통점과 차이점에 대해 이야기해 봅시다.",
+          "Talk about what the table manners of your home country and "
+          "Korea’s have in common and how they differ."),
     ],
 
     english={

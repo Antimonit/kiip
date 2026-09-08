@@ -117,7 +117,21 @@ CHAPTER = dict(
           "수 있도록 ( … )를 발급하여 지원하고 있다."),
         BULLET("( … ) 가입 이력이 있는 외국인이나 ( … )도 취업을 위한 교육 지원을 받을 수 있다."),
         SECTION("discuss", "이야기 나누기"),
-        HEADING(3, "대학의 우수한 강좌를 집에서 들어보자"),
+        HEADING(3, "대학의 우수한 강좌를 집에서 들어보자", translation=
+          "Take a university’s best courses at home" "\n\n"
+          "MOOC means a course, put together for learning goals defined in "
+          "advance, with no limit on the number of students (Massive), open "
+          "to everyone (Open) and web-based (Online)." "\n\n"
+          "Its distinguishing feature is that learning runs both ways, "
+          "between teacher and learner and between one learner and another: "
+          "questions and answers between teacher and student, discussion, "
+          "quizzes, feedback on assignments and other course management, and "
+          "the running of a learning community." "\n\n"
+          "The Korean MOOC (K-MOOC) too, some three full years after it "
+          "first opened in October 2015, had as of December 2018 about 7.9 "
+          "million site visits, some 770,000 course registrations and around "
+          "350,000 members, so the interest of individual learners is "
+          "growing steadily."),
         PARAGRAPH("MOOC는 수강인원에 제한 없이(Massive), 모든 사람이 수강 가능하며(Open), 웹 "
           "기반으로(Online) 미리 정의된 학습 목표를 위해 구성된 강좌(Course)를 의미한다."),
         PARAGRAPH("교수-학생 간 질문과 응답, 토론, 퀴즈, 과제 피드백 등의 학습 관리, 학습 커뮤니티 운영 등 "
@@ -127,7 +141,9 @@ CHAPTER = dict(
           "개인 학습자들의 관심이 꾸준히 증가하고 있다."),
         FIGURE("K-MOOC — 한국형 온라인 공개 강좌"),
         SOURCE("[출처] http://www.kmooc.kr"),
-        PARAGRAPH("* 본인이 관심을 갖고 있거나 직업상 필요한 분야의 강의는 무엇인지 이야기해 봅시다."),
+        PARAGRAPH("* 본인이 관심을 갖고 있거나 직업상 필요한 분야의 강의는 무엇인지 이야기해 봅시다.",
+          "Talk about which courses in the fields you are interested in, or "
+          "need for your work, you would take."),
     ],
     fixes=[
         ("( … )", "(        )",

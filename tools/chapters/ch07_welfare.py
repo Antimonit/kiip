@@ -183,14 +183,26 @@ CHAPTER = dict(
         BULLET("다문화 가족과 외국인을 지원하는 기관으로는 (   ) 종합 안내센터, 다누리 콜센터, 다문화 가족 "
           "지원센터, 외국인 근로자 지원센터 등이 있다."),
         SECTION("discuss", "이야기 나누기"),
-        HEADING(3, "네팔 출신 1호 의사의 꿈"),
+        HEADING(3, "네팔 출신 1호 의사의 꿈", translation=
+          "The dream of the first doctor from Nepal" "\n\n"
+          "Jeong Je-han, the first Korean doctor of Nepalese origin, has "
+          "countless brothers to look after besides his own family. They are "
+          "the migrant workers staying in the country. He puts a great deal of "
+          "effort into helping migrant workers whose Korean is halting and "
+          "who cannot properly say what they mean." "\n\n"
+          "He has become the foreign member of the Daegu regional 법사랑 "
+          "committee, where he speaks for migrants in their place. With "
+          "fellow doctors he has also opened a mobile community that helps "
+          "Nepalese people and migrant workers having a hard time in Korea."),
         PARAGRAPH("네팔 출신 한국인 1호 의사인 정제한씨는 가족 외에도 챙겨야 할 수많은 형제가 있다. 바로 국내에 체류 "
           "중인 이주노동자들이다. 정제한씨는 화공말이 서툴러 자신의 의견을 제대로 표현하지 못하는 이주 노동자들을 "
           "돕기 위해 여러 노력을 기울이고 있다."),
         PARAGRAPH("정제한씨는 대구 지역 법사랑위원회의 외국인 위원이 되어 이주민의 목소리를 대신 전해 주기도 한다. 또한, "
           "동료 의사들과 함께 모바일 커뮤니티를 열어 한국에서 어려움을 겪는 네팔인들과 이주 노동자들을 돕고 있다."),
         SOURCE("[출처] 다문화 가족과 함께 만드는 정보 매거진 레인보우 웹진, 2016 가을 호, 여성가족부"),
-        PARAGRAPH("* 본인이 한국에서 지원받은 복지 제도나 서비스, 본인에게 도움을 주었던 사람이나 기관에 대해 이야기해 " "봅시다."),
+        PARAGRAPH("* 본인이 한국에서 지원받은 복지 제도나 서비스, 본인에게 도움을 주었던 사람이나 기관에 대해 이야기해 " "봅시다.",
+          "Talk about a welfare scheme or service you have been supported by "
+          "in Korea, or a person or an organisation that helped you."),
     ],
     annotations={
         "최소한": dict(

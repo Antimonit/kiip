@@ -512,18 +512,37 @@ KIIP.chapter({
    "type": "section",
    "kind": "discuss",
    "text": "이야기 나누기",
-   "topic": "한국의 가족에서 ‘우리’와 ‘식구’의 의미는?"
+   "topic": "한국의 가족에서 ‘우리’와 ‘식구’의 의미는?",
+   "titleTranslation": "What do ‘우리’ and ‘식구’ mean in the Korean family?"
   },
   {
    "type": "paragraph",
    "spans": [
     "‘우리’는 ‘나와 당신’을 함께 가리키는 표현으로 나와 이야기를 나누는 상대방을 그만큼 가깝게 생각한다는 의미가 들어 있다."
+   ],
+   "translation": "‘우리’ is an expression that points to ‘you and I’ together, and it carries the sense that the person one is speaking with is thought of as being that close.",
+   "sentences": [
+    {
+     "spans": [
+      "‘우리’는 ‘나와 당신’을 함께 가리키는 표현으로 나와 이야기를 나누는 상대방을 그만큼 가깝게 생각한다는 의미가 들어 있다."
+     ],
+     "translation": "‘우리’ is an expression that points to ‘you and I’ together, and it carries the sense that the person one is speaking with is thought of as being that close."
+    }
    ]
   },
   {
    "type": "paragraph",
    "spans": [
     "그래서 한국 사람들은 자신의 가족을 다른 사람에게 이야기할 때 ‘우리 엄마’, ‘우리 남편’, ‘우리 애들’과 같이 ‘우리’라는 표현을 많이 사용한다."
+   ],
+   "translation": "So when Koreans speak to someone else about their own family they use ‘우리’ a great deal — ‘our mother’, ‘our husband’, ‘our children’.",
+   "sentences": [
+    {
+     "spans": [
+      "그래서 한국 사람들은 자신의 가족을 다른 사람에게 이야기할 때 ‘우리 엄마’, ‘우리 남편’, ‘우리 애들’과 같이 ‘우리’라는 표현을 많이 사용한다."
+     ],
+     "translation": "So when Koreans speak to someone else about their own family they use ‘우리’ a great deal — ‘our mother’, ‘our husband’, ‘our children’."
+    }
    ]
   },
   {
@@ -540,6 +559,31 @@ KIIP.chapter({
      "annotation": "친밀하다"
     },
     " 지내고 싶다는 표현이기도 하다."
+   ],
+   "translation": "식구 is also used in place of 가족, and it means those who eat their rice at the same table. That is why Koreans often say “Let’s eat together sometime”, which is also a way of saying they would like to be as close as family.",
+   "sentences": [
+    {
+     "spans": [
+      "또한 가족 대신에 ",
+      {
+       "word": "식구",
+       "annotation": "식구"
+      },
+      "라는 표현을 사용하기도 하는데 식구는 한 상에서 같이 밥을 먹는 사이라는 뜻이다. "
+     ],
+     "translation": "식구 is also used in place of 가족, and it means those who eat their rice at the same table."
+    },
+    {
+     "spans": [
+      "그래서 한국 사람들은 종종 “언제 밥 한번 같이 먹자.”라는 말을 하는데, 이는 가족처럼 ",
+      {
+       "word": "친밀하게",
+       "annotation": "친밀하다"
+      },
+      " 지내고 싶다는 표현이기도 하다."
+     ],
+     "translation": "That is why Koreans often say “Let’s eat together sometime”, which is also a way of saying they would like to be as close as family."
+    }
    ]
   },
   {
@@ -578,7 +622,31 @@ KIIP.chapter({
     },
     " 있는 표현과 그 의미를 소개해 봅시다."
    ],
-   "role": "prompt"
+   "translation": "As in the examples above, introduce a distinctive expression to do with family from your home town, and what it means.",
+   "role": "prompt",
+   "sentences": [
+    {
+     "spans": [
+      "★ 위의 ",
+      {
+       "word": "사례",
+       "annotation": "사례"
+      },
+      "처럼 ",
+      {
+       "word": "자신",
+       "annotation": "자신"
+      },
+      "의 고향에서 가족과 관련된 ",
+      {
+       "word": "특색",
+       "annotation": "특색"
+      },
+      " 있는 표현과 그 의미를 소개해 봅시다."
+     ],
+     "translation": "As in the examples above, introduce a distinctive expression to do with family from your home town, and what it means."
+    }
+   ]
   },
   {
    "type": "section",

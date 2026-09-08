@@ -1379,7 +1379,8 @@ KIIP.chapter({
    "type": "section",
    "kind": "discuss",
    "text": "이야기 나누기",
-   "topic": "외국인이 겪는 산업 재해 발생 비율, 내국인보다 6배 높아 언어적 차이를 고려한 작업장 안전 교육 필요"
+   "topic": "외국인이 겪는 산업 재해 발생 비율, 내국인보다 6배 높아 언어적 차이를 고려한 작업장 안전 교육 필요",
+   "titleTranslation": "Industrial accidents among foreigners run six times higher than among Koreans — workplace safety training that takes language differences into account is needed"
   },
   {
    "type": "paragraph",
@@ -1410,6 +1411,58 @@ KIIP.chapter({
      "annotation": "고려"
     },
     "하지 않은 채 사업장 안전 교육이 이루어지기 때문인 것으로 보인다. 이에 대한 대책이 필요하다."
+   ],
+   "translation": "According to figures from the Ministry of Employment and Labour and the Korea Occupational Safety and Health Agency, the accident rate among Korean workers covered by industrial accident insurance was 0.18%, while among foreign workers it was 1.16% — about six times higher. From 2012 to May 2017 a total of 33,708 foreign workers were injured at work, 511 of them fatally. One reason accidents are relatively frequent appears to be that workplace safety training is given without sufficient regard for language or cultural differences. Measures to deal with this are needed.",
+   "sentences": [
+    {
+     "spans": [
+      "고용노동부·안전보건공단 자료에 따르면 ",
+      {
+       "word": "산재",
+       "annotation": "산재"
+      },
+      " 보험에 가입된 ",
+      {
+       "word": "내국인",
+       "annotation": "내국인"
+      },
+      " 근로자의 산재 ",
+      {
+       "word": "발생률",
+       "annotation": "발생률"
+      },
+      "은 0.18%인 반면 외국인근로자는 1.16%로 6배 정도 높았다. "
+     ],
+     "translation": "According to figures from the Ministry of Employment and Labour and the Korea Occupational Safety and Health Agency, the accident rate among Korean workers covered by industrial accident insurance was 0.18%, while among foreign workers it was 1.16% — about six times higher."
+    },
+    {
+     "spans": [
+      "2012년부터 2017년 5월까지 산재를 당한 외국인 근로자 수는 총 33,708명이고 이 중 ",
+      {
+       "word": "사망자",
+       "annotation": "사망자"
+      },
+      "는 511명이다. "
+     ],
+     "translation": "From 2012 to May 2017 a total of 33,708 foreign workers were injured at work, 511 of them fatally."
+    },
+    {
+     "spans": [
+      "사고 발생이 상대적으로 많은 이유 중 하나는 언어나 문화적 차이를 충분히 ",
+      {
+       "word": "고려",
+       "annotation": "고려"
+      },
+      "하지 않은 채 사업장 안전 교육이 이루어지기 때문인 것으로 보인다. "
+     ],
+     "translation": "One reason accidents are relatively frequent appears to be that workplace safety training is given without sufficient regard for language or cultural differences."
+    },
+    {
+     "spans": [
+      "이에 대한 대책이 필요하다."
+     ],
+     "translation": "Measures to deal with this are needed."
+    }
    ]
   },
   {
@@ -1482,6 +1535,22 @@ KIIP.chapter({
    "type": "paragraph",
    "spans": [
     "★ 본인이 직장에서 받았던 안전 교육의 내용이나 방법에 대해 이야기해 봅시다. 또는 가정이나 직장에 꼭 필요하다고 생각하는 안전 교육 내용을 이야기해 봅시다."
+   ],
+   "translation": "Talk about what the safety training you were given at work covered, and how it was given. Or talk about the safety training you think is really needed at home or at work.",
+   "role": "prompt",
+   "sentences": [
+    {
+     "spans": [
+      "★ 본인이 직장에서 받았던 안전 교육의 내용이나 방법에 대해 이야기해 봅시다. "
+     ],
+     "translation": "Talk about what the safety training you were given at work covered, and how it was given."
+    },
+    {
+     "spans": [
+      "또는 가정이나 직장에 꼭 필요하다고 생각하는 안전 교육 내용을 이야기해 봅시다."
+     ],
+     "translation": "Or talk about the safety training you think is really needed at home or at work."
+    }
    ]
   }
  ],

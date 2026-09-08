@@ -177,7 +177,27 @@ CHAPTER = dict(
           "(        )에 진학한다."),
 
         SECTION("discuss", "이야기 나누기"),
-        HEADING(3, "한국 수능 날의 풍경"),
+        HEADING(3, "한국 수능 날의 풍경", translation=
+          "The scene on Korea’s university entrance exam day" "\n\n"
+          "The foreign press reported with interest on the scene of "
+          "government, business and citizens joining forces on the day of "
+          "the College Scholastic Ability Test to give students a quiet "
+          "environment and every convenience. Britain’s Telegraph reported "
+          "that “so that students do not meet traffic jams on their way to "
+          "the exam halls, most staff at government bodies and large "
+          "companies start work an hour later than usual, and the Ministry "
+          "of National Defence makes sure there are no air force flights or "
+          "large-scale army artillery drills during the exam”, and that “the "
+          "Ministry of Land, Infrastructure and Transport even bans aircraft "
+          "taking off and landing at airports in Korea for the 40 minutes in "
+          "which students sit the English listening test.” America’s ABC "
+          "News also described the students’ own particular culture, saying "
+          "that on the morning of the exam “first- and second-year high "
+          "school students hand out warm coffee and snacks in front of the "
+          "exam halls and cheer their seniors on.” It went on to say that "
+          "“the churches and temples are full of parents praying for their "
+          "children to do well”, and published a photograph of Jogyesa "
+          "temple."),
         PARAGRAPH("해외 언론들은 대학수학능력시험 날 학생들에게 조용한 환경과 편의 제공을 위해 "
           "정부·기업·시민들이 힘을 모아 애쓰는 풍경을 흥미롭게 보도했다. 영국의 텔레그래프는 "
           "“학생들이 시험장으로 향할 때 {교통 체증}을 겪지 않도록 정부기관과 대기업의 직원들은 "
@@ -190,7 +210,9 @@ CHAPTER = dict(
           "가득하다.”며 {조계사}의 모습을 담은 사진을 게재했다."),
         FIGURE("시험에 지각한 수험생을 수송하고 안내하는 경찰 (사진 출처: 〈연합뉴스〉)"),
         SOURCE("[출처] 뉴시스(2018. 11. 01)"),
-        PARAGRAPH("★ 자신의 고향 나라와 한국의 교육열, 입시 문화를 비교하여 이야기해 봅시다."),
+        PARAGRAPH("★ 자신의 고향 나라와 한국의 교육열, 입시 문화를 비교하여 이야기해 봅시다.",
+          "Compare the zeal for education and the entrance-exam culture of "
+          "your home country with Korea’s and talk about them."),
     ],
 
     english={

@@ -1418,7 +1418,8 @@ KIIP.chapter({
    "type": "section",
    "kind": "discuss",
    "text": "이야기 나누기",
-   "topic": "한국인의 여가활동의 목적은?"
+   "topic": "한국인의 여가활동의 목적은?",
+   "titleTranslation": "What do Koreans do leisure activities for?"
   },
   {
    "type": "paragraph",
@@ -1459,6 +1460,56 @@ KIIP.chapter({
      "annotation": "대체로"
     },
     " 높게 나타났다."
+   ],
+   "translation": "According to the 2018 National Leisure Activity Survey report, the main purpose of Koreans’ leisure activities turned out to be ‘personal enjoyment’. The proportions answering ‘peace of mind and rest’, ‘relieving stress’, ‘self-satisfaction’ and ‘spending time with the family’ were also generally high.",
+   "sentences": [
+    {
+     "spans": [
+      "2018 국민여가활동조사 ",
+      {
+       "word": "보고서",
+       "annotation": "보고서"
+      },
+      "에 따르면 한국 국민의 여가활동의 ",
+      {
+       "word": "주된",
+       "annotation": "주되다"
+      },
+      " 목적은 ‘개인의 즐거움’으로 나타났다. "
+     ],
+     "translation": "According to the 2018 National Leisure Activity Survey report, the main purpose of Koreans’ leisure activities turned out to be ‘personal enjoyment’."
+    },
+    {
+     "spans": [
+      "그리고 ‘마음의 ",
+      {
+       "word": "안정",
+       "annotation": "안정"
+      },
+      "과 휴식’, ‘스트레스 ",
+      {
+       "word": "해소",
+       "annotation": "해소"
+      },
+      "’, ‘",
+      {
+       "word": "자기만족",
+       "annotation": "자기만족"
+      },
+      "’, ‘가족과 시간을 함께하기’ 등에 응답한 ",
+      {
+       "word": "비율",
+       "annotation": "비율"
+      },
+      "도 ",
+      {
+       "word": "대체로",
+       "annotation": "대체로"
+      },
+      " 높게 나타났다."
+     ],
+     "translation": "The proportions answering ‘peace of mind and rest’, ‘relieving stress’, ‘self-satisfaction’ and ‘spending time with the family’ were also generally high."
+    }
    ]
   },
   {
@@ -1470,6 +1521,20 @@ KIIP.chapter({
      "annotation": "연령대"
     },
     "보다 많은 것으로 나타났다."
+   ],
+   "translation": "Among those aged 15–19 and in their twenties, more than 39% do leisure activities ‘for personal enjoyment’, while among those in their fifties and above, doing leisure activities ‘for health’ was found to be more common than in other age groups.",
+   "sentences": [
+    {
+     "spans": [
+      "15–19세, 20대에서는 39% 이상이 ‘개인의 즐거움을 위해’ 여가활동을 하고 있으며, 50대 이상에서는 ‘건강을 위해’ 여가활동을 하는 경우가 다른 ",
+      {
+       "word": "연령대",
+       "annotation": "연령대"
+      },
+      "보다 많은 것으로 나타났다."
+     ],
+     "translation": "Among those aged 15–19 and in their twenties, more than 39% do leisure activities ‘for personal enjoyment’, while among those in their fifties and above, doing leisure activities ‘for health’ was found to be more common than in other age groups."
+    }
    ]
   },
   {
@@ -1532,7 +1597,16 @@ KIIP.chapter({
    "spans": [
     "★ 자신이 한국에서 즐겨하는 여가활동과 그 목적을 서로 이야기해 봅시다."
    ],
-   "role": "prompt"
+   "translation": "Talk with each other about the leisure activities you enjoy in Korea and what you do them for.",
+   "role": "prompt",
+   "sentences": [
+    {
+     "spans": [
+      "★ 자신이 한국에서 즐겨하는 여가활동과 그 목적을 서로 이야기해 봅시다."
+     ],
+     "translation": "Talk with each other about the leisure activities you enjoy in Korea and what you do them for."
+    }
+   ]
   }
  ],
  "annotations": {

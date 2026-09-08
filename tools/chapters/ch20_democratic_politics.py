@@ -140,12 +140,15 @@ CHAPTER = dict(
           "(        )하며 {사법부}는 법을 {해석}하고 (        )하여 {재판}을 한다."),
 
         SECTION("discuss", "이야기 나누기"),
-        HEADING(3, "일상생활과 민주주의"),
+        HEADING(3, "일상생활과 민주주의",
+          translation="Everyday life and democracy"),
         TABLE(["가정에서", "학교에서"],
               [["가정에서 중요한 결정이 필요할 때, 가족회의를 개최하고 다수결의 원칙에 따라서 "
                 "결정을 한다.",
                 "학교에서 학급의 반장을 뽑는 반장 선거를 한다."]]),
-        PARAGRAPH("★ 일상생활에서도 민주주의를 적용할 수 있는 예를 생각해 봅시다."),
+        PARAGRAPH("★ 일상생활에서도 민주주의를 적용할 수 있는 예를 생각해 봅시다.",
+          "Think of examples where democracy can be applied in everyday "
+          "life as well."),
     ],
 
     english={

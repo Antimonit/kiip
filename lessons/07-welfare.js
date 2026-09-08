@@ -1145,7 +1145,8 @@ KIIP.chapter({
    "type": "section",
    "kind": "discuss",
    "text": "이야기 나누기",
-   "topic": "네팔 출신 1호 의사의 꿈"
+   "topic": "네팔 출신 1호 의사의 꿈",
+   "titleTranslation": "The dream of the first doctor from Nepal"
   },
   {
    "type": "paragraph",
@@ -1161,12 +1162,58 @@ KIIP.chapter({
      "annotation": "서툴러"
     },
     " 자신의 의견을 제대로 표현하지 못하는 이주 노동자들을 돕기 위해 여러 노력을 기울이고 있다."
+   ],
+   "translation": "Jeong Je-han, the first Korean doctor of Nepalese origin, has countless brothers to look after besides his own family. They are the migrant workers staying in the country. He puts a great deal of effort into helping migrant workers whose Korean is halting and who cannot properly say what they mean.",
+   "sentences": [
+    {
+     "spans": [
+      "네팔 출신 한국인 1호 의사인 정제한씨는 가족 외에도 챙겨야 할 수많은 ",
+      {
+       "word": "형제",
+       "annotation": "형제"
+      },
+      "가 있다. "
+     ],
+     "translation": "Jeong Je-han, the first Korean doctor of Nepalese origin, has countless brothers to look after besides his own family."
+    },
+    {
+     "spans": [
+      "바로 국내에 체류 중인 이주노동자들이다. "
+     ],
+     "translation": "They are the migrant workers staying in the country."
+    },
+    {
+     "spans": [
+      "정제한씨는 한국말이 ",
+      {
+       "word": "서툴러",
+       "annotation": "서툴러"
+      },
+      " 자신의 의견을 제대로 표현하지 못하는 이주 노동자들을 돕기 위해 여러 노력을 기울이고 있다."
+     ],
+     "translation": "He puts a great deal of effort into helping migrant workers whose Korean is halting and who cannot properly say what they mean."
+    }
    ]
   },
   {
    "type": "paragraph",
    "spans": [
     "정제한씨는 대구 지역 법사랑 위원회의 외국인 위원이 되어 이주민의 목소리를 대신 전해 주기도 한다. 또한, 동료 의사들과 함께 모바일 커뮤니티를 열어 한국에서 어려움을 겪는 네팔인들과 이주 노동자들을 돕고 있다."
+   ],
+   "translation": "He has become the foreign member of the Daegu regional 법사랑 committee, where he speaks for migrants in their place. With fellow doctors he has also opened a mobile community that helps Nepalese people and migrant workers having a hard time in Korea.",
+   "sentences": [
+    {
+     "spans": [
+      "정제한씨는 대구 지역 법사랑 위원회의 외국인 위원이 되어 이주민의 목소리를 대신 전해 주기도 한다. "
+     ],
+     "translation": "He has become the foreign member of the Daegu regional 법사랑 committee, where he speaks for migrants in their place."
+    },
+    {
+     "spans": [
+      "또한, 동료 의사들과 함께 모바일 커뮤니티를 열어 한국에서 어려움을 겪는 네팔인들과 이주 노동자들을 돕고 있다."
+     ],
+     "translation": "With fellow doctors he has also opened a mobile community that helps Nepalese people and migrant workers having a hard time in Korea."
+    }
    ]
   },
   {
@@ -1177,6 +1224,16 @@ KIIP.chapter({
    "type": "paragraph",
    "spans": [
     "★ 본인이 한국에서 지원받은 복지 제도나 서비스, 본인에게 도움을 주었던 사람이나 기관에 대해 이야기해 봅시다."
+   ],
+   "translation": "Talk about a welfare scheme or service you have been supported by in Korea, or a person or an organisation that helped you.",
+   "role": "prompt",
+   "sentences": [
+    {
+     "spans": [
+      "★ 본인이 한국에서 지원받은 복지 제도나 서비스, 본인에게 도움을 주었던 사람이나 기관에 대해 이야기해 봅시다."
+     ],
+     "translation": "Talk about a welfare scheme or service you have been supported by in Korea, or a person or an organisation that helped you."
+    }
    ]
   }
  ],

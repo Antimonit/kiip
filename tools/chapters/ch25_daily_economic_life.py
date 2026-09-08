@@ -144,16 +144,30 @@ CHAPTER = dict(
                "있고 필요한 것을 선택해야 한다. 이를 ( 합리적 ) 선택이라고 한다."),
 
         SECTION("discuss", "이야기 나누기"),
-        HEADING(3, "이 돈으로 무엇을 할 수 있을까?"),
+        HEADING(3, "이 돈으로 무엇을 할 수 있을까?", translation=
+          "What can be done with this money?" "\n\n"
+          "In economic life, where one thing among several has to be "
+          "decided on — that is, in order to make a rational choice — the "
+          "following steps are needed."),
         PARAGRAPH("경제 활동에서 여러 가지 중에 하나를 결정해야 하는 상황, 즉 합리적인 선택을 "
                   "하기 위해서는 다음과 같은 과정이 필요하다."),
-        BULLET("자신이 사용할 수 있는 돈을 확인한다.", ordered=True),
-        BULLET("사려고 하는 재화나 서비스의 종류를 {탐색}한다.", ordered=True),
-        BULLET("재화나 서비스의 비용을 살펴본다.", ordered=True),
-        BULLET("비용 {대비} 나에게 가장 이익이 되고 필요한 것을 선택한다.", ordered=True),
-        BULLET("재화나 서비스 선택의 결과를 평가한다.", ordered=True),
+        BULLET("자신이 사용할 수 있는 돈을 확인한다.", ordered=True,
+          translation="Check how much money you have available."),
+        BULLET("사려고 하는 재화나 서비스의 종류를 {탐색}한다.", ordered=True,
+          translation="Look into the kinds of goods or services you mean to "
+                      "buy."),
+        BULLET("재화나 서비스의 비용을 살펴본다.", ordered=True,
+          translation="Look at what the goods or services cost."),
+        BULLET("비용 {대비} 나에게 가장 이익이 되고 필요한 것을 선택한다.", ordered=True,
+          translation="Choose what benefits you most for the cost and what "
+                      "you need."),
+        BULLET("재화나 서비스 선택의 결과를 평가한다.", ordered=True,
+          translation="Weigh up how the choice of goods or services turned "
+                      "out."),
         PARAGRAPH("★ 위의 과정을 참고하여 본인에게 50,000원이 생겼다면, 이번 주말에 이 돈을 "
-                  "어떻게 사용하고 싶은지 이야기해 봅시다."),
+                  "어떻게 사용하고 싶은지 이야기해 봅시다.",
+          "Taking the steps above as a guide, talk about how you would want "
+          "to spend 50,000 won this weekend if you came by it."),
     ],
 
     english={

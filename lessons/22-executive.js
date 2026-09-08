@@ -1522,17 +1522,19 @@ KIIP.chapter({
    "type": "section",
    "kind": "discuss",
    "text": "이야기 나누기",
-   "topic": "외국인을 위한 정부 정책에는 어떤 것이 있을까?"
+   "topic": "외국인을 위한 정부 정책에는 어떤 것이 있을까?",
+   "titleTranslation": "What government policies are there for foreigners?"
   },
   {
    "type": "heading",
    "level": 4,
-   "text": "★★ 경찰 ‘외국인 보호를 위한 종합 안내서’ 배부"
+   "text": "★★ 경찰 ‘외국인 보호를 위한 종합 안내서’ 배부",
+   "titleTranslation": "Police hand out a ‘comprehensive guide to protecting foreigners’"
   },
   {
    "type": "paragraph",
    "spans": [
-    "★★지방경찰청은 외국인이 범죄를 ",
+    "지방경찰청은 외국인이 범죄를 ",
     {
      "word": "신고",
      "annotation": "신고"
@@ -1569,7 +1571,56 @@ KIIP.chapter({
     },
     " 등에 대한 내용을 담았다."
    ],
-   "role": "prompt"
+   "translation": "The provincial police agency has produced and handed out a ‘comprehensive police guide to protecting foreigners’, to lessen the difficulty of communicating when a foreigner reports a crime. The guide covers what counts as violence, what to do when one has been harmed, and the exemption from the duty to give a foreigner’s personal details when one has been harmed.",
+   "sentences": [
+    {
+     "spans": [
+      "지방경찰청은 외국인이 범죄를 ",
+      {
+       "word": "신고",
+       "annotation": "신고"
+      },
+      "했을 때 ",
+      {
+       "word": "의사소통",
+       "annotation": "의사소통"
+      },
+      "의 어려움을 줄여주기 위해 ‘외국인 보호를 위한 경찰 종합 안내서’를 만들어 나누어 주었다. "
+     ],
+     "translation": "The provincial police agency has produced and handed out a ‘comprehensive police guide to protecting foreigners’, to lessen the difficulty of communicating when a foreigner reports a crime."
+    },
+    {
+     "spans": [
+      "이 안내서에는 ",
+      {
+       "word": "폭력",
+       "annotation": "폭력"
+      },
+      "의 ",
+      {
+       "word": "개념",
+       "annotation": "개념"
+      },
+      ", ",
+      {
+       "word": "피해",
+       "annotation": "피해"
+      },
+      "를 입었을 때 ",
+      {
+       "word": "대처",
+       "annotation": "대처"
+      },
+      "하는 방법, 피해를 입었을 때 외국인의 개인 정보를 알려야 하는 의무 ",
+      {
+       "word": "면제",
+       "annotation": "면제"
+      },
+      " 등에 대한 내용을 담았다."
+     ],
+     "translation": "The guide covers what counts as violence, what to do when one has been harmed, and the exemption from the duty to give a foreigner’s personal details when one has been harmed."
+    }
+   ]
   },
   {
    "type": "source",
@@ -1578,7 +1629,8 @@ KIIP.chapter({
   {
    "type": "heading",
    "level": 4,
-   "text": "○○시, 다문화 가족을 위한 보건소 이용 안내서 배부"
+   "text": "○○시, 다문화 가족을 위한 보건소 이용 안내서 배부",
+   "titleTranslation": "○○ City hands out a guide to using the health centre for multicultural families"
   },
   {
    "type": "paragraph",
@@ -1609,6 +1661,45 @@ KIIP.chapter({
      "annotation": "배려"
     },
     "에 고마움을 느낀다”고 말했다."
+   ],
+   "translation": "○○ City has produced and is handing out a comprehensive health guide in five foreign languages — English, Vietnamese, Chinese and Cambodian among them. A foreigner who visited the health centre and received the guide in several languages said, “I am so glad to see a booklet made in my mother tongue, and I feel grateful for ○○ City’s warm consideration.",
+   "sentences": [
+    {
+     "spans": [
+      "○○시는 영어, 베트남어, 중국어, 캄보디아어 등 5개 외국어로 된 건강 종합 안내서를 만들어 나누어 주고 있다. "
+     ],
+     "translation": "○○ City has produced and is handing out a comprehensive health guide in five foreign languages — English, Vietnamese, Chinese and Cambodian among them."
+    },
+    {
+     "spans": [
+      {
+       "word": "보건소",
+       "annotation": "보건소"
+      },
+      "를 방문해 여러 나라 언어로 된 안내서를 받아 본 외국인은 “",
+      {
+       "word": "모국어",
+       "annotation": "모국어"
+      },
+      "로 ",
+      {
+       "word": "제작",
+       "annotation": "제작"
+      },
+      "된 안내 ",
+      {
+       "word": "책자",
+       "annotation": "책자"
+      },
+      "를 보니 너무 반갑고, ○○시의 따뜻한 ",
+      {
+       "word": "배려",
+       "annotation": "배려"
+      },
+      "에 고마움을 느낀다”고 말했다."
+     ],
+     "translation": "A foreigner who visited the health centre and received the guide in several languages said, “I am so glad to see a booklet made in my mother tongue, and I feel grateful for ○○ City’s warm consideration."
+    }
    ]
   },
   {
@@ -1618,7 +1709,8 @@ KIIP.chapter({
   {
    "type": "heading",
    "level": 4,
-   "text": "◇◇시, 외국인 주민에게 ‘동행 통역 서비스’ 실시"
+   "text": "◇◇시, 외국인 주민에게 ‘동행 통역 서비스’ 실시",
+   "titleTranslation": "◇◇ City starts an ‘accompanied interpreting service’ for foreign residents"
   },
   {
    "type": "paragraph",
@@ -1649,6 +1741,46 @@ KIIP.chapter({
      "annotation": "관공서"
     },
     " 이용이 훨씬 쉬워질 것”이라고 말했다."
+   ],
+   "translation": "◇◇ City has started an interpreting service for foreign residents so that they can be helped in their mother tongue when they visit the civil affairs office. An official of ◇◇ City said, “With this service, using government offices will become far easier for foreign residents who have had difficulty because of the language.",
+   "sentences": [
+    {
+     "spans": [
+      "◇◇시는 외국인 주민이 ",
+      {
+       "word": "민원실",
+       "annotation": "민원실"
+      },
+      "을 방문했을 때 모국어로 안내를 받을 수 있도록 외국인 주민을 위한 ",
+      {
+       "word": "통역",
+       "annotation": "통역"
+      },
+      " 서비스를 시작했다. "
+     ],
+     "translation": "◇◇ City has started an interpreting service for foreign residents so that they can be helped in their mother tongue when they visit the civil affairs office."
+    },
+    {
+     "spans": [
+      "◇◇시 ",
+      {
+       "word": "관계자",
+       "annotation": "관계자"
+      },
+      "는 “이 서비스를 ",
+      {
+       "word": "활용",
+       "annotation": "활용"
+      },
+      "하면 언어 문제로 어려움을 겪었던 외국인 주민의 ",
+      {
+       "word": "관공서",
+       "annotation": "관공서"
+      },
+      " 이용이 훨씬 쉬워질 것”이라고 말했다."
+     ],
+     "translation": "An official of ◇◇ City said, “With this service, using government offices will become far easier for foreign residents who have had difficulty because of the language."
+    }
    ]
   },
   {
@@ -1660,7 +1792,16 @@ KIIP.chapter({
    "spans": [
     "★ 자신이 사는 지역에는 외국인을 위한 어떤 정책이 있는지 이야기해 봅시다."
    ],
-   "role": "prompt"
+   "translation": "Talk about what policies for foreigners there are in the area where you live.",
+   "role": "prompt",
+   "sentences": [
+    {
+     "spans": [
+      "★ 자신이 사는 지역에는 외국인을 위한 어떤 정책이 있는지 이야기해 봅시다."
+     ],
+     "translation": "Talk about what policies for foreigners there are in the area where you live."
+    }
+   ]
   }
  ],
  "annotations": {

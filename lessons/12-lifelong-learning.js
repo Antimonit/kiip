@@ -833,12 +833,22 @@ KIIP.chapter({
    "type": "section",
    "kind": "discuss",
    "text": "이야기 나누기",
-   "topic": "대학의 우수한 강좌를 집에서 들어보자"
+   "topic": "대학의 우수한 강좌를 집에서 들어보자",
+   "titleTranslation": "Take a university’s best courses at home"
   },
   {
    "type": "paragraph",
    "spans": [
     "MOOC는 수강 인원에 제한 없이(Massive), 모든 사람이 수강 가능하며(Open), 웹 기반으로(Online) 미리 정의된 학습 목표를 위해 구성된 강좌(Course)를 의미한다."
+   ],
+   "translation": "MOOC means a course, put together for learning goals defined in advance, with no limit on the number of students (Massive), open to everyone (Open) and web-based (Online).",
+   "sentences": [
+    {
+     "spans": [
+      "MOOC는 수강 인원에 제한 없이(Massive), 모든 사람이 수강 가능하며(Open), 웹 기반으로(Online) 미리 정의된 학습 목표를 위해 구성된 강좌(Course)를 의미한다."
+     ],
+     "translation": "MOOC means a course, put together for learning goals defined in advance, with no limit on the number of students (Massive), open to everyone (Open) and web-based (Online)."
+    }
    ]
   },
   {
@@ -850,6 +860,20 @@ KIIP.chapter({
      "annotation": "양방향"
     },
     " 학습이 가능하다는 특징을 가지고 있다."
+   ],
+   "translation": "Its distinguishing feature is that learning runs both ways, between teacher and learner and between one learner and another: questions and answers between teacher and student, discussion, quizzes, feedback on assignments and other course management, and the running of a learning community.",
+   "sentences": [
+    {
+     "spans": [
+      "교수-학생 간 질문과 응답, 토론, 퀴즈, 과제 피드백 등의 학습 관리, 학습 커뮤니티 운영 등 교수-학습자 간, 학습자-학습자 간 ",
+      {
+       "word": "양방향",
+       "annotation": "양방향"
+      },
+      " 학습이 가능하다는 특징을 가지고 있다."
+     ],
+     "translation": "Its distinguishing feature is that learning runs both ways, between teacher and learner and between one learner and another: questions and answers between teacher and student, discussion, quizzes, feedback on assignments and other course management, and the running of a learning community."
+    }
    ]
   },
   {
@@ -861,6 +885,20 @@ KIIP.chapter({
      "annotation": "누리집"
     },
     " 방문 약 790만 건, 수강 신청 약 77만 건, 회원 가입자 수는 약 35만 명으로, 개인 학습자들의 관심이 꾸준히 증가하고 있다."
+   ],
+   "translation": "The Korean MOOC (K-MOOC) too, some three full years after it first opened in October 2015, had as of December 2018 about 7.9 million site visits, some 770,000 course registrations and around 350,000 members, so the interest of individual learners is growing steadily.",
+   "sentences": [
+    {
+     "spans": [
+      "한국형 무크(K-MOOC)도 2015년 10월 처음 시작한 이후 만 3년 정도가 지난 2018년 12월 기준으로 ",
+      {
+       "word": "누리집",
+       "annotation": "누리집"
+      },
+      " 방문 약 790만 건, 수강 신청 약 77만 건, 회원 가입자 수는 약 35만 명으로, 개인 학습자들의 관심이 꾸준히 증가하고 있다."
+     ],
+     "translation": "The Korean MOOC (K-MOOC) too, some three full years after it first opened in October 2015, had as of December 2018 about 7.9 million site visits, some 770,000 course registrations and around 350,000 members, so the interest of individual learners is growing steadily."
+    }
    ]
   },
   {
@@ -875,6 +913,16 @@ KIIP.chapter({
    "type": "paragraph",
    "spans": [
     "★ 본인이 관심을 갖고 있거나 직업상 필요한 분야의 강의는 무엇인지 이야기해 봅시다."
+   ],
+   "translation": "Talk about which courses in the fields you are interested in, or need for your work, you would take.",
+   "role": "prompt",
+   "sentences": [
+    {
+     "spans": [
+      "★ 본인이 관심을 갖고 있거나 직업상 필요한 분야의 강의는 무엇인지 이야기해 봅시다."
+     ],
+     "translation": "Talk about which courses in the fields you are interested in, or need for your work, you would take."
+    }
    ]
   }
  ],

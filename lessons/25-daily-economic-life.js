@@ -1449,12 +1449,22 @@ KIIP.chapter({
    "type": "section",
    "kind": "discuss",
    "text": "이야기 나누기",
-   "topic": "이 돈으로 무엇을 할 수 있을까?"
+   "topic": "이 돈으로 무엇을 할 수 있을까?",
+   "titleTranslation": "What can be done with this money?"
   },
   {
    "type": "paragraph",
    "spans": [
     "경제 활동에서 여러 가지 중에 하나를 결정해야 하는 상황, 즉 합리적인 선택을 하기 위해서는 다음과 같은 과정이 필요하다."
+   ],
+   "translation": "In economic life, where one thing among several has to be decided on — that is, in order to make a rational choice — the following steps are needed.",
+   "sentences": [
+    {
+     "spans": [
+      "경제 활동에서 여러 가지 중에 하나를 결정해야 하는 상황, 즉 합리적인 선택을 하기 위해서는 다음과 같은 과정이 필요하다."
+     ],
+     "translation": "In economic life, where one thing among several has to be decided on — that is, in order to make a rational choice — the following steps are needed."
+    }
    ]
   },
   {
@@ -1462,7 +1472,16 @@ KIIP.chapter({
    "spans": [
     "자신이 사용할 수 있는 돈을 확인한다."
    ],
-   "ordered": true
+   "translation": "Check how much money you have available.",
+   "ordered": true,
+   "sentences": [
+    {
+     "spans": [
+      "자신이 사용할 수 있는 돈을 확인한다."
+     ],
+     "translation": "Check how much money you have available."
+    }
+   ]
   },
   {
    "type": "bullet",
@@ -1474,14 +1493,37 @@ KIIP.chapter({
     },
     "한다."
    ],
-   "ordered": true
+   "translation": "Look into the kinds of goods or services you mean to buy.",
+   "ordered": true,
+   "sentences": [
+    {
+     "spans": [
+      "사려고 하는 재화나 서비스의 종류를 ",
+      {
+       "word": "탐색",
+       "annotation": "탐색"
+      },
+      "한다."
+     ],
+     "translation": "Look into the kinds of goods or services you mean to buy."
+    }
+   ]
   },
   {
    "type": "bullet",
    "spans": [
     "재화나 서비스의 비용을 살펴본다."
    ],
-   "ordered": true
+   "translation": "Look at what the goods or services cost.",
+   "ordered": true,
+   "sentences": [
+    {
+     "spans": [
+      "재화나 서비스의 비용을 살펴본다."
+     ],
+     "translation": "Look at what the goods or services cost."
+    }
+   ]
   },
   {
    "type": "bullet",
@@ -1493,21 +1535,53 @@ KIIP.chapter({
     },
     " 나에게 가장 이익이 되고 필요한 것을 선택한다."
    ],
-   "ordered": true
+   "translation": "Choose what benefits you most for the cost and what you need.",
+   "ordered": true,
+   "sentences": [
+    {
+     "spans": [
+      "비용 ",
+      {
+       "word": "대비",
+       "annotation": "대비"
+      },
+      " 나에게 가장 이익이 되고 필요한 것을 선택한다."
+     ],
+     "translation": "Choose what benefits you most for the cost and what you need."
+    }
+   ]
   },
   {
    "type": "bullet",
    "spans": [
     "재화나 서비스 선택의 결과를 평가한다."
    ],
-   "ordered": true
+   "translation": "Weigh up how the choice of goods or services turned out.",
+   "ordered": true,
+   "sentences": [
+    {
+     "spans": [
+      "재화나 서비스 선택의 결과를 평가한다."
+     ],
+     "translation": "Weigh up how the choice of goods or services turned out."
+    }
+   ]
   },
   {
    "type": "paragraph",
    "spans": [
     "★ 위의 과정을 참고하여 본인에게 50,000원이 생겼다면, 이번 주말에 이 돈을 어떻게 사용하고 싶은지 이야기해 봅시다."
    ],
-   "role": "prompt"
+   "translation": "Taking the steps above as a guide, talk about how you would want to spend 50,000 won this weekend if you came by it.",
+   "role": "prompt",
+   "sentences": [
+    {
+     "spans": [
+      "★ 위의 과정을 참고하여 본인에게 50,000원이 생겼다면, 이번 주말에 이 돈을 어떻게 사용하고 싶은지 이야기해 봅시다."
+     ],
+     "translation": "Taking the steps above as a guide, talk about how you would want to spend 50,000 won this weekend if you came by it."
+    }
+   ]
   }
  ],
  "annotations": {

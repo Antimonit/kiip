@@ -206,11 +206,11 @@ CHAPTER = dict(
           "went to 'ASMR' videos, which stimulate the brain with "
           "sounds like wind blowing, the sound of writing with a "
           "pencil, or rustling sounds, inducing psychological calm. "
-          "Third place is 'HOW TO' videos, which teach 'methods' "
+          "Third place is 'HOW TO' videos. They teach 'methods' "
           "related to various fields such as interpersonal "
           "relationships, work, games, romance, and DIY. Fourth place "
-          "is 'OOTD' videos — short for 'Outfit Of The Day' (오늘의 의상), "
-          "videos introducing the outfit one wore that day. Following "
+          "is 'OOTD' videos. Short for 'Outfit Of The Day' (오늘의 의상), "
+          "they introduce the outfit one wore that day. Following "
           "that, 'mukbang' (eating broadcast) and 'beauty' videos "
           "ranked in popularity.\""),
         PARAGRAPH("수많은 {장르}의 1인 방송 중 어떤 콘텐츠가 시청자들의 클릭을 {유도했|유도하다}을까? 동영상 플랫폼인 "
@@ -223,8 +223,12 @@ CHAPTER = dict(
           "소개하는 영상이다. 그 다음 은 ‘먹방’, ‘뷰티’ 영상 순으로 인기를 끌었다."),
         SOURCE("[출처] 스포츠경향(2019.05.15)"),
         MARGIN("{백색소음}"),
-        PARAGRAPH("★ 본인이 시청한 1인 미디어 중 도움이 되었거나 좋았던 방송을 이야기해 봅시다."),
-        PARAGRAPH("(또 본인이 직접 만들어 보고 싶은 방송 분야는 무엇인지 생각해 봅시다.)"),
+        PARAGRAPH("★ 본인이 시청한 1인 미디어 중 도움이 되었거나 좋았던 방송을 이야기해 봅시다.",
+          "Talk about a solo broadcast you have watched that was useful or "
+          "that you liked."),
+        PARAGRAPH("(또 본인이 직접 만들어 보고 싶은 방송 분야는 무엇인지 생각해 봅시다.)",
+          "(And think about what kind of broadcast you would like to make "
+          "yourself.)"),
     ],
     annotations={
         "발달하다": dict(

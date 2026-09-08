@@ -1213,7 +1213,8 @@ KIIP.chapter({
    "type": "section",
    "kind": "discuss",
    "text": "이야기 나누기",
-   "topic": "한국에서도 홈스쿨링을?"
+   "topic": "한국에서도 홈스쿨링을?",
+   "titleTranslation": "Home schooling in Korea too?"
   },
   {
    "type": "paragraph",
@@ -1263,6 +1264,77 @@ KIIP.chapter({
      "annotation": "보완"
     },
     "이 필요하다고 말한다."
+   ],
+   "translation": "Home schooling means education at home, through one’s parents or others, instead of going to school. Some parents take it up because they see school education as ill-suited to an individual child’s character and abilities, and lately the number of Korean families doing so has been growing. It is done with the good intention of educating a child better, but in law it is a breach of compulsory education, and a fine of up to a million won may have to be paid. Experts say that while home schooling can be a good way of teaching a lesson suited to each child, it needs safeguards, since on the other hand the child may have some difficulty forming social relationships, or may be neglected.",
+   "sentences": [
+    {
+     "spans": [
+      {
+       "word": "홈스쿨링",
+       "annotation": "홈스쿨링"
+      },
+      "은 학교에 가는 대신에 집에서 부모 등을 통해 교육을 받는 ",
+      {
+       "word": "재택",
+       "annotation": "재택"
+      },
+      " 교육을 말한다. "
+     ],
+     "translation": "Home schooling means education at home, through one’s parents or others, instead of going to school."
+    },
+    {
+     "spans": [
+      "일부 부모들은 학교 교육이 개별 아이의 특성과 능력에 맞추기 어렵다고 보고 홈스쿨링을 실시하는데 최근 한국에도 홈스쿨링을 실시하는 가정이 늘어나고 있다. "
+     ],
+     "translation": "Some parents take it up because they see school education as ill-suited to an individual child’s character and abilities, and lately the number of Korean families doing so has been growing."
+    },
+    {
+     "spans": [
+      "자녀 교육을 더 잘 하고자 하는 좋은 ",
+      {
+       "word": "의도",
+       "annotation": "의도"
+      },
+      "에서 실시하는 것이기는 하지만 법적으로는 의무 교육을 ",
+      {
+       "word": "위반",
+       "annotation": "위반"
+      },
+      "한 것이라서 100만 원 이하의 ",
+      {
+       "word": "과태료",
+       "annotation": "과태료"
+      },
+      "를 낼 수도 있다. "
+     ],
+     "translation": "It is done with the good intention of educating a child better, but in law it is a breach of compulsory education, and a fine of up to a million won may have to be paid."
+    },
+    {
+     "spans": [
+      "전문가들은 홈스쿨링이 각 아이에게 맞는 수업을 할 수 있는 좋은 방법이 될 수 있기는 하지만, 다른 ",
+      {
+       "word": "한편",
+       "annotation": "한편"
+      },
+      "으로 사회적 관계 ",
+      {
+       "word": "형성",
+       "annotation": "형성"
+      },
+      "에 다소 어려움을 겪거나 아동이 ",
+      {
+       "word": "방치",
+       "annotation": "방치"
+      },
+      "될 수도 있다는 점에서 ",
+      {
+       "word": "보완",
+       "annotation": "보완"
+      },
+      "이 필요하다고 말한다."
+     ],
+     "translation": "Experts say that while home schooling can be a good way of teaching a lesson suited to each child, it needs safeguards, since on the other hand the child may have some difficulty forming social relationships, or may be neglected."
+    }
    ]
   },
   {
@@ -1270,7 +1342,16 @@ KIIP.chapter({
    "spans": [
     "★ 홈스쿨링에 대한 본인의 생각(찬성, 반대, 유의점 등)을 이야기해 봅시다."
    ],
-   "role": "prompt"
+   "translation": "Talk about what you yourself think of home schooling — for, against, what to watch out for, and so on.",
+   "role": "prompt",
+   "sentences": [
+    {
+     "spans": [
+      "★ 홈스쿨링에 대한 본인의 생각(찬성, 반대, 유의점 등)을 이야기해 봅시다."
+     ],
+     "translation": "Talk about what you yourself think of home schooling — for, against, what to watch out for, and so on."
+    }
+   ]
   }
  ],
  "annotations": {

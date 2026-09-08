@@ -142,7 +142,19 @@ CHAPTER = dict(
                "나라라는 평가를 받는다."),
 
         SECTION("discuss", "이야기 나누기"),
-        HEADING(3, "한국의 세계 수출시장 점유율 1위 제품에는 무엇이 있을까?"),
+        HEADING(3, "한국의 세계 수출시장 점유율 1위 제품에는 무엇이 있을까?", translation=
+          "Which Korean products lead the world export market?" "\n\n"
+          "As of 2018 Korea held first place in the world export market in "
+          "63 product lines in all, which puts it thirteenth in the world. "
+          "Among those first-place lines, chemical products (27), steel (12) "
+          "and textile products (5) made up 69.8%. Representative products "
+          "include memory semiconductors, ships, washing machines, "
+          "motorcycle helmets, nail clippers, medicine capsules, ski gloves, "
+          "tents, fishing rods, colour monitors, microwave ovens and butane "
+          "gas." "\n\n"
+          "Korean-grown laver in particular holds first place in the world, "
+          "and ‘소전’, the raw material of coins, also holds 50% of the world "
+          "market."),
         PARAGRAPH("한국의 세계 수출시장 {점유율} 1위 품목은 2018년 기준, 총 63개로 세계 13위를 "
                   "{차지}하고 있다. 1위 품목 중 {화학제품}(27개), 철강(12개), {섬유제품}(5개)이 "
                   "69.8%의 비중을 보였다. 대표적인 제품으로는 {메모리 반도체}, {선박}, 세탁기, "
@@ -162,7 +174,9 @@ CHAPTER = dict(
                ["가죽·고무·신발·여행용품", 4]]),
         SOURCE("[출처] 한국무역협회, 국제무역통상연구원(2020)"),
         PARAGRAPH("★ 자신의 고향 나라에서 한국으로 수출하거나 수입하는 제품에 대해 이야기해 "
-                  "봅시다."),
+                  "봅시다.",
+          "Talk about the products your home country exports to Korea or "
+          "imports from it."),
     ],
 
     english={

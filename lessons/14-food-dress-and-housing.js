@@ -1599,18 +1599,37 @@ KIIP.chapter({
    "type": "section",
    "kind": "discuss",
    "text": "이야기 나누기",
-   "topic": "한국의 식사예절에는 무엇이 있을까?"
+   "topic": "한국의 식사예절에는 무엇이 있을까?",
+   "titleTranslation": "What table manners does Korea have?"
   },
   {
    "type": "bullet",
    "spans": [
     "웃어른이 먼저 수저를 들 때까지 기다린다."
+   ],
+   "translation": "Wait until the eldest present has picked up their spoon and chopsticks first.",
+   "sentences": [
+    {
+     "spans": [
+      "웃어른이 먼저 수저를 들 때까지 기다린다."
+     ],
+     "translation": "Wait until the eldest present has picked up their spoon and chopsticks first."
+    }
    ]
   },
   {
    "type": "bullet",
    "spans": [
     "밥그릇이나 국그릇을 손으로 들고 먹지 않는다."
+   ],
+   "translation": "Do not lift the rice bowl or the soup bowl in your hand to eat from it.",
+   "sentences": [
+    {
+     "spans": [
+      "밥그릇이나 국그릇을 손으로 들고 먹지 않는다."
+     ],
+     "translation": "Do not lift the rice bowl or the soup bowl in your hand to eat from it."
+    }
    ]
   },
   {
@@ -1622,12 +1641,35 @@ KIIP.chapter({
      "annotation": "재채기"
     },
     "는 얼굴을 옆으로 돌리고 손으로 입을 가리고 한다."
+   ],
+   "translation": "Turn your face aside and cover your mouth with your hand to cough or sneeze.",
+   "sentences": [
+    {
+     "spans": [
+      "기침이나 ",
+      {
+       "word": "재채기",
+       "annotation": "재채기"
+      },
+      "는 얼굴을 옆으로 돌리고 손으로 입을 가리고 한다."
+     ],
+     "translation": "Turn your face aside and cover your mouth with your hand to cough or sneeze."
+    }
    ]
   },
   {
    "type": "bullet",
    "spans": [
     "숟가락과 젓가락을 동시에 들지 않고 한 번에 하나씩만 들고 사용한다."
+   ],
+   "translation": "Do not hold the spoon and the chopsticks at the same time; pick up and use one at a time.",
+   "sentences": [
+    {
+     "spans": [
+      "숟가락과 젓가락을 동시에 들지 않고 한 번에 하나씩만 들고 사용한다."
+     ],
+     "translation": "Do not hold the spoon and the chopsticks at the same time; pick up and use one at a time."
+    }
    ]
   },
   {
@@ -1639,6 +1681,20 @@ KIIP.chapter({
      "annotation": "가급적"
     },
     " 말하지 않는다."
+   ],
+   "translation": "Avoid speaking as far as possible while there is food in your mouth.",
+   "sentences": [
+    {
+     "spans": [
+      "입안에 음식이 있을 때는 ",
+      {
+       "word": "가급적",
+       "annotation": "가급적"
+      },
+      " 말하지 않는다."
+     ],
+     "translation": "Avoid speaking as far as possible while there is food in your mouth."
+    }
    ]
   },
   {
@@ -1650,6 +1706,20 @@ KIIP.chapter({
      "annotation": "뒤적이다"
     },
     " 않고 깨끗이 집어서 먹는다."
+   ],
+   "translation": "Do not root around too much in the side dishes with the spoon or chopsticks you have been eating from; take a piece cleanly and eat it.",
+   "sentences": [
+    {
+     "spans": [
+      "사용하던 수저로 반찬을 너무 ",
+      {
+       "word": "뒤적이지",
+       "annotation": "뒤적이다"
+      },
+      " 않고 깨끗이 집어서 먹는다."
+     ],
+     "translation": "Do not root around too much in the side dishes with the spoon or chopsticks you have been eating from; take a piece cleanly and eat it."
+    }
    ]
   },
   {
@@ -1657,7 +1727,16 @@ KIIP.chapter({
    "spans": [
     "★ 자신의 고향 나라와 한국의 식사예절의 공통점과 차이점에 대해 이야기해 봅시다."
    ],
-   "role": "prompt"
+   "translation": "Talk about what the table manners of your home country and Korea’s have in common and how they differ.",
+   "role": "prompt",
+   "sentences": [
+    {
+     "spans": [
+      "★ 자신의 고향 나라와 한국의 식사예절의 공통점과 차이점에 대해 이야기해 봅시다."
+     ],
+     "translation": "Talk about what the table manners of your home country and Korea’s have in common and how they differ."
+    }
+   ]
   }
  ],
  "annotations": {

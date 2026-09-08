@@ -135,7 +135,17 @@ CHAPTER = dict(
           "증가할 것이다."),
 
         SECTION("discuss", "이야기 나누기"),
-        HEADING(3, "한국인의 여가활동의 목적은?"),
+        HEADING(3, "한국인의 여가활동의 목적은?", translation=
+          "What do Koreans do leisure activities for?" "\n\n"
+          "According to the 2018 National Leisure Activity Survey report, "
+          "the main purpose of Koreans’ leisure activities turned out to be "
+          "‘personal enjoyment’. The proportions answering ‘peace of mind "
+          "and rest’, ‘relieving stress’, ‘self-satisfaction’ and ‘spending "
+          "time with the family’ were also generally high." "\n\n"
+          "Among those aged 15–19 and in their twenties, more than 39% do "
+          "leisure activities ‘for personal enjoyment’, while among those in "
+          "their fifties and above, doing leisure activities ‘for health’ "
+          "was found to be more common than in other age groups."),
         PARAGRAPH("2018 국민여가활동조사 {보고서}에 따르면 한국 국민의 여가활동의 {주된|주되다} 목적은 "
           "‘개인의 즐거움’으로 나타났다. 그리고 ‘마음의 {안정}과 휴식’, ‘스트레스 {해소}’, "
           "‘{자기만족}’, ‘가족과 시간을 함께하기’ 등에 응답한 {비율}도 {대체로} 높게 나타났다."),
@@ -152,7 +162,9 @@ CHAPTER = dict(
                ["가족과 시간을 함께하기", "3.2", "4.7"],
                ["시간을 보내기", "3.0", "3.8"],
                ["자기 개발", "2.3", "2.0"]]),
-        PARAGRAPH("★ 자신이 한국에서 즐겨하는 여가활동과 그 목적을 서로 이야기해 봅시다."),
+        PARAGRAPH("★ 자신이 한국에서 즐겨하는 여가활동과 그 목적을 서로 이야기해 봅시다.",
+          "Talk with each other about the leisure activities you enjoy in "
+          "Korea and what you do them for."),
     ],
 
     english={

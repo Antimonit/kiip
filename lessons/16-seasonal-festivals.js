@@ -1324,7 +1324,8 @@ KIIP.chapter({
    "type": "section",
    "kind": "discuss",
    "text": "이야기 나누기",
-   "topic": "새해 첫날, 세계 여러 나라에서는 어떤 음식을 먹을까?"
+   "topic": "새해 첫날, 세계 여러 나라에서는 어떤 음식을 먹을까?",
+   "titleTranslation": "On New Year’s Day, what do people eat around the world?"
   },
   {
    "type": "paragraph",
@@ -1335,6 +1336,32 @@ KIIP.chapter({
      "annotation": "소망"
     },
     "과 기대를 담은 음식을 먹으며 새해를 시작한다. 그 예는 다음과 같다."
+   ],
+   "translation": "Korea eats 떡국 at 설날, wishing for health and long life. Similarly, countries around the world begin the new year eating food that carries their hopes and expectations for the year. Here are some examples.",
+   "sentences": [
+    {
+     "spans": [
+      "한국은 설날에 떡국을 먹으며 건강과 장수를 기원한다. "
+     ],
+     "translation": "Korea eats 떡국 at 설날, wishing for health and long life."
+    },
+    {
+     "spans": [
+      "이와 비슷하게 세계 각 나라에서는 한 해에 대한 ",
+      {
+       "word": "소망",
+       "annotation": "소망"
+      },
+      "과 기대를 담은 음식을 먹으며 새해를 시작한다. "
+     ],
+     "translation": "Similarly, countries around the world begin the new year eating food that carries their hopes and expectations for the year."
+    },
+    {
+     "spans": [
+      "그 예는 다음과 같다."
+     ],
+     "translation": "Here are some examples."
+    }
    ]
   },
   {
@@ -1359,7 +1386,16 @@ KIIP.chapter({
    "spans": [
     "★ 자신의 고향 나라에서 새해 첫날에 특별히 먹는 음식을 소개해 봅시다."
    ],
-   "role": "prompt"
+   "translation": "Introduce the food eaten especially on New Year’s Day in your home country.",
+   "role": "prompt",
+   "sentences": [
+    {
+     "spans": [
+      "★ 자신의 고향 나라에서 새해 첫날에 특별히 먹는 음식을 소개해 봅시다."
+     ],
+     "translation": "Introduce the food eaten especially on New Year’s Day in your home country."
+    }
+   ]
   }
  ],
  "annotations": {

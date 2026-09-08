@@ -407,7 +407,20 @@ CHAPTER = dict(
           "있을 때 근무를 마친 후 회사 직원들끼리 (        )을 한다."),
 
         SECTION("discuss", "이야기 나누기"),
-        HEADING(3, "직장인 80% 이상 “회사생활에서는 ‘일’보다 ‘사람’이 더 중요”"),
+        HEADING(3, "직장인 80% 이상 “회사생활에서는 ‘일’보다 ‘사람’이 더 중요”", translation=
+          "Over 80% of employees: “at work, ‘people’ matter more than "
+          "‘the job’”" "\n\n"
+          "In a survey of office workers about ‘work and relationships "
+          "within the workplace’, 81% of respondents answered that of ‘the "
+          "job and the people’ it is ‘the people’ that weigh more heavily on "
+          "leaving a company. Relationship stress (71.8%) was also found to "
+          "be far worse than work-related stress (28.2%)." "\n\n"
+          "As a way of resolving conflict, the commonest answer was ‘avoid "
+          "it so that conflict does not arise if at all possible’ (59.6%, "
+          "multiple answers allowed). Passive responses made up most of the "
+          "rest — ‘bear it alone, inwardly’ (42.2%), ‘prepare to change jobs "
+          "or resign’ (35.5%) — which appeared to be because the other party "
+          "to the conflict is usually in a position senior to their own."),
         PARAGRAPH("직장인 대상으로 ‘일과 직장 내 인간관계’에 대해 조사를 실시한 결과 응답자의 81%는 "
           "‘일과 사람’ 중 {퇴사}(회사를 그만두는 것)에 더 영향을 끼치는 것은 ‘사람’이라고 "
           "답했다. 또 업무 관련 스트레스(28.2%)보다 인간관계 스트레스(71.8%)가 훨씬 심한 "
@@ -418,7 +431,9 @@ CHAPTER = dict(
           "이는 갈등의 대상이 주로 자신들보다 높은 {지위}에 있기 때문인 것으로 나타났다."),
         SOURCE("[출처] 사람인, 일과 직장 내 인간관계조사(2019); 동아경제(2019.03.02)"),
         PARAGRAPH("★ 한국에서 직장 생활을 하며 겪었던 인간관계 중 도움을 받았거나 힘들었던 경험을 "
-          "이야기해 봅시다."),
+          "이야기해 봅시다.",
+          "Talk about a relationship at work in Korea that helped you, or "
+          "that you found hard."),
     ],
     extraAnnotations={
         "경력 단절": dict(

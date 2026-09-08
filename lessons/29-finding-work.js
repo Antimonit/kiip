@@ -1328,7 +1328,8 @@ KIIP.chapter({
    "type": "section",
    "kind": "discuss",
    "text": "이야기 나누기",
-   "topic": "외국인 인력 지원센터에 고마움을 나눕니다."
+   "topic": "외국인 인력 지원센터에 고마움을 나눕니다.",
+   "titleTranslation": "Sharing our thanks with the foreign workforce support centre."
   },
   {
    "type": "verse",
@@ -1375,6 +1376,93 @@ KIIP.chapter({
      },
      " 돕고 있습니다. 베트남에서 온 빈은 그렇게 외국인 인력 지원센터에서 고마움을 나누고 있습니다.”"
     ]
+   ],
+   "translations": [
+    "“Bình worked four years and ten months at his present workplace, went home to Vietnam, and then came back to Korea as a diligent worker. Before he knew it he had worked nine years at the same place.",
+    "But life in Korea was not easy for Bình at first either. He found Korean particularly hard, and his workmates came to our foreign workforce support centre to help him.",
+    "Every Sunday Bình joined me for the Korean study and the Vietnamese community activities held at the centre, and he settled into life in Korea better and better.",
+    "Now, just as he once was, Bình is the one who goes to foreign friends worrying about what he worried about and helps them. That is how Bình, who came from Vietnam, shares his thanks at the foreign workforce support centre.”"
+   ],
+   "sentences": [
+    [
+     {
+      "spans": [
+       "“빈은 현재 직장에서 4년 10개월을 일하고 나서 베트남으로 ",
+       {
+        "word": "귀국",
+        "annotation": "귀국"
+       },
+       "했다가 ",
+       {
+        "word": "성실",
+        "annotation": "성실"
+       },
+       " 근로자로 다시 한국에 들어왔습니다. "
+      ],
+      "translation": "“Bình worked four years and ten months at his present workplace, went home to Vietnam, and then came back to Korea as a diligent worker."
+     },
+     {
+      "spans": [
+       {
+        "word": "어느덧",
+        "annotation": "어느덧"
+       },
+       " 9년이라는 시간 동안 같은 직장에서 일했습니다."
+      ],
+      "translation": "Before he knew it he had worked nine years at the same place."
+     }
+    ],
+    [
+     {
+      "spans": [
+       "하지만 빈에게도 처음에는 한국 생활이 쉽지 않았습니다. "
+      ],
+      "translation": "But life in Korea was not easy for Bình at first either."
+     },
+     {
+      "spans": [
+       "특히, 빈은 한국어에 어려움을 많이 느꼈는데 직장 ",
+       {
+        "word": "동료",
+        "annotation": "동료"
+       },
+       "들은 빈을 도와주기 위해 저희 외국인 인력 지원센터를 찾아왔습니다."
+      ],
+      "translation": "He found Korean particularly hard, and his workmates came to our foreign workforce support centre to help him."
+     }
+    ],
+    [
+     {
+      "spans": [
+       "빈은 저와 함께 매주 일요일마다 외국인 인력 지원센터에서 진행되는 한국어 공부와 베트남 ",
+       {
+        "word": "커뮤니티",
+        "annotation": "커뮤니티"
+       },
+       " 활동에 참여하였고 한국 생활에도 점점 잘 적응했습니다."
+      ],
+      "translation": "Every Sunday Bình joined me for the Korean study and the Vietnamese community activities held at the centre, and he settled into life in Korea better and better."
+     }
+    ],
+    [
+     {
+      "spans": [
+       "빈은 자신이 그랬던 것처럼, 자신이 했던 고민을 하고 있는 외국인 친구들을 위해 이제는 먼저 ",
+       {
+        "word": "다가가",
+        "annotation": "다가가다"
+       },
+       " 돕고 있습니다. "
+      ],
+      "translation": "Now, just as he once was, Bình is the one who goes to foreign friends worrying about what he worried about and helps them."
+     },
+     {
+      "spans": [
+       "베트남에서 온 빈은 그렇게 외국인 인력 지원센터에서 고마움을 나누고 있습니다.”"
+      ],
+      "translation": "That is how Bình, who came from Vietnam, shares his thanks at the foreign workforce support centre.”"
+     }
+    ]
    ]
   },
   {
@@ -1386,7 +1474,16 @@ KIIP.chapter({
    "spans": [
     "★ 자신이 한국에 잘 적응할 수 있도록 도움을 주었던 사람이나 기관에 대해 이야기해 봅시다."
    ],
-   "role": "prompt"
+   "translation": "Talk about a person or an organisation that helped you settle into Korea.",
+   "role": "prompt",
+   "sentences": [
+    {
+     "spans": [
+      "★ 자신이 한국에 잘 적응할 수 있도록 도움을 주었던 사람이나 기관에 대해 이야기해 봅시다."
+     ],
+     "translation": "Talk about a person or an organisation that helped you settle into Korea."
+    }
+   ]
   }
  ],
  "annotations": {

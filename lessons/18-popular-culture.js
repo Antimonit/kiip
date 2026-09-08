@@ -1470,7 +1470,8 @@ KIIP.chapter({
    "type": "section",
    "kind": "discuss",
    "text": "이야기 나누기",
-   "topic": "한국인에게 사랑 받은 한국 영화"
+   "topic": "한국인에게 사랑 받은 한국 영화",
+   "titleTranslation": "Korean films Koreans have loved"
   },
   {
    "type": "paragraph",
@@ -1501,6 +1502,52 @@ KIIP.chapter({
      "annotation": "요소"
     },
     "들이 잘 표현되어 많은 사랑을 받았다."
+   ],
+   "translation": "A film is brought to completion through the work of its director, its crew and its actors. It also carries the culture of the country where it was made, and the feeling and the concerns its people can share. Films that more than ten million people have seen in Korea — ‘Miracle in Cell No. 7’, ‘Ode to My Father’, ‘Along with the Gods: The Two Worlds’ — were loved so widely because these elements are well expressed in them.",
+   "sentences": [
+    {
+     "spans": [
+      "영화 한 편은 감독과 ",
+      {
+       "word": "스태프",
+       "annotation": "스태프"
+      },
+      ", 배우들의 노력을 통해 ",
+      {
+       "word": "완성",
+       "annotation": "완성"
+      },
+      "된다. "
+     ],
+     "translation": "A film is brought to completion through the work of its director, its crew and its actors."
+    },
+    {
+     "spans": [
+      "또한 그 영화가 제작된 나라의 문화, 국민들이 공유할 수 있는 ",
+      {
+       "word": "정서",
+       "annotation": "정서"
+      },
+      "와 관심 등을 담고 있다. "
+     ],
+     "translation": "It also carries the culture of the country where it was made, and the feeling and the concerns its people can share."
+    },
+    {
+     "spans": [
+      "한국에서 천만 명 이상이 ",
+      {
+       "word": "관람",
+       "annotation": "관람"
+      },
+      "한 ‘7번방의 선물’, ‘국제시장’, ‘신과 함께–죄와 벌’ 등의 영화도 이런 ",
+      {
+       "word": "요소",
+       "annotation": "요소"
+      },
+      "들이 잘 표현되어 많은 사랑을 받았다."
+     ],
+     "translation": "Films that more than ten million people have seen in Korea — ‘Miracle in Cell No. 7’, ‘Ode to My Father’, ‘Along with the Gods: The Two Worlds’ — were loved so widely because these elements are well expressed in them."
+    }
    ]
   },
   {
@@ -1562,6 +1609,70 @@ KIIP.chapter({
      "annotation": "주제"
     },
     "와 가치를 담고 있다."
+   ],
+   "translation": "‘Miracle in Cell No. 7’, which unfolds a father’s love for his daughter with deep feeling and laughter; ‘Ode to My Father’, which draws the story of an ordinary father who lived his whole life for his family alone, from after the Korean War in the 1950s down to the present; and ‘Along with the Gods: The Two Worlds’, which holds the culture of filial duty that treasures parents and family together with the stories of the traditional gods of Korean myth — all of them carry themes and values Koreans can understand and feel with.",
+   "sentences": [
+    {
+     "spans": [
+      "딸에 대한 아버지의 사랑을 ",
+      {
+       "word": "진한",
+       "annotation": "진하다"
+      },
+      " ",
+      {
+       "word": "감동",
+       "annotation": "감동"
+      },
+      "과 웃음으로 ",
+      {
+       "word": "풀어낸",
+       "annotation": "풀어내다"
+      },
+      " ‘7번방의 선물’, 1950년대 6·25 전쟁 이후로부터 현재에 ",
+      {
+       "word": "이르기까지",
+       "annotation": "이르다"
+      },
+      " 오직 가족을 위해 평생을 살아온 ",
+      {
+       "word": "평범한",
+       "annotation": "평범하다"
+      },
+      " 아버지의 이야기를 ",
+      {
+       "word": "그려낸",
+       "annotation": "그려내다"
+      },
+      " ‘국제시장’, 부모와 가족을 ",
+      {
+       "word": "소중하게",
+       "annotation": "소중하다"
+      },
+      " 생각하는 효 문화 및 한국의 ",
+      {
+       "word": "신화",
+       "annotation": "신화"
+      },
+      " 속 전통 ",
+      {
+       "word": "신",
+       "annotation": "신"
+      },
+      "들의 이야기가 담겨있는 ‘신과 함께–죄와 벌’ 모두 한국인들이 이해하고 ",
+      {
+       "word": "공감",
+       "annotation": "공감"
+      },
+      "할 수 있는 ",
+      {
+       "word": "주제",
+       "annotation": "주제"
+      },
+      "와 가치를 담고 있다."
+     ],
+     "translation": "‘Miracle in Cell No. 7’, which unfolds a father’s love for his daughter with deep feeling and laughter; ‘Ode to My Father’, which draws the story of an ordinary father who lived his whole life for his family alone, from after the Korean War in the 1950s down to the present; and ‘Along with the Gods: The Two Worlds’, which holds the culture of filial duty that treasures parents and family together with the stories of the traditional gods of Korean myth — all of them carry themes and values Koreans can understand and feel with."
+    }
    ]
   },
   {
@@ -1581,7 +1692,16 @@ KIIP.chapter({
    "spans": [
     "★ 자신의 고향 나라에서 인기 있었던 영화를 소개해 봅시다."
    ],
-   "role": "prompt"
+   "translation": "Introduce a film that was popular in your home country.",
+   "role": "prompt",
+   "sentences": [
+    {
+     "spans": [
+      "★ 자신의 고향 나라에서 인기 있었던 영화를 소개해 봅시다."
+     ],
+     "translation": "Introduce a film that was popular in your home country."
+    }
+   ]
   }
  ],
  "annotations": {

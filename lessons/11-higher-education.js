@@ -943,7 +943,8 @@ KIIP.chapter({
    "type": "section",
    "kind": "discuss",
    "text": "이야기 나누기",
-   "topic": "한국 수능 날의 풍경"
+   "topic": "한국 수능 날의 풍경",
+   "titleTranslation": "The scene on Korea’s university entrance exam day"
   },
   {
    "type": "paragraph",
@@ -994,6 +995,78 @@ KIIP.chapter({
      "annotation": "조계사"
     },
     "의 모습을 담은 사진을 게재했다."
+   ],
+   "translation": "The foreign press reported with interest on the scene of government, business and citizens joining forces on the day of the College Scholastic Ability Test to give students a quiet environment and every convenience. Britain’s Telegraph reported that “so that students do not meet traffic jams on their way to the exam halls, most staff at government bodies and large companies start work an hour later than usual, and the Ministry of National Defence makes sure there are no air force flights or large-scale army artillery drills during the exam”, and that “the Ministry of Land, Infrastructure and Transport even bans aircraft taking off and landing at airports in Korea for the 40 minutes in which students sit the English listening test.” America’s ABC News also described the students’ own particular culture, saying that on the morning of the exam “first- and second-year high school students hand out warm coffee and snacks in front of the exam halls and cheer their seniors on.” It went on to say that “the churches and temples are full of parents praying for their children to do well”, and published a photograph of Jogyesa temple.",
+   "sentences": [
+    {
+     "spans": [
+      "해외 언론들은 대학수학능력시험 날 학생들에게 조용한 환경과 편의 제공을 위해 정부·기업·시민들이 힘을 모아 애쓰는 풍경을 흥미롭게 보도했다. "
+     ],
+     "translation": "The foreign press reported with interest on the scene of government, business and citizens joining forces on the day of the College Scholastic Ability Test to give students a quiet environment and every convenience."
+    },
+    {
+     "spans": [
+      "영국의 텔레그래프는 “학생들이 시험장으로 향할 때 ",
+      {
+       "word": "교통 체증",
+       "annotation": "교통 체증"
+      },
+      "을 겪지 않도록 정부기관과 대기업의 직원들은 대부분 평소보다 한 시간 늦게 출근하고, ",
+      {
+       "word": "국방부",
+       "annotation": "국방부"
+      },
+      "는 시험 중 공군 비행이나 육군의 대규모 ",
+      {
+       "word": "포격",
+       "annotation": "포격"
+      },
+      " 훈련이 없도록 확인한다”며 “",
+      {
+       "word": "국토교통부",
+       "annotation": "국토교통부"
+      },
+      "는 학생들이 영어 듣기 시험을 치르는 40분 간 한국 내 공항에서 항공기의 ",
+      {
+       "word": "이착륙",
+       "annotation": "이착륙"
+      },
+      "을 금지하기도 한다.”고 보도했다. "
+     ],
+     "translation": "Britain’s Telegraph reported that “so that students do not meet traffic jams on their way to the exam halls, most staff at government bodies and large companies start work an hour later than usual, and the Ministry of National Defence makes sure there are no air force flights or large-scale army artillery drills during the exam”, and that “the Ministry of Land, Infrastructure and Transport even bans aircraft taking off and landing at airports in Korea for the 40 minutes in which students sit the English listening test."
+    },
+    {
+     "spans": [
+      "미국의 ABC 뉴스도 수능 날 아침 “고등학교 1, 2학년 학생들은 시험장 앞에서 따뜻한 커피와 과자를 나눠주고, ",
+      {
+       "word": "선배",
+       "annotation": "선배"
+      },
+      "들을 ",
+      {
+       "word": "응원",
+       "annotation": "응원"
+      },
+      "한다.”며 학생들만의 독특한 문화를 소개했다. "
+     ],
+     "translation": "America’s ABC News also described the students’ own particular culture, saying that on the morning of the exam “first- and second-year high school students hand out warm coffee and snacks in front of the exam halls and cheer their seniors on."
+    },
+    {
+     "spans": [
+      "이어 “교회와 절은 자식들이 시험을 잘 치르기를 ",
+      {
+       "word": "기도",
+       "annotation": "기도"
+      },
+      "하는 부모들로 가득하다.”며 ",
+      {
+       "word": "조계사",
+       "annotation": "조계사"
+      },
+      "의 모습을 담은 사진을 게재했다."
+     ],
+     "translation": "It went on to say that “the churches and temples are full of parents praying for their children to do well”, and published a photograph of Jogyesa temple."
+    }
    ]
   },
   {
@@ -1009,7 +1082,16 @@ KIIP.chapter({
    "spans": [
     "★ 자신의 고향 나라와 한국의 교육열, 입시 문화를 비교하여 이야기해 봅시다."
    ],
-   "role": "prompt"
+   "translation": "Compare the zeal for education and the entrance-exam culture of your home country with Korea’s and talk about them.",
+   "role": "prompt",
+   "sentences": [
+    {
+     "spans": [
+      "★ 자신의 고향 나라와 한국의 교육열, 입시 문화를 비교하여 이야기해 봅시다."
+     ],
+     "translation": "Compare the zeal for education and the entrance-exam culture of your home country with Korea’s and talk about them."
+    }
+   ]
   }
  ],
  "annotations": {

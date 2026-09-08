@@ -209,7 +209,9 @@ CHAPTER = dict(
           "닭고기, 새우, 쇠고기를 볶은 요리와 ‘샤오옷’이라는 채소를 많이 먹는데 이는 자궁 속 찌꺼기를 빼는 데 "
           "도움을 준다고 한다."),
         FIGURE("한국의 산후 조리 음식 중 하나인 미역국"),
-        PARAGRAPH("* 자신의 고향 나라와 한국의 태교 문화나 산후 조리 문화를 비교하여 이야기해 봅시다."),
+        PARAGRAPH("* 자신의 고향 나라와 한국의 태교 문화나 산후 조리 문화를 비교하여 이야기해 봅시다.",
+          "Compare the 태교 customs or the postpartum-care customs of your "
+          "home country with Korea’s and talk about them."),
     ],
     annotations={
         "교육": dict(

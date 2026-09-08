@@ -136,7 +136,16 @@ CHAPTER = dict(
                "은행 관련 업무를 볼 수 있다."),
 
         SECTION("discuss", "이야기 나누기"),
-        HEADING(3, "인터넷과 스마트폰을 이용한 금융 사기를 조심해요!"),
+        HEADING(3, "인터넷과 스마트폰을 이용한 금융 사기를 조심해요!", translation=
+          "Beware of financial fraud that uses the internet and the "
+          "smartphone!" "\n\n"
+          "Messenger phishing is a crime in which someone logs in secretly "
+          "to a social media account such as KakaoTalk or Facebook and then "
+          "sends messages to the friends and family registered there to take "
+          "money from them. The method used is to say that someone is ill or "
+          "has been in a traffic accident and money is urgently needed, and "
+          "to ask for money to be sent, having it paid into another person’s "
+          "account."),
         PARAGRAPH("{메신저 피싱}이란 카카오톡, 페이스북 등과 같은 {소셜 미디어}의 {계정}에 "
                   "{몰래} 로그인한 뒤 거기에 등록된 친구나 가족에게 메시지를 보내 돈을 "
                   "{빼가는|빼가다} 범죄이다. 누가 아프다거나 교통사고를 당해서 {급히} 돈이 "
@@ -146,16 +155,40 @@ CHAPTER = dict(
               "아파서 급하게 병원에 가야 하는 데 돈이 필요하니 100만 원을 빌려줘”라는 메시지를 "
               "받고 친구가 알려준 계좌번호로 100만 원을 송금했습니다.",
               "K씨는 나중에 친구에게 {안부} 전화를 하는 과정에서 메신저 피싱(Phishing)을 당했다는 "
-              "사실을 {뒤늦게} 깨달았습니다."),
-        PARAGRAPH("메신저 피싱을 {예방}하기 위해서는 다음을 반드시 지키도록 한다."),
+              "사실을 {뒤늦게} 깨달았습니다.",
+              translation=
+              "[A real case] While checking his messenger app on his "
+              "smartphone, K received a message from a friend saying “my "
+              "child has suddenly become very ill and has to go to hospital "
+              "urgently, I need money, so lend me a million won”, and "
+              "transferred a million won to the account number the friend "
+              "gave." "\n\n"
+              "Only later, in the course of ringing the friend to ask how "
+              "they were, did K realise that he had been the victim of "
+              "messenger phishing."),
+        PARAGRAPH("메신저 피싱을 {예방}하기 위해서는 다음을 반드시 지키도록 한다.",
+          "To guard against messenger phishing, be sure to keep to the "
+          "following."),
         BULLET("메신저로 돈을 {요구}하는 경우 반드시 전화를 걸어 본인인지 아닌지 확인해야 합니다.",
-               ordered=True),
-        BULLET("메신저를 통해서는 절대 개인 정보를 주고받아서는 안 됩니다.", ordered=True),
-        BULLET("메신저 비밀번호를 자주 바꿔 줍니다.", ordered=True),
+               ordered=True,
+               translation="If money is asked for over a messenger app, "
+                           "always ring and check whether it is really "
+                           "that person."),
+        BULLET("메신저를 통해서는 절대 개인 정보를 주고받아서는 안 됩니다.", ordered=True,
+               translation="Never exchange personal information over a "
+                           "messenger app."),
+        BULLET("메신저 비밀번호를 자주 바꿔 줍니다.", ordered=True,
+               translation="Change your messenger password often."),
         BULLET("메신저에 {출처}가 {분명}하지 않은 {첨부 파일}이나 링크가 있을 때는 클릭하지 "
-               "않습니다.", ordered=True),
-        BULLET("{공공장소}에 설치되어 있는 컴퓨터로는 금융 거래를 하지 않습니다.", ordered=True),
-        PARAGRAPH("★ 안전한 금융 거래를 위해 주의해야 할 점에 대해 이야기를 나눠 봅시다."),
+               "않습니다.", ordered=True,
+               translation="When there is an attachment or a link of "
+                           "unclear origin in a message, do not click it."),
+        BULLET("{공공장소}에 설치되어 있는 컴퓨터로는 금융 거래를 하지 않습니다.", ordered=True,
+               translation="Do not carry out financial transactions on a "
+                           "computer installed in a public place."),
+        PARAGRAPH("★ 안전한 금융 거래를 위해 주의해야 할 점에 대해 이야기를 나눠 봅시다.",
+          "Talk together about what to watch out for in order to bank "
+          "safely."),
     ],
 
     english={

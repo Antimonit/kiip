@@ -133,7 +133,13 @@ CHAPTER = dict(
                "반드시 확인해야 한다."),
 
         SECTION("discuss", "이야기 나누기"),
-        HEADING(3, "소비자 스스로 안전과 권리 지키기"),
+        HEADING(3, "소비자 스스로 안전과 권리 지키기", translation=
+          "Consumers looking after their own safety and rights" "\n\n"
+          "To look after their own safety and rights, consumers should "
+          "examine price and quality carefully before buying goods. And the "
+          "producer and the seller of the goods must take responsibility for "
+          "quality and safety. Korea has put a number of schemes in place "
+          "for consumers’ rights and interests, as follows."),
         PARAGRAPH("소비자는 스스로 자신의 안전과 권리를 지키기 위해 상품을 구매하기 전에 가격과 "
                   "품질을 {꼼꼼하게|꼼꼼하다} 살펴야 한다. 그리고 상품의 생산자와 {판매자}는 "
                   "품질과 안전에 대해 책임을 {져야|지다} 한다. 한국에서는 소비자의 권리와 이익을 "
@@ -144,7 +150,9 @@ CHAPTER = dict(
                 "원산지 표시, 유통 기한, 영양 성분 표시 등 소비자 안전 등에 중요한 표시를 반드시 "
                 "하게 하는 제도"]]),
         PARAGRAPH("★ 자신의 고향 나라에서는 소비자를 보호하는 제도가 무엇이 있는지 이야기해 "
-                  "봅시다."),
+                  "봅시다.",
+          "Talk about what schemes your home country has for protecting "
+          "consumers."),
     ],
 
     english={

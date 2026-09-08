@@ -151,7 +151,19 @@ CHAPTER = dict(
           "구분된다."),
 
         SECTION("discuss", "이야기 나누기"),
-        HEADING(3, "한국에서도 홈스쿨링을?"),
+        HEADING(3, "한국에서도 홈스쿨링을?", translation=
+          "Home schooling in Korea too?" "\n\n"
+          "Home schooling means education at home, through one’s parents or "
+          "others, instead of going to school. Some parents take it up "
+          "because they see school education as ill-suited to an individual "
+          "child’s character and abilities, and lately the number of Korean "
+          "families doing so has been growing. It is done with the good "
+          "intention of educating a child better, but in law it is a breach "
+          "of compulsory education, and a fine of up to a million won may "
+          "have to be paid. Experts say that while home schooling can be a "
+          "good way of teaching a lesson suited to each child, it needs "
+          "safeguards, since on the other hand the child may have some "
+          "difficulty forming social relationships, or may be neglected."),
         PARAGRAPH("{홈스쿨링}은 학교에 가는 대신에 집에서 부모 등을 통해 교육을 받는 {재택} 교육을 "
           "말한다. 일부 부모들은 학교 교육이 개별 아이의 특성과 능력에 맞추기 어렵다고 보고 "
           "홈스쿨링을 실시하는데 최근 한국에도 홈스쿨링을 실시하는 가정이 늘어나고 있다. 자녀 "
@@ -160,7 +172,9 @@ CHAPTER = dict(
           "홈스쿨링이 각 아이에게 맞는 수업을 할 수 있는 좋은 방법이 될 수 있기는 하지만, 다른 "
           "{한편}으로 사회적 관계 {형성}에 다소 어려움을 겪거나 아동이 {방치}될 수도 있다는 "
           "점에서 {보완}이 필요하다고 말한다."),
-        PARAGRAPH("★ 홈스쿨링에 대한 본인의 생각(찬성, 반대, 유의점 등)을 이야기해 봅시다."),
+        PARAGRAPH("★ 홈스쿨링에 대한 본인의 생각(찬성, 반대, 유의점 등)을 이야기해 봅시다.",
+          "Talk about what you yourself think of home schooling — for, "
+          "against, what to watch out for, and so on."),
     ],
 
     english={

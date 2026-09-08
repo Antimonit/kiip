@@ -1493,6 +1493,16 @@ KIIP.chapter({
    "type": "paragraph",
    "spans": [
     "★ 계절 근로자 제도의 좋은 점과 보완되어야 할 점에 대해 이야기해 봅시다."
+   ],
+   "translation": "Talk about what is good about the seasonal worker system and what still needs to be put right.",
+   "role": "prompt",
+   "sentences": [
+    {
+     "spans": [
+      "★ 계절 근로자 제도의 좋은 점과 보완되어야 할 점에 대해 이야기해 봅시다."
+     ],
+     "translation": "Talk about what is good about the seasonal worker system and what still needs to be put right."
+    }
    ]
   }
  ],

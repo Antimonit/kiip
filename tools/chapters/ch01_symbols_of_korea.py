@@ -123,10 +123,12 @@ CHAPTER = dict(
         BULLET("한글은 ( 자음 ) 14개와 ( 모음 ) 10개 모두 24개의 문자로 구성되어 있다."),
 
         SECTION("discuss", "이야기 나누기"),
-        HEADING(3, "여러 나라의 국기"),
+        HEADING(3, "여러 나라의 국기", translation="The flags of several countries"),
         LABELS("중국", "베트남", "필리핀", "몽골", "캄보디아", "태국"),
         FIGURE("여섯 나라의 국기 — 중국, 베트남, 필리핀, 몽골, 캄보디아, 태국"),
-        PARAGRAPH("★ 자신의 고향 나라 국기의 의미나 특징을 소개해 봅시다."),
+        PARAGRAPH("★ 자신의 고향 나라 국기의 의미나 특징을 소개해 봅시다.",
+          "Introduce the meaning or the distinctive features of your home "
+          "country’s flag."),
     ],
     annotations={
         "무궁화": dict(

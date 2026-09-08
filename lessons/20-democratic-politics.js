@@ -1652,7 +1652,8 @@ KIIP.chapter({
    "type": "section",
    "kind": "discuss",
    "text": "이야기 나누기",
-   "topic": "일상생활과 민주주의"
+   "topic": "일상생활과 민주주의",
+   "titleTranslation": "Everyday life and democracy"
   },
   {
    "type": "table",
@@ -1672,7 +1673,16 @@ KIIP.chapter({
    "spans": [
     "★ 일상생활에서도 민주주의를 적용할 수 있는 예를 생각해 봅시다."
    ],
-   "role": "prompt"
+   "translation": "Think of examples where democracy can be applied in everyday life as well.",
+   "role": "prompt",
+   "sentences": [
+    {
+     "spans": [
+      "★ 일상생활에서도 민주주의를 적용할 수 있는 예를 생각해 봅시다."
+     ],
+     "translation": "Think of examples where democracy can be applied in everyday life as well."
+    }
+   ]
   }
  ],
  "annotations": {

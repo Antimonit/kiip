@@ -76,7 +76,18 @@ CHAPTER = dict(
         BULLET("부모와 자녀 관계는 (   ), 형제·자매 관계는 (   ) 이다."),
         BULLET("형제자매의 자녀와 내 자녀의 관계는 (   ) 이다."),
         SECTION("discuss", "이야기 나누기"),
-        HEADING(3, "한국의 가족에서 ‘우리’와 ‘식구’의 의미는?"),
+        HEADING(3, "한국의 가족에서 ‘우리’와 ‘식구’의 의미는?", translation=
+          "What do ‘우리’ and ‘식구’ mean in the Korean family?" "\n\n"
+          "‘우리’ is an expression that points to ‘you and I’ together, and it "
+          "carries the sense that the person one is speaking with is thought "
+          "of as being that close." "\n\n"
+          "So when Koreans speak to someone else about their own family they "
+          "use ‘우리’ a great deal — ‘our mother’, ‘our husband’, ‘our "
+          "children’." "\n\n"
+          "식구 is also used in place of 가족, and it means those who eat "
+          "their rice at the same table. That is why Koreans often say "
+          "“Let’s eat together sometime”, which is also a way of saying "
+          "they would like to be as close as family."),
         PARAGRAPH("‘우리’는 ‘나와 당신’을 함께 가리키는 표현으로 나와 이야기를 나누는 상대방을 그만큼 가깝게 생각한다는 "
           "의미가 들어 있다."),
         PARAGRAPH("그래서 한국 사람들은 자신의 가족을 다른 사람에게 이야기할 때 ‘우리 엄마’, ‘우리 남편’, ‘우리 "
@@ -85,7 +96,9 @@ CHAPTER = dict(
           "뜻이다. 그래서 한국 사람들은 종종 “언제 밥 한번 같이 먹자.”라는 말을 하는데, 이는 가족처럼 "
           "{친밀하게|친밀하다} 지내고 싶다는 표현 이기도 하다."),
         MARGIN("{집단주의} / {개인주의}"),
-        PARAGRAPH("★ 위의 {사례}처럼 {자신}의 고향에서 가족과 관련된 {특색} 있는 표현과 그 의미를 소개해 봅시다."),
+        PARAGRAPH("★ 위의 {사례}처럼 {자신}의 고향에서 가족과 관련된 {특색} 있는 표현과 그 의미를 소개해 봅시다.",
+          "As in the examples above, introduce a distinctive expression to do "
+          "with family from your home town, and what it means."),
         SECTION("part", "02 한국의 가족과 친척은 서로를 어떻게 부를까?"),
         GLOSSARY(("호칭", "서로 부름", "호칭"),
               ("지칭", "어떤 대상을 가리켜 말함", "지칭"),

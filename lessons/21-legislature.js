@@ -1437,7 +1437,8 @@ KIIP.chapter({
    "type": "section",
    "kind": "discuss",
    "text": "이야기 나누기",
-   "topic": "나의 의견도 법에 반영될 수 있다"
+   "topic": "나의 의견도 법에 반영될 수 있다",
+   "titleTranslation": "My opinion too can be reflected in the law"
   },
   {
    "type": "paragraph",
@@ -1463,6 +1464,35 @@ KIIP.chapter({
      "annotation": "폐지"
     },
     "를”"
+   ],
+   "translation": "Abolish the ‘payment after departure’ rule for migrant workers’ severance pay",
+   "sentences": [
+    {
+     "spans": [
+      "“이주민 근로자 ",
+      {
+       "word": "퇴직금",
+       "annotation": "퇴직금"
+      },
+      " ‘",
+      {
+       "word": "출국",
+       "annotation": "출국"
+      },
+      " 후 ",
+      {
+       "word": "수령제",
+       "annotation": "수령제"
+      },
+      "’ ",
+      {
+       "word": "폐지",
+       "annotation": "폐지"
+      },
+      "를”"
+     ],
+     "translation": "Abolish the ‘payment after departure’ rule for migrant workers’ severance pay"
+    }
    ]
   },
   {
@@ -1509,6 +1539,61 @@ KIIP.chapter({
      "annotation": "펴다"
     },
     "."
+   ],
+   "translation": "It has been pointed out that because of the ‘severance pay on departure’ rule, migrant workers often have difficulty receiving their severance pay. The Joint Committee with Migrants in Korea, the Joint Action for Abolishing Discrimination against Migrant Workers and Realising Human and Labour Rights, and the Solidarity for Migrants’ Human Rights made this case at a briefing on their survey of how the post-departure severance pay system works in practice.",
+   "sentences": [
+    {
+     "spans": [
+      "‘퇴직금 출국 후 수령제’ 때문에 이주민 근로자들이 퇴직금을 받는 데 어려움을 겪는 일이 많다는 ",
+      {
+       "word": "지적",
+       "annotation": "지적"
+      },
+      "이 나왔다. "
+     ],
+     "translation": "It has been pointed out that because of the ‘severance pay on departure’ rule, migrant workers often have difficulty receiving their severance pay."
+    },
+    {
+     "spans": [
+      "‘외국인 이주·노동운동협의회’, ‘이주노동자 ",
+      {
+       "word": "차별철폐",
+       "annotation": "차별철폐"
+      },
+      "와 인권·",
+      {
+       "word": "노동권",
+       "annotation": "노동권"
+      },
+      " 실현을 위한 ",
+      {
+       "word": "공동행동",
+       "annotation": "공동행동"
+      },
+      "’, ‘이주인권연대’는 ‘이주노동자 출국 후 퇴직금 수령제도 ",
+      {
+       "word": "실태조사",
+       "annotation": "실태조사"
+      },
+      " ",
+      {
+       "word": "발표회",
+       "annotation": "발표회"
+      },
+      "’를 열어 이런 ",
+      {
+       "word": "주장",
+       "annotation": "주장"
+      },
+      "을 ",
+      {
+       "word": "폈다",
+       "annotation": "펴다"
+      },
+      "."
+     ],
+     "translation": "The Joint Committee with Migrants in Korea, the Joint Action for Abolishing Discrimination against Migrant Workers and Realising Human and Labour Rights, and the Solidarity for Migrants’ Human Rights made this case at a briefing on their survey of how the post-departure severance pay system works in practice."
+    }
    ]
   },
   {
@@ -1524,7 +1609,16 @@ KIIP.chapter({
    "spans": [
     "★ 자신의 생활, 일, 공부 등과 관련하여 제안하고 싶은 법이 있다면 그 내용을 이야기해 봅시다."
    ],
-   "role": "prompt"
+   "translation": "If there is a law you would like to propose to do with your life, your work or your studies, talk about what it would say.",
+   "role": "prompt",
+   "sentences": [
+    {
+     "spans": [
+      "★ 자신의 생활, 일, 공부 등과 관련하여 제안하고 싶은 법이 있다면 그 내용을 이야기해 봅시다."
+     ],
+     "translation": "If there is a law you would like to propose to do with your life, your work or your studies, talk about what it would say."
+    }
+   ]
   }
  ],
  "annotations": {

@@ -128,7 +128,24 @@ CHAPTER = dict(
         BULLET("한국의 가수들이 해외로 진출하면서 (        )이 크게 성장하고 있다."),
 
         SECTION("discuss", "이야기 나누기"),
-        HEADING(3, "한국인에게 사랑 받은 한국 영화"),
+        HEADING(3, "한국인에게 사랑 받은 한국 영화", translation=
+          "Korean films Koreans have loved" "\n\n"
+          "A film is brought to completion through the work of its "
+          "director, its crew and its actors. It also carries the culture of "
+          "the country where it was made, and the feeling and the concerns "
+          "its people can share. Films that more than ten million people "
+          "have seen in Korea — ‘Miracle in Cell No. 7’, ‘Ode to My "
+          "Father’, ‘Along with the Gods: The Two Worlds’ — were loved so "
+          "widely because these elements are well expressed in them." "\n\n"
+          "‘Miracle in Cell No. 7’, which unfolds a father’s love for his "
+          "daughter with deep feeling and laughter; ‘Ode to My Father’, "
+          "which draws the story of an ordinary father who lived his whole "
+          "life for his family alone, from after the Korean War in the "
+          "1950s down to the present; and ‘Along with the Gods: The Two "
+          "Worlds’, which holds the culture of filial duty that treasures "
+          "parents and family together with the stories of the traditional "
+          "gods of Korean myth — all of them carry themes and values "
+          "Koreans can understand and feel with."),
         PARAGRAPH("영화 한 편은 감독과 {스태프}, 배우들의 노력을 통해 {완성}된다. 또한 그 영화가 제작된 "
           "나라의 문화, 국민들이 공유할 수 있는 {정서}와 관심 등을 담고 있다. 한국에서 천만 명 "
           "이상이 {관람}한 ‘7번방의 선물’, ‘국제시장’, ‘신과 함께–죄와 벌’ 등의 영화도 이런 "
@@ -142,7 +159,8 @@ CHAPTER = dict(
         FIGURE("7번방의 선물(2013)"),
         FIGURE("국제시장(2014)"),
         FIGURE("신과 함께(2017)"),
-        PARAGRAPH("★ 자신의 고향 나라에서 인기 있었던 영화를 소개해 봅시다."),
+        PARAGRAPH("★ 자신의 고향 나라에서 인기 있었던 영화를 소개해 봅시다.",
+          "Introduce a film that was popular in your home country."),
     ],
 
     english={

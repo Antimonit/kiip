@@ -1416,7 +1416,8 @@ KIIP.chapter({
    "type": "section",
    "kind": "discuss",
    "text": "이야기 나누기",
-   "topic": "부모님, 오래 오래 사세요!"
+   "topic": "부모님, 오래 오래 사세요!",
+   "titleTranslation": "Mother, Father, may you live long!"
   },
   {
    "type": "paragraph",
@@ -1467,6 +1468,78 @@ KIIP.chapter({
      "annotation": "고희연"
     },
     ")를 하는 경우가 많다."
+   ],
+   "translation": "In Korea the sixtieth birthday one meets after being born is called 환갑, or 회갑. In the old days, when average life expectancy was short, sixty and over meant a long life, and that was regarded as a great blessing. So when a parent reached 환갑, the children would invite relatives and friends and hold a feast, wishing their parent long life. Now that life expectancy has grown longer, a 환갑 feast is rarely held, and it is more common to hold a 칠순 feast (고희연) celebrating the seventieth year.",
+   "sentences": [
+    {
+     "spans": [
+      "한국에서는 태어나서 60번째 맞이하는 생일을 ",
+      {
+       "word": "환갑",
+       "annotation": "환갑"
+      },
+      " 또는 ",
+      {
+       "word": "회갑",
+       "annotation": "회갑"
+      },
+      "이라 한다. "
+     ],
+     "translation": "In Korea the sixtieth birthday one meets after being born is called 환갑, or 회갑."
+    },
+    {
+     "spans": [
+      "평균 ",
+      {
+       "word": "수명",
+       "annotation": "수명"
+      },
+      "이 짧았던 옛날에는 60살 이상은 ",
+      {
+       "word": "장수",
+       "annotation": "장수"
+      },
+      "를 의미했고, 이는 큰 ",
+      {
+       "word": "복",
+       "annotation": "복"
+      },
+      "으로 여겨졌다. "
+     ],
+     "translation": "In the old days, when average life expectancy was short, sixty and over meant a long life, and that was regarded as a great blessing."
+    },
+    {
+     "spans": [
+      "그래서 부모가 환갑을 맞이하면 자녀들은 친척과 친구들을 초대하여 잔치를 열어 부모가 오래 사시기를 ",
+      {
+       "word": "기원하였다",
+       "annotation": "기원하다"
+      },
+      ". "
+     ],
+     "translation": "So when a parent reached 환갑, the children would invite relatives and friends and hold a feast, wishing their parent long life."
+    },
+    {
+     "spans": [
+      "평균 수명이 길어진 요즘에는 환갑 잔치를 여는 경우는 ",
+      {
+       "word": "드물고",
+       "annotation": "드물다"
+      },
+      " 70살을 축하하는 ",
+      {
+       "word": "칠순",
+       "annotation": "칠순"
+      },
+      " 잔치(",
+      {
+       "word": "고희연",
+       "annotation": "고희연"
+      },
+      ")를 하는 경우가 많다."
+     ],
+     "translation": "Now that life expectancy has grown longer, a 환갑 feast is rarely held, and it is more common to hold a 칠순 feast (고희연) celebrating the seventieth year."
+    }
    ]
   },
   {
@@ -1535,7 +1608,16 @@ KIIP.chapter({
    "spans": [
     "★ 자신의 고향 나라에서 부모의 장수를 기원하는 의식이 있다면 소개해 봅시다."
    ],
-   "role": "prompt"
+   "translation": "If your home country has a rite that wishes a parent long life, introduce it.",
+   "role": "prompt",
+   "sentences": [
+    {
+     "spans": [
+      "★ 자신의 고향 나라에서 부모의 장수를 기원하는 의식이 있다면 소개해 봅시다."
+     ],
+     "translation": "If your home country has a rite that wishes a parent long life, introduce it."
+    }
+   ]
   }
  ],
  "annotations": {
