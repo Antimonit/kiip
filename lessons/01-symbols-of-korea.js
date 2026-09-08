@@ -116,7 +116,12 @@ KIIP.chapter({
   {
    "type": "paragraph",
    "spans": [
-    "한국의 공식 국가명은 대한민국이다. 대한민국은 국민 모두가 주인이 되는 나라를 의미하며 대한민국이라는 국가명을 줄여서 한국이라고 한다. 한자로는 大韓民國, 영어로는 Republic of Korea라고 한다. 남한이나 South Korea라고 하는 경우도 있는데, 이것은 북한과 ",
+    "한국의 ",
+    {
+     "word": "공식",
+     "annotation": "공식"
+    },
+    " 국가명은 대한민국이다. 대한민국은 국민 모두가 주인이 되는 나라를 의미하며 대한민국이라는 국가명을 줄여서 한국이라고 한다. 한자로는 大韓民國, 영어로는 Republic of Korea라고 한다. 남한이나 South Korea라고 하는 경우도 있는데, 이것은 북한과 ",
     {
      "word": "구별",
      "annotation": "구별"
@@ -132,7 +137,12 @@ KIIP.chapter({
    "sentences": [
     {
      "spans": [
-      "한국의 공식 국가명은 대한민국이다. "
+      "한국의 ",
+      {
+       "word": "공식",
+       "annotation": "공식"
+      },
+      " 국가명은 대한민국이다. "
      ],
      "translation": "Korea's official name is 대한민국."
     },

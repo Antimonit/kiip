@@ -200,7 +200,12 @@ KIIP.chapter({
      "word": "기원",
      "annotation": "기원"
     },
-    "하는 한국 최대 명절 중 하나이다."
+    "하는 한국 최대 ",
+    {
+     "word": "명절",
+     "annotation": "명절"
+    },
+    " 중 하나이다."
    ],
    "translation": "Koreans give the new year's greeting “새해 복 많이 받으세요” twice a year. Once on the first of January by the solar calendar, which is called 신정, and once again on the first of the first month by the lunar calendar, which is 설날. 신정 is a single day off; 설날 runs to three, taking in the day before and the day after. 설날 is one of the greatest of Korean festivals, wishing health and plenty on the year as it opens.",
    "sentences": [
@@ -253,7 +258,12 @@ KIIP.chapter({
        "word": "기원",
        "annotation": "기원"
       },
-      "하는 한국 최대 명절 중 하나이다."
+      "하는 한국 최대 ",
+      {
+       "word": "명절",
+       "annotation": "명절"
+      },
+      " 중 하나이다."
      ],
      "translation": "설날 is one of the greatest of Korean festivals, wishing health and plenty on the year as it opens."
     }

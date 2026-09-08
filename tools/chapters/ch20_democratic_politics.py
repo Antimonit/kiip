@@ -601,6 +601,13 @@ CHAPTER = dict(
             characters=[("制", "제", "system — as in 제도, 견제"),
                         ("定", "정", "to fix — as in 지정, 특정")],
         ),
+        "집행": dict(
+            hanja="執行", meaning="to carry out, to execute (a law, a budget)",
+            characters=[("執", "집", "to hold, to take charge of — as in 집권, 고집"),
+                        ("行", "행", "to go, to act — as in 행정, 실행, 시행")],
+            notes=["What the 행정부 does with a law the 입법부 has enacted: "
+                   "법률 집행. 집행되다 for the law being carried out."],
+        ),
         "정책": dict(
             hanja="政策", meaning="a policy",
             characters=[("政", "정", "government — as in 정치, 행정부"),
@@ -731,9 +738,8 @@ CHAPTER = dict(
     },
 
     extraNotes=[
-        "Chapter 20 has no Google Doc: the Korean is transcribed from the "
-        "photos of pp. 110-113 rather than from a transcription of yours, so "
-        "mistakes in it are mine and it is worth reading against the pages.",
+        # read and approved: the provenance is in this module's docstring,
+        # so the page no longer carries it
         "The 권력 분립 diagram on p. 112 puts 국민 at the centre with the three "
         "branches around it and 견제 arrows between them. The three branches "
         "and what each does are set as a table; the arrows are described in "

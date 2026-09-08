@@ -177,7 +177,17 @@ KIIP.chapter({
      "word": "연립",
      "annotation": "연립"
     },
-    " 주택, 아파트 등)으로 나눌 수 있다. 단독 주택은 보통 한 가구가 독립적으로 생활할 수 있도록 집을 한 채씩 각각 ",
+    " 주택, ",
+    {
+     "word": "아파트",
+     "annotation": "아파트"
+    },
+    " 등)으로 나눌 수 있다. ",
+    {
+     "word": "단독 주택",
+     "annotation": "단독 주택"
+    },
+    "은 보통 한 가구가 독립적으로 생활할 수 있도록 집을 한 채씩 각각 ",
     {
      "word": "지은",
      "annotation": "지은"
@@ -233,13 +243,22 @@ KIIP.chapter({
        "word": "연립",
        "annotation": "연립"
       },
-      " 주택, 아파트 등)으로 나눌 수 있다. "
+      " 주택, ",
+      {
+       "word": "아파트",
+       "annotation": "아파트"
+      },
+      " 등)으로 나눌 수 있다. "
      ],
      "translation": "The types of homes Koreans live in can broadly be divided into single-family homes (단독 주택 — including general houses, multi-household houses, etc.) and multi-unit housing (공동 주택 — including multi-family houses, row houses, apartments, etc.)."
     },
     {
      "spans": [
-      "단독 주택은 보통 한 가구가 독립적으로 생활할 수 있도록 집을 한 채씩 각각 ",
+      {
+       "word": "단독 주택",
+       "annotation": "단독 주택"
+      },
+      "은 보통 한 가구가 독립적으로 생활할 수 있도록 집을 한 채씩 각각 ",
       {
        "word": "지은",
        "annotation": "지은"
@@ -284,7 +303,11 @@ KIIP.chapter({
   {
    "type": "paragraph",
    "spans": [
-    "공동 주택은 한 건물에 여러 가구가 각각 독립된 생활을 할 수 있게 만든 집의 형태를 말한다. 다세대 주택, ",
+    {
+     "word": "공동 주택",
+     "annotation": "공동 주택"
+    },
+    "은 한 건물에 여러 가구가 각각 독립된 생활을 할 수 있게 만든 집의 형태를 말한다. 다세대 주택, ",
     {
      "word": "연립 주택",
      "annotation": "연립 주택"
@@ -320,7 +343,11 @@ KIIP.chapter({
    "sentences": [
     {
      "spans": [
-      "공동 주택은 한 건물에 여러 가구가 각각 독립된 생활을 할 수 있게 만든 집의 형태를 말한다. "
+      {
+       "word": "공동 주택",
+       "annotation": "공동 주택"
+      },
+      "은 한 건물에 여러 가구가 각각 독립된 생활을 할 수 있게 만든 집의 형태를 말한다. "
      ],
      "translation": "공동 주택 (multi-unit housing) refers to a housing form built within one building so that several households can each live independently."
     },
@@ -1035,7 +1062,12 @@ KIIP.chapter({
   {
    "type": "paragraph",
    "spans": [
-    "거주하거나 구매할 집을 찾고자 할 때 부동산을 직접 방문하지 않고도 온라인으로도 알아볼 수 있다. 부동산 사이트에서 원하는 지역을 선택한 후, 집의 형태(아파트, 빌라, 주택, 오피스텔, 상가 등), 거래 방식(매매, 전세, 월세, 단기 임대), 가격대 등에 따라 검색해 볼 수 있다. 다만, 온라인 사이트에서 ",
+    "거주하거나 구매할 집을 찾고자 할 때 부동산을 직접 방문하지 않고도 온라인으로도 알아볼 수 있다. 부동산 사이트에서 원하는 지역을 선택한 후, 집의 형태(아파트, ",
+    {
+     "word": "빌라",
+     "annotation": "빌라"
+    },
+    ", 주택, 오피스텔, 상가 등), 거래 방식(매매, 전세, 월세, 단기 임대), 가격대 등에 따라 검색해 볼 수 있다. 다만, 온라인 사이트에서 ",
     {
      "word": "매물",
      "annotation": "매물"

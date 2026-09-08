@@ -298,7 +298,12 @@ KIIP.chapter({
   {
    "type": "paragraph",
    "spans": [
-    "평생 교육은 국가평생교육진흥원 및 시·도 평생 교육진흥원, 시·군·구 평생 학습관, 학교 부설 평생 교육원 외에도 행정복지센터, 도서관, 문화 시설, 박물관, 사회 복지관, 노인 복지관, 장애인 복지관, 청소년 수련 시설 등에서 실시되고 있다. 지역 주민이 자유롭게 참여할 수 있는 다양한 평생 교육 프로그램이 개설되어 있고, ",
+    "평생 교육은 국가평생교육진흥원 및 시·도 평생 교육진흥원, 시·군·구 평생 학습관, 학교 부설 평생 교육원 외에도 행정복지센터, ",
+    {
+     "word": "도서관",
+     "annotation": "도서관"
+    },
+    ", 문화 시설, 박물관, 사회 복지관, 노인 복지관, 장애인 복지관, 청소년 수련 시설 등에서 실시되고 있다. 지역 주민이 자유롭게 참여할 수 있는 다양한 평생 교육 프로그램이 개설되어 있고, ",
     {
      "word": "수강",
      "annotation": "수강"
@@ -309,7 +314,12 @@ KIIP.chapter({
    "sentences": [
     {
      "spans": [
-      "평생 교육은 국가평생교육진흥원 및 시·도 평생 교육진흥원, 시·군·구 평생 학습관, 학교 부설 평생 교육원 외에도 행정복지센터, 도서관, 문화 시설, 박물관, 사회 복지관, 노인 복지관, 장애인 복지관, 청소년 수련 시설 등에서 실시되고 있다. "
+      "평생 교육은 국가평생교육진흥원 및 시·도 평생 교육진흥원, 시·군·구 평생 학습관, 학교 부설 평생 교육원 외에도 행정복지센터, ",
+      {
+       "word": "도서관",
+       "annotation": "도서관"
+      },
+      ", 문화 시설, 박물관, 사회 복지관, 노인 복지관, 장애인 복지관, 청소년 수련 시설 등에서 실시되고 있다. "
      ],
      "translation": "Lifelong learning is carried on at the National Institute for Lifelong Education, at the metropolitan and provincial institutes, at the city, county and district lifelong learning centres, and at lifelong education centres attached to schools — and beyond those, at community service centres, libraries, cultural facilities, museums, welfare centres for the general public, for the elderly and for disabled people, and at youth training facilities."
     },
@@ -625,7 +635,12 @@ KIIP.chapter({
      "word": "내일배움카드",
      "annotation": "내일배움카드"
     },
-    "를 발급하여 지원하고 있다. 컴퓨터, 웹디자인, 네일아트, 피부미용, 바리스타, 제과제빵, 요리 등 취업을 위한 다양한 교육을 받을 수 있다."
+    "를 발급하여 지원하고 있다. 컴퓨터, 웹디자인, 네일아트, 피부미용, ",
+    {
+     "word": "바리스타",
+     "annotation": "바리스타"
+    },
+    ", 제과제빵, 요리 등 취업을 위한 다양한 교육을 받을 수 있다."
    ],
    "translation": "The Ministry of Employment and Labor issues the Tomorrow Learning Card, so that anyone wanting to find work or start a business can take vocational training. A wide range of courses aimed at employment is available — computing, web design, nail art, skin care, barista work, baking and confectionery, cooking and more.",
    "sentences": [
@@ -647,7 +662,12 @@ KIIP.chapter({
     },
     {
      "spans": [
-      "컴퓨터, 웹디자인, 네일아트, 피부미용, 바리스타, 제과제빵, 요리 등 취업을 위한 다양한 교육을 받을 수 있다."
+      "컴퓨터, 웹디자인, 네일아트, 피부미용, ",
+      {
+       "word": "바리스타",
+       "annotation": "바리스타"
+      },
+      ", 제과제빵, 요리 등 취업을 위한 다양한 교육을 받을 수 있다."
      ],
      "translation": "A wide range of courses aimed at employment is available — computing, web design, nail art, skin care, barista work, baking and confectionery, cooking and more."
     }

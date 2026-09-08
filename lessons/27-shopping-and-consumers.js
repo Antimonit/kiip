@@ -129,7 +129,12 @@ KIIP.chapter({
   {
    "type": "paragraph",
    "spans": [
-    "한국에는 다양한 종류의 시장이 있다. 날마다 열리는 시장을 ",
+    "한국에는 다양한 종류의 ",
+    {
+     "word": "시장",
+     "annotation": "시장"
+    },
+    "이 있다. 날마다 열리는 시장을 ",
     {
      "word": "상설",
      "annotation": "상설"
@@ -190,7 +195,12 @@ KIIP.chapter({
    "sentences": [
     {
      "spans": [
-      "한국에는 다양한 종류의 시장이 있다. "
+      "한국에는 다양한 종류의 ",
+      {
+       "word": "시장",
+       "annotation": "시장"
+      },
+      "이 있다. "
      ],
      "translation": "Korea has markets of many kinds."
     },

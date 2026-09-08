@@ -47,14 +47,14 @@ KIIP.chapter({
   {
    "type": "heading",
    "level": 4,
-   "text": "02 자신의 고향 나라와 한국에서 생활하면서 이처럼 {경제적} 선택을 해야 했던 경험을 이야기해 볼까요?",
+   "text": "02 자신의 고향 나라와 한국에서 생활하면서 이처럼 경제적 선택을 해야 했던 경험을 이야기해 볼까요?",
    "spans": [
-    "02 자신의 고향 나라와 한국에서 생활하면서 이처럼 {",
+    "02 자신의 고향 나라와 한국에서 생활하면서 이처럼 ",
     {
      "word": "경제적",
      "annotation": "경제적"
     },
-    "} 선택을 해야 했던 경험을 이야기해 볼까요?"
+    " 선택을 해야 했던 경험을 이야기해 볼까요?"
    ]
   },
   {
@@ -1015,7 +1015,12 @@ KIIP.chapter({
      "word": "간편 결제",
      "annotation": "간편 결제"
     },
-    " 서비스를 활용하는 사람도 크게 늘어나고 있다. 모바일 간편 결제 서비스는 주로 ‘○○ 페이’라는 이름을 가지고 있다."
+    " 서비스를 활용하는 사람도 크게 늘어나고 있다. 모바일 간편 ",
+    {
+     "word": "결제",
+     "annotation": "결제"
+    },
+    " 서비스는 주로 ‘○○ 페이’라는 이름을 가지고 있다."
    ],
    "translation": "Lately cash — coins and notes — has been used less, and the share taken by credit and debit cards has grown. As smartphones have spread, the number of people using mobile payment services has risen sharply too. Those services mostly go by the name of “○○ Pay”.",
    "sentences": [
@@ -1058,7 +1063,12 @@ KIIP.chapter({
     },
     {
      "spans": [
-      "모바일 간편 결제 서비스는 주로 ‘○○ 페이’라는 이름을 가지고 있다."
+      "모바일 간편 ",
+      {
+       "word": "결제",
+       "annotation": "결제"
+      },
+      " 서비스는 주로 ‘○○ 페이’라는 이름을 가지고 있다."
      ],
      "translation": "Those services mostly go by the name of “○○ Pay”."
     }
@@ -1107,7 +1117,12 @@ KIIP.chapter({
      "word": "합리적",
      "annotation": "합리적"
     },
-    "으로 선택하는 능력을 ",
+    "으로 ",
+    {
+     "word": "선택",
+     "annotation": "선택"
+    },
+    "하는 능력을 ",
     {
      "word": "길러야",
      "annotation": "기르다"
@@ -1173,7 +1188,12 @@ KIIP.chapter({
        "word": "합리적",
        "annotation": "합리적"
       },
-      "으로 선택하는 능력을 ",
+      "으로 ",
+      {
+       "word": "선택",
+       "annotation": "선택"
+      },
+      "하는 능력을 ",
       {
        "word": "길러야",
        "annotation": "기르다"
@@ -1393,7 +1413,12 @@ KIIP.chapter({
     {
      "blank": "화폐"
     },
-    "는 사람들 간에 재화나 서비스를 사고 팔 때 사용하는 수단이다."
+    "는 사람들 간에 재화나 서비스를 사고 팔 때 사용하는 ",
+    {
+     "word": "수단",
+     "annotation": "수단"
+    },
+    "이다."
    ]
   },
   {

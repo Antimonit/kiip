@@ -751,13 +751,23 @@ KIIP.chapter({
   {
    "type": "paragraph",
    "spans": [
-    "한국에서는 근무를 마친 후에 종종 회사 직원들끼리 회식을 한다. 회사 직원들끼리 친밀한 관계를 형성하기 위해서 또는 축하나 위로를 받아야 할 직장 동료가 있을 때 회식을 하는 경우가 많다. 회식하는 날은 식사와 이야기가 밤늦게까지 이어지기도 한다."
+    "한국에서는 근무를 마친 후에 종종 회사 직원들끼리 ",
+    {
+     "word": "회식",
+     "annotation": "회식"
+    },
+    "을 한다. 회사 직원들끼리 친밀한 관계를 형성하기 위해서 또는 축하나 위로를 받아야 할 직장 동료가 있을 때 회식을 하는 경우가 많다. 회식하는 날은 식사와 이야기가 밤늦게까지 이어지기도 한다."
    ],
    "translation": "In Korea the staff of a company often eat together once work is done. Such a 회식 is usually held to build a close relationship among colleagues, or when a colleague has something to be congratulated or consoled for. On the day of a 회식 the eating and the talking can run late into the night.",
    "sentences": [
     {
      "spans": [
-      "한국에서는 근무를 마친 후에 종종 회사 직원들끼리 회식을 한다. "
+      "한국에서는 근무를 마친 후에 종종 회사 직원들끼리 ",
+      {
+       "word": "회식",
+       "annotation": "회식"
+      },
+      "을 한다. "
      ],
      "translation": "In Korea the staff of a company often eat together once work is done."
     },

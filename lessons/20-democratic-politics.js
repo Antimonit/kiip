@@ -36,19 +36,29 @@ KIIP.chapter({
   {
    "type": "heading",
    "level": 4,
-   "text": "02 어떤 {조직}이나 {단체}에서 함께 생활하는 사람과 {갈등}이 생겼을 때, 이를 {민주적}으로 해결하기 위해서는 어떻게 해야 합니까?",
+   "text": "02 어떤 조직이나 단체에서 함께 생활하는 사람과 갈등이 생겼을 때, 이를 민주적으로 해결하기 위해서는 어떻게 해야 합니까?",
    "spans": [
-    "02 어떤 {",
+    "02 어떤 ",
     {
      "word": "조직",
      "annotation": "조직"
     },
-    "}이나 {단체}에서 함께 생활하는 사람과 {",
+    "이나 ",
+    {
+     "word": "단체",
+     "annotation": "단체"
+    },
+    "에서 함께 생활하는 사람과 ",
     {
      "word": "갈등",
      "annotation": "갈등"
     },
-    "}이 생겼을 때, 이를 {민주적}으로 해결하기 위해서는 어떻게 해야 합니까?"
+    "이 생겼을 때, 이를 ",
+    {
+     "word": "민주적",
+     "annotation": "민주적"
+    },
+    "으로 해결하기 위해서는 어떻게 해야 합니까?"
    ]
   },
   {
@@ -2917,6 +2927,27 @@ KIIP.chapter({
    "notes": [],
    "surfaces": []
   },
+  "집행": {
+   "headword": "집행",
+   "hanja": "執行",
+   "meaning": "to carry out, to execute (a law, a budget)",
+   "characters": [
+    {
+     "char": "執",
+     "reading": "집",
+     "gloss": "to hold, to take charge of — as in 집권, 고집"
+    },
+    {
+     "char": "行",
+     "reading": "행",
+     "gloss": "to go, to act — as in 행정, 실행, 시행"
+    }
+   ],
+   "notes": [
+    "What the 행정부 does with a law the 입법부 has enacted: 법률 집행. 집행되다 for the law being carried out."
+   ],
+   "surfaces": []
+  },
   "정책": {
    "headword": "정책",
    "hanja": "政策",
@@ -3380,9 +3411,6 @@ KIIP.chapter({
   }
  },
  "notes": [
-  {
-   "why": "Chapter 20 has no Google Doc: the Korean is transcribed from the photos of pp. 110-113 rather than from a transcription of yours, so mistakes in it are mine and it is worth reading against the pages."
-  },
   {
    "why": "The 권력 분립 diagram on p. 112 puts 국민 at the centre with the three branches around it and 견제 arrows between them. The three branches and what each does are set as a table; the arrows are described in the caption."
   }

@@ -308,7 +308,12 @@ KIIP.chapter({
      "word": "보육비",
      "annotation": "보육비"
     },
-    "나 유아 ",
+    "나 ",
+    {
+     "word": "유아",
+     "annotation": "유아"
+    },
+    " ",
     {
      "word": "학비",
      "annotation": "학비"
@@ -339,7 +344,12 @@ KIIP.chapter({
        "word": "보육비",
        "annotation": "보육비"
       },
-      "나 유아 ",
+      "나 ",
+      {
+       "word": "유아",
+       "annotation": "유아"
+      },
+      " ",
       {
        "word": "학비",
        "annotation": "학비"
