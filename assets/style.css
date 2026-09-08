@@ -964,9 +964,13 @@ button.anno.is-glossed[aria-expanded="true"] {
 }
 
 .anno-card {
+  /* the card's own colour: its edge and the word it explains, so a card
+     reads as the same kind of thing as the word that opened it */
+  --card-edge: var(--accent);
+  --card-ink: var(--accent-ink);
   background: var(--raised);
   border: 1px solid var(--rule);
-  border-left: 3px solid var(--card-edge, var(--accent));
+  border-left: 3px solid var(--card-edge);
   border-radius: 4px;
   padding: 1rem 1.1rem;
   margin: 0.2rem 0 var(--flow);
@@ -977,13 +981,17 @@ button.anno.is-glossed[aria-expanded="true"] {
 /* a word the textbook glosses is marked in violet, and says so in violet */
 .anno-card.is-glossed {
   --card-edge: var(--anno-gloss-ink);
+  --card-ink: var(--anno-gloss-ink);
 }
-
-.anno-card.is-glossed .headword { color: var(--anno-gloss-ink); }
 
 .anno-card p { margin: 0 0 0.75rem; }
 .anno-card p:last-child { margin-bottom: 0; }
-.anno-card .headword { font-family: var(--ko); font-size: 1.15em; font-weight: 600; }
+.anno-card .headword {
+  font-family: var(--ko);
+  font-size: 1.15em;
+  font-weight: 600;
+  color: var(--card-ink);
+}
 .anno-card .hanja { font-family: var(--ko); color: var(--ink-soft); }
 .anno-card .hanja b { color: var(--ink); font-weight: 600; }
 .anno-card .usage { color: var(--ink-soft); white-space: pre-line; }
