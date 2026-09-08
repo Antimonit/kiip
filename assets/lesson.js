@@ -241,8 +241,12 @@
       /* A cell is plain text, or text that the book merges across columns
          or down rows. */
       case "table": {
+        /* A cell is plain text, or spans where the book marks a word in
+           it — the 법률 제정 / 집행 / 적용 column of chapter 20's table. */
         function cell(tag, c) {
-          var n = el(tag, null, typeof c === "string" ? c : c.text);
+          var n = el(tag, null,
+                     typeof c === "string" ? c : (c.spans ? null : c.text));
+          if (typeof c !== "string" && c.spans) fillSpans(n, c.spans);
           if (c.span) n.colSpan = c.span;
           if (c.spanDown) n.rowSpan = c.spanDown;
           return n;

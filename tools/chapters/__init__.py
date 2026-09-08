@@ -136,12 +136,29 @@ def FIGURE(caption):
     return {"type": "figure", "text": caption}
 
 
+def _cell(c):
+    """One cell: plain text, or spans where it marks a word.
+
+    A cell reads like any other line of the book, so {word} works in it too.
+    A cell with nothing marked stays a plain string, which is what most of
+    them are.
+    """
+    if isinstance(c, dict):
+        text = c.get("text", "")
+        if "{" in text:
+            c = dict(c, spans=_spans(text))
+            c.pop("text")
+        return c
+    return {"spans": _spans(c)} if "{" in c else c
+
+
 def TABLE(header, rows=None):
     """A table. Called with one argument when the book prints no header row."""
     if rows is None:
-        return {"type": "table", "rows": [list(r) for r in header]}
-    return {"type": "table", "header": list(header),
-            "rows": [list(r) for r in rows]}
+        return {"type": "table", "rows": [[_cell(c) for c in r]
+                                          for r in header]}
+    return {"type": "table", "header": [_cell(c) for c in header],
+            "rows": [[_cell(c) for c in r] for r in rows]}
 
 
 def CELL(text, columns=None, down=None):
