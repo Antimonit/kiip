@@ -3537,9 +3537,6 @@ KIIP.chapter({
  },
  "notes": [
   {
-   "why": "Chapter 17 has no Google Doc: the Korean is transcribed from the photos of pp. 92-95 rather than from a transcription of yours, so mistakes in it are mine and it is worth reading against the pages."
-  },
-  {
    "why": "The figure on p. 94 is a pie chart of eight slices. Four of them — 원불교, 유교, 천도교 and 기타 — are too small to read off the page and together come to under 1%, so only the four large ones are drawn and the caption says what is missing."
   },
   {

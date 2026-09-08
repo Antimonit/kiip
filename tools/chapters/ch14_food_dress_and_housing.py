@@ -718,9 +718,6 @@ CHAPTER = dict(
     },
 
     extraNotes=[
-        "Chapter 14 has no Google Doc: the Korean is transcribed from the "
-        "photos of pp. 80-83 rather than from a transcription of yours, so "
-        "mistakes in it are mine and it is worth reading against the pages.",
         "The warm-up on p. 80 is a world map with a bubble over each region "
         "and a small bar chart of 2009, 2014 and 2017 beside it. Only the "
         "2017 totals are drawn here, as one bar per region; the China and "

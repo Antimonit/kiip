@@ -2677,9 +2677,6 @@ KIIP.chapter({
  },
  "notes": [
   {
-   "why": "Chapter 13 has no Google Doc: the Korean is transcribed from the photos of pp. 76-79 rather than from a transcription of yours, so mistakes in it are mine and it is worth reading against the pages."
-  },
-  {
    "why": "The 관련 단원 table on p. 76 merges 기본 and 문화 across its two rows. A merged cell cannot be expressed here, so both values repeat."
   },
   {

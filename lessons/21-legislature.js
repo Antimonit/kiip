@@ -3218,9 +3218,6 @@ KIIP.chapter({
  },
  "notes": [
   {
-   "why": "Chapter 21 has no Google Doc: the Korean is transcribed from the photos of pp. 114-117 rather than from a transcription of yours, so mistakes in it are mine and it is worth reading against the pages."
-  },
-  {
    "why": "The review gaps on p. 117 carry your own answers, written in by hand — 입법부, 300, 법, 예산, 감사. Those are set as the covered answers; the one you left blank, 국회의원, is left blank here too."
   },
   {

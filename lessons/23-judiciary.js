@@ -3286,9 +3286,6 @@ KIIP.chapter({
  },
  "notes": [
   {
-   "why": "Chapter 23 has no Google Doc: the Korean is my reading of the photos of pp. 122-125, so it is worth checking against the pages."
-  },
-  {
    "why": "The three principles of 이야기 나누기 are printed as a two-column table with no header; they are set here as a list, each principle naming itself."
   },
   {

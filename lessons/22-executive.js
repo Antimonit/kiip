@@ -3514,9 +3514,6 @@ KIIP.chapter({
  },
  "notes": [
   {
-   "why": "Chapter 22 has no Google Doc: the Korean is my reading of the photos of pp. 118-121, so it is worth checking against the pages."
-  },
-  {
    "why": "The twelve portraits on p. 120 are set as a table of names and terms — the photographs themselves are not reproduced."
   },
   {

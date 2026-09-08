@@ -2751,9 +2751,6 @@ KIIP.chapter({
  },
  "notes": [
   {
-   "why": "Chapter 10 is the one chapter with a Doc that is not used. That Doc carries no comments at all and six typos the photos do not have, so the Korean here is transcribed from the photos of pp. 58-61 and the mistakes in it are mine."
-  },
-  {
    "why": "The 학사 일정 table on p. 59 groups its rows under 1학기 and 2학기 with a merged cell down the side. That is set here as a 학기 column repeating the value on every row, since a row-spanning cell is not something the table block can express."
   },
   {

@@ -724,9 +724,6 @@ CHAPTER = dict(
     },
 
     extraNotes=[
-        "Chapter 15 has no Google Doc: the Korean is transcribed from the "
-        "photos of pp. 84-87 rather than from a transcription of yours, so "
-        "mistakes in it are mine and it is worth reading against the pages.",
         "The 장례식 article on p. 86 is hard to read: the sentences about the "
         "third day appear twice over, once faintly. I have taken the fainter "
         "run as show-through from the facing page and kept the darker one, "

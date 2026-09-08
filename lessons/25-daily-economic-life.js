@@ -2992,9 +2992,6 @@ KIIP.chapter({
  },
  "notes": [
   {
-   "why": "Chapter 25 has no Google Doc: the Korean is my reading of the photos of pp. 136-139, so it is worth checking against the pages."
-  },
-  {
    "why": "The 공공 요금 gloss on p. 137 prints 목적하는 하는, with 하는 twice. That is the book's own slip and stands as printed."
   },
   {

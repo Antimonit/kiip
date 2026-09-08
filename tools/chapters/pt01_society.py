@@ -486,10 +486,9 @@ PART = dict(
     },
 
     extraNotes=[
-        "제1편's closing spread runs pp. 48-51 and is transcribed from the "
-        "photos. Its 대단원 정리 is a mind map of eight boxes rather than a "
-        "table; the boxes are set here in chapter order, which the map itself "
-        "does not have.",
+        "The 대단원 정리 on pp. 48-49 is a mind map of eight boxes rather than "
+        "a table; the boxes are set here in chapter order, which the map "
+        "itself does not have.",
         "The 대단원 정리 box for chapter 4 reads 교통와 통신, where the chapter "
         "is 교통과 통신. That is the book's own slip and stands as printed.",
         "The quiz's answers and the 종합 평가's are mine, worked out from the "

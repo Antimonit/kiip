@@ -3393,9 +3393,6 @@ KIIP.chapter({
  },
  "notes": [
   {
-   "why": "Chapter 26 has no Google Doc: the Korean is my reading of the photos of pp. 140-143, so it is worth checking against the pages."
-  },
-  {
    "why": "The margin on p. 142 heads its OECD entry 경제협력기구, one word short of 경제협력개발기구, which is how the article itself writes it. Both stand as printed, and the entry is filed under the full name."
   },
   {

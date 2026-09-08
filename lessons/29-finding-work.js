@@ -2599,9 +2599,6 @@ KIIP.chapter({
  },
  "notes": [
   {
-   "why": "Chapter 29 has no Google Doc: the Korean is my reading of the photos of pp. 152-155, so it is worth checking against the pages."
-  },
-  {
    "why": "The OECD youth unemployment figures on p. 153 are set as a table, as the book prints them, with the caption kept as a figure beneath."
   },
   {

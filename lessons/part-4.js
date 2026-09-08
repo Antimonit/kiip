@@ -2050,9 +2050,6 @@ KIIP.chapter({
  },
  "notes": [
   {
-   "why": "제4편's closing spread runs pp. 130-133 and is transcribed from the photos."
-  },
-  {
    "why": "The crossword grid is not reproduced; its clues are, with the answers covered. Those answers, and the answers to the 종합 평가, are mine — worked out from the chapters. The book keeps its own in 정답보기 on p. 262, which is not photographed."
   },
   {

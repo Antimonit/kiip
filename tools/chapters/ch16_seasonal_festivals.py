@@ -625,9 +625,6 @@ CHAPTER = dict(
     },
 
     extraNotes=[
-        "Chapter 16 has no Google Doc: the Korean is transcribed from the "
-        "photos of pp. 88-91 rather than from a transcription of yours, so "
-        "mistakes in it are mine and it is worth reading against the pages.",
         "The 24절기 box on p. 90 is a table of four seasons against six terms "
         "each; the terms are set as one cell a season rather than one cell a "
         "term, which is how the page prints them.",

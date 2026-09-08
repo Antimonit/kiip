@@ -763,9 +763,6 @@ CHAPTER = dict(
     },
 
     extraNotes=[
-        "Chapter 19 has no Google Doc: the Korean is transcribed from the "
-        "photos of pp. 100-103 rather than from a transcription of yours, so "
-        "mistakes in it are mine and it is worth reading against the pages.",
         "The 여가시간 및 여가비용 추이 figure on p. 101 is not drawn. It layers "
         "three series over eight years — leisure hours on working days and on "
         "holidays, and monthly cost — and its numbers cannot be read reliably "

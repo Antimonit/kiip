@@ -637,8 +637,6 @@ CHAPTER = dict(
     },
 
     extraNotes=[
-        "Chapter 28 has no Google Doc: the Korean is my reading of the photos "
-        "of pp. 148-151, so it is worth checking against the pages.",
         "The margin gloss for ATM is my own wording: the book heads the entry "
         "ATM(현금자동입출금기) and leaves the definition to the article.",
         "The five rules against messenger phishing are printed numbered in "

@@ -419,8 +419,6 @@ CHAPTER = dict(
     },
 
     extraNotes=[
-        "Chapter 24 has no Google Doc: the Korean is my reading of the photos "
-        "of pp. 126-129, so it is worth checking against the pages.",
         "The 4대 원칙 table on p. 127 is printed with no header, so it is set "
         "as a list, each principle naming itself, and the 반의어 box beside "
         "it likewise.",

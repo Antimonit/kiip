@@ -549,8 +549,6 @@ CHAPTER = dict(
     },
 
     extraNotes=[
-        "Chapter 27 has no Google Doc: the Korean is my reading of the photos "
-        "of pp. 144-147, so it is worth checking against the pages.",
         "Two figures on p. 145 are not reproduced: the 모바일쇼핑 거래액 graphic, "
         "whose two totals are in its caption instead, and the "
         "오프라인·온라인 쇼핑 현황 line chart, whose series are too small to read "

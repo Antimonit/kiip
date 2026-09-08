@@ -853,9 +853,6 @@ CHAPTER = dict(
     },
 
     extraNotes=[
-        "Chapter 18 has no Google Doc: the Korean is transcribed from the "
-        "photos of pp. 96-99 rather than from a transcription of yours, so "
-        "mistakes in it are mine and it is worth reading against the pages.",
         "The warm-up on p. 96 is a four-panel comic. The speech bubbles are "
         "too small to read reliably off the photograph, so the panels are "
         "described in one caption and only the four words you wrote beside "
