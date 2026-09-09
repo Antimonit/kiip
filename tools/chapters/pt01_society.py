@@ -192,6 +192,18 @@ PART = dict(
     ],
 
     extraAnnotations={
+        "부르다": dict(
+            meaning="to call (something) by a name",
+            notes=["4대 국경일이라고 불렀으며 — “were called the four great "
+                   "national holidays”. 부르다 also means to sing and to "
+                   "summon."],
+        ),
+        "상징적": dict(
+            hanja="象徵的", meaning="symbolic",
+            characters=[("象", "상", "image, likeness — as in 상징, 현상"),
+                        ("徵", "징", "a sign — as in 징조, 특징"),
+                        ("的", "적", "the adjective suffix")],
+        ),
         "조합": dict(
             hanja="組合", meaning="combining, a combination",
             characters=[("組", "조", "to organise — as in 조직, 조합원"),

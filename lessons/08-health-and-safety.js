@@ -1012,7 +1012,7 @@ KIIP.chapter({
     ", 전염병 원인 등이 있는지 ",
     {
      "word": "살피고",
-     "annotation": "살피고"
+     "annotation": "살피다"
     },
     " 그러한 것을 발견할 경우에는 관계 ",
     {
@@ -1048,7 +1048,7 @@ KIIP.chapter({
       ", 전염병 원인 등이 있는지 ",
       {
        "word": "살피고",
-       "annotation": "살피고"
+       "annotation": "살피다"
       },
       " 그러한 것을 발견할 경우에는 관계 ",
       {
@@ -2331,7 +2331,7 @@ KIIP.chapter({
    ],
    "surfaces": []
   },
-  "살피고": {
+  "살피다": {
    "headword": "살피다",
    "hanja": null,
    "meaning": "to look into/examine carefully",

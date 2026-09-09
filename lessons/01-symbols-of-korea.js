@@ -854,7 +854,7 @@ KIIP.chapter({
     "이 쉽게 배워 쓸 수 있는 글자를 만드는 것이다. 훈민정음 해례본이 만들어진 날을 기념하여 10월 9일을 한글날로 정해 기념하고 있다. 유네스코에서도 이 책을 세계기록유산으로 ",
     {
      "word": "지정하",
-     "annotation": "지정하다"
+     "annotation": "지정"
     },
     "였고 세계 ",
     {
@@ -907,7 +907,7 @@ KIIP.chapter({
       "유네스코에서도 이 책을 세계기록유산으로 ",
       {
        "word": "지정하",
-       "annotation": "지정하다"
+       "annotation": "지정"
       },
       "였고 세계 ",
       {
@@ -1007,12 +1007,12 @@ KIIP.chapter({
        "나는 자랑스러운 태극기 앞에 자유롭고 정의로운 대한민국의 무궁한 ",
        {
         "word": "영광",
-        "annotation": "영향"
+        "annotation": "영광"
        },
        "을 위하여 ",
        {
         "word": "충성",
-        "annotation": "출성"
+        "annotation": "충성"
        },
        "을 다할 것을 굳게 ",
        {
@@ -1582,7 +1582,7 @@ KIIP.chapter({
    ],
    "surfaces": []
   },
-  "지정하다": {
+  "지정": {
    "headword": "지정",
    "hanja": "指定",
    "meaning": "designation/official appointment",
@@ -1650,7 +1650,7 @@ KIIP.chapter({
     "향하"
    ]
   },
-  "영향": {
+  "영광": {
    "headword": "영광",
    "hanja": null,
    "meaning": "honor / glory",
@@ -1658,7 +1658,7 @@ KIIP.chapter({
    "notes": [],
    "surfaces": []
   },
-  "출성": {
+  "충성": {
    "headword": "충성",
    "hanja": null,
    "meaning": "fidelity / loyalty",

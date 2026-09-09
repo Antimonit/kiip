@@ -279,7 +279,7 @@ KIIP.chapter({
     " 등에서 상대적으로 ",
     {
      "word": "불리함",
-     "annotation": "불리함"
+     "annotation": "불리하다"
     },
     "을 겪는 경우도 나타나고 있다."
    ],
@@ -353,7 +353,7 @@ KIIP.chapter({
       " 등에서 상대적으로 ",
       {
        "word": "불리함",
-       "annotation": "불리함"
+       "annotation": "불리하다"
       },
       "을 겪는 경우도 나타나고 있다."
      ],
@@ -1734,7 +1734,7 @@ KIIP.chapter({
    "notes": [],
    "surfaces": []
   },
-  "불리함": {
+  "불리하다": {
    "headword": "불리하다",
    "hanja": "不利하다",
    "meaning": "to be disadvantageous",

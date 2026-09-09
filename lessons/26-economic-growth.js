@@ -432,7 +432,7 @@ KIIP.chapter({
     "하였다. 과거에 매우 가난했던 한국이 지금처럼 ",
     {
      "word": "눈부신",
-     "annotation": "눈부신"
+     "annotation": "눈부시다"
     },
     " 성장을 한 것을 가리켜 사람들은 ‘",
     {
@@ -479,7 +479,7 @@ KIIP.chapter({
       "과거에 매우 가난했던 한국이 지금처럼 ",
       {
        "word": "눈부신",
-       "annotation": "눈부신"
+       "annotation": "눈부시다"
       },
       " 성장을 한 것을 가리켜 사람들은 ‘",
       {
@@ -2184,7 +2184,7 @@ KIIP.chapter({
    "notes": [],
    "surfaces": []
   },
-  "눈부신": {
+  "눈부시다": {
    "headword": "눈부시다",
    "hanja": null,
    "meaning": "dazzling, brilliant",

@@ -389,7 +389,7 @@ KIIP.chapter({
     " ",
     {
      "word": "통행할",
-     "annotation": "통행하다"
+     "annotation": "통행"
     },
     " 수 있도록 하는 제도이다."
    ],
@@ -421,7 +421,7 @@ KIIP.chapter({
       " ",
       {
        "word": "통행할",
-       "annotation": "통행하다"
+       "annotation": "통행"
       },
       " 수 있도록 하는 제도이다."
      ],
@@ -1319,7 +1319,7 @@ KIIP.chapter({
     "원활히 "
    ]
   },
-  "통행하다": {
+  "통행": {
    "headword": "통행",
    "hanja": "通行",
    "meaning": "passage/traffic/passing through",

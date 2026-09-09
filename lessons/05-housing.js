@@ -195,7 +195,7 @@ KIIP.chapter({
     " 형태를 말한다. 단독 주택에는 여러 가구가 각각의 독립적인 공간을 ",
     {
      "word": "차지하며",
-     "annotation": "차지하며"
+     "annotation": "차지하다"
     },
     " 살 수 있도록 지은 다가구 주택도 포함된다. ",
     {
@@ -272,7 +272,7 @@ KIIP.chapter({
       "단독 주택에는 여러 가구가 각각의 독립적인 공간을 ",
       {
        "word": "차지하며",
-       "annotation": "차지하며"
+       "annotation": "차지하다"
       },
       " 살 수 있도록 지은 다가구 주택도 포함된다. "
      ],
@@ -330,7 +330,7 @@ KIIP.chapter({
     " 가구에서 ",
     {
      "word": "수 천",
-     "annotation": "수 천"
+     "annotation": "수천"
     },
     " 가구까지 ",
     {
@@ -400,7 +400,7 @@ KIIP.chapter({
       " 가구에서 ",
       {
        "word": "수 천",
-       "annotation": "수 천"
+       "annotation": "수천"
       },
       " 가구까지 ",
       {
@@ -492,7 +492,7 @@ KIIP.chapter({
     "이 ",
     {
      "word": "갖추어져",
-     "annotation": "갖추어져"
+     "annotation": "갖추다"
     },
     " 있어서 많은 사람들이 아파트에서 사는 것을 선호한다. 그러나 ",
     {
@@ -575,7 +575,7 @@ KIIP.chapter({
       "이 ",
       {
        "word": "갖추어져",
-       "annotation": "갖추어져"
+       "annotation": "갖추다"
       },
       " 있어서 많은 사람들이 아파트에서 사는 것을 선호한다. "
      ],
@@ -710,7 +710,7 @@ KIIP.chapter({
      "definition": [
       "다른 사람을 위하여 부동산 거래를 대리하거나 중개하고 수수료를 받는 영업소"
      ],
-     "annotation": "부동산/중개 업소"
+     "annotation": "부동산 중개 업소"
     }
    ]
   },
@@ -745,7 +745,7 @@ KIIP.chapter({
     "으로 ",
     {
      "word": "맡기",
-     "annotation": "맡기"
+     "annotation": "맡기다"
     },
     "고 계약 기간 동안 집이나 방을 빌려 쓰는 방식으로 한국에서만 널리 활용된다. 전세 계약은 보통 2년 단위로 하며, 집주인은 ",
     {
@@ -765,7 +765,7 @@ KIIP.chapter({
     "를 받아 두는 것이 좋다. 월세는 집주인에게 매달 일정한 돈을 내고 집이나 방을 빌려 쓰는 방식이다. 월세의 경우도 어느 정도의 보증금을 내야 하는 경우가 많은데 그 금액은 전세에 비해 적다. 최근에는 전세와 월세를 ",
     {
      "word": "혼합한",
-     "annotation": "혼합한"
+     "annotation": "혼합하다"
     },
     " ",
     {
@@ -818,7 +818,7 @@ KIIP.chapter({
       "으로 ",
       {
        "word": "맡기",
-       "annotation": "맡기"
+       "annotation": "맡기다"
       },
       "고 계약 기간 동안 집이나 방을 빌려 쓰는 방식으로 한국에서만 널리 활용된다. "
      ],
@@ -868,7 +868,7 @@ KIIP.chapter({
       "최근에는 전세와 월세를 ",
       {
        "word": "혼합한",
-       "annotation": "혼합한"
+       "annotation": "혼합하다"
       },
       " ",
       {
@@ -966,7 +966,7 @@ KIIP.chapter({
     " 등이 있다. 출퇴근하기 편한지, 다른 지역으로 이동하기 편한지를 고려하는 사람들은 지하철역 주변이나 교통이 편리한 곳을 선호한다. 자녀 교육을 위한 주변의 여건을 ",
     {
      "word": "중시하",
-     "annotation": "중시하"
+     "annotation": "중시하다"
     },
     "는 사람들은 교육 시설이 ",
     {
@@ -1025,7 +1025,7 @@ KIIP.chapter({
       "자녀 교육을 위한 주변의 여건을 ",
       {
        "word": "중시하",
-       "annotation": "중시하"
+       "annotation": "중시하다"
       },
       "는 사람들은 교육 시설이 ",
       {
@@ -1427,7 +1427,7 @@ KIIP.chapter({
    "notes": [],
    "surfaces": []
   },
-  "차지하며": {
+  "차지하다": {
    "headword": "차지하다",
    "hanja": null,
    "meaning": "to occupy/take up [space/position]",
@@ -1493,7 +1493,7 @@ KIIP.chapter({
    "notes": [],
    "surfaces": []
   },
-  "수 천": {
+  "수천": {
    "headword": "수천",
    "hanja": null,
    "meaning": "several thousand",
@@ -1626,7 +1626,7 @@ KIIP.chapter({
    ],
    "surfaces": []
   },
-  "갖추어져": {
+  "갖추다": {
    "headword": "갖추다",
    "hanja": null,
    "meaning": "to equip/have prepared",
@@ -1778,7 +1778,7 @@ KIIP.chapter({
    "notes": [],
    "surfaces": []
   },
-  "부동산/중개 업소": {
+  "부동산 중개 업소": {
    "headword": "부동산 중개 업소",
    "hanja": null,
    "meaning": "real estate/brokerage office",
@@ -1839,7 +1839,7 @@ KIIP.chapter({
    "notes": [],
    "surfaces": []
   },
-  "맡기": {
+  "맡기다": {
    "headword": "맡기다",
    "hanja": null,
    "meaning": "to entrust/deposit [something with someone]",
@@ -1849,7 +1849,7 @@ KIIP.chapter({
    ],
    "surfaces": []
   },
-  "혼합한": {
+  "혼합하다": {
    "headword": "혼합하다",
    "hanja": null,
    "meaning": "to mix/combine",
@@ -1921,7 +1921,7 @@ KIIP.chapter({
    "notes": [],
    "surfaces": []
   },
-  "중시하": {
+  "중시하다": {
    "headword": "중시하다",
    "hanja": null,
    "meaning": "to place importance on/value highly",

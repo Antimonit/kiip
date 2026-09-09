@@ -109,17 +109,17 @@ KIIP.chapter({
     "의 ",
     {
      "word": "인간다운",
-     "annotation": "인간다운"
+     "annotation": "인간답다"
     },
     " 삶을 ",
     {
      "word": "누릴",
-     "annotation": "누릴"
+     "annotation": "누리다"
     },
     " 수 있도록 다양한 사회 복지 제도를 ",
     {
      "word": "마련해",
-     "annotation": "마련해"
+     "annotation": "마련하다"
     },
     " 두고 있다. 한국의 사회 복지 제도는 크게 ",
     {
@@ -145,17 +145,17 @@ KIIP.chapter({
       "의 ",
       {
        "word": "인간다운",
-       "annotation": "인간다운"
+       "annotation": "인간답다"
       },
       " 삶을 ",
       {
        "word": "누릴",
-       "annotation": "누릴"
+       "annotation": "누리다"
       },
       " 수 있도록 다양한 사회 복지 제도를 ",
       {
        "word": "마련해",
-       "annotation": "마련해"
+       "annotation": "마련하다"
       },
       " 두고 있다. "
      ],
@@ -185,7 +185,7 @@ KIIP.chapter({
     "사회보험은 미래의 위험에 ",
     {
      "word": "대비하여",
-     "annotation": "대비하여"
+     "annotation": "대비하다"
     },
     " 법에 따라 국민들이 ",
     {
@@ -221,7 +221,7 @@ KIIP.chapter({
       "사회보험은 미래의 위험에 ",
       {
        "word": "대비하여",
-       "annotation": "대비하여"
+       "annotation": "대비하다"
       },
       " 법에 따라 국민들이 ",
       {
@@ -1159,7 +1159,7 @@ KIIP.chapter({
     "가 있다. 바로 국내에 체류 중인 이주노동자들이다. 정제한씨는 한국말이 ",
     {
      "word": "서툴러",
-     "annotation": "서툴러"
+     "annotation": "서투르다"
     },
     " 자신의 의견을 제대로 표현하지 못하는 이주 노동자들을 돕기 위해 여러 노력을 기울이고 있다."
    ],
@@ -1187,7 +1187,7 @@ KIIP.chapter({
       "정제한씨는 한국말이 ",
       {
        "word": "서툴러",
-       "annotation": "서툴러"
+       "annotation": "서투르다"
       },
       " 자신의 의견을 제대로 표현하지 못하는 이주 노동자들을 돕기 위해 여러 노력을 기울이고 있다."
      ],
@@ -1252,7 +1252,7 @@ KIIP.chapter({
    ],
    "surfaces": []
   },
-  "인간다운": {
+  "인간답다": {
    "headword": "인간답다",
    "hanja": null,
    "meaning": "to be human-like/befitting a human",
@@ -1264,7 +1264,7 @@ KIIP.chapter({
    ],
    "surfaces": []
   },
-  "누릴": {
+  "누리다": {
    "headword": "누리다",
    "hanja": null,
    "meaning": "to enjoy/partake of",
@@ -1275,7 +1275,7 @@ KIIP.chapter({
    ],
    "surfaces": []
   },
-  "마련해": {
+  "마련하다": {
    "headword": "마련하다",
    "hanja": null,
    "meaning": "to prepare/set up/arrange",
@@ -1316,7 +1316,7 @@ KIIP.chapter({
    ],
    "surfaces": []
   },
-  "대비하여": {
+  "대비하다": {
    "headword": "대비하다",
    "hanja": null,
    "meaning": "to prepare for/provide against",
@@ -2413,7 +2413,7 @@ KIIP.chapter({
    ],
    "surfaces": []
   },
-  "서툴러": {
+  "서투르다": {
    "headword": "서투르다",
    "hanja": null,
    "meaning": "to be clumsy, unpractised",

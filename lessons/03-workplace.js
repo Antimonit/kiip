@@ -137,7 +137,7 @@ KIIP.chapter({
      "definition": [
       "사회의 발전에 도움을 줌"
      ],
-     "annotation": "사회공헌"
+     "annotation": "사회 공헌"
     },
     {
      "term": "공기업",
@@ -177,7 +177,7 @@ KIIP.chapter({
     "으로 인해 일을 시작하는 나이가 더 늦어지는 경우도 많다. 취업 후에는 대체로 60세 전후까지 직장 생활을 한다. 요즘은 평균 ",
     {
      "word": "수명이",
-     "annotation": "수명이"
+     "annotation": "수명"
     },
     " 길어져서 ",
     {
@@ -192,7 +192,7 @@ KIIP.chapter({
     ", ",
     {
      "word": "사회 공헌",
-     "annotation": "사회공헌"
+     "annotation": "사회 공헌"
     },
     " 등을 위해 새로운 직업을 갖거나 창업을 준비하는 사람들이 많아졌다."
    ],
@@ -237,7 +237,7 @@ KIIP.chapter({
       "요즘은 평균 ",
       {
        "word": "수명이",
-       "annotation": "수명이"
+       "annotation": "수명"
       },
       " 길어져서 ",
       {
@@ -252,7 +252,7 @@ KIIP.chapter({
       ", ",
       {
        "word": "사회 공헌",
-       "annotation": "사회공헌"
+       "annotation": "사회 공헌"
       },
       " 등을 위해 새로운 직업을 갖거나 창업을 준비하는 사람들이 많아졌다."
      ],
@@ -1120,7 +1120,7 @@ KIIP.chapter({
    "notes": [],
    "surfaces": []
   },
-  "사회공헌": {
+  "사회 공헌": {
    "headword": "사회 공헌",
    "hanja": "社會貢獻",
    "meaning": "social contribution",
@@ -1182,7 +1182,7 @@ KIIP.chapter({
    "notes": [],
    "surfaces": []
   },
-  "수명이": {
+  "수명": {
    "headword": "수명",
    "hanja": "壽命",
    "meaning": "lifespan / life expectancy",

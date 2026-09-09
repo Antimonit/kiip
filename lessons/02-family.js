@@ -176,7 +176,7 @@ KIIP.chapter({
     ", 부모, 자녀 등 여러 세대의 가족이 같이 모여 사는 ",
     {
      "word": "확대가족",
-     "annotation": "확대 가족"
+     "annotation": "확대가족"
     },
     " 형태가 일반적이었다."
    ],
@@ -218,7 +218,7 @@ KIIP.chapter({
       ", 부모, 자녀 등 여러 세대의 가족이 같이 모여 사는 ",
       {
        "word": "확대가족",
-       "annotation": "확대 가족"
+       "annotation": "확대가족"
       },
       " 형태가 일반적이었다."
      ],
@@ -1005,7 +1005,7 @@ KIIP.chapter({
    "notes": [],
    "surfaces": []
   },
-  "확대 가족": {
+  "확대가족": {
    "headword": "확대가족",
    "hanja": "擴大家族",
    "meaning": "\"extended family\"",

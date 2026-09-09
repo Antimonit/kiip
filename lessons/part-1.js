@@ -957,6 +957,40 @@ KIIP.chapter({
   }
  ],
  "annotations": {
+  "부르다": {
+   "headword": "부르다",
+   "hanja": null,
+   "meaning": "to call (something) by a name",
+   "characters": [],
+   "notes": [
+    "4대 국경일이라고 불렀으며 — “were called the four great national holidays”. 부르다 also means to sing and to summon."
+   ],
+   "surfaces": []
+  },
+  "상징적": {
+   "headword": "상징적",
+   "hanja": "象徵的",
+   "meaning": "symbolic",
+   "characters": [
+    {
+     "char": "象",
+     "reading": "상",
+     "gloss": "image, likeness — as in 상징, 현상"
+    },
+    {
+     "char": "徵",
+     "reading": "징",
+     "gloss": "a sign — as in 징조, 특징"
+    },
+    {
+     "char": "的",
+     "reading": "적",
+     "gloss": "the adjective suffix"
+    }
+   ],
+   "notes": [],
+   "surfaces": []
+  },
   "조합": {
    "headword": "조합",
    "hanja": "組合",

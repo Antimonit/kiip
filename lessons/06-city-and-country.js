@@ -255,7 +255,7 @@ KIIP.chapter({
     "의 약 12% 정도에 ",
     {
      "word": "불과하",
-     "annotation": "불과하"
+     "annotation": "불과하다"
     },
     "지만 총인구의 약 50%가 살고 있는 대표적인 도시화 지역이다. 부산, 대구, 광주, 대전, 울산 등과 같은 지방의 ",
     {
@@ -286,7 +286,7 @@ KIIP.chapter({
       "의 약 12% 정도에 ",
       {
        "word": "불과하",
-       "annotation": "불과하"
+       "annotation": "불과하다"
       },
       "지만 총인구의 약 50%가 살고 있는 대표적인 도시화 지역이다. "
      ],
@@ -491,7 +491,7 @@ KIIP.chapter({
     " 등의 노력을 ",
     {
      "word": "기울",
-     "annotation": "기울"
+     "annotation": "기울다"
     },
     "이고 있다. 한편, 주택 부족이나 낡은 주택 문제를 해결하기 위해 공공 임대 주택 ",
     {
@@ -564,7 +564,7 @@ KIIP.chapter({
       " 등의 노력을 ",
       {
        "word": "기울",
-       "annotation": "기울"
+       "annotation": "기울다"
       },
       "이고 있다. "
      ],
@@ -709,7 +709,7 @@ KIIP.chapter({
     "할 수 있는 농산물 저장 창고, ",
     {
      "word": "수확한",
-     "annotation": "수확한"
+     "annotation": "수확하다"
     },
     " 벼를 찧는",
     {
@@ -724,7 +724,7 @@ KIIP.chapter({
     "에 물을 ",
     {
      "word": "공급해",
-     "annotation": "공급해"
+     "annotation": "공급하다"
     },
     " 주는 인공 ",
     {
@@ -775,7 +775,7 @@ KIIP.chapter({
       "할 수 있는 농산물 저장 창고, ",
       {
        "word": "수확한",
-       "annotation": "수확한"
+       "annotation": "수확하다"
       },
       " 벼를 찧는",
       {
@@ -790,7 +790,7 @@ KIIP.chapter({
       "에 물을 ",
       {
        "word": "공급해",
-       "annotation": "공급해"
+       "annotation": "공급하다"
       },
       " 주는 인공 ",
       {
@@ -1004,7 +1004,7 @@ KIIP.chapter({
     " 부족을 꼽을 수 있다. 2018년 통계청 조사에 따르면, 농촌에는 만 65세 이상 인구가 약 45%를 ",
     {
      "word": "차지할",
-     "annotation": "차지할"
+     "annotation": "차지하다"
     },
     " 정도로 노인이 많다. 이를 해결하기 위해 농촌 지역의 ",
     {
@@ -1077,7 +1077,7 @@ KIIP.chapter({
       "2018년 통계청 조사에 따르면, 농촌에는 만 65세 이상 인구가 약 45%를 ",
       {
        "word": "차지할",
-       "annotation": "차지할"
+       "annotation": "차지하다"
       },
       " 정도로 노인이 많다. "
      ],
@@ -1333,7 +1333,7 @@ KIIP.chapter({
     "가 ",
     {
      "word": "선정한",
-     "annotation": "선정한"
+     "annotation": "선정하다"
     },
     " 사람 중에서 뽑는다. 기존에는 ‘단기취업(C-4) 비자’로 들어와 3개월 ",
     {
@@ -1414,7 +1414,7 @@ KIIP.chapter({
       "가 ",
       {
        "word": "선정한",
-       "annotation": "선정한"
+       "annotation": "선정하다"
       },
       " 사람 중에서 뽑는다. "
      ],
@@ -1666,7 +1666,7 @@ KIIP.chapter({
    ],
    "surfaces": []
   },
-  "불과하": {
+  "불과하다": {
    "headword": "불과하다",
    "hanja": null,
    "meaning": "merely/to be no more than",
@@ -1843,7 +1843,7 @@ KIIP.chapter({
    "notes": [],
    "surfaces": []
   },
-  "기울": {
+  "기울다": {
    "headword": "기울다",
    "hanja": null,
    "meaning": "to tilt/lean",
@@ -1986,7 +1986,7 @@ KIIP.chapter({
    ],
    "surfaces": []
   },
-  "수확한": {
+  "수확하다": {
    "headword": "수확하다",
    "hanja": null,
    "meaning": "to harvest",
@@ -2028,7 +2028,7 @@ KIIP.chapter({
    "notes": [],
    "surfaces": []
   },
-  "공급해": {
+  "공급하다": {
    "headword": "공급하다",
    "hanja": null,
    "meaning": "to supply",
@@ -2222,7 +2222,7 @@ KIIP.chapter({
    ],
    "surfaces": []
   },
-  "차지할": {
+  "차지하다": {
    "headword": "차지하다",
    "hanja": null,
    "meaning": "to occupy/take up",
@@ -2445,7 +2445,7 @@ KIIP.chapter({
    "notes": [],
    "surfaces": []
   },
-  "선정한": {
+  "선정하다": {
    "headword": "선정하다",
    "hanja": null,
    "meaning": "to select/designate",

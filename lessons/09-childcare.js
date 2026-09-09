@@ -147,7 +147,7 @@ KIIP.chapter({
     "한국은 출산을 ",
     {
      "word": "장려하",
-     "annotation": "장려하"
+     "annotation": "장려하다"
     },
     "고 ",
     {
@@ -173,7 +173,7 @@ KIIP.chapter({
       "한국은 출산을 ",
       {
        "word": "장려하",
-       "annotation": "장려하"
+       "annotation": "장려하다"
       },
       "고 ",
       {
@@ -387,7 +387,7 @@ KIIP.chapter({
     "(어린이집, 유치원)에 따라 지원 금액이 다르다. 어린이집이나 유치원을 이용하지 않고 집에서 ",
     {
      "word": "양육하",
-     "annotation": "양육하"
+     "annotation": "양육하다"
     },
     "는 경우에도 자녀의 ",
     {
@@ -419,7 +419,7 @@ KIIP.chapter({
       "어린이집이나 유치원을 이용하지 않고 집에서 ",
       {
        "word": "양육하",
-       "annotation": "양육하"
+       "annotation": "양육하다"
       },
       "는 경우에도 자녀의 ",
       {
@@ -567,7 +567,7 @@ KIIP.chapter({
     "에서 지정한 보육 기관이다. 정부나 지방 자치 단체에서 ",
     {
      "word": "설립한",
-     "annotation": "설립한"
+     "annotation": "설립하다"
     },
     " ",
     {
@@ -597,7 +597,7 @@ KIIP.chapter({
     ", 교회나 성당 등과 같은 종교 단체에서 ",
     {
      "word": "세운",
-     "annotation": "세운"
+     "annotation": "세우다"
     },
     " 어린이집, 일반 ",
     {
@@ -607,7 +607,7 @@ KIIP.chapter({
     "에서 영·유아를 ",
     {
      "word": "돌보는",
-     "annotation": "돌보는"
+     "annotation": "돌보다"
     },
     {
      "word": "가정 어린이집",
@@ -633,7 +633,7 @@ KIIP.chapter({
       "정부나 지방 자치 단체에서 ",
       {
        "word": "설립한",
-       "annotation": "설립한"
+       "annotation": "설립하다"
       },
       " ",
       {
@@ -663,7 +663,7 @@ KIIP.chapter({
       ", 교회나 성당 등과 같은 종교 단체에서 ",
       {
        "word": "세운",
-       "annotation": "세운"
+       "annotation": "세우다"
       },
       " 어린이집, 일반 ",
       {
@@ -673,7 +673,7 @@ KIIP.chapter({
       "에서 영·유아를 ",
       {
        "word": "돌보는",
-       "annotation": "돌보는"
+       "annotation": "돌보다"
       },
       {
        "word": "가정 어린이집",
@@ -1306,7 +1306,7 @@ KIIP.chapter({
    ],
    "surfaces": []
   },
-  "장려하": {
+  "장려하다": {
    "headword": "장려하다",
    "hanja": null,
    "meaning": "to encourage/promote",
@@ -1459,7 +1459,7 @@ KIIP.chapter({
    ],
    "surfaces": []
   },
-  "양육하": {
+  "양육하다": {
    "headword": "양육하다",
    "hanja": null,
    "meaning": "to raise/rear (a child)",
@@ -1597,7 +1597,7 @@ KIIP.chapter({
    ],
    "surfaces": []
   },
-  "설립한": {
+  "설립하다": {
    "headword": "설립하다",
    "hanja": null,
    "meaning": "to establish/found",
@@ -1621,7 +1621,7 @@ KIIP.chapter({
    ],
    "surfaces": []
   },
-  "세운": {
+  "세우다": {
    "headword": "세우다",
    "hanja": null,
    "meaning": "to build/erect",
@@ -1643,7 +1643,7 @@ KIIP.chapter({
    ],
    "surfaces": []
   },
-  "돌보는": {
+  "돌보다": {
    "headword": "돌보다",
    "hanja": null,
    "meaning": "to look after/take care of",
