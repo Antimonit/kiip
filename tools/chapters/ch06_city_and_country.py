@@ -46,7 +46,7 @@ CHAPTER = dict(
           "Daegu, Gwangju, Daejeon, and Ulsan." "\n\n"
           "To disperse (분산) functions concentrated in the metropolis, "
           "many satellite cities (위성 도시 — note: your text has a typo, "
-          "\"위생 도시,\" but this should read 위성 도시) have been built, "
+          "\"위성 도시,\" but this should read 위성 도시) have been built, "
           "especially around Seoul. Examples include Bundang and "
           "Ilsan, which handle residential functions; Gwacheon, which "
           "handles administrative functions; Ansan and Bucheon, which "
@@ -64,10 +64,10 @@ CHAPTER = dict(
         PARAGRAPH("한국의 도시화는 1960년대 이후 산업화가 이루어지면서 {본격적으로|본격적} 시작되었다. "
           "1970년대부터는 인구의 절반 이상이 도시에서 살게 되었고, 현재는 총인구 중 90%가 넘는 사람이 "
           "도시에 거주하고 있다. 도시에는 기업체, 대학, 공공 기관, 의료 시설, 문화 시설 등이 많아 생활이 " "편리하다."),
-        PARAGRAPH("서울, 인천, 경기 등 수도권은 국토{면적}의 약 12% 정도에 {불과하}지만 총인구의 약 50%가 살고 "
+        PARAGRAPH("서울, 인천, 경기 등 수도권은 국토 {면적}의 약 12% 정도에 {불과하}지만 총인구의 약 50%가 살고 "
           "있는 대표적인 도시화 지역이다. 부산, 대구, 광주, 대전, 울산 등과 같은 지방의 {광역시}에도 많은 "
           "사람이 살고 있다."),
-        PARAGRAPH("{대도시}에 집중된 기능을 분산시키기 위해 특히 서울 주변에는 위생 도시들이 많이 만들어졌다. 주거 "
+        PARAGRAPH("{대도시}에 집중된 기능을 분산시키기 위해 특히 서울 주변에는 위성 도시들이 많이 만들어졌다. 주거 "
           "기능을 담당하는 분당이나 일산, 행정 기능을 담당하는 과천, 공업 지역이 많은 안산이나 부천, {군사} "
           "시설이 있는 동두천, 오산 등이 그 예이다. 최근에는 보다 깨끗하고 {쾌적한|쾌적하다} 환경을 찾아 "
           "대도시 주변 지역으로 이동하는 {역도시화} 현상도 나타나고 있다."),
@@ -137,9 +137,9 @@ CHAPTER = dict(
           "that promote local tradition and culture using their "
           "natural environment and local specialty products — "
           "sometimes developing these into tourism industries.\""),
-        GLOSSARY(("찧다", "곡식의 껍질을 벗기거나 가루 로 만들려고 내리침", "찧다"),
+        GLOSSARY(("찧다", "곡식의 껍질을 벗기거나 가루로 만들려고 내리침", "찧다"),
               ("촌락", "주로 시골에서 여러 집이 모여 사는 곳", "촌락"),
-              ("직거래", "물건을 파는 사람과 사는 사람 이 중간 상인을 거치지 않고 직접 거래", "직거래")),
+              ("직거래", "물건을 파는 사람과 사는 사람이 중간 상인을 거치지 않고 직접 거래", "직거래")),
         PARAGRAPH("{농촌}은 {대체로} 함께 {농사}를 지으며 같은 마을에서 오랫동안 살아온 사람들이 많아 사람 간의 "
           "관계가 친밀한 편이다. 농촌에는 회의를 하거나 모여서 쉬는 공간인 마을 {회관}, {농산물}을 안전하게 "
           "오랜 기간 {보관}할 수 있는 농산물 저장 창고, {수확한} 벼를 찧는{정미소}, 주변의 하천에서 물을 "
@@ -174,7 +174,7 @@ CHAPTER = dict(
           "facilities, and convenience facilities such as clinics and "
           "hospitals are being increased. Digitalization education, "
           "such as internet training, is also being carried out."),
-        GLOSSARY(("귀농", "도시에서 다른 일을 하던 사람 이 농촌으로 돌아감", "귀농"),
+        GLOSSARY(("귀농", "도시에서 다른 일을 하던 사람이 농촌으로 돌아감", "귀농"),
               ("생산성", "효율적으로 생산할 수 있는 정도", "생산성"),
               ("개조", "고쳐서 다시 만듦", "개조")),
         PARAGRAPH("농촌에도 해결해야 할 문제가 있다. 우선 농촌 인구의 {고령화}로 인한 {일손} 부족을 꼽을 수 있다. "
@@ -182,7 +182,7 @@ CHAPTER = dict(
           "많다. 이를 해결하기 위해 농촌 지역의 {지방자치단체}에서는 귀농을 하려는 사람에게 많은 지원을 하고 "
           "있다. 또한 새로운 기술이나 {품종} 개발, 농업의 기계화, 자동화 등을 통해 농촌의 생산성을 높이는 "
           "노력도 계속하고 있다. 한편, 농촌은 문화 시설, 의료 시설, {정보화} 등의 {측면}에서 도시에 비해 "
-          "부족한 측면이 있다. 이를 해결하기 위해 {폐교}, 마을 회관 등을 문화 시설로 개조 하기도 하고 "
+          "부족한 측면이 있다. 이를 해결하기 위해 {폐교}, 마을 회관 등을 문화 시설로 개조하기도 하고 "
           "병·의원 등과 같은 편의 시설을 늘리고 있다. 또한 인터넷 등과 같은 정보화 교육을 실시하기도 한다."),
         FIGURE("딸기 수확 로봇 — 일손 부족 문제를 해결하기 위해 여러 기술이 개발되고 있다."),
         SECTION("aside", "알아두면 좋아요"),
@@ -199,8 +199,7 @@ CHAPTER = dict(
           "도시 )에 거주하고 있다."),
         BULLET("도시에는 기업체, 대학, 공공 기관, 의료 시설, 문화 시설 등이 많아 생활이 편리하다. 특히 대도시에 "
           "이러한 기능이 집중되어 있는데 이를 분산시키기 위해 (   )가 만들어졌다."),
-        BULLET("도시에서는 (   ) 문제, (   ) 문제, 주택 문제 등과 같은 도시 문제가 발생한다. 이를 해결 "
-          "하기 위해 대중교통 이용 장려, 에너지 절약, 신도시 건설과 같은 다양한 노력을 기울이고 있다."),
+        BULLET("도시에서는 (   ) 문제, (   ) 문제, 주택 문제 등과 같은 도시 문제가 발생한다. 이를 해결하기 위해 대중교통 이용 장려, 에너지 절약, 신도시 건설과 같은 다양한 노력을 기울이고 있다."),
         HEADING(2, "02 한국 농촌은 어떤 특징이 있을까?"),
         BULLET("농촌은 (   ) 장터나 사이트 운영, 주말 농장이나 농촌 체험 프로그램 운영, 자연환경이나 특산물을 "
           "이용한 (   ) 개최 등을 통해 농촌은 변화하려는 노력을 계속하고 있다."),
@@ -217,7 +216,7 @@ CHAPTER = dict(
           "from family members within the 4th degree of kinship (4촌) "
           "of marriage immigrants residing in Korea, or from people "
           "selected by local governments in countries that have "
-          "signed a memorandum of understanding (MOU) with a Korean "
+          "signed a memorandum of understanding(MOU) with a Korean "
           "local government. Previously, workers entered on a "
           "\"short-term employment (C-4) visa\" and could stay for 3 "
           "months, but this time a new \"(E-8) visa\" has been "
@@ -231,11 +230,10 @@ CHAPTER = dict(
           "employment contract, marriage immigrants' family members "
           "can also enroll in industrial accident insurance."),
         PARAGRAPH("외국인 계절 {근로자} 제도는 {농번기} 일손 부족을 {완화하|완화}고자 외국인 근로자들이 {단기간} "
-          "지정된 농사에서 일할 수 있도록 한 것이다. 계절 근로자는 한국에 거주하는 결혼이민자의 4촌 이내 가족 "
-          "또는 우리 지방자치단체와 업무{협약|업무협약} (MOU)을 {체결한|체결}국가의 {지자체}가 {선정한} "
-          "사람 중에서 뽑는다. 기존에는 ‘단기취업(C-4) 비자’로 들어와 3개월 체류할 수 있었으나 이번에 "
-          "(E-8) 비자’를 신설하여 5개월로 체류기간을 연장할 수 있게 되었다. 또한 기존에는 결혼이민자 가족의 "
-          "경우 해당 농가와 {고용}관계가 아닌 가족이라는 이유로 {산재}보험 가입을 허용하지 않았으나 근로게약서를 "
+          "지정된 농가에서 일할 수 있도록 한 것이다. 계절 근로자는 한국에 거주하는 결혼이민자의 4촌 이내 가족 "
+          "또는 우리 지방자치단체와 업무{협약|업무협약}(MOU)을 {체결한|체결} 국가의 {지자체}가 {선정한} "
+          "사람 중에서 뽑는다. 기존에는 ‘단기취업(C-4) 비자’로 들어와 3개월 체류할 수 있었으나 이번에 ‘(E-8) 비자’를 신설하여 5개월로 체류기간을 연장할 수 있게 되었다. 또한 기존에는 결혼이민자 가족의 "
+          "경우 해당 농가와 {고용}관계가 아닌 가족이라는 이유로 {산재}보험 가입을 허용하지 않았으나 근로계약서를 "
           "통해 고용관계가 인정되면 결혼이민자의 가족도 산재보험에 가입할 수 있게 되었다."),
         CHART("외국인 계절 근로자 배정현황(법무부·농림축산식품부)(단위: 명)", "명", [["2015년", 19],
               ["2016년", 241],
@@ -244,7 +242,7 @@ CHAPTER = dict(
               ["2019년", 3612],
               ["2020년", 5000]]),
         SOURCE("[출처] 농민신문(2019.12.18)"),
-        PARAGRAPH("* 계절 근로자 제도의 좋은 점과 보완되어야 할 점에 대해 이야기해 봅시다.",
+        PARAGRAPH("★ 계절 근로자 제도의 좋은 점과 보완되어야 할 점에 대해 이야기해 봅시다.",
           "Talk about what is good about the seasonal worker system and what "
           "still needs to be put right."),
     ],
@@ -527,7 +525,7 @@ CHAPTER = dict(
             meaning="협약 — agreement/accord",
             notes=["協 (to cooperate, same 協 as in 협력 \"cooperation\")",
                 "約 (promise/agreement, same 約 as in 계약 \"contract\")",
-                "업무협약 = \"business/cooperation agreement (MOU)\""],
+                "업무협약 = \"business/cooperation agreement(MOU)\""],
             surfaces=["협약"],
         ),
         "체결": dict(
@@ -552,29 +550,6 @@ CHAPTER = dict(
             notes=["산재보험 = \"industrial accident insurance\", covering workers "
                 "injured on the job"],
         ),
-    },
-    fixes=[
-        ("위생 도시", "위성 도시", "typo — 위생 for 위성; the margin entry has it right"),
-        ("=면적", " 면적", "missing space, lost at an annotation boundary",
-         ("국토면적", "국토 면적")),
-        ("가루 로", "가루로", "spacing"),
-        ("개조 하기도", "개조하기도", "spacing"),
-        ("사는 사람 이", "사는 사람이", "spacing"),
-        ("하던 사람 이", "하던 사람이", "spacing"),
-        ("해결 하기", "해결하기", "spacing"),
-        ("지정된 농사에서", "지정된 농가에서", "typo — 농사 for 농가"),
-        (" (MOU)", "(MOU)", "spacing"),
-        ("=국가의 ", " 국가의 ", "missing space, lost at an annotation boundary",
-         ("체결한국가의", "체결한 국가의")),
-        ("이번에 (E-8)", "이번에 ‘(E-8)", "the opening quotation mark is missing"),
-        ("근로게약서", "근로계약서", "typo — 게 for 계"),
-        ("* 계절", "★ 계절", "the page uses a star for the discussion prompt"),
-    ],
-    approved={
-        # read against the photos of pp. 36-39 and accepted
-        "위생 도시", "=면적", "가루 로", "개조 하기도", "사는 사람 이",
-        "하던 사람 이", "해결 하기", "지정된 농사에서", " (MOU)", "=국가의 ",
-        "이번에 (E-8)", "근로게약서", "* 계절",
     },
     headwords={"쾌적한": "쾌적하다", "뒤쳐졌지만": "뒤쳐지다", "낙후되었던": "낙후되다",
                # the Doc comments on half of a compound; file it under the whole

@@ -29,9 +29,9 @@ CHAPTER = dict(
         SECTION("part", "01 한국인은 어떤 일터에서 일할까?"),
         GLOSSARY(("취업난", "일자리를 구하기 어려움", "취업난"),
               ("은퇴", "맡은 일에서 물러남", "은퇴"),
-              ("자아실현", "개인의 능력을 발휘하고 가치 를 이루어 냄", "자아실현"),
-              ("사회공헌", "사회의 발전에 도움을 중 국가기업", "사회공헌", "seciety contribution"),
-              ("공기업", "국가나 지방자치단체가 사회 공공의 복리를 증진하기 위하 여 경영하는 기업", "공기업",
+              ("자아실현", "개인의 능력을 발휘하고 가치를 이루어 냄", "자아실현"),
+              ("사회 공헌", "사회의 발전에 도움을 줌", "사회 공헌", "society contribution"),
+              ("공기업", "국가나 지방자치단체가 사회 공공의 복리를 증진하기 위하여 경영하는 기업", "공기업",
               "state-owned company"),
               ("임금", "어떤 직장에서 계속 일하는 사람이 일의 대가로 받는 돈", "임금", "wage/pay")),
         HEADING(2, "한국인들이 선호하는 일터", translation=
@@ -46,7 +46,7 @@ CHAPTER = dict(
           "days, as average life expectancy has lengthened, more "
           "people take on new jobs or prepare to start businesses "
           "even after retirement, for economic reasons or for "
-          "self-realization (자아실현) or social contribution (사회공헌)." "\n\n"
+          "self-realization (자아실현) or social contribution (사회 공헌)." "\n\n"
           "Among those preparing to find jobs in Korea, many prefer "
           "stable employment and hope to become civil servants or "
           "work at state-owned enterprises (공기업). Compared to other "
@@ -69,12 +69,12 @@ CHAPTER = dict(
           "희망하는 경우가 많다. 이러한 직장은 다른 곳에 비해 근무 기간이나 근무 환경이 안정적이지만 뽑는 "
           "인원수가 많지 않아 경쟁률이 높은 편이다. 대기업에서 일하기를 원하는 사람도 있다. 대기업은 임금이 높고 "
           "직원에 대한 복지 혜택도 많아서 인기가 높다."),
-        PARAGRAPH("그 외에 다소규모가 작은 중소기업에 취직하거나 일정한 소속이 없이 자유 계약으로 일하는 사람들, 직접 "
+        PARAGRAPH("그 외에 다소 규모가 작은 중소기업에 취직하거나 일정한 소속이 없이 자유 계약으로 일하는 사람들, 직접 "
           "회사나 가게를 만들어 사업을 하는 사람들도 있다."),
         GLOSSARY(("기혼", "이미 결혼함", "기혼", "married"),
               ("경력 단절", "공부나 직장을 그만두고 나서 새로운 직장에 들어가기까지 경력이 비어있는 상태", None,
               "career interrupted"),
-              ("정책", "공공문체를 해결하기 위해 정부 가 결정한 일의 계획", None, "policy")),
+              ("정책", "공공문제를 해결하기 위해 정부가 결정한 일의 계획", None, "policy")),
         HEADING(2, "여성의 경제 활동", translation="여성의 경제 활동 (Women's Economic Activity)"
           "\n\n" "\"In the past, most working people were men. However, as "
           "university enrollment rates for men and women gradually "
@@ -133,7 +133,7 @@ CHAPTER = dict(
               ("경향", "현상이나 행동이 어떤 방향으로 기울어짐", None, "trend/tendency"),
               ("워라밸", "일과 삶의 균형이라는 뜻으로 “Work and Life Balance”의 준말")),
         HEADING(2, "직장 문화"),
-        PARAGRAPH("한국에서는 근무를 마친 후에 종종 회사 진원 들끼리 회식을 한다. 회사 직원들끼리 친밀한 관계를 형성하기 "
+        PARAGRAPH("한국에서는 근무를 마친 후에 종종 회사 직원들끼리 회식을 한다. 회사 직원들끼리 친밀한 관계를 형성하기 "
           "위해서 또는 축하나 위로를 받아야 할 직장 동료가 있을 때 회식을 하는 경우가 많다. 회식하는 날은 "
           "식사와 이야기가 밤늦게까지 이어지기도 한다."),
         PARAGRAPH("최근에는 일과 삶의 균형을 추구하는 문화, 개인의 의사를 존중하는 문화가 확산되면서 회식의 빈도가 "
@@ -143,9 +143,9 @@ CHAPTER = dict(
         SECTION("aside", "알아두면 좋아요"),
         HEADING(4, "한국 직장인들은 일 년에 휴가를 며칠 정도 사용할까?"),
         PARAGRAPH("한국 직장인은 2018년 한 해 평균 15일의 유급 휴가(쉬면서도 임금을 받는 휴가)를 받아 이 중 "
-          "14일을 사용한 것으로 조사되었다. 평균 사용 일수가 8일이던 2016년 보다 6일, 평균 10일이던 "
+          "14일을 사용한 것으로 조사되었다. 평균 사용 일수가 8일이던 2016년보다 6일, 평균 10일이던 "
           "2017년보다 4일이 늘어났다. 이에 따라 조사 대상 국가 가운데 한국이 가장 높은 증가율을 보였다. "
-          "이러한 결과는 일과 삶의 균형을 추구 하는 워라밸 문화 확산, 주 52시간 근로제 시행, 그리고 정부와 "
+          "이러한 결과는 일과 삶의 균형을 추구하는 워라밸 문화 확산, 주 52시간 근로제 시행, 그리고 정부와 "
           "기업의 휴가 권장 분위기가 더해지면서 나타난 것으로 보인다."),
         SOURCE("(익스피디아, 2018, 국가별 유급 휴가 사용 현황, 한국경제 2018.11.25. 기사)"),
     ],
@@ -177,7 +177,7 @@ CHAPTER = dict(
                 "\"realization/actualization\" (實 = actual/real, 現 = "
                 "appear/manifest) — \"to make something real/manifest\"")],
         ),
-        "사회공헌": dict(
+        "사회 공헌": dict(
             hanja="社會貢獻",
             meaning="social contribution",
             characters=[("社會", None, "society"), ("貢獻", None,
@@ -332,21 +332,6 @@ CHAPTER = dict(
         ),
     },
     chapterGlossary=["일터"],
-    fixes=[
-        ("회사 진원 들끼리", "회사 직원들끼리", "typo — 진원 for 직원, plus spacing"),
-        ("도움을 중 국가기업", "도움을 줌", "typo — 중 for 줌; 국가기업 was a handwritten note "
-                                    "beside 공기업 in the margin, not part of this definition (p. 25)"),
-        ("사회공헌", "사회 공헌", "the margin glossary prints it as two words (p. 25)"),
-        ("공공문체를", "공공문제를", "typo — 문체 for 문제 (p. 25)"),
-        ("seciety", "society", "typo"),
-        ("가치 를", "가치를", "spacing"),
-        ("증진하기 위하 여", "증진하기 위하여", "spacing"),
-        ("다소규모가", "다소 규모가", "spacing"),
-        ("정부 가", "정부가", "spacing"),
-        ("추구 하는", "추구하는", "spacing"),
-        ("2016년 보다", "2016년보다", "the page itself is inconsistent here — 2016년 보다 "
-                                 "beside 2017년보다 (p. 26); normalised to the closed form"),
-    ],
     headwords={"활발해": "활발하다", "완화": "완화하다", "시행": "시행하다",
                "겸업": "겸업하다", "명확하게": "명확하다", "점차": "점차"},
     english={
@@ -535,12 +520,6 @@ CHAPTER = dict(
             notes=["Social or organisational standing rather than physical position: "
                    "자신들보다 높은 지위에 있다 = “to be in a position above one's own”."],
         ),
-    },
-    # every correction below has been read against the photos of pp. 24-27
-    approved={
-        "가치 를", "사회공헌", "seciety", "도움을 중 국가기업", "증진하기 위하 여",
-        "다소규모가", "공공문체를", "정부 가", "회사 진원 들끼리", "추구 하는",
-        "2016년 보다",
     },
     # Checked and accepted, so not reported: 주요 내용정리 and 이야기 나누기 are
     # missing from the Google Doc, which stops after the 휴가 box on p. 26, and

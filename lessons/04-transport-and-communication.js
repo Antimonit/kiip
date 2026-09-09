@@ -1316,7 +1316,7 @@ KIIP.chapter({
    "characters": [],
    "notes": [],
    "surfaces": [
-    "원활히 "
+    "원활히"
    ]
   },
   "통행": {

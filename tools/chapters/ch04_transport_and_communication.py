@@ -22,11 +22,11 @@ CHAPTER = dict(
         BULLET("한국에서 많이 사용하는 통신수단과 사용 방법을 설명할 수 있다.", ordered=True),
         SECTION("related", "관련 단원 확인하기"),
         TABLE([CELL("영역", columns=2), "제목", "관련 내용"], [["기본", "지리",
-              "46. 수도권 47. 경상 지역 48, 전라 지역 49. 충청 지역 50. 강원, 제주 지역",
+              "46. 수도권 47. 경상 지역 48. 전라 지역 49. 충청 지역 50. 강원, 제주 지역",
               "지역별 특징, 관광 명소와 축제"]]),
         SECTION("part", "01 한국에서 많이 이용하는 교통수단은 무엇일까?"),
-        GLOSSARY(("고속버스", "고속도로에서 고속으로 주행 하기에 알맞도록 제작된 대형 버스", None, "express"),
-              ("시외버스", "도시 밖 특정 지역까지 운행하 는 버스", None, "intercity")),
+        GLOSSARY(("고속버스", "고속도로에서 고속으로 주행하기에 알맞도록 제작된 대형 버스", None, "express"),
+              ("시외버스", "도시 밖 특정 지역까지 운행하는 버스", None, "intercity")),
         HEADING(2, "교통수단의 종류", translation="Types of Transportation" "\n\n"
           "\"Korea has a variety of well-developed public "
           "transportation options. For nearby trips, people mainly "
@@ -52,14 +52,14 @@ CHAPTER = dict(
           "있다. 인터넷이나 휴대 전화 앱으로 실시간 교통정보를 확인하여 목적지까지 최단 시간이나 최소 환승으로 갈 "
           "수 있는 다양한 방법을 알 수 있다."),
         PARAGRAPH("먼 거리를 이동할 때는 기차, 고속버스나 시외버스, 배, 비행기 등을 이용한다. 기차는 안전하고 빠른 "
-          "교통수단으로 고속철도(KTX•SRT), 새마을호, 무궁화호 등이 있다. 특히 고속철도는 빠른 속도로 "
+          "교통수단으로 고속철도(KTX·SRT), 새마을호, 무궁화호 등이 있다. 특히 고속철도는 빠른 속도로 "
           "전국을 2시간대 {생활권}으로 연결시키는 교통수단이다. 물론 대중교통수단 외에 {자가용}을 이용하는 "
           "사람들도 많지만, 대중교통을 잘 활용하면 적은 비용으로 편리하게 이동할 수 있다."),
         GLOSSARY(("장려", "좋은 일에 힘쓰도록 북돋아 줌", "장려"),
               ("권장", "바람직한 일을 하도록 권하고 격려함", "권장"),
               ("전광판", "그림이나 문자가 나타나도록 만든 판", "전광판"),
               ("혼잡", "여럿이 한데 뒤섞이어 어수선함", "혼잡")),
-        HEADING(2, "대중교통 이용을 장려 하는 제도", translation=
+        HEADING(2, "대중교통 이용을 장려하는 제도", translation=
           "Systems that encourage the use of public transportation" "\n\n"
           "\"In Korea, systems such as the transfer discount system, "
           "bus arrival information service, and bus-only lane system "
@@ -82,24 +82,23 @@ CHAPTER = dict(
           "the road is often designated as the bus-only lane, while "
           "on highways, lane 1 is operated as the bus-only lane.\""),
         PARAGRAPH("한국에서는 대중교통 이용을 권장하기 위해 환승 할인 {제도}, 버스 도착 안내 서비스, 버스 "
-          "{전용}{차로제}와 같은 제도를 시행하고 있다."),
+          "{전용} {차로제}와 같은 제도를 시행하고 있다."),
         PARAGRAPH("환승 할인 제도란 다른 교통수단으로 갈아탈 때 요금을 할인해 주는 제도이다. 이동 중에 교통수단을 "
           "변경하더라도 전체 이용 거리에 따라 요금을 내도록 하여 대중교통을 이용하는 사람들의 교통비 부담을 " "덜어준다."),
         PARAGRAPH("버스 도착 안내 서비스는 버스 정류장의 전광판을 통해 버스 도착 시각과 혼잡 정도를 미리 알려 주어서 "
           "버스를 보다 편리하게 이용할 수 있도록 한다. 버스 전용 차로제는 도로의 차로 중 버스만 이용할 수 있는 "
-          "전용 차로를 정해 버스가 {원활히|원활하다}{통행할|통행하다} 수 있도록 하는 제도이다."),
+          "전용 차로를 정해 버스가 {원활히|원활하다} {통행할|통행하다} 수 있도록 하는 제도이다."),
         PARAGRAPH("시내에서는 도로의 중앙 부분 또는 가장 바깥쪽 도로를 버스 전용차로로 하는 경우가 많고, 고속도로에서는 "
           "1차로를 버스 전용 차로로 운영하고 있다."),
         SECTION("aside", "알아두면 좋아요"),
         HEADING(3, "누구나, 언제나 이용할 수 있는 교통수단, 공공 자전거"),
         PARAGRAPH("주민들의 편의를 도모하고, 교통체증, 대기오염 문제를 해결하기 위해 각 지방자치단체에서는 자전거를 "
           "누구나, 언제나, 어디서나 쉽고 편리하게 이용할 수 있는 무인 대여 시스템을 운영하고 있다. 공공 "
-          "자전거의 이름은 따릉이 (선울), 타슈 (대전), '누비자 (창원), '온누리'(순천), '타랑께 "
-          "(광주), 어울림'(세종), 여수랑 (여수) 등으로 다양하다. 누리집이나 앱으로 예약해서 이용하거나 "
+          "자전거의 이름은 ‘따릉이’(서울), ‘타슈’(대전), ‘누비자’(창원), ‘온누리’(순천), ‘타랑께’(광주), ‘어울림’(세종), ‘여수랑’(여수) 등으로 다양하다. 누리집이나 앱으로 예약해서 이용하거나 "
           "대여소에 가서 직접 이용권을 구매한 뒤 바로 이용할 수 있다."),
         SECTION("part", "02 한국에서 많이 사용하는 통신수단은 무엇일까?"),
         GLOSSARY(("특송", "빠른 시간 안에 물건을 배달함", "특송"),
-              ("소화물", "열차나 버스 등을 통해 운반 하는 대체로 작고 가벼운 물품", "소화물"),
+              ("소화물", "열차나 버스 등을 통해 운반하는 대체로 작고 가벼운 물품", "소화물"),
               ("보급", "많은 사람들에게 골고루 미치게 하여 누리게 함", "보급")),
         HEADING(2, "통신수단의 종류와 이용", translation=
           "Types and use of communication methods" "\n\n"
@@ -113,7 +112,7 @@ CHAPTER = dict(
           "which uses motorcycles or the subway to deliver same-day — "
           "has also developed. When items need to be delivered "
           "quickly to a distant region, KTX express delivery (KTX 특송) "
-          "or express bus parcel service can be used.Telephones "
+          "or express bus parcel service can be used.\n\nTelephones "
           "include landlines (유선 전화) connected at home or in offices, "
           "and mobile phones (휴대 전화) that people carry around. In "
           "Korea, the majority of people use mobile phones, making "
@@ -131,10 +130,10 @@ CHAPTER = dict(
           "{대다수}의 사람들이 휴대 전화를 이용하고 있어서 빠르게 연락하는 것이 가능하다. 요즘에는 스마트폰이 "
           "널리 보급되면서 음성 통화나 영상 통화는 물론 사진, 동영상 등도 자유롭게 주고받을 수 있고 다양한 "
           "정보를 {신속하게|신속하다} 검색할 수 있게 되었다."),
-        FIGURE("편의점에서도 택배서비스를 신청할 수 있다."),
+        FIGURE("편의점에서도 택배 서비스를 신청할 수 있다."),
         GLOSSARY(("통신망", "서로 연결시켜 주는 조직이나 체계", "통신망"),
-              ("무선", "전선을 사용하지 않고 전자 기파를 이용하여 주고받는 통신 방식", "무선"),
-              ("플랫폼", "누구나 다양하고 방대한 정보 를 쉽게 활용할 수 있도록 제공 하는 기반 서비스", "플랫폼"),
+              ("무선", "전선을 사용하지 않고 전자기파를 이용하여 주고받는 통신 방식", "무선"),
+              ("플랫폼", "누구나 다양하고 방대한 정보를 쉽게 활용할 수 있도록 제공 하는 기반 서비스", "플랫폼"),
               ("활성화", "기능이나 활동이 활발함", "활성화"),
               ("쟁점", "서로 다투는 중심이 되는 점", "쟁점")),
         HEADING(3, "인터넷을 통한 정보 교환", translation=
@@ -160,20 +159,20 @@ CHAPTER = dict(
           "sharing interesting and useful information about specific "
           "fields.\""),
         PARAGRAPH("인터넷은 전 세계의 컴퓨터가 서로 연결되어 정보를 교환할 수 있는 {거대한|거대하다} 통신망으로 한국의 "
-          "무선인터넷(SG, LTE), 공공 와이파이(WIFi) 속도는 세계 최고 수준이다. {공공 기관}이나 "
+          "무선 인터넷(5G, LTE), 공공 와이파이(WiFi) 속도는 세계 최고 수준이다. {공공 기관}이나 "
           "{개별 가정}에 인터넷이 잘 {보급}되어 있는 편이며 버스나 지하철, 사람들이 많이 모이는 장소에서도 "
           "와이파이에 쉽게 {접근할|접근하다} 수 있다. 개인용 컴퓨터 외에도 스마트폰이나 태블릿 PC 등을 "
           "사용하는 사람들이 많아지면서 언제 어디서나 편리하게 연락을 주고받거나 필요한 정보를 얻기 쉬워졌다."),
-        PARAGRAPH("{한편}, 최근에는 유튜브 등과 같은 온라인 동영상 채널 플랫폼이 활성화 되면서 방송을 통해 "
+        PARAGRAPH("{한편}, 최근에는 유튜브 등과 같은 온라인 동영상 채널 플랫폼이 활성화되면서 방송을 통해 "
           "{자아실현}도 하고 {상당한|상당하다}{수입}도 올리는 1인 방송 크리에이터에 대한 관심이 높다. 1인 "
           "방송은 주로 현재 사회의 관심을 받고 있는 쟁점을 해석하고 정리하거나, 특정 분야에 관한 재미있고 "
           "{유용한|유용하다} 정보를 알려 주는 등 다양한 {볼거리}를 제공하고 있다."),
         SECTION("aside", "알아두면 좋아요"),
         HEADING(3, "당신의 문자는 안전합니까? (보이스 피싱과 스미싱, 피해 발생 시 대응 방법)"),
-        PARAGRAPH("피싱(Phishing)이란 개인 정보(Pivate Data)를 낚는다(Fishing)라는 의미를 가진 "
+        PARAGRAPH("피싱(Phishing)이란 개인 정보(Private Data)를 낚는다(Fishing)라는 의미를 가진 "
           "말로 전화, 문자, 메신저, 가짜 사이트 등 통신수단을 이용하여 개인 정보나 금융 정보를 알아낸 후 "
           "현금을 빼 가는 것을 말한다. 이 중 전화를 이용한 것은 보이스 피싱(voice phishing)이라고 "
-          "하며, 문자메시지(SIMS)를 통해 악성 앱을 설치하여 현금을 빼 가는 것은 "
+          "하며, 문자메시지(SMS)를 통해 악성 앱을 설치하여 현금을 빼 가는 것은 "
           "스미싱(smishing)이라고 한다. 악성 앱 설치가 의심되면 먼저 모바일 백신으로 악성 앱을 삭제하고 "
           "이동통신사에 모바일 결제 내역이 있는지 확인해야 하며 한국인터넷진흥원(KISA) 개인정보침해 "
           "신고센터(국번 없이 118)에 신고한다."),
@@ -192,7 +191,7 @@ CHAPTER = dict(
           "편의점을 통해 ( 택배 ) 서비스를 이용할 수 있다."),
         BULLET("스마트폰이 널리 보급되면서 음성 통화나 영상 통화는 물론 사진, 동영상 등도 자유롭게 주고받을 수 있고 "
           "다양한 ( 정보 )를 신속하고 편리하게 검색할 수 있게 되었다."),
-        BULLET("개인용 컴퓨터 외에도 스마트 폰이나 태블릿 PC 등을 사용하는 사람들이 많아지면서 언제 어디서나 편리하게 "
+        BULLET("개인용 컴퓨터 외에도 스마트폰이나 태블릿 PC 등을 사용하는 사람들이 많아지면서 언제 어디서나 편리하게 "
           "연락을 주고받거나 필요한 ( 정보 )를 얻기 쉬워졌다."),
         SECTION("discuss", "이야기 나누기"),
         HEADING(3, "지금은 1인 미디어 전성시대", translation=
@@ -214,13 +213,12 @@ CHAPTER = dict(
           "that, 'mukbang' (eating broadcast) and 'beauty' videos "
           "ranked in popularity.\""),
         PARAGRAPH("수많은 {장르}의 1인 방송 중 어떤 콘텐츠가 시청자들의 클릭을 {유도했|유도하다}을까? 동영상 플랫폼인 "
-          "유튜브에서 가장 많이 조회된 방송 콘텐츠 유형은 8198만 회를 기록한 ‘커버’ 영상이었다 (2018년 "
-          "5월 기준), 커버 영상이란 유명 가수의 노래나 춤을 {모방하|모방하다}거나 {재해석한|재해석하다} "
+          "유튜브에서 가장 많이 조회된 방송 콘텐츠 유형은 8198만 회를 기록한 ‘커버’ 영상이었다(2018년 5월 기준). 커버 영상이란 유명 가수의 노래나 춤을 {모방하|모방하다}거나 {재해석한|재해석하다} "
           "콘텐츠이다. 2위는 바람이 부는 소리, 연필로 글씨를 쓰는 소리, 바스락거리{는} 소리 등으로 뇌를 "
           "자극해 심리적인 안정을 유도하는 ‘ASMR’ 영상이 기록했다. 3위는 ‘HOW TO’ 영상이다. "
           "대인관계, 업무, 게임, 연애, DIY 등 여러 분야와 관련된 ‘방법’을 알려준다. 4위는 ‘OOTD’ "
           "영상이다. ‘Outfit Of The Day(오늘의 {의상})’의 준말로 그날 그날 자신이 입은 패션을 "
-          "소개하는 영상이다. 그 다음 은 ‘먹방’, ‘뷰티’ 영상 순으로 인기를 끌었다."),
+          "소개하는 영상이다. 그 다음은 ‘먹방’, ‘뷰티’ 영상 순으로 인기를 끌었다."),
         SOURCE("[출처] 스포츠경향(2019.05.15)"),
         MARGIN("{백색소음}"),
         PARAGRAPH("★ 본인이 시청한 1인 미디어 중 도움이 되었거나 좋았던 방송을 이야기해 봅시다.",
@@ -421,7 +419,7 @@ CHAPTER = dict(
         "수입": dict(
             hanja="收入",
             meaning="earnings/income",
-            notes=["상당한 수입도 올리는 = \"earning considerable income\"",
+            notes=["상당한  수입도 올리는 = \"earning considerable income\"",
                 "수입 (輸入) — import"],
         ),
         "유용하다": dict(
@@ -477,47 +475,6 @@ CHAPTER = dict(
         "백색소음": dict(
             meaning="white noise",
         ),
-    },
-    fixes=[
-        ("무선인터넷(SG, LTE)", "무선 인터넷(5G, LTE)", "typo — SG for 5G, plus spacing"),
-        ("와이파이(WIFi)", "와이파이(WiFi)", "typo — capital I for i"),
-        ("문자메시지(SIMS)", "문자메시지(SMS)", "typo"),
-        ("(Pivate Data)", "(Private Data)", "typo"),
-        ("전자 기파", "전자기파", "spacing"),
-        ("정보 를", "정보를", "spacing"),
-        ("운반 하는", "운반하는", "spacing"),
-        ("운행하 는", "운행하는", "spacing"),
-        ("주행 하기에", "주행하기에", "spacing"),
-        ("장려 하는", "장려하는", "spacing"),
-        ("활성화 되면서", "활성화되면서", "spacing"),
-        ("수입도 올리는", " 수입도 올리는", "missing space, lost at an annotation boundary",
-         ("상당한수입도", "상당한 수입도")),
-        ("=원활히", "원활히 ", "missing space, lost where the two words are annotated separately",
-         ("원활히통행할", "원활히 통행할")),
-        ("스마트 폰이나", "스마트폰이나", "spacing"),
-        ("그 다음 은", "그 다음은", "spacing — the page keeps the space after 그"),
-        ("KTX•SRT", "KTX·SRT", "bullet used for a middle dot"),
-        ("48, 전라 지역", "48. 전라 지역", "comma for a period in the unit list"),
-        ("영상이었다 (2018년 5월 기준),", "영상이었다(2018년 5월 기준).", "spacing and comma for a period"),
-        ("따릉이 (선울), 타슈 (대전), '누비자 (창원), '온누리'(순천), '타랑께 (광주), 어울림'(세종), 여수랑 (여수)",
-         "‘따릉이’(서울), ‘타슈’(대전), ‘누비자’(창원), ‘온누리’(순천), ‘타랑께’(광주), ‘어울림’(세종), ‘여수랑’(여수)",
-         "typo 선울 for 서울, plus unmatched quotes and spacing throughout the list"),
-        ("=전용", "전용 ", "missing space, lost where the two words are annotated separately",
-         ("전용차로제", "전용 차로제")),
-        ("택배서비스", "택배 서비스", "spacing"),
-        ("can be used.Telephones", "can be used.\n\nTelephones",
-         "the English translation of 통신수단의 종류와 이용 lost a paragraph break "
-         "and a space here, which ran two paragraphs together"),
-    ],
-    approved={
-        # read against the photos of pp. 28-31 and accepted
-        "48, 전라 지역", "주행 하기에", "운행하 는", "KTX•SRT", "장려 하는",
-        "=전용", "=원활히", "운반 하는", "can be used.Telephones", "택배서비스",
-        "전자 기파", "정보 를", "무선인터넷(SG, LTE)", "활성화 되면서",
-        "문자메시지(SIMS)", "(Pivate Data)", "스마트 폰이나",
-        "영상이었다 (2018년 5월 기준),", "수입도 올리는",
-        "와이파이(WIFi)", "그 다음 은",
-        "따릉이 (선울), 타슈 (대전), '누비자 (창원), '온누리'(순천), '타랑께 (광주), 어울림'(세종), 여수랑 (여수)",
     },
     headwords={"발달해": "발달하다", "지불한다": "지불하다", "유도했": "유도하다",
                "모방하": "모방하다", "재해석한": "재해석하다", "통행할": "통행하다",

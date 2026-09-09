@@ -61,10 +61,10 @@ CHAPTER = dict(
           "{차지하며} 살 수 있도록 지은 다가구 주택도 포함된다. {다가구} 주택은 3층 이하의 건물이며 전체에 "
           "대한 {소유권}은 집주인이 가지고 있고 나머지 가구는 거기에 세를 들어 산다."),
         PARAGRAPH("공동 주택은 한 건물에 여러 가구가 각각 독립된 생활을 할 수 있게 만든 집의 형태를 말한다. 다세대 "
-          "주택, 연립 주택, 아파트 등이 있다. 다세대 주택은 다가구 주택과 달리 건물의 부분 별로 주인이 "
+          "주택, 연립 주택, 아파트 등이 있다. 다세대 주택은 다가구 주택과 달리 건물의 부분별로 주인이 "
           "다르다. 연립 주택은 4층 이하의 주택으로, 종종 지하 1층에도 주{거공간}이 있는 경우가 있다. 연립 "
           "주택은 다세대 주택보다 건물의 총 {면적}이 더 넓다. 아파트는 5층 이상의 공동 주택이며, {수백} "
-          "가구에서 {수 천} 가구까지 {대규모}로 치어지는 경우가 많다."),
+          "가구에서 {수 천} 가구까지 {대규모}로 지어지는 경우가 많다."),
         LABELS("단독 주택(일반 주택)", "단독 주택(다가구 주택)", "공동 주택(다세대 주택)"),
         HEADING(2, "주거 문화의 변화", translation="Changes in Housing Culture" "\n\n"
           "\"Korea's housing forms are changing rapidly. In the past, "
@@ -84,16 +84,16 @@ CHAPTER = dict(
           "around retirement, or those who want to live in a pleasant "
           "natural environment, build and live in country houses (전원 "
           "주택) in quiet areas on the outskirts of large cities.\""),
-        GLOSSARY(("층간 소음", "건물의 한 층에서 발생한 소리 가 다른 층에 전달되어 피해를 주는 것", "층간 소음"),
+        GLOSSARY(("층간 소음", "건물의 한 층에서 발생한 소리가 다른 층에 전달되어 피해를 주는 것", "층간 소음"),
               ("쾌적", "기분이 상쾌하고 즐거움", "쾌적"),
               ("한적", "한가하고 고요함", "한적"),
-              ("전원 주택", "도시에서 조금 떨어져 있어서 자연의 분위기를 느낄 수 있도 록 지은 집", "전원 주택")),
+              ("전원 주택", "도시에서 조금 떨어져 있어서 자연의 분위기를 느낄 수 있도록 지은 집", "전원 주택")),
         PARAGRAPH("한국의 주거 형태는 빠르게 변화하고 있다. 과거에는 단독 주택이 대부분이었으나 도시에 {인구}가 "
           "집중되면서 단독 주택보다 공동 주택에 살고 있는 가구 수가 많아졌다. 특히 아파트는 {대체로} 교통이 "
           "편리한 곳에 지어지고 놀이터, {체력 단련실} 등 여러 가지 편의 {시설}이 {갖추어져} 있어서 많은 "
           "사람들이 아파트에서 사는 것을 선호한다. 그러나 층간 소음으로 인해 이웃 간의 {갈등}이 심해지는 경우도 "
           "있다. 최근에는 1인 가구, 2인 가구가 늘어나면서 원룸이나 소형 주택에 대한 {수요}가 늘고 있다. "
-          "은퇴를 맞아 {노년}을 준비하는 사람들이나 쾌적한 자연 환경에 살기 원하는 사람들은 대도시 주변의 한적한 "
+          "은퇴를 맞아 {노년}을 준비하는 사람들이나 쾌적한 자연환경에 살기 원하는 사람들은 대도시 주변의 한적한 "
           "지역에 전원 주택을 짓고 사는 경우도 있다."),
         SECTION("aside", "알아두면 좋아요"),
         HEADING(3, "공공 임대 주택이란?"),
@@ -120,12 +120,12 @@ CHAPTER = dict(
           "community welfare center before or after moving and get a "
           "fixed-date certification (확정 일자).\""),
         GLOSSARY(("세입자", "세를 내고 남의 집이나 방 따위를 빌려 쓰는 사람", "세입자"),
-              ("파기", "계약이나 약속 등을 깨뜨려 무 효로 하는 것", "파기"),
+              ("파기", "계약이나 약속 등을 깨뜨려 무효로 하는 것", "파기"),
               ("확정 일자", "집을 계약한 날짜에 대해 법원이나 행정복지센터(주민센터) 등이 사실임을 증명해 준 날짜",
               "확정 일자"),
               ("중개", "두 사람 사이에서 일을 맡아 잘 진행되도록 함", "중개"),
-              ("부동산/중개 업소", "다른 사람을 위하여 부동산 거래를 대리하거나 중개하고 수수료를 받는 영업소",
-              "부동산/중개 업소")),
+              ("부동산 중개 업소", "다른 사람을 위하여 부동산 거래를 대리하거나 중개하고 수수료를 받는 영업소",
+              "부동산 중개 업소")),
         PARAGRAPH("한국에서 집에 거주하는 형태는 {자가}, 전세, 월세로 나눌 수 있다. 자가는 자기가 소유한 집에 살고 "
           "있는 것을 말한다. 전세는 집주인에게 {일정한} 돈을 {보증금}으로 {맡기}고 계약 기간 동안 집이나 "
           "방을 빌려 쓰는 방식으로 한국에서만 널리 활용된다. 전세 계약은 보통 2년 단위로 하며, 집주인은 "
@@ -153,7 +153,7 @@ CHAPTER = dict(
           "current financial situation and future plans, examine "
           "whether to buy a house or rent it via jeonse or monthly "
           "rent, and choose the method that suits you best.\""),
-        GLOSSARY(("포장 이사", "이삿짐 업체에서 이삿침을 포장한 뒤 목적지까지 날라 주는 서비스", "포장 이사")),
+        GLOSSARY(("포장 이사", "이삿짐 업체에서 이삿짐을 포장한 뒤 목적지까지 날라 주는 서비스", "포장 이사")),
         PARAGRAPH("요즘은 이사를 할 때 대부분 포장 이사를 이용한다. 어디에서 거주할 것인가와 관련하여 중요하게 여기는 "
           "것으로는 교통, 교육 {여건}, {주거} 환경, {편의 시설} 등이 있다. 출퇴근하기 편한지, 다른 "
           "지역으로 이동하기 편한지를 고려하는 사람들은 지하철역 주변이나 교통이 편리한 곳을 선호한다. 자녀 교육을 "
@@ -204,8 +204,7 @@ CHAPTER = dict(
           "fortune. So when people move they take the cat in with them, or "
           "send the cat into the house first to see what the spirit of the "
           "place is like."),
-        PARAGRAPH("한국에서는 이사를 하고 나면 친척이나 친지들을 초대해 ‘집들이’라는 간단한 잔치를 베풀기도 하고 예전 "
-          "에는 ‘이사떡’이라 하여 붉은 팔고물을 묻힌 시루떡을 이웃과 나누어 먹기도 하였다. 집들이에 초대 받은 "
+        PARAGRAPH("한국에서는 이사를 하고 나면 친척이나 친지들을 초대해 ‘집들이’라는 간단한 잔치를 베풀기도 하고 예전에는 ‘이사떡’이라 하여 붉은 팥고물을 묻힌 시루떡을 이웃과 나누어 먹기도 하였다. 집들이에 초대 받은 "
           "사람들은 보통 세제나 화장지를 선물로 사 들고 간다."),
         PARAGRAPH("미국에서는 House warming이라고 하여 이사를 하거나 집을 새로 지었을 경우 친구나 가족들을 "
           "초청하여 파티를 연다."),
@@ -215,7 +214,7 @@ CHAPTER = dict(
           "집들이 하는 문화가 있다."),
         PARAGRAPH("러시아에서는 고양이가 행운을 가져다주는 존재라고 생각한다. 그래서 이사를 하게 되면 고양이를 데리고 "
           "들어가거나 고양이를 집안에 먼저 들여보내 그 집안의 기운을 살펴보기도 한다."),
-        PARAGRAPH("* 자신의 고향 나라의 이사 문화를 한국의 이사 문화와 비교하여 이야기 해 봅시다.",
+        PARAGRAPH("★ 자신의 고향 나라의 이사 문화를 한국의 이사 문화와 비교하여 이야기 해 봅시다.",
           "Compare the moving-house customs of your home country with "
           "Korea’s and talk about them."),
     ],
@@ -336,7 +335,7 @@ CHAPTER = dict(
             notes=["taking on a task between two people so it proceeds "
                 "smoothly, i.e., acting as a go-between"],
         ),
-        "부동산/중개 업소": dict(
+        "부동산 중개 업소": dict(
             meaning="real estate/brokerage office",
             notes=["an office that represents or mediates real estate "
                 "transactions on someone's behalf in exchange for a "
@@ -396,26 +395,6 @@ CHAPTER = dict(
             meaning="economic",
             notes=["경제적 상황 = \"economic/financial situation.\""],
         ),
-    },
-    fixes=[
-        ("* 자신의", "★ 자신의", "the page uses a star for the discussion prompt"),
-        ("치어지는", "지어지는", "typo — 치 for 지 in 지어지는 “are built”"),
-        ("붉은 팔고물", "붉은 팥고물", "typo — 팔 for 팥; 팥고물 is the red-bean topping"),
-        ("발생한 소리 가", "발생한 소리가", "spacing"),
-        ("느낄 수 있도 록", "느낄 수 있도록", "spacing"),
-        ("깨뜨려 무 효로", "깨뜨려 무효로", "spacing"),
-        ("이삿침을", "이삿짐을", "typo — 침 for 짐"),
-        ("부분 별로", "부분별로", "spacing"),
-        ("자연 환경에", "자연환경에", "spacing — the page sets it closed"),
-        ("부동산/중개 업소", "부동산 중개 업소",
-         "the margin entry runs two words together with a slash"),
-        ("예전 에는", "예전에는", "spacing"),
-    ],
-    approved={
-        # read against the photos of pp. 32-35 and accepted
-        "치어지는", "붉은 팔고물", "발생한 소리 가", "느낄 수 있도 록",
-        "깨뜨려 무 효로", "이삿침을", "부분 별로", "자연 환경에",
-        "부동산/중개 업소", "예전 에는", "* 자신의",
     },
     headwords={"쾌적한": "쾌적하다", "한적한": "한적하다", "발달해": "발달하다"},
 
