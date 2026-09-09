@@ -142,6 +142,33 @@ function lintDataPurity(file) {
   if (cryptic.length) {
     problems.push("abbreviated keys in " + file + ": " + cryptic.join(" "));
   }
+
+  /* Every entry is filed under the word it explains, and every mark points
+     at an entry that exists. The keys come from the Doc's comment anchors,
+     so without this they drift back to a typo or an inflected form. */
+  const data = JSON.parse(raw.slice(raw.indexOf("{"), raw.lastIndexOf(")")));
+  const notes = data.annotations || {};
+  Object.keys(notes).forEach(function (key) {
+    const head = (notes[key].headword || key).trim();
+    if (head !== key) {
+      problems.push("entry filed under " + key + " but explains " + head +
+                    " in " + file);
+    }
+  });
+  const dangling = new Set();
+  (function walk(node) {
+    if (Array.isArray(node)) return node.forEach(walk);
+    if (node && typeof node === "object") {
+      if (node.word && node.annotation && !notes[node.annotation]) {
+        dangling.add(node.annotation);
+      }
+      return Object.keys(node).forEach(function (k) { walk(node[k]); });
+    }
+  })(data.blocks || []);
+  if (dangling.size) {
+    problems.push("marks with no entry behind them in " + file + ": " +
+                  [...dangling].join(", "));
+  }
   return problems;
 }
 
