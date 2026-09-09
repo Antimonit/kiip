@@ -298,23 +298,18 @@ KIIP.chapter({
   {
    "type": "paragraph",
    "spans": [
-    "평생 교육은 국가평생교육진흥원 및 시·도 평생 교육진흥원, 시·군·구 평생 학습관, 학교 부설 평생 교육원 외에도 행정복지센터, ",
+    "평생 교육은 국가평생 교육진흥원 및 시·도 평생 교육진흥원, 시·군·구 평생 학습관, 학교 부설 평생 교육원외에도 행정복지센터, ",
     {
      "word": "도서관",
      "annotation": "도서관"
     },
-    ", 문화 시설, 박물관, 사회 복지관, 노인 복지관, 장애인 복지관, 청소년 수련 시설 등에서 실시되고 있다. 지역 주민이 자유롭게 참여할 수 있는 다양한 평생 교육 프로그램이 개설되어 있고, ",
-    {
-     "word": "수강",
-     "annotation": "수강"
-    },
-    "료도 비교적 저렴한 편이다. 최근에는 인터넷 등 미디어를 이용한 평생 교육도 늘어나고 있다."
+    ", 문화 시설, 박물관, 사회 복지관, 노인 복지관, 장애인 복지관, 청소년 수련 시설 등에서 실시되고 있다. 지역 주민이 자유롭게 참여할 수 있는 다양한 평생 교육 프로그램이 개설되어 있고, 수강료도 비교적 저렴한 편이다. 최근에는 인터넷 등 미디어를 이용한 평생 교육도 늘어나고 있다."
    ],
    "translation": "Lifelong learning is carried on at the National Institute for Lifelong Education, at the metropolitan and provincial institutes, at the city, county and district lifelong learning centres, and at lifelong education centres attached to schools — and beyond those, at community service centres, libraries, cultural facilities, museums, welfare centres for the general public, for the elderly and for disabled people, and at youth training facilities. A wide range of programmes is open for local residents to join freely, and the fees are comparatively low. Lately, lifelong learning using the internet and other media has been growing.",
    "sentences": [
     {
      "spans": [
-      "평생 교육은 국가평생교육진흥원 및 시·도 평생 교육진흥원, 시·군·구 평생 학습관, 학교 부설 평생 교육원 외에도 행정복지센터, ",
+      "평생 교육은 국가평생 교육진흥원 및 시·도 평생 교육진흥원, 시·군·구 평생 학습관, 학교 부설 평생 교육원외에도 행정복지센터, ",
       {
        "word": "도서관",
        "annotation": "도서관"
@@ -325,12 +320,7 @@ KIIP.chapter({
     },
     {
      "spans": [
-      "지역 주민이 자유롭게 참여할 수 있는 다양한 평생 교육 프로그램이 개설되어 있고, ",
-      {
-       "word": "수강",
-       "annotation": "수강"
-      },
-      "료도 비교적 저렴한 편이다. "
+      "지역 주민이 자유롭게 참여할 수 있는 다양한 평생 교육 프로그램이 개설되어 있고, 수강료도 비교적 저렴한 편이다. "
      ],
      "translation": "A wide range of programmes is open for local residents to join freely, and the fees are comparatively low."
     },
@@ -839,13 +829,33 @@ KIIP.chapter({
   {
    "type": "paragraph",
    "spans": [
-    "MOOC는 수강 인원에 제한 없이(Massive), 모든 사람이 수강 가능하며(Open), 웹 기반으로(Online) 미리 정의된 학습 목표를 위해 구성된 강좌(Course)를 의미한다."
+    "MOOC는 ",
+    {
+     "word": "수강",
+     "annotation": "수강"
+    },
+    " ",
+    {
+     "word": "인원",
+     "annotation": "인원"
+    },
+    "에 제한 없이(Massive), 모든 사람이 수강 가능하며(Open), 웹 기반으로(Online) 미리 정의된 학습 목표를 위해 구성된 강좌(Course)를 의미한다."
    ],
    "translation": "MOOC means a course, put together for learning goals defined in advance, with no limit on the number of students (Massive), open to everyone (Open) and web-based (Online).",
    "sentences": [
     {
      "spans": [
-      "MOOC는 수강 인원에 제한 없이(Massive), 모든 사람이 수강 가능하며(Open), 웹 기반으로(Online) 미리 정의된 학습 목표를 위해 구성된 강좌(Course)를 의미한다."
+      "MOOC는 ",
+      {
+       "word": "수강",
+       "annotation": "수강"
+      },
+      " ",
+      {
+       "word": "인원",
+       "annotation": "인원"
+      },
+      "에 제한 없이(Massive), 모든 사람이 수강 가능하며(Open), 웹 기반으로(Online) 미리 정의된 학습 목표를 위해 구성된 강좌(Course)를 의미한다."
      ],
      "translation": "MOOC means a course, put together for learning goals defined in advance, with no limit on the number of students (Massive), open to everyone (Open) and web-based (Online)."
     }
@@ -1487,6 +1497,27 @@ KIIP.chapter({
    "notes": [],
    "surfaces": []
   },
+  "인원": {
+   "headword": "인원",
+   "hanja": "人員",
+   "meaning": "the number of people, a headcount",
+   "characters": [
+    {
+     "char": "人",
+     "reading": "인",
+     "gloss": "person — as in 인구 “population”, 개인"
+    },
+    {
+     "char": "員",
+     "reading": "원",
+     "gloss": "a member — as in 회원 “member”, 직원 “staff”"
+    }
+   ],
+   "notes": [
+    "수강 인원 = the number of people taking a course. 인원 제한 is a cap on numbers."
+   ],
+   "surfaces": []
+  },
   "양방향": {
    "headword": "양방향",
    "hanja": "兩方向",
@@ -1521,133 +1552,6 @@ KIIP.chapter({
    "handwritten": "(soci-net)"
   }
  },
- "notes": [
-  {
-   "was": "경제•사회",
-   "now": "경제·사회",
-   "why": "bullet used for a middle dot",
-   "count": 1
-  },
-  {
-   "was": "실업자의 취 업이나",
-   "now": "실업자의 취업이나",
-   "why": "spacing",
-   "count": 1
-  },
-  {
-   "was": "https://www.Illcard.kr",
-   "now": "https://www.lllcard.kr",
-   "why": "capital I for the three lower-case l of 평생학습(lifelong learning)",
-   "count": 1
-  },
-  {
-   "was": "국가평생 교육진흥원",
-   "now": "국가평생교육진흥원",
-   "why": "spacing — it is one institute's name",
-   "count": 1
-  },
-  {
-   "was": "평생 교육원외에도",
-   "now": "평생 교육원 외에도",
-   "why": "spacing",
-   "count": 1
-  },
-  {
-   "was": "www.lfelongedu.go.kr",
-   "now": "www.lifelongedu.go.kr",
-   "why": "typo — lfelong for lifelong",
-   "count": 1
-  },
-  {
-   "was": "소외계층이나",
-   "now": "소외 계층이나",
-   "why": "spacing — set open elsewhere on the page",
-   "count": 1
-  },
-  {
-   "was": "-> 회원가입 프로그램",
-   "now": "→ 회원가입 → 프로그램",
-   "why": "the arrows in the sign-up path, one of them lost",
-   "count": 1
-  },
-  {
-   "was": "상호 문화 이해 (부부 교육)",
-   "now": "상호 문화 이해(부부 교육)",
-   "why": "spacing",
-   "count": 1
-  },
-  {
-   "was": "능동적인구성원",
-   "now": "능동적인 구성원",
-   "why": "spacing",
-   "count": 1
-  },
-  {
-   "was": "자립할 수 있도록 지인하기",
-   "now": "자립할 수 있도록 지원하기",
-   "why": "typo — 지인 for 지원",
-   "count": 1
-  },
-  {
-   "was": "법무부장관",
-   "now": "법무부 장관",
-   "why": "spacing",
-   "count": 1
-  },
-  {
-   "was": "교육 과졍",
-   "now": "교육 과정",
-   "why": "typo — 과졍 for 과정",
-   "count": 1
-  },
-  {
-   "was": "사회성함양",
-   "now": "사회성 함양",
-   "why": "spacing",
-   "count": 1
-  },
-  {
-   "was": "중장비운전",
-   "now": "중장비 운전",
-   "why": "spacing",
-   "count": 1
-  },
-  {
-   "was": "전기•전자",
-   "now": "전기·전자",
-   "why": "bullet used for a middle dot",
-   "count": 1
-  },
-  {
-   "was": "http:/www.cb.or.kr",
-   "now": "http://www.cb.or.kr",
-   "why": "one slash missing from the URL",
-   "count": 1
-  },
-  {
-   "was": "( … )",
-   "now": "(        )",
-   "why": "the Doc marks the review gaps with an ellipsis; the book leaves them empty",
-   "count": 9
-  },
-  {
-   "was": "누적•관리",
-   "now": "누적·관리",
-   "why": "bullet used for a middle dot",
-   "count": 1
-  },
-  {
-   "was": "수강인원에",
-   "now": "수강 인원에",
-   "why": "spacing",
-   "count": 1
-  },
-  {
-   "was": "* 본인이",
-   "now": "★ 본인이",
-   "why": "the page uses a star for the discussion prompt",
-   "count": 1
-  }
- ],
+ "notes": [],
  "slug": "12-lifelong-learning"
 });
