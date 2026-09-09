@@ -967,7 +967,7 @@ button.anno.is-glossed[aria-expanded="true"] {
   /* the card's own colour: its edge and the word it explains, so a card
      reads as the same kind of thing as the word that opened it */
   --card-edge: var(--accent);
-  --card-ink: var(--accent-ink);
+  --card-ink: var(--accent);
   background: var(--raised);
   border: 1px solid var(--rule);
   border-left: 3px solid var(--card-edge);

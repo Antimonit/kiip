@@ -8,20 +8,6 @@ the block it sits in; clicking it again, or pressing Escape, closes it.
 
 Live at <https://antimonit.github.io/kiip/>.
 
-## Branches
-
-The site and the content are kept apart:
-
-- **`master`** — the site, the tooling and the design. Everything here is
-  chapter-agnostic. It builds and passes its own checks with no chapters
-  present at all.
-- **`content`** — the chapters, branched off `master`. One editorial module per
-  chapter under `tools/chapters/`, plus the data files generated from them.
-
-`content` is rebased onto `master` when the site changes. Because no chapter is
-named anywhere in `master`, and no styling decision is recorded in the generated
-data, the two rarely touch the same lines.
-
 ## Running it
 
 No build step and no dependencies. Open `index.html` directly, or serve the
@@ -36,8 +22,7 @@ rather than a copy of the same shell per chapter.
 
 ## Deployment
 
-GitHub Pages serves the repository root of the deployed branch, so a push
-publishes. `.nojekyll` keeps Pages from running Jekyll over the files.
+GitHub Pages serves the repository root of `master`, so a push publishes. `.nojekyll` keeps Pages from running Jekyll over the files.
 
 ## Where the content comes from
 
@@ -201,23 +186,20 @@ defaults on `.sect`, however many block types it contains.
 
 ## Checking it
 
-It also reads the git history, because the two branches are kept apart by
-hand and by hand they drift. A commit that touches both sides — the site or
-the tooling on one, a chapter or what is generated from it on the other —
-fails the run, and so does a commit that adds more than one chapter module,
-which is what a rebuild looks like when it has folded a run of chapters into
-one and lost who added what. Both have happened here.
-
 `tools/smoke.js` renders every page in jsdom, clicks every annotation, and fails
 if any of them has no card or an empty card, if a page leaves `undefined` in the
 output, or if a bad address renders a blank page instead of an explanation. It
 also lints the two boundaries above — markup or tag names in the generated data,
-and section kinds sizing block types directly. It passes with no chapters
-present, which is the state of `master`. It needs jsdom, which the site does
-not:
+and section kinds sizing block types directly — and reads the git history, where
+a commit that adds more than one chapter module means a rebuild has folded a run
+of chapters into one and lost who added what. It passes with no chapters present
+at all.
+
+It needs jsdom, which the site does not. Build and check in one go:
 
 ```
-npm install jsdom && node tools/smoke.js
+npm install
+npm run check          # python3 tools/build.py && node tools/smoke.js
 ```
 
 ## Layout
@@ -229,14 +211,15 @@ assets/style.css        all appearance
 assets/kiip.js          content registry and loader
 assets/index.js         renders the chapter list
 assets/lesson.js        renders a chapter
+package.json            jsdom, and `npm run check`
 tools/build.py          the generator
 tools/smoke.js          render check and boundary lints
 tools/chapters/
   __init__.py           registry, and the helpers chapter modules use
-  chNN_slug.py          one editorial module per chapter        (content)
-  ptNN_slug.py          the spread that closes one 편            (content)
+  chNN_slug.py          one editorial module per chapter
+  ptNN_slug.py          the spread that closes one 편
 lessons/
-  manifest.js           generated chapter list                  (content)
-  <slug>.js             generated chapter data                  (content)
+  manifest.js           generated chapter list
+  <slug>.js             generated chapter data
 source/<slug>/          original page photos (gitignored)
 ```

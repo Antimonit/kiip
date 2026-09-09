@@ -74,8 +74,6 @@ function lintSectionLayering() {
  * A commit belongs to one side or the other. `master` carries the site, the
  * tooling and the design; `content` carries the chapters and what is
  * generated from them. Nothing carries both. */
-const SITE = /^(README\.md|index\.html|lesson\.html|\.gitignore|\.nojekyll|assets\/|tools\/(build|smoke)\.|tools\/chapters\/__init__\.py$)/;
-const CONTENT = /^(NOTES\.md|lessons\/|tools\/chapters\/(ch\d|pt\d|contents\.py))/;
 const MODULE = /^tools\/chapters\/(ch|pt)\d.*\.py$/;
 
 function lintHistory() {
@@ -99,13 +97,6 @@ function lintHistory() {
     });
     const say = hash + " " + subject.join(" ").slice(0, 44);
 
-    const site = changed.filter(function (c) { return SITE.test(c.path); });
-    const content = changed.filter(function (c) { return CONTENT.test(c.path); });
-    if (site.length && content.length) {
-      problems.push(say + " — touches the site (" + site[0].path +
-                    ") and the content (" + content[0].path + ")");
-    }
-
     /* One chapter to a commit. More than one means a rebuild has folded a
      * run of them together and lost who added what. */
     const added = changed.filter(function (c) {
@@ -119,7 +110,7 @@ function lintHistory() {
     }
   });
 
-  report("git history", problems, commits.length + " commits, both sides apart");
+  report("git history", problems, commits.length + " commits, one chapter each");
 }
 
 /* Generated chapter data must stay presentation-free: no markup, and no HTML

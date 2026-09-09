@@ -1,0 +1,12 @@
+{
+  "name": "kiip-study-notes",
+  "private": true,
+  "description": "Study site for the KIIP level 5 textbook. The site itself is plain HTML and needs nothing; jsdom is here only so tools/smoke.js can render the pages.",
+  "scripts": {
+    "build": "python3 tools/build.py",
+    "check": "python3 tools/build.py && node tools/smoke.js"
+  },
+  "devDependencies": {
+    "jsdom": "^30.0.1"
+  }
+}
