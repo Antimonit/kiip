@@ -1744,43 +1744,6 @@ KIIP.chapter({
    "surfaces": []
   }
  },
- "notes": [
-  {
-   "was": "학뷔",
-   "now": "학위",
-   "why": "typo — 뷔 for 위",
-   "count": 1
-  },
-  {
-   "was": "사이버대한교",
-   "now": "사이버대학교",
-   "why": "typo — 대한 for 대학",
-   "count": 1
-  },
-  {
-   "was": "4년제 중합대학교",
-   "now": "4년제 종합대학교",
-   "why": "typo — 중합 for 종합",
-   "count": 1
-  },
-  {
-   "was": "보통 수준 이상 의",
-   "now": "보통 수준 이상의",
-   "why": "spacing",
-   "count": 1
-  },
-  {
-   "was": "전문성확보",
-   "now": "전문성 확보",
-   "why": "spacing",
-   "count": 1
-  },
-  {
-   "was": "한국교육 개발원",
-   "now": "한국교육개발원",
-   "why": "spacing — it is one institute's name",
-   "count": 1
-  }
- ],
+ "notes": [],
  "slug": "11-higher-education"
 });
