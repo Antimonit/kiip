@@ -354,7 +354,7 @@ KIIP.contents({
       "외국인이 한국에 머무르려면 어떤 절차가 필요할까?",
       "외국인의 정착을 돕는 법에는 어떤 것이 있을까?"
      ],
-     "built": false
+     "built": true
     },
     {
      "number": 32,

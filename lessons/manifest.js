@@ -181,5 +181,11 @@ KIIP.manifest([
   "slug": "30-foreigners-and-law",
   "title": "외국인과 법",
   "titleEn": "Foreigners and the law"
+ },
+ {
+  "number": 31,
+  "slug": "31-staying-in-korea",
+  "title": "한국 체류와 법",
+  "titleEn": "Staying in Korea and the law"
  }
 ]);
