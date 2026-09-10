@@ -136,7 +136,8 @@ KIIP.contents({
      ],
      "built": true
     }
-   ]
+   ],
+   "closing": "part-2"
   },
   {
    "number": 3,
@@ -213,7 +214,8 @@ KIIP.contents({
      ],
      "built": true
     }
-   ]
+   ],
+   "closing": "part-3"
   },
   {
    "number": 4,
