@@ -1104,9 +1104,45 @@ KIIP.chapter({
      "word": "매물",
      "annotation": "매물"
     },
-    "(팔려고 내놓은 물건)을 보고 부동산을 방문했는데 방문 직전에 거래가 완료됐다고 하면서 다른 매물을 권유하는 경우도 많으므로 주의해야 한다. 또한 계약하기 전에 주택에 문제가 있는지, 계약을 하러 나온 사람이 진짜 집주인인지 꼭 확인해야 한다. 경우도 있다."
+    "(팔려고 내놓은 물건)을 보고 부동산을 방문했는데 방문 직전에 거래가 완료됐다고 하면서 다른 매물을 권유하는 경우도 많으므로 주의해야 한다. 또한 계약하기 전에 주택에 문제가 있는지, 계약을 하러 나온 사람이 진짜 집주인인지 꼭 확인해야 한다."
    ],
-   "translation": "When looking for a home to live in or to buy, one can search online without visiting an estate agent in person. On a property site you can pick the area you want and then search by the kind of home (apartment, 빌라, house, studio flat, shop unit), the kind of deal (purchase, 전세, monthly rent, short let) and the price range. Be careful, though: it is common to see a listing online, visit the agent, and be told the deal was completed just before you arrived and offered something else instead. And before signing, always check whether there is anything wrong with the property and whether the person who has come to sign is really the owner."
+   "translation": "When looking for a home to live in or to buy, one can search online without visiting an estate agent in person. On a property site you can pick the area you want and then search by the kind of home (apartment, 빌라, house, studio flat, shop unit), the kind of deal (purchase, 전세, monthly rent, short let) and the price range. Be careful, though: it is common to see a listing online, visit the agent, and be told the deal was completed just before you arrived and offered something else instead. And before signing, always check whether there is anything wrong with the property and whether the person who has come to sign is really the owner.",
+   "sentences": [
+    {
+     "spans": [
+      "거주하거나 구매할 집을 찾고자 할 때 부동산을 직접 방문하지 않고도 온라인으로도 알아볼 수 있다. "
+     ],
+     "translation": "When looking for a home to live in or to buy, one can search online without visiting an estate agent in person."
+    },
+    {
+     "spans": [
+      "부동산 사이트에서 원하는 지역을 선택한 후, 집의 형태(아파트, ",
+      {
+       "word": "빌라",
+       "annotation": "빌라"
+      },
+      ", 주택, 오피스텔, 상가 등), 거래 방식(매매, 전세, 월세, 단기 임대), 가격대 등에 따라 검색해 볼 수 있다. "
+     ],
+     "translation": "On a property site you can pick the area you want and then search by the kind of home (apartment, 빌라, house, studio flat, shop unit), the kind of deal (purchase, 전세, monthly rent, short let) and the price range."
+    },
+    {
+     "spans": [
+      "다만, 온라인 사이트에서 ",
+      {
+       "word": "매물",
+       "annotation": "매물"
+      },
+      "(팔려고 내놓은 물건)을 보고 부동산을 방문했는데 방문 직전에 거래가 완료됐다고 하면서 다른 매물을 권유하는 경우도 많으므로 주의해야 한다. "
+     ],
+     "translation": "Be careful, though: it is common to see a listing online, visit the agent, and be told the deal was completed just before you arrived and offered something else instead."
+    },
+    {
+     "spans": [
+      "또한 계약하기 전에 주택에 문제가 있는지, 계약을 하러 나온 사람이 진짜 집주인인지 꼭 확인해야 한다."
+     ],
+     "translation": "And before signing, always check whether there is anything wrong with the property and whether the person who has come to sign is really the owner."
+    }
+   ]
   },
   {
    "type": "section",
