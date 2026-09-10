@@ -764,7 +764,8 @@ KIIP.chapter({
    "type": "section",
    "kind": "aside",
    "text": "알아두면 좋아요",
-   "topic": "여행을 떠나요! 대한민국 구석구석에 대한 여행 정보"
+   "topic": "여행을 떠나요! 대한민국 구석구석에 대한 여행 정보",
+   "titleTranslation": "Let’s travel! Information on every corner of Korea"
   },
   {
    "type": "paragraph",
@@ -809,6 +810,66 @@ KIIP.chapter({
      "annotation": "참고"
     },
     "할 수 있다."
+   ],
+   "translation": "On the ‘대한민국 구석구석’ website (korean.visitkorea.or.kr), run by the Korea Tourism Organization, travel information for each region and festivals across the country can be looked up month by month. The site also sets out tourist routes by theme in detail: travelling with the family, travelling when rest and recovery are needed, travelling that children enjoy. Plenty of information and travel photographs can be found on the ‘대한민국 구석구석’ blog, Facebook, Twitter and Instagram as well.",
+   "sentences": [
+    {
+     "spans": [
+      {
+       "word": "한국관광공사",
+       "annotation": "한국관광공사"
+      },
+      "가 운영하는 ‘",
+      {
+       "word": "대한민국 구석구석",
+       "annotation": "대한민국 구석구석"
+      },
+      "’ 누리집(korean.visitkorea.or.kr)에서는 각 ",
+      {
+       "word": "지역별",
+       "annotation": "지역별"
+      },
+      " 여행 정보와 전국의 ",
+      {
+       "word": "축제",
+       "annotation": "축제"
+      },
+      " 정보를 ",
+      {
+       "word": "월별",
+       "annotation": "월별"
+      },
+      "로 확인할 수 있다. "
+     ],
+     "translation": "On the ‘대한민국 구석구석’ website (korean.visitkorea.or.kr), run by the Korea Tourism Organization, travel information for each region and festivals across the country can be looked up month by month."
+    },
+    {
+     "spans": [
+      "이 누리집에서는 가족과 함께 가는 여행, 휴식과 ",
+      {
+       "word": "회복",
+       "annotation": "회복"
+      },
+      "이 필요한 여행, 아이들이 좋아하는 여행 등 주제에 따른 ",
+      {
+       "word": "관광",
+       "annotation": "관광"
+      },
+      " 코스도 자세히 안내하고 있다. "
+     ],
+     "translation": "The site also sets out tourist routes by theme in detail: travelling with the family, travelling when rest and recovery are needed, travelling that children enjoy."
+    },
+    {
+     "spans": [
+      "‘대한민국 구석구석’ 블로그, 페이스북, 트위터, 인스타그램 등에서도 다양한 정보와 여행 사진을 ",
+      {
+       "word": "참고",
+       "annotation": "참고"
+      },
+      "할 수 있다."
+     ],
+     "translation": "Plenty of information and travel photographs can be found on the ‘대한민국 구석구석’ blog, Facebook, Twitter and Instagram as well."
+    }
    ]
   },
   {
@@ -1304,7 +1365,8 @@ KIIP.chapter({
    "type": "section",
    "kind": "aside",
    "text": "알아두면 좋아요",
-   "topic": "문화가 있는 날을 아세요?"
+   "topic": "문화가 있는 날을 아세요?",
+   "titleTranslation": "Do you know about the Day of Culture?"
   },
   {
    "type": "paragraph",
@@ -1345,6 +1407,79 @@ KIIP.chapter({
      "annotation": "야간 개방"
     },
     "을 한다. 예를 들어 2020년 기준으로 영화관에서는 매달 마지막 수요일 저녁 5시~9시까지의 영화는 5,000원으로 관람할 수 있다. (누리집: www.culture.go.kr)"
+   ],
+   "translation": "‘문화가 있는 날’ began on 29 January 2014. On the last Wednesday of every month it offers a range of cultural benefits, so that culture is easy to come by in daily life. On the day, some two thousand cultural venues across the country — cinemas, concert halls, museums, galleries, heritage sites — can be enjoyed at a discount or free. Some venues also open in the evening so that people can visit after work. As of 2020, for instance, cinemas show films for 5,000 won between five and nine in the evening on the last Wednesday of the month. Website: www.culture.go.kr",
+   "sentences": [
+    {
+     "spans": [
+      "‘",
+      {
+       "word": "문화가 있는 날",
+       "annotation": "문화가 있는 날"
+      },
+      "’은 2014년 1월 29일 처음 시작되었다. "
+     ],
+     "translation": "‘문화가 있는 날’ began on 29 January 2014."
+    },
+    {
+     "spans": [
+      "매달 마지막 수요일에 일상에서 문화를 쉽게 접할 수 있도록 다양한 문화 혜택을 제공하고 있다. "
+     ],
+     "translation": "On the last Wednesday of every month it offers a range of cultural benefits, so that culture is easy to come by in daily life."
+    },
+    {
+     "spans": [
+      "‘문화가 있는 날’에는 영화관, 공연장, 박물관, 미술관, ",
+      {
+       "word": "문화재",
+       "annotation": "문화재"
+      },
+      " 등 전국의 2천여 개 ",
+      {
+       "word": "문화시설",
+       "annotation": "문화시설"
+      },
+      "을 ",
+      {
+       "word": "할인",
+       "annotation": "할인"
+      },
+      " 또는 무료로 즐길 수 있다. "
+     ],
+     "translation": "On the day, some two thousand cultural venues across the country — cinemas, concert halls, museums, galleries, heritage sites — can be enjoyed at a discount or free."
+    },
+    {
+     "spans": [
+      {
+       "word": "더불어",
+       "annotation": "더불어"
+      },
+      " 직장인도 ",
+      {
+       "word": "퇴근",
+       "annotation": "퇴근"
+      },
+      " 후 이용이 가능하도록 일부 문화시설은 ",
+      {
+       "word": "야간 개방",
+       "annotation": "야간 개방"
+      },
+      "을 한다. "
+     ],
+     "translation": "Some venues also open in the evening so that people can visit after work."
+    },
+    {
+     "spans": [
+      "예를 들어 2020년 기준으로 영화관에서는 매달 마지막 수요일 저녁 5시~9시까지의 영화는 5,000원으로 관람할 수 있다. "
+     ],
+     "translation": "As of 2020, for instance, cinemas show films for 5,000 won between five and nine in the evening on the last Wednesday of the month."
+    },
+    {
+     "spans": [
+      "(누리집: www.culture.go.kr)"
+     ],
+     "translation": "Website: www.culture.go.kr"
+    }
    ]
   },
   {

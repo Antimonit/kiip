@@ -56,7 +56,19 @@ CHAPTER = dict(
         FIGURE("대법원장 임명장 수여 모습 (사진출처: 〈연합뉴스〉)"),
 
         SECTION("aside", "알아두면 좋아요"),
-        HEADING(3, "소송 구조 제도 안내책, 이젠 16개국 언어로 읽자!"),
+        HEADING(3, "소송 구조 제도 안내책, 이젠 16개국 언어로 읽자!", translation=
+          "The guide to legal aid, now readable in sixteen languages!" "\n\n"
+          "The National Court Administration has translated and published "
+          "its guide to the legal aid scheme in sixteen languages, English, "
+          "Russian, Chinese and Vietnamese among them, to protect the "
+          "rights of multicultural families and migrant workers. Legal aid "
+          "is the scheme that waives lawyers’ fees and other costs, or "
+          "extends the time to pay them, for those who find it hard to meet "
+          "the costs a trial requires. The Court Administration said, “we "
+          "expect the translated guide to make more use of legal aid — by "
+          "Koreans and also by multicultural families and foreign workers "
+          "living here — and to increase the chances of obtaining a "
+          "remedy.”"),
         PARAGRAPH("{법원행정처}가 다문화 가족, 이주민 근로자 등의 권리 보호를 위한 {소송 구조} 제도 안내 "
           "책자를 영어, 러시아어, 중국어, 베트남어 등 16개 언어로 {번역}해 {발간}했다. 소송 구조 "
           "제도는 재판 {과정}에 필요한 돈을 내기 어려운 사람들을 {대상}으로 {변호사} 비용 등을 "
@@ -101,7 +113,20 @@ CHAPTER = dict(
           "{상속}, 자녀 {양육} 등과 관련된 분쟁을 해결하기 위한 재판이다."),
 
         SECTION("aside", "알아두면 좋아요"),
-        HEADING(3, "대법원의 결정이 우리 생활에 영향을 준다"),
+        HEADING(3, "대법원의 결정이 우리 생활에 영향을 준다", translation=
+          "A Supreme Court decision reaches into daily life" "\n\n"
+          "Refusing permission for a waste facility on the ground of "
+          "‘concern about environmental pollution’ is lawful!" "\n\n"
+          "The Supreme Court has ruled lawful a local authority’s decision "
+          "not to allow a waste recycling facility to be built near a "
+          "residential area. Company A submitted a business plan asking ○○ "
+          "county for permission to build a waste recycling facility, and "
+          "○○ county refused it. The Supreme Court said, “once the "
+          "environment is polluted it is all but impossible to restore it, "
+          "so preventing pollution matters. Giving notice of unsuitability "
+          "on the ground of the harm that might come to the health of ○○ "
+          "county’s residents or to the surrounding environment is not "
+          "unlawful.”"),
         PARAGRAPH("‘환경 {오염} {우려}’를 이유로 {폐기물} 시설 {허락}하지 않은 결정은 {정당}하다!"),
         PARAGRAPH("거주 지역과 가까운 곳에 폐기물 {재활용} 시설을 설치하지 못하도록 한 지방자치단체의 "
           "결정이 정당하다는 대법원의 판결이 나왔다. A사는 ○○군에 폐기물 재활용 시설 설치를 "

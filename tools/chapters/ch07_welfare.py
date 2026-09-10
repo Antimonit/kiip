@@ -87,7 +87,19 @@ CHAPTER = dict(
                "심의를 통해 의료비를 지원하고 있다."),
         FIGURE("복지로 누리집에서 복지 관련 정보를 얻을 수 있다. (http://www.bokjiro.go.kr/)"),
         SECTION("aside", "알아두면 좋아요"),
-        HEADING(3, "태풍, 지진, 전염병 등의 재난상황에서도 도움을 받을 수 있는 방법이 있을까?"),
+        HEADING(3, "태풍, 지진, 전염병 등의 재난상황에서도 도움을 받을 수 있는 방법이 있을까?", translation=
+          "Is there help to be had in a disaster — a typhoon, an "
+          "earthquake, an epidemic?" "\n\n"
+          "In a disaster such as a typhoon, an earthquake or the spread of "
+          "an infectious disease, there is disaster relief money that the "
+          "government or a local authority pays for a limited time. The "
+          "best-known case in Korea was in 2020, when COVID-19 spread and "
+          "disaster relief money was paid to support those affected and to "
+          "stimulate the economy. The government’s emergency disaster "
+          "payment went to vulnerable households, such as recipients of "
+          "basic livelihood support, in cash and without a separate "
+          "application; the remaining households applied and were paid in "
+          "card points, consumption vouchers or local gift certificates."),
         PARAGRAPH("태풍, 지진, 전염병 확산 등 재난상황에서 정부나 지방자치단체 등이 한시적으로 지급하는 재난관련 지원금이 "
           "있다. 대표적으로 한국에서는 2020년 코로나바이러스 감염증-19가 확산됨에 따라 재난 피해자의 지원과 "
           "경기활성화를 위한 방법으로 재난관련 지원금이 지급되었다. 정부의 긴급재난지원금은 기초생활수급자 등 "
@@ -159,7 +171,21 @@ CHAPTER = dict(
           "외국인 근로자 지원센터는 외국인 근로자들을 대상으로 한국어 교육을 실시하고, 외국인 근로자의 권익 보호를 " "지원한다."),
         FIGURE("외국인 종합 안내센터(법무부, 1345) — 1345 + 국가번호 + * 로 20개 언어 상담이 " "가능하다."),
         SECTION("aside", "알아두면 좋아요"),
-        HEADING(3, "자신의 고향 나라 언어로 법률 상담을 받을 수 있는 방법은?"),
+        HEADING(3, "자신의 고향 나라 언어로 법률 상담을 받을 수 있는 방법은?", translation=
+          "How can you get legal advice in your own language?" "\n\n"
+          "A, an overseas Korean, was working at a company and caring for "
+          "an elderly widowed mother. Some five million won of wages had "
+          "been owed for several months, and A, unable to get the money "
+          "from the owner and in difficulty, took legal advice through the "
+          "free interpreting service between the ‘village lawyer’ and a "
+          "foreigner, provided by the foreigner information centre — the "
+          "1345 call centre. As a result, all the unpaid wages were "
+          "recovered." "\n\n"
+          "At the foreigner information centre (1345), a lawyer appointed "
+          "by the Ministry of Justice gives legal advice, with interpreting "
+          "help from a centre counsellor, to foreigners who find legal "
+          "services hard to use because of the language barrier and a lack "
+          "of information."),
         PARAGRAPH("재외 동포 A씨는 회사에 다니며 나이가 많은 홀어머니를 모시고 있었다. 수개월 간 약 500만원의 임금이 "
           "밀렸지만 사장으로부터 돈을 받지 못해 A씨는 생활에 어려움을 겪던 중 외국인 종합 안내센터(1345 "
           "콜센터)가 제공하는 ‘마을변호사-외국인’ 간 무료 통역 서비스를 통해 법률 자문을 받았다. 그 결과 "

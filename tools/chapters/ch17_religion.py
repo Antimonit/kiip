@@ -71,7 +71,8 @@ CHAPTER = dict(
           "{원불교} 등 한국 {고유}의 종교도 계속 이어져 오고 있다."),
 
         SECTION("aside", "알아두면 좋아요"),
-        HEADING(3, "한국에서 창시된 종교 – 천도교, 대종교, 원불교"),
+        HEADING(3, "한국에서 창시된 종교 – 천도교, 대종교, 원불교",
+          translation="Religions founded in Korea — 천도교, 대종교, 원불교"),
         TABLE(["종교명", "창시자", "창시 연도", "내용"],
               [["천도교", "최제우", "1860",
                 "처음에는 동학이라 불렸으며, ‘사람이 곧 하늘’이라는 인내천 사상을 담고 있음"],
@@ -114,14 +115,26 @@ CHAPTER = dict(
         FIGURE("대통령과 종교지도자 간담회 모습"),
 
         SECTION("aside", "알아두면 좋아요"),
-        HEADING(3, "종교의 자유는 헌법으로 보장된다"),
+        HEADING(3, "종교의 자유는 헌법으로 보장된다", translation=
+          "Freedom of religion is guaranteed by the Constitution" "\n\n"
+          "Korea’s Constitution guarantees freedom of religion, among the "
+          "basic rights the people are to enjoy, as follows."),
         PARAGRAPH("한국의 {헌법}에서는 국민이 누려야 할 {기본권} 중 종교의 자유를 다음과 같이 "
           "{보장}하고 있다."),
         BULLET("[헌법 제11조] 모든 국민은 법 앞에 {평등}하다. 누구든지 {성별}·종교 또는 사회적 "
           "신분에 의하여 정치적·경제적·사회적·문화적·생활의 모든 {영역}에 있어서 {차별}을 받지 "
-          "아니한다."),
+          "아니한다.",
+          translation="[Constitution, Article 11] All citizens are equal "
+                      "before the law. No one is to be discriminated "
+                      "against, in any area of political, economic, "
+                      "social, cultural or everyday life, on grounds of "
+                      "sex, religion or social standing."),
         BULLET("[헌법 제20조] 모든 국민은 종교의 자유를 가진다. 국교는 {인정}되지 아니하며, 종교와 "
-          "정치는 {분리}된다."),
+          "정치는 {분리}된다.",
+          translation="[Constitution, Article 20] All citizens have "
+                      "freedom of religion. No state religion is "
+                      "recognised, and religion and politics are "
+                      "separate."),
 
         SECTION("review", "주요 내용정리"),
         HEADING(3, "01 한국에는 어떤 종교가 있을까?"),

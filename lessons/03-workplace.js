@@ -551,7 +551,8 @@ KIIP.chapter({
    "type": "section",
    "kind": "aside",
    "text": "알아두면 좋아요",
-   "topic": "한국에서 특별히 많이 볼 수 있는 직업은?"
+   "topic": "한국에서 특별히 많이 볼 수 있는 직업은?",
+   "titleTranslation": "Which jobs are especially common in Korea?"
   },
   {
    "type": "paragraph",
@@ -567,6 +568,43 @@ KIIP.chapter({
      "annotation": "겸업하다"
     },
     "하는 사람들도 많다. 한편, 1인 가구와 맞벌이 가구가 증가하면서 인터넷으로 물건을 주문하면 새벽에 배송해주는 산업도 크게 성장하고 있다. 이에 따라 새벽배송 일에 종사하는 사람들의 수도 많아졌다."
+   ],
+   "translation": "Someone who drives a car in its owner’s place when the owner pays a set fee and asks is called a 대리운전기사, and companies specialising in it began to appear because of Korea’s distinctive 회식 culture. The work is mostly at night and anyone with a driving licence can do it, so many take it on as a second job alongside their own. Meanwhile, as single-person and double-income households increase, the business of ordering goods online and having them delivered before dawn is growing fast. With it has grown the number of people working in dawn delivery.",
+   "sentences": [
+    {
+     "spans": [
+      "차의 주인이 일정 금액을 내고 요청하면 차를 대신 운전해주는 사람을 ",
+      {
+       "word": "대리운전기사",
+       "annotation": "대리운전기사"
+      },
+      "라고 하는데 한국 특유의 회식문화로 인해 대리 운전 전문 회사가 생겨나기 시작했다. "
+     ],
+     "translation": "Someone who drives a car in its owner’s place when the owner pays a set fee and asks is called a 대리운전기사, and companies specialising in it began to appear because of Korea’s distinctive 회식 culture."
+    },
+    {
+     "spans": [
+      "주로 밤 시간에 일하고, 운전면허가 있으면 일할 수 있어 본인의 직업 외에 ",
+      {
+       "word": "겸업",
+       "annotation": "겸업하다"
+      },
+      "하는 사람들도 많다. "
+     ],
+     "translation": "The work is mostly at night and anyone with a driving licence can do it, so many take it on as a second job alongside their own."
+    },
+    {
+     "spans": [
+      "한편, 1인 가구와 맞벌이 가구가 증가하면서 인터넷으로 물건을 주문하면 새벽에 배송해주는 산업도 크게 성장하고 있다. "
+     ],
+     "translation": "Meanwhile, as single-person and double-income households increase, the business of ordering goods online and having them delivered before dawn is growing fast."
+    },
+    {
+     "spans": [
+      "이에 따라 새벽배송 일에 종사하는 사람들의 수도 많아졌다."
+     ],
+     "translation": "With it has grown the number of people working in dawn delivery."
+    }
    ]
   },
   {
@@ -834,12 +872,40 @@ KIIP.chapter({
    "type": "section",
    "kind": "aside",
    "text": "알아두면 좋아요",
-   "topic": "한국 직장인들은 일 년에 휴가를 며칠 정도 사용할까?"
+   "topic": "한국 직장인들은 일 년에 휴가를 며칠 정도 사용할까?",
+   "titleTranslation": "How many days of leave do Korean employees take in a year?"
   },
   {
    "type": "paragraph",
    "spans": [
     "한국 직장인은 2018년 한 해 평균 15일의 유급 휴가(쉬면서도 임금을 받는 휴가)를 받아 이 중 14일을 사용한 것으로 조사되었다. 평균 사용 일수가 8일이던 2016년보다 6일, 평균 10일이던 2017년보다 4일이 늘어났다. 이에 따라 조사 대상 국가 가운데 한국이 가장 높은 증가율을 보였다. 이러한 결과는 일과 삶의 균형을 추구하는 워라밸 문화 확산, 주 52시간 근로제 시행, 그리고 정부와 기업의 휴가 권장 분위기가 더해지면서 나타난 것으로 보인다."
+   ],
+   "translation": "Korean employees were found to have received an average of 15 days of paid leave — leave on which wages are still paid — in 2018, and to have used 14 of them. That is six days more than in 2016, when the average used was eight, and four more than in 2017, when it was ten. Korea thus showed the highest rate of increase among the countries surveyed. The result appears to come from the spread of a work-life balance culture, the introduction of the 52-hour week, and government and companies encouraging leave.",
+   "sentences": [
+    {
+     "spans": [
+      "한국 직장인은 2018년 한 해 평균 15일의 유급 휴가(쉬면서도 임금을 받는 휴가)를 받아 이 중 14일을 사용한 것으로 조사되었다. "
+     ],
+     "translation": "Korean employees were found to have received an average of 15 days of paid leave — leave on which wages are still paid — in 2018, and to have used 14 of them."
+    },
+    {
+     "spans": [
+      "평균 사용 일수가 8일이던 2016년보다 6일, 평균 10일이던 2017년보다 4일이 늘어났다. "
+     ],
+     "translation": "That is six days more than in 2016, when the average used was eight, and four more than in 2017, when it was ten."
+    },
+    {
+     "spans": [
+      "이에 따라 조사 대상 국가 가운데 한국이 가장 높은 증가율을 보였다. "
+     ],
+     "translation": "Korea thus showed the highest rate of increase among the countries surveyed."
+    },
+    {
+     "spans": [
+      "이러한 결과는 일과 삶의 균형을 추구하는 워라밸 문화 확산, 주 52시간 근로제 시행, 그리고 정부와 기업의 휴가 권장 분위기가 더해지면서 나타난 것으로 보인다."
+     ],
+     "translation": "The result appears to come from the spread of a work-life balance culture, the introduction of the 52-hour week, and government and companies encouraging leave."
+    }
    ]
   },
   {

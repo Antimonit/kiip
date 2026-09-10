@@ -74,7 +74,18 @@ CHAPTER = dict(
           "‘{방과} 후 학교 프로그램’을 운영하고 있다."),
 
         SECTION("aside", "알아두면 좋아요"),
-        HEADING(3, "외국인 자녀의 학교 입학은 어떻게?"),
+        HEADING(3, "외국인 자녀의 학교 입학은 어떻게?", translation=
+          "How does a foreigner’s child enrol at school?" "\n\n"
+          "Q Can anyone attend school? Compulsory education for children "
+          "and young people is guaranteed under the Constitution and the UN "
+          "Convention on the Rights of the Child, so foreign students and "
+          "students who arrived mid-schooling can receive school education "
+          "whatever their residence status." "\n\n"
+          "Q What documents should be taken along to enrol? First, a "
+          "document proving entry and departure or alien registration (or, "
+          "failing that, one confirming residence); second, a document "
+          "proving previous education (a graduation certificate or proof of "
+          "attendance, a transcript, and so on)."),
         PARAGRAPH("Q 누구나 학교에 다닐 수 있나요? — 「{헌법}」과 「UN 아동의 권리에 관한 {협약}」에 "
           "따라 아동·청소년의 의무 교육을 보장하고 있기 때문에 체류 {신분}에 관계없이 외국인 "
           "학생, {중도입국} 학생도 학교 교육을 받을 수 있다."),
@@ -119,7 +130,23 @@ CHAPTER = dict(
           "{자질}을 {함양}하는 데 중점을 둔다."),
 
         SECTION("aside", "알아두면 좋아요"),
-        HEADING(3, "온라인으로 만나는 학교, 온라인 개학"),
+        HEADING(3, "온라인으로 만나는 학교, 온라인 개학", translation=
+          "School met online: the online term" "\n\n"
+          "This was an education policy introduced for the first time when "
+          "COVID-19 spread in 2020: teacher and student do not meet face to "
+          "face and lessons are held remotely. It runs in three forms: "
+          "▶ ‘live two-way’, where teacher and student have the lesson over "
+          "a video link; ▶ ‘content-based’, where EBS material or a lesson "
+          "recorded by the teacher is watched; ▶ ‘task-based’, where work "
+          "such as a book report is set. For students with disabilities it "
+          "is tailored to the kind and degree of disability — online "
+          "lessons (braille files, subtitles, assistive devices) and one to "
+          "one home teaching. Multicultural students are offered programmes "
+          "and content for learning Korean and Korean culture, with "
+          "information sent home in several languages. For students from "
+          "low-income households the policy provided loans of smart devices "
+          "and help with data costs, so that every student could take part "
+          "in the online term."),
         PARAGRAPH("2020년 코로나19 확산으로 인해 처음으로 시행된 교육 정책으로, 교사와 학생이 대면하지 "
           "않고 {원격}으로 수업을 진행하는 것이다. ▶ 교사와 학생이 화상 연결로 수업하는 ‘실시간 "
           "{쌍방향}형’ ▶ EBS 콘텐츠나 교사가 녹화한 강의를 보는 ‘콘텐츠 활용형’ ▶ 독후감 등 "

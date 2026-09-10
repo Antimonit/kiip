@@ -614,7 +614,8 @@ KIIP.chapter({
    "type": "section",
    "kind": "aside",
    "text": "알아두면 좋아요",
-   "topic": "한국의 ‘방’ 문화를 즐겨보셨나요?"
+   "topic": "한국의 ‘방’ 문화를 즐겨보셨나요?",
+   "titleTranslation": "Have you enjoyed Korea’s ‘방’ culture?"
   },
   {
    "type": "paragraph",
@@ -680,6 +681,99 @@ KIIP.chapter({
      "annotation": "동료"
     },
     ", 가족들과 함께 많이 찾는다."
+   ],
+   "translation": "Korea has a distinctive ‘방’ culture. Walk down the street and you will easily find a 노래방, a PC방, a 찜질방, a 만화방. The PC방 in particular spread widely once the internet arrived in the late 1990s. What people mostly do at a PC방 is play games, and lately, as games have settled in as a part of popular culture, they are called ‘e-sports’. The 찜질방, where the traditional 온돌 can be felt, is also visited a great deal with friends, colleagues and family.",
+   "sentences": [
+    {
+     "spans": [
+      "한국에는 ",
+      {
+       "word": "독특한",
+       "annotation": "독특하다"
+      },
+      " ‘",
+      {
+       "word": "방",
+       "annotation": "방"
+      },
+      "’ 문화가 있다. "
+     ],
+     "translation": "Korea has a distinctive ‘방’ culture."
+    },
+    {
+     "spans": [
+      "길거리를 걷다 보면 ",
+      {
+       "word": "노래방",
+       "annotation": "노래방"
+      },
+      ", ",
+      {
+       "word": "PC방",
+       "annotation": "PC방"
+      },
+      ", ",
+      {
+       "word": "찜질방",
+       "annotation": "찜질방"
+      },
+      ", ",
+      {
+       "word": "만화방",
+       "annotation": "만화방"
+      },
+      " 등을 쉽게 ",
+      {
+       "word": "발견",
+       "annotation": "발견"
+      },
+      "할 수 있다. "
+     ],
+     "translation": "Walk down the street and you will easily find a 노래방, a PC방, a 찜질방, a 만화방."
+    },
+    {
+     "spans": [
+      "특히, PC방은 1990년대 ",
+      {
+       "word": "후반",
+       "annotation": "후반"
+      },
+      " 이후 인터넷이 ",
+      {
+       "word": "보급",
+       "annotation": "보급"
+      },
+      "되면서 널리 퍼지게 되었다. "
+     ],
+     "translation": "The PC방 in particular spread widely once the internet arrived in the late 1990s."
+    },
+    {
+     "spans": [
+      "PC방에서는 주로 게임을 많이 하는데 최근에는 게임도 하나의 대중문화로 자리 잡으면서 ‘",
+      {
+       "word": "e스포츠",
+       "annotation": "e스포츠"
+      },
+      "’로 불리고 있다. "
+     ],
+     "translation": "What people mostly do at a PC방 is play games, and lately, as games have settled in as a part of popular culture, they are called ‘e-sports’."
+    },
+    {
+     "spans": [
+      "또한 전통 ",
+      {
+       "word": "온돌",
+       "annotation": "온돌"
+      },
+      "문화를 느낄 수 있는 찜질방 역시 친구나 ",
+      {
+       "word": "동료",
+       "annotation": "동료"
+      },
+      ", 가족들과 함께 많이 찾는다."
+     ],
+     "translation": "The 찜질방, where the traditional 온돌 can be felt, is also visited a great deal with friends, colleagues and family."
+    }
    ]
   },
   {
@@ -706,6 +800,41 @@ KIIP.chapter({
      "annotation": "코스"
     },
     "가 되고 있다."
+   ],
+   "translation": "Lately, as the technology has improved, more people are visiting indoor baseball grounds and driving ranges that use screens. And this distinctive ‘방’ culture is often introduced abroad, so it has become an important part of the trip for foreigners visiting Korea.",
+   "sentences": [
+    {
+     "spans": [
+      "최근에는 기술이 발전함에 따라 ",
+      {
+       "word": "실내",
+       "annotation": "실내"
+      },
+      " 스크린을 ",
+      {
+       "word": "활용",
+       "annotation": "활용"
+      },
+      "한 야구장이나 ",
+      {
+       "word": "골프연습장",
+       "annotation": "골프연습장"
+      },
+      "을 방문하는 사람들도 늘어나고 있다. "
+     ],
+     "translation": "Lately, as the technology has improved, more people are visiting indoor baseball grounds and driving ranges that use screens."
+    },
+    {
+     "spans": [
+      "그리고 다른 나라에도 이러한 독특한 ‘방’ 문화가 자주 소개되어 한국을 찾는 외국인에게도 중요한 여행 ",
+      {
+       "word": "코스",
+       "annotation": "코스"
+      },
+      "가 되고 있다."
+     ],
+     "translation": "And this distinctive ‘방’ culture is often introduced abroad, so it has become an important part of the trip for foreigners visiting Korea."
+    }
    ]
   },
   {
@@ -1280,7 +1409,8 @@ KIIP.chapter({
    "type": "section",
    "kind": "aside",
    "text": "알아두면 좋아요",
-   "topic": "제92회 아카데미 영화제 작품상 등 4관왕을 수상한 영화 ‘기생충’"
+   "topic": "제92회 아카데미 영화제 작품상 등 4관왕을 수상한 영화 ‘기생충’",
+   "titleTranslation": "‘Parasite’, winner of four prizes at the 92nd Academy Awards, Best Picture among them"
   },
   {
    "type": "paragraph",
@@ -1395,6 +1525,136 @@ KIIP.chapter({
      "annotation": "감동"
     },
     "을 전해 주었다."
+   ],
+   "translation": "‘Parasite’, directed by Bong Joon-ho and starring Song Kang-ho, took the Palme d’Or, the top prize at the 72nd Cannes Film Festival, and then won in four categories at the 92nd Academy Awards: Best Picture, Best Director, Best Original Screenplay and Best International Feature. ‘Parasite’ tells the story of a rich family and a poor one, and was judged to combine artistry, popular appeal and craft in equal measure. Bong Joon-ho’s acceptance speech at the American Golden Globes, where the film won Best Foreign Language Film — “once you overcome the one-inch-tall barrier of subtitles, you can see so many more films, and all films are connected” — moved a great many people around the world.",
+   "sentences": [
+    {
+     "spans": [
+      {
+       "word": "봉준호",
+       "annotation": "봉준호"
+      },
+      " ",
+      {
+       "word": "감독",
+       "annotation": "감독"
+      },
+      ", ",
+      {
+       "word": "송강호",
+       "annotation": "송강호"
+      },
+      " ",
+      {
+       "word": "주연",
+       "annotation": "주연"
+      },
+      "의 한국 영화 ‘",
+      {
+       "word": "기생충",
+       "annotation": "기생충"
+      },
+      "’이 제72회 ",
+      {
+       "word": "칸 영화제",
+       "annotation": "칸 영화제"
+      },
+      " 최고상인 ",
+      {
+       "word": "황금종려상",
+       "annotation": "황금종려상"
+      },
+      "에 이어 제92회 ",
+      {
+       "word": "아카데미 영화제",
+       "annotation": "아카데미 영화제"
+      },
+      "에서 ",
+      {
+       "word": "작품상",
+       "annotation": "작품상"
+      },
+      ", ",
+      {
+       "word": "감독상",
+       "annotation": "감독상"
+      },
+      ", ",
+      {
+       "word": "각본상",
+       "annotation": "각본상"
+      },
+      ", ",
+      {
+       "word": "국제영화상",
+       "annotation": "국제영화상"
+      },
+      " 등 4개 부분에서 수상하였다. "
+     ],
+     "translation": "‘Parasite’, directed by Bong Joon-ho and starring Song Kang-ho, took the Palme d’Or, the top prize at the 72nd Cannes Film Festival, and then won in four categories at the 92nd Academy Awards: Best Picture, Best Director, Best Original Screenplay and Best International Feature."
+    },
+    {
+     "spans": [
+      "영화 ‘기생충’은 부자 가족과 가난한 가족의 이야기를 담고 있으며, 작품성과 ",
+      {
+       "word": "대중성",
+       "annotation": "대중성"
+      },
+      ", ",
+      {
+       "word": "예술성",
+       "annotation": "예술성"
+      },
+      "을 골고루 갖추었다는 평가를 받았다. "
+     ],
+     "translation": "‘Parasite’ tells the story of a rich family and a poor one, and was judged to combine artistry, popular appeal and craft in equal measure."
+    },
+    {
+     "spans": [
+      "한편, 미국 ",
+      {
+       "word": "골든글로브",
+       "annotation": "골든글로브"
+      },
+      " ",
+      {
+       "word": "시상식",
+       "annotation": "시상식"
+      },
+      "에서 ",
+      {
+       "word": "외국어영화상",
+       "annotation": "외국어영화상"
+      },
+      "을 받은 봉준호 감독의 “1인치 정도 되는 ",
+      {
+       "word": "자막",
+       "annotation": "자막"
+      },
+      "의 ",
+      {
+       "word": "장벽",
+       "annotation": "장벽"
+      },
+      "을 넘으면 여러분이 훨씬 더 많은 영화를 볼 수 있으며, 영화는 모두 ",
+      {
+       "word": "연결",
+       "annotation": "연결"
+      },
+      "돼 있다”라는 ",
+      {
+       "word": "수상 소감",
+       "annotation": "수상 소감"
+      },
+      "은 세계 많은 사람에게 큰 ",
+      {
+       "word": "감동",
+       "annotation": "감동"
+      },
+      "을 전해 주었다."
+     ],
+     "translation": "Bong Joon-ho’s acceptance speech at the American Golden Globes, where the film won Best Foreign Language Film — “once you overcome the one-inch-tall barrier of subtitles, you can see so many more films, and all films are connected” — moved a great many people around the world."
+    }
    ]
   },
   {

@@ -96,7 +96,19 @@ CHAPTER = dict(
           "은퇴를 맞아 {노년}을 준비하는 사람들이나 쾌적한 자연환경에 살기 원하는 사람들은 대도시 주변의 한적한 "
           "지역에 전원 주택을 짓고 사는 경우도 있다."),
         SECTION("aside", "알아두면 좋아요"),
-        HEADING(3, "공공 임대 주택이란?"),
+        HEADING(3, "공공 임대 주택이란?", translation=
+          "What is public rental housing?" "\n\n"
+          "Housing is expensive in the large cities, so ordinary people "
+          "have difficulty finding a home. The government therefore builds "
+          "multi-unit housing such as apartments so that those in financial "
+          "difficulty can buy or rent at a low price. It supports secure "
+          "housing for a range of people: public rental housing for those "
+          "who need society’s protection, such as recipients of basic "
+          "livelihood support, and also rental housing for the young — "
+          "students, newly married couples, those just starting out at work "
+          "(행복 주택) — rental housing for older people on low incomes "
+          "living alone (공공 실버 주택), and rental housing for multicultural "
+          "and single-parent families."),
         PARAGRAPH("대도시는 집값이 비싸기 때문에 서민들이 집을 구하기 어렵다. 그래서 정부에서는 아파트와 같은 공동 주택을 "
           "지어 경제적으로 어려운 사람들이 싼 값에 집을 사거나 빌릴 수 있도록 하고 있다. 기초생활수급자 등 "
           "사회의 보호가 필요한 계층을 위한 공공 임대 주택뿐만 아니라 대학생, 신혼부부, {사회초년생}(일을 "
@@ -162,7 +174,19 @@ CHAPTER = dict(
           "살펴보고 자신에게 적합한 방식을 선택하는 것이 좋다."),
         FIGURE("포장 이사 모습"),
         SECTION("aside", "알아두면 좋아요"),
-        HEADING(3, "부동산에 갈 시간이 없다면? 온라인으로 알아보세요"),
+        HEADING(3, "부동산에 갈 시간이 없다면? 온라인으로 알아보세요", translation=
+          "No time to visit an agent? Look online" "\n\n"
+          "When looking for a home to live in or to buy, one can search "
+          "online without visiting an estate agent in person. On a property "
+          "site you can pick the area you want and then search by the kind "
+          "of home (apartment, 빌라, house, studio flat, shop unit), the kind "
+          "of deal (purchase, 전세, monthly rent, short let) and the price "
+          "range. Be careful, though: it is common to see a listing online, "
+          "visit the agent, and be told the deal was completed just before "
+          "you arrived and offered something else instead. And before "
+          "signing, always check whether there is anything wrong with the "
+          "property and whether the person who has come to sign is really "
+          "the owner."),
         PARAGRAPH("거주하거나 구매할 집을 찾고자 할 때 부동산을 직접 방문하지 않고도 온라인으로도 알아볼 수 있다. 부동산 "
           "사이트에서 원하는 지역을 선택한 후, 집의 형태(아파트, 빌라, 주택, 오피스텔, 상가 등), 거래 "
           "방식(매매, 전세, 월세, 단기 임대), 가격대 등에 따라 검색해 볼 수 있다. 다만, 온라인 사이트에서 "

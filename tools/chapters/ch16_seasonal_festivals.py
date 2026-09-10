@@ -62,7 +62,15 @@ CHAPTER = dict(
         FIGURE("설날 아침에 먹는 떡국"),
 
         SECTION("aside", "알아두면 좋아요"),
-        HEADING(3, "설날의 대표적인 전통놀이, 윷놀이"),
+        HEADING(3, "설날의 대표적인 전통놀이, 윷놀이", translation=
+          "윷놀이, the game of 설날" "\n\n"
+          "윷놀이 is the traditional Korean game many people enjoy at 설날. It "
+          "is a kind of board game, made up of four wooden 윷 sticks, four "
+          "pieces and a board. According to how many sticks land face up, "
+          "from one to four, the throw is called 도, 개, 걸 or 윷; when none "
+          "lands face up it is called 모. A piece is moved by the number of "
+          "sticks that landed face up, and whoever gets all four of their "
+          "pieces round the set path of the board and out first wins."),
         PARAGRAPH("{윷놀이}는 설날에 많은 사람들이 즐기는 대표적인 한국의 전통놀이다. 나무로 만든 "
           "{윷가락} 네 개와 윷 {말} 네 개, {윷판}으로 이루어진 일종의 보드게임이다. "
           "{뒤집어진|뒤집어지다} 개수에 따라 하나부터 네 개까지 도, 개, 걸, 윷이라고 부르며 "
@@ -98,7 +106,16 @@ CHAPTER = dict(
         FIGURE("추석의 대표음식, 송편"),
 
         SECTION("aside", "알아두면 좋아요"),
-        HEADING(3, "24절기를 알아볼까요?"),
+        HEADING(3, "24절기를 알아볼까요?", translation=
+          "Shall we look at the 24 solar terms?" "\n\n"
+          "‘입춘’, which announces the start of spring, ‘경칩’, when the frogs "
+          "come out, and ‘동지’, the longest night, when 팥죽 is cooked and "
+          "eaten, are among the 24 solar terms. The 24 terms were made to "
+          "divide the seasons by the position of the ecliptic, the path the "
+          "sun travels, and were useful in a farming society greatly "
+          "affected by the weather. They still help with farming today, and "
+          "the food and the customs that go with them carry on in everyday "
+          "life."),
         PARAGRAPH("봄의 시작을 알리는 ‘{입춘}’, 개구리가 튀어나온다는 ‘{경칩},’ 밤이 가장 길며 "
           "{팥죽}을 {쑤어|쑤다} 먹는 ‘{동지}’ 등은 {24절기} 중 하나이다. 24절기는 태양이 "
           "움직이는 길인 {황도}의 위치에 따라 계절적 구분을 하기 위해 만들어진 것인데 과거 "

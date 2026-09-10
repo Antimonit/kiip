@@ -60,7 +60,20 @@ CHAPTER = dict(
         PARAGRAPH("이 외 소외 계층을 대상으로 평생 교육에 필요한 비용의 일부를 국가가 지원하는 평생 교육 바우처 제도가 "
           "있으며 평생 교육 종합 정보 시스템인 평생 학습 포털에서는 개인 맞춤형 평생 학습 서비스를 제공한다."),
         SECTION("aside", "알아두면 좋아요"),
-        HEADING(3, "평생 교육에 대한 모든 정보는 여기로: 늘 배움"),
+        HEADING(3, "평생 교육에 대한 모든 정보는 여기로: 늘 배움", translation=
+          "Everything about lifelong learning in one place: 늘배움" "\n\n"
+          "늘배움, the national lifelong learning portal "
+          "(www.lifelongedu.go.kr), is a comprehensive lifelong learning "
+          "information system where anyone can find the learning "
+          "information they want, at any time and anywhere. Lifelong "
+          "learning has until now run mostly on offline programmes, which "
+          "limited how systematically and comprehensively it could meet "
+          "what people were asking for. So that everyone can have lifelong "
+          "learning close at hand without limits of time or place — "
+          "including those with little chance to take part and residents of "
+          "areas with little provision — it offers information on lifelong "
+          "learning courses and institutions across the country, and good "
+          "online content so that learning online is possible."),
         PARAGRAPH("국가평생학습포털 늘배움(www.lifelongedu.go.kr)은 누구나, 언제, 어디서나 원하는 평생 "
           "학습 정보를 이용할 수 있는 평생 교육 종합 정보 시스템이다. 그동안의 평생 교육은 오프라인 프로그램 "
           "중심으로 운영되어 수요자 요구에 부합하는 체계적이고 종합적인 평생 학습 지원에는 한계가 있었다. 평생 "
@@ -97,7 +110,21 @@ CHAPTER = dict(
           "제과제빵 등의 직업 훈련 프로그램을 지원하고 있다."),
         FIGURE("이주민을 위한 원목 공예수업"),
         SECTION("aside", "알아두면 좋아요"),
-        HEADING(3, "학점 은행제와 독학 학위제"),
+        HEADING(3, "학점 은행제와 독학 학위제", translation=
+          "The credit bank and the self-study degree" "\n\n"
+          "The credit bank is a scheme under which learning and "
+          "qualifications of various kinds gained outside school are "
+          "recognised as credits, and once the credits accumulate and meet "
+          "a set standard a degree can be awarded. A bachelor’s degree can "
+          "be obtained with 140 credits or more, including major and "
+          "general-education credits, and an associate degree with 80 or "
+          "more (120 or more on a three-year course), where the legal "
+          "requirements are also met. Credit bank: http://www.cb.or.kr" "\n\n"
+          "The self-study degree is a scheme that awards a bachelor’s "
+          "degree to those who pass a state degree examination. There are "
+          "eleven fields, among them Korean literature, English literature, "
+          "psychology and business administration. Self-study degree: "
+          "https://bdes.nile.or.kr"),
         PARAGRAPH("학점 은행제는 학교 밖에서 이루어지는 다양한 형태의 학습 및 자격을 학점으로 인정받고, 학점이 누적되어 "
           "일정 기준을 충족하면 학위 취득이 가능한 제도이다. 학사 학위는 전공 및 교양학점을 포함하여 140학점 "
           "이상, 전문 학사는 전공 및 교양 학점을 포함하여 80학점 이상(3년제는 120학점 이상)의 학점을 "

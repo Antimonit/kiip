@@ -76,16 +76,31 @@ CHAPTER = dict(
           "{기르도록|기르다} 가르친다."),
 
         SECTION("aside", "알아두면 좋아요"),
-        HEADING(3, "만 65세 이상 노인을 위한 복지 혜택(2020년 기준)"),
+        HEADING(3, "만 65세 이상 노인을 위한 복지 혜택(2020년 기준)", translation=
+          "Welfare benefits for people aged 65 and over (as of 2020)" "\n\n"
+          "As Korea has become an ageing society, much effort has gone not "
+          "only into respect for the old but into raising their quality of "
+          "life in practical ways. A range of welfare benefits is provided "
+          "to those aged 65 and over; the main ones are these."),
         PARAGRAPH("한국은 {고령화} 사회가 되면서 노인 공경 뿐 아니라 {실질적}으로 노인의 삶의 질이 "
           "{향상}될 수 있도록 많은 노력을 기울이고 있다. 만 65세 이상의 노인들에게 다양한 복지 "
           "{혜택}을 지원하고 있으며, 그 대표적인 예는 다음과 같다."),
-        BULLET("지하철, 도시철도 무료"),
-        BULLET("KTX, SRT, 새마을호, 무궁화 기차 30% 할인(주말 및 공휴일 제외)"),
-        BULLET("{고궁} 및 국공립 박물관 무료"),
-        BULLET("치과 임플란트 및 {틀니} 70% 할인 지원"),
-        BULLET("국가 예방 접종 지원(폐렴구균/인플루엔자)"),
-        BULLET("노인 일자리 및 사회활동 지원 프로그램 참여"),
+        BULLET("지하철, 도시철도 무료",
+          translation="Free travel on the subway and urban railways."),
+        BULLET("KTX, SRT, 새마을호, 무궁화 기차 30% 할인(주말 및 공휴일 제외)",
+          translation="30% off KTX, SRT, Saemaul and Mugunghwa trains "
+                      "(except weekends and public holidays)."),
+        BULLET("{고궁} 및 국공립 박물관 무료",
+          translation="Free entry to the old palaces and to national and "
+                      "public museums."),
+        BULLET("치과 임플란트 및 {틀니} 70% 할인 지원",
+          translation="70% off dental implants and dentures."),
+        BULLET("국가 예방 접종 지원(폐렴구균/인플루엔자)",
+          translation="State-funded vaccination (pneumococcus and "
+                      "influenza)."),
+        BULLET("노인 일자리 및 사회활동 지원 프로그램 참여",
+          translation="A place on the programmes supporting work and "
+                      "social activity for older people."),
 
         SECTION("part", "02 공동체와 연고를 중요하게 여기는 모습은 어떻게 나타날까?"),
         HEADING(2, "공동체를 중요하게 생각하는 한국인"),
@@ -128,7 +143,16 @@ CHAPTER = dict(
           "있다."),
 
         SECTION("aside", "알아두면 좋아요"),
-        HEADING(3, "‘생활협동조합(생협)’에 대해 들어 봤나요?"),
+        HEADING(3, "‘생활협동조합(생협)’에 대해 들어 봤나요?", translation=
+          "Have you heard of the ‘생활협동조합’ — the consumer co-operative?" "\n\n"
+          "A 생활협동조합 is an arrangement in which members share everyday "
+          "food and manufactured goods — things made in factories — among "
+          "themselves. At a co-operative one can buy goods safely and "
+          "relatively cheaply, through the producer. It also helps in "
+          "putting the spirit of mutual aid into practice: an effort to "
+          "live alongside one’s neighbours, and ethical consumption that "
+          "protects the earth and sustains life. Among the best-known "
+          "co-operatives are 한살림, 두레생협 and ICOOP생협."),
         PARAGRAPH("{생활협동조합}이란 {조합원}들 간에 일상적인 식품과 {공산품}(공장에서 생산한 물건) "
           "등을 서로 나누는 형태를 말한다. 생활협동조합에서는 생산자를 통해 비교적 싼 가격으로 "
           "안전하게 물품을 살 수 있다. 뿐만 아니라 이웃과 더불어 살려는 노력, 지구를 지키고 "

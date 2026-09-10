@@ -673,7 +673,8 @@ KIIP.chapter({
    "type": "section",
    "kind": "aside",
    "text": "알아두면 좋아요",
-   "topic": "만 65세 이상 노인을 위한 복지 혜택(2020년 기준)"
+   "topic": "만 65세 이상 노인을 위한 복지 혜택(2020년 기준)",
+   "titleTranslation": "Welfare benefits for people aged 65 and over (as of 2020)"
   },
   {
    "type": "paragraph",
@@ -699,18 +700,71 @@ KIIP.chapter({
      "annotation": "혜택"
     },
     "을 지원하고 있으며, 그 대표적인 예는 다음과 같다."
+   ],
+   "translation": "As Korea has become an ageing society, much effort has gone not only into respect for the old but into raising their quality of life in practical ways. A range of welfare benefits is provided to those aged 65 and over; the main ones are these.",
+   "sentences": [
+    {
+     "spans": [
+      "한국은 ",
+      {
+       "word": "고령화",
+       "annotation": "고령화"
+      },
+      " 사회가 되면서 노인 공경 뿐 아니라 ",
+      {
+       "word": "실질적",
+       "annotation": "실질적"
+      },
+      "으로 노인의 삶의 질이 ",
+      {
+       "word": "향상",
+       "annotation": "향상"
+      },
+      "될 수 있도록 많은 노력을 기울이고 있다. "
+     ],
+     "translation": "As Korea has become an ageing society, much effort has gone not only into respect for the old but into raising their quality of life in practical ways."
+    },
+    {
+     "spans": [
+      "만 65세 이상의 노인들에게 다양한 복지 ",
+      {
+       "word": "혜택",
+       "annotation": "혜택"
+      },
+      "을 지원하고 있으며, 그 대표적인 예는 다음과 같다."
+     ],
+     "translation": "A range of welfare benefits is provided to those aged 65 and over; the main ones are these."
+    }
    ]
   },
   {
    "type": "bullet",
    "spans": [
     "지하철, 도시철도 무료"
+   ],
+   "translation": "Free travel on the subway and urban railways.",
+   "sentences": [
+    {
+     "spans": [
+      "지하철, 도시철도 무료"
+     ],
+     "translation": "Free travel on the subway and urban railways."
+    }
    ]
   },
   {
    "type": "bullet",
    "spans": [
     "KTX, SRT, 새마을호, 무궁화 기차 30% 할인(주말 및 공휴일 제외)"
+   ],
+   "translation": "30% off KTX, SRT, Saemaul and Mugunghwa trains (except weekends and public holidays).",
+   "sentences": [
+    {
+     "spans": [
+      "KTX, SRT, 새마을호, 무궁화 기차 30% 할인(주말 및 공휴일 제외)"
+     ],
+     "translation": "30% off KTX, SRT, Saemaul and Mugunghwa trains (except weekends and public holidays)."
+    }
    ]
   },
   {
@@ -721,6 +775,19 @@ KIIP.chapter({
      "annotation": "고궁"
     },
     " 및 국공립 박물관 무료"
+   ],
+   "translation": "Free entry to the old palaces and to national and public museums.",
+   "sentences": [
+    {
+     "spans": [
+      {
+       "word": "고궁",
+       "annotation": "고궁"
+      },
+      " 및 국공립 박물관 무료"
+     ],
+     "translation": "Free entry to the old palaces and to national and public museums."
+    }
    ]
   },
   {
@@ -732,18 +799,50 @@ KIIP.chapter({
      "annotation": "틀니"
     },
     " 70% 할인 지원"
+   ],
+   "translation": "70% off dental implants and dentures.",
+   "sentences": [
+    {
+     "spans": [
+      "치과 임플란트 및 ",
+      {
+       "word": "틀니",
+       "annotation": "틀니"
+      },
+      " 70% 할인 지원"
+     ],
+     "translation": "70% off dental implants and dentures."
+    }
    ]
   },
   {
    "type": "bullet",
    "spans": [
     "국가 예방 접종 지원(폐렴구균/인플루엔자)"
+   ],
+   "translation": "State-funded vaccination (pneumococcus and influenza).",
+   "sentences": [
+    {
+     "spans": [
+      "국가 예방 접종 지원(폐렴구균/인플루엔자)"
+     ],
+     "translation": "State-funded vaccination (pneumococcus and influenza)."
+    }
    ]
   },
   {
    "type": "bullet",
    "spans": [
     "노인 일자리 및 사회활동 지원 프로그램 참여"
+   ],
+   "translation": "A place on the programmes supporting work and social activity for older people.",
+   "sentences": [
+    {
+     "spans": [
+      "노인 일자리 및 사회활동 지원 프로그램 참여"
+     ],
+     "translation": "A place on the programmes supporting work and social activity for older people."
+    }
    ]
   },
   {
@@ -1252,7 +1351,8 @@ KIIP.chapter({
    "type": "section",
    "kind": "aside",
    "text": "알아두면 좋아요",
-   "topic": "‘생활협동조합(생협)’에 대해 들어 봤나요?"
+   "topic": "‘생활협동조합(생협)’에 대해 들어 봤나요?",
+   "titleTranslation": "Have you heard of the ‘생활협동조합’ — the consumer co-operative?"
   },
   {
    "type": "paragraph",
@@ -1282,6 +1382,57 @@ KIIP.chapter({
      "annotation": "실천"
     },
     "하는 데도 도움이 된다. 대표적인 생협으로는 한살림, 두레생협, ICOOP생협 등이 있다."
+   ],
+   "translation": "A 생활협동조합 is an arrangement in which members share everyday food and manufactured goods — things made in factories — among themselves. At a co-operative one can buy goods safely and relatively cheaply, through the producer. It also helps in putting the spirit of mutual aid into practice: an effort to live alongside one’s neighbours, and ethical consumption that protects the earth and sustains life. Among the best-known co-operatives are 한살림, 두레생협 and ICOOP생협.",
+   "sentences": [
+    {
+     "spans": [
+      {
+       "word": "생활협동조합",
+       "annotation": "생활협동조합"
+      },
+      "이란 ",
+      {
+       "word": "조합원",
+       "annotation": "조합원"
+      },
+      "들 간에 일상적인 식품과 ",
+      {
+       "word": "공산품",
+       "annotation": "공산품"
+      },
+      "(공장에서 생산한 물건) 등을 서로 나누는 형태를 말한다. "
+     ],
+     "translation": "A 생활협동조합 is an arrangement in which members share everyday food and manufactured goods — things made in factories — among themselves."
+    },
+    {
+     "spans": [
+      "생활협동조합에서는 생산자를 통해 비교적 싼 가격으로 안전하게 물품을 살 수 있다. "
+     ],
+     "translation": "At a co-operative one can buy goods safely and relatively cheaply, through the producer."
+    },
+    {
+     "spans": [
+      "뿐만 아니라 이웃과 더불어 살려는 노력, 지구를 지키고 생명을 살리는 ",
+      {
+       "word": "윤리적",
+       "annotation": "윤리적"
+      },
+      " 소비를 통해 상부상조 정신을 ",
+      {
+       "word": "실천",
+       "annotation": "실천"
+      },
+      "하는 데도 도움이 된다. "
+     ],
+     "translation": "It also helps in putting the spirit of mutual aid into practice: an effort to live alongside one’s neighbours, and ethical consumption that protects the earth and sustains life."
+    },
+    {
+     "spans": [
+      "대표적인 생협으로는 한살림, 두레생협, ICOOP생협 등이 있다."
+     ],
+     "translation": "Among the best-known co-operatives are 한살림, 두레생협 and ICOOP생협."
+    }
    ]
   },
   {

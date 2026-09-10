@@ -63,7 +63,16 @@ CHAPTER = dict(
         FIGURE("오프라인·온라인 쇼핑 현황 (통계청, 2019)"),
 
         SECTION("aside", "알아두면 좋아요"),
-        HEADING(3, "지역사랑 상품권을 아시나요?"),
+        HEADING(3, "지역사랑 상품권을 아시나요?", translation=
+          "Do you know about the local gift certificate?" "\n\n"
+          "A 지역사랑 상품권 is a gift certificate issued by a local "
+          "authority, usable only at participating shops in that area — "
+          "shops that have agreed to take it — and available at 농협, 신협, "
+          "새마을금고 and elsewhere. Using it brings a discount of about "
+          "0.5–10% as standard, with a further discount at the festivals. "
+          "It can be used like cash anywhere with a participating-shop "
+          "sticker: petrol stations, restaurants, bookshops and 학원, not "
+          "only the traditional markets."),
         PARAGRAPH("{지역사랑 상품권}은 각 지역의 지방자치단체에서 {발행}하는 {상품권}으로 그 "
                   "지역에 있는 {가맹점}(사용하기로 약속을 맺은 상점)에서만 사용할 수 있고 {농협}, "
                   "{신협}, {새마을금고} 등에서 {구입}할 수 있다. 이 상품권을 이용하면 "
@@ -105,14 +114,26 @@ CHAPTER = dict(
         FIGURE("소비자의 책임"),
 
         SECTION("aside", "알아두면 좋아요"),
-        HEADING(3, "소비 과정에서 피해를 입었을 때는?"),
-        HEADING(4, "1372 소비자 상담센터에 연락하기"),
-        BULLET("한국말을 잘하는 사람"),
-        BULLET("전화: 1372 + 통화버튼 누르고 안내에 따라 상담", level=2),
-        BULLET("인터넷: 1372소비자상담센터(www.1372.go.kr) 접속하여 인터넷상담 클릭", level=2),
-        BULLET("한국말을 잘 못하는 사람"),
+        HEADING(3, "소비 과정에서 피해를 입었을 때는?",
+          translation="What to do when something goes wrong with a "
+                      "purchase"),
+        HEADING(4, "1372 소비자 상담센터에 연락하기",
+          translation="Contacting the 1372 consumer advice centre"),
+        BULLET("한국말을 잘하는 사람",
+          translation="If your Korean is good"),
+        BULLET("전화: 1372 + 통화버튼 누르고 안내에 따라 상담", level=2,
+          translation="By telephone: dial 1372, press call, and follow the "
+                      "instructions to speak to an adviser."),
+        BULLET("인터넷: 1372소비자상담센터(www.1372.go.kr) 접속하여 인터넷상담 클릭", level=2,
+          translation="Online: go to the 1372 consumer advice centre "
+                      "(www.1372.go.kr) and click online advice."),
+        BULLET("한국말을 잘 못하는 사람",
+          translation="If your Korean is not good"),
         BULLET("{다누리콜센터}(1577-1366)로 전화 → 상담원의 통역 → 1372 소비자 상담센터에 연락",
-               level=2),
+               level=2,
+               translation="Ring the Danuri call centre (1577-1366) → the "
+                           "adviser interprets → they contact the 1372 "
+                           "consumer advice centre."),
         FIGURE("한국소비자원, 소비자상담 절차 — 소비자가 1372 소비자상담센터(한국소비자원, 10개 "
                "소비자단체, 17개 광역시도 지방자치단체)에 상담을 신청하고, 피해구제는 "
                "한국소비자원으로 이관된다"),

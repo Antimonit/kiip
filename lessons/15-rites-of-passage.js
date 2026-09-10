@@ -653,7 +653,8 @@ KIIP.chapter({
    "type": "section",
    "kind": "aside",
    "text": "알아두면 좋아요",
-   "topic": "백일을 축하합니다!"
+   "topic": "백일을 축하합니다!",
+   "titleTranslation": "Congratulations on a hundred days!"
   },
   {
    "type": "paragraph",
@@ -679,6 +680,53 @@ KIIP.chapter({
      "annotation": "추억"
     },
     "을 남기기 위해 백일 사진을 찍는다."
+   ],
+   "translation": "In the old days, medicine being undeveloped, it was not rare for a child to die soon after birth. So in Korea a 백일잔치 was held on the hundredth day after a child was born, to mark having grown well and healthily until then. Family and close relatives gather at a 백일잔치 to congratulate the child, and rice cake marking the day is sometimes sent round to neighbours and friends. Photographs are also taken, to record the child’s growth and to keep a beautiful memory.",
+   "sentences": [
+    {
+     "spans": [
+      "옛날에는 의료 기술이 발달하지 못했기 때문에 아이가 태어난 지 얼마 안 돼 죽는 경우가 적지 않았다. "
+     ],
+     "translation": "In the old days, medicine being undeveloped, it was not rare for a child to die soon after birth."
+    },
+    {
+     "spans": [
+      "그래서 한국에서는 아이가 태어난 지 ",
+      {
+       "word": "백일",
+       "annotation": "백일"
+      },
+      "(100일)이 되는 날에 그동안 건강히 잘 자란 것을 기념하는 ",
+      {
+       "word": "백일잔치",
+       "annotation": "백일잔치"
+      },
+      "를 열었다. "
+     ],
+     "translation": "So in Korea a 백일잔치 was held on the hundredth day after a child was born, to mark having grown well and healthily until then."
+    },
+    {
+     "spans": [
+      "백일잔치에는 가족과 가까운 친척이 모여 아이의 백일을 축하해 주며, 이웃이나 친한 사람들에게 백일을 기념하는 떡을 ",
+      {
+       "word": "돌리기도",
+       "annotation": "돌리다"
+      },
+      " 한다. "
+     ],
+     "translation": "Family and close relatives gather at a 백일잔치 to congratulate the child, and rice cake marking the day is sometimes sent round to neighbours and friends."
+    },
+    {
+     "spans": [
+      "또한 아이의 성장과 아름다운 ",
+      {
+       "word": "추억",
+       "annotation": "추억"
+      },
+      "을 남기기 위해 백일 사진을 찍는다."
+     ],
+     "translation": "Photographs are also taken, to record the child’s growth and to keep a beautiful memory."
+    }
    ]
   },
   {
@@ -1269,7 +1317,8 @@ KIIP.chapter({
    "type": "section",
    "kind": "aside",
    "text": "알아두면 좋아요",
-   "topic": "장례 문화가 바뀌고 있다"
+   "topic": "장례 문화가 바뀌고 있다",
+   "titleTranslation": "Funeral customs are changing"
   },
   {
    "type": "paragraph",
@@ -1335,6 +1384,105 @@ KIIP.chapter({
      "annotation": "기여"
     },
     "할 수 있다."
+   ],
+   "translation": "Up to the 1970s and 80s most funerals in Korea favoured burial, but as the times have changed the number of people who want cremation has grown. Reasons given for choosing cremation include more hygienic care than burial, a simpler procedure and lower cost. After cremation the remains are kept at a charnel house or a memorial park, which the family visits on the anniversary of the death or around the festivals. Lately natural burial, which stresses the environment and the living world, has been drawing attention too. In natural burial the cremated remains are buried among trees, flowers or grass. It keeps the departed close to where the living are while helping to preserve the natural environment.",
+   "sentences": [
+    {
+     "spans": [
+      "1970~80년대까지는 한국에서 장례를 할 때 대부분 매장을 ",
+      {
+       "word": "선호했지만",
+       "annotation": "선호하다"
+      },
+      ", 시대가 변화하면서 화장을 원하는 인구가 늘고 있다. "
+     ],
+     "translation": "Up to the 1970s and 80s most funerals in Korea favoured burial, but as the times have changed the number of people who want cremation has grown."
+    },
+    {
+     "spans": [
+      "화장을 ",
+      {
+       "word": "희망",
+       "annotation": "희망"
+      },
+      "하는 이유로는 매장에 비해 ",
+      {
+       "word": "위생적",
+       "annotation": "위생적"
+      },
+      "인 관리와 ",
+      {
+       "word": "간편한",
+       "annotation": "간편하다"
+      },
+      " 절차, 저렴한 비용 등을 들 수 있다. "
+     ],
+     "translation": "Reasons given for choosing cremation include more hygienic care than burial, a simpler procedure and lower cost."
+    },
+    {
+     "spans": [
+      "화장을 한 뒤 남은 ",
+      {
+       "word": "유골",
+       "annotation": "유골"
+      },
+      "은 봉안당이나 추모공원에 모셔두고 조상이 돌아가신 날이나 명절 무렵에 방문한다. "
+     ],
+     "translation": "After cremation the remains are kept at a charnel house or a memorial park, which the family visits on the anniversary of the death or around the festivals."
+    },
+    {
+     "spans": [
+      "최근에는 환경과 ",
+      {
+       "word": "생태",
+       "annotation": "생태"
+      },
+      "를 강조하는 ",
+      {
+       "word": "자연장",
+       "annotation": "자연장"
+      },
+      "도 ",
+      {
+       "word": "주목",
+       "annotation": "주목"
+      },
+      "을 받고 있다. "
+     ],
+     "translation": "Lately natural burial, which stresses the environment and the living world, has been drawing attention too."
+    },
+    {
+     "spans": [
+      "자연장은 화장한 유골을 나무, ",
+      {
+       "word": "화초",
+       "annotation": "화초"
+      },
+      ", ",
+      {
+       "word": "잔디",
+       "annotation": "잔디"
+      },
+      " 주변에 묻는 방식이다. "
+     ],
+     "translation": "In natural burial the cremated remains are buried among trees, flowers or grass."
+    },
+    {
+     "spans": [
+      "이를 통해 생활 공간 가까이에 고인을 모시면서 자연환경 ",
+      {
+       "word": "보존",
+       "annotation": "보존"
+      },
+      "에도 ",
+      {
+       "word": "기여",
+       "annotation": "기여"
+      },
+      "할 수 있다."
+     ],
+     "translation": "It keeps the departed close to where the living are while helping to preserve the natural environment."
+    }
    ]
   },
   {

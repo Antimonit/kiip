@@ -64,7 +64,16 @@ CHAPTER = dict(
         FIGURE("2019 성년의 날 기념식(여성가족부) (사진 출처: 〈연합뉴스〉)"),
 
         SECTION("aside", "알아두면 좋아요"),
-        HEADING(3, "백일을 축하합니다!"),
+        HEADING(3, "백일을 축하합니다!", translation=
+          "Congratulations on a hundred days!" "\n\n"
+          "In the old days, medicine being undeveloped, it was not rare for "
+          "a child to die soon after birth. So in Korea a 백일잔치 was held on "
+          "the hundredth day after a child was born, to mark having grown "
+          "well and healthily until then. Family and close relatives "
+          "gather at a 백일잔치 to congratulate the child, and rice cake "
+          "marking the day is sometimes sent round to neighbours and "
+          "friends. Photographs are also taken, to record the child’s "
+          "growth and to keep a beautiful memory."),
         PARAGRAPH("옛날에는 의료 기술이 발달하지 못했기 때문에 아이가 태어난 지 얼마 안 돼 죽는 경우가 "
           "적지 않았다. 그래서 한국에서는 아이가 태어난 지 {백일}(100일)이 되는 날에 그동안 "
           "건강히 잘 자란 것을 기념하는 {백일잔치}를 열었다. 백일잔치에는 가족과 가까운 친척이 "
@@ -106,7 +115,20 @@ CHAPTER = dict(
         FIGURE("전통적인 제사상 모습"),
 
         SECTION("aside", "알아두면 좋아요"),
-        HEADING(3, "장례 문화가 바뀌고 있다"),
+        HEADING(3, "장례 문화가 바뀌고 있다", translation=
+          "Funeral customs are changing" "\n\n"
+          "Up to the 1970s and 80s most funerals in Korea favoured burial, "
+          "but as the times have changed the number of people who want "
+          "cremation has grown. Reasons given for choosing cremation "
+          "include more hygienic care than burial, a simpler procedure and "
+          "lower cost. After cremation the remains are kept at a charnel "
+          "house or a memorial park, which the family visits on the "
+          "anniversary of the death or around the festivals. Lately natural "
+          "burial, which stresses the environment and the living world, has "
+          "been drawing attention too. In natural burial the cremated "
+          "remains are buried among trees, flowers or grass. It keeps the "
+          "departed close to where the living are while helping to preserve "
+          "the natural environment."),
         PARAGRAPH("1970~80년대까지는 한국에서 장례를 할 때 대부분 매장을 {선호했지만|선호하다}, 시대가 "
           "변화하면서 화장을 원하는 인구가 늘고 있다. 화장을 {희망}하는 이유로는 매장에 비해 "
           "{위생적}인 관리와 {간편한|간편하다} 절차, 저렴한 비용 등을 들 수 있다. 화장을 한 뒤 "

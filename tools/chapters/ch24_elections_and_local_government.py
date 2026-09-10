@@ -65,7 +65,18 @@ CHAPTER = dict(
         FIGURE("투표하는 모습"),
 
         SECTION("aside", "알아두면 좋아요"),
-        HEADING(3, "투표일에 투표할 수 없다면? 사전 투표를 이용하세요!"),
+        HEADING(3, "투표일에 투표할 수 없다면? 사전 투표를 이용하세요!", translation=
+          "Cannot vote on polling day? Use early voting!" "\n\n"
+          "Polling day for each election is set as a temporary public "
+          "holiday. Even so, something important may come up at work that "
+          "day, or a personal matter may arise, leaving one unable to vote. "
+          "So that people can vote even then, Korea holds early voting. "
+          "Early voting runs on the Friday and Saturday of the week before "
+          "the election, from six in the morning to six in the evening. "
+          "During the early voting period one can vote anywhere in the "
+          "country that is convenient, whatever one’s registered address. "
+          "Early voting is there to increase people’s participation in "
+          "politics."),
         PARAGRAPH("각 선거의 투표일은 {임시 공휴일}로 정해져 있다. 그런데 그날 회사에 중요한 일이 있거나 "
           "개인적으로 {사정}이 생겨서 투표하지 못하는 상황이 생길 수도 있다. 이러한 경우에도 "
           "투표할 수 있도록 하기 위해 한국에서는 {사전 투표}를 실시한다. 사전 투표는 선거가 "
@@ -108,11 +119,20 @@ CHAPTER = dict(
                 "지방자치단체를 대표 / 지방의회가 결정한 정책 집행"]]),
 
         SECTION("aside", "알아두면 좋아요"),
-        HEADING(3, "외국인 주민 회의도 개최해요"),
-        HEADING(4, "서울시외국인주민대표자회의"),
+        HEADING(3, "외국인 주민 회의도 개최해요",
+          translation="Councils for foreign residents are held too"),
+        HEADING(4, "서울시외국인주민대표자회의", translation=
+          "The Seoul Foreign Residents’ Representative Council" "\n\n"
+          "A consultative body in which foreigners living in Seoul become "
+          "representatives of their own countries, take part in the running "
+          "of the city and propose policy."),
         PARAGRAPH("서울에 사는 외국인이 {자국}의 대표가 되어 {시정}에 참여하는 {협의체}로 정책을 "
           "{제안}함."),
-        HEADING(4, "부산외국인주민대표자회의"),
+        HEADING(4, "부산외국인주민대표자회의", translation=
+          "The Busan Foreign Residents’ Representative Council" "\n\n"
+          "It works to put effective policies in place so that foreign "
+          "residents of Busan can settle well, living in harmony with the "
+          "people of the city as members of it."),
         PARAGRAPH("부산에 거주하는 외국인 주민들이 부산시민과 함께 {구성원}으로서 {조화}를 이루며 잘 "
           "정착할 수 있도록 {실효성}있는 정책을 마련하고자 {힘씀|힘쓰다}."),
 

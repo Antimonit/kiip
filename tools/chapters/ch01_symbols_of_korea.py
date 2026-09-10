@@ -56,7 +56,10 @@ CHAPTER = dict(
               "{삼천리} 화려강산 대한사람 대한으로 길이 보전하세"),
         MARGIN("추석", "서울 X", "남산- 앞산"),
         SECTION("aside", "알아두면 좋아요"),
-        HEADING(3, "태극기는 언제 달까?"),
+        HEADING(3, "태극기는 언제 달까?", translation=
+          "When is the 태극기 flown?" "\n\n"
+          "The 태극기 may be flown any day, but it is seen most on the days "
+          "below."),
         PARAGRAPH("태극기는 매일 달아도 되는데 특히 다음과 같은 날에는 더 많이 볼 수 있다."),
         TABLE([["3월 1일(삼일절)", "일본의 지배에 저항하여 일어난 독립 만세 운동을 기념하는 날"],
               ["6월 6일(현충일)", "국가를 위해 자신의 목숨을 바친 분들을 기리는 날(조의를 표하는 날)"],
@@ -94,7 +97,11 @@ CHAPTER = dict(
         FIGURE("한글 자음과 모음으로 글을 구성할 수 있는 휴대폰 자판"),
         MARGIN("세계기록  world record"),
         SECTION("aside", "알아두면 좋아요"),
-        HEADING(3, "국경일, 기념식, 국제행사, 스포츠 경기는 어떻게 시작할까?"),
+        HEADING(3, "국경일, 기념식, 국제행사, 스포츠 경기는 어떻게 시작할까?", translation=
+          "How do national holidays, ceremonies, international events and "
+          "sporting fixtures begin?" "\n\n"
+          "In Korea a salute to the flag is made at important occasions. "
+          "The pledge to the flag is sometimes said along with it."),
         PARAGRAPH("한국에서는 중요한 행사를 할 때 국기(태극기)에 대한 {경례}를 한다. 이 때 국기에 대한 {맹세}를 "
           "함께 하기도 한다."),
         COLUMNS(

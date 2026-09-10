@@ -58,7 +58,19 @@ CHAPTER = dict(
           "의논하여 결정하거나, 집안일이나 육아에 부부가 함께 참여하는 모습 등이 늘어나고 있다. 또한, 명절이나 "
           "생일에 가족이 한 집에 모이는 대신 가족 여행을 가는 경우도 많아지고 있다."),
         SECTION("aside", "알아두면 좋아요"),
-        HEADING(3, "1인 가구 증가로 어떤 변화가 나타나고 있을까?"),
+        HEADING(3, "1인 가구 증가로 어떤 변화가 나타나고 있을까?", translation=
+          "What changes is the rise in single-person households bringing?" "\n\n"
+          "Products aimed at the single-person household keep appearing: "
+          "‘one portion’ side dishes, small packets such as ‘one meal’, "
+          "small appliances. As marriage comes later, divorce rises and the "
+          "population ages, the share of single-person households has "
+          "approached 30%, and that is bringing great change to housing, "
+          "food, appliances and industry as a whole. More people are "
+          "looking for small homes, and sales of ready meals that one can "
+          "eat alone have shot up in the large stores and the convenience "
+          "stores. Small appliances have multiplied, and for the "
+          "single-person household that finds buying an appliance a "
+          "bother, services that rent them out are growing too."),
         PARAGRAPH("요즘 '1인분' 반찬, '한 끼' 같은 소포장 상품, 소형가전 등 1인 가구를 겨냥한 제품이 계속 "
           "등장하고 있다. 결혼 시기가 늦춰지고 이혼율 증가, 고령화 현상 등이 나타나면서 1인 가구의 비중이 "
           "30%에 가까워졌는데 이로 인해 주택, 식품, 가전제품 등 산업 전반에 큰 변화가 일어나고 있다. 작은 "
@@ -120,8 +132,11 @@ CHAPTER = dict(
           "'친사촌', 남편의 여자 형제 자녀와는 '고종사촌', 아내의 남자 형제 자녀와는 '외사촌', 아내의 여자 "
           "형제 자녀와는 '이종사촌'이라고 부른다."),
         SECTION("aside", "알아두면 좋아요"),
-        HEADING(3, "남편의 가족을 부를 때와 아내의 가족을 부를 때 호칭이 달라요"),
-        HEADING(3, "남편이 아내의 가족을 부를 때"),
+        HEADING(3, "남편의 가족을 부를 때와 아내의 가족을 부를 때 호칭이 달라요",
+          translation="The terms differ for the husband’s family and the "
+                      "wife’s family"),
+        HEADING(3, "남편이 아내의 가족을 부를 때",
+          translation="A husband addressing his wife’s family"),
         TABLE(["가족", "호칭"], [["아버지", "장인어른, 아버님"],
               ["어머니", "장모님, 어머님"],
               ["오빠", "형님, 처남(어릴 때)"],
@@ -132,7 +147,8 @@ CHAPTER = dict(
               ["남동생의 아내", "처남댁"],
               ["여동생", "처제"],
               ["여동생의 남편", "동서, O서방"]]),
-        HEADING(3, "아내가 남편의 가족을 부를 때"),
+        HEADING(3, "아내가 남편의 가족을 부를 때",
+          translation="A wife addressing her husband’s family"),
         TABLE(["가족", "호칭"], [["아버지", "아버님"],
               ["어머니", "어머님"],
               ["형", "아주버님"],

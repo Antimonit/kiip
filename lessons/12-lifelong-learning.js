@@ -396,7 +396,8 @@ KIIP.chapter({
    "type": "section",
    "kind": "aside",
    "text": "알아두면 좋아요",
-   "topic": "평생 교육에 대한 모든 정보는 여기로: 늘 배움"
+   "topic": "평생 교육에 대한 모든 정보는 여기로: 늘 배움",
+   "titleTranslation": "Everything about lifelong learning in one place: 늘배움"
   },
   {
    "type": "paragraph",
@@ -407,6 +408,32 @@ KIIP.chapter({
      "annotation": "강좌"
     },
     " 및 기관 정보뿐만 아니라 온라인을 통한 학습이 가능하도록 양질의 온라인 교육 콘텐츠를 제공한다."
+   ],
+   "translation": "늘배움, the national lifelong learning portal (www.lifelongedu.go.kr), is a comprehensive lifelong learning information system where anyone can find the learning information they want, at any time and anywhere. Lifelong learning has until now run mostly on offline programmes, which limited how systematically and comprehensively it could meet what people were asking for. So that everyone can have lifelong learning close at hand without limits of time or place — including those with little chance to take part and residents of areas with little provision — it offers information on lifelong learning courses and institutions across the country, and good online content so that learning online is possible.",
+   "sentences": [
+    {
+     "spans": [
+      "국가평생학습포털 늘배움(www.lifelongedu.go.kr)은 누구나, 언제, 어디서나 원하는 평생 학습 정보를 이용할 수 있는 평생 교육 종합 정보 시스템이다. "
+     ],
+     "translation": "늘배움, the national lifelong learning portal (www.lifelongedu.go.kr), is a comprehensive lifelong learning information system where anyone can find the learning information they want, at any time and anywhere."
+    },
+    {
+     "spans": [
+      "그동안의 평생 교육은 오프라인 프로그램 중심으로 운영되어 수요자 요구에 부합하는 체계적이고 종합적인 평생 학습 지원에는 한계가 있었다. "
+     ],
+     "translation": "Lifelong learning has until now run mostly on offline programmes, which limited how systematically and comprehensively it could meet what people were asking for."
+    },
+    {
+     "spans": [
+      "평생 학습 참여 기회가 부족한 소외 계층이나 평생 교육 기반이 부족한 지역 주민을 포함하여 전 국민이 시간과 공간의 제약 없이 평생 학습을 가까이에서 누릴 수 있도록 전국 평생 교육 ",
+      {
+       "word": "강좌",
+       "annotation": "강좌"
+      },
+      " 및 기관 정보뿐만 아니라 온라인을 통한 학습이 가능하도록 양질의 온라인 교육 콘텐츠를 제공한다."
+     ],
+     "translation": "So that everyone can have lifelong learning close at hand without limits of time or place — including those with little chance to take part and residents of areas with little provision — it offers information on lifelong learning courses and institutions across the country, and good online content so that learning online is possible."
+    }
    ]
   },
   {
@@ -711,7 +738,8 @@ KIIP.chapter({
    "type": "section",
    "kind": "aside",
    "text": "알아두면 좋아요",
-   "topic": "학점 은행제와 독학 학위제"
+   "topic": "학점 은행제와 독학 학위제",
+   "titleTranslation": "The credit bank and the self-study degree"
   },
   {
    "type": "paragraph",
@@ -721,6 +749,31 @@ KIIP.chapter({
      "annotation": "학점 은행제"
     },
     "는 학교 밖에서 이루어지는 다양한 형태의 학습 및 자격을 학점으로 인정받고, 학점이 누적되어 일정 기준을 충족하면 학위 취득이 가능한 제도이다. 학사 학위는 전공 및 교양학점을 포함하여 140학점 이상, 전문 학사는 전공 및 교양 학점을 포함하여 80학점 이상(3년제는 120학점 이상)의 학점을 인정받고 법적 요건을 충족할 경우 학위를 취득할 수 있다. (학점은행제 : http://www.cb.or.kr)"
+   ],
+   "translation": "The credit bank is a scheme under which learning and qualifications of various kinds gained outside school are recognised as credits, and once the credits accumulate and meet a set standard a degree can be awarded. A bachelor’s degree can be obtained with 140 credits or more, including major and general-education credits, and an associate degree with 80 or more (120 or more on a three-year course), where the legal requirements are also met. Credit bank: http://www.cb.or.kr",
+   "sentences": [
+    {
+     "spans": [
+      {
+       "word": "학점 은행제",
+       "annotation": "학점 은행제"
+      },
+      "는 학교 밖에서 이루어지는 다양한 형태의 학습 및 자격을 학점으로 인정받고, 학점이 누적되어 일정 기준을 충족하면 학위 취득이 가능한 제도이다. "
+     ],
+     "translation": "The credit bank is a scheme under which learning and qualifications of various kinds gained outside school are recognised as credits, and once the credits accumulate and meet a set standard a degree can be awarded."
+    },
+    {
+     "spans": [
+      "학사 학위는 전공 및 교양학점을 포함하여 140학점 이상, 전문 학사는 전공 및 교양 학점을 포함하여 80학점 이상(3년제는 120학점 이상)의 학점을 인정받고 법적 요건을 충족할 경우 학위를 취득할 수 있다. "
+     ],
+     "translation": "A bachelor’s degree can be obtained with 140 credits or more, including major and general-education credits, and an associate degree with 80 or more (120 or more on a three-year course), where the legal requirements are also met."
+    },
+    {
+     "spans": [
+      "(학점은행제 : http://www.cb.or.kr)"
+     ],
+     "translation": "Credit bank: http://www.cb.or.kr"
+    }
    ]
   },
   {
@@ -731,6 +784,31 @@ KIIP.chapter({
      "annotation": "독학 학위제"
     },
     "는 국가에서 실시하는 학위 취득 시험에 합격한 사람에게 학사 학위를 수여하는 제도이다. 국문학, 영문학, 심리학, 경영학 등 11개 전공 분야가 있다. (독학 학위제 : https://bdes.nile.or.kr)"
+   ],
+   "translation": "The self-study degree is a scheme that awards a bachelor’s degree to those who pass a state degree examination. There are eleven fields, among them Korean literature, English literature, psychology and business administration. Self-study degree: https://bdes.nile.or.kr",
+   "sentences": [
+    {
+     "spans": [
+      {
+       "word": "독학 학위제",
+       "annotation": "독학 학위제"
+      },
+      "는 국가에서 실시하는 학위 취득 시험에 합격한 사람에게 학사 학위를 수여하는 제도이다. "
+     ],
+     "translation": "The self-study degree is a scheme that awards a bachelor’s degree to those who pass a state degree examination."
+    },
+    {
+     "spans": [
+      "국문학, 영문학, 심리학, 경영학 등 11개 전공 분야가 있다. "
+     ],
+     "translation": "There are eleven fields, among them Korean literature, English literature, psychology and business administration."
+    },
+    {
+     "spans": [
+      "(독학 학위제 : https://bdes.nile.or.kr)"
+     ],
+     "translation": "Self-study degree: https://bdes.nile.or.kr"
+    }
    ]
   },
   {

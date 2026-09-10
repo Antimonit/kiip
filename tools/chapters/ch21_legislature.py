@@ -80,7 +80,12 @@ CHAPTER = dict(
           "{공개}해야 한다."),
 
         SECTION("aside", "알아두면 좋아요"),
-        HEADING(3, "총선에는 투표 용지가 2장!"),
+        HEADING(3, "총선에는 투표 용지가 2장!", translation=
+          "Two ballot papers at a general election!" "\n\n"
+          "The election that chooses members of the National Assembly is "
+          "called a 총선. A voter taking part goes to the polling station "
+          "and votes twice. One paper is for the candidate standing in the "
+          "area where they live, the other for the party they support."),
         PARAGRAPH("국회의원을 뽑는 선거를 {총선}이라고 한다. 총선에 참여하는 {유권자}는 {투표소}에 가서 "
           "두 번 투표하게 된다. 한 장은 자신이 살고 있는 지역의 대표 후보자에게, 다른 한 장은 "
           "본인이 {지지}하는 정당에 투표한다."),
@@ -129,7 +134,19 @@ CHAPTER = dict(
           "중요한 역할을 한다."),
 
         SECTION("aside", "알아두면 좋아요"),
-        HEADING(3, "나라의 중요한 일을 맡으려면 먼저 국회 인사청문회부터!"),
+        HEADING(3, "나라의 중요한 일을 맡으려면 먼저 국회 인사청문회부터!", translation=
+          "Before taking on high office, the Assembly’s confirmation "
+          "hearing!" "\n\n"
+          "A hearing is the arrangement by which the National Assembly puts "
+          "questions to those directly concerned, to witnesses or to "
+          "informants about an important matter of state, and hears the "
+          "facts or their opinions. A confirmation hearing is held for "
+          "candidates for high public office such as Chief Justice, Prime "
+          "Minister or minister. The Assembly asks whether the candidate "
+          "has the ability and the moral standing the post requires, and "
+          "hears the answers. When the hearing is over, the Assembly votes "
+          "for or against the appointment, or submits an opinion to the "
+          "government that the candidate is fit or unfit."),
         PARAGRAPH("{청문회}는 나라의 중요한 일과 관련하여 국회가 {당사자}(직접 관련된 사람)나 {증인}, "
           "{참고인} 등에게 질문하고 사실이나 의견을 듣는 제도이다. {인사청문회}는 {대법원장}, "
           "{국무총리}, {장관} 등과 같은 고위 공직자가 되고자 하는 사람들({후보자})에 대해 "

@@ -748,7 +748,8 @@ KIIP.chapter({
    "type": "section",
    "kind": "aside",
    "text": "알아두면 좋아요",
-   "topic": "총선에는 투표 용지가 2장!"
+   "topic": "총선에는 투표 용지가 2장!",
+   "titleTranslation": "Two ballot papers at a general election!"
   },
   {
    "type": "paragraph",
@@ -774,6 +775,47 @@ KIIP.chapter({
      "annotation": "지지"
     },
     "하는 정당에 투표한다."
+   ],
+   "translation": "The election that chooses members of the National Assembly is called a 총선. A voter taking part goes to the polling station and votes twice. One paper is for the candidate standing in the area where they live, the other for the party they support.",
+   "sentences": [
+    {
+     "spans": [
+      "국회의원을 뽑는 선거를 ",
+      {
+       "word": "총선",
+       "annotation": "총선"
+      },
+      "이라고 한다. "
+     ],
+     "translation": "The election that chooses members of the National Assembly is called a 총선."
+    },
+    {
+     "spans": [
+      "총선에 참여하는 ",
+      {
+       "word": "유권자",
+       "annotation": "유권자"
+      },
+      "는 ",
+      {
+       "word": "투표소",
+       "annotation": "투표소"
+      },
+      "에 가서 두 번 투표하게 된다. "
+     ],
+     "translation": "A voter taking part goes to the polling station and votes twice."
+    },
+    {
+     "spans": [
+      "한 장은 자신이 살고 있는 지역의 대표 후보자에게, 다른 한 장은 본인이 ",
+      {
+       "word": "지지",
+       "annotation": "지지"
+      },
+      "하는 정당에 투표한다."
+     ],
+     "translation": "One paper is for the candidate standing in the area where they live, the other for the party they support."
+    }
    ]
   },
   {
@@ -1278,7 +1320,8 @@ KIIP.chapter({
    "type": "section",
    "kind": "aside",
    "text": "알아두면 좋아요",
-   "topic": "나라의 중요한 일을 맡으려면 먼저 국회 인사청문회부터!"
+   "topic": "나라의 중요한 일을 맡으려면 먼저 국회 인사청문회부터!",
+   "titleTranslation": "Before taking on high office, the Assembly’s confirmation hearing!"
   },
   {
    "type": "paragraph",
@@ -1353,6 +1396,101 @@ KIIP.chapter({
      "annotation": "부적격"
     },
     " 의견을 정부에 제출한다."
+   ],
+   "translation": "A hearing is the arrangement by which the National Assembly puts questions to those directly concerned, to witnesses or to informants about an important matter of state, and hears the facts or their opinions. A confirmation hearing is held for candidates for high public office such as Chief Justice, Prime Minister or minister. The Assembly asks whether the candidate has the ability and the moral standing the post requires, and hears the answers. When the hearing is over, the Assembly votes for or against the appointment, or submits an opinion to the government that the candidate is fit or unfit.",
+   "sentences": [
+    {
+     "spans": [
+      {
+       "word": "청문회",
+       "annotation": "청문회"
+      },
+      "는 나라의 중요한 일과 관련하여 국회가 ",
+      {
+       "word": "당사자",
+       "annotation": "당사자"
+      },
+      "(직접 관련된 사람)나 ",
+      {
+       "word": "증인",
+       "annotation": "증인"
+      },
+      ", ",
+      {
+       "word": "참고인",
+       "annotation": "참고인"
+      },
+      " 등에게 질문하고 사실이나 의견을 듣는 제도이다. "
+     ],
+     "translation": "A hearing is the arrangement by which the National Assembly puts questions to those directly concerned, to witnesses or to informants about an important matter of state, and hears the facts or their opinions."
+    },
+    {
+     "spans": [
+      {
+       "word": "인사청문회",
+       "annotation": "인사청문회"
+      },
+      "는 ",
+      {
+       "word": "대법원장",
+       "annotation": "대법원장"
+      },
+      ", ",
+      {
+       "word": "국무총리",
+       "annotation": "국무총리"
+      },
+      ", ",
+      {
+       "word": "장관",
+       "annotation": "장관"
+      },
+      " 등과 같은 고위 공직자가 되고자 하는 사람들(",
+      {
+       "word": "후보자",
+       "annotation": "후보자"
+      },
+      ")에 대해 실시하는 것이다. "
+     ],
+     "translation": "A confirmation hearing is held for candidates for high public office such as Chief Justice, Prime Minister or minister."
+    },
+    {
+     "spans": [
+      "국회는 후보자가 그 자리에 적합한 능력과 ",
+      {
+       "word": "도덕성",
+       "annotation": "도덕성"
+      },
+      "을 갖추고 있는지에 관한 질문하고 ",
+      {
+       "word": "답변",
+       "annotation": "답변"
+      },
+      "을 듣는다. "
+     ],
+     "translation": "The Assembly asks whether the candidate has the ability and the moral standing the post requires, and hears the answers."
+    },
+    {
+     "spans": [
+      "인사청문회가 끝난 뒤, 국회는 후보자 ",
+      {
+       "word": "임명",
+       "annotation": "임명"
+      },
+      "에 대해 동의 또는 반대투표를 하거나 ",
+      {
+       "word": "적격",
+       "annotation": "적격"
+      },
+      " 혹은 ",
+      {
+       "word": "부적격",
+       "annotation": "부적격"
+      },
+      " 의견을 정부에 제출한다."
+     ],
+     "translation": "When the hearing is over, the Assembly votes for or against the appointment, or submits an opinion to the government that the candidate is fit or unfit."
+    }
    ]
   },
   {

@@ -351,7 +351,8 @@ KIIP.chapter({
    "type": "section",
    "kind": "aside",
    "text": "알아두면 좋아요",
-   "topic": "투표일에 투표할 수 없다면? 사전 투표를 이용하세요!"
+   "topic": "투표일에 투표할 수 없다면? 사전 투표를 이용하세요!",
+   "titleTranslation": "Cannot vote on polling day? Use early voting!"
   },
   {
    "type": "paragraph",
@@ -382,6 +383,70 @@ KIIP.chapter({
      "annotation": "주소지"
     },
     "와 상관없이 전국 어디든 본인이 가기 편한 곳에서 투표할 수 있다. 사전 투표는 국민의 정치 참여를 높이기 위한 제도이다."
+   ],
+   "translation": "Polling day for each election is set as a temporary public holiday. Even so, something important may come up at work that day, or a personal matter may arise, leaving one unable to vote. So that people can vote even then, Korea holds early voting. Early voting runs on the Friday and Saturday of the week before the election, from six in the morning to six in the evening. During the early voting period one can vote anywhere in the country that is convenient, whatever one’s registered address. Early voting is there to increase people’s participation in politics.",
+   "sentences": [
+    {
+     "spans": [
+      "각 선거의 투표일은 ",
+      {
+       "word": "임시 공휴일",
+       "annotation": "임시 공휴일"
+      },
+      "로 정해져 있다. "
+     ],
+     "translation": "Polling day for each election is set as a temporary public holiday."
+    },
+    {
+     "spans": [
+      "그런데 그날 회사에 중요한 일이 있거나 개인적으로 ",
+      {
+       "word": "사정",
+       "annotation": "사정"
+      },
+      "이 생겨서 투표하지 못하는 상황이 생길 수도 있다. "
+     ],
+     "translation": "Even so, something important may come up at work that day, or a personal matter may arise, leaving one unable to vote."
+    },
+    {
+     "spans": [
+      "이러한 경우에도 투표할 수 있도록 하기 위해 한국에서는 ",
+      {
+       "word": "사전 투표",
+       "annotation": "사전 투표"
+      },
+      "를 실시한다. "
+     ],
+     "translation": "So that people can vote even then, Korea holds early voting."
+    },
+    {
+     "spans": [
+      "사전 투표는 선거가 실시되기 ",
+      {
+       "word": "전주",
+       "annotation": "전주"
+      },
+      " 금요일과 토요일 아침 6시부터 저녁 6시까지 이루어진다. "
+     ],
+     "translation": "Early voting runs on the Friday and Saturday of the week before the election, from six in the morning to six in the evening."
+    },
+    {
+     "spans": [
+      "사전 투표 기간에는 본인의 ",
+      {
+       "word": "주소지",
+       "annotation": "주소지"
+      },
+      "와 상관없이 전국 어디든 본인이 가기 편한 곳에서 투표할 수 있다. "
+     ],
+     "translation": "During the early voting period one can vote anywhere in the country that is convenient, whatever one’s registered address."
+    },
+    {
+     "spans": [
+      "사전 투표는 국민의 정치 참여를 높이기 위한 제도이다."
+     ],
+     "translation": "Early voting is there to increase people’s participation in politics."
+    }
    ]
   },
   {
@@ -751,12 +816,14 @@ KIIP.chapter({
    "type": "section",
    "kind": "aside",
    "text": "알아두면 좋아요",
-   "topic": "외국인 주민 회의도 개최해요"
+   "topic": "외국인 주민 회의도 개최해요",
+   "titleTranslation": "Councils for foreign residents are held too"
   },
   {
    "type": "heading",
    "level": 4,
-   "text": "서울시외국인주민대표자회의"
+   "text": "서울시외국인주민대표자회의",
+   "titleTranslation": "The Seoul Foreign Residents’ Representative Council"
   },
   {
    "type": "paragraph",
@@ -782,12 +849,42 @@ KIIP.chapter({
      "annotation": "제안"
     },
     "함."
+   ],
+   "translation": "A consultative body in which foreigners living in Seoul become representatives of their own countries, take part in the running of the city and propose policy.",
+   "sentences": [
+    {
+     "spans": [
+      "서울에 사는 외국인이 ",
+      {
+       "word": "자국",
+       "annotation": "자국"
+      },
+      "의 대표가 되어 ",
+      {
+       "word": "시정",
+       "annotation": "시정"
+      },
+      "에 참여하는 ",
+      {
+       "word": "협의체",
+       "annotation": "협의체"
+      },
+      "로 정책을 ",
+      {
+       "word": "제안",
+       "annotation": "제안"
+      },
+      "함."
+     ],
+     "translation": "A consultative body in which foreigners living in Seoul become representatives of their own countries, take part in the running of the city and propose policy."
+    }
    ]
   },
   {
    "type": "heading",
    "level": 4,
-   "text": "부산외국인주민대표자회의"
+   "text": "부산외국인주민대표자회의",
+   "titleTranslation": "The Busan Foreign Residents’ Representative Council"
   },
   {
    "type": "paragraph",
@@ -813,6 +910,35 @@ KIIP.chapter({
      "annotation": "힘쓰다"
     },
     "."
+   ],
+   "translation": "It works to put effective policies in place so that foreign residents of Busan can settle well, living in harmony with the people of the city as members of it.",
+   "sentences": [
+    {
+     "spans": [
+      "부산에 거주하는 외국인 주민들이 부산시민과 함께 ",
+      {
+       "word": "구성원",
+       "annotation": "구성원"
+      },
+      "으로서 ",
+      {
+       "word": "조화",
+       "annotation": "조화"
+      },
+      "를 이루며 잘 정착할 수 있도록 ",
+      {
+       "word": "실효성",
+       "annotation": "실효성"
+      },
+      "있는 정책을 마련하고자 ",
+      {
+       "word": "힘씀",
+       "annotation": "힘쓰다"
+      },
+      "."
+     ],
+     "translation": "It works to put effective policies in place so that foreign residents of Busan can settle well, living in harmony with the people of the city as members of it."
+    }
    ]
   },
   {

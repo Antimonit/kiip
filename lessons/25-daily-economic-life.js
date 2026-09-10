@@ -735,7 +735,8 @@ KIIP.chapter({
    "type": "section",
    "kind": "aside",
    "text": "알아두면 좋아요",
-   "topic": "내 것, 남의 것에서 ‘우리’의 것으로, 공유경제"
+   "topic": "내 것, 남의 것에서 ‘우리’의 것으로, 공유경제",
+   "titleTranslation": "From mine and yours to ‘ours’: the sharing economy"
   },
   {
    "type": "paragraph",
@@ -796,6 +797,88 @@ KIIP.chapter({
      "annotation": "저렴"
     },
     "한 가격에 빌려주기도 한다."
+   ],
+   "translation": "The ‘sharing economy’, one of the ideas that could change the world in the twenty-first century, is taking hold in Korea too. It means economic activity in which things are borrowed and shared rather than owned outright. Public bicycle services such as Seoul’s 따릉이 are running across the country, and many people make good use of car- and home-sharing services. Local authorities also lend out toys, umbrellas, household tools and books cheaply.",
+   "sentences": [
+    {
+     "spans": [
+      "21세기 세상을 바꿀 수 있는 아이디어 중 하나인 ‘",
+      {
+       "word": "공유경제",
+       "annotation": "공유경제"
+      },
+      "’가 한국에서도 ",
+      {
+       "word": "활성화",
+       "annotation": "활성화"
+      },
+      "되고 있다. "
+     ],
+     "translation": "The ‘sharing economy’, one of the ideas that could change the world in the twenty-first century, is taking hold in Korea too."
+    },
+    {
+     "spans": [
+      "공유경제란 ",
+      {
+       "word": "일방적",
+       "annotation": "일방적"
+      },
+      "인 ",
+      {
+       "word": "소유",
+       "annotation": "소유"
+      },
+      "의 개념이 아닌 빌려 쓰고, 나눠 쓰는 경제 활동을 의미한다. "
+     ],
+     "translation": "It means economic activity in which things are borrowed and shared rather than owned outright."
+    },
+    {
+     "spans": [
+      "서울의 ",
+      {
+       "word": "따릉이",
+       "annotation": "따릉이"
+      },
+      "와 같은 공공 자전거 서비스는 ",
+      {
+       "word": "전국적",
+       "annotation": "전국적"
+      },
+      "으로 활성화되어 있으며, 자동차나 주택 ",
+      {
+       "word": "공유",
+       "annotation": "공유"
+      },
+      " 서비스도 많은 사람들이 ",
+      {
+       "word": "유용",
+       "annotation": "유용"
+      },
+      "하게 활용하고 있다. "
+     ],
+     "translation": "Public bicycle services such as Seoul’s 따릉이 are running across the country, and many people make good use of car- and home-sharing services."
+    },
+    {
+     "spans": [
+      "그 밖에 지방 자치단체를 중심으로 장난감, 우산, 가정용 ",
+      {
+       "word": "공구",
+       "annotation": "공구"
+      },
+      ", ",
+      {
+       "word": "도서",
+       "annotation": "도서"
+      },
+      " 등을 ",
+      {
+       "word": "저렴",
+       "annotation": "저렴"
+      },
+      "한 가격에 빌려주기도 한다."
+     ],
+     "translation": "Local authorities also lend out toys, umbrellas, household tools and books cheaply."
+    }
    ]
   },
   {
@@ -1277,7 +1360,8 @@ KIIP.chapter({
    "type": "section",
    "kind": "aside",
    "text": "알아두면 좋아요",
-   "topic": "‘○○페이 됩니다’ 간편 결제 서비스란?"
+   "topic": "‘○○페이 됩니다’ 간편 결제 서비스란?",
+   "titleTranslation": "‘○○Pay accepted’ — what is easy payment?"
   },
   {
    "type": "paragraph",
@@ -1318,6 +1402,55 @@ KIIP.chapter({
      "annotation": "번거로움"
     },
     "이 있었다."
+   ],
+   "translation": "Easy payment means a service that lets one pay by smartphone, online and in shops, without taking a plastic card out of one’s wallet. Paying by mobile used to mean the bother of installing ActiveX, keyboard security programs and other plug-ins, and entering card or personal details every time.",
+   "sentences": [
+    {
+     "spans": [
+      "간편 결제 서비스란 지갑에서 플라스틱 카드를 ",
+      {
+       "word": "꺼내지",
+       "annotation": "꺼내다"
+      },
+      " 않고도 온·오프라인에서 스마트폰으로 결제할 수 있는 서비스를 말한다. "
+     ],
+     "translation": "Easy payment means a service that lets one pay by smartphone, online and in shops, without taking a plastic card out of one’s wallet."
+    },
+    {
+     "spans": [
+      {
+       "word": "기존",
+       "annotation": "기존"
+      },
+      " 모바일 결제는 액티브X, 키보드 ",
+      {
+       "word": "보안프로그램",
+       "annotation": "보안프로그램"
+      },
+      " 등 각종 ",
+      {
+       "word": "플러그인",
+       "annotation": "플러그인"
+      },
+      "을 ",
+      {
+       "word": "설치",
+       "annotation": "설치"
+      },
+      "하고 매번 카드 정보나 개인정보를 ",
+      {
+       "word": "입력",
+       "annotation": "입력"
+      },
+      "해야 하는 ",
+      {
+       "word": "번거로움",
+       "annotation": "번거로움"
+      },
+      "이 있었다."
+     ],
+     "translation": "Paying by mobile used to mean the bother of installing ActiveX, keyboard security programs and other plug-ins, and entering card or personal details every time."
+    }
    ]
   },
   {
@@ -1349,6 +1482,40 @@ KIIP.chapter({
      "annotation": "간편"
     },
     "하게 결제할 수 있다."
+   ],
+   "translation": "Easy payment has done away with those complicated steps, so once the card details are entered a single time, payment afterwards is quick and simple, needing only a light check by ID and password, mobile number or SMS.",
+   "sentences": [
+    {
+     "spans": [
+      "간편 결제는 이런 ",
+      {
+       "word": "복잡",
+       "annotation": "복잡"
+      },
+      "한 ",
+      {
+       "word": "단계",
+       "annotation": "단계"
+      },
+      "를 ",
+      {
+       "word": "없앴기",
+       "annotation": "없애다"
+      },
+      " 때문에 카드 정보를 한 번만 입력해 놓으면 이후에는 아이디와 비밀번호, 휴대 전화 번호, SMS 등을 이용한 간단한 ",
+      {
+       "word": "인증",
+       "annotation": "인증"
+      },
+      "만으로 빠르고 ",
+      {
+       "word": "간편",
+       "annotation": "간편"
+      },
+      "하게 결제할 수 있다."
+     ],
+     "translation": "Easy payment has done away with those complicated steps, so once the card details are entered a single time, payment afterwards is quick and simple, needing only a light check by ID and password, mobile number or SMS."
+    }
    ]
   },
   {

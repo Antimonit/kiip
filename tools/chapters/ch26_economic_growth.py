@@ -63,7 +63,18 @@ CHAPTER = dict(
                   "계속하고 있다."),
 
         SECTION("aside", "알아두면 좋아요"),
-        HEADING(3, "독일로 간 광부와 간호사"),
+        HEADING(3, "독일로 간 광부와 간호사", translation=
+          "The miners and nurses who went to Germany" "\n\n"
+          "Beginning with the arrival of the first 247 Korean miners in "
+          "Germany in 1963, 8,395 miners worked in German mines — where "
+          "coal is dug — up to 1977. From 1965 Korean nurses were allowed "
+          "to take work in Germany, and by 1976 a total of 10,371 had "
+          "left." "\n\n"
+          "The miners had to endure hard labour in coal pits a thousand "
+          "metres underground, and the nurses too were given the hospitals’ "
+          "hardest work at first. Their wages were sent home to Korea, "
+          "where they paid for families’ living costs and school fees and "
+          "helped the country’s economy to grow."),
         PARAGRAPH("1963년 한국인 {광부} 247명이 처음 독일에 도착한 것을 시작으로 1977년까지 "
                   "8,395명의 광부가 독일의 {광산}(석탄을 캐는 곳)에서 일했다. 1965년부터는 "
                   "한국인 {간호사}의 독일 취업이 {허용}되어 1976년까지 모두 10,371명이 독일로 "
@@ -118,7 +129,17 @@ CHAPTER = dict(
                   "{원조}를 받다가 이제는 원조를 하게 된 {최초}의 나라라고 평가한다."),
 
         SECTION("aside", "알아두면 좋아요"),
-        HEADING(3, "전세계 코로나19 극복을 위한 한국의 지원"),
+        HEADING(3, "전세계 코로나19 극복을 위한 한국의 지원", translation=
+          "Korea’s help in overcoming COVID-19 around the world" "\n\n"
+          "As COVID-19 spread across the world, Korea’s course from swift "
+          "diagnostic testing through to treatment drew great attention. "
+          "Building it into a system under the name K-방역 and sharing the "
+          "experience was a great help to other countries in overcoming the "
+          "crisis. Some 110 countries also asked for humanitarian help with "
+          "COVID-19 (as of 3 June 2020, Ministry of Foreign Affairs). Korea "
+          "sent test kits, masks and other protective supplies it had "
+          "produced, mainly to countries badly affected and with hard-"
+          "pressed health systems."),
         PARAGRAPH("코로나19가 전세계로 {확산}되고 있을 때, 한국은 {신속}한 {진단검사}부터 "
                   "{치료}까지의 과정이 큰 {주목}을 받았다. 특히 이를 {K-방역}이란 이름으로 "
                   "시스템을 {구축}하고 경험을 공유하여 다른 나라에서도 코로나19 위기를 "

@@ -750,7 +750,8 @@ KIIP.chapter({
    "type": "section",
    "kind": "aside",
    "text": "알아두면 좋아요",
-   "topic": "한국 일자리 정보의 모든 것, 워크넷"
+   "topic": "한국 일자리 정보의 모든 것, 워크넷",
+   "titleTranslation": "Everything about jobs in Korea: Worknet"
   },
   {
    "type": "paragraph",
@@ -815,6 +816,86 @@ KIIP.chapter({
      "annotation": "출력"
     },
     " 등의 서비스를 이용할 수 있다."
+   ],
+   "translation": "Worknet (www.work.go.kr) is the website run by the Ministry of Employment and Labour and the Korea Employment Information Service, offering information on job-seeking and recruitment along with information on occupations and careers. Through Worknet’s combined jobs service, job information from local authorities and companies can be searched easily and quickly. The site offers online job applications, applying by email, a tailored information service, and viewing or printing a record of one’s job-seeking activity.",
+   "sentences": [
+    {
+     "spans": [
+      {
+       "word": "워크넷",
+       "annotation": "워크넷"
+      },
+      "은 고용노동부와 ",
+      {
+       "word": "한국고용정보원",
+       "annotation": "한국고용정보원"
+      },
+      "이 ",
+      {
+       "word": "운영",
+       "annotation": "운영"
+      },
+      "하는 구직(직장을 구하는 것) 및 ",
+      {
+       "word": "구인",
+       "annotation": "구인"
+      },
+      "(일할 사람을 구하는 것) 정보와 직업·",
+      {
+       "word": "진로정보",
+       "annotation": "진로정보"
+      },
+      "를 제공하는 ",
+      {
+       "word": "누리집",
+       "annotation": "누리집"
+      },
+      "(www.work.go.kr)이다. "
+     ],
+     "translation": "Worknet (www.work.go.kr) is the website run by the Ministry of Employment and Labour and the Korea Employment Information Service, offering information on job-seeking and recruitment along with information on occupations and careers."
+    },
+    {
+     "spans": [
+      "워크넷의 ",
+      {
+       "word": "통합",
+       "annotation": "통합"
+      },
+      " 일자리 서비스를 통해 지방자치단체나 기업이 제공하는 일자리 정보를 쉽고 빠르게 ",
+      {
+       "word": "검색",
+       "annotation": "검색"
+      },
+      "할 수 있다. "
+     ],
+     "translation": "Through Worknet’s combined jobs service, job information from local authorities and companies can be searched easily and quickly."
+    },
+    {
+     "spans": [
+      "여기서는 온라인 구직 신청, 이메일 ",
+      {
+       "word": "입사",
+       "annotation": "입사"
+      },
+      "(회사에 들어가는 것) 지원, ",
+      {
+       "word": "맞춤",
+       "annotation": "맞춤"
+      },
+      " 정보 서비스, 구직 활동 사항 ",
+      {
+       "word": "조회",
+       "annotation": "조회"
+      },
+      "/",
+      {
+       "word": "출력",
+       "annotation": "출력"
+      },
+      " 등의 서비스를 이용할 수 있다."
+     ],
+     "translation": "The site offers online job applications, applying by email, a tailored information service, and viewing or printing a record of one’s job-seeking activity."
+    }
    ]
   },
   {
@@ -1222,7 +1303,8 @@ KIIP.chapter({
    "type": "section",
    "kind": "aside",
    "text": "알아두면 좋아요",
-   "topic": "외국인 취업 박람회, 나에게 맞는 한국의 직장은?"
+   "topic": "외국인 취업 박람회, 나에게 맞는 한국의 직장은?",
+   "titleTranslation": "The foreigners’ job fair: which Korean workplace suits me?"
   },
   {
    "type": "paragraph",
@@ -1253,6 +1335,52 @@ KIIP.chapter({
      "annotation": "행정 기관"
     },
     " 이용 정보 등도 제공한다."
+   ],
+   "translation": "The ‘foreigners’ job fair’, held in Seoul every year since 2014, is where Korean companies and talented people from abroad meet to share information about employment, and where actual chances of work are offered. It recommends which Korean companies suit a foreign job-seeker and gives advice on writing a good CV, doing well at interview and making a success of student life in Korea. It also provides information on the bodies that support foreigners’ employment, on Korean lessons, and on using Korean government offices.",
+   "sentences": [
+    {
+     "spans": [
+      "2014년부터 해마다 서울에서 개최되는 ‘외국인 ",
+      {
+       "word": "취업 박람회",
+       "annotation": "취업 박람회"
+      },
+      "’는 한국의 기업과 외국인 우수 인재들이 만나 취업 관련 정보를 나누고 실제로 취업의 기회를 제공하기도 하는 자리이다. "
+     ],
+     "translation": "The ‘foreigners’ job fair’, held in Seoul every year since 2014, is where Korean companies and talented people from abroad meet to share information about employment, and where actual chances of work are offered."
+    },
+    {
+     "spans": [
+      "여기서는 외국인 ",
+      {
+       "word": "구직자",
+       "annotation": "구직자"
+      },
+      "에게 ",
+      {
+       "word": "적합",
+       "annotation": "적합"
+      },
+      "한 한국 기업이 어디인지 ",
+      {
+       "word": "추천",
+       "annotation": "추천"
+      },
+      "해 주고 이력서 잘 쓰는 방법, 면접 잘 보는 방법, 한국에서 유학 생활 잘하는 방법 등을 알려준다. "
+     ],
+     "translation": "It recommends which Korean companies suit a foreign job-seeker and gives advice on writing a good CV, doing well at interview and making a success of student life in Korea."
+    },
+    {
+     "spans": [
+      "또한, 외국인의 취업을 지원하는 기관 정보, 한국어 교육 정보, 한국 ",
+      {
+       "word": "행정 기관",
+       "annotation": "행정 기관"
+      },
+      " 이용 정보 등도 제공한다."
+     ],
+     "translation": "It also provides information on the bodies that support foreigners’ employment, on Korean lessons, and on using Korean government offices."
+    }
    ]
   },
   {

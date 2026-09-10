@@ -743,7 +743,8 @@ KIIP.chapter({
    "type": "section",
    "kind": "aside",
    "text": "알아두면 좋아요",
-   "topic": "독일로 간 광부와 간호사"
+   "topic": "독일로 간 광부와 간호사",
+   "titleTranslation": "The miners and nurses who went to Germany"
   },
   {
    "type": "paragraph",
@@ -769,6 +770,41 @@ KIIP.chapter({
      "annotation": "허용"
     },
     "되어 1976년까지 모두 10,371명이 독일로 떠났다."
+   ],
+   "translation": "Beginning with the arrival of the first 247 Korean miners in Germany in 1963, 8,395 miners worked in German mines — where coal is dug — up to 1977. From 1965 Korean nurses were allowed to take work in Germany, and by 1976 a total of 10,371 had left.",
+   "sentences": [
+    {
+     "spans": [
+      "1963년 한국인 ",
+      {
+       "word": "광부",
+       "annotation": "광부"
+      },
+      " 247명이 처음 독일에 도착한 것을 시작으로 1977년까지 8,395명의 광부가 독일의 ",
+      {
+       "word": "광산",
+       "annotation": "광산"
+      },
+      "(석탄을 캐는 곳)에서 일했다. "
+     ],
+     "translation": "Beginning with the arrival of the first 247 Korean miners in Germany in 1963, 8,395 miners worked in German mines — where coal is dug — up to 1977."
+    },
+    {
+     "spans": [
+      "1965년부터는 한국인 ",
+      {
+       "word": "간호사",
+       "annotation": "간호사"
+      },
+      "의 독일 취업이 ",
+      {
+       "word": "허용",
+       "annotation": "허용"
+      },
+      "되어 1976년까지 모두 10,371명이 독일로 떠났다."
+     ],
+     "translation": "From 1965 Korean nurses were allowed to take work in Germany, and by 1976 a total of 10,371 had left."
+    }
    ]
   },
   {
@@ -800,6 +836,46 @@ KIIP.chapter({
      "annotation": "학비"
     },
     "로 쓰였고 국가의 경제 성장에도 큰 도움이 되었다."
+   ],
+   "translation": "The miners had to endure hard labour in coal pits a thousand metres underground, and the nurses too were given the hospitals’ hardest work at first. Their wages were sent home to Korea, where they paid for families’ living costs and school fees and helped the country’s economy to grow.",
+   "sentences": [
+    {
+     "spans": [
+      "광부들은 지하 1,000m의 ",
+      {
+       "word": "탄광",
+       "annotation": "탄광"
+      },
+      "(석탄이 묻혀 있는 광산)에서 힘든 노동을 ",
+      {
+       "word": "견뎌야",
+       "annotation": "견디다"
+      },
+      " 했으며, 간호사들도 처음에는 병원의 어려운 일을 ",
+      {
+       "word": "도맡았다",
+       "annotation": "도맡다"
+      },
+      ". "
+     ],
+     "translation": "The miners had to endure hard labour in coal pits a thousand metres underground, and the nurses too were given the hospitals’ hardest work at first."
+    },
+    {
+     "spans": [
+      "이들의 월급은 한국으로 보내져 가족의 ",
+      {
+       "word": "생계비",
+       "annotation": "생계비"
+      },
+      "와 ",
+      {
+       "word": "학비",
+       "annotation": "학비"
+      },
+      "로 쓰였고 국가의 경제 성장에도 큰 도움이 되었다."
+     ],
+     "translation": "Their wages were sent home to Korea, where they paid for families’ living costs and school fees and helped the country’s economy to grow."
+    }
    ]
   },
   {
@@ -1429,7 +1505,8 @@ KIIP.chapter({
    "type": "section",
    "kind": "aside",
    "text": "알아두면 좋아요",
-   "topic": "전세계 코로나19 극복을 위한 한국의 지원"
+   "topic": "전세계 코로나19 극복을 위한 한국의 지원",
+   "titleTranslation": "Korea’s help in overcoming COVID-19 around the world"
   },
   {
    "type": "paragraph",
@@ -1505,6 +1582,103 @@ KIIP.chapter({
      "annotation": "방역물품"
     },
     "을 지원하기도 하였다."
+   ],
+   "translation": "As COVID-19 spread across the world, Korea’s course from swift diagnostic testing through to treatment drew great attention. Building it into a system under the name K-방역 and sharing the experience was a great help to other countries in overcoming the crisis. Some 110 countries also asked for humanitarian help with COVID-19 (as of 3 June 2020, Ministry of Foreign Affairs). Korea sent test kits, masks and other protective supplies it had produced, mainly to countries badly affected and with hard-pressed health systems.",
+   "sentences": [
+    {
+     "spans": [
+      "코로나19가 전세계로 ",
+      {
+       "word": "확산",
+       "annotation": "확산"
+      },
+      "되고 있을 때, 한국은 ",
+      {
+       "word": "신속",
+       "annotation": "신속"
+      },
+      "한 ",
+      {
+       "word": "진단검사",
+       "annotation": "진단검사"
+      },
+      "부터 ",
+      {
+       "word": "치료",
+       "annotation": "치료"
+      },
+      "까지의 과정이 큰 ",
+      {
+       "word": "주목",
+       "annotation": "주목"
+      },
+      "을 받았다. "
+     ],
+     "translation": "As COVID-19 spread across the world, Korea’s course from swift diagnostic testing through to treatment drew great attention."
+    },
+    {
+     "spans": [
+      "특히 이를 ",
+      {
+       "word": "K-방역",
+       "annotation": "K-방역"
+      },
+      "이란 이름으로 시스템을 ",
+      {
+       "word": "구축",
+       "annotation": "구축"
+      },
+      "하고 경험을 공유하여 다른 나라에서도 코로나19 위기를 극복하는데 큰 도움을 주었다. "
+     ],
+     "translation": "Building it into a system under the name K-방역 and sharing the experience was a great help to other countries in overcoming the crisis."
+    },
+    {
+     "spans": [
+      "또한 약 110개국(2020.6.3.기준/외교부)에서 코로나19 관련 ",
+      {
+       "word": "인도적",
+       "annotation": "인도적"
+      },
+      " 지원을 ",
+      {
+       "word": "요청",
+       "annotation": "요청"
+      },
+      "해 왔다. "
+     ],
+     "translation": "Some 110 countries also asked for humanitarian help with COVID-19 (as of 3 June 2020, Ministry of Foreign Affairs)."
+    },
+    {
+     "spans": [
+      "이에 한국은 피해 상황이 ",
+      {
+       "word": "심각",
+       "annotation": "심각"
+      },
+      "하고, 보건 ",
+      {
+       "word": "체계",
+       "annotation": "체계"
+      },
+      "가 어려운 나라 중심으로 ",
+      {
+       "word": "생산",
+       "annotation": "생산"
+      },
+      "된 ",
+      {
+       "word": "진단키트",
+       "annotation": "진단키트"
+      },
+      "와 마스크 등 ",
+      {
+       "word": "방역물품",
+       "annotation": "방역물품"
+      },
+      "을 지원하기도 하였다."
+     ],
+     "translation": "Korea sent test kits, masks and other protective supplies it had produced, mainly to countries badly affected and with hard-pressed health systems."
+    }
    ]
   },
   {

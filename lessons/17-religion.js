@@ -870,7 +870,8 @@ KIIP.chapter({
    "type": "section",
    "kind": "aside",
    "text": "알아두면 좋아요",
-   "topic": "한국에서 창시된 종교 – 천도교, 대종교, 원불교"
+   "topic": "한국에서 창시된 종교 – 천도교, 대종교, 원불교",
+   "titleTranslation": "Religions founded in Korea — 천도교, 대종교, 원불교"
   },
   {
    "type": "table",
@@ -1426,7 +1427,8 @@ KIIP.chapter({
    "type": "section",
    "kind": "aside",
    "text": "알아두면 좋아요",
-   "topic": "종교의 자유는 헌법으로 보장된다"
+   "topic": "종교의 자유는 헌법으로 보장된다",
+   "titleTranslation": "Freedom of religion is guaranteed by the Constitution"
   },
   {
    "type": "paragraph",
@@ -1447,6 +1449,30 @@ KIIP.chapter({
      "annotation": "보장"
     },
     "하고 있다."
+   ],
+   "translation": "Korea’s Constitution guarantees freedom of religion, among the basic rights the people are to enjoy, as follows.",
+   "sentences": [
+    {
+     "spans": [
+      "한국의 ",
+      {
+       "word": "헌법",
+       "annotation": "헌법"
+      },
+      "에서는 국민이 누려야 할 ",
+      {
+       "word": "기본권",
+       "annotation": "기본권"
+      },
+      " 중 종교의 자유를 다음과 같이 ",
+      {
+       "word": "보장",
+       "annotation": "보장"
+      },
+      "하고 있다."
+     ],
+     "translation": "Korea’s Constitution guarantees freedom of religion, among the basic rights the people are to enjoy, as follows."
+    }
    ]
   },
   {
@@ -1473,6 +1499,41 @@ KIIP.chapter({
      "annotation": "차별"
     },
     "을 받지 아니한다."
+   ],
+   "translation": "[Constitution, Article 11] All citizens are equal before the law. No one is to be discriminated against, in any area of political, economic, social, cultural or everyday life, on grounds of sex, religion or social standing.",
+   "sentences": [
+    {
+     "spans": [
+      "[헌법 제11조] 모든 국민은 법 앞에 ",
+      {
+       "word": "평등",
+       "annotation": "평등"
+      },
+      "하다. "
+     ],
+     "translation": "[Constitution, Article 11] All citizens are equal before the law."
+    },
+    {
+     "spans": [
+      "누구든지 ",
+      {
+       "word": "성별",
+       "annotation": "성별"
+      },
+      "·종교 또는 사회적 신분에 의하여 정치적·경제적·사회적·문화적·생활의 모든 ",
+      {
+       "word": "영역",
+       "annotation": "영역"
+      },
+      "에 있어서 ",
+      {
+       "word": "차별",
+       "annotation": "차별"
+      },
+      "을 받지 아니한다."
+     ],
+     "translation": "No one is to be discriminated against, in any area of political, economic, social, cultural or everyday life, on grounds of sex, religion or social standing."
+    }
    ]
   },
   {
@@ -1489,6 +1550,31 @@ KIIP.chapter({
      "annotation": "분리"
     },
     "된다."
+   ],
+   "translation": "[Constitution, Article 20] All citizens have freedom of religion. No state religion is recognised, and religion and politics are separate.",
+   "sentences": [
+    {
+     "spans": [
+      "[헌법 제20조] 모든 국민은 종교의 자유를 가진다. "
+     ],
+     "translation": "[Constitution, Article 20] All citizens have freedom of religion."
+    },
+    {
+     "spans": [
+      "국교는 ",
+      {
+       "word": "인정",
+       "annotation": "인정"
+      },
+      "되지 아니하며, 종교와 정치는 ",
+      {
+       "word": "분리",
+       "annotation": "분리"
+      },
+      "된다."
+     ],
+     "translation": "No state religion is recognised, and religion and politics are separate."
+    }
    ]
   },
   {

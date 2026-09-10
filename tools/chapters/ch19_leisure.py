@@ -67,7 +67,16 @@ CHAPTER = dict(
         FIGURE("‘슈퍼주니어’의 온라인 콘서트 모습"),
 
         SECTION("aside", "알아두면 좋아요"),
-        HEADING(3, "여행을 떠나요! 대한민국 구석구석에 대한 여행 정보"),
+        HEADING(3, "여행을 떠나요! 대한민국 구석구석에 대한 여행 정보", translation=
+          "Let’s travel! Information on every corner of Korea" "\n\n"
+          "On the ‘대한민국 구석구석’ website (korean.visitkorea.or.kr), run by "
+          "the Korea Tourism Organization, travel information for each "
+          "region and festivals across the country can be looked up month "
+          "by month. The site also sets out tourist routes by theme in "
+          "detail: travelling with the family, travelling when rest and "
+          "recovery are needed, travelling that children enjoy. Plenty of "
+          "information and travel photographs can be found on the ‘대한민국 "
+          "구석구석’ blog, Facebook, Twitter and Instagram as well."),
         PARAGRAPH("{한국관광공사}가 운영하는 ‘{대한민국 구석구석}’ 누리집(korean.visitkorea.or.kr)에서는 "
           "각 {지역별} 여행 정보와 전국의 {축제} 정보를 {월별}로 확인할 수 있다. 이 "
           "누리집에서는 가족과 함께 가는 여행, 휴식과 {회복}이 필요한 여행, 아이들이 좋아하는 "
@@ -111,7 +120,17 @@ CHAPTER = dict(
                ("인터넷방송 시청", 2.7), ("웹툰 읽기", 2.7), ("웹소설 읽기", 2.0)]),
 
         SECTION("aside", "알아두면 좋아요"),
-        HEADING(3, "문화가 있는 날을 아세요?"),
+        HEADING(3, "문화가 있는 날을 아세요?", translation=
+          "Do you know about the Day of Culture?" "\n\n"
+          "‘문화가 있는 날’ began on 29 January 2014. On the last Wednesday of "
+          "every month it offers a range of cultural benefits, so that "
+          "culture is easy to come by in daily life. On the day, some two "
+          "thousand cultural venues across the country — cinemas, concert "
+          "halls, museums, galleries, heritage sites — can be enjoyed at a "
+          "discount or free. Some venues also open in the evening so that "
+          "people can visit after work. As of 2020, for instance, cinemas "
+          "show films for 5,000 won between five and nine in the evening on "
+          "the last Wednesday of the month. Website: www.culture.go.kr"),
         PARAGRAPH("‘{문화가 있는 날}’은 2014년 1월 29일 처음 시작되었다. 매달 마지막 수요일에 "
           "일상에서 문화를 쉽게 접할 수 있도록 다양한 문화 혜택을 제공하고 있다. ‘문화가 있는 "
           "날’에는 영화관, 공연장, 박물관, 미술관, {문화재} 등 전국의 2천여 개 {문화시설}을 "

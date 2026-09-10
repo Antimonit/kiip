@@ -500,12 +500,22 @@ KIIP.chapter({
    "type": "section",
    "kind": "aside",
    "text": "알아두면 좋아요",
-   "topic": "태극기는 언제 달까?"
+   "topic": "태극기는 언제 달까?",
+   "titleTranslation": "When is the 태극기 flown?"
   },
   {
    "type": "paragraph",
    "spans": [
     "태극기는 매일 달아도 되는데 특히 다음과 같은 날에는 더 많이 볼 수 있다."
+   ],
+   "translation": "The 태극기 may be flown any day, but it is seen most on the days below.",
+   "sentences": [
+    {
+     "spans": [
+      "태극기는 매일 달아도 되는데 특히 다음과 같은 날에는 더 많이 볼 수 있다."
+     ],
+     "translation": "The 태극기 may be flown any day, but it is seen most on the days below."
+    }
    ]
   },
   {
@@ -946,7 +956,8 @@ KIIP.chapter({
    "type": "section",
    "kind": "aside",
    "text": "알아두면 좋아요",
-   "topic": "국경일, 기념식, 국제행사, 스포츠 경기는 어떻게 시작할까?"
+   "topic": "국경일, 기념식, 국제행사, 스포츠 경기는 어떻게 시작할까?",
+   "titleTranslation": "How do national holidays, ceremonies, international events and sporting fixtures begin?"
   },
   {
    "type": "paragraph",
@@ -962,6 +973,31 @@ KIIP.chapter({
      "annotation": "맹세"
     },
     "를 함께 하기도 한다."
+   ],
+   "translation": "In Korea a salute to the flag is made at important occasions. The pledge to the flag is sometimes said along with it.",
+   "sentences": [
+    {
+     "spans": [
+      "한국에서는 중요한 행사를 할 때 국기(태극기)에 대한 ",
+      {
+       "word": "경례",
+       "annotation": "경례"
+      },
+      "를 한다. "
+     ],
+     "translation": "In Korea a salute to the flag is made at important occasions."
+    },
+    {
+     "spans": [
+      "이 때 국기에 대한 ",
+      {
+       "word": "맹세",
+       "annotation": "맹세"
+      },
+      "를 함께 하기도 한다."
+     ],
+     "translation": "The pledge to the flag is sometimes said along with it."
+    }
    ]
   },
   {

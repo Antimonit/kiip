@@ -818,7 +818,8 @@ KIIP.chapter({
    "type": "section",
    "kind": "aside",
    "text": "알아두면 좋아요",
-   "topic": "한국인이 즐겨 먹는 전통 음식, 떡"
+   "topic": "한국인이 즐겨 먹는 전통 음식, 떡",
+   "titleTranslation": "떡, the traditional food Koreans love"
   },
   {
    "type": "paragraph",
@@ -874,6 +875,89 @@ KIIP.chapter({
      "annotation": "시루떡"
     },
     "을 나누어 주기도 한다."
+   ],
+   "translation": "Koreans have long made 떡 from grain such as rice. It is eaten especially at festivals, at ancestral rites, at birthday parties and when receiving guests. It is shared with family, neighbours and relatives, and often given as a gift. There are a great many kinds, according to the ingredients and the way they are made, of which 인절미, 송편 and 가래떡 are the best known. 백설기 is eaten to mark a hundred days or a year since a baby’s birth, and someone who has moved to a new place may share 시루떡 with the neighbours.",
+   "sentences": [
+    {
+     "spans": [
+      "한국인은 예로부터 쌀과 같은 ",
+      {
+       "word": "곡식",
+       "annotation": "곡식"
+      },
+      "을 이용해서 ",
+      {
+       "word": "떡",
+       "annotation": "떡"
+      },
+      "을 만들어 먹었다. "
+     ],
+     "translation": "Koreans have long made 떡 from grain such as rice."
+    },
+    {
+     "spans": [
+      "떡은 명절, ",
+      {
+       "word": "제사",
+       "annotation": "제사"
+      },
+      ", 생일잔치, ",
+      {
+       "word": "손님맞이",
+       "annotation": "손님맞이"
+      },
+      "를 할 때 특히 많이 먹는 음식이다. "
+     ],
+     "translation": "It is eaten especially at festivals, at ancestral rites, at birthday parties and when receiving guests."
+    },
+    {
+     "spans": [
+      "가족, 이웃, 친척들과 함께 나누어 먹기도 하고 선물을 하는 경우도 많다. "
+     ],
+     "translation": "It is shared with family, neighbours and relatives, and often given as a gift."
+    },
+    {
+     "spans": [
+      "재료와 만드는 방법에 따라 떡의 종류는 매우 다양한데 ",
+      {
+       "word": "인절미",
+       "annotation": "인절미"
+      },
+      ", ",
+      {
+       "word": "송편",
+       "annotation": "송편"
+      },
+      ", ",
+      {
+       "word": "가래떡",
+       "annotation": "가래떡"
+      },
+      " 등이 대표적이다. "
+     ],
+     "translation": "There are a great many kinds, according to the ingredients and the way they are made, of which 인절미, 송편 and 가래떡 are the best known."
+    },
+    {
+     "spans": [
+      "아기가 태어난 지 ",
+      {
+       "word": "백일",
+       "annotation": "백일"
+      },
+      "이 되거나 1년이 된 것을 기념할 때는 ",
+      {
+       "word": "백설기",
+       "annotation": "백설기"
+      },
+      "를, 새로운 곳으로 이사를 간 사람은 이웃에게 ",
+      {
+       "word": "시루떡",
+       "annotation": "시루떡"
+      },
+      "을 나누어 주기도 한다."
+     ],
+     "translation": "백설기 is eaten to mark a hundred days or a year since a baby’s birth, and someone who has moved to a new place may share 시루떡 with the neighbours."
+    }
    ]
   },
   {
@@ -1439,7 +1523,8 @@ KIIP.chapter({
    "type": "section",
    "kind": "aside",
    "text": "알아두면 좋아요",
-   "topic": "한국의 조상들이 선호했던 집의 위치"
+   "topic": "한국의 조상들이 선호했던 집의 위치",
+   "titleTranslation": "Where Koreans’ ancestors liked a house to stand"
   },
   {
    "type": "margin",
@@ -1491,6 +1576,73 @@ KIIP.chapter({
      "annotation": "명당"
     },
     "이라고 불렸다."
+   ],
+   "translation": "Koreans like a house built facing south. That is because the sun reaches a south-facing house well. In the past they also preferred a place with a river or a stream running in front of the house and a mountain behind. The hill at the back kept off the cold winter wind and made firewood easy to get, and water for the household and for farming was close at hand, which was convenient. Such a spot was called a 명당, meaning a good place.",
+   "sentences": [
+    {
+     "spans": [
+      "한국인은 남쪽을 향해 지은 ",
+      {
+       "word": "남향집",
+       "annotation": "남향집"
+      },
+      "을 좋아한다. "
+     ],
+     "translation": "Koreans like a house built facing south."
+    },
+    {
+     "spans": [
+      "남향집에 ",
+      {
+       "word": "햇볕",
+       "annotation": "햇볕"
+      },
+      "이 잘 들기 때문이다. "
+     ],
+     "translation": "That is because the sun reaches a south-facing house well."
+    },
+    {
+     "spans": [
+      "또한 과거에는 집 앞에 강이나 ",
+      {
+       "word": "냇물",
+       "annotation": "냇물"
+      },
+      "이 흐르고, 뒤에는 산이 있는 곳을 ",
+      {
+       "word": "선호하였다",
+       "annotation": "선호하다"
+      },
+      ". "
+     ],
+     "translation": "In the past they also preferred a place with a river or a stream running in front of the house and a mountain behind."
+    },
+    {
+     "spans": [
+      {
+       "word": "뒷산",
+       "annotation": "뒷산"
+      },
+      " 덕분에 겨울철 찬 바람을 막고 ",
+      {
+       "word": "땔감",
+       "annotation": "땔감"
+      },
+      "을 쉽게 구할 수 있으며 생활이나 농사에 필요한 물을 쉽게 구할 수 있어서 편리했다. "
+     ],
+     "translation": "The hill at the back kept off the cold winter wind and made firewood easy to get, and water for the household and for farming was close at hand, which was convenient."
+    },
+    {
+     "spans": [
+      "이런 곳은 좋은 장소라는 의미에서 ",
+      {
+       "word": "명당",
+       "annotation": "명당"
+      },
+      "이라고 불렸다."
+     ],
+     "translation": "Such a spot was called a 명당, meaning a good place."
+    }
    ]
   },
   {

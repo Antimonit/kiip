@@ -410,12 +410,40 @@ KIIP.chapter({
    "type": "section",
    "kind": "aside",
    "text": "알아두면 좋아요",
-   "topic": "1인 가구 증가로 어떤 변화가 나타나고 있을까?"
+   "topic": "1인 가구 증가로 어떤 변화가 나타나고 있을까?",
+   "titleTranslation": "What changes is the rise in single-person households bringing?"
   },
   {
    "type": "paragraph",
    "spans": [
     "요즘 '1인분' 반찬, '한 끼' 같은 소포장 상품, 소형가전 등 1인 가구를 겨냥한 제품이 계속 등장하고 있다. 결혼 시기가 늦춰지고 이혼율 증가, 고령화 현상 등이 나타나면서 1인 가구의 비중이 30%에 가까워졌는데 이로 인해 주택, 식품, 가전제품 등 산업 전반에 큰 변화가 일어나고 있다. 작은 크기의 집을 찾는 사람이 늘고 있고 대형마트나 편의점에서는 혼자서 간단히 먹을 수 있는 간편식 매출이 급증하였다. 작은 크기의 가전제품도 많아졌을 뿐 아니라, 가전제품 사는 것 자체를 번거로워 하는 1인 가구를 위해 가전제품을 빌려주는 서비스도 늘어나고 있다."
+   ],
+   "translation": "Products aimed at the single-person household keep appearing: ‘one portion’ side dishes, small packets such as ‘one meal’, small appliances. As marriage comes later, divorce rises and the population ages, the share of single-person households has approached 30%, and that is bringing great change to housing, food, appliances and industry as a whole. More people are looking for small homes, and sales of ready meals that one can eat alone have shot up in the large stores and the convenience stores. Small appliances have multiplied, and for the single-person household that finds buying an appliance a bother, services that rent them out are growing too.",
+   "sentences": [
+    {
+     "spans": [
+      "요즘 '1인분' 반찬, '한 끼' 같은 소포장 상품, 소형가전 등 1인 가구를 겨냥한 제품이 계속 등장하고 있다. "
+     ],
+     "translation": "Products aimed at the single-person household keep appearing: ‘one portion’ side dishes, small packets such as ‘one meal’, small appliances."
+    },
+    {
+     "spans": [
+      "결혼 시기가 늦춰지고 이혼율 증가, 고령화 현상 등이 나타나면서 1인 가구의 비중이 30%에 가까워졌는데 이로 인해 주택, 식품, 가전제품 등 산업 전반에 큰 변화가 일어나고 있다. "
+     ],
+     "translation": "As marriage comes later, divorce rises and the population ages, the share of single-person households has approached 30%, and that is bringing great change to housing, food, appliances and industry as a whole."
+    },
+    {
+     "spans": [
+      "작은 크기의 집을 찾는 사람이 늘고 있고 대형마트나 편의점에서는 혼자서 간단히 먹을 수 있는 간편식 매출이 급증하였다. "
+     ],
+     "translation": "More people are looking for small homes, and sales of ready meals that one can eat alone have shot up in the large stores and the convenience stores."
+    },
+    {
+     "spans": [
+      "작은 크기의 가전제품도 많아졌을 뿐 아니라, 가전제품 사는 것 자체를 번거로워 하는 1인 가구를 위해 가전제품을 빌려주는 서비스도 늘어나고 있다."
+     ],
+     "translation": "Small appliances have multiplied, and for the single-person household that finds buying an appliance a bother, services that rent them out are growing too."
+    }
    ]
   },
   {
@@ -843,12 +871,14 @@ KIIP.chapter({
    "type": "section",
    "kind": "aside",
    "text": "알아두면 좋아요",
-   "topic": "남편의 가족을 부를 때와 아내의 가족을 부를 때 호칭이 달라요"
+   "topic": "남편의 가족을 부를 때와 아내의 가족을 부를 때 호칭이 달라요",
+   "titleTranslation": "The terms differ for the husband’s family and the wife’s family"
   },
   {
    "type": "heading",
    "level": 3,
-   "text": "남편이 아내의 가족을 부를 때"
+   "text": "남편이 아내의 가족을 부를 때",
+   "titleTranslation": "A husband addressing his wife’s family"
   },
   {
    "type": "table",
@@ -902,7 +932,8 @@ KIIP.chapter({
   {
    "type": "heading",
    "level": 3,
-   "text": "아내가 남편의 가족을 부를 때"
+   "text": "아내가 남편의 가족을 부를 때",
+   "titleTranslation": "A wife addressing her husband’s family"
   },
   {
    "type": "table",

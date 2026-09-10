@@ -448,12 +448,34 @@ KIIP.chapter({
    "type": "section",
    "kind": "aside",
    "text": "알아두면 좋아요",
-   "topic": "누구나, 언제나 이용할 수 있는 교통수단, 공공 자전거"
+   "topic": "누구나, 언제나 이용할 수 있는 교통수단, 공공 자전거",
+   "titleTranslation": "Transport anyone can use at any time: the public bicycle"
   },
   {
    "type": "paragraph",
    "spans": [
     "주민들의 편의를 도모하고, 교통체증, 대기오염 문제를 해결하기 위해 각 지방자치단체에서는 자전거를 누구나, 언제나, 어디서나 쉽고 편리하게 이용할 수 있는 무인 대여 시스템을 운영하고 있다. 공공 자전거의 이름은 ‘따릉이’(서울), ‘타슈’(대전), ‘누비자’(창원), ‘온누리’(순천), ‘타랑께’(광주), ‘어울림’(세종), ‘여수랑’(여수) 등으로 다양하다. 누리집이나 앱으로 예약해서 이용하거나 대여소에 가서 직접 이용권을 구매한 뒤 바로 이용할 수 있다."
+   ],
+   "translation": "To make life easier for residents and to tackle congestion and air pollution, local authorities run unstaffed hire schemes that let anyone use a bicycle easily, at any time and anywhere. The public bicycles go by many names — 따릉이 (Seoul), 타슈 (Daejeon), 누비자 (Changwon), 온누리 (Suncheon), 타랑께 (Gwangju), 어울림 (Sejong), 여수랑 (Yeosu). One can book through the website or the app, or go to a stand, buy a pass on the spot and ride straight away.",
+   "sentences": [
+    {
+     "spans": [
+      "주민들의 편의를 도모하고, 교통체증, 대기오염 문제를 해결하기 위해 각 지방자치단체에서는 자전거를 누구나, 언제나, 어디서나 쉽고 편리하게 이용할 수 있는 무인 대여 시스템을 운영하고 있다. "
+     ],
+     "translation": "To make life easier for residents and to tackle congestion and air pollution, local authorities run unstaffed hire schemes that let anyone use a bicycle easily, at any time and anywhere."
+    },
+    {
+     "spans": [
+      "공공 자전거의 이름은 ‘따릉이’(서울), ‘타슈’(대전), ‘누비자’(창원), ‘온누리’(순천), ‘타랑께’(광주), ‘어울림’(세종), ‘여수랑’(여수) 등으로 다양하다. "
+     ],
+     "translation": "The public bicycles go by many names — 따릉이 (Seoul), 타슈 (Daejeon), 누비자 (Changwon), 온누리 (Suncheon), 타랑께 (Gwangju), 어울림 (Sejong), 여수랑 (Yeosu)."
+    },
+    {
+     "spans": [
+      "누리집이나 앱으로 예약해서 이용하거나 대여소에 가서 직접 이용권을 구매한 뒤 바로 이용할 수 있다."
+     ],
+     "translation": "One can book through the website or the app, or go to a stand, buy a pass on the spot and ride straight away."
+    }
    ]
   },
   {
@@ -870,12 +892,34 @@ KIIP.chapter({
    "type": "section",
    "kind": "aside",
    "text": "알아두면 좋아요",
-   "topic": "당신의 문자는 안전합니까? (보이스 피싱과 스미싱, 피해 발생 시 대응 방법)"
+   "topic": "당신의 문자는 안전합니까? (보이스 피싱과 스미싱, 피해 발생 시 대응 방법)",
+   "titleTranslation": "Are your messages safe? (Voice phishing and smishing, and what to do if you are caught)"
   },
   {
    "type": "paragraph",
    "spans": [
     "피싱(Phishing)이란 개인 정보(Private Data)를 낚는다(Fishing)라는 의미를 가진 말로 전화, 문자, 메신저, 가짜 사이트 등 통신수단을 이용하여 개인 정보나 금융 정보를 알아낸 후 현금을 빼 가는 것을 말한다. 이 중 전화를 이용한 것은 보이스 피싱(voice phishing)이라고 하며, 문자메시지(SMS)를 통해 악성 앱을 설치하여 현금을 빼 가는 것은 스미싱(smishing)이라고 한다. 악성 앱 설치가 의심되면 먼저 모바일 백신으로 악성 앱을 삭제하고 이동통신사에 모바일 결제 내역이 있는지 확인해야 하며 한국인터넷진흥원(KISA) 개인정보침해 신고센터(국번 없이 118)에 신고한다."
+   ],
+   "translation": "Phishing means fishing for private data: using the telephone, text messages, messenger apps, fake sites and other means of communication to find out someone’s personal or financial details and then take their money. Doing it by telephone is called voice phishing; installing a malicious app through a text message (SMS) to take money is called smishing. If you suspect a malicious app has been installed, delete it with a mobile anti-virus app first, check with your carrier whether there are any mobile payments on your account, and report it to the personal information infringement centre of the Korea Internet and Security Agency (KISA) on 118, with no area code.",
+   "sentences": [
+    {
+     "spans": [
+      "피싱(Phishing)이란 개인 정보(Private Data)를 낚는다(Fishing)라는 의미를 가진 말로 전화, 문자, 메신저, 가짜 사이트 등 통신수단을 이용하여 개인 정보나 금융 정보를 알아낸 후 현금을 빼 가는 것을 말한다. "
+     ],
+     "translation": "Phishing means fishing for private data: using the telephone, text messages, messenger apps, fake sites and other means of communication to find out someone’s personal or financial details and then take their money."
+    },
+    {
+     "spans": [
+      "이 중 전화를 이용한 것은 보이스 피싱(voice phishing)이라고 하며, 문자메시지(SMS)를 통해 악성 앱을 설치하여 현금을 빼 가는 것은 스미싱(smishing)이라고 한다. "
+     ],
+     "translation": "Doing it by telephone is called voice phishing; installing a malicious app through a text message (SMS) to take money is called smishing."
+    },
+    {
+     "spans": [
+      "악성 앱 설치가 의심되면 먼저 모바일 백신으로 악성 앱을 삭제하고 이동통신사에 모바일 결제 내역이 있는지 확인해야 하며 한국인터넷진흥원(KISA) 개인정보침해 신고센터(국번 없이 118)에 신고한다."
+     ],
+     "translation": "If you suspect a malicious app has been installed, delete it with a mobile anti-virus app first, check with your carrier whether there are any mobile payments on your account, and report it to the personal information infringement centre of the Korea Internet and Security Agency (KISA) on 118, with no area code."
+    }
    ]
   },
   {

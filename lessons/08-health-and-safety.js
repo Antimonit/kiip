@@ -637,7 +637,8 @@ KIIP.chapter({
    "type": "section",
    "kind": "aside",
    "text": "알아두면 좋아요",
-   "topic": "외국인도 건강보험에 가입할 수 있을까?"
+   "topic": "외국인도 건강보험에 가입할 수 있을까?",
+   "titleTranslation": "Can a foreigner join the health insurance scheme?"
   },
   {
    "type": "paragraph",
@@ -658,6 +659,53 @@ KIIP.chapter({
      "annotation": "미성년"
     },
     " 자녀, 부모 등도 등록 가능) 피부양자 확인에 필요한 서류를 국민건강보험공단에 내면 된다. (필요한 서류 : 피부양자 자격 취득 신고서, 외국인 등록증 사본, 가족 관계 증명서). 외국인 등록을 한 사람 중 직장 가입자와 피부양자에 해당되지 않으면서 6개월 이상 거주한 사람은 지역 건강보험에 가입을 해야 한다. 2019년 7월 16일부터 한국에 6개월 이상 체류하면 지역 가입자에 해당되어 자동으로 건강보험에 가입되고 건강 보험료를 납부하게 된다."
+   ],
+   "translation": "A registered foreigner who works at a workplace covered by health insurance, or who is employed as a public official, becomes a workplace subscriber. Where a spouse is a workplace subscriber, one registers as a dependent on the spouse’s health insurance — minor children and parents may register as well — by submitting the documents needed to confirm dependent status to the National Health Insurance Service. The documents needed are the dependent status application, a copy of the alien registration card and a family relation certificate. A registered foreigner who is neither a workplace subscriber nor a dependent and who has lived here six months or more must join the regional health insurance. Since 16 July 2019, staying in Korea for six months or more makes one a regional subscriber, enrolled in health insurance automatically and liable for the premiums.",
+   "sentences": [
+    {
+     "spans": [
+      "외국인 등록을 한 사람 중 건강보험이 적용되는 사업장에 근무하거나 공무원으로 채용된 사람은 직장 가입자가 된다. "
+     ],
+     "translation": "A registered foreigner who works at a workplace covered by health insurance, or who is employed as a public official, becomes a workplace subscriber."
+    },
+    {
+     "spans": [
+      {
+       "word": "배우자",
+       "annotation": "배우자"
+      },
+      "가 직장 가입자에 ",
+      {
+       "word": "해당",
+       "annotation": "해당"
+      },
+      "하는 경우 배우자의 건강보험에 피부양자로 등록하면 되는데(배우자 외에도 ",
+      {
+       "word": "미성년",
+       "annotation": "미성년"
+      },
+      " 자녀, 부모 등도 등록 가능) 피부양자 확인에 필요한 서류를 국민건강보험공단에 내면 된다. "
+     ],
+     "translation": "Where a spouse is a workplace subscriber, one registers as a dependent on the spouse’s health insurance — minor children and parents may register as well — by submitting the documents needed to confirm dependent status to the National Health Insurance Service."
+    },
+    {
+     "spans": [
+      "(필요한 서류 : 피부양자 자격 취득 신고서, 외국인 등록증 사본, 가족 관계 증명서). "
+     ],
+     "translation": "The documents needed are the dependent status application, a copy of the alien registration card and a family relation certificate."
+    },
+    {
+     "spans": [
+      "외국인 등록을 한 사람 중 직장 가입자와 피부양자에 해당되지 않으면서 6개월 이상 거주한 사람은 지역 건강보험에 가입을 해야 한다. "
+     ],
+     "translation": "A registered foreigner who is neither a workplace subscriber nor a dependent and who has lived here six months or more must join the regional health insurance."
+    },
+    {
+     "spans": [
+      "2019년 7월 16일부터 한국에 6개월 이상 체류하면 지역 가입자에 해당되어 자동으로 건강보험에 가입되고 건강 보험료를 납부하게 된다."
+     ],
+     "translation": "Since 16 July 2019, staying in Korea for six months or more makes one a regional subscriber, enrolled in health insurance automatically and liable for the premiums."
+    }
    ]
   },
   {
@@ -1233,7 +1281,8 @@ KIIP.chapter({
    "type": "section",
    "kind": "aside",
    "text": "알아두면 좋아요",
-   "topic": "똑똑한 CCTV로 대한민국의 안전을 높입니다"
+   "topic": "똑똑한 CCTV로 대한민국의 안전을 높입니다",
+   "titleTranslation": "Clever CCTV makes Korea safer"
   },
   {
    "type": "paragraph",
@@ -1274,6 +1323,68 @@ KIIP.chapter({
      "annotation": "기여"
     },
     "할 수 있다."
+   ],
+   "translation": "What should be done if someone approaches a child unseen, harms the child and runs off, or causes a car accident at night when nobody is about and simply drives away without doing anything? Someone who does wrong and runs may think nobody saw, but CCTV is installed all around daily life in Korea, so a person acting against another’s safety can be found. When a face, and also belongings, patterns of movement and vehicle numbers, are intelligently captured and analysed, it can be established who did wrong and who was harmed. The smart CCTV systems installed by the Korean government and by cities, counties and districts can help not only in tracing offenders but in spotting and preventing acts against safety before they happen.",
+   "sentences": [
+    {
+     "spans": [
+      "혹시 누군가가 어린이에게 몰래 다가가 어린이의 안전을 해치고 ",
+      {
+       "word": "달아나거나",
+       "annotation": "달아나다"
+      },
+      " 사람이 없는 밤 시간에 자동차 사고를 내고 아무런 ",
+      {
+       "word": "조치",
+       "annotation": "조치"
+      },
+      "도 없이 그냥 가버리는 상황이 발생하면 어떻게 해야 할까? "
+     ],
+     "translation": "What should be done if someone approaches a child unseen, harms the child and runs off, or causes a car accident at night when nobody is about and simply drives away without doing anything?"
+    },
+    {
+     "spans": [
+      "잘못을 하고도 달아난 사람은 아무도 못 봤을 거라고 생각할 수 있지만, 한국에는 생활 주변 곳곳에 CCTV가 설치되어 있어 다른 사람의 안전을 해치는 행위를 하는 사람을 찾아낼 수 있다. "
+     ],
+     "translation": "Someone who does wrong and runs may think nobody saw, but CCTV is installed all around daily life in Korea, so a person acting against another’s safety can be found."
+    },
+    {
+     "spans": [
+      "사람의 얼굴은 물론 ",
+      {
+       "word": "소지품",
+       "annotation": "소지품"
+      },
+      ", 행동 패턴, 차량 번호 등을 ",
+      {
+       "word": "지능적",
+       "annotation": "지능적"
+      },
+      "으로 ",
+      {
+       "word": "포착",
+       "annotation": "포착"
+      },
+      "해서 분석하게 되면 누가 잘못을 했고 누가 피해를 입었는지 알 수 있다. "
+     ],
+     "translation": "When a face, and also belongings, patterns of movement and vehicle numbers, are intelligently captured and analysed, it can be established who did wrong and who was harmed."
+    },
+    {
+     "spans": [
+      "한국 정부와 각 지방의 시, 군, 구에서 설치한 스마트 CCTV 시스템은 단지 범죄자 ",
+      {
+       "word": "추적",
+       "annotation": "추적"
+      },
+      "만이 아니라 안전을 해치는 행위를 사전에 발견하여 예방하는 데도 ",
+      {
+       "word": "기여",
+       "annotation": "기여"
+      },
+      "할 수 있다."
+     ],
+     "translation": "The smart CCTV systems installed by the Korean government and by cities, counties and districts can help not only in tracing offenders but in spotting and preventing acts against safety before they happen."
+    }
    ]
   },
   {

@@ -108,7 +108,18 @@ CHAPTER = dict(
               ["2019년", 20.7]]),
         MARGIN("실시하다/시행하다"),
         SECTION("aside", "알아두면 좋아요"),
-        HEADING(4, "한국에서 특별히 많이 볼 수 있는 직업은?"),
+        HEADING(4, "한국에서 특별히 많이 볼 수 있는 직업은?", translation=
+          "Which jobs are especially common in Korea?" "\n\n"
+          "Someone who drives a car in its owner’s place when the owner "
+          "pays a set fee and asks is called a 대리운전기사, and companies "
+          "specialising in it began to appear because of Korea’s "
+          "distinctive 회식 culture. The work is mostly at night and anyone "
+          "with a driving licence can do it, so many take it on as a second "
+          "job alongside their own. Meanwhile, as single-person and "
+          "double-income households increase, the business of ordering "
+          "goods online and having them delivered before dawn is growing "
+          "fast. With it has grown the number of people working in dawn "
+          "delivery."),
         PARAGRAPH("차의 주인이 일정 금액을 내고 요청하면 차를 대신 운전해주는 사람을 {대리운전기사}라고 하는데 한국 "
           "특유의 회식문화로 인해 대리 운전 전문 회사가 생겨나기 시작했다. 주로 밤 시간에 일하고, 운전면허가 "
           "있으면 일할 수 있어 본인의 직업 외에 {겸업|겸업하다}하는 사람들도 많다. 한편, 1인 가구와 맞벌이 "
@@ -141,7 +152,17 @@ CHAPTER = dict(
           "스포츠를 즐기는 등 모두가 참여해서 즐길 수 있는 방식이 늘어나고 있다."),
         FIGURE("직장 동료들과 함께 차를 마시거나 영화를 보며 회식을 하는 문화가 많아지고 있다."),
         SECTION("aside", "알아두면 좋아요"),
-        HEADING(4, "한국 직장인들은 일 년에 휴가를 며칠 정도 사용할까?"),
+        HEADING(4, "한국 직장인들은 일 년에 휴가를 며칠 정도 사용할까?", translation=
+          "How many days of leave do Korean employees take in a year?" "\n\n"
+          "Korean employees were found to have received an average of 15 "
+          "days of paid leave — leave on which wages are still paid — in "
+          "2018, and to have used 14 of them. That is six days more than in "
+          "2016, when the average used was eight, and four more than in "
+          "2017, when it was ten. Korea thus showed the highest rate of "
+          "increase among the countries surveyed. The result appears to "
+          "come from the spread of a work-life balance culture, the "
+          "introduction of the 52-hour week, and government and companies "
+          "encouraging leave."),
         PARAGRAPH("한국 직장인은 2018년 한 해 평균 15일의 유급 휴가(쉬면서도 임금을 받는 휴가)를 받아 이 중 "
           "14일을 사용한 것으로 조사되었다. 평균 사용 일수가 8일이던 2016년보다 6일, 평균 10일이던 "
           "2017년보다 4일이 늘어났다. 이에 따라 조사 대상 국가 가운데 한국이 가장 높은 증가율을 보였다. "

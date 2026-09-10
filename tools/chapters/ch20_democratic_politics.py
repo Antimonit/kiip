@@ -70,14 +70,30 @@ CHAPTER = dict(
         FIGURE("한국의 헌법 제1조"),
 
         SECTION("aside", "알아두면 좋아요"),
-        HEADING(3, "한국 민주주의 발전에 큰 영향을 준 사건"),
+        HEADING(3, "한국 민주주의 발전에 큰 영향을 준 사건",
+          translation="The events that shaped Korean democracy"),
         BULLET("{4·19혁명}(1960년): 3.15 {부정 선거}에 대한 {반발}로 일어난 학생과 시민들의 "
-          "{시위}로 {이승만} 대통령이 대통령 자리에서 {물러남|물러나다}."),
+          "{시위}로 {이승만} 대통령이 대통령 자리에서 {물러남|물러나다}.",
+          translation="The April 19 Revolution (1960): protests by "
+                      "students and citizens against the rigged election "
+                      "of 15 March brought President Rhee Syng-man down "
+                      "from office."),
         BULLET("{5·18 민주화 운동}(1980년): 군인 {세력} {집권} 반대와 민주주의 {회복}에 대한 광주 "
           "시민의 {민주화} 운동으로 시위 과정에서 수많은 광주 시민이 군인들에 의해 "
-          "{희생됨|희생되다}."),
+          "{희생됨|희생되다}.",
+          translation="The May 18 Democratic Uprising (1980): a movement "
+                      "by the people of Gwangju against the military "
+                      "seizure of power and for the return of democracy, "
+                      "in the course of which a great many of them were "
+                      "killed by soldiers."),
         BULLET("{6월 민주 항쟁}(1987년): 대통령 {직선제}, 헌법 {개정} 등을 요구하는 시위가 "
-          "{전국적}으로 일어나 결국 대통령 직선제 등의 내용을 담은 헌법이 새로 만들어짐."),
+          "{전국적}으로 일어나 결국 대통령 직선제 등의 내용을 담은 헌법이 새로 만들어짐.",
+          translation="The June Democratic Struggle (1987): protests "
+                      "demanding direct presidential elections and a "
+                      "revision of the Constitution arose across the "
+                      "country, and in the end a new Constitution was "
+                      "written that included direct election of the "
+                      "president."),
         FIGURE("〈4.19 혁명 당시 남대문 앞의 시위 모습〉"),
 
         SECTION("part", "02 한국은 왜 국가 기관의 권력을 나누어 놓았을까?"),
@@ -116,7 +132,15 @@ CHAPTER = dict(
         FIGURE("한국의 권력 분립 — 국민을 가운데 두고 입법부·행정부·사법부가 서로를 견제하는 그림"),
 
         SECTION("aside", "알아두면 좋아요"),
-        HEADING(3, "민주 정치의 반대말은 무엇일까?"),
+        HEADING(3, "민주 정치의 반대말은 무엇일까?", translation=
+          "What is the opposite of democratic politics?" "\n\n"
+          "Dictatorship is the opposite of democratic politics. A "
+          "dictatorship is where an individual or a group takes all power "
+          "and handles affairs as it pleases. There were periods of "
+          "dictatorship in Korea too. Some presidents used illegality or "
+          "violence in the course of holding on to office, or of gaining "
+          "power. Dictatorship is condemned because a great many people "
+          "were oppressed and lost their lives as a result."),
         PARAGRAPH("{독재} 정치는 민주 정치의 반대말이다. 독재는 어떤 개인이나 단체 등이 모든 권력을 "
           "{차지}하고 일을 마음대로 처리하는 것이다. 한국에서도 독재 정치가 이루어진 시기가 "
           "있었다. 일부 대통령들은 {대통령직}을 오래 유지하기 위한 과정에서 또는 {정권}을 얻기 "

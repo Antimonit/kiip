@@ -91,7 +91,15 @@ CHAPTER = dict(
         PARAGRAPH("시내에서는 도로의 중앙 부분 또는 가장 바깥쪽 도로를 버스 전용차로로 하는 경우가 많고, 고속도로에서는 "
           "1차로를 버스 전용 차로로 운영하고 있다."),
         SECTION("aside", "알아두면 좋아요"),
-        HEADING(3, "누구나, 언제나 이용할 수 있는 교통수단, 공공 자전거"),
+        HEADING(3, "누구나, 언제나 이용할 수 있는 교통수단, 공공 자전거", translation=
+          "Transport anyone can use at any time: the public bicycle" "\n\n"
+          "To make life easier for residents and to tackle congestion and "
+          "air pollution, local authorities run unstaffed hire schemes that "
+          "let anyone use a bicycle easily, at any time and anywhere. The "
+          "public bicycles go by many names — 따릉이 (Seoul), 타슈 (Daejeon), "
+          "누비자 (Changwon), 온누리 (Suncheon), 타랑께 (Gwangju), 어울림 (Sejong), "
+          "여수랑 (Yeosu). One can book through the website or the app, or go "
+          "to a stand, buy a pass on the spot and ride straight away."),
         PARAGRAPH("주민들의 편의를 도모하고, 교통체증, 대기오염 문제를 해결하기 위해 각 지방자치단체에서는 자전거를 "
           "누구나, 언제나, 어디서나 쉽고 편리하게 이용할 수 있는 무인 대여 시스템을 운영하고 있다. 공공 "
           "자전거의 이름은 ‘따릉이’(서울), ‘타슈’(대전), ‘누비자’(창원), ‘온누리’(순천), ‘타랑께’(광주), ‘어울림’(세종), ‘여수랑’(여수) 등으로 다양하다. 누리집이나 앱으로 예약해서 이용하거나 "
@@ -168,7 +176,20 @@ CHAPTER = dict(
           "방송은 주로 현재 사회의 관심을 받고 있는 쟁점을 해석하고 정리하거나, 특정 분야에 관한 재미있고 "
           "{유용한|유용하다} 정보를 알려 주는 등 다양한 {볼거리}를 제공하고 있다."),
         SECTION("aside", "알아두면 좋아요"),
-        HEADING(3, "당신의 문자는 안전합니까? (보이스 피싱과 스미싱, 피해 발생 시 대응 방법)"),
+        HEADING(3, "당신의 문자는 안전합니까? (보이스 피싱과 스미싱, 피해 발생 시 대응 방법)", translation=
+          "Are your messages safe? (Voice phishing and smishing, and what "
+          "to do if you are caught)" "\n\n"
+          "Phishing means fishing for private data: using the telephone, "
+          "text messages, messenger apps, fake sites and other means of "
+          "communication to find out someone’s personal or financial "
+          "details and then take their money. Doing it by telephone is "
+          "called voice phishing; installing a malicious app through a text "
+          "message (SMS) to take money is called smishing. If you suspect a "
+          "malicious app has been installed, delete it with a mobile "
+          "anti-virus app first, check with your carrier whether there are "
+          "any mobile payments on your account, and report it to the "
+          "personal information infringement centre of the Korea Internet "
+          "and Security Agency (KISA) on 118, with no area code."),
         PARAGRAPH("피싱(Phishing)이란 개인 정보(Private Data)를 낚는다(Fishing)라는 의미를 가진 "
           "말로 전화, 문자, 메신저, 가짜 사이트 등 통신수단을 이용하여 개인 정보나 금융 정보를 알아낸 후 "
           "현금을 빼 가는 것을 말한다. 이 중 전화를 이용한 것은 보이스 피싱(voice phishing)이라고 "

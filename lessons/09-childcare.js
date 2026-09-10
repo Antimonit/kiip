@@ -496,7 +496,8 @@ KIIP.chapter({
    "type": "section",
    "kind": "aside",
    "text": "알아두면 좋아요",
-   "topic": "맞벌이, 출장이나 야근 등으로 급한 돌봄이 필요하다면?"
+   "topic": "맞벌이, 출장이나 야근 등으로 급한 돌봄이 필요하다면?",
+   "titleTranslation": "What if you need care urgently — both parents working, a work trip, a late shift?"
   },
   {
    "type": "paragraph",
@@ -517,6 +518,48 @@ KIIP.chapter({
      "annotation": "일시적"
     },
     "인 돌봄이 필요할 경우, 아동의 질병으로 인해 보육 시설 이용이 어려운 경우에도 돌봄 서비스를 제공한다. 이를 통해 아동을 안전하게 보호하고 부모의 일과 가정 생활이 균형을 이룰 수 있도록 지원한다. 서비스 신청은 아이 돌봄 지원 사업 누리집(https://dolbom.go.kr)에서 가능하다."
+   ],
+   "translation": "The government provides a service in which a child carer comes to the home, for children aged 12 and under in households where a gap in care arises because both parents work. Care is also provided where it is needed temporarily because a parent is away on business or working late, and where a child’s illness makes using a childcare facility difficult. It keeps the child safe and helps parents balance work and family life. Applications can be made on the child care support website (https://dolbom.go.kr).",
+   "sentences": [
+    {
+     "spans": [
+      "정부에서는 부모의 맞벌이 등으로 양육 ",
+      {
+       "word": "공백",
+       "annotation": "공백"
+      },
+      "이 발생하는 가정의 만 12세 이하의 아동을 대상으로 ",
+      {
+       "word": "아이 돌보미",
+       "annotation": "아이 돌보미"
+      },
+      "가 찾아가는 돌봄 서비스를 제공하고 있다. "
+     ],
+     "translation": "The government provides a service in which a child carer comes to the home, for children aged 12 and under in households where a gap in care arises because both parents work."
+    },
+    {
+     "spans": [
+      "부모의 출장이나 야근 등으로 ",
+      {
+       "word": "일시적",
+       "annotation": "일시적"
+      },
+      "인 돌봄이 필요할 경우, 아동의 질병으로 인해 보육 시설 이용이 어려운 경우에도 돌봄 서비스를 제공한다. "
+     ],
+     "translation": "Care is also provided where it is needed temporarily because a parent is away on business or working late, and where a child’s illness makes using a childcare facility difficult."
+    },
+    {
+     "spans": [
+      "이를 통해 아동을 안전하게 보호하고 부모의 일과 가정 생활이 균형을 이룰 수 있도록 지원한다. "
+     ],
+     "translation": "It keeps the child safe and helps parents balance work and family life."
+    },
+    {
+     "spans": [
+      "서비스 신청은 아이 돌봄 지원 사업 누리집(https://dolbom.go.kr)에서 가능하다."
+     ],
+     "translation": "Applications can be made on the child care support website (https://dolbom.go.kr)."
+    }
    ]
   },
   {
@@ -887,7 +930,8 @@ KIIP.chapter({
    "type": "section",
    "kind": "aside",
    "text": "알아두면 좋아요",
-   "topic": "야간 돌봄 서비스를 제공하는 24시간 어린이집"
+   "topic": "야간 돌봄 서비스를 제공하는 24시간 어린이집",
+   "titleTranslation": "The 24-hour nursery, for care at night"
   },
   {
    "type": "paragraph",
@@ -913,6 +957,41 @@ KIIP.chapter({
      "annotation": "접촉"
     },
     "해야 하고 최소한 주 1회 이상 아동을 가정에 데려가 보호해야 한다."
+   ],
+   "translation": "A 24-hour nursery provides care around the clock (07:30 to 07:30 the next day) where it cannot be avoided — a parent working at night, a single-parent or grandparent-headed household. Even with a child at a 24-hour nursery, the parent or guardian must be in touch with the child at least three times a week, by telephone or by visiting, and must take the child home and care for them at least once a week.",
+   "sentences": [
+    {
+     "spans": [
+      "24시간 어린이집은 부모의 야간 경제 활동, 한 부모 또는 ",
+      {
+       "word": "조손 가정",
+       "annotation": "조손 가정"
+      },
+      " 등의 ",
+      {
+       "word": "불가피",
+       "annotation": "불가피"
+      },
+      "한 경우 24시간 동안(07:30~다음날 07:30) 보육 서비스를 제공한다. "
+     ],
+     "translation": "A 24-hour nursery provides care around the clock (07:30 to 07:30 the next day) where it cannot be avoided — a parent working at night, a single-parent or grandparent-headed household."
+    },
+    {
+     "spans": [
+      "자녀를 24시간 어린이집에 보냈다 하더라도 부모(",
+      {
+       "word": "보호자",
+       "annotation": "보호자"
+      },
+      ")는 최소한 주 3회 이상 아동과 전화 또는 방문 등의 방식으로 아동과 ",
+      {
+       "word": "접촉",
+       "annotation": "접촉"
+      },
+      "해야 하고 최소한 주 1회 이상 아동을 가정에 데려가 보호해야 한다."
+     ],
+     "translation": "Even with a child at a 24-hour nursery, the parent or guardian must be in touch with the child at least three times a week, by telephone or by visiting, and must take the child home and care for them at least once a week."
+    }
    ]
   },
   {
@@ -924,6 +1003,26 @@ KIIP.chapter({
      "annotation": "권역"
     },
     "별로 지정된 거점형 야간보육 어린이집에서 전담 보육교사가 함께 돌봐주는 서비스도 있다. 서비스를 신청하면 오후 5시 이후 보육 교사 또는 보육 도우미가 주간 이용 어린이집에서 거점형 야간 보육 어린이집으로 아이를 데려와 돌봐주며 보호자는 거점형 야간보육 어린이집에 방문하여 아이를 데려오면 된다."
+   ],
+   "translation": "There is also a service in which infants who need care at night are looked after together by a dedicated carer at a designated hub nursery for the area. Where the service is applied for, after five in the afternoon a carer or assistant brings the child from the daytime nursery to the hub night nursery and looks after them, and the guardian collects the child from the hub nursery.",
+   "sentences": [
+    {
+     "spans": [
+      "이외에 야간 돌봄이 필요한 영유아들을 ",
+      {
+       "word": "권역",
+       "annotation": "권역"
+      },
+      "별로 지정된 거점형 야간보육 어린이집에서 전담 보육교사가 함께 돌봐주는 서비스도 있다. "
+     ],
+     "translation": "There is also a service in which infants who need care at night are looked after together by a dedicated carer at a designated hub nursery for the area."
+    },
+    {
+     "spans": [
+      "서비스를 신청하면 오후 5시 이후 보육 교사 또는 보육 도우미가 주간 이용 어린이집에서 거점형 야간 보육 어린이집으로 아이를 데려와 돌봐주며 보호자는 거점형 야간보육 어린이집에 방문하여 아이를 데려오면 된다."
+     ],
+     "translation": "Where the service is applied for, after five in the afternoon a carer or assistant brings the child from the daytime nursery to the hub night nursery and looks after them, and the guardian collects the child from the hub nursery."
+    }
    ]
   },
   {

@@ -103,7 +103,23 @@ CHAPTER = dict(
           "가입자의 가족은 일정한 조건이 되면 피부양자로서 가입자와 동일하게 건강보험 혜택을 받을 수 있다."),
         FIGURE("건강보험증 — 건강보험증이나 신분증을 가지고 의료기관에 방문하면 보험 혜택을 받을 수 있다."),
         SECTION("aside", "알아두면 좋아요"),
-        HEADING(3, "외국인도 건강보험에 가입할 수 있을까?"),
+        HEADING(3, "외국인도 건강보험에 가입할 수 있을까?", translation=
+          "Can a foreigner join the health insurance scheme?" "\n\n"
+          "A registered foreigner who works at a workplace covered by "
+          "health insurance, or who is employed as a public official, "
+          "becomes a workplace subscriber. Where a spouse is a workplace "
+          "subscriber, one registers as a dependent on the spouse’s health "
+          "insurance — minor children and parents may register as well — by "
+          "submitting the documents needed to confirm dependent status to "
+          "the National Health Insurance Service. The documents needed are "
+          "the dependent status application, a copy of the alien "
+          "registration card and a family relation certificate. A "
+          "registered foreigner who is neither a workplace subscriber nor a "
+          "dependent "
+          "and who has lived here six months or more must join the regional "
+          "health insurance. Since 16 July 2019, staying in Korea for six "
+          "months or more makes one a regional subscriber, enrolled in "
+          "health insurance automatically and liable for the premiums."),
         PARAGRAPH("외국인 등록을 한 사람 중 건강보험이 적용되는 사업장에 근무하거나 공무원으로 채용된 사람은 직장 가입자가 "
           "된다. 배우자가 직장 가입자에 해당하는 경우 배우자의 건강보험에 피부양자로 등록하면 되는데(배우자 외에도 "
           "미성년 자녀, 부모 등도 등록 가능) 피부양자 확인에 필요한 서류를 국민건강보험공단에 내면 된다. "
@@ -183,7 +199,20 @@ CHAPTER = dict(
           "물질은 종류별로 정해진 장소와 {용기}에 구분해서 보관한다. {평상시}에는 비상구 와 {구급상자}, "
           "소화기 설치 위치를 확인하며 안전·보건표지의 의미도 미리 알아두도록 한다."),
         SECTION("aside", "알아두면 좋아요"),
-        HEADING(3, "똑똑한 CCTV로 대한민국의 안전을 높입니다"),
+        HEADING(3, "똑똑한 CCTV로 대한민국의 안전을 높입니다", translation=
+          "Clever CCTV makes Korea safer" "\n\n"
+          "What should be done if someone approaches a child unseen, harms "
+          "the child and runs off, or causes a car accident at night when "
+          "nobody is about and simply drives away without doing anything? "
+          "Someone who does wrong and runs may think nobody saw, but CCTV "
+          "is installed all around daily life in Korea, so a person acting "
+          "against another’s safety can be found. When a face, and also "
+          "belongings, patterns of movement and vehicle numbers, are "
+          "intelligently captured and analysed, it can be established who "
+          "did wrong and who was harmed. The smart CCTV systems installed "
+          "by the Korean government and by cities, counties and districts "
+          "can help not only in tracing offenders but in spotting and "
+          "preventing acts against safety before they happen."),
         PARAGRAPH("혹시 누군가가 어린이에게 몰래 다가가 어린이의 안전을 해치고 달아나거나 사람이 없는 밤 시간에 자동차 "
           "사고를 내고 아무런 조치도 없이 그냥 가버리는 상황이 발생하면 어떻게 해야 할까? 잘못을 하고도 달아난 "
           "사람은 아무도 못 봤을 거라고 생각할 수 있지만, 한국에는 생활 주변 곳곳에 CCTV가 설치되어 있어 "

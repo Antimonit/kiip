@@ -717,7 +717,8 @@ KIIP.chapter({
    "type": "section",
    "kind": "aside",
    "text": "알아두면 좋아요",
-   "topic": "저축 상품에는 어떤 것이 있을까?"
+   "topic": "저축 상품에는 어떤 것이 있을까?",
+   "titleTranslation": "What kinds of savings account are there?"
   },
   {
    "type": "paragraph",
@@ -758,18 +759,92 @@ KIIP.chapter({
      "annotation": "정기 적금"
     },
     " 등이 있다. 보통 예금은 정기 적금이나 정기 예금에 비해 금리가 매우 낮다."
+   ],
+   "translation": "To build up money, it matters to save part of one’s income each month. Among savings products there is the ordinary deposit account, which one can pay into and take out of freely; the fixed deposit, where a set sum is left for a set period; and the instalment savings account, where an amount to save over a set period is decided and paid in bit by bit. The ordinary deposit pays a far lower rate than the fixed deposit or instalment savings.",
+   "sentences": [
+    {
+     "spans": [
+      "돈을 모으기 위해서는 매달 ",
+      {
+       "word": "소득",
+       "annotation": "소득"
+      },
+      " 중 일부를 저축하는 것이 중요하다. "
+     ],
+     "translation": "To build up money, it matters to save part of one’s income each month."
+    },
+    {
+     "spans": [
+      "저축 ",
+      {
+       "word": "상품",
+       "annotation": "상품"
+      },
+      "에는 ",
+      {
+       "word": "입금",
+       "annotation": "입금"
+      },
+      ", ",
+      {
+       "word": "출금",
+       "annotation": "출금"
+      },
+      "이 자유로운 ",
+      {
+       "word": "보통 예금",
+       "annotation": "보통 예금"
+      },
+      ", 일정 금액을 일정 기간 동안 맡겨 두는 ",
+      {
+       "word": "정기 예금",
+       "annotation": "정기 예금"
+      },
+      ", 일정 기간 동안 저축할 금액을 정해 놓고 그만큼씩 내는 ",
+      {
+       "word": "정기 적금",
+       "annotation": "정기 적금"
+      },
+      " 등이 있다. "
+     ],
+     "translation": "Among savings products there is the ordinary deposit account, which one can pay into and take out of freely; the fixed deposit, where a set sum is left for a set period; and the instalment savings account, where an amount to save over a set period is decided and paid in bit by bit."
+    },
+    {
+     "spans": [
+      "보통 예금은 정기 적금이나 정기 예금에 비해 금리가 매우 낮다."
+     ],
+     "translation": "The ordinary deposit pays a far lower rate than the fixed deposit or instalment savings."
+    }
    ]
   },
   {
    "type": "bullet",
    "spans": [
     "[정기 예금의 예] 100만원을 일정 기간 동안 은행에 맡겨두는 것"
+   ],
+   "translation": "[Example of a fixed deposit] Leaving a million won with the bank for a set period.",
+   "sentences": [
+    {
+     "spans": [
+      "[정기 예금의 예] 100만원을 일정 기간 동안 은행에 맡겨두는 것"
+     ],
+     "translation": "[Example of a fixed deposit] Leaving a million won with the bank for a set period."
+    }
    ]
   },
   {
    "type": "bullet",
    "spans": [
     "[정기 적금의 예] 10만원씩 매달 같은 날에 저축하는 것"
+   ],
+   "translation": "[Example of instalment savings] Saving 100,000 won on the same day every month.",
+   "sentences": [
+    {
+     "spans": [
+      "[정기 적금의 예] 10만원씩 매달 같은 날에 저축하는 것"
+     ],
+     "translation": "[Example of instalment savings] Saving 100,000 won on the same day every month."
+    }
    ]
   },
   {
@@ -1270,7 +1345,8 @@ KIIP.chapter({
    "type": "section",
    "kind": "aside",
    "text": "알아두면 좋아요",
-   "topic": "예금자 보호 제도란 무엇일까?"
+   "topic": "예금자 보호 제도란 무엇일까?",
+   "titleTranslation": "What is deposit protection?"
   },
   {
    "type": "paragraph",
@@ -1311,6 +1387,62 @@ KIIP.chapter({
      "annotation": "예금액"
     },
     "이 5천만 원을 넘을 경우에는 여러 금융기관에 나누어 맡기는 것이 더 안전하다."
+   ],
+   "translation": "Korea operates a ‘deposit protection scheme’ so that people can save with confidence. Under it, the principal — the money originally deposited — and the interest on it are protected together up to 50 million won per person at each financial institution. So where a deposit comes to more than 50 million won, it is safer to divide it among several institutions.",
+   "sentences": [
+    {
+     "spans": [
+      "한국에서는 사람들이 안심하고 ",
+      {
+       "word": "예금",
+       "annotation": "예금"
+      },
+      "할 수 있도록 ‘",
+      {
+       "word": "예금자 보호 제도",
+       "annotation": "예금자 보호 제도"
+      },
+      "’를 ",
+      {
+       "word": "시행",
+       "annotation": "시행"
+      },
+      "하고 있다. "
+     ],
+     "translation": "Korea operates a ‘deposit protection scheme’ so that people can save with confidence."
+    },
+    {
+     "spans": [
+      "이 제도에 ",
+      {
+       "word": "의해",
+       "annotation": "의해"
+      },
+      " ",
+      {
+       "word": "원금",
+       "annotation": "원금"
+      },
+      "(원래 맡긴 돈)과 ",
+      {
+       "word": "이자",
+       "annotation": "이자"
+      },
+      "(원금에 붙는 돈)를 합쳐 금융기관별로 1인당 최고 5천만 원까지 보호 받을 수 있다. "
+     ],
+     "translation": "Under it, the principal — the money originally deposited — and the interest on it are protected together up to 50 million won per person at each financial institution."
+    },
+    {
+     "spans": [
+      "그러므로 ",
+      {
+       "word": "예금액",
+       "annotation": "예금액"
+      },
+      "이 5천만 원을 넘을 경우에는 여러 금융기관에 나누어 맡기는 것이 더 안전하다."
+     ],
+     "translation": "So where a deposit comes to more than 50 million won, it is safer to divide it among several institutions."
+    }
    ]
   },
   {

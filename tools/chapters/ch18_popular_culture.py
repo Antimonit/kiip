@@ -63,7 +63,21 @@ CHAPTER = dict(
         FIGURE("드라마 ‘도깨비’ 포스터"),
 
         SECTION("aside", "알아두면 좋아요"),
-        HEADING(3, "한국의 ‘방’ 문화를 즐겨보셨나요?"),
+        HEADING(3, "한국의 ‘방’ 문화를 즐겨보셨나요?", translation=
+          "Have you enjoyed Korea’s ‘방’ culture?" "\n\n"
+          "Korea has a distinctive ‘방’ culture. Walk down the street and "
+          "you will easily find a 노래방, a PC방, a 찜질방, a 만화방. The PC방 in "
+          "particular spread widely once the internet arrived in the late "
+          "1990s. What people mostly do at a PC방 is play games, and lately, "
+          "as games have settled in as a part of popular culture, they are "
+          "called ‘e-sports’. The 찜질방, where the traditional 온돌 can be "
+          "felt, is also visited a great deal with friends, colleagues and "
+          "family." "\n\n"
+          "Lately, as the technology has improved, more people are visiting "
+          "indoor baseball grounds and driving ranges that use screens. And "
+          "this distinctive ‘방’ culture is often introduced abroad, so it "
+          "has become an important part of the trip for foreigners visiting "
+          "Korea."),
         PARAGRAPH("한국에는 {독특한|독특하다} ‘{방}’ 문화가 있다. 길거리를 걷다 보면 {노래방}, "
           "{PC방}, {찜질방}, {만화방} 등을 쉽게 {발견}할 수 있다. 특히, PC방은 1990년대 "
           "{후반} 이후 인터넷이 {보급}되면서 널리 퍼지게 되었다. PC방에서는 주로 게임을 많이 "
@@ -106,7 +120,21 @@ CHAPTER = dict(
         FIGURE("2019 빌보드 뮤직 어워드에서 수상한 BTS(방탄소년단) (사진 출처: 〈연합뉴스〉)"),
 
         SECTION("aside", "알아두면 좋아요"),
-        HEADING(3, "제92회 아카데미 영화제 작품상 등 4관왕을 수상한 영화 ‘기생충’"),
+        HEADING(3, "제92회 아카데미 영화제 작품상 등 4관왕을 수상한 영화 ‘기생충’", translation=
+          "‘Parasite’, winner of four prizes at the 92nd Academy Awards, "
+          "Best Picture among them" "\n\n"
+          "‘Parasite’, directed by Bong Joon-ho and starring Song Kang-ho, "
+          "took the Palme d’Or, the top prize at the 72nd Cannes Film "
+          "Festival, and then won in four categories at the 92nd Academy "
+          "Awards: Best Picture, Best Director, Best Original Screenplay "
+          "and Best International Feature. ‘Parasite’ tells the story of a "
+          "rich family and a poor one, and was judged to combine artistry, "
+          "popular appeal and craft in equal measure. Bong Joon-ho’s "
+          "acceptance speech at the American Golden Globes, where the film "
+          "won Best Foreign Language Film — “once you overcome the "
+          "one-inch-tall barrier of subtitles, you can see so many more "
+          "films, and all films are connected” — moved a great many people "
+          "around the world."),
         PARAGRAPH("{봉준호} {감독}, {송강호} {주연}의 한국 영화 ‘{기생충}’이 제72회 {칸 영화제} "
           "최고상인 {황금종려상}에 이어 제92회 {아카데미 영화제}에서 {작품상}, {감독상}, "
           "{각본상}, {국제영화상} 등 4개 부분에서 수상하였다. 영화 ‘기생충’은 부자 가족과 가난한 "

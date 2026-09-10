@@ -589,7 +589,8 @@ KIIP.chapter({
    "type": "section",
    "kind": "aside",
    "text": "알아두면 좋아요",
-   "topic": "소송 구조 제도 안내책, 이젠 16개국 언어로 읽자!"
+   "topic": "소송 구조 제도 안내책, 이젠 16개국 언어로 읽자!",
+   "titleTranslation": "The guide to legal aid, now readable in sixteen languages!"
   },
   {
    "type": "paragraph",
@@ -674,6 +675,106 @@ KIIP.chapter({
      "annotation": "밝히다"
     },
     "."
+   ],
+   "translation": "The National Court Administration has translated and published its guide to the legal aid scheme in sixteen languages, English, Russian, Chinese and Vietnamese among them, to protect the rights of multicultural families and migrant workers. Legal aid is the scheme that waives lawyers’ fees and other costs, or extends the time to pay them, for those who find it hard to meet the costs a trial requires. The Court Administration said, “we expect the translated guide to make more use of legal aid — by Koreans and also by multicultural families and foreign workers living here — and to increase the chances of obtaining a remedy.",
+   "sentences": [
+    {
+     "spans": [
+      {
+       "word": "법원행정처",
+       "annotation": "법원행정처"
+      },
+      "가 다문화 가족, 이주민 근로자 등의 권리 보호를 위한 ",
+      {
+       "word": "소송 구조",
+       "annotation": "소송 구조"
+      },
+      " 제도 안내 책자를 영어, 러시아어, 중국어, 베트남어 등 16개 언어로 ",
+      {
+       "word": "번역",
+       "annotation": "번역"
+      },
+      "해 ",
+      {
+       "word": "발간",
+       "annotation": "발간"
+      },
+      "했다. "
+     ],
+     "translation": "The National Court Administration has translated and published its guide to the legal aid scheme in sixteen languages, English, Russian, Chinese and Vietnamese among them, to protect the rights of multicultural families and migrant workers."
+    },
+    {
+     "spans": [
+      "소송 구조 제도는 재판 ",
+      {
+       "word": "과정",
+       "annotation": "과정"
+      },
+      "에 필요한 돈을 내기 어려운 사람들을 ",
+      {
+       "word": "대상",
+       "annotation": "대상"
+      },
+      "으로 ",
+      {
+       "word": "변호사",
+       "annotation": "변호사"
+      },
+      " 비용 등을 면제해 주거나 ",
+      {
+       "word": "납부",
+       "annotation": "납부"
+      },
+      " 기간을 ",
+      {
+       "word": "연장",
+       "annotation": "연장"
+      },
+      "해 주는 제도다. "
+     ],
+     "translation": "Legal aid is the scheme that waives lawyers’ fees and other costs, or extends the time to pay them, for those who find it hard to meet the costs a trial requires."
+    },
+    {
+     "spans": [
+      "법원행정처는 “번역된 소송 구조 제도 안내 책자를 통해 ",
+      {
+       "word": "내국인",
+       "annotation": "내국인"
+      },
+      "은 물론 다문화 가족과 ",
+      {
+       "word": "국내",
+       "annotation": "국내"
+      },
+      " ",
+      {
+       "word": "거주",
+       "annotation": "거주"
+      },
+      " 외국인 근로자 등에 대한 소송 구조 제도가 ",
+      {
+       "word": "활성화",
+       "annotation": "활성화"
+      },
+      "되고 권리 ",
+      {
+       "word": "구제",
+       "annotation": "구제"
+      },
+      " 기회가 늘어날 것으로 ",
+      {
+       "word": "기대",
+       "annotation": "기대"
+      },
+      "된다.”라고 ",
+      {
+       "word": "밝혔다",
+       "annotation": "밝히다"
+      },
+      "."
+     ],
+     "translation": "The Court Administration said, “we expect the translated guide to make more use of legal aid — by Koreans and also by multicultural families and foreign workers living here — and to increase the chances of obtaining a remedy."
+    }
    ]
   },
   {
@@ -1243,7 +1344,8 @@ KIIP.chapter({
    "type": "section",
    "kind": "aside",
    "text": "알아두면 좋아요",
-   "topic": "대법원의 결정이 우리 생활에 영향을 준다"
+   "topic": "대법원의 결정이 우리 생활에 영향을 준다",
+   "titleTranslation": "A Supreme Court decision reaches into daily life"
   },
   {
    "type": "paragraph",
@@ -1274,6 +1376,40 @@ KIIP.chapter({
      "annotation": "정당"
     },
     "하다!"
+   ],
+   "translation": "Refusing permission for a waste facility on the ground of ‘concern about environmental pollution’ is lawful!",
+   "sentences": [
+    {
+     "spans": [
+      "‘환경 ",
+      {
+       "word": "오염",
+       "annotation": "오염"
+      },
+      " ",
+      {
+       "word": "우려",
+       "annotation": "우려"
+      },
+      "’를 이유로 ",
+      {
+       "word": "폐기물",
+       "annotation": "폐기물"
+      },
+      " 시설 ",
+      {
+       "word": "허락",
+       "annotation": "허락"
+      },
+      "하지 않은 결정은 ",
+      {
+       "word": "정당",
+       "annotation": "정당"
+      },
+      "하다!"
+     ],
+     "translation": "Refusing permission for a waste facility on the ground of ‘concern about environmental pollution’ is lawful!"
+    }
    ]
   },
   {
@@ -1330,6 +1466,83 @@ KIIP.chapter({
      "annotation": "위법"
     },
     "이 아니다.”라고 하였다."
+   ],
+   "translation": "The Supreme Court has ruled lawful a local authority’s decision not to allow a waste recycling facility to be built near a residential area. Company A submitted a business plan asking ○○ county for permission to build a waste recycling facility, and ○○ county refused it. The Supreme Court said, “once the environment is polluted it is all but impossible to restore it, so preventing pollution matters. Giving notice of unsuitability on the ground of the harm that might come to the health of ○○ county’s residents or to the surrounding environment is not unlawful.",
+   "sentences": [
+    {
+     "spans": [
+      "거주 지역과 가까운 곳에 폐기물 ",
+      {
+       "word": "재활용",
+       "annotation": "재활용"
+      },
+      " 시설을 설치하지 못하도록 한 지방자치단체의 결정이 정당하다는 대법원의 판결이 나왔다. "
+     ],
+     "translation": "The Supreme Court has ruled lawful a local authority’s decision not to allow a waste recycling facility to be built near a residential area."
+    },
+    {
+     "spans": [
+      "A사는 ○○군에 폐기물 재활용 시설 설치를 허가해 달라는 사업 계획서를 제출했으나, ○○군은 이를 거부했다. "
+     ],
+     "translation": "Company A submitted a business plan asking ○○ county for permission to build a waste recycling facility, and ○○ county refused it."
+    },
+    {
+     "spans": [
+      "대법원은 “환경은 한 번 오염되면 ",
+      {
+       "word": "원래대로",
+       "annotation": "원래대로"
+      },
+      " ",
+      {
+       "word": "회복",
+       "annotation": "회복"
+      },
+      "하는 것이 거의 ",
+      {
+       "word": "불가능",
+       "annotation": "불가능"
+      },
+      "하므로 오염되지 않도록 ",
+      {
+       "word": "예방",
+       "annotation": "예방"
+      },
+      "하는 것이 중요하다. "
+     ],
+     "translation": "The Supreme Court said, “once the environment is polluted it is all but impossible to restore it, so preventing pollution matters."
+    },
+    {
+     "spans": [
+      "○○군 주민의 건강이나 주변 환경에 ",
+      {
+       "word": "미칠",
+       "annotation": "미치다"
+      },
+      " 수 있는 ",
+      {
+       "word": "부정적",
+       "annotation": "부정적"
+      },
+      "인 영향을 이유로 ",
+      {
+       "word": "부적합",
+       "annotation": "부적합"
+      },
+      " ",
+      {
+       "word": "통보",
+       "annotation": "통보"
+      },
+      "를 한 것은 ",
+      {
+       "word": "위법",
+       "annotation": "위법"
+      },
+      "이 아니다.”라고 하였다."
+     ],
+     "translation": "Giving notice of unsuitability on the ground of the harm that might come to the health of ○○ county’s residents or to the surrounding environment is not unlawful."
+    }
    ]
   },
   {

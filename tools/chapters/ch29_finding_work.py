@@ -77,7 +77,17 @@ CHAPTER = dict(
         FIGURE("취업성공패키지 누리집 (www.work.go.kr/pkg)"),
 
         SECTION("aside", "알아두면 좋아요"),
-        HEADING(3, "한국 일자리 정보의 모든 것, 워크넷"),
+        HEADING(3, "한국 일자리 정보의 모든 것, 워크넷", translation=
+          "Everything about jobs in Korea: Worknet" "\n\n"
+          "Worknet (www.work.go.kr) is the website run by the Ministry of "
+          "Employment and Labour and the Korea Employment Information "
+          "Service, offering information on job-seeking and recruitment "
+          "along with information on occupations and careers. Through "
+          "Worknet’s combined jobs service, job information from local "
+          "authorities and companies can be searched easily and quickly. "
+          "The site offers online job applications, applying by email, a "
+          "tailored information service, and viewing or printing a record "
+          "of one’s job-seeking activity."),
         PARAGRAPH("{워크넷}은 고용노동부와 {한국고용정보원}이 {운영}하는 구직(직장을 구하는 것) "
                   "및 {구인}(일할 사람을 구하는 것) 정보와 직업·{진로정보}를 제공하는 "
                   "{누리집}(www.work.go.kr)이다. 워크넷의 {통합} 일자리 서비스를 통해 "
@@ -121,7 +131,17 @@ CHAPTER = dict(
                   "받는 것이 좋다."),
 
         SECTION("aside", "알아두면 좋아요"),
-        HEADING(3, "외국인 취업 박람회, 나에게 맞는 한국의 직장은?"),
+        HEADING(3, "외국인 취업 박람회, 나에게 맞는 한국의 직장은?", translation=
+          "The foreigners’ job fair: which Korean workplace suits me?" "\n\n"
+          "The ‘foreigners’ job fair’, held in Seoul every year since 2014, "
+          "is where Korean companies and talented people from abroad meet "
+          "to share information about employment, and where actual chances "
+          "of work are offered. It recommends which Korean companies suit a "
+          "foreign job-seeker and gives advice on writing a good CV, doing "
+          "well at interview and making a success of student life in Korea. "
+          "It also provides information on the bodies that support "
+          "foreigners’ employment, on Korean lessons, and on using Korean "
+          "government offices."),
         PARAGRAPH("2014년부터 해마다 서울에서 개최되는 ‘외국인 {취업 박람회}’는 한국의 기업과 "
                   "외국인 우수 인재들이 만나 취업 관련 정보를 나누고 실제로 취업의 기회를 "
                   "제공하기도 하는 자리이다. 여기서는 외국인 {구직자}에게 {적합}한 한국 기업이 "

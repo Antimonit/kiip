@@ -641,7 +641,8 @@ KIIP.chapter({
    "type": "section",
    "kind": "aside",
    "text": "알아두면 좋아요",
-   "topic": "설날의 대표적인 전통놀이, 윷놀이"
+   "topic": "설날의 대표적인 전통놀이, 윷놀이",
+   "titleTranslation": "윷놀이, the game of 설날"
   },
   {
    "type": "paragraph",
@@ -671,6 +672,56 @@ KIIP.chapter({
      "annotation": "뒤집어지다"
     },
     " 개수에 따라 하나부터 네 개까지 도, 개, 걸, 윷이라고 부르며 모두 뒤집어지지 않았을 때는 모라고 한다. 윷가락이 뒤집어진 개수대로 윷 말을 움직이며, 윷 말 네 개가 윷판의 정해진 길을 다 돌고 먼저 나오면 이긴다."
+   ],
+   "translation": "윷놀이 is the traditional Korean game many people enjoy at 설날. It is a kind of board game, made up of four wooden 윷 sticks, four pieces and a board. According to how many sticks land face up, from one to four, the throw is called 도, 개, 걸 or 윷; when none lands face up it is called 모. A piece is moved by the number of sticks that landed face up, and whoever gets all four of their pieces round the set path of the board and out first wins.",
+   "sentences": [
+    {
+     "spans": [
+      {
+       "word": "윷놀이",
+       "annotation": "윷놀이"
+      },
+      "는 설날에 많은 사람들이 즐기는 대표적인 한국의 전통놀이다. "
+     ],
+     "translation": "윷놀이 is the traditional Korean game many people enjoy at 설날."
+    },
+    {
+     "spans": [
+      "나무로 만든 ",
+      {
+       "word": "윷가락",
+       "annotation": "윷가락"
+      },
+      " 네 개와 윷 ",
+      {
+       "word": "말",
+       "annotation": "말"
+      },
+      " 네 개, ",
+      {
+       "word": "윷판",
+       "annotation": "윷판"
+      },
+      "으로 이루어진 일종의 보드게임이다. "
+     ],
+     "translation": "It is a kind of board game, made up of four wooden 윷 sticks, four pieces and a board."
+    },
+    {
+     "spans": [
+      {
+       "word": "뒤집어진",
+       "annotation": "뒤집어지다"
+      },
+      " 개수에 따라 하나부터 네 개까지 도, 개, 걸, 윷이라고 부르며 모두 뒤집어지지 않았을 때는 모라고 한다. "
+     ],
+     "translation": "According to how many sticks land face up, from one to four, the throw is called 도, 개, 걸 or 윷; when none lands face up it is called 모."
+    },
+    {
+     "spans": [
+      "윷가락이 뒤집어진 개수대로 윷 말을 움직이며, 윷 말 네 개가 윷판의 정해진 길을 다 돌고 먼저 나오면 이긴다."
+     ],
+     "translation": "A piece is moved by the number of sticks that landed face up, and whoever gets all four of their pieces round the set path of the board and out first wins."
+    }
    ]
   },
   {
@@ -1168,7 +1219,8 @@ KIIP.chapter({
    "type": "section",
    "kind": "aside",
    "text": "알아두면 좋아요",
-   "topic": "24절기를 알아볼까요?"
+   "topic": "24절기를 알아볼까요?",
+   "titleTranslation": "Shall we look at the 24 solar terms?"
   },
   {
    "type": "paragraph",
@@ -1219,6 +1271,72 @@ KIIP.chapter({
      "annotation": "유용하다"
     },
     " 활용되었다. 24절기는 지금도 농사를 지을 때 도움을 받으며, 일상생활에서도 먹는 음식이나 풍습이 이어져 오고 있다."
+   ],
+   "translation": "‘입춘’, which announces the start of spring, ‘경칩’, when the frogs come out, and ‘동지’, the longest night, when 팥죽 is cooked and eaten, are among the 24 solar terms. The 24 terms were made to divide the seasons by the position of the ecliptic, the path the sun travels, and were useful in a farming society greatly affected by the weather. They still help with farming today, and the food and the customs that go with them carry on in everyday life.",
+   "sentences": [
+    {
+     "spans": [
+      "봄의 시작을 알리는 ‘",
+      {
+       "word": "입춘",
+       "annotation": "입춘"
+      },
+      "’, 개구리가 튀어나온다는 ‘",
+      {
+       "word": "경칩",
+       "annotation": "경칩"
+      },
+      ",’ 밤이 가장 길며 ",
+      {
+       "word": "팥죽",
+       "annotation": "팥죽"
+      },
+      "을 ",
+      {
+       "word": "쑤어",
+       "annotation": "쑤다"
+      },
+      " 먹는 ‘",
+      {
+       "word": "동지",
+       "annotation": "동지"
+      },
+      "’ 등은 ",
+      {
+       "word": "24절기",
+       "annotation": "24절기"
+      },
+      " 중 하나이다. "
+     ],
+     "translation": "‘입춘’, which announces the start of spring, ‘경칩’, when the frogs come out, and ‘동지’, the longest night, when 팥죽 is cooked and eaten, are among the 24 solar terms."
+    },
+    {
+     "spans": [
+      "24절기는 태양이 움직이는 길인 ",
+      {
+       "word": "황도",
+       "annotation": "황도"
+      },
+      "의 위치에 따라 계절적 구분을 하기 위해 만들어진 것인데 과거 날씨에 영향을 크게 받는 ",
+      {
+       "word": "농경",
+       "annotation": "농경"
+      },
+      "사회에 ",
+      {
+       "word": "유용하게",
+       "annotation": "유용하다"
+      },
+      " 활용되었다. "
+     ],
+     "translation": "The 24 terms were made to divide the seasons by the position of the ecliptic, the path the sun travels, and were useful in a farming society greatly affected by the weather."
+    },
+    {
+     "spans": [
+      "24절기는 지금도 농사를 지을 때 도움을 받으며, 일상생활에서도 먹는 음식이나 풍습이 이어져 오고 있다."
+     ],
+     "translation": "They still help with farming today, and the food and the customs that go with them carry on in everyday life."
+    }
    ]
   },
   {

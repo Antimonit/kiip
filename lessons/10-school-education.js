@@ -580,7 +580,8 @@ KIIP.chapter({
    "type": "section",
    "kind": "aside",
    "text": "알아두면 좋아요",
-   "topic": "외국인 자녀의 학교 입학은 어떻게?"
+   "topic": "외국인 자녀의 학교 입학은 어떻게?",
+   "titleTranslation": "How does a foreigner’s child enrol at school?"
   },
   {
    "type": "paragraph",
@@ -606,6 +607,41 @@ KIIP.chapter({
      "annotation": "중도입국"
     },
     " 학생도 학교 교육을 받을 수 있다."
+   ],
+   "translation": "Q Can anyone attend school? Compulsory education for children and young people is guaranteed under the Constitution and the UN Convention on the Rights of the Child, so foreign students and students who arrived mid-schooling can receive school education whatever their residence status.",
+   "sentences": [
+    {
+     "spans": [
+      "Q 누구나 학교에 다닐 수 있나요? "
+     ],
+     "translation": "Q Can anyone attend school?"
+    },
+    {
+     "spans": [
+      "— 「",
+      {
+       "word": "헌법",
+       "annotation": "헌법"
+      },
+      "」과 「UN 아동의 권리에 관한 ",
+      {
+       "word": "협약",
+       "annotation": "협약"
+      },
+      "」에 따라 아동·청소년의 의무 교육을 보장하고 있기 때문에 체류 ",
+      {
+       "word": "신분",
+       "annotation": "신분"
+      },
+      "에 관계없이 외국인 학생, ",
+      {
+       "word": "중도입국",
+       "annotation": "중도입국"
+      },
+      " 학생도 학교 교육을 받을 수 있다."
+     ],
+     "translation": "Compulsory education for children and young people is guaranteed under the Constitution and the UN Convention on the Rights of the Child, so foreign students and students who arrived mid-schooling can receive school education whatever their residence status."
+    }
    ]
   },
   {
@@ -617,6 +653,26 @@ KIIP.chapter({
      "annotation": "학력"
     },
     "을 증명할 수 있는 서류(졸업 증명서 또는 재학 사실 증명 서류, 성적 증명서 등) 등"
+   ],
+   "translation": "Q What documents should be taken along to enrol? First, a document proving entry and departure or alien registration (or, failing that, one confirming residence); second, a document proving previous education (a graduation certificate or proof of attendance, a transcript, and so on).",
+   "sentences": [
+    {
+     "spans": [
+      "Q 학교에 입학하려면 어떤 서류를 챙겨가야 하나요? "
+     ],
+     "translation": "Q What documents should be taken along to enrol?"
+    },
+    {
+     "spans": [
+      "— ① 출입국에 관한 사실이나 외국인 등록을 증명할 수 있는 서류(없으면 거주 사실을 확인할 수 있는 서류) ② ",
+      {
+       "word": "학력",
+       "annotation": "학력"
+      },
+      "을 증명할 수 있는 서류(졸업 증명서 또는 재학 사실 증명 서류, 성적 증명서 등) 등"
+     ],
+     "translation": "First, a document proving entry and departure or alien registration (or, failing that, one confirming residence); second, a document proving previous education (a graduation certificate or proof of attendance, a transcript, and so on)."
+    }
    ]
   },
   {
@@ -1065,7 +1121,8 @@ KIIP.chapter({
    "type": "section",
    "kind": "aside",
    "text": "알아두면 좋아요",
-   "topic": "온라인으로 만나는 학교, 온라인 개학"
+   "topic": "온라인으로 만나는 학교, 온라인 개학",
+   "titleTranslation": "School met online: the online term"
   },
   {
    "type": "paragraph",
@@ -1091,6 +1148,59 @@ KIIP.chapter({
      "annotation": "대여"
     },
     ", 통신비를 지원하는 등 모든 학생들이 온라인 개학에 참여할 수 있도록 정책을 시행하였다."
+   ],
+   "translation": "This was an education policy introduced for the first time when COVID-19 spread in 2020: teacher and student do not meet face to face and lessons are held remotely. It runs in three forms: ▶ ‘live two-way’, where teacher and student have the lesson over a video link; ▶ ‘content-based’, where EBS material or a lesson recorded by the teacher is watched; ▶ ‘task-based’, where work such as a book report is set. For students with disabilities it is tailored to the kind and degree of disability — online lessons (braille files, subtitles, assistive devices) and one to one home teaching. Multicultural students are offered programmes and content for learning Korean and Korean culture, with information sent home in several languages. For students from low-income households the policy provided loans of smart devices and help with data costs, so that every student could take part in the online term.",
+   "sentences": [
+    {
+     "spans": [
+      "2020년 코로나19 확산으로 인해 처음으로 시행된 교육 정책으로, 교사와 학생이 대면하지 않고 ",
+      {
+       "word": "원격",
+       "annotation": "원격"
+      },
+      "으로 수업을 진행하는 것이다. "
+     ],
+     "translation": "This was an education policy introduced for the first time when COVID-19 spread in 2020: teacher and student do not meet face to face and lessons are held remotely."
+    },
+    {
+     "spans": [
+      "▶ 교사와 학생이 화상 연결로 수업하는 ‘실시간 ",
+      {
+       "word": "쌍방향",
+       "annotation": "쌍방향"
+      },
+      "형’ ▶ EBS 콘텐츠나 교사가 녹화한 강의를 보는 ‘콘텐츠 활용형’ ▶ 독후감 등 과제를 내주는 ‘과제 수행형’ 3개 유형으로 운영된다. "
+     ],
+     "translation": "It runs in three forms: ▶ ‘live two-way’, where teacher and student have the lesson over a video link; ▶ ‘content-based’, where EBS material or a lesson recorded by the teacher is watched; ▶ ‘task-based’, where work such as a book report is set."
+    },
+    {
+     "spans": [
+      "장애학생들은 장애유형 정도를 고려하여 온라인 수업(점역파일, 자막지원, 보조공학기기 지원 등)과 1:1 방문교육 등 ",
+      {
+       "word": "맞춤",
+       "annotation": "맞춤"
+      },
+      "형으로 실시한다. "
+     ],
+     "translation": "For students with disabilities it is tailored to the kind and degree of disability — online lessons (braille files, subtitles, assistive devices) and one to one home teaching."
+    },
+    {
+     "spans": [
+      "다문화 학생들에게는 한국어와 한국문화를 배울 수 있는 프로그램과 다문화 콘텐츠를 제공하고 이를 다국어 가정통신문으로 안내한다. "
+     ],
+     "translation": "Multicultural students are offered programmes and content for learning Korean and Korean culture, with information sent home in several languages."
+    },
+    {
+     "spans": [
+      "저소득층 학생들에게는 스마트기기 ",
+      {
+       "word": "대여",
+       "annotation": "대여"
+      },
+      ", 통신비를 지원하는 등 모든 학생들이 온라인 개학에 참여할 수 있도록 정책을 시행하였다."
+     ],
+     "translation": "For students from low-income households the policy provided loans of smart devices and help with data costs, so that every student could take part in the online term."
+    }
    ]
   },
   {

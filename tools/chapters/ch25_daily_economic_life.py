@@ -77,7 +77,16 @@ CHAPTER = dict(
                ["그리스", -0.3]]),
 
         SECTION("aside", "알아두면 좋아요"),
-        HEADING(3, "내 것, 남의 것에서 ‘우리’의 것으로, 공유경제"),
+        HEADING(3, "내 것, 남의 것에서 ‘우리’의 것으로, 공유경제", translation=
+          "From mine and yours to ‘ours’: the sharing economy" "\n\n"
+          "The ‘sharing economy’, one of the ideas that could change the "
+          "world in the twenty-first century, is taking hold in Korea too. "
+          "It means economic activity in which things are borrowed and "
+          "shared rather than owned outright. Public bicycle services such "
+          "as Seoul’s 따릉이 are running across the country, and many people "
+          "make good use of car- and home-sharing services. Local "
+          "authorities also lend out toys, umbrellas, household tools and "
+          "books cheaply."),
         PARAGRAPH("21세기 세상을 바꿀 수 있는 아이디어 중 하나인 ‘{공유경제}’가 한국에서도 "
                   "{활성화}되고 있다. 공유경제란 {일방적}인 {소유}의 개념이 아닌 빌려 쓰고, 나눠 "
                   "쓰는 경제 활동을 의미한다. 서울의 {따릉이}와 같은 공공 자전거 서비스는 "
@@ -118,7 +127,17 @@ CHAPTER = dict(
                   "필요하다."),
 
         SECTION("aside", "알아두면 좋아요"),
-        HEADING(3, "‘○○페이 됩니다’ 간편 결제 서비스란?"),
+        HEADING(3, "‘○○페이 됩니다’ 간편 결제 서비스란?", translation=
+          "‘○○Pay accepted’ — what is easy payment?" "\n\n"
+          "Easy payment means a service that lets one pay by smartphone, "
+          "online and in shops, without taking a plastic card out of one’s "
+          "wallet. Paying by mobile used to mean the bother of installing "
+          "ActiveX, keyboard security programs and other plug-ins, and "
+          "entering card or personal details every time." "\n\n"
+          "Easy payment has done away with those complicated steps, so once "
+          "the card details are entered a single time, payment afterwards "
+          "is quick and simple, needing only a light check by ID and "
+          "password, mobile number or SMS."),
         PARAGRAPH("간편 결제 서비스란 지갑에서 플라스틱 카드를 {꺼내지|꺼내다} 않고도 "
                   "온·오프라인에서 스마트폰으로 결제할 수 있는 서비스를 말한다. {기존} 모바일 "
                   "결제는 액티브X, 키보드 {보안프로그램} 등 각종 {플러그인}을 {설치}하고 매번 "

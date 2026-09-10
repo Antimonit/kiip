@@ -69,14 +69,27 @@ CHAPTER = dict(
         FIGURE("인터넷 전문 은행 — 카카오뱅크와 케이뱅크"),
 
         SECTION("aside", "알아두면 좋아요"),
-        HEADING(3, "저축 상품에는 어떤 것이 있을까?"),
+        HEADING(3, "저축 상품에는 어떤 것이 있을까?", translation=
+          "What kinds of savings account are there?" "\n\n"
+          "To build up money, it matters to save part of one’s income each "
+          "month. Among savings products there is the ordinary deposit "
+          "account, which one can pay into and take out of freely; the "
+          "fixed deposit, where a set sum is left for a set period; and the "
+          "instalment savings account, where an amount to save over a set "
+          "period is decided and paid in bit by bit. The ordinary deposit "
+          "pays a far lower rate than the fixed deposit or instalment "
+          "savings."),
         PARAGRAPH("돈을 모으기 위해서는 매달 {소득} 중 일부를 저축하는 것이 중요하다. 저축 "
                   "{상품}에는 {입금}, {출금}이 자유로운 {보통 예금}, 일정 금액을 일정 기간 동안 "
                   "맡겨 두는 {정기 예금}, 일정 기간 동안 저축할 금액을 정해 놓고 그만큼씩 내는 "
                   "{정기 적금} 등이 있다. 보통 예금은 정기 적금이나 정기 예금에 비해 금리가 매우 "
                   "낮다."),
-        BULLET("[정기 예금의 예] 100만원을 일정 기간 동안 은행에 맡겨두는 것"),
-        BULLET("[정기 적금의 예] 10만원씩 매달 같은 날에 저축하는 것"),
+        BULLET("[정기 예금의 예] 100만원을 일정 기간 동안 은행에 맡겨두는 것",
+          translation="[Example of a fixed deposit] Leaving a million won "
+                      "with the bank for a set period."),
+        BULLET("[정기 적금의 예] 10만원씩 매달 같은 날에 저축하는 것",
+          translation="[Example of instalment savings] Saving 100,000 won "
+                      "on the same day every month."),
         FIGURE("저금통에 돈을 모으는 두 사람 — ‘적금’과 ‘예금’의 깃발"),
 
         SECTION("part", "02 금융 거래는 어떻게 하면 될까?"),
@@ -114,7 +127,14 @@ CHAPTER = dict(
         FIGURE("OTP (토큰형, 카드형)"),
 
         SECTION("aside", "알아두면 좋아요"),
-        HEADING(3, "예금자 보호 제도란 무엇일까?"),
+        HEADING(3, "예금자 보호 제도란 무엇일까?", translation=
+          "What is deposit protection?" "\n\n"
+          "Korea operates a ‘deposit protection scheme’ so that people can "
+          "save with confidence. Under it, the principal — the money "
+          "originally deposited — and the interest on it are protected "
+          "together up to 50 million won per person at each financial "
+          "institution. So where a deposit comes to more than 50 million "
+          "won, it is safer to divide it among several institutions."),
         PARAGRAPH("한국에서는 사람들이 안심하고 {예금}할 수 있도록 ‘{예금자 보호 제도}’를 "
                   "{시행}하고 있다. 이 제도에 {의해} {원금}(원래 맡긴 돈)과 {이자}(원금에 붙는 "
                   "돈)를 합쳐 금융기관별로 1인당 최고 5천만 원까지 보호 받을 수 있다. 그러므로 "

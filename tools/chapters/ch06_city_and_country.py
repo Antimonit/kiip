@@ -103,7 +103,16 @@ CHAPTER = dict(
           "있다. 한편, 주택 부족이나 낡은 주택 문제를 해결하기 위해 공공 임대 주택 {보급}, 신도시 건설, "
           "도시 재개발 사업 등을 실시하고 있다."),
         SECTION("aside", "알아두면 좋아요"),
-        HEADING(3, "도시 재생 사업으로 확 달라진 우리 마을 (부산 영도 깡깡이 마을)"),
+        HEADING(3, "도시 재생 사업으로 확 달라진 우리 마을 (부산 영도 깡깡이 마을)", translation=
+          "Our neighbourhood transformed by urban regeneration (깡깡이 "
+          "village, Yeongdo, Busan)" "\n\n"
+          "깡깡이 village in Yeongdo-gu, Busan is where the country’s first "
+          "shipyard was built, and it prospered. It has fallen somewhat "
+          "behind now, but as its historic buildings are refurbished the "
+          "number of visitors has been rising. Urban regeneration means "
+          "bringing new uses to a declining area within a city so as to "
+          "raise it up again. Through it, run-down areas are showing the "
+          "good effects of new life: more visitors and more work."),
         PARAGRAPH("부산시 영도구의 깡깡이 마을은 우리나라 최초의 조선소가 세워져 번영을 누렸던 곳이다. 지금은 다소 발전이 "
           "뒤쳐졌지만 기존의 역사적 시설들을 새롭게 정비하면서 최근 관광객의 방문이 증가하고 있다. 도시 재생 "
           "사업은 도시 안의 쇠퇴한 지역에 새로운 기능을 도입하여 지역을 다시 일으키는 사업이다. 이를 통해 "
@@ -186,7 +195,16 @@ CHAPTER = dict(
           "병·의원 등과 같은 편의 시설을 늘리고 있다. 또한 인터넷 등과 같은 정보화 교육을 실시하기도 한다."),
         FIGURE("딸기 수확 로봇 — 일손 부족 문제를 해결하기 위해 여러 기술이 개발되고 있다."),
         SECTION("aside", "알아두면 좋아요"),
-        HEADING(3, "한국의 농촌을 체험해 볼까?"),
+        HEADING(3, "한국의 농촌을 체험해 볼까?", translation=
+          "Shall we try life in the Korean countryside?" "\n\n"
+          "Many rural experience villages are being set up where one can "
+          "try country life. A wide range of it can be tried: farming, "
+          "harvesting local specialities and crops, cooking with what has "
+          "been harvested, making 고추장, making tofu, catching catfish, "
+          "keeping animals outdoors, building a 원두막, making pottery. "
+          "Information on the rural experience villages running across the "
+          "country is available through the rural information portal "
+          "(농어촌 알리미, https://www.alimi.or.kr)."),
         PARAGRAPH("농촌 생활을 체험을 할 수 있는 농촌 체험 마을이 많이 조성되고 있다. 농사 체험, 특산물이나 농작물 "
           "수확 체험, 수확한 작물을 활용한 음식 만들기, 고추장 만들기, 두부 만들기, 메기 잡기, 야외 사육 "
           "체험, 원두막 만들기, 도자기 만들기 등 다양한 농촌 문화를 체험할 수 있다. 농어촌 정보 포털 "

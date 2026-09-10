@@ -687,7 +687,8 @@ KIIP.chapter({
    "type": "section",
    "kind": "aside",
    "text": "알아두면 좋아요",
-   "topic": "한국 민주주의 발전에 큰 영향을 준 사건"
+   "topic": "한국 민주주의 발전에 큰 영향을 준 사건",
+   "titleTranslation": "The events that shaped Korean democracy"
   },
   {
    "type": "bullet",
@@ -722,6 +723,44 @@ KIIP.chapter({
      "annotation": "물러나다"
     },
     "."
+   ],
+   "translation": "The April 19 Revolution (1960): protests by students and citizens against the rigged election of 15 March brought President Rhee Syng-man down from office.",
+   "sentences": [
+    {
+     "spans": [
+      {
+       "word": "4·19혁명",
+       "annotation": "4·19혁명"
+      },
+      "(1960년): 3.15 ",
+      {
+       "word": "부정 선거",
+       "annotation": "부정 선거"
+      },
+      "에 대한 ",
+      {
+       "word": "반발",
+       "annotation": "반발"
+      },
+      "로 일어난 학생과 시민들의 ",
+      {
+       "word": "시위",
+       "annotation": "시위"
+      },
+      "로 ",
+      {
+       "word": "이승만",
+       "annotation": "이승만"
+      },
+      " 대통령이 대통령 자리에서 ",
+      {
+       "word": "물러남",
+       "annotation": "물러나다"
+      },
+      "."
+     ],
+     "translation": "The April 19 Revolution (1960): protests by students and citizens against the rigged election of 15 March brought President Rhee Syng-man down from office."
+    }
    ]
   },
   {
@@ -757,6 +796,44 @@ KIIP.chapter({
      "annotation": "희생되다"
     },
     "."
+   ],
+   "translation": "The May 18 Democratic Uprising (1980): a movement by the people of Gwangju against the military seizure of power and for the return of democracy, in the course of which a great many of them were killed by soldiers.",
+   "sentences": [
+    {
+     "spans": [
+      {
+       "word": "5·18 민주화 운동",
+       "annotation": "5·18 민주화 운동"
+      },
+      "(1980년): 군인 ",
+      {
+       "word": "세력",
+       "annotation": "세력"
+      },
+      " ",
+      {
+       "word": "집권",
+       "annotation": "집권"
+      },
+      " 반대와 민주주의 ",
+      {
+       "word": "회복",
+       "annotation": "회복"
+      },
+      "에 대한 광주 시민의 ",
+      {
+       "word": "민주화",
+       "annotation": "민주화"
+      },
+      " 운동으로 시위 과정에서 수많은 광주 시민이 군인들에 의해 ",
+      {
+       "word": "희생됨",
+       "annotation": "희생되다"
+      },
+      "."
+     ],
+     "translation": "The May 18 Democratic Uprising (1980): a movement by the people of Gwangju against the military seizure of power and for the return of democracy, in the course of which a great many of them were killed by soldiers."
+    }
    ]
   },
   {
@@ -782,6 +859,34 @@ KIIP.chapter({
      "annotation": "전국적"
     },
     "으로 일어나 결국 대통령 직선제 등의 내용을 담은 헌법이 새로 만들어짐."
+   ],
+   "translation": "The June Democratic Struggle (1987): protests demanding direct presidential elections and a revision of the Constitution arose across the country, and in the end a new Constitution was written that included direct election of the president.",
+   "sentences": [
+    {
+     "spans": [
+      {
+       "word": "6월 민주 항쟁",
+       "annotation": "6월 민주 항쟁"
+      },
+      "(1987년): 대통령 ",
+      {
+       "word": "직선제",
+       "annotation": "직선제"
+      },
+      ", 헌법 ",
+      {
+       "word": "개정",
+       "annotation": "개정"
+      },
+      " 등을 요구하는 시위가 ",
+      {
+       "word": "전국적",
+       "annotation": "전국적"
+      },
+      "으로 일어나 결국 대통령 직선제 등의 내용을 담은 헌법이 새로 만들어짐."
+     ],
+     "translation": "The June Democratic Struggle (1987): protests demanding direct presidential elections and a revision of the Constitution arose across the country, and in the end a new Constitution was written that included direct election of the president."
+    }
    ]
   },
   {
@@ -1408,7 +1513,8 @@ KIIP.chapter({
    "type": "section",
    "kind": "aside",
    "text": "알아두면 좋아요",
-   "topic": "민주 정치의 반대말은 무엇일까?"
+   "topic": "민주 정치의 반대말은 무엇일까?",
+   "titleTranslation": "What is the opposite of democratic politics?"
   },
   {
    "type": "paragraph",
@@ -1458,6 +1564,83 @@ KIIP.chapter({
      "annotation": "비판"
     },
     "을 받는다."
+   ],
+   "translation": "Dictatorship is the opposite of democratic politics. A dictatorship is where an individual or a group takes all power and handles affairs as it pleases. There were periods of dictatorship in Korea too. Some presidents used illegality or violence in the course of holding on to office, or of gaining power. Dictatorship is condemned because a great many people were oppressed and lost their lives as a result.",
+   "sentences": [
+    {
+     "spans": [
+      {
+       "word": "독재",
+       "annotation": "독재"
+      },
+      " 정치는 민주 정치의 반대말이다. "
+     ],
+     "translation": "Dictatorship is the opposite of democratic politics."
+    },
+    {
+     "spans": [
+      "독재는 어떤 개인이나 ",
+      {
+       "word": "단체",
+       "annotation": "단체"
+      },
+      " 등이 모든 권력을 ",
+      {
+       "word": "차지",
+       "annotation": "차지"
+      },
+      "하고 일을 마음대로 처리하는 것이다. "
+     ],
+     "translation": "A dictatorship is where an individual or a group takes all power and handles affairs as it pleases."
+    },
+    {
+     "spans": [
+      "한국에서도 독재 정치가 이루어진 시기가 있었다. "
+     ],
+     "translation": "There were periods of dictatorship in Korea too."
+    },
+    {
+     "spans": [
+      "일부 대통령들은 ",
+      {
+       "word": "대통령직",
+       "annotation": "대통령직"
+      },
+      "을 오래 유지하기 위한 과정에서 또는 ",
+      {
+       "word": "정권",
+       "annotation": "정권"
+      },
+      "을 얻기 위한 과정에서 ",
+      {
+       "word": "불법",
+       "annotation": "불법"
+      },
+      "이나 ",
+      {
+       "word": "폭력",
+       "annotation": "폭력"
+      },
+      "을 이용하기도 했다. "
+     ],
+     "translation": "Some presidents used illegality or violence in the course of holding on to office, or of gaining power."
+    },
+    {
+     "spans": [
+      "그로 인해 많은 사람이 ",
+      {
+       "word": "억압당하고",
+       "annotation": "억압당하다"
+      },
+      " 희생되었다는 점에서 독재 정치는 ",
+      {
+       "word": "비판",
+       "annotation": "비판"
+      },
+      "을 받는다."
+     ],
+     "translation": "Dictatorship is condemned because a great many people were oppressed and lost their lives as a result."
+    }
    ]
   },
   {

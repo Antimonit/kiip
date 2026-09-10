@@ -615,7 +615,8 @@ KIIP.chapter({
    "type": "section",
    "kind": "aside",
    "text": "알아두면 좋아요",
-   "topic": "태풍, 지진, 전염병 등의 재난상황에서도 도움을 받을 수 있는 방법이 있을까?"
+   "topic": "태풍, 지진, 전염병 등의 재난상황에서도 도움을 받을 수 있는 방법이 있을까?",
+   "titleTranslation": "Is there help to be had in a disaster — a typhoon, an earthquake, an epidemic?"
   },
   {
    "type": "paragraph",
@@ -636,6 +637,42 @@ KIIP.chapter({
      "annotation": "취약가정"
     },
     "에는 별도 신청과정 없이 현금으로 지급되었으며, 나머지 가구는 신청을 받아 카드 포인트, 소비쿠폰, 지역사랑 상품권 등으로 지급되었다."
+   ],
+   "translation": "In a disaster such as a typhoon, an earthquake or the spread of an infectious disease, there is disaster relief money that the government or a local authority pays for a limited time. The best-known case in Korea was in 2020, when COVID-19 spread and disaster relief money was paid to support those affected and to stimulate the economy. The government’s emergency disaster payment went to vulnerable households, such as recipients of basic livelihood support, in cash and without a separate application; the remaining households applied and were paid in card points, consumption vouchers or local gift certificates.",
+   "sentences": [
+    {
+     "spans": [
+      "태풍, 지진, 전염병 확산 등 ",
+      {
+       "word": "재난",
+       "annotation": "재난"
+      },
+      "상황에서 정부나 지방자치단체 등이 ",
+      {
+       "word": "한시적",
+       "annotation": "한시적"
+      },
+      "으로 지급하는 재난관련 지원금이 있다. "
+     ],
+     "translation": "In a disaster such as a typhoon, an earthquake or the spread of an infectious disease, there is disaster relief money that the government or a local authority pays for a limited time."
+    },
+    {
+     "spans": [
+      "대표적으로 한국에서는 2020년 코로나바이러스 감염증-19가 확산됨에 따라 재난 피해자의 지원과 경기활성화를 위한 방법으로 재난관련 지원금이 지급되었다. "
+     ],
+     "translation": "The best-known case in Korea was in 2020, when COVID-19 spread and disaster relief money was paid to support those affected and to stimulate the economy."
+    },
+    {
+     "spans": [
+      "정부의 긴급재난지원금은 기초생활수급자 등 ",
+      {
+       "word": "취약가정",
+       "annotation": "취약가정"
+      },
+      "에는 별도 신청과정 없이 현금으로 지급되었으며, 나머지 가구는 신청을 받아 카드 포인트, 소비쿠폰, 지역사랑 상품권 등으로 지급되었다."
+     ],
+     "translation": "The government’s emergency disaster payment went to vulnerable households, such as recipients of basic livelihood support, in cash and without a separate application; the remaining households applied and were paid in card points, consumption vouchers or local gift certificates."
+    }
    ]
   },
   {
@@ -1009,7 +1046,8 @@ KIIP.chapter({
    "type": "section",
    "kind": "aside",
    "text": "알아두면 좋아요",
-   "topic": "자신의 고향 나라 언어로 법률 상담을 받을 수 있는 방법은?"
+   "topic": "자신의 고향 나라 언어로 법률 상담을 받을 수 있는 방법은?",
+   "titleTranslation": "How can you get legal advice in your own language?"
   },
   {
    "type": "paragraph",
@@ -1024,12 +1062,51 @@ KIIP.chapter({
      "annotation": "자문"
     },
     "을 받았다. 그 결과 그동안 밀린 임금을 모두 받을 수 있었다."
+   ],
+   "translation": "A, an overseas Korean, was working at a company and caring for an elderly widowed mother. Some five million won of wages had been owed for several months, and A, unable to get the money from the owner and in difficulty, took legal advice through the free interpreting service between the ‘village lawyer’ and a foreigner, provided by the foreigner information centre — the 1345 call centre. As a result, all the unpaid wages were recovered.",
+   "sentences": [
+    {
+     "spans": [
+      {
+       "word": "재외 동포",
+       "annotation": "재외 동포"
+      },
+      " A씨는 회사에 다니며 나이가 많은 홀어머니를 모시고 있었다. "
+     ],
+     "translation": "A, an overseas Korean, was working at a company and caring for an elderly widowed mother."
+    },
+    {
+     "spans": [
+      "수개월 간 약 500만원의 임금이 밀렸지만 사장으로부터 돈을 받지 못해 A씨는 생활에 어려움을 겪던 중 외국인 종합 안내센터(1345 콜센터)가 제공하는 ‘마을변호사-외국인’ 간 무료 통역 서비스를 통해 법률 ",
+      {
+       "word": "자문",
+       "annotation": "자문"
+      },
+      "을 받았다. "
+     ],
+     "translation": "Some five million won of wages had been owed for several months, and A, unable to get the money from the owner and in difficulty, took legal advice through the free interpreting service between the ‘village lawyer’ and a foreigner, provided by the foreigner information centre — the 1345 call centre."
+    },
+    {
+     "spans": [
+      "그 결과 그동안 밀린 임금을 모두 받을 수 있었다."
+     ],
+     "translation": "As a result, all the unpaid wages were recovered."
+    }
    ]
   },
   {
    "type": "paragraph",
    "spans": [
     "외국인 종합 안내센터(1345)에서는 법무부가 지정한 변호사가 1345센터 상담사의 통역 지원을 받아 언어 장벽과 정보 부족으로 법률 서비스를 이용하기 어려운 외국인에게 법률 상담을 제공하고 있다."
+   ],
+   "translation": "At the foreigner information centre (1345), a lawyer appointed by the Ministry of Justice gives legal advice, with interpreting help from a centre counsellor, to foreigners who find legal services hard to use because of the language barrier and a lack of information.",
+   "sentences": [
+    {
+     "spans": [
+      "외국인 종합 안내센터(1345)에서는 법무부가 지정한 변호사가 1345센터 상담사의 통역 지원을 받아 언어 장벽과 정보 부족으로 법률 서비스를 이용하기 어려운 외국인에게 법률 상담을 제공하고 있다."
+     ],
+     "translation": "At the foreigner information centre (1345), a lawyer appointed by the Ministry of Justice gives legal advice, with interpreting help from a centre counsellor, to foreigners who find legal services hard to use because of the language barrier and a lack of information."
+    }
    ]
   },
   {

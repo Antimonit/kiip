@@ -697,7 +697,8 @@ KIIP.chapter({
    "type": "section",
    "kind": "aside",
    "text": "알아두면 좋아요",
-   "topic": "지역사랑 상품권을 아시나요?"
+   "topic": "지역사랑 상품권을 아시나요?",
+   "titleTranslation": "Do you know about the local gift certificate?"
   },
   {
    "type": "paragraph",
@@ -777,6 +778,101 @@ KIIP.chapter({
      "annotation": "현금"
     },
     "처럼 사용이 가능하다."
+   ],
+   "translation": "A 지역사랑 상품권 is a gift certificate issued by a local authority, usable only at participating shops in that area — shops that have agreed to take it — and available at 농협, 신협, 새마을금고 and elsewhere. Using it brings a discount of about 0.5–10% as standard, with a further discount at the festivals. It can be used like cash anywhere with a participating-shop sticker: petrol stations, restaurants, bookshops and 학원, not only the traditional markets.",
+   "sentences": [
+    {
+     "spans": [
+      {
+       "word": "지역사랑 상품권",
+       "annotation": "지역사랑 상품권"
+      },
+      "은 각 지역의 지방자치단체에서 ",
+      {
+       "word": "발행",
+       "annotation": "발행"
+      },
+      "하는 ",
+      {
+       "word": "상품권",
+       "annotation": "상품권"
+      },
+      "으로 그 지역에 있는 ",
+      {
+       "word": "가맹점",
+       "annotation": "가맹점"
+      },
+      "(사용하기로 약속을 맺은 상점)에서만 사용할 수 있고 ",
+      {
+       "word": "농협",
+       "annotation": "농협"
+      },
+      ", ",
+      {
+       "word": "신협",
+       "annotation": "신협"
+      },
+      ", ",
+      {
+       "word": "새마을금고",
+       "annotation": "새마을금고"
+      },
+      " 등에서 ",
+      {
+       "word": "구입",
+       "annotation": "구입"
+      },
+      "할 수 있다. "
+     ],
+     "translation": "A 지역사랑 상품권 is a gift certificate issued by a local authority, usable only at participating shops in that area — shops that have agreed to take it — and available at 농협, 신협, 새마을금고 and elsewhere."
+    },
+    {
+     "spans": [
+      "이 상품권을 이용하면 기본적으로 0.5~10% 정도 ",
+      {
+       "word": "할인",
+       "annotation": "할인"
+      },
+      "을 받을 수 있고 명절에는 ",
+      {
+       "word": "추가",
+       "annotation": "추가"
+      },
+      " 할인도 받을 수 있다. "
+     ],
+     "translation": "Using it brings a discount of about 0.5–10% as standard, with a further discount at the festivals."
+    },
+    {
+     "spans": [
+      "전통 시장뿐만 아니라 ",
+      {
+       "word": "주유소",
+       "annotation": "주유소"
+      },
+      ", 식당, ",
+      {
+       "word": "서점",
+       "annotation": "서점"
+      },
+      ", ",
+      {
+       "word": "학원",
+       "annotation": "학원"
+      },
+      " 등 가맹점 ",
+      {
+       "word": "스티커",
+       "annotation": "스티커"
+      },
+      "가 붙어 있는 곳이라면 어디에서든 ",
+      {
+       "word": "현금",
+       "annotation": "현금"
+      },
+      "처럼 사용이 가능하다."
+     ],
+     "translation": "It can be used like cash anywhere with a participating-shop sticker: petrol stations, restaurants, bookshops and 학원, not only the traditional markets."
+    }
    ]
   },
   {
@@ -1246,17 +1342,28 @@ KIIP.chapter({
    "type": "section",
    "kind": "aside",
    "text": "알아두면 좋아요",
-   "topic": "소비 과정에서 피해를 입었을 때는?"
+   "topic": "소비 과정에서 피해를 입었을 때는?",
+   "titleTranslation": "What to do when something goes wrong with a purchase"
   },
   {
    "type": "heading",
    "level": 4,
-   "text": "1372 소비자 상담센터에 연락하기"
+   "text": "1372 소비자 상담센터에 연락하기",
+   "titleTranslation": "Contacting the 1372 consumer advice centre"
   },
   {
    "type": "bullet",
    "spans": [
     "한국말을 잘하는 사람"
+   ],
+   "translation": "If your Korean is good",
+   "sentences": [
+    {
+     "spans": [
+      "한국말을 잘하는 사람"
+     ],
+     "translation": "If your Korean is good"
+    }
    ]
   },
   {
@@ -1264,19 +1371,46 @@ KIIP.chapter({
    "spans": [
     "전화: 1372 + 통화버튼 누르고 안내에 따라 상담"
    ],
-   "level": 2
+   "translation": "By telephone: dial 1372, press call, and follow the instructions to speak to an adviser.",
+   "level": 2,
+   "sentences": [
+    {
+     "spans": [
+      "전화: 1372 + 통화버튼 누르고 안내에 따라 상담"
+     ],
+     "translation": "By telephone: dial 1372, press call, and follow the instructions to speak to an adviser."
+    }
+   ]
   },
   {
    "type": "bullet",
    "spans": [
     "인터넷: 1372소비자상담센터(www.1372.go.kr) 접속하여 인터넷상담 클릭"
    ],
-   "level": 2
+   "translation": "Online: go to the 1372 consumer advice centre (www.1372.go.kr) and click online advice.",
+   "level": 2,
+   "sentences": [
+    {
+     "spans": [
+      "인터넷: 1372소비자상담센터(www.1372.go.kr) 접속하여 인터넷상담 클릭"
+     ],
+     "translation": "Online: go to the 1372 consumer advice centre (www.1372.go.kr) and click online advice."
+    }
+   ]
   },
   {
    "type": "bullet",
    "spans": [
     "한국말을 잘 못하는 사람"
+   ],
+   "translation": "If your Korean is not good",
+   "sentences": [
+    {
+     "spans": [
+      "한국말을 잘 못하는 사람"
+     ],
+     "translation": "If your Korean is not good"
+    }
    ]
   },
   {
@@ -1288,7 +1422,20 @@ KIIP.chapter({
     },
     "(1577-1366)로 전화 → 상담원의 통역 → 1372 소비자 상담센터에 연락"
    ],
-   "level": 2
+   "translation": "Ring the Danuri call centre (1577-1366) → the adviser interprets → they contact the 1372 consumer advice centre.",
+   "level": 2,
+   "sentences": [
+    {
+     "spans": [
+      {
+       "word": "다누리콜센터",
+       "annotation": "다누리콜센터"
+      },
+      "(1577-1366)로 전화 → 상담원의 통역 → 1372 소비자 상담센터에 연락"
+     ],
+     "translation": "Ring the Danuri call centre (1577-1366) → the adviser interprets → they contact the 1372 consumer advice centre."
+    }
+   ]
   },
   {
    "type": "figure",

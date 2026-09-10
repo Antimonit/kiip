@@ -63,7 +63,17 @@ CHAPTER = dict(
           "대통령, {부의장}은 국무총리이다."),
 
         SECTION("aside", "알아두면 좋아요"),
-        HEADING(3, "대통령이 있는 청와대에 가 보고 싶다면..."),
+        HEADING(3, "대통령이 있는 청와대에 가 보고 싶다면...", translation=
+          "If you would like to visit 청와대, where the president is..." "\n\n"
+          "청와대, in Jongno-gu, Seoul, means the house with the blue roof. "
+          "A hundred and fifty thousand blue tiles were used on the main "
+          "building alone, where the president works. It stands close to "
+          "경복궁, where the kings of the Joseon dynasty lived, and is used "
+          "as the place where Korea’s president conducts the affairs of "
+          "state. 청와대 is regarded as a beautiful building, joining the form "
+          "of an old palace to modern building technique. Applying in "
+          "advance through the 청와대 website allows some parts of it to be "
+          "visited."),
         PARAGRAPH("서울시 종로구에 {위치}한 {청와대}는 푸른색 지붕을 가진 집이라는 뜻이다. 대통령이 일을 "
           "하는 곳인 청와대 {본관}에만 {청기와}가 15만 장이 사용되었다. 청와대는 조선시대 왕들이 "
           "{머물렀던|머물다} {경복궁}과 가까이 있으며 한국의 대통령이 나랏일을 하는 장소로 "
@@ -116,7 +126,17 @@ CHAPTER = dict(
         SOURCE("▶ 정부24 http://www.gov.kr/"),
 
         SECTION("aside", "알아두면 좋아요"),
-        HEADING(3, "대통령이 없는 국가에서는 정부를 누가 이끌까?"),
+        HEADING(3, "대통령이 없는 국가에서는 정부를 누가 이끌까?", translation=
+          "In a country with no president, who leads the government?" "\n\n"
+          "In countries such as the United Kingdom, Thailand and Japan the "
+          "head of government is chosen by the legislature, and is called "
+          "the 총리 or 수상 — the prime minister. In these countries the prime "
+          "minister represents the state and runs its affairs. There is a "
+          "monarch, but the monarch is only a symbolic presence and takes "
+          "no direct part in administration or politics. The form of "
+          "government thus differs from country to country, but the head of "
+          "government taking on the affairs of state for the people is the "
+          "same."),
         PARAGRAPH("영국, 태국, 일본 등의 국가에서는 {의회}에서 정부 책임자를 뽑는데, 이를 {총리} 또는 "
           "{수상}이라고 한다. 이 나라에서는 총리 또는 수상이 국가를 대표하고 나라의 살림을 "
           "이끌어간다. {국왕}이 있지만, 국왕은 국가의 {상징적}인 {존재}일 뿐 행정이나 정치에 직접 "

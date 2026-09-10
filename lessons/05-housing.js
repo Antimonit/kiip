@@ -645,7 +645,8 @@ KIIP.chapter({
    "type": "section",
    "kind": "aside",
    "text": "알아두면 좋아요",
-   "topic": "공공 임대 주택이란?"
+   "topic": "공공 임대 주택이란?",
+   "titleTranslation": "What is public rental housing?"
   },
   {
    "type": "paragraph",
@@ -661,6 +662,36 @@ KIIP.chapter({
      "annotation": "사회초년생"
     },
     "(일을 시작한 지 얼마 되지 않은 사람) 등 젊은 층을 위한 임대 주택(행복 주택), 소득이 낮은 독거노인(혼자 사는 노인)을 위한 임대 주택(공공 실버 주택), 다문화 가족, 한부모 가족을 위한 임대 주택 등 다양한 사람들의 주거 안정을 지원하고 있다."
+   ],
+   "translation": "Housing is expensive in the large cities, so ordinary people have difficulty finding a home. The government therefore builds multi-unit housing such as apartments so that those in financial difficulty can buy or rent at a low price. It supports secure housing for a range of people: public rental housing for those who need society’s protection, such as recipients of basic livelihood support, and also rental housing for the young — students, newly married couples, those just starting out at work (행복 주택) — rental housing for older people on low incomes living alone (공공 실버 주택), and rental housing for multicultural and single-parent families.",
+   "sentences": [
+    {
+     "spans": [
+      "대도시는 집값이 비싸기 때문에 서민들이 집을 구하기 어렵다. "
+     ],
+     "translation": "Housing is expensive in the large cities, so ordinary people have difficulty finding a home."
+    },
+    {
+     "spans": [
+      "그래서 정부에서는 아파트와 같은 공동 주택을 지어 경제적으로 어려운 사람들이 싼 값에 집을 사거나 빌릴 수 있도록 하고 있다. "
+     ],
+     "translation": "The government therefore builds multi-unit housing such as apartments so that those in financial difficulty can buy or rent at a low price."
+    },
+    {
+     "spans": [
+      {
+       "word": "기초생활수급자",
+       "annotation": "기초생활수급자"
+      },
+      " 등 사회의 보호가 필요한 계층을 위한 공공 임대 주택뿐만 아니라 대학생, 신혼부부, ",
+      {
+       "word": "사회초년생",
+       "annotation": "사회초년생"
+      },
+      "(일을 시작한 지 얼마 되지 않은 사람) 등 젊은 층을 위한 임대 주택(행복 주택), 소득이 낮은 독거노인(혼자 사는 노인)을 위한 임대 주택(공공 실버 주택), 다문화 가족, 한부모 가족을 위한 임대 주택 등 다양한 사람들의 주거 안정을 지원하고 있다."
+     ],
+     "translation": "It supports secure housing for a range of people: public rental housing for those who need society’s protection, such as recipients of basic livelihood support, and also rental housing for the young — students, newly married couples, those just starting out at work (행복 주택) — rental housing for older people on low incomes living alone (공공 실버 주택), and rental housing for multicultural and single-parent families."
+    }
    ]
   },
   {
@@ -1057,7 +1088,8 @@ KIIP.chapter({
    "type": "section",
    "kind": "aside",
    "text": "알아두면 좋아요",
-   "topic": "부동산에 갈 시간이 없다면? 온라인으로 알아보세요"
+   "topic": "부동산에 갈 시간이 없다면? 온라인으로 알아보세요",
+   "titleTranslation": "No time to visit an agent? Look online"
   },
   {
    "type": "paragraph",
@@ -1073,7 +1105,8 @@ KIIP.chapter({
      "annotation": "매물"
     },
     "(팔려고 내놓은 물건)을 보고 부동산을 방문했는데 방문 직전에 거래가 완료됐다고 하면서 다른 매물을 권유하는 경우도 많으므로 주의해야 한다. 또한 계약하기 전에 주택에 문제가 있는지, 계약을 하러 나온 사람이 진짜 집주인인지 꼭 확인해야 한다. 경우도 있다."
-   ]
+   ],
+   "translation": "When looking for a home to live in or to buy, one can search online without visiting an estate agent in person. On a property site you can pick the area you want and then search by the kind of home (apartment, 빌라, house, studio flat, shop unit), the kind of deal (purchase, 전세, monthly rent, short let) and the price range. Be careful, though: it is common to see a listing online, visit the agent, and be told the deal was completed just before you arrived and offered something else instead. And before signing, always check whether there is anything wrong with the property and whether the person who has come to sign is really the owner."
   },
   {
    "type": "section",

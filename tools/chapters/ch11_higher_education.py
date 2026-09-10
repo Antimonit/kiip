@@ -66,7 +66,21 @@ CHAPTER = dict(
           "일부 대학에서는 ‘다문화 가정 자녀’를 지원 조건으로 하여 선발하는 경우도 있으며 재외국민, 외국인, "
           "결혼 이주민인 경우에는 ‘재외국민 및 외국인 특별전형’에 응시할 수 있다."),
         SECTION("aside", "알아두면 좋아요"),
-        HEADING(2, "대학생 멘토링과 이중 언어 학습 지원"),
+        HEADING(2, "대학생 멘토링과 이중 언어 학습 지원", translation=
+          "University student mentoring, and support for bilingual "
+          "learning" "\n\n"
+          "Each provincial and metropolitan office of education runs a "
+          "mentoring scheme that pairs a university student with a pupil "
+          "and supports the pupil’s adjustment to school and basic "
+          "learning. The student mentor visits the school the mentee "
+          "attends and helps with study after lessons or during the "
+          "holidays. About 20 hours of mentoring a week is available (40 "
+          "hours a week in the holidays). To encourage bilingual learning, "
+          "multicultural family support centres develop and distribute "
+          "programmes for a bilingual home environment and bilingual "
+          "teaching materials, and the Ministry of Education and the "
+          "offices of education hold a ‘bilingual speaking competition’ "
+          "every year."),
         PARAGRAPH("각 시·도 교육청에서는 대학생과 학생을 연결하여 학생의 학교적응과 기초 학습을 지원하는 대학생 멘토링 "
           "제도를 운영하고 있다. 대학생 멘토가 멘티 학생이 재학중인 학교를 방문하여 방과 후 또는 방학 동안 "
           "학습을 도와준다. 주당 20시간(방학 중에는 주당 40시간) 정도 멘토링을 받을 수 있다. 또한 이중 "
@@ -101,7 +115,20 @@ CHAPTER = dict(
         PARAGRAPH("4년제 종합대학교, 교육대학교 등에는 석·박사학위를 수여하는 대학원을 두고 있다. 방송통신대학교나 "
           "사이버대학교 대학원에서도 석사학위 취득이 가능하다."),
         SECTION("aside", "알아두면 좋아요"),
-        HEADING(3, "국내 대학에 재학 중인 외국인 유학생의 비율은?"),
+        HEADING(3, "국내 대학에 재학 중인 외국인 유학생의 비율은?", translation=
+          "What proportion of students at Korean universities are from "
+          "abroad?" "\n\n"
+          "The proportion of international students at universities in "
+          "Korea has been rising steadily over the past few years. "
+          "According to the education statistics service of the Korean "
+          "Educational Development Institute, the number of international "
+          "students staying in Korea has passed 150,000 (as of 2020). More "
+          "than 80,000 of them are enrolled on full degree courses rather "
+          "than short language courses or exchanges. By country of origin "
+          "the largest numbers come from China, Vietnam, Mongolia, "
+          "Uzbekistan, Japan and the United States. Policies have followed: "
+          "help with accommodation and fees for international students, and "
+          "support for cultural events."),
         PARAGRAPH("최근 몇 년간 한국 내 대학의 외국인 유학생 비율은 점점 늘어나고 있는 추세이다. 한국교육개발원이 "
           "제공하는 교육통계서비스에 의하면 한국에 체류하는 외국인 유학생 숫자는 15만 명을 훌쩍 넘어섰다(2020 "
           "기준). 단기 어학연수나 교환 학생이 아니라 정규 학위 과정에 등록한 학생도 8만 명 이상이다. 유학생의 "

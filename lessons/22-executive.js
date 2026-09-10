@@ -715,7 +715,8 @@ KIIP.chapter({
    "type": "section",
    "kind": "aside",
    "text": "알아두면 좋아요",
-   "topic": "대통령이 있는 청와대에 가 보고 싶다면..."
+   "topic": "대통령이 있는 청와대에 가 보고 싶다면...",
+   "titleTranslation": "If you would like to visit 청와대, where the president is..."
   },
   {
    "type": "paragraph",
@@ -796,6 +797,114 @@ KIIP.chapter({
      "annotation": "관람"
     },
     "할 수 있다."
+   ],
+   "translation": "청와대, in Jongno-gu, Seoul, means the house with the blue roof. A hundred and fifty thousand blue tiles were used on the main building alone, where the president works. It stands close to 경복궁, where the kings of the Joseon dynasty lived, and is used as the place where Korea’s president conducts the affairs of state. 청와대 is regarded as a beautiful building, joining the form of an old palace to modern building technique. Applying in advance through the 청와대 website allows some parts of it to be visited.",
+   "sentences": [
+    {
+     "spans": [
+      "서울시 종로구에 ",
+      {
+       "word": "위치",
+       "annotation": "위치"
+      },
+      "한 ",
+      {
+       "word": "청와대",
+       "annotation": "청와대"
+      },
+      "는 푸른색 지붕을 가진 집이라는 뜻이다. "
+     ],
+     "translation": "청와대, in Jongno-gu, Seoul, means the house with the blue roof."
+    },
+    {
+     "spans": [
+      "대통령이 일을 하는 곳인 청와대 ",
+      {
+       "word": "본관",
+       "annotation": "본관"
+      },
+      "에만 ",
+      {
+       "word": "청기와",
+       "annotation": "청기와"
+      },
+      "가 15만 장이 사용되었다. "
+     ],
+     "translation": "A hundred and fifty thousand blue tiles were used on the main building alone, where the president works."
+    },
+    {
+     "spans": [
+      "청와대는 조선시대 왕들이 ",
+      {
+       "word": "머물렀던",
+       "annotation": "머물다"
+      },
+      " ",
+      {
+       "word": "경복궁",
+       "annotation": "경복궁"
+      },
+      "과 가까이 있으며 한국의 대통령이 나랏일을 하는 장소로 사용되고 있다. "
+     ],
+     "translation": "It stands close to 경복궁, where the kings of the Joseon dynasty lived, and is used as the place where Korea’s president conducts the affairs of state."
+    },
+    {
+     "spans": [
+      "청와대는 옛날 ",
+      {
+       "word": "궁궐",
+       "annotation": "궁궐"
+      },
+      "의 모습과 ",
+      {
+       "word": "현대적",
+       "annotation": "현대적"
+      },
+      "인 ",
+      {
+       "word": "건축",
+       "annotation": "건축"
+      },
+      " 기술이 ",
+      {
+       "word": "결합",
+       "annotation": "결합"
+      },
+      "된 아름다운 ",
+      {
+       "word": "건축물",
+       "annotation": "건축물"
+      },
+      "로 ",
+      {
+       "word": "평가받고",
+       "annotation": "평가받다"
+      },
+      " 있다. "
+     ],
+     "translation": "청와대 is regarded as a beautiful building, joining the form of an old palace to modern building technique."
+    },
+    {
+     "spans": [
+      "청와대 홈페이지에서 미리 ",
+      {
+       "word": "신청",
+       "annotation": "신청"
+      },
+      "하면 청와대 일부 ",
+      {
+       "word": "시설",
+       "annotation": "시설"
+      },
+      "을 ",
+      {
+       "word": "관람",
+       "annotation": "관람"
+      },
+      "할 수 있다."
+     ],
+     "translation": "Applying in advance through the 청와대 website allows some parts of it to be visited."
+    }
    ]
   },
   {
@@ -1397,7 +1506,8 @@ KIIP.chapter({
    "type": "section",
    "kind": "aside",
    "text": "알아두면 좋아요",
-   "topic": "대통령이 없는 국가에서는 정부를 누가 이끌까?"
+   "topic": "대통령이 없는 국가에서는 정부를 누가 이끌까?",
+   "titleTranslation": "In a country with no president, who leads the government?"
   },
   {
    "type": "paragraph",
@@ -1443,6 +1553,72 @@ KIIP.chapter({
      "annotation": "동일"
     },
     "하다."
+   ],
+   "translation": "In countries such as the United Kingdom, Thailand and Japan the head of government is chosen by the legislature, and is called the 총리 or 수상 — the prime minister. In these countries the prime minister represents the state and runs its affairs. There is a monarch, but the monarch is only a symbolic presence and takes no direct part in administration or politics. The form of government thus differs from country to country, but the head of government taking on the affairs of state for the people is the same.",
+   "sentences": [
+    {
+     "spans": [
+      "영국, 태국, 일본 등의 국가에서는 ",
+      {
+       "word": "의회",
+       "annotation": "의회"
+      },
+      "에서 정부 책임자를 뽑는데, 이를 ",
+      {
+       "word": "총리",
+       "annotation": "총리"
+      },
+      " 또는 ",
+      {
+       "word": "수상",
+       "annotation": "수상"
+      },
+      "이라고 한다. "
+     ],
+     "translation": "In countries such as the United Kingdom, Thailand and Japan the head of government is chosen by the legislature, and is called the 총리 or 수상 — the prime minister."
+    },
+    {
+     "spans": [
+      "이 나라에서는 총리 또는 수상이 국가를 대표하고 나라의 살림을 이끌어간다. "
+     ],
+     "translation": "In these countries the prime minister represents the state and runs its affairs."
+    },
+    {
+     "spans": [
+      {
+       "word": "국왕",
+       "annotation": "국왕"
+      },
+      "이 있지만, 국왕은 국가의 ",
+      {
+       "word": "상징적",
+       "annotation": "상징적"
+      },
+      "인 ",
+      {
+       "word": "존재",
+       "annotation": "존재"
+      },
+      "일 뿐 행정이나 정치에 직접 ",
+      {
+       "word": "관여",
+       "annotation": "관여"
+      },
+      "하지 않는다. "
+     ],
+     "translation": "There is a monarch, but the monarch is only a symbolic presence and takes no direct part in administration or politics."
+    },
+    {
+     "spans": [
+      "이처럼 정부 형태는 국가마다 다르지만, 정부의 최고 책임자가 국민을 위해 국가의 일을 맡는 것은 ",
+      {
+       "word": "동일",
+       "annotation": "동일"
+      },
+      "하다."
+     ],
+     "translation": "The form of government thus differs from country to country, but the head of government taking on the affairs of state for the people is the same."
+    }
    ]
   },
   {
