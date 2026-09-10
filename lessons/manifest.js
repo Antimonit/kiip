@@ -211,5 +211,11 @@ KIIP.manifest([
   "slug": "35-everyday-law",
   "title": "생활 법률",
   "titleEn": "Everyday law"
+ },
+ {
+  "number": 36,
+  "slug": "36-crime-and-law",
+  "title": "범죄와 법",
+  "titleEn": "Crime and the law"
  }
 ]);

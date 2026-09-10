@@ -404,7 +404,7 @@ KIIP.contents({
       "한국에서 형법은 어떤 기능을 할까?",
       "범죄를 막기 위해 경찰과 검찰은 어떤 일을 할까?"
      ],
-     "built": false
+     "built": true
     },
     {
      "number": 37,
