@@ -193,5 +193,11 @@ KIIP.manifest([
   "slug": "32-korean-nationality",
   "title": "한국 국적과 법",
   "titleEn": "Korean nationality and the law"
+ },
+ {
+  "number": 33,
+  "slug": "33-family-and-law",
+  "title": "가족과 법",
+  "titleEn": "The family and the law"
  }
 ]);
