@@ -199,5 +199,11 @@ KIIP.manifest([
   "slug": "33-family-and-law",
   "title": "가족과 법",
   "titleEn": "The family and the law"
+ },
+ {
+  "number": 34,
+  "slug": "34-property-and-law",
+  "title": "재산과 법",
+  "titleEn": "Property and the law"
  }
 ]);

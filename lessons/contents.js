@@ -384,7 +384,7 @@ KIIP.contents({
       "금전 거래를 할 때 무엇을 알아 두어야 할까?",
       "부동산 거래를 할 때 무엇을 알아 두어야 할까?"
      ],
-     "built": false
+     "built": true
     },
     {
      "number": 35,
