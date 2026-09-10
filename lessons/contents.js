@@ -416,7 +416,8 @@ KIIP.contents({
      ],
      "built": true
     }
-   ]
+   ],
+   "closing": "part-6"
   },
   {
    "number": 7,
