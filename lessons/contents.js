@@ -364,7 +364,7 @@ KIIP.contents({
       "한국 국적은 어떤 의미를 가지며 어떤 기준으로 결정될까?",
       "귀화는 어떤 절차로 이루어질까?"
      ],
-     "built": false
+     "built": true
     },
     {
      "number": 33,
