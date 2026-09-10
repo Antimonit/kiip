@@ -344,7 +344,7 @@ KIIP.contents({
       "한국에서 법은 어떤 의미를 가지고 있을까?",
       "외국인에게는 어떤 법적 권리와 의무가 있을까?"
      ],
-     "built": false
+     "built": true
     },
     {
      "number": 31,

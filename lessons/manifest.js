@@ -175,5 +175,11 @@ KIIP.manifest([
   "slug": "29-finding-work",
   "title": "취업하기",
   "titleEn": "Finding work"
+ },
+ {
+  "number": 30,
+  "slug": "30-foreigners-and-law",
+  "title": "외국인과 법",
+  "titleEn": "Foreigners and the law"
  }
 ]);
