@@ -217,5 +217,11 @@ KIIP.manifest([
   "slug": "36-crime-and-law",
   "title": "범죄와 법",
   "titleEn": "Crime and the law"
+ },
+ {
+  "number": 37,
+  "slug": "37-protecting-rights",
+  "title": "권리 보호와 법",
+  "titleEn": "Protecting rights and the law"
  }
 ]);
