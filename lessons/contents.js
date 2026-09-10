@@ -394,7 +394,7 @@ KIIP.contents({
       "경범죄에는 무엇이 있을까?",
       "음주운전과 학교폭력은 무엇일까?"
      ],
-     "built": false
+     "built": true
     },
     {
      "number": 36,
