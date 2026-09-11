@@ -93,8 +93,282 @@ KIIP.chapter({
    "text": "가로 세로 퀴즈"
   },
   {
-   "type": "figure",
-   "text": "일곱 칸씩 가로세로로 짜인 낱말 퍼즐 판. 가로 열쇠 ㉮~㉱와 세로 열쇠 ①~④가 시작하는 칸에 번호가 적혀 있다."
+   "type": "crossword",
+   "cols": 7,
+   "rows": 6,
+   "entries": [
+    {
+     "label": "㉮",
+     "dir": "across",
+     "x": 1,
+     "y": 1,
+     "answer": "온돌",
+     "cells": [
+      [
+       1,
+       1
+      ],
+      [
+       2,
+       1
+      ]
+     ]
+    },
+    {
+     "label": "㉯",
+     "dir": "across",
+     "x": 4,
+     "y": 1,
+     "answer": "한가위",
+     "cells": [
+      [
+       4,
+       1
+      ],
+      [
+       5,
+       1
+      ],
+      [
+       6,
+       1
+      ]
+     ]
+    },
+    {
+     "label": "㉰",
+     "dir": "across",
+     "x": 1,
+     "y": 5,
+     "answer": "불교",
+     "cells": [
+      [
+       1,
+       5
+      ],
+      [
+       2,
+       5
+      ]
+     ]
+    },
+    {
+     "label": "㉱",
+     "dir": "across",
+     "x": 4,
+     "y": 6,
+     "answer": "장례식",
+     "cells": [
+      [
+       4,
+       6
+      ],
+      [
+       5,
+       6
+      ],
+      [
+       6,
+       6
+      ]
+     ]
+    },
+    {
+     "label": "①",
+     "dir": "down",
+     "x": 2,
+     "y": 1,
+     "answer": "돌잔치",
+     "cells": [
+      [
+       2,
+       1
+      ],
+      [
+       2,
+       2
+      ],
+      [
+       2,
+       3
+      ]
+     ]
+    },
+    {
+     "label": "②",
+     "dir": "down",
+     "x": 4,
+     "y": 1,
+     "answer": "한류",
+     "cells": [
+      [
+       4,
+       1
+      ],
+      [
+       4,
+       2
+      ]
+     ]
+    },
+    {
+     "label": "③",
+     "dir": "down",
+     "x": 2,
+     "y": 5,
+     "answer": "교회",
+     "cells": [
+      [
+       2,
+       5
+      ],
+      [
+       2,
+       6
+      ]
+     ]
+    },
+    {
+     "label": "④",
+     "dir": "down",
+     "x": 6,
+     "y": 4,
+     "answer": "결혼식",
+     "cells": [
+      [
+       6,
+       4
+      ],
+      [
+       6,
+       5
+      ],
+      [
+       6,
+       6
+      ]
+     ]
+    }
+   ],
+   "grid": [
+    [
+     {
+      "answer": "온",
+      "labels": [
+       "㉮"
+      ]
+     },
+     {
+      "answer": "돌",
+      "labels": [
+       "①"
+      ]
+     },
+     null,
+     {
+      "answer": "한",
+      "labels": [
+       "㉯",
+       "②"
+      ]
+     },
+     {
+      "answer": "가",
+      "labels": []
+     },
+     {
+      "answer": "위",
+      "labels": []
+     },
+     null
+    ],
+    [
+     null,
+     {
+      "answer": "잔",
+      "labels": []
+     },
+     null,
+     {
+      "answer": "류",
+      "labels": []
+     },
+     null,
+     null,
+     null
+    ],
+    [
+     null,
+     {
+      "answer": "치",
+      "labels": []
+     },
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    [
+     null,
+     null,
+     null,
+     null,
+     null,
+     {
+      "answer": "결",
+      "labels": [
+       "④"
+      ]
+     },
+     null
+    ],
+    [
+     {
+      "answer": "불",
+      "labels": [
+       "㉰"
+      ]
+     },
+     {
+      "answer": "교",
+      "labels": [
+       "③"
+      ]
+     },
+     null,
+     null,
+     null,
+     {
+      "answer": "혼",
+      "labels": []
+     },
+     null
+    ],
+    [
+     null,
+     {
+      "answer": "회",
+      "labels": []
+     },
+     null,
+     {
+      "answer": "장",
+      "labels": [
+       "㉱"
+      ]
+     },
+     {
+      "answer": "례",
+      "labels": []
+     },
+     {
+      "answer": "식",
+      "labels": []
+     },
+     null
+    ]
+   ]
   },
   {
    "type": "heading",
@@ -147,7 +421,7 @@ KIIP.chapter({
    "spans": [
     "① 아이가 태어난 지 1년이 되는 첫 번째 생일 ",
     {
-     "blank": "돌"
+     "blank": "돌잔치"
     }
    ]
   },

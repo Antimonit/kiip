@@ -10,7 +10,8 @@ the chapters; the book keeps its own in 정답보기 on p. 262, which is not
 photographed.
 """
 
-from . import SECTION, HEADING, PARAGRAPH, BULLET, FIGURE, TABLE
+from . import (SECTION, HEADING, PARAGRAPH, BULLET, FIGURE, TABLE,
+               CROSSWORD)
 
 PART = dict(
     number=5, slug="part-5", part=True,
@@ -43,8 +44,12 @@ PART = dict(
         BULLET("한국산업인력공단 — www.hrdkorea.or.kr"),
 
         SECTION("quiz", "가로 세로 퀴즈"),
-        FIGURE("여덟 칸씩 가로세로로 짜인 낱말 퍼즐 판. 가로 열쇠 ㉮~㉲와 세로 열쇠 ①~④가 "
-               "시작하는 칸에 번호가 적혀 있다."),
+        CROSSWORD(8, 8,
+                  ("㉮", "across", 1, 1), ("㉯", "across", 6, 1),
+                  ("㉰", "across", 1, 4), ("㉱", "across", 1, 8),
+                  ("㉲", "across", 6, 8),
+                  ("①", "down", 1, 1), ("②", "down", 8, 1),
+                  ("③", "down", 5, 3), ("④", "down", 3, 6)),
         HEADING(4, "가로 열쇠"),
         BULLET("㉮ 한국에서 화폐를 발행하는 은행 ( 한국은행 )"),
         BULLET("㉯ 제품을 구입하고 사용할 때 누릴 수 있는 권리를 ○○○기본법으로 정해 놓음 "

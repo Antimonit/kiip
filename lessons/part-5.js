@@ -155,8 +155,410 @@ KIIP.chapter({
    "text": "가로 세로 퀴즈"
   },
   {
-   "type": "figure",
-   "text": "여덟 칸씩 가로세로로 짜인 낱말 퍼즐 판. 가로 열쇠 ㉮~㉲와 세로 열쇠 ①~④가 시작하는 칸에 번호가 적혀 있다."
+   "type": "crossword",
+   "cols": 8,
+   "rows": 8,
+   "entries": [
+    {
+     "label": "㉮",
+     "dir": "across",
+     "x": 1,
+     "y": 1,
+     "answer": "한국은행",
+     "cells": [
+      [
+       1,
+       1
+      ],
+      [
+       2,
+       1
+      ],
+      [
+       3,
+       1
+      ],
+      [
+       4,
+       1
+      ]
+     ]
+    },
+    {
+     "label": "㉯",
+     "dir": "across",
+     "x": 6,
+     "y": 1,
+     "answer": "소비자",
+     "cells": [
+      [
+       6,
+       1
+      ],
+      [
+       7,
+       1
+      ],
+      [
+       8,
+       1
+      ]
+     ]
+    },
+    {
+     "label": "㉰",
+     "dir": "across",
+     "x": 1,
+     "y": 4,
+     "answer": "금융실명제",
+     "cells": [
+      [
+       1,
+       4
+      ],
+      [
+       2,
+       4
+      ],
+      [
+       3,
+       4
+      ],
+      [
+       4,
+       4
+      ],
+      [
+       5,
+       4
+      ]
+     ]
+    },
+    {
+     "label": "㉱",
+     "dir": "across",
+     "x": 1,
+     "y": 8,
+     "answer": "백화점",
+     "cells": [
+      [
+       1,
+       8
+      ],
+      [
+       2,
+       8
+      ],
+      [
+       3,
+       8
+      ]
+     ]
+    },
+    {
+     "label": "㉲",
+     "dir": "across",
+     "x": 6,
+     "y": 8,
+     "answer": "신분증",
+     "cells": [
+      [
+       6,
+       8
+      ],
+      [
+       7,
+       8
+      ],
+      [
+       8,
+       8
+      ]
+     ]
+    },
+    {
+     "label": "①",
+     "dir": "down",
+     "x": 1,
+     "y": 1,
+     "answer": "한강",
+     "cells": [
+      [
+       1,
+       1
+      ],
+      [
+       1,
+       2
+      ]
+     ]
+    },
+    {
+     "label": "②",
+     "dir": "down",
+     "x": 8,
+     "y": 1,
+     "answer": "자유무역협정",
+     "cells": [
+      [
+       8,
+       1
+      ],
+      [
+       8,
+       2
+      ],
+      [
+       8,
+       3
+      ],
+      [
+       8,
+       4
+      ],
+      [
+       8,
+       5
+      ],
+      [
+       8,
+       6
+      ]
+     ]
+    },
+    {
+     "label": "③",
+     "dir": "down",
+     "x": 5,
+     "y": 3,
+     "answer": "경제활동",
+     "cells": [
+      [
+       5,
+       3
+      ],
+      [
+       5,
+       4
+      ],
+      [
+       5,
+       5
+      ],
+      [
+       5,
+       6
+      ]
+     ]
+    },
+    {
+     "label": "④",
+     "dir": "down",
+     "x": 3,
+     "y": 6,
+     "answer": "편의점",
+     "cells": [
+      [
+       3,
+       6
+      ],
+      [
+       3,
+       7
+      ],
+      [
+       3,
+       8
+      ]
+     ]
+    }
+   ],
+   "grid": [
+    [
+     {
+      "answer": "한",
+      "labels": [
+       "㉮",
+       "①"
+      ]
+     },
+     {
+      "answer": "국",
+      "labels": []
+     },
+     {
+      "answer": "은",
+      "labels": []
+     },
+     {
+      "answer": "행",
+      "labels": []
+     },
+     null,
+     {
+      "answer": "소",
+      "labels": [
+       "㉯"
+      ]
+     },
+     {
+      "answer": "비",
+      "labels": []
+     },
+     {
+      "answer": "자",
+      "labels": [
+       "②"
+      ]
+     }
+    ],
+    [
+     {
+      "answer": "강",
+      "labels": []
+     },
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     {
+      "answer": "유",
+      "labels": []
+     }
+    ],
+    [
+     null,
+     null,
+     null,
+     null,
+     {
+      "answer": "경",
+      "labels": [
+       "③"
+      ]
+     },
+     null,
+     null,
+     {
+      "answer": "무",
+      "labels": []
+     }
+    ],
+    [
+     {
+      "answer": "금",
+      "labels": [
+       "㉰"
+      ]
+     },
+     {
+      "answer": "융",
+      "labels": []
+     },
+     {
+      "answer": "실",
+      "labels": []
+     },
+     {
+      "answer": "명",
+      "labels": []
+     },
+     {
+      "answer": "제",
+      "labels": []
+     },
+     null,
+     null,
+     {
+      "answer": "역",
+      "labels": []
+     }
+    ],
+    [
+     null,
+     null,
+     null,
+     null,
+     {
+      "answer": "활",
+      "labels": []
+     },
+     null,
+     null,
+     {
+      "answer": "협",
+      "labels": []
+     }
+    ],
+    [
+     null,
+     null,
+     {
+      "answer": "편",
+      "labels": [
+       "④"
+      ]
+     },
+     null,
+     {
+      "answer": "동",
+      "labels": []
+     },
+     null,
+     null,
+     {
+      "answer": "정",
+      "labels": []
+     }
+    ],
+    [
+     null,
+     null,
+     {
+      "answer": "의",
+      "labels": []
+     },
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    [
+     {
+      "answer": "백",
+      "labels": [
+       "㉱"
+      ]
+     },
+     {
+      "answer": "화",
+      "labels": []
+     },
+     {
+      "answer": "점",
+      "labels": []
+     },
+     null,
+     null,
+     {
+      "answer": "신",
+      "labels": [
+       "㉲"
+      ]
+     },
+     {
+      "answer": "분",
+      "labels": []
+     },
+     {
+      "answer": "증",
+      "labels": []
+     }
+    ]
+   ]
   },
   {
    "type": "heading",

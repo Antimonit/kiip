@@ -12,7 +12,8 @@ its own in 정답보기 on p. 262, which is not photographed, so if one of mine 
 wrong the book is not to blame.
 """
 
-from . import SECTION, HEADING, PARAGRAPH, BULLET, FIGURE, TABLE
+from . import (SECTION, HEADING, PARAGRAPH, BULLET, FIGURE, TABLE,
+               CROSSWORD)
 
 PART = dict(
     number=3, slug="part-3", part=True,
@@ -42,15 +43,18 @@ PART = dict(
         BULLET("대한민국 구석구석 — korean.visitkorea.or.kr"),
 
         SECTION("quiz", "가로 세로 퀴즈"),
-        FIGURE("일곱 칸씩 가로세로로 짜인 낱말 퍼즐 판. 가로 열쇠 ㉮~㉱와 세로 열쇠 ①~④가 시작하는 "
-               "칸에 번호가 적혀 있다."),
+        CROSSWORD(7, 6,
+                  ("㉮", "across", 1, 1), ("㉯", "across", 4, 1),
+                  ("㉰", "across", 1, 5), ("㉱", "across", 4, 6),
+                  ("①", "down", 2, 1), ("②", "down", 4, 1),
+                  ("③", "down", 2, 5), ("④", "down", 6, 4)),
         HEADING(4, "가로 열쇠"),
         BULLET("㉮ 한옥의 중요한 특징으로 아궁이에 불을 때어 방을 따뜻하게 하는 난방 장치 ( 온돌 )"),
         BULLET("㉯ 추석은 ○○○ 또는 가배라고도 불림 ( 한가위 )"),
         BULLET("㉰ 석가모니가 만든 종교로 중국을 거쳐 4세기 무렵 삼국 시대에 들어옴 ( 불교 )"),
         BULLET("㉱ 사람이 죽었을 때, 예를 갖추어 돌아가신 분을 보내는 의례 ( 장례식 )"),
         HEADING(4, "세로 열쇠"),
-        BULLET("① 아이가 태어난 지 1년이 되는 첫 번째 생일 ( 돌 )"),
+        BULLET("① 아이가 태어난 지 1년이 되는 첫 번째 생일 ( 돌잔치 )"),
         BULLET("② 한국의 대중문화가 여러 나라로 확산되면서 대중적 인기를 끌게 된 현상 ( 한류 )"),
         BULLET("③ 개신교 예배는 ○○에서 드림 ( 교회 )"),
         BULLET("④ 남자와 여자가 부부가 되기로 서약하는 의례 ( 결혼식 )"),
