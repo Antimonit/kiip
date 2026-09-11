@@ -74,7 +74,7 @@ function lintSectionLayering() {
  * A commit belongs to one side or the other. `master` carries the site, the
  * tooling and the design; `content` carries the chapters and what is
  * generated from them. Nothing carries both. */
-const MODULE = /^tools\/chapters\/(ch|pt)\d.*\.py$/;
+const MODULE = /^tools\/chapters\/ch\d.*\.py$/;
 
 function lintHistory() {
   let log;

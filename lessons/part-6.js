@@ -91,8 +91,641 @@ KIIP.chapter({
    "text": "가로 세로 퀴즈"
   },
   {
-   "type": "figure",
-   "text": "가로세로 낱말 퍼즐 판. 가로 열쇠 ㉮~㉳와 세로 열쇠 ①~⑦이 시작하는 칸에 번호가 적혀 있다."
+   "type": "crossword",
+   "cols": 10,
+   "rows": 10,
+   "entries": [
+    {
+     "label": "㉮",
+     "dir": "across",
+     "x": 2,
+     "y": 1,
+     "answer": "재한외국인처우",
+     "cells": [
+      [
+       2,
+       1
+      ],
+      [
+       3,
+       1
+      ],
+      [
+       4,
+       1
+      ],
+      [
+       5,
+       1
+      ],
+      [
+       6,
+       1
+      ],
+      [
+       7,
+       1
+      ],
+      [
+       8,
+       1
+      ]
+     ]
+    },
+    {
+     "label": "㉯",
+     "dir": "across",
+     "x": 1,
+     "y": 4,
+     "answer": "간이",
+     "cells": [
+      [
+       1,
+       4
+      ],
+      [
+       2,
+       4
+      ]
+     ]
+    },
+    {
+     "label": "㉰",
+     "dir": "across",
+     "x": 7,
+     "y": 4,
+     "answer": "법치주의",
+     "cells": [
+      [
+       7,
+       4
+      ],
+      [
+       8,
+       4
+      ],
+      [
+       9,
+       4
+      ],
+      [
+       10,
+       4
+      ]
+     ]
+    },
+    {
+     "label": "㉱",
+     "dir": "across",
+     "x": 2,
+     "y": 5,
+     "answer": "혼인신고",
+     "cells": [
+      [
+       2,
+       5
+      ],
+      [
+       3,
+       5
+      ],
+      [
+       4,
+       5
+      ],
+      [
+       5,
+       5
+      ]
+     ]
+    },
+    {
+     "label": "㉲",
+     "dir": "across",
+     "x": 9,
+     "y": 7,
+     "answer": "임차",
+     "cells": [
+      [
+       9,
+       7
+      ],
+      [
+       10,
+       7
+      ]
+     ]
+    },
+    {
+     "label": "㉳",
+     "dir": "across",
+     "x": 1,
+     "y": 8,
+     "answer": "국가인권위원회",
+     "cells": [
+      [
+       1,
+       8
+      ],
+      [
+       2,
+       8
+      ],
+      [
+       3,
+       8
+      ],
+      [
+       4,
+       8
+      ],
+      [
+       5,
+       8
+      ],
+      [
+       6,
+       8
+      ],
+      [
+       7,
+       8
+      ]
+     ]
+    },
+    {
+     "label": "㉴",
+     "dir": "across",
+     "x": 8,
+     "y": 9,
+     "answer": "영수증",
+     "cells": [
+      [
+       8,
+       9
+      ],
+      [
+       9,
+       9
+      ],
+      [
+       10,
+       9
+      ]
+     ]
+    },
+    {
+     "label": "①",
+     "dir": "down",
+     "x": 2,
+     "y": 1,
+     "answer": "재판상이혼",
+     "cells": [
+      [
+       2,
+       1
+      ],
+      [
+       2,
+       2
+      ],
+      [
+       2,
+       3
+      ],
+      [
+       2,
+       4
+      ],
+      [
+       2,
+       5
+      ]
+     ]
+    },
+    {
+     "label": "②",
+     "dir": "down",
+     "x": 5,
+     "y": 1,
+     "answer": "국적",
+     "cells": [
+      [
+       5,
+       1
+      ],
+      [
+       5,
+       2
+      ]
+     ]
+    },
+    {
+     "label": "③",
+     "dir": "down",
+     "x": 7,
+     "y": 3,
+     "answer": "준법정신",
+     "cells": [
+      [
+       7,
+       3
+      ],
+      [
+       7,
+       4
+      ],
+      [
+       7,
+       5
+      ],
+      [
+       7,
+       6
+      ]
+     ]
+    },
+    {
+     "label": "④",
+     "dir": "down",
+     "x": 10,
+     "y": 1,
+     "answer": "세계인의날",
+     "cells": [
+      [
+       10,
+       1
+      ],
+      [
+       10,
+       2
+      ],
+      [
+       10,
+       3
+      ],
+      [
+       10,
+       4
+      ],
+      [
+       10,
+       5
+      ]
+     ]
+    },
+    {
+     "label": "⑤",
+     "dir": "down",
+     "x": 3,
+     "y": 7,
+     "answer": "속인주의",
+     "cells": [
+      [
+       3,
+       7
+      ],
+      [
+       3,
+       8
+      ],
+      [
+       3,
+       9
+      ],
+      [
+       3,
+       10
+      ]
+     ]
+    },
+    {
+     "label": "⑥",
+     "dir": "down",
+     "x": 5,
+     "y": 8,
+     "answer": "위자료",
+     "cells": [
+      [
+       5,
+       8
+      ],
+      [
+       5,
+       9
+      ],
+      [
+       5,
+       10
+      ]
+     ]
+    },
+    {
+     "label": "⑦",
+     "dir": "down",
+     "x": 10,
+     "y": 7,
+     "answer": "차용증",
+     "cells": [
+      [
+       10,
+       7
+      ],
+      [
+       10,
+       8
+      ],
+      [
+       10,
+       9
+      ]
+     ]
+    }
+   ],
+   "grid": [
+    [
+     null,
+     {
+      "answer": "재",
+      "labels": [
+       "㉮",
+       "①"
+      ]
+     },
+     {
+      "answer": "한",
+      "labels": []
+     },
+     {
+      "answer": "외",
+      "labels": []
+     },
+     {
+      "answer": "국",
+      "labels": [
+       "②"
+      ]
+     },
+     {
+      "answer": "인",
+      "labels": []
+     },
+     {
+      "answer": "처",
+      "labels": []
+     },
+     {
+      "answer": "우",
+      "labels": []
+     },
+     null,
+     {
+      "answer": "세",
+      "labels": [
+       "④"
+      ]
+     }
+    ],
+    [
+     null,
+     {
+      "answer": "판",
+      "labels": []
+     },
+     null,
+     null,
+     {
+      "answer": "적",
+      "labels": []
+     },
+     null,
+     null,
+     null,
+     null,
+     {
+      "answer": "계",
+      "labels": []
+     }
+    ],
+    [
+     null,
+     {
+      "answer": "상",
+      "labels": []
+     },
+     null,
+     null,
+     null,
+     null,
+     {
+      "answer": "준",
+      "labels": [
+       "③"
+      ]
+     },
+     null,
+     null,
+     {
+      "answer": "인",
+      "labels": []
+     }
+    ],
+    [
+     {
+      "answer": "간",
+      "labels": [
+       "㉯"
+      ]
+     },
+     {
+      "answer": "이",
+      "labels": []
+     },
+     null,
+     null,
+     null,
+     null,
+     {
+      "answer": "법",
+      "labels": [
+       "㉰"
+      ]
+     },
+     {
+      "answer": "치",
+      "labels": []
+     },
+     {
+      "answer": "주",
+      "labels": []
+     },
+     {
+      "answer": "의",
+      "labels": []
+     }
+    ],
+    [
+     null,
+     {
+      "answer": "혼",
+      "labels": [
+       "㉱"
+      ]
+     },
+     {
+      "answer": "인",
+      "labels": []
+     },
+     {
+      "answer": "신",
+      "labels": []
+     },
+     {
+      "answer": "고",
+      "labels": []
+     },
+     null,
+     {
+      "answer": "정",
+      "labels": []
+     },
+     null,
+     null,
+     {
+      "answer": "날",
+      "labels": []
+     }
+    ],
+    [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     {
+      "answer": "신",
+      "labels": []
+     },
+     null,
+     null,
+     null
+    ],
+    [
+     null,
+     null,
+     {
+      "answer": "속",
+      "labels": [
+       "⑤"
+      ]
+     },
+     null,
+     null,
+     null,
+     null,
+     null,
+     {
+      "answer": "임",
+      "labels": [
+       "㉲"
+      ]
+     },
+     {
+      "answer": "차",
+      "labels": [
+       "⑦"
+      ]
+     }
+    ],
+    [
+     {
+      "answer": "국",
+      "labels": [
+       "㉳"
+      ]
+     },
+     {
+      "answer": "가",
+      "labels": []
+     },
+     {
+      "answer": "인",
+      "labels": []
+     },
+     {
+      "answer": "권",
+      "labels": []
+     },
+     {
+      "answer": "위",
+      "labels": [
+       "⑥"
+      ]
+     },
+     {
+      "answer": "원",
+      "labels": []
+     },
+     {
+      "answer": "회",
+      "labels": []
+     },
+     null,
+     null,
+     {
+      "answer": "용",
+      "labels": []
+     }
+    ],
+    [
+     null,
+     null,
+     {
+      "answer": "주",
+      "labels": []
+     },
+     null,
+     {
+      "answer": "자",
+      "labels": []
+     },
+     null,
+     null,
+     {
+      "answer": "영",
+      "labels": [
+       "㉴"
+      ]
+     },
+     {
+      "answer": "수",
+      "labels": []
+     },
+     {
+      "answer": "증",
+      "labels": []
+     }
+    ],
+    [
+     null,
+     null,
+     {
+      "answer": "의",
+      "labels": []
+     },
+     null,
+     {
+      "answer": "료",
+      "labels": []
+     },
+     null,
+     null,
+     null,
+     null,
+     null
+    ]
+   ]
   },
   {
    "type": "heading",
@@ -122,7 +755,7 @@ KIIP.chapter({
    "spans": [
     "㉰ 법에 따라 나라를 다스리고 운영하는 것 ",
     {
-     "blank": "법치"
+     "blank": "법치주의"
     }
    ]
   },

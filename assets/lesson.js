@@ -82,6 +82,45 @@
     return node;
   }
 
+  /* Every crossword rendered on this page, so the clues can find theirs. */
+  var crosswords = [];
+
+  /* A word appears in the grid while its own clue is shown; a crossing cell
+     belongs to two words and clears only when neither is shown. */
+  function wireCrosswords() {
+    crosswords.forEach(function (cw) {
+      var shown = {};
+
+      function paint() {
+        Object.keys(cw.boxes).forEach(function (at) {
+          cw.boxes[at].querySelector(".cw-letter").textContent = "";
+          cw.boxes[at].classList.remove("is-shown");
+        });
+        cw.block.entries.forEach(function (entry) {
+          if (!shown[entry.label]) return;
+          entry.cells.forEach(function (cell, k) {
+            var box = cw.boxes[cell[0] + "," + cell[1]];
+            if (!box) return;
+            box.querySelector(".cw-letter").textContent = entry.answer[k];
+            box.classList.add("is-shown");
+          });
+        });
+      }
+
+      cw.block.entries.forEach(function (entry) {
+        var item = [...docEl.querySelectorAll(".ko-bullet")].find(function (li) {
+          return li.textContent.trim().indexOf(entry.label) === 0;
+        });
+        var blank = item && item.querySelector("button.blank");
+        if (!blank) return;
+        blank.addEventListener("click", function () {
+          shown[entry.label] = blank.classList.contains("is-shown");
+          paint();
+        });
+      });
+    });
+  }
+
   /* --- annotation card ------------------------------------------- */
 
   function buildCard(key) {
@@ -309,6 +348,31 @@
         return;
       }
 
+      /* The 가로 세로 퀴즈 grid. It is not typed into: the cells stand empty
+         with their numbers, and revealing a clue's answer writes that word
+         into its own cells. Each cell knows which words pass through it, so
+         a crossing letter stays as long as either word is shown. */
+      case "crossword": {
+        var board = el("div", "crossword");
+        board.style.setProperty("--cols", b.cols);
+        var boxes = {};                      // "x,y" -> the cell element
+        b.grid.forEach(function (row, y) {
+          row.forEach(function (cell, x) {
+            if (!cell) return board.appendChild(el("div", "cw-block"));
+            var box = el("div", "cw-cell");
+            if (cell.labels.length) {
+              box.appendChild(el("span", "cw-num", cell.labels.join("")));
+            }
+            box.appendChild(el("span", "cw-letter"));
+            boxes[(x + 1) + "," + (y + 1)] = box;
+            board.appendChild(box);
+          });
+        });
+        host.appendChild(board);
+        crosswords.push({ block: b, boxes: boxes });
+        return;
+      }
+
       case "verse": {
         var v = el("div", "verse");
         b.lines.forEach(function (l, k) {
@@ -521,6 +585,8 @@
       });
     }, FADE_MS);
   }
+
+  wireCrosswords();
 
   runs().forEach(function (group) {
     var b = el("button", "split-toggle", "Side by side");

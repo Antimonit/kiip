@@ -797,6 +797,70 @@ def refile(annotations, blocks):
     return {moved.get(k, k): v for k, v in annotations.items()}
 
 
+def fill_crossword(blocks, module):
+    """Put the clues' answers into the grid, and check that they fit.
+
+    The geometry comes from CROSSWORD in the chapter module; the words come
+    from the clues in the same section, each of which ends in its answer as a
+    gap — ( 온돌 ). A crossing cell is written by two words, so the two must
+    agree; where they do not, or a word runs off the grid, the build stops
+    rather than draw a wrong puzzle.
+    """
+    for i, b in enumerate(blocks):
+        if b["type"] != "crossword":
+            continue
+
+        # the clues that follow it, up to the end of the section
+        answers = {}
+        for nxt in blocks[i + 1:]:
+            if nxt["type"] == "section":
+                break
+            if nxt["type"] != "bullet":
+                continue
+            # the gaps have already been turned into blanks, so the answer
+            # is the blank's content rather than anything in the text
+            head = next((x for x in nxt["spans"] if isinstance(x, str)), "")
+            label = head.split(" ", 1)[0]
+            gap = next((x["blank"] for x in nxt["spans"]
+                        if isinstance(x, dict) and x.get("blank")), None)
+            if gap:
+                answers[label] = gap.strip().replace(" ", "")
+
+        cells = {}
+        for entry in b["entries"]:
+            word = answers.get(entry["label"])
+            if not word:
+                raise SystemExit("%s: the crossword names %s, which has no "
+                                 "clue with an answer" % (module, entry["label"]))
+            entry["answer"] = word
+            entry["cells"] = []
+            for k, letter in enumerate(word):
+                x = entry["x"] + (k if entry["dir"] == "across" else 0)
+                y = entry["y"] + (k if entry["dir"] == "down" else 0)
+                if not (1 <= x <= b["cols"] and 1 <= y <= b["rows"]):
+                    raise SystemExit(
+                        "%s: %s (%s) runs off the %dx%d grid at (%d, %d)"
+                        % (module, entry["label"], word, b["cols"], b["rows"],
+                           x, y))
+                if cells.get((x, y), letter) != letter:
+                    raise SystemExit(
+                        "%s: %s puts %s at (%d, %d) where another word has %s"
+                        % (module, entry["label"], letter, x, y,
+                           cells[(x, y)]))
+                cells[(x, y)] = letter
+                entry["cells"].append([x, y])
+
+        starts = {}
+        for entry in b["entries"]:
+            starts.setdefault((entry["x"], entry["y"]), []).append(entry["label"])
+        b["grid"] = [[None if (x, y) not in cells else
+                      {"answer": cells[(x, y)],
+                       "labels": starts.get((x, y), [])}
+                      for x in range(1, b["cols"] + 1)]
+                     for y in range(1, b["rows"] + 1)]
+    return blocks
+
+
 def build(cfg):
     """One chapter's payload, from the text its module carries.
 
@@ -863,6 +927,7 @@ def build(cfg):
     blocks = align_translations(blocks, unaligned, cfg.get("english"))
     blocks = pair_sentences(blocks, unpaired)
     blocks = mark_blanks(blocks, set(cfg.get("clearGaps", ())))
+    blocks = fill_crossword(blocks, cfg["module"])
 
     for a in annotations.values():
         a["headword"] = a["headword"].strip()

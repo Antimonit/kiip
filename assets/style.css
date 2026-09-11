@@ -429,6 +429,51 @@ a.entry:hover { background: var(--raised); }
   --title-gap: 1.4rem;
 }
 
+/* The 가로 세로 퀴즈 grid. It is not typed into: the cells stand empty with
+   their numbers until a clue's answer is revealed, and the word is then
+   written across its own run. */
+
+.crossword {
+  display: grid;
+  grid-template-columns: repeat(var(--cols), 1fr);
+  gap: 1px;
+  width: 100%;
+  max-width: 26rem;
+  margin: 0 auto var(--flow);
+  background: var(--rule);
+  border: 1px solid var(--rule);
+  font-family: var(--ko);
+}
+
+.cw-cell, .cw-block {
+  position: relative;
+  aspect-ratio: 1;
+  background: var(--raised);
+}
+
+.cw-block { background: var(--anno-gloss); }
+
+.cw-num {
+  position: absolute;
+  top: 1px;
+  left: 3px;
+  font-size: 0.58em;
+  line-height: 1.2;
+  color: var(--ink-faint);
+  font-family: var(--ui);
+}
+
+.cw-letter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  font-size: 0.95rem;
+  color: var(--accent-ink);
+}
+
+.cw-cell.is-shown { background: var(--accent-soft); }
+
 /* 일상생활과 민주주의 · 한국 대통령과 만난 정상들 — the part's own features,
    which read as articles of their own. */
 .sect-feature {

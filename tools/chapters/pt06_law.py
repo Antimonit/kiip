@@ -10,7 +10,8 @@ chapters 30-37. The book keeps its own in 정답보기 on p. 262, which is not
 photographed, so if one of mine is wrong the book is not to blame.
 """
 
-from . import SECTION, HEADING, PARAGRAPH, BULLET, FIGURE, TABLE
+from . import (SECTION, HEADING, PARAGRAPH, BULLET, FIGURE, TABLE,
+               CROSSWORD)
 
 PART = dict(
     number=6, slug="part-6", part=True,
@@ -37,13 +38,20 @@ PART = dict(
         BULLET("법무부(2019). 『한국인의 법과 생활: 일반인들이 알아야 할 생활법률 가이드북』. 법무부."),
 
         SECTION("quiz", "가로 세로 퀴즈"),
-        FIGURE("가로세로 낱말 퍼즐 판. 가로 열쇠 ㉮~㉳와 세로 열쇠 ①~⑦이 시작하는 칸에 번호가 "
-               "적혀 있다."),
+        CROSSWORD(10, 10,
+                  ("㉮", "across", 2, 1), ("㉯", "across", 1, 4),
+                  ("㉰", "across", 7, 4), ("㉱", "across", 2, 5),
+                  ("㉲", "across", 9, 7), ("㉳", "across", 1, 8),
+                  ("㉴", "across", 8, 9),
+                  ("①", "down", 2, 1), ("②", "down", 5, 1),
+                  ("③", "down", 7, 3), ("④", "down", 10, 1),
+                  ("⑤", "down", 3, 7), ("⑥", "down", 5, 8),
+                  ("⑦", "down", 10, 7)),
         HEADING(4, "가로 열쇠"),
         BULLET("㉮ 2007년 한국에서는 외국인들의 적응을 돕고 처우를 개선하고자 ○○○○○○○기본법을 "
                "만듦 ( 재한외국인처우 )"),
         BULLET("㉯ 귀화에는 일반귀화, ○○귀화, 특별귀화가 있다 ( 간이 )"),
-        BULLET("㉰ 법에 따라 나라를 다스리고 운영하는 것 ( 법치 )"),
+        BULLET("㉰ 법에 따라 나라를 다스리고 운영하는 것 ( 법치주의 )"),
         BULLET("㉱ 법적 부부로 인정받으려면 ○○○○를 해야 한다 ( 혼인 신고 )"),
         BULLET("㉲ 부동산을 빌려쓰는 것, 임대의 반대말 ( 임차 )"),
         BULLET("㉳ 한국에서 모든 사람들의 인권을 보호하기 위해 만든 국가기관 ( 국가인권위원회 )"),

@@ -203,6 +203,20 @@ def CELL(text, columns=None, down=None):
     return cell
 
 
+def CROSSWORD(cols, rows, *entries):
+    """The grid of a 가로 세로 퀴즈.
+
+    Only the geometry: each entry is (label, "across"|"down", x, y), with x
+    counting columns and y rows from 1 at the top left, over every cell
+    including the blocked ones. The words themselves come from the clues in
+    the same section — the build reads them out of the answers and checks
+    that every crossing agrees.
+    """
+    return {"type": "crossword", "cols": cols, "rows": rows,
+            "entries": [{"label": e[0], "dir": e[1], "x": e[2], "y": e[3]}
+                        for e in entries]}
+
+
 def CHART(caption, unit, rows):
     """A figure on the page whose values are read off it."""
     return {"type": "chart", "caption": caption, "unit": unit,
