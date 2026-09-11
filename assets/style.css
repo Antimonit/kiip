@@ -440,8 +440,8 @@ a.entry:hover { background: var(--raised); }
   width: 100%;
   max-width: 26rem;
   margin: 0 auto var(--flow);
-  background: var(--rule);
-  border: 1px solid var(--rule);
+  background: var(--ink-soft);
+  border: 1px solid var(--ink-soft);
   font-family: var(--ko);
 }
 
