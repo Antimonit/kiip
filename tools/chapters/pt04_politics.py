@@ -10,7 +10,8 @@ the chapters. The book keeps its own in 정답보기 on p. 262, which is not
 photographed, so if one of mine is wrong the book is not to blame.
 """
 
-from . import SECTION, HEADING, PARAGRAPH, BULLET, FIGURE, TABLE, VERSE
+from . import (SECTION, HEADING, PARAGRAPH, BULLET, FIGURE, TABLE, VERSE,
+               CROSSWORD)
 
 PART = dict(
     number=4, slug="part-4", part=True,
@@ -35,8 +36,12 @@ PART = dict(
         BULLET("중앙선거관리위원회 — www.nec.go.kr"),
 
         SECTION("quiz", "가로 세로 퀴즈"),
-        FIGURE("일곱 칸씩 가로세로로 짜인 낱말 퍼즐 판. 가로 열쇠 ㉮~㉲와 세로 열쇠 ①~④가 "
-            "시작하는 칸에 번호가 적혀 있다."),
+        CROSSWORD(6, 7,
+                  ("㉮", "across", 1, 2), ("㉯", "across", 5, 2),
+                  ("㉰", "across", 4, 3), ("㉱", "across", 2, 5),
+                  ("㉲", "across", 1, 7),
+                  ("①", "down", 1, 1), ("②", "down", 6, 1),
+                  ("③", "down", 2, 5), ("④", "down", 6, 5)),
         HEADING(4, "가로 열쇠"),
         BULLET("㉮ 주인으로서의 권리, 한국 국민은 국가의 주인으로서 이것을 가지고 있음 ( 주권 )"),
         BULLET("㉯ 국민의 기본권을 규정하고 있는 국가 최고의 법 ( 헌법 )"),

@@ -73,8 +73,341 @@ KIIP.chapter({
    "text": "가로 세로 퀴즈"
   },
   {
-   "type": "figure",
-   "text": "일곱 칸씩 가로세로로 짜인 낱말 퍼즐 판. 가로 열쇠 ㉮~㉲와 세로 열쇠 ①~④가 시작하는 칸에 번호가 적혀 있다."
+   "type": "crossword",
+   "cols": 6,
+   "rows": 7,
+   "entries": [
+    {
+     "label": "㉮",
+     "dir": "across",
+     "x": 1,
+     "y": 2,
+     "answer": "주권",
+     "cells": [
+      [
+       1,
+       2
+      ],
+      [
+       2,
+       2
+      ]
+     ]
+    },
+    {
+     "label": "㉯",
+     "dir": "across",
+     "x": 5,
+     "y": 2,
+     "answer": "헌법",
+     "cells": [
+      [
+       5,
+       2
+      ],
+      [
+       6,
+       2
+      ]
+     ]
+    },
+    {
+     "label": "㉰",
+     "dir": "across",
+     "x": 4,
+     "y": 3,
+     "answer": "행정부",
+     "cells": [
+      [
+       4,
+       3
+      ],
+      [
+       5,
+       3
+      ],
+      [
+       6,
+       3
+      ]
+     ]
+    },
+    {
+     "label": "㉱",
+     "dir": "across",
+     "x": 2,
+     "y": 5,
+     "answer": "청와대",
+     "cells": [
+      [
+       2,
+       5
+      ],
+      [
+       3,
+       5
+      ],
+      [
+       4,
+       5
+      ]
+     ]
+    },
+    {
+     "label": "㉲",
+     "dir": "across",
+     "x": 1,
+     "y": 7,
+     "answer": "국회의원",
+     "cells": [
+      [
+       1,
+       7
+      ],
+      [
+       2,
+       7
+      ],
+      [
+       3,
+       7
+      ],
+      [
+       4,
+       7
+      ]
+     ]
+    },
+    {
+     "label": "①",
+     "dir": "down",
+     "x": 1,
+     "y": 1,
+     "answer": "민주주의",
+     "cells": [
+      [
+       1,
+       1
+      ],
+      [
+       1,
+       2
+      ],
+      [
+       1,
+       3
+      ],
+      [
+       1,
+       4
+      ]
+     ]
+    },
+    {
+     "label": "②",
+     "dir": "down",
+     "x": 6,
+     "y": 1,
+     "answer": "사법부",
+     "cells": [
+      [
+       6,
+       1
+      ],
+      [
+       6,
+       2
+      ],
+      [
+       6,
+       3
+      ]
+     ]
+    },
+    {
+     "label": "③",
+     "dir": "down",
+     "x": 2,
+     "y": 5,
+     "answer": "청문회",
+     "cells": [
+      [
+       2,
+       5
+      ],
+      [
+       2,
+       6
+      ],
+      [
+       2,
+       7
+      ]
+     ]
+    },
+    {
+     "label": "④",
+     "dir": "down",
+     "x": 6,
+     "y": 5,
+     "answer": "삼심제",
+     "cells": [
+      [
+       6,
+       5
+      ],
+      [
+       6,
+       6
+      ],
+      [
+       6,
+       7
+      ]
+     ]
+    }
+   ],
+   "grid": [
+    [
+     {
+      "answer": "민",
+      "labels": [
+       "①"
+      ]
+     },
+     null,
+     null,
+     null,
+     null,
+     {
+      "answer": "사",
+      "labels": [
+       "②"
+      ]
+     }
+    ],
+    [
+     {
+      "answer": "주",
+      "labels": [
+       "㉮"
+      ]
+     },
+     {
+      "answer": "권",
+      "labels": []
+     },
+     null,
+     null,
+     {
+      "answer": "헌",
+      "labels": [
+       "㉯"
+      ]
+     },
+     {
+      "answer": "법",
+      "labels": []
+     }
+    ],
+    [
+     {
+      "answer": "주",
+      "labels": []
+     },
+     null,
+     null,
+     {
+      "answer": "행",
+      "labels": [
+       "㉰"
+      ]
+     },
+     {
+      "answer": "정",
+      "labels": []
+     },
+     {
+      "answer": "부",
+      "labels": []
+     }
+    ],
+    [
+     {
+      "answer": "의",
+      "labels": []
+     },
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    [
+     null,
+     {
+      "answer": "청",
+      "labels": [
+       "㉱",
+       "③"
+      ]
+     },
+     {
+      "answer": "와",
+      "labels": []
+     },
+     {
+      "answer": "대",
+      "labels": []
+     },
+     null,
+     {
+      "answer": "삼",
+      "labels": [
+       "④"
+      ]
+     }
+    ],
+    [
+     null,
+     {
+      "answer": "문",
+      "labels": []
+     },
+     null,
+     null,
+     null,
+     {
+      "answer": "심",
+      "labels": []
+     }
+    ],
+    [
+     {
+      "answer": "국",
+      "labels": [
+       "㉲"
+      ]
+     },
+     {
+      "answer": "회",
+      "labels": []
+     },
+     {
+      "answer": "의",
+      "labels": []
+     },
+     {
+      "answer": "원",
+      "labels": []
+     },
+     null,
+     {
+      "answer": "제",
+      "labels": []
+     }
+    ]
+   ]
   },
   {
    "type": "heading",
