@@ -74,7 +74,7 @@ CHAPTER = dict(
           "과정에서 {부당한|부당하다} {압력}을 받아서는 안 된다. 이를 위해 국회의원에게는 "
           "{특권}이 주어지기도 한다. 예를 들어 국회의원은 국회가 열리고 있는 {회기} 중에는 "
           "국회의 {동의} 없이 {체포}되지 않는다. 이를 {불체포 특권}이라고 한다."),
-        PARAGRAPH("국회의원이 이러한 특권을 {누리는|누리다} 만큼 따라야 할 의무도 있다. 국회의원은 "
+        PARAGRAPH("국회의원이 이러한 특권을 {누리는|누리다} 만큼 따라야 할 {의무}도 있다. 국회의원은 "
           "{고위 공직자}로서 {청렴}해야 하고 개인보다 나라의 이익을 먼저 생각해야 한다. 또한, "
           "자신의 높은 지위를 이용해서 {부정한|부정하다} 방법으로 재산을 모으지 않도록 재산을 "
           "{공개}해야 한다."),
@@ -444,6 +444,13 @@ CHAPTER = dict(
             hanja="壓力", meaning="pressure",
             characters=[("壓", "압", "to press — as in 억압당하다"),
                         ("力", "력", "force — as in 권력, 능력")],
+        ),
+        "의무": dict(
+            hanja="義務", meaning="a duty, an obligation",
+            characters=[("義", "의", "righteousness, what is right — as in 정의"),
+                        ("務", "무", "task, duty — as in 업무, 공무원")],
+            notes=["Set against 권리, a right: 권리와 의무 is the pair the book "
+                   "keeps returning to."],
         ),
         "특권": dict(
             hanja="特權", meaning="a privilege",

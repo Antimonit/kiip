@@ -16,12 +16,7 @@ KIIP.chapter({
   {
    "type": "paragraph",
    "spans": [
-    "다음은 일상생활에서 경제 활동과 관련된 ",
-    {
-     "word": "선택",
-     "annotation": "선택"
-    },
-    " 상황입니다."
+    "다음은 일상생활에서 경제 활동과 관련된 선택 상황입니다."
    ]
   },
   {
@@ -1200,12 +1195,7 @@ KIIP.chapter({
      "word": "합리적",
      "annotation": "합리적"
     },
-    "으로 ",
-    {
-     "word": "선택",
-     "annotation": "선택"
-    },
-    "하는 능력을 ",
+    "으로 선택하는 능력을 ",
     {
      "word": "길러야",
      "annotation": "기르다"
@@ -1271,12 +1261,7 @@ KIIP.chapter({
        "word": "합리적",
        "annotation": "합리적"
       },
-      "으로 ",
-      {
-       "word": "선택",
-       "annotation": "선택"
-      },
-      "하는 능력을 ",
+      "으로 선택하는 능력을 ",
       {
        "word": "길러야",
        "annotation": "기르다"
@@ -1776,25 +1761,6 @@ KIIP.chapter({
      "char": "動",
      "reading": "동",
      "gloss": "to move — as in 운동, 역동성"
-    }
-   ],
-   "notes": [],
-   "surfaces": []
-  },
-  "선택": {
-   "headword": "선택",
-   "hanja": "選擇",
-   "meaning": "a choice",
-   "characters": [
-    {
-     "char": "選",
-     "reading": "선",
-     "gloss": "to choose — as in 선거, 선출"
-    },
-    {
-     "char": "擇",
-     "reading": "택",
-     "gloss": "to pick — as in 채택"
     }
    ],
    "notes": [],

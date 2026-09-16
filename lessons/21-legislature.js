@@ -675,7 +675,12 @@ KIIP.chapter({
      "word": "누리는",
      "annotation": "누리다"
     },
-    " 만큼 따라야 할 의무도 있다. 국회의원은 ",
+    " 만큼 따라야 할 ",
+    {
+     "word": "의무",
+     "annotation": "의무"
+    },
+    "도 있다. 국회의원은 ",
     {
      "word": "고위 공직자",
      "annotation": "고위 공직자"
@@ -706,7 +711,12 @@ KIIP.chapter({
        "word": "누리는",
        "annotation": "누리다"
       },
-      " 만큼 따라야 할 의무도 있다. "
+      " 만큼 따라야 할 ",
+      {
+       "word": "의무",
+       "annotation": "의무"
+      },
+      "도 있다. "
      ],
      "translation": "For as much as a member enjoys such privileges, there are duties to follow as well."
     },
@@ -2350,6 +2360,27 @@ KIIP.chapter({
     }
    ],
    "notes": [],
+   "surfaces": []
+  },
+  "의무": {
+   "headword": "의무",
+   "hanja": "義務",
+   "meaning": "a duty, an obligation",
+   "characters": [
+    {
+     "char": "義",
+     "reading": "의",
+     "gloss": "righteousness, what is right — as in 정의"
+    },
+    {
+     "char": "務",
+     "reading": "무",
+     "gloss": "task, duty — as in 업무, 공무원"
+    }
+   ],
+   "notes": [
+    "Set against 권리, a right: 권리와 의무 is the pair the book keeps returning to."
+   ],
    "surfaces": []
   },
   "특권": {

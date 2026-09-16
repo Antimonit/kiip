@@ -14,7 +14,7 @@ CHAPTER = dict(
 
     append=[
         SECTION("warmup", "생각해 봅시다"),
-        PARAGRAPH("다음은 일상생활에서 경제 활동과 관련된 {선택} 상황입니다."),
+        PARAGRAPH("다음은 일상생활에서 경제 활동과 관련된 선택 상황입니다."),
         LABELS("버스 — 비용: 1,200원, 소요시간: 30분",
                "택시 — 비용: 5,000원, 소요시간: 10분"),
         FIGURE("책상에 앉아 버스와 택시를 나란히 떠올리는 사람"),
@@ -272,11 +272,6 @@ CHAPTER = dict(
                         ("濟", "제", "to relieve, to cross — as in 구제"),
                         ("活", "활", "living — as in 생활, 활동"),
                         ("動", "동", "to move — as in 운동, 역동성")],
-        ),
-        "선택": dict(
-            hanja="選擇", meaning="a choice",
-            characters=[("選", "선", "to choose — as in 선거, 선출"),
-                        ("擇", "택", "to pick — as in 채택")],
         ),
         "경제적": dict(hanja="經濟的", meaning="economic, financial"),
         "의식주": dict(
