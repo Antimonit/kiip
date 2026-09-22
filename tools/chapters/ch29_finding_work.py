@@ -66,7 +66,7 @@ CHAPTER = dict(
                   "프로그램을 제공하거나 실업자와 근로자의 기본적인 생활을 보장하기 위한 "
                   "{사회보장제도}를 확대하는 것 등이 그 예이다."),
         PARAGRAPH("한국 정부는 대상에 따른 {맞춤형} 일자리 정책을 제공하고 있다. 예를 들어 "
-                  "직장을 구하는 {청년}에게는 {구직} 활동 {지원금}을 제공하거나 {개인별}로 취업 "
+                  "직장을 구하는 {청년}에게는 {구직} 활동 {지원금}을 제공하거나 개인별로 취업 "
                   "계획을 세우고 {단계적}으로 이를 {실천}하도록 지원하는 {취업성공패키지} 제도가 "
                   "실시되고 있다."),
         PARAGRAPH("또한 일과 육아를 함께 할 수 있는 환경을 만들기 위해 여성과 남성 모두에게 "
@@ -172,10 +172,10 @@ CHAPTER = dict(
               "근로자로 다시 한국에 들어왔습니다. {어느덧} 9년이라는 시간 동안 같은 직장에서 "
               "일했습니다.",
               "하지만 빈에게도 처음에는 한국 생활이 쉽지 않았습니다. 특히, 빈은 한국어에 어려움을 "
-              "많이 느꼈는데 직장 {동료}들은 빈을 도와주기 위해 저희 외국인 인력 지원센터를 "
+              "많이 느꼈는데 직장 {동료}들은 빈을 도와주기 위해 저희 외국인 {인력} 지원센터를 "
               "찾아왔습니다.",
               "빈은 저와 함께 매주 일요일마다 외국인 인력 지원센터에서 진행되는 한국어 공부와 "
-              "베트남 {커뮤니티} 활동에 참여하였고 한국 생활에도 점점 잘 적응했습니다.",
+              "베트남 커뮤니티 활동에 참여하였고 한국 생활에도 점점 잘 적응했습니다.",
               "빈은 자신이 그랬던 것처럼, 자신이 했던 고민을 하고 있는 외국인 친구들을 위해 "
               "이제는 먼저 {다가가|다가가다} 돕고 있습니다. 베트남에서 온 빈은 그렇게 외국인 "
               "인력 지원센터에서 고마움을 나누고 있습니다.”",
@@ -323,7 +323,11 @@ CHAPTER = dict(
         "실업률": dict(
             hanja="失業率", meaning="the unemployment rate",
             characters=[("失", "실", "to lose — as in 실패, 실수"),
+                        ("業", "업", "work, an occupation — as in 직업 “job”, "
+                                     "취업, 기업, 사업, 자영업"),
                         ("率", "률", "rate — as in 비율, 점유율")],
+            notes=["失業 is losing one's work, so 실업률 is the share of those "
+                   "who want work and cannot find it."],
         ),
         "자영업": dict(
             hanja="自營業", meaning="self-employment",
@@ -363,8 +367,22 @@ CHAPTER = dict(
             notes=["Its opposite is 유리하다, which the next article uses."],
         ),
         "둘러싸다": dict(meaning="to surround, to be bound up with"),
-        "실업자": dict(hanja="失業者", meaning="an unemployed person"),
-        "취직": dict(hanja="就職", meaning="getting a job"),
+        "실업자": dict(
+            hanja="失業者", meaning="an unemployed person",
+            characters=[("失", "실", "to lose — as in 실패 “failure”, 실수, 분실"),
+                        ("業", "업", "work, an occupation — as in 직업, 취업, 기업"),
+                        ("者", "자", "person — as in 근로자, 소비자")],
+            notes=["Literally one who has lost their work. 실업 is "
+                   "unemployment; 취업 is its opposite."],
+        ),
+        "취직": dict(
+            hanja="就職", meaning="getting a job, taking up a post",
+            characters=[("就", "취", "to take up, to proceed to — as in 취업, "
+                                     "취학, 취득"),
+                        ("職", "직", "a post, a duty — as in 직장, 직업, 직급")],
+            notes=["취직 is taking up a particular post; 취업 (就業) is the "
+                   "wider word for getting work, and the chapter's title."],
+        ),
         "사회보장제도": dict(
             hanja="社會保障制度", meaning="the social security system",
             notes=["Chapter 7's subject: 사회 보험, 공공 부조, 사회 서비스."],
@@ -380,11 +398,13 @@ CHAPTER = dict(
         ),
         "구직": dict(
             hanja="求職", meaning="job-seeking",
-            notes=["구직 is looking for a job, 구인 looking for a worker — the "
-                   "two sides of 워크넷."],
+            characters=[("求", "구", "to seek, to ask for — as in 요구, 구인, "
+                                     "추구"),
+                        ("職", "직", "a post — the same 職 as in 취직, 직장")],
+            notes=["Seeking a post. 구직 is looking for a job, 구인 looking "
+                   "for a worker — the two sides of 워크넷."],
         ),
         "지원금": dict(hanja="支援金", meaning="an allowance, a grant"),
-        "개인별": dict(hanja="個人別", meaning="individual, person by person"),
         "단계적": dict(hanja="段階的", meaning="step by step"),
         "실천": dict(
             hanja="實踐", meaning="putting into practice",
@@ -441,7 +461,21 @@ CHAPTER = dict(
             meaning="the Korea Employment Information Service",
         ),
         "운영": dict(hanja="運營", meaning="operation, running"),
-        "구인": dict(hanja="求人", meaning="seeking a worker, recruitment"),
+        "인력": dict(
+            hanja="人力", meaning="manpower, a workforce",
+            characters=[("人", "인", "person — as in 구인, 개인, 인구"),
+                        ("力", "력", "strength, power — as in 노력, 능력, 체력")],
+            notes=["외국인 인력 지원센터 is the foreign workforce support "
+                   "centre; 한국산업인력공단 trains the workforce industry "
+                   "needs."],
+        ),
+        "구인": dict(
+            hanja="求人", meaning="seeking a worker, recruitment",
+            characters=[("求", "구", "to seek — the same 求 as in 구직, 요구"),
+                        ("人", "인", "person — as in 인력, 개인")],
+            notes=["The employer's side of 구직: seeking a person rather than "
+                   "a post."],
+        ),
         "진로정보": dict(
             hanja="進路情報", meaning="career information",
             characters=[("進", "진", "to advance — as in 진행, 추진"),
@@ -487,7 +521,15 @@ CHAPTER = dict(
                         ("集", "집", "to gather — as in 집중, 수집"),
                         ("告", "고", "to notify — as in 광고, 신고")],
         ),
-        "구인 광고": dict(hanja="求人廣告", meaning="a job advertisement"),
+        "구인 광고": dict(
+            hanja="求人廣告", meaning="a job advertisement",
+            characters=[("求", "구", "to seek — as in 구직, 요구"),
+                        ("人", "인", "person — as in 인력, 구인"),
+                        ("廣告", None, "an advertisement — 廣 wide, 告 to "
+                                       "notify")],
+            notes=["구인 is an employer seeking a person; the advertisement "
+                   "that says so. 구직 광고 would be the other way round."],
+        ),
         "유리": dict(
             hanja="有利", meaning="being advantageous",
             characters=[("有", "유", "to have — as in 소유, 유용"),
@@ -595,7 +637,6 @@ CHAPTER = dict(
             characters=[("同", "동", "same — as in 동일, 공동"),
                         ("僚", "료", "an official, a companion")],
         ),
-        "커뮤니티": dict(meaning="a community"),
         "다가가다": dict(meaning="to go up to someone, to approach"),
     },
 

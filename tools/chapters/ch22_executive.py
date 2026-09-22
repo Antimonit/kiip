@@ -116,7 +116,7 @@ CHAPTER = dict(
           "위해 노력한다. 그래서 각 부의 장관을 {비롯한|비롯하다} 정부 공무원들은 국민의 삶에 "
           "도움을 주는 정책을 만들고 집행한다."),
         PARAGRAPH("예를 들어, {법무부}에서는 {법질서}와 {이민} 정책 등에 관한 일을, {고용노동부}에서는 "
-          "취업과 노동 등에 관한 일을, {여성가족부}는 여성과 청소년 및 가족 관련 일을, {교육부}는 "
+          "취업과 {노동} 등에 관한 일을, {여성가족부}는 여성과 청소년 및 가족 관련 일을, {교육부}는 "
           "초·중·고, 대학 및 평생 교육 등에 관한 일을 {담당}한다."),
         PARAGRAPH("또한, 법무부에 {속하는|속하다} {출입국·외국인정책본부}에서는 한국에 {체류}하는 외국인 "
           "{등록}과 사회 {정착}을 도와주는 일을, {보건복지부}에 속하는 {질병관리청}에서는 각종 "
@@ -592,6 +592,13 @@ CHAPTER = dict(
             hanja="移民", meaning="migration, immigration",
             characters=[("移", "이", "to move — as in 이사, 이주"),
                         ("民", "민", "people — as in 국민, 주민")],
+        ),
+        "노동": dict(
+            hanja="勞動", meaning="labour, work",
+            characters=[("勞", "로", "to toil — as in 노력, 근로자"),
+                        ("動", "동", "to move — as in 활동, 이동")],
+            notes=["노동자 is a worker, 노동조건 working conditions, 가사노동 the "
+                   "work of the household — chapter 33."],
         ),
         "고용노동부": dict(
             hanja="雇傭勞動部", meaning="the Ministry of Employment and Labour",

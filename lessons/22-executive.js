@@ -1261,7 +1261,12 @@ KIIP.chapter({
      "word": "고용노동부",
      "annotation": "고용노동부"
     },
-    "에서는 취업과 노동 등에 관한 일을, ",
+    "에서는 취업과 ",
+    {
+     "word": "노동",
+     "annotation": "노동"
+    },
+    " 등에 관한 일을, ",
     {
      "word": "여성가족부",
      "annotation": "여성가족부"
@@ -1302,7 +1307,12 @@ KIIP.chapter({
        "word": "고용노동부",
        "annotation": "고용노동부"
       },
-      "에서는 취업과 노동 등에 관한 일을, ",
+      "에서는 취업과 ",
+      {
+       "word": "노동",
+       "annotation": "노동"
+      },
+      " 등에 관한 일을, ",
       {
        "word": "여성가족부",
        "annotation": "여성가족부"
@@ -3044,6 +3054,27 @@ KIIP.chapter({
     }
    ],
    "notes": [],
+   "surfaces": []
+  },
+  "노동": {
+   "headword": "노동",
+   "hanja": "勞動",
+   "meaning": "labour, work",
+   "characters": [
+    {
+     "char": "勞",
+     "reading": "로",
+     "gloss": "to toil — as in 노력, 근로자"
+    },
+    {
+     "char": "動",
+     "reading": "동",
+     "gloss": "to move — as in 활동, 이동"
+    }
+   ],
+   "notes": [
+    "노동자 is a worker, 노동조건 working conditions, 가사노동 the work of the household — chapter 33."
+   ],
    "surfaces": []
   },
   "고용노동부": {

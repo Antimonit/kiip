@@ -527,12 +527,7 @@ KIIP.chapter({
      "word": "지원금",
      "annotation": "지원금"
     },
-    "을 제공하거나 ",
-    {
-     "word": "개인별",
-     "annotation": "개인별"
-    },
-    "로 ",
+    "을 제공하거나 개인별로 ",
     {
      "word": "취업",
      "annotation": "취업"
@@ -584,12 +579,7 @@ KIIP.chapter({
        "word": "지원금",
        "annotation": "지원금"
       },
-      "을 제공하거나 ",
-      {
-       "word": "개인별",
-       "annotation": "개인별"
-      },
-      "로 ",
+      "을 제공하거나 개인별로 ",
       {
        "word": "취업",
        "annotation": "취업"
@@ -1486,15 +1476,15 @@ KIIP.chapter({
       "word": "동료",
       "annotation": "동료"
      },
-     "들은 빈을 도와주기 위해 저희 외국인 인력 지원센터를 찾아왔습니다."
+     "들은 빈을 도와주기 위해 저희 외국인 ",
+     {
+      "word": "인력",
+      "annotation": "인력"
+     },
+     " 지원센터를 찾아왔습니다."
     ],
     [
-     "빈은 저와 함께 매주 일요일마다 외국인 인력 지원센터에서 진행되는 한국어 공부와 베트남 ",
-     {
-      "word": "커뮤니티",
-      "annotation": "커뮤니티"
-     },
-     " 활동에 참여하였고 한국 생활에도 점점 잘 적응했습니다."
+     "빈은 저와 함께 매주 일요일마다 외국인 인력 지원센터에서 진행되는 한국어 공부와 베트남 커뮤니티 활동에 참여하였고 한국 생활에도 점점 잘 적응했습니다."
     ],
     [
      "빈은 자신이 그랬던 것처럼, 자신이 했던 고민을 하고 있는 외국인 친구들을 위해 이제는 먼저 ",
@@ -1554,7 +1544,12 @@ KIIP.chapter({
         "word": "동료",
         "annotation": "동료"
        },
-       "들은 빈을 도와주기 위해 저희 외국인 인력 지원센터를 찾아왔습니다."
+       "들은 빈을 도와주기 위해 저희 외국인 ",
+       {
+        "word": "인력",
+        "annotation": "인력"
+       },
+       " 지원센터를 찾아왔습니다."
       ],
       "translation": "He found Korean particularly hard, and his workmates came to our foreign workforce support centre to help him."
      }
@@ -1562,12 +1557,7 @@ KIIP.chapter({
     [
      {
       "spans": [
-       "빈은 저와 함께 매주 일요일마다 외국인 인력 지원센터에서 진행되는 한국어 공부와 베트남 ",
-       {
-        "word": "커뮤니티",
-        "annotation": "커뮤니티"
-       },
-       " 활동에 참여하였고 한국 생활에도 점점 잘 적응했습니다."
+       "빈은 저와 함께 매주 일요일마다 외국인 인력 지원센터에서 진행되는 한국어 공부와 베트남 커뮤니티 활동에 참여하였고 한국 생활에도 점점 잘 적응했습니다."
       ],
       "translation": "Every Sunday Bình joined me for the Korean study and the Vietnamese community activities held at the centre, and he settled into life in Korea better and better."
      }
@@ -1747,12 +1737,19 @@ KIIP.chapter({
      "gloss": "to lose — as in 실패, 실수"
     },
     {
+     "char": "業",
+     "reading": "업",
+     "gloss": "work, an occupation — as in 직업 “job”, 취업, 기업, 사업, 자영업"
+    },
+    {
      "char": "率",
      "reading": "률",
      "gloss": "rate — as in 비율, 점유율"
     }
    ],
-   "notes": [],
+   "notes": [
+    "失業 is losing one's work, so 실업률 is the share of those who want work and cannot find it."
+   ],
    "surfaces": []
   },
   "자영업": {
@@ -1884,16 +1881,47 @@ KIIP.chapter({
    "headword": "실업자",
    "hanja": "失業者",
    "meaning": "an unemployed person",
-   "characters": [],
-   "notes": [],
+   "characters": [
+    {
+     "char": "失",
+     "reading": "실",
+     "gloss": "to lose — as in 실패 “failure”, 실수, 분실"
+    },
+    {
+     "char": "業",
+     "reading": "업",
+     "gloss": "work, an occupation — as in 직업, 취업, 기업"
+    },
+    {
+     "char": "者",
+     "reading": "자",
+     "gloss": "person — as in 근로자, 소비자"
+    }
+   ],
+   "notes": [
+    "Literally one who has lost their work. 실업 is unemployment; 취업 is its opposite."
+   ],
    "surfaces": []
   },
   "취직": {
    "headword": "취직",
    "hanja": "就職",
-   "meaning": "getting a job",
-   "characters": [],
-   "notes": [],
+   "meaning": "getting a job, taking up a post",
+   "characters": [
+    {
+     "char": "就",
+     "reading": "취",
+     "gloss": "to take up, to proceed to — as in 취업, 취학, 취득"
+    },
+    {
+     "char": "職",
+     "reading": "직",
+     "gloss": "a post, a duty — as in 직장, 직업, 직급"
+    }
+   ],
+   "notes": [
+    "취직 is taking up a particular post; 취업 (就業) is the wider word for getting work, and the chapter's title."
+   ],
    "surfaces": []
   },
   "사회보장제도": {
@@ -1934,9 +1962,20 @@ KIIP.chapter({
    "headword": "구직",
    "hanja": "求職",
    "meaning": "job-seeking",
-   "characters": [],
+   "characters": [
+    {
+     "char": "求",
+     "reading": "구",
+     "gloss": "to seek, to ask for — as in 요구, 구인, 추구"
+    },
+    {
+     "char": "職",
+     "reading": "직",
+     "gloss": "a post — the same 職 as in 취직, 직장"
+    }
+   ],
    "notes": [
-    "구직 is looking for a job, 구인 looking for a worker — the two sides of 워크넷."
+    "Seeking a post. 구직 is looking for a job, 구인 looking for a worker — the two sides of 워크넷."
    ],
    "surfaces": []
   },
@@ -1944,14 +1983,6 @@ KIIP.chapter({
    "headword": "지원금",
    "hanja": "支援金",
    "meaning": "an allowance, a grant",
-   "characters": [],
-   "notes": [],
-   "surfaces": []
-  },
-  "개인별": {
-   "headword": "개인별",
-   "hanja": "個人別",
-   "meaning": "individual, person by person",
    "characters": [],
    "notes": [],
    "surfaces": []
@@ -2156,12 +2187,46 @@ KIIP.chapter({
    "notes": [],
    "surfaces": []
   },
+  "인력": {
+   "headword": "인력",
+   "hanja": "人力",
+   "meaning": "manpower, a workforce",
+   "characters": [
+    {
+     "char": "人",
+     "reading": "인",
+     "gloss": "person — as in 구인, 개인, 인구"
+    },
+    {
+     "char": "力",
+     "reading": "력",
+     "gloss": "strength, power — as in 노력, 능력, 체력"
+    }
+   ],
+   "notes": [
+    "외국인 인력 지원센터 is the foreign workforce support centre; 한국산업인력공단 trains the workforce industry needs."
+   ],
+   "surfaces": []
+  },
   "구인": {
    "headword": "구인",
    "hanja": "求人",
    "meaning": "seeking a worker, recruitment",
-   "characters": [],
-   "notes": [],
+   "characters": [
+    {
+     "char": "求",
+     "reading": "구",
+     "gloss": "to seek — the same 求 as in 구직, 요구"
+    },
+    {
+     "char": "人",
+     "reading": "인",
+     "gloss": "person — as in 인력, 개인"
+    }
+   ],
+   "notes": [
+    "The employer's side of 구직: seeking a person rather than a post."
+   ],
    "surfaces": []
   },
   "진로정보": {
@@ -2337,8 +2402,25 @@ KIIP.chapter({
    "headword": "구인 광고",
    "hanja": "求人廣告",
    "meaning": "a job advertisement",
-   "characters": [],
-   "notes": [],
+   "characters": [
+    {
+     "char": "求",
+     "reading": "구",
+     "gloss": "to seek — as in 구직, 요구"
+    },
+    {
+     "char": "人",
+     "reading": "인",
+     "gloss": "person — as in 인력, 구인"
+    },
+    {
+     "char": "廣告",
+     "gloss": "an advertisement — 廣 wide, 告 to notify"
+    }
+   ],
+   "notes": [
+    "구인 is an employer seeking a person; the advertisement that says so. 구직 광고 would be the other way round."
+   ],
    "surfaces": []
   },
   "유리": {
@@ -2705,14 +2787,6 @@ KIIP.chapter({
      "gloss": "an official, a companion"
     }
    ],
-   "notes": [],
-   "surfaces": []
-  },
-  "커뮤니티": {
-   "headword": "커뮤니티",
-   "hanja": null,
-   "meaning": "a community",
-   "characters": [],
    "notes": [],
    "surfaces": []
   },
