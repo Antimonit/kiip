@@ -970,7 +970,11 @@ button.anno[aria-expanded="true"] {
   box-shadow: inset 0 -2px 0 var(--accent);
 }
 
+/* The background is repeated here, not inherited from the rule above: this
+   selector has to outweigh .is-glossed:hover, or an open word would fall
+   back to violet whenever the pointer rested on it. */
 button.anno.is-glossed[aria-expanded="true"] {
+  background: var(--anno-open);
   box-shadow: inset 0 -2px 0 var(--anno-gloss-ink);
 }
 
