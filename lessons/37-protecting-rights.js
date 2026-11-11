@@ -289,7 +289,12 @@ KIIP.chapter({
      "word": "판결",
      "annotation": "판결"
     },
-    "을 요구하는 것을 가리킨다. 개인 간의 재산 문제나 가족 문제로 분쟁이 발생한 경우 ",
+    "을 요구하는 것을 ",
+    {
+     "word": "가리킨다",
+     "annotation": "가리키다"
+    },
+    ". 개인 간의 재산 문제나 가족 문제로 분쟁이 발생한 경우 ",
     {
      "word": "당사자",
      "annotation": "당사자"
@@ -324,7 +329,12 @@ KIIP.chapter({
      "word": "주장",
      "annotation": "주장"
     },
-    "을 듣고 법에 따라 판결을 ",
+    "을 듣고 법에 따라 ",
+    {
+     "word": "판결",
+     "annotation": "판결"
+    },
+    "을 ",
     {
      "word": "내려",
      "annotation": "내리다"
@@ -356,7 +366,12 @@ KIIP.chapter({
        "word": "판결",
        "annotation": "판결"
       },
-      "을 요구하는 것을 가리킨다. "
+      "을 요구하는 것을 ",
+      {
+       "word": "가리킨다",
+       "annotation": "가리키다"
+      },
+      ". "
      ],
      "translation": "A lawsuit means asking a court for a ruling."
     },
@@ -409,7 +424,12 @@ KIIP.chapter({
        "word": "주장",
        "annotation": "주장"
       },
-      "을 듣고 법에 따라 판결을 ",
+      "을 듣고 법에 따라 ",
+      {
+       "word": "판결",
+       "annotation": "판결"
+      },
+      "을 ",
       {
        "word": "내려",
        "annotation": "내리다"
@@ -1830,6 +1850,16 @@ KIIP.chapter({
    "notes": [],
    "surfaces": []
   },
+  "가리키다": {
+   "headword": "가리키다",
+   "hanja": null,
+   "meaning": "to point to, to refer to",
+   "characters": [],
+   "notes": [],
+   "surfaces": [
+    "가리킨다"
+   ]
+  },
   "판결": {
    "headword": "판결",
    "hanja": "判決",
@@ -2042,6 +2072,14 @@ KIIP.chapter({
    "hanja": "大韓法律救助公團",
    "meaning": "the Korea Legal Aid Corporation",
    "characters": [
+    {
+     "char": "大韓",
+     "gloss": "Korea — 大 great, 韓 Korea, as in 대한민국"
+    },
+    {
+     "char": "法律",
+     "gloss": "law — 法 law, 律 a rule"
+    },
     {
      "char": "救助",
      "gloss": "rescue, aid — 救 to save, 助 to help"

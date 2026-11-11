@@ -68,11 +68,11 @@ CHAPTER = dict(
         PARAGRAPH("외국인이 한국에서 살면서 다른 사람과 {분쟁}을 겪을 수도 있다. 그것이 "
                   "{원만하게|원만하다} 잘 해결되면 좋지만 그렇지 않을 경우에는 법의 도움을 받을 수 있다."),
         PARAGRAPH("법을 통해 분쟁을 해결하고 권리를 보호하는 대표적인 방법은 {소송}이다. 소송은 {법원}에 "
-                  "{판결}을 요구하는 것을 가리킨다. 개인 간의 재산 문제나 가족 문제로 분쟁이 발생한 경우 "
+                  "{판결}을 요구하는 것을 {가리킨다|가리키다}. 개인 간의 재산 문제나 가족 문제로 분쟁이 발생한 경우 "
                   "{당사자}는 법원에 {재판}해 달라고 요청할 수 있다. 또한, 국가의 {행위}로 인해 개인이 "
                   "피해를 입거나 세금 등을 지나치게 많이 내게 되었다고 판단되면 피해 당사자가 국가를 "
                   "{상대로}도 소송을 {제기할|제기하다} 수 있다. 이 경우 법원의 {판사}는 당사자들의 "
-                  "{주장}을 듣고 법에 따라 판결을 {내려|내리다} 분쟁을 해결한다."),
+                  "{주장}을 듣고 법에 따라 {판결}을 {내려|내리다} 분쟁을 해결한다."),
         FIGURE("법원의 모습(scourt.go.kr)"),
 
         GLOSSARY(("중위소득",
@@ -318,6 +318,8 @@ CHAPTER = dict(
             characters=[("法", "법", "law"),
                         ("院", "원", "an institution — as in 병원, 대법원")],
         ),
+        "가리키다": dict(meaning="to point to, to refer to",
+                       surfaces=["가리킨다"]),
         "판결": dict(
             hanja="判決", meaning="a ruling, a judgment",
             characters=[("判", "판", "to judge — as in 판사, 재판"),
@@ -379,7 +381,9 @@ CHAPTER = dict(
         "대한법률구조공단": dict(
             hanja="大韓法律救助公團",
             meaning="the Korea Legal Aid Corporation",
-            characters=[("救助", None, "rescue, aid — 救 to save, 助 to help"),
+            characters=[("大韓", None, "Korea — 大 great, 韓 Korea, as in 대한민국"),
+                        ("法律", None, "law — 法 law, 律 a rule"),
+                        ("救助", None, "rescue, aid — 救 to save, 助 to help"),
                         ("公團", None, "a public corporation")],
         ),
         "각종": dict(
