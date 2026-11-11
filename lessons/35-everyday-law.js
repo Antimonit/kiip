@@ -1386,12 +1386,7 @@ KIIP.chapter({
      "word": "교사",
      "annotation": "교사"
     },
-    "나 부모에게 알려야 한다. 보다 긴급한 도움이 필요할 경우에는 국번 없이 117로 전화하면 경찰청 학교폭력센터로 바로 ",
-    {
-     "word": "연결되어",
-     "annotation": "연결되다"
-    },
-    " 도움을 받을 수 있다. 또한, 경찰청 ",
+    "나 부모에게 알려야 한다. 보다 긴급한 도움이 필요할 경우에는 국번 없이 117로 전화하면 경찰청 학교폭력센터로 바로 연결되어 도움을 받을 수 있다. 또한, 경찰청 ",
     {
      "word": "사이버 안전국",
      "annotation": "사이버 안전국"
@@ -1443,12 +1438,7 @@ KIIP.chapter({
     },
     {
      "spans": [
-      "보다 긴급한 도움이 필요할 경우에는 국번 없이 117로 전화하면 경찰청 학교폭력센터로 바로 ",
-      {
-       "word": "연결되어",
-       "annotation": "연결되다"
-      },
-      " 도움을 받을 수 있다. "
+      "보다 긴급한 도움이 필요할 경우에는 국번 없이 117로 전화하면 경찰청 학교폭력센터로 바로 연결되어 도움을 받을 수 있다. "
      ],
      "translation": "Where more urgent help is needed, ringing 117 with no area code connects one straight to the police agency’s school violence centre."
     },
@@ -3236,27 +3226,6 @@ KIIP.chapter({
    ],
    "notes": [],
    "surfaces": []
-  },
-  "연결되다": {
-   "headword": "연결되다",
-   "hanja": "連結되다",
-   "meaning": "to be connected, put through",
-   "characters": [
-    {
-     "char": "連",
-     "reading": "련",
-     "gloss": "to link — as in 연락, 연속"
-    },
-    {
-     "char": "結",
-     "reading": "결",
-     "gloss": "to tie — as in 결혼, 결과"
-    }
-   ],
-   "notes": [],
-   "surfaces": [
-    "연결되어"
-   ]
   },
   "사이버 안전국": {
    "headword": "사이버 안전국",

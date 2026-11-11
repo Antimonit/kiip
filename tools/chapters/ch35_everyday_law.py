@@ -191,7 +191,7 @@ CHAPTER = dict(
         PARAGRAPH("신체적 {폭행}, 언어나 행동을 통한 {모욕}, {따돌림}, 돈이나 물건을 {빼앗아|빼앗다} 가는 "
                   "행동, {단체 채팅방}이나 문자 등을 통한 {사이버 폭력} 등이 발생하면 우선 학교 {교사}나 "
                   "부모에게 알려야 한다. 보다 긴급한 도움이 필요할 경우에는 국번 없이 117로 전화하면 경찰청 "
-                  "학교폭력센터로 바로 {연결되어|연결되다} 도움을 받을 수 있다. 또한, 경찰청 {사이버 "
+                  "학교폭력센터로 바로 연결되어 도움을 받을 수 있다. 또한, 경찰청 {사이버 "
                   "안전국}(http://cyberbureau.police.go.kr/)에 신고하여 필요한 안내와 지원을 받을 수도 "
                   "있다."),
         FIGURE("학교폭력"),
@@ -654,12 +654,6 @@ CHAPTER = dict(
             hanja="敎師", meaning="a teacher",
             characters=[("敎", "교", "to teach — as in 교육, 교실"),
                         ("師", "사", "a master, a teacher — as in 강사, 의사")],
-        ),
-        "연결되다": dict(
-            hanja="連結되다", meaning="to be connected, put through",
-            characters=[("連", "련", "to link — as in 연락, 연속"),
-                        ("結", "결", "to tie — as in 결혼, 결과")],
-            surfaces=["연결되어"],
         ),
         "사이버 안전국": dict(
             meaning="the police agency’s cyber bureau",
