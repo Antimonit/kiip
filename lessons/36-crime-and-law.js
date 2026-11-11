@@ -244,12 +244,7 @@ KIIP.chapter({
      "word": "처벌할",
      "annotation": "처벌하다"
     },
-    " 필요가 있다. 이때 ",
-    {
-     "word": "기준",
-     "annotation": "기준"
-    },
-    "이 되는 것이 바로 ",
+    " 필요가 있다. 이때 기준이 되는 것이 바로 ",
     {
      "word": "형법",
      "annotation": "형법"
@@ -300,12 +295,7 @@ KIIP.chapter({
     },
     {
      "spans": [
-      "이때 ",
-      {
-       "word": "기준",
-       "annotation": "기준"
-      },
-      "이 되는 것이 바로 ",
+      "이때 기준이 되는 것이 바로 ",
       {
        "word": "형법",
        "annotation": "형법"
@@ -693,12 +683,7 @@ KIIP.chapter({
   {
    "type": "paragraph",
    "spans": [
-    "법에 따라 범죄 행위를 ",
-    {
-     "word": "예방하고",
-     "annotation": "예방하다"
-    },
-    " ",
+    "법에 따라 범죄 행위를 예방하고 ",
     {
      "word": "수사",
      "annotation": "수사"
@@ -749,12 +734,7 @@ KIIP.chapter({
    "sentences": [
     {
      "spans": [
-      "법에 따라 범죄 행위를 ",
-      {
-       "word": "예방하고",
-       "annotation": "예방하다"
-      },
-      " ",
+      "법에 따라 범죄 행위를 예방하고 ",
       {
        "word": "수사",
        "annotation": "수사"
@@ -991,17 +971,7 @@ KIIP.chapter({
      "word": "권한",
      "annotation": "권한"
     },
-    "은 검찰이 갖고 있다. 검찰 내에서 범죄 관련 ",
-    {
-     "word": "업무",
-     "annotation": "업무"
-    },
-    "를 ",
-    {
-     "word": "담당하고",
-     "annotation": "담당하다"
-    },
-    " 책임지는 역할을 하는 사람을 ",
+    "은 검찰이 갖고 있다. 검찰 내에서 범죄 관련 업무를 담당하고 책임지는 역할을 하는 사람을 ",
     {
      "word": "검사",
      "annotation": "검사"
@@ -1063,17 +1033,7 @@ KIIP.chapter({
     },
     {
      "spans": [
-      "검찰 내에서 범죄 관련 ",
-      {
-       "word": "업무",
-       "annotation": "업무"
-      },
-      "를 ",
-      {
-       "word": "담당하고",
-       "annotation": "담당하다"
-      },
-      " 책임지는 역할을 하는 사람을 ",
+      "검찰 내에서 범죄 관련 업무를 담당하고 책임지는 역할을 하는 사람을 ",
       {
        "word": "검사",
        "annotation": "검사"
@@ -1555,6 +1515,11 @@ KIIP.chapter({
    "meaning": "a law enforcement body",
    "characters": [
     {
+     "char": "法",
+     "reading": "법",
+     "gloss": "law — as in 법원, 법률"
+    },
+    {
      "char": "執行",
      "gloss": "to carry out — chapter 20’s 집행"
     },
@@ -1633,25 +1598,6 @@ KIIP.chapter({
     "처벌할"
    ]
   },
-  "기준": {
-   "headword": "기준",
-   "hanja": "基準",
-   "meaning": "a standard, the measure applied",
-   "characters": [
-    {
-     "char": "基",
-     "reading": "기",
-     "gloss": "a base — as in 기본, 기초"
-    },
-    {
-     "char": "準",
-     "reading": "준",
-     "gloss": "a level — as in 표준, 준비"
-    }
-   ],
-   "notes": [],
-   "surfaces": []
-  },
   "위협": {
    "headword": "위협",
    "hanja": "威脅",
@@ -1718,9 +1664,7 @@ KIIP.chapter({
    "meaning": "to commit (a crime)",
    "characters": [],
    "notes": [],
-   "surfaces": [
-    "저지른"
-   ]
+   "surfaces": []
   },
   "형벌": {
    "headword": "형벌",
@@ -1797,11 +1741,24 @@ KIIP.chapter({
    "meaning": "a sentence of imprisonment",
    "characters": [
     {
-     "char": "懲役",
-     "gloss": "imprisonment with labour"
+     "char": "懲",
+     "reading": "징",
+     "gloss": "to punish — as in 징계, 징벌"
+    },
+    {
+     "char": "役",
+     "reading": "역",
+     "gloss": "service, labour — as in 병역, 역할"
+    },
+    {
+     "char": "刑",
+     "reading": "형",
+     "gloss": "punishment — as in 형벌, 사형"
     }
    ],
-   "notes": [],
+   "notes": [
+    "懲役 together is imprisonment with labour."
+   ],
    "surfaces": [],
    "handwritten": "a prison sentence"
   },
@@ -2079,27 +2036,6 @@ KIIP.chapter({
    "notes": [],
    "surfaces": [
     "조회할"
-   ]
-  },
-  "예방하다": {
-   "headword": "예방하다",
-   "hanja": "豫防하다",
-   "meaning": "to prevent",
-   "characters": [
-    {
-     "char": "豫",
-     "reading": "예",
-     "gloss": "in advance — as in 예약, 예비"
-    },
-    {
-     "char": "防",
-     "reading": "방",
-     "gloss": "to guard against — as in 방지, 방역"
-    }
-   ],
-   "notes": [],
-   "surfaces": [
-    "예방하고"
    ]
   },
   "수사": {
@@ -2406,46 +2342,6 @@ KIIP.chapter({
    ],
    "notes": [],
    "surfaces": []
-  },
-  "업무": {
-   "headword": "업무",
-   "hanja": "業務",
-   "meaning": "work, duties",
-   "characters": [
-    {
-     "char": "業",
-     "reading": "업",
-     "gloss": "business — as in 취업, 기업"
-    },
-    {
-     "char": "務",
-     "reading": "무",
-     "gloss": "duty — as in 의무, 공무원"
-    }
-   ],
-   "notes": [],
-   "surfaces": []
-  },
-  "담당하다": {
-   "headword": "담당하다",
-   "hanja": "擔當하다",
-   "meaning": "to take charge of",
-   "characters": [
-    {
-     "char": "擔",
-     "reading": "담",
-     "gloss": "to bear — as in 부담, 담임"
-    },
-    {
-     "char": "當",
-     "reading": "당",
-     "gloss": "to be in charge — as in 당사자, 해당"
-    }
-   ],
-   "notes": [],
-   "surfaces": [
-    "담당하고"
-   ]
   },
   "검사": {
    "headword": "검사",

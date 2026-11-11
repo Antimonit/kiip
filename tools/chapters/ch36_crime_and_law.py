@@ -59,7 +59,7 @@ CHAPTER = dict(
                 "great harm and threaten society, and lays down the "
                 "punishments for those who commit them."),
         PARAGRAPH("{사회질서}를 유지하고 사람들의 자유와 권리를 보호하기 위해서는 사람들의 나쁜 행동을 막고 "
-                  "{처벌할|처벌하다} 필요가 있다. 이때 {기준}이 되는 것이 바로 {형법}이다. 형법은 사람들에게 "
+                  "{처벌할|처벌하다} 필요가 있다. 이때 기준이 되는 것이 바로 {형법}이다. 형법은 사람들에게 "
                   "큰 피해를 주고 사회에 {위협}이 되는 행위를 {범죄}로 {규정하고|규정하다}, 범죄를 "
                   "{저지른|저지르다} 사람들에 대한 {형벌}을 정해 놓았다."),
         TABLE(["형법 조항", "범죄 내용", "형벌 내용"],
@@ -120,7 +120,7 @@ CHAPTER = dict(
                 "whether someone has broken the law is precisely the part a "
                 "law enforcement body plays. In Korea the police and the "
                 "prosecution are the leading law enforcement bodies."),
-        PARAGRAPH("법에 따라 범죄 행위를 {예방하고|예방하다} {수사}하며 사회질서를 유지하는 국가기관을 "
+        PARAGRAPH("법에 따라 범죄 행위를 예방하고 {수사}하며 사회질서를 유지하는 국가기관을 "
                   "{법집행기관}이라고 한다. 법집행기관은 범죄 피해를 입은 사람들의 신고를 받고 {범죄 용의자}를 "
                   "{조사하며|조사하다} {체포하기도|체포하다} 한다. 이와 같은 과정을 통해, 누군가가 법을 "
                   "{위반한|위반하다} 사실이 있었는지를 {밝혀내는|밝혀내다} 일이 바로 법집행기관의 역할이다. "
@@ -161,7 +161,7 @@ CHAPTER = dict(
         PARAGRAPH("{검찰}은 범죄를 수사하고 범죄와 관련한 {증거}를 모아서 {법원}에 재판을 {청구}한다. "
                   "일반적인 범죄의 경우 한국에서는 경찰이나 검찰 모두 수사할 수 있지만 {최종적}으로 범죄가 "
                   "된다고 판단하여 재판에 넘길 수 있는 {권한}은 검찰이 갖고 있다. 검찰 내에서 범죄 관련 "
-                  "{업무}를 {담당하고|담당하다} 책임지는 역할을 하는 사람을 {검사}라고 한다. 검사는 {형사 "
+                  "업무를 담당하고 책임지는 역할을 하는 사람을 {검사}라고 한다. 검사는 {형사 "
                   "재판}에 직접 {참여하여|참여하다} 범죄자의 범죄 사실을 증명하고 범죄자에 대한 형벌을 법원에 "
                   "청구하는 역할을 한다."),
         FIGURE("형사재판의 모습 — 판사석, 검사석, 변호인석, 증인석, 피고인석"),
@@ -269,7 +269,8 @@ CHAPTER = dict(
         ),
         "법집행기관": dict(
             hanja="法執行機關", meaning="a law enforcement body",
-            characters=[("執行", None, "to carry out — chapter 20’s 집행"),
+            characters=[("法", "법", "law — as in 법원, 법률"),
+                        ("執行", None, "to carry out — chapter 20’s 집행"),
                         ("機關", None, "an institution, a body")],
         ),
         "경찰": dict(
@@ -291,11 +292,6 @@ CHAPTER = dict(
                         ("罰", "벌", "penalty — as in 벌금, 형벌")],
             surfaces=["처벌할"],
         ),
-        "기준": dict(
-            hanja="基準", meaning="a standard, the measure applied",
-            characters=[("基", "기", "a base — as in 기본, 기초"),
-                        ("準", "준", "a level — as in 표준, 준비")],
-        ),
         "위협": dict(
             hanja="威脅", meaning="a threat",
             characters=[("威", "위", "might — as in 권위, 위력"),
@@ -314,7 +310,6 @@ CHAPTER = dict(
         ),
         "저지르다": dict(
             meaning="to commit (a crime)",
-            surfaces=["저지른"],
         ),
         "형벌": dict(
             hanja="刑罰", meaning="a punishment imposed by the state",
@@ -336,7 +331,10 @@ CHAPTER = dict(
         ),
         "징역형": dict(
             hanja="懲役刑", meaning="a sentence of imprisonment",
-            characters=[("懲役", None, "imprisonment with labour")],
+            characters=[("懲", "징", "to punish — as in 징계, 징벌"),
+                        ("役", "역", "service, labour — as in 병역, 역할"),
+                        ("刑", "형", "punishment — as in 형벌, 사형")],
+            notes=["懲役 together is imprisonment with labour."],
         ),
         "원칙": dict(
             hanja="原則", meaning="a principle",
@@ -416,12 +414,6 @@ CHAPTER = dict(
             characters=[("照", "조", "to shine on, to check against"),
                         ("會", "회", "to meet — as in 회의, 조회")],
             surfaces=["조회할"],
-        ),
-        "예방하다": dict(
-            hanja="豫防하다", meaning="to prevent",
-            characters=[("豫", "예", "in advance — as in 예약, 예비"),
-                        ("防", "방", "to guard against — as in 방지, 방역")],
-            surfaces=["예방하고"],
         ),
         "수사": dict(
             hanja="搜査", meaning="a criminal investigation",
@@ -508,17 +500,6 @@ CHAPTER = dict(
             hanja="權限", meaning="authority, a power held",
             characters=[("權", "권", "power — as in 권리, 권력"),
                         ("限", "한", "a limit — as in 제한, 한도")],
-        ),
-        "업무": dict(
-            hanja="業務", meaning="work, duties",
-            characters=[("業", "업", "business — as in 취업, 기업"),
-                        ("務", "무", "duty — as in 의무, 공무원")],
-        ),
-        "담당하다": dict(
-            hanja="擔當하다", meaning="to take charge of",
-            characters=[("擔", "담", "to bear — as in 부담, 담임"),
-                        ("當", "당", "to be in charge — as in 당사자, 해당")],
-            surfaces=["담당하고"],
         ),
         "검사": dict(
             hanja="檢事", meaning="a prosecutor",
