@@ -16,23 +16,13 @@ KIIP.chapter({
   {
    "type": "paragraph",
    "spans": [
-    "다음은 돈 ",
-    {
-     "word": "거래",
-     "annotation": "거래"
-    },
-    "를 할 때 나타날 수 있는 상황입니다."
+    "다음은 돈 거래를 할 때 나타날 수 있는 상황입니다."
    ],
    "translation": "Below is a situation that can arise when money changes hands.",
    "sentences": [
     {
      "spans": [
-      "다음은 돈 ",
-      {
-       "word": "거래",
-       "annotation": "거래"
-      },
-      "를 할 때 나타날 수 있는 상황입니다."
+      "다음은 돈 거래를 할 때 나타날 수 있는 상황입니다."
      ],
      "translation": "Below is a situation that can arise when money changes hands."
     }
@@ -184,12 +174,7 @@ KIIP.chapter({
      "word": "금전 거래",
      "annotation": "금전 거래"
     },
-    "란 사람들끼리 돈을 빌리고 빌려주는 것을 가리킨다. 금전 ",
-    {
-     "word": "거래",
-     "annotation": "거래"
-    },
-    "를 할 때는 일반적으로 ",
+    "란 사람들끼리 돈을 빌리고 빌려주는 것을 가리킨다. 금전 거래를 할 때는 일반적으로 ",
     {
      "word": "계약",
      "annotation": "계약"
@@ -220,12 +205,7 @@ KIIP.chapter({
     },
     {
      "spans": [
-      "금전 ",
-      {
-       "word": "거래",
-       "annotation": "거래"
-      },
-      "를 할 때는 일반적으로 ",
+      "금전 거래를 할 때는 일반적으로 ",
       {
        "word": "계약",
        "annotation": "계약"
@@ -274,12 +254,7 @@ KIIP.chapter({
      "word": "범죄",
      "annotation": "범죄"
     },
-    "가 될 수 있는 계약은 ",
-    {
-     "word": "허용되지",
-     "annotation": "허용되다"
-    },
-    " 않는다."
+    "가 될 수 있는 계약은 허용되지 않는다."
    ],
    "translation": "A contract must be entered into according to the free intention of those making it. A contract may also be void where what it contains runs against public order. That is, a contract that would violate an individual’s rights or amount to a crime is not allowed.",
    "sentences": [
@@ -332,12 +307,7 @@ KIIP.chapter({
        "word": "범죄",
        "annotation": "범죄"
       },
-      "가 될 수 있는 계약은 ",
-      {
-       "word": "허용되지",
-       "annotation": "허용되다"
-      },
-      " 않는다."
+      "가 될 수 있는 계약은 허용되지 않는다."
      ],
      "translation": "That is, a contract that would violate an individual’s rights or amount to a crime is not allowed."
     }
@@ -404,12 +374,7 @@ KIIP.chapter({
      "word": "계약서",
      "annotation": "계약서"
     },
-    "를 ",
-    {
-     "word": "작성하고",
-     "annotation": "작성하다"
-    },
-    " 각자 ",
+    "를 작성하고 각자 ",
     {
      "word": "서명",
      "annotation": "서명"
@@ -446,12 +411,7 @@ KIIP.chapter({
        "word": "계약서",
        "annotation": "계약서"
       },
-      "를 ",
-      {
-       "word": "작성하고",
-       "annotation": "작성하다"
-      },
-      " 각자 ",
+      "를 작성하고 각자 ",
       {
        "word": "서명",
        "annotation": "서명"
@@ -490,12 +450,7 @@ KIIP.chapter({
      "word": "영수증",
      "annotation": "영수증"
     },
-    "을 받아야 한다. 차용증이나 영수증에는 돈을 거래한 사람의 이름, 주소, ",
-    {
-     "word": "연락처",
-     "annotation": "연락처"
-    },
-    ", 거래한 ",
+    "을 받아야 한다. 차용증이나 영수증에는 돈을 거래한 사람의 이름, 주소, 연락처, 거래한 ",
     {
      "word": "금액",
      "annotation": "금액"
@@ -548,12 +503,7 @@ KIIP.chapter({
     },
     {
      "spans": [
-      "차용증이나 영수증에는 돈을 거래한 사람의 이름, 주소, ",
-      {
-       "word": "연락처",
-       "annotation": "연락처"
-      },
-      ", 거래한 ",
+      "차용증이나 영수증에는 돈을 거래한 사람의 이름, 주소, 연락처, 거래한 ",
       {
        "word": "금액",
        "annotation": "금액"
@@ -1085,12 +1035,7 @@ KIIP.chapter({
      "word": "약자",
      "annotation": "약자"
     },
-    "로 간주하여 법으로 특별히 보호한다. 이때 임차인이 법적 보호를 ",
-    {
-     "word": "충분히",
-     "annotation": "충분히"
-    },
-    " 받기 위해서는 반드시 ",
+    "로 간주하여 법으로 특별히 보호한다. 이때 임차인이 법적 보호를 충분히 받기 위해서는 반드시 ",
     {
      "word": "전입신고",
      "annotation": "전입신고"
@@ -1100,12 +1045,7 @@ KIIP.chapter({
      "word": "확정일자",
      "annotation": "확정일자"
     },
-    "를 받아야 한다. 이 경우 임차인은 ",
-    {
-     "word": "집주인",
-     "annotation": "집주인"
-    },
-    "이 바뀌는 것과 상관없이 최소한 2년 동안 거주할 수 있다. 또한 거주하던 집이 ",
+    "를 받아야 한다. 이 경우 임차인은 집주인이 바뀌는 것과 상관없이 최소한 2년 동안 거주할 수 있다. 또한 거주하던 집이 ",
     {
      "word": "경매",
      "annotation": "경매"
@@ -1147,12 +1087,7 @@ KIIP.chapter({
     },
     {
      "spans": [
-      "이때 임차인이 법적 보호를 ",
-      {
-       "word": "충분히",
-       "annotation": "충분히"
-      },
-      " 받기 위해서는 반드시 ",
+      "이때 임차인이 법적 보호를 충분히 받기 위해서는 반드시 ",
       {
        "word": "전입신고",
        "annotation": "전입신고"
@@ -1168,12 +1103,7 @@ KIIP.chapter({
     },
     {
      "spans": [
-      "이 경우 임차인은 ",
-      {
-       "word": "집주인",
-       "annotation": "집주인"
-      },
-      "이 바뀌는 것과 상관없이 최소한 2년 동안 거주할 수 있다. "
+      "이 경우 임차인은 집주인이 바뀌는 것과 상관없이 최소한 2년 동안 거주할 수 있다. "
      ],
      "translation": "In that case the tenant can live there for at least two years whether or not the owner changes."
     },
@@ -1322,7 +1252,7 @@ KIIP.chapter({
    "spans": [
     "사람과 사람 사이에서 거래를 할 때 맺는 약속을 계약이라고 하는데, 이 내용이 사회질서에 어긋나는 내용이면 ",
     {
-     "blank": ""
+     "blank": "무효"
     },
     "가 될 수 있다."
    ]
@@ -1332,7 +1262,7 @@ KIIP.chapter({
    "spans": [
     "금전 거래를 할 때는 계약 내용을 확인해 주는 ",
     {
-     "blank": ""
+     "blank": "계약서"
     },
     "를 작성해야 권리를 보호받을 수 있다."
    ]
@@ -1342,11 +1272,11 @@ KIIP.chapter({
    "spans": [
     "돈을 빌려주었을 때는 ",
     {
-     "blank": ""
+     "blank": "차용증"
     },
     ", 빌린 돈을 갚을 때는 ",
     {
-     "blank": ""
+     "blank": "영수증"
     },
     "을 받아 놓아야 한다."
    ]
@@ -1361,11 +1291,11 @@ KIIP.chapter({
    "spans": [
     "집이나 땅, 건물 등 직접 가지고 다닐 수 없는 재산을 ",
     {
-     "blank": ""
+     "blank": "부동산"
     },
     "이라고 하며, 이것을 거래할 때는 반드시 ",
     {
-     "blank": ""
+     "blank": "등기부 등본"
     },
     "을 확인해야 한다."
    ]
@@ -1375,7 +1305,7 @@ KIIP.chapter({
    "spans": [
     "부동산 계약을 할 때는 일반적으로 거래 가격의 10% 내외에서 ",
     {
-     "blank": ""
+     "blank": "계약금"
     },
     "을 먼저 주고받으며, 이후 중도금과 잔금을 모두 지급하면 부동산 거래가 마무리된다."
    ]
@@ -1385,7 +1315,7 @@ KIIP.chapter({
    "spans": [
     "다른 사람이 소유한 부동산을 빌려 쓰는 것을 ",
     {
-     "blank": ""
+     "blank": "임차"
     },
     "라고 하며, 한국에서는 부동산을 빌려 쓰는 사람들을 법을 통해 특별히 보호하고 있다."
    ]
@@ -1622,25 +1552,6 @@ KIIP.chapter({
   }
  ],
  "annotations": {
-  "거래": {
-   "headword": "거래",
-   "hanja": "去來",
-   "meaning": "a transaction, dealing",
-   "characters": [
-    {
-     "char": "去",
-     "reading": "거",
-     "gloss": "to go — as in 과거, 퇴거"
-    },
-    {
-     "char": "來",
-     "reading": "래",
-     "gloss": "to come — as in 미래, 내년"
-    }
-   ],
-   "notes": [],
-   "surfaces": []
-  },
   "금전": {
    "headword": "금전",
    "hanja": "金錢",
@@ -1829,27 +1740,6 @@ KIIP.chapter({
    ],
    "surfaces": []
   },
-  "허용되다": {
-   "headword": "허용되다",
-   "hanja": "許容되다",
-   "meaning": "to be allowed, permitted",
-   "characters": [
-    {
-     "char": "許",
-     "reading": "허",
-     "gloss": "to allow — as in 허가, 허락"
-    },
-    {
-     "char": "容",
-     "reading": "용",
-     "gloss": "to accept — as in 수용, 내용"
-    }
-   ],
-   "notes": [],
-   "surfaces": [
-    "허용되지"
-   ]
-  },
   "당사자": {
    "headword": "당사자",
    "hanja": "當事者",
@@ -1915,27 +1805,6 @@ KIIP.chapter({
    "notes": [],
    "surfaces": [],
    "handwritten": "a written contract"
-  },
-  "작성하다": {
-   "headword": "작성하다",
-   "hanja": "作成하다",
-   "meaning": "to draw up, to write out",
-   "characters": [
-    {
-     "char": "作",
-     "reading": "작",
-     "gloss": "to make — as in 제작, 작업"
-    },
-    {
-     "char": "成",
-     "reading": "성",
-     "gloss": "to complete — as in 완성, 구성"
-    }
-   ],
-   "notes": [],
-   "surfaces": [
-    "작성하고"
-   ]
   },
   "서명": {
    "headword": "서명",
@@ -2055,24 +1924,6 @@ KIIP.chapter({
    "notes": [],
    "surfaces": [],
    "handwritten": "a receipt"
-  },
-  "연락처": {
-   "headword": "연락처",
-   "hanja": "連絡處",
-   "meaning": "contact details",
-   "characters": [
-    {
-     "char": "連絡",
-     "gloss": "contact, getting in touch"
-    },
-    {
-     "char": "處",
-     "reading": "처",
-     "gloss": "a place — as in 처소, 부처"
-    }
-   ],
-   "notes": [],
-   "surfaces": []
   },
   "금액": {
    "headword": "금액",
@@ -2611,25 +2462,6 @@ KIIP.chapter({
    "notes": [],
    "surfaces": []
   },
-  "충분히": {
-   "headword": "충분히",
-   "hanja": "充分히",
-   "meaning": "fully, sufficiently",
-   "characters": [
-    {
-     "char": "充",
-     "reading": "충",
-     "gloss": "to fill — as in 충족, 보충"
-    },
-    {
-     "char": "分",
-     "reading": "분",
-     "gloss": "a part — as in 부분, 분리"
-    }
-   ],
-   "notes": [],
-   "surfaces": []
-  },
   "전입신고": {
    "headword": "전입신고",
    "hanja": "轉入申告",
@@ -2666,14 +2498,6 @@ KIIP.chapter({
    "notes": [
     "Chapter 5 says to get it at the community service centre so the deposit can be recovered safely."
    ],
-   "surfaces": []
-  },
-  "집주인": {
-   "headword": "집주인",
-   "hanja": null,
-   "meaning": "the landlord, the owner of the house",
-   "characters": [],
-   "notes": [],
    "surfaces": []
   },
   "경매": {
@@ -3085,9 +2909,6 @@ KIIP.chapter({
  "notes": [
   {
    "why": "The 생각해 봅시다 illustration on p. 178, the handshake photograph on p. 179, the interest poster on p. 179, the electronic-contract graphic on p. 180, the estate agent’s licence on p. 180 and the post office remittance poster on p. 181 are not reproduced; their captions are."
-  },
-  {
-   "why": "The review gaps on p. 181 are blank in the book and left blank here."
   }
  ],
  "slug": "34-property-and-law"

@@ -14,7 +14,7 @@ CHAPTER = dict(
 
     append=[
         SECTION("warmup", "생각해 봅시다"),
-        PARAGRAPH("다음은 돈 {거래}를 할 때 나타날 수 있는 상황입니다.",
+        PARAGRAPH("다음은 돈 거래를 할 때 나타날 수 있는 상황입니다.",
                   "Below is a situation that can arise when money changes "
                   "hands."),
         FIGURE("친한 친구가 급하게 돈을 빌려 달라고 하는 그림"),
@@ -62,7 +62,7 @@ CHAPTER = dict(
                   "금전 거래를 할 때는 일반적으로 {계약}을 하게 된다."),
         PARAGRAPH("계약은 사람들의 자유로운 {의사}에 따라 {맺어야|맺다} 한다. 또한 계약 내용이 "
                   "{사회질서}에 {어긋나는|어긋나다} 내용이면 {무효}가 될 수 있다. 즉, 개인의 권리를 "
-                  "{침해하거나|침해하다} {범죄}가 될 수 있는 계약은 {허용되지|허용되다} 않는다."),
+                  "{침해하거나|침해하다} {범죄}가 될 수 있는 계약은 허용되지 않는다."),
         FIGURE("계약은 두 사람의 의사가 일치하면 바로 성립한다."),
 
         GLOSSARY(("계약서", "계약이 성립되었음을 증명하기 위해 작성하는 서류", "계약서",
@@ -92,11 +92,11 @@ CHAPTER = dict(
                 "body and be compensated for the loss suffered."),
         PARAGRAPH("계약은 {당사자}의 말을 통해서도 이루어질 수 있지만 나중에 혹시 문제가 생겼을 때 계약 "
                   "내용을 {증명하기|증명하다}가 어려워질 수 있다. 그러므로 금전 거래를 할 때는 계약 내용을 "
-                  "확인해 주는 {계약서}를 {작성하고|작성하다} 각자 {서명}을 하거나 {도장}을 찍어야 권리를 "
+                  "확인해 주는 {계약서}를 작성하고 각자 {서명}을 하거나 {도장}을 찍어야 권리를 "
                   "보호받을 수 있다."),
         PARAGRAPH("돈을 빌려주었을 때는 돈을 빌려준 사람에게 {증거}로 {차용증}을 받는 것이 좋다. 또한 빌린 "
                   "돈을 {갚을|갚다} 때는 돈을 갚은 내용을 증명해 주는 {영수증}을 받아야 한다. 차용증이나 "
-                  "영수증에는 돈을 거래한 사람의 이름, 주소, {연락처}, 거래한 {금액}({원금}, {이자}), "
+                  "영수증에는 돈을 거래한 사람의 이름, 주소, 연락처, 거래한 {금액}({원금}, {이자}), "
                   "거래한 날짜, 서명 등이 포함되어야 한다."),
         PARAGRAPH("만약 돈을 빌려간 사람이 돈을 갚기로 약속한 {시점}까지 돈을 갚지 않을 경우 돈을 빌려준 "
                   "사람은 돈을 갚으라고 직접 요청한다. 그래도 돈을 갚지 않는다면 법원 등 관련 기관의 도움을 "
@@ -178,8 +178,8 @@ CHAPTER = dict(
                   "부동산을 빌려주는 것을 {임대}, 빌려 쓰는 것을 {임차}라고 한다. 아파트나 {상가}를 빌려 "
                   "쓸 때는 주로 {전세}나 {월세} 방식을 많이 사용한다."),
         PARAGRAPH("한국에서는 부동산을 빌려 쓰는 사람({임차인})을 {약자}로 간주하여 법으로 특별히 보호한다. "
-                  "이때 임차인이 법적 보호를 {충분히} 받기 위해서는 반드시 {전입신고}를 하고 {확정일자}를 "
-                  "받아야 한다. 이 경우 임차인은 {집주인}이 바뀌는 것과 상관없이 최소한 2년 동안 거주할 수 "
+                  "이때 임차인이 법적 보호를 충분히 받기 위해서는 반드시 {전입신고}를 하고 {확정일자}를 "
+                  "받아야 한다. 이 경우 임차인은 집주인이 바뀌는 것과 상관없이 최소한 2년 동안 거주할 수 "
                   "있다. 또한 거주하던 집이 {경매} 등으로 팔리는 경우가 생기더라도 원래 {맡겼던|맡기다} "
                   "{보증금}을 다른 사람보다 먼저 {돌려받을|돌려받다} 수 있다."),
         FIGURE("‘부동산 전자계약은 이렇게!’ 안내 그림"),
@@ -209,16 +209,16 @@ CHAPTER = dict(
         SECTION("review", "주요 내용정리"),
         HEADING(3, "01 금전 거래를 할 때 무엇을 알아 두어야 할까?"),
         BULLET("사람과 사람 사이에서 거래를 할 때 맺는 약속을 계약이라고 하는데, 이 내용이 사회질서에 "
-               "어긋나는 내용이면 (        )가 될 수 있다."),
-        BULLET("금전 거래를 할 때는 계약 내용을 확인해 주는 (        )를 작성해야 권리를 보호받을 수 "
+               "어긋나는 내용이면 ( 무효 )가 될 수 있다."),
+        BULLET("금전 거래를 할 때는 계약 내용을 확인해 주는 ( 계약서 )를 작성해야 권리를 보호받을 수 "
                "있다."),
-        BULLET("돈을 빌려주었을 때는 (        ), 빌린 돈을 갚을 때는 (        )을 받아 놓아야 한다."),
+        BULLET("돈을 빌려주었을 때는 ( 차용증 ), 빌린 돈을 갚을 때는 ( 영수증 )을 받아 놓아야 한다."),
         HEADING(3, "02 부동산 거래를 할 때 무엇을 알아 두어야 할까?"),
-        BULLET("집이나 땅, 건물 등 직접 가지고 다닐 수 없는 재산을 (        )이라고 하며, 이것을 "
-               "거래할 때는 반드시 (            )을 확인해야 한다."),
-        BULLET("부동산 계약을 할 때는 일반적으로 거래 가격의 10% 내외에서 (        )을 먼저 주고받으며, "
+        BULLET("집이나 땅, 건물 등 직접 가지고 다닐 수 없는 재산을 ( 부동산 )이라고 하며, 이것을 "
+               "거래할 때는 반드시 ( 등기부 등본 )을 확인해야 한다."),
+        BULLET("부동산 계약을 할 때는 일반적으로 거래 가격의 10% 내외에서 ( 계약금 )을 먼저 주고받으며, "
                "이후 중도금과 잔금을 모두 지급하면 부동산 거래가 마무리된다."),
-        BULLET("다른 사람이 소유한 부동산을 빌려 쓰는 것을 (        )라고 하며, 한국에서는 부동산을 빌려 "
+        BULLET("다른 사람이 소유한 부동산을 빌려 쓰는 것을 ( 임차 )라고 하며, 한국에서는 부동산을 빌려 "
                "쓰는 사람들을 법을 통해 특별히 보호하고 있다."),
 
         SECTION("discuss", "이야기 나누기"),
@@ -260,11 +260,6 @@ CHAPTER = dict(
     ],
 
     extraAnnotations={
-        "거래": dict(
-            hanja="去來", meaning="a transaction, dealing",
-            characters=[("去", "거", "to go — as in 과거, 퇴거"),
-                        ("來", "래", "to come — as in 미래, 내년")],
-        ),
         "금전": dict(
             hanja="金錢", meaning="money",
             characters=[("金", "금", "gold, money — as in 금액, 벌금"),
@@ -321,12 +316,6 @@ CHAPTER = dict(
                         ("罪", "죄", "guilt — as in 유죄, 무죄")],
             notes=["Chapter 36’s subject: crime and the law."],
         ),
-        "허용되다": dict(
-            hanja="許容되다", meaning="to be allowed, permitted",
-            characters=[("許", "허", "to allow — as in 허가, 허락"),
-                        ("容", "용", "to accept — as in 수용, 내용")],
-            surfaces=["허용되지"],
-        ),
         "당사자": dict(
             hanja="當事者", meaning="the party concerned, the person involved",
             characters=[("當", "당", "the said, due — as in 당연, 해당"),
@@ -345,12 +334,6 @@ CHAPTER = dict(
             hanja="契約書", meaning="a written contract",
             characters=[("契約", None, "a contract"),
                         ("書", "서", "a document — as in 증명서, 서명")],
-        ),
-        "작성하다": dict(
-            hanja="作成하다", meaning="to draw up, to write out",
-            characters=[("作", "작", "to make — as in 제작, 작업"),
-                        ("成", "성", "to complete — as in 완성, 구성")],
-            surfaces=["작성하고"],
         ),
         "서명": dict(
             hanja="署名", meaning="a signature",
@@ -380,11 +363,6 @@ CHAPTER = dict(
             characters=[("領", "령", "to receive, to lead — as in 대통령, 영토"),
                         ("收", "수", "to collect — as in 수입, 수거"),
                         ("證", "증", "certificate")],
-        ),
-        "연락처": dict(
-            hanja="連絡處", meaning="contact details",
-            characters=[("連絡", None, "contact, getting in touch"),
-                        ("處", "처", "a place — as in 처소, 부처")],
         ),
         "금액": dict(
             hanja="金額", meaning="an amount of money",
@@ -542,11 +520,6 @@ CHAPTER = dict(
             characters=[("弱", "약", "weak — as in 약점, 허약"),
                         ("者", "자", "person")],
         ),
-        "충분히": dict(
-            hanja="充分히", meaning="fully, sufficiently",
-            characters=[("充", "충", "to fill — as in 충족, 보충"),
-                        ("分", "분", "a part — as in 부분, 분리")],
-        ),
         "전입신고": dict(
             hanja="轉入申告", meaning="registering a move in",
             characters=[("轉入", None, "moving in — chapter 31’s 전입하다"),
@@ -561,7 +534,6 @@ CHAPTER = dict(
             notes=["Chapter 5 says to get it at the community service centre "
                    "so the deposit can be recovered safely."],
         ),
-        "집주인": dict(meaning="the landlord, the owner of the house"),
         "경매": dict(
             hanja="競賣", meaning="an auction",
             characters=[("競", "경", "to compete — as in 경쟁, 경기"),
@@ -684,6 +656,5 @@ CHAPTER = dict(
         "graphic on p. 180, the estate agent’s licence on p. 180 and the post "
         "office remittance poster on p. 181 are not reproduced; their "
         "captions are.",
-        "The review gaps on p. 181 are blank in the book and left blank here.",
     ],
 )
