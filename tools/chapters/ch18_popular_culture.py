@@ -50,7 +50,7 @@ CHAPTER = dict(
           "{수십} 편에 이른다. {사극}, 로맨스, 스릴러 등 {장르}도 다양하다. {시청자}들은 배우의 "
           "{대사}나 옷에도 관심을 많이 갖는데 이는 금방 유행되기도 한다."),
         PARAGRAPH("한국인은 음악과 노래도 좋아한다. 특히, 많은 사람들이 즐겨 듣거나 부를 수 있도록 "
-          "만들어진 노래인 ‘{가요}’를 즐겨 듣는다. 가요에는 {발라드}, 댄스, R&B, 힙합, "
+          "만들어진 노래인 ‘{가요}’를 즐겨 듣는다. 가요에는 발라드, 댄스, R&B, 힙합, "
           "{트로트} 등 다양한 장르가 있으며, {특정한|특정하다} 시기에 인기를 끄는 ‘{유행가}’도 "
           "자주 등장한다."),
         PARAGRAPH("영화도 한국의 중요한 대중문화 중 하나이다. 2000년대 무렵에 {멀티플렉스} 형태의 "
@@ -58,7 +58,7 @@ CHAPTER = dict(
           "한국에는 영화관이 약 500여 개 있으며, {연간} 영화관 관객 수는 2억 1639만 명으로 전 "
           "세계 5위에 {해당}한다. 또한 한국에서 {제작}한 영화는 한국뿐 아니라 해외 여러 "
           "나라에서 {상영}되고 있다."),
-        PARAGRAPH("스포츠에서는 {프로} 야구와 프로 축구, 프로 농구와 프로 배구가 인기가 높다. 야구와 "
+        PARAGRAPH("스포츠에서는 프로 야구와 프로 축구, 프로 농구와 프로 배구가 인기가 높다. 야구와 "
           "축구는 봄부터 가을, 농구와 배구는 가을부터 봄까지 경기가 진행된다."),
         FIGURE("드라마 ‘도깨비’ 포스터"),
 
@@ -101,21 +101,21 @@ CHAPTER = dict(
         HEADING(2, "세계인들이 좋아하는 한국 대중문화"),
         GLOSSARY(("예능 프로그램", "오락적인 내용으로 재미와 웃음을 주는 방송프로그램",
                "예능 프로그램")),
-        PARAGRAPH("한국 {가수}들이 해외로 {진출}하면서 K-POP(케이팝)의 성장도 눈에 {띈다|띄다}. "
+        PARAGRAPH("한국 가수들이 해외로 {진출}하면서 K-POP(케이팝)의 성장도 눈에 {띈다|띄다}. "
           "K-POP의 인기 {요인}으로는 가수들의 {매력적}인 {외모}와 스타일, 따라 부르기에 신나는 "
           "{가사}와 {리듬}, {뛰어난|뛰어나다} 춤 {실력}을 꼽을 수 있다. K-POP의 인기는 한국에 "
           "대한 {흥미}와 {호기심}으로 이어지면서 한국어와 한국문화를 배우는 외국인이 늘어나고 "
           "있다."),
         PARAGRAPH("한편, 비빔밥, 김치, {떡볶이}, 삼겹살, 불고기 등 여러 종류의 {특색} 있는 한국 음식에 "
-          "대해서도 외국인들은 큰 관심을 보이고 있다. 한국 음식은 줄여서 ‘{한식}’이라고 "
+          "대해서도 외국인들은 큰 관심을 보이고 있다. 한국 음식은 줄여서 ‘한식’이라고 "
           "부르는데, 외국인 {관광객}을 대상으로 전통 시장에서 한식을 {맛보거나|맛보다} 한식 "
-          "요리 만들기를 직접 {체험}해 볼 수 있는 프로그램도 인기를 끌고 있다."),
-        PARAGRAPH("또한 한국의 {스타}들이 하는 {화장법}이나 패션 등을 좋아하는 사람들이 늘어나고 있다. "
+          "요리 만들기를 직접 체험해 볼 수 있는 프로그램도 인기를 끌고 있다."),
+        PARAGRAPH("또한 한국의 스타들이 하는 {화장법}이나 패션 등을 좋아하는 사람들이 늘어나고 있다. "
           "이는 ‘K-BEAUTY’와 ‘K-FASHION’ 등 새로운 한류의 {유형}으로 {주목} 받고 있다."),
         PARAGRAPH("그 밖에 {태권도}를 중심으로 한 한국의 스포츠와 {독창적}이고 다양한 장르의 영화도 "
           "{꾸준한|꾸준하다} 관심을 받고 있다. 특히, 최근에 여러 한국 영화들이 주요 국제 "
           "{영화제}에서 {수상}함으로써 {작품성}도 인정받고 있다. 또한 드라마뿐 아니라 한국의 "
-          "{예능 프로그램} 형식이 해외로 수출되었고, {현지} 환경에 맞게 {리메이크}되어 큰 "
+          "{예능 프로그램} 형식이 해외로 수출되었고, {현지} 환경에 맞게 리메이크되어 큰 "
           "{호평}을 받고 있다."),
         FIGURE("2019 빌보드 뮤직 어워드에서 수상한 BTS(방탄소년단) (사진 출처: 〈연합뉴스〉)"),
 
@@ -291,13 +291,6 @@ CHAPTER = dict(
             meaning="to come to mind; to rise up",
             notes=["Of a thought surfacing and of the sun coming up alike."],
         ),
-        "한식": dict(
-            hanja="韓食", meaning="Korean food",
-            characters=[("韓", "한", "Korea — as in 한국, 한복, 한류"),
-                        ("食", "식", "food — as in 식사 “meal”, 한식당")],
-            notes=["Short for 한국 음식, and the name the state uses in "
-                   "promoting it abroad."],
-        ),
         "대중문화": dict(
             hanja="大衆文化", meaning="popular culture",
             characters=[("大", "대", "great — as in 대규모, 대학교"),
@@ -419,7 +412,6 @@ CHAPTER = dict(
             notes=["The general word for Korean popular song, older than "
                    "K-POP and wider: ballad, dance, trot all count."],
         ),
-        "발라드": dict(meaning="ballad"),
         "트로트": dict(
             meaning="trot",
             notes=["A Korean genre with a two-beat swing, from the foxtrot. "
@@ -469,12 +461,6 @@ CHAPTER = dict(
             hanja="上映", meaning="to screen, to show (a film)",
             characters=[("上", "상", "up, on — as in 상급, 향상"),
                         ("映", "영", "to project — as in 영화, 반영")],
-        ),
-        "프로": dict(
-            meaning="professional",
-            notes=["Short for the English “professional”. Its counterpart is "
-                   "아마추어. Not the 프로 of 프로그램, which is a different "
-                   "clipping."],
         ),
         "독특하다": dict(
             hanja="獨特하다", meaning="to be distinctive, singular",
@@ -588,11 +574,6 @@ CHAPTER = dict(
             characters=[("現", "현", "present, to appear — as in 현재, 현지"),
                         ("象", "상", "shape, image — as in 상징, 인상")],
         ),
-        "가수": dict(
-            hanja="歌手", meaning="a singer",
-            characters=[("歌", "가", "song — as in 가요, 유행가"),
-                        ("手", "수", "hand, a hand at — as in 선수 “player”")],
-        ),
         "진출": dict(
             hanja="進出", meaning="to advance into, to break into",
             characters=[("進", "진", "to advance — as in 진학, 진행"),
@@ -658,14 +639,6 @@ CHAPTER = dict(
                         ("光", "광", "light — as in 영광 “glory”, 관광")],
         ),
         "맛보다": dict(meaning="to taste, to sample"),
-        "체험": dict(
-            hanja="體驗", meaning="first-hand experience",
-            characters=[("體", "체", "body — as in 단체, 정체성"),
-                        ("驗", "험", "to test — as in 시험 “examination”")],
-            notes=["체험 is doing a thing oneself; 경험 is having been through "
-                   "it. Chapter 6's 농촌 체험 마을 is the same word."],
-        ),
-        "스타": dict(meaning="a star, a celebrity"),
         "화장법": dict(
             hanja="化粧法", meaning="a way of making up, cosmetic technique",
             characters=[("粧", "장", "to adorn"),
@@ -723,7 +696,6 @@ CHAPTER = dict(
             characters=[("現", "현", "present — as in 현재, 현상"),
                         ("地", "지", "place — as in 지역, 지위")],
         ),
-        "리메이크": dict(meaning="a remake"),
         "호평": dict(
             hanja="好評", meaning="a favourable reception",
             characters=[("好", "호", "good, to like — as in 호기심, 선호하다"),

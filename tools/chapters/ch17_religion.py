@@ -46,19 +46,19 @@ CHAPTER = dict(
               ("서민", "신분이 높지 않은 사람이나 나랏일을 맡아 하지 않는 사람", "서민"),
               ("문화유산", "조상이 남긴 문화 중에서 후손에게 물려줄 만한 가치가 있는 것",
                "문화유산")),
-        PARAGRAPH("{불교}는 {석가모니}가 만든 종교로, 중국을 거쳐 4세기 무렵 {삼국 시대}에 들어왔다. "
-          "{자비}를 강조하는 불교는 왕과 {귀족}은 물론 {서민}의 삶에도 {깊숙이|깊숙하다} "
+        PARAGRAPH("{불교}는 {석가모니}가 만든 종교로, 중국을 {거쳐|거치다} 4세기 {무렵} {삼국 시대}에 들어왔다. "
+          "{자비}를 {강조하는|강조하다} 불교는 왕과 {귀족}은 물론 {서민}의 삶에도 {깊숙이|깊숙하다} "
           "{파고들었다|파고들다}. {절}, {탑}, {불상} 등은 불교와 관련된 {문화유산}이다. "
-          "{유교}도 중국을 통해 삼국 시대에 {전파}되었다. 특히 14세기 무렵 이후 한국인의 "
-          "생활에 큰 영향을 미쳤다. 부모에 대한 {효도}, 웃어른에 대한 {예의}, 가족의 {결속}, "
-          "조상을 위한 {제사} 등 유교의 전통은 현재까지도 남아 있다. 또한 유교 문화를 "
+          "{유교}도 중국을 통해 삼국 시대에 {전파}되었다. 특히 14세기 {무렵} 이후 한국인의 "
+          "생활에 큰 영향을 미쳤다. 부모에 대한 {효도}, {웃어른}에 대한 {예의}, 가족의 {결속}, "
+          "{조상}을 위한 {제사} 등 유교의 전통은 현재까지도 남아 있다. 또한 유교 문화를 "
           "{토대}로 만들어진 교육 기관인 {향교}는 지금도 전국 곳곳에서 일부 운영되고 있다."),
         FIGURE("전국 각지에 있는 향교"),
 
         HEADING(2, "천주교와 개신교"),
         GLOSSARY(("서양", "유럽과 아메리카 지역", "서양")),
-        PARAGRAPH("{기독교}는 {예수}의 가르침을 따르고 사랑의 {실천}을 강조하는 종교로, "
-          "{천주교}(가톨릭)와 {개신교}로 나뉜다. 천주교는 17세기 무렵에 {서양}의 학문과 함께 "
+        PARAGRAPH("{기독교}는 {예수}의 가르침을 따르고 사랑의 {실천}을 {강조하는|강조하다} 종교로, "
+          "{천주교}(가톨릭)와 {개신교}로 나뉜다. 천주교는 17세기 {무렵}에 {서양}의 {학문}과 함께 "
           "들어왔다. 천주교를 종교가 아니라 학문으로 받아들인 {사례}는 한국이 거의 "
           "{유일하다}. 천주교 {미사}는 {성당}에서 드린다."),
         PARAGRAPH("개신교는 19세기에 서양의 {선교사}를 통해서 한국에 전파되었다. 개신교가 전파되는 "
@@ -92,8 +92,8 @@ CHAPTER = dict(
           "종교가 없다고 응답한 ‘{무교}’의 경우는 56.1%이다. 나라에서 정한 종교인 {국교}나 "
           "특별히 {절대 다수}를 차지하고 있는 종교가 없다. 한국에서 종교는 다음과 같은 "
           "{기능}을 하고 있다. 첫째, {개인적} {차원}에서 종교는 {안정감}과 {행복감}을 "
-          "제공한다. 둘째, 사회적 차원에서 종교는 공동체의 {유지}와 발전에 도움을 준다. 많은 "
-          "종교 {단체}가 각자의 {교리}를 실천하는 과정에서 어려운 이웃을 돕는 활동을 하거나 "
+          "제공한다. 둘째, 사회적 차원에서 종교는 {공동체}의 {유지}와 발전에 도움을 준다. 많은 "
+          "종교 {단체}가 각자의 {교리}를 {실천하는|실천} 과정에서 어려운 이웃을 돕는 활동을 하거나 "
           "외국인을 위한 교육과 문화 서비스를 지원하고 있는 것이 대표적인 예이다."),
 
         HEADING(2, "종교 간의 상호 배려와 존중"),
@@ -105,7 +105,7 @@ CHAPTER = dict(
           "다른 종교의 기념일을 축하해 주기도 한다."),
         PARAGRAPH("그리고 {대통령}은 종교 {지도자}들과 만남을 가지면서 한국 사회 {통합}에 대한 "
           "{논의}와 함께 {국정} 운영에 대한 {지혜}를 구하기도 한다. 한국의 종교는 앞으로 더욱 "
-          "{다양성}을 띨 것으로 예상된다. 이와 함께 종교 간의 {상호} {배려}와 {존중}이 더욱 "
+          "{다양성}을 {띨|띠다} 것으로 예상된다. 이와 함께 종교 간의 {상호} {배려}와 {존중}이 더욱 "
           "강조되어야 한다."),
         PARAGRAPH("한국 사회 {구성원}은 종교가 있든 없든 종교에 대한 {타인}의 생각을 이해하고, "
           "종교라는 것이 각자가 선택한 삶의 방식 중 하나라는 점을 {인식}하는 {태도}를 가져야 "
@@ -358,6 +358,16 @@ CHAPTER = dict(
             notes=["The characters transcribe the Sanskrit rather than "
                    "translating it. Shortened to 석가."],
         ),
+        "거치다": dict(
+            meaning="to go through, to pass by way of",
+            notes=["중국을 거쳐 “by way of China”. Also of stages: 과정을 "
+                   "거치다 “to go through a process”."],
+        ),
+        "무렵": dict(
+            meaning="around the time of",
+            notes=["A bound noun: 4세기 무렵 “around the 4th century”, 저녁 "
+                   "무렵 “towards evening”."],
+        ),
         "삼국 시대": dict(
             hanja="三國時代", meaning="the Three Kingdoms period",
             characters=[("三", "삼", "three"),
@@ -416,6 +426,11 @@ CHAPTER = dict(
             characters=[("孝", "효", "filial piety — chapter 13's 효"),
                         ("道", "도", "way — as in 도로, 황도")],
         ),
+        "웃어른": dict(
+            meaning="one's elders",
+            notes=["Pure Korean: 웃- “upper” + 어른 “adult”. Not 윗어른 — this "
+                   "is one of the few words where the 웃- form is standard."],
+        ),
         "예의": dict(
             hanja="禮儀", meaning="manners, courtesy",
             characters=[("禮", "례", "rite, courtesy — as in 예절, 의례"),
@@ -425,6 +440,11 @@ CHAPTER = dict(
             hanja="結束", meaning="solidarity, binding together",
             characters=[("結", "결", "to tie — as in 결혼, 체결"),
                         ("束", "속", "a bundle, to bind — as in 약속 “promise”")],
+        ),
+        "조상": dict(
+            hanja="祖上", meaning="an ancestor",
+            characters=[("祖", "조", "forefather — as in 조부 “grandfather”"),
+                        ("上", "상", "above — as in 상급 “higher grade”")],
         ),
         "토대": dict(
             hanja="土臺", meaning="a foundation, a basis",
@@ -453,6 +473,11 @@ CHAPTER = dict(
             characters=[("實", "실", "real — as in 사실 “fact”, 실질적"),
                         ("踐", "천", "to tread, to carry out")],
         ),
+        "강조하다": dict(
+            hanja="強調", meaning="to emphasise, to stress",
+            characters=[("強", "강", "strong — as in 강하다 “to be strong”"),
+                        ("調", "조", "tune, tone — as in 조사 “survey”, 조절")],
+        ),
         "천주교": dict(
             hanja="天主敎", meaning="Catholicism",
             characters=[("天", "천", "heaven — as in 천지신명"),
@@ -471,6 +496,11 @@ CHAPTER = dict(
             hanja="西洋", meaning="the West",
             characters=[("西", "서", "west — as in 서울의 서, 서부"),
                         ("洋", "양", "ocean — as in 양옥 “Western-style house”")],
+        ),
+        "학문": dict(
+            hanja="學問", meaning="learning, scholarship; a field of study",
+            characters=[("學", "학", "to learn — as in 학교, 학생"),
+                        ("問", "문", "to ask — as in 질문 “question”, 문제")],
         ),
         "유일하다": dict(
             hanja="唯一하다", meaning="to be the only one",
@@ -651,6 +681,14 @@ CHAPTER = dict(
             characters=[("樣", "양", "manner, shape — as in 모양 “shape”"),
                         ("性", "성", "nature, -ness — as in 전문성, 실용성")],
         ),
+        "띠다": dict(
+            meaning="to take on, to have (a quality, a colour, a duty)",
+            notes=["Pure Korean, from 띠 “a belt”: to wear something about "
+                   "oneself. 다양성을 띠다 “to take on diversity”, 붉은빛을 띠다 "
+                   "“to have a reddish tinge”, 임무를 띠다 “to be charged with "
+                   "a task”.",
+                   "Not 띄다 “to catch the eye”, as in 눈에 띄다."],
+        ),
         "상호": dict(
             hanja="相互", meaning="mutual, each other",
             characters=[("相", "상", "mutual — as in 상부상조"),
@@ -778,6 +816,12 @@ CHAPTER = dict(
             hanja="保護", meaning="protection",
             characters=[("保", "보", "to protect — as in 보장, 보험"),
                         ("護", "호", "to guard — as in 간호 “nursing”")],
+        ),
+        "공동체": dict(
+            hanja="共同體", meaning="a community",
+            characters=[("共", "공", "together — as in 공공 “public”, 공통"),
+                        ("同", "동", "same — as in 동시 “same time”, 동의"),
+                        ("體", "체", "body — as in 단체 “group”, 신체")],
         ),
         "유지": dict(
             hanja="維持", meaning="to maintain, to keep up",

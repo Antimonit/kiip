@@ -393,12 +393,7 @@ KIIP.chapter({
      "word": "가요",
      "annotation": "가요"
     },
-    "’를 즐겨 듣는다. 가요에는 ",
-    {
-     "word": "발라드",
-     "annotation": "발라드"
-    },
-    ", 댄스, R&B, 힙합, ",
+    "’를 즐겨 듣는다. 가요에는 발라드, 댄스, R&B, 힙합, ",
     {
      "word": "트로트",
      "annotation": "트로트"
@@ -436,12 +431,7 @@ KIIP.chapter({
     },
     {
      "spans": [
-      "가요에는 ",
-      {
-       "word": "발라드",
-       "annotation": "발라드"
-      },
-      ", 댄스, R&B, 힙합, ",
+      "가요에는 발라드, 댄스, R&B, 힙합, ",
       {
        "word": "트로트",
        "annotation": "트로트"
@@ -578,23 +568,13 @@ KIIP.chapter({
   {
    "type": "paragraph",
    "spans": [
-    "스포츠에서는 ",
-    {
-     "word": "프로",
-     "annotation": "프로"
-    },
-    " 야구와 프로 축구, 프로 농구와 프로 배구가 인기가 높다. 야구와 축구는 봄부터 가을, 농구와 배구는 가을부터 봄까지 경기가 진행된다."
+    "스포츠에서는 프로 야구와 프로 축구, 프로 농구와 프로 배구가 인기가 높다. 야구와 축구는 봄부터 가을, 농구와 배구는 가을부터 봄까지 경기가 진행된다."
    ],
    "translation": "In sport, professional baseball and football, basketball and volleyball are all popular. Baseball and football run from spring to autumn, basketball and volleyball from autumn to spring.",
    "sentences": [
     {
      "spans": [
-      "스포츠에서는 ",
-      {
-       "word": "프로",
-       "annotation": "프로"
-      },
-      " 야구와 프로 축구, 프로 농구와 프로 배구가 인기가 높다. "
+      "스포츠에서는 프로 야구와 프로 축구, 프로 농구와 프로 배구가 인기가 높다. "
      ],
      "translation": "In sport, professional baseball and football, basketball and volleyball are all popular."
     },
@@ -988,12 +968,7 @@ KIIP.chapter({
   {
    "type": "paragraph",
    "spans": [
-    "한국 ",
-    {
-     "word": "가수",
-     "annotation": "가수"
-    },
-    "들이 해외로 ",
+    "한국 가수들이 해외로 ",
     {
      "word": "진출",
      "annotation": "진출"
@@ -1054,12 +1029,7 @@ KIIP.chapter({
    "sentences": [
     {
      "spans": [
-      "한국 ",
-      {
-       "word": "가수",
-       "annotation": "가수"
-      },
-      "들이 해외로 ",
+      "한국 가수들이 해외로 ",
       {
        "word": "진출",
        "annotation": "진출"
@@ -1145,12 +1115,7 @@ KIIP.chapter({
      "word": "특색",
      "annotation": "특색"
     },
-    " 있는 한국 음식에 대해서도 외국인들은 큰 관심을 보이고 있다. 한국 음식은 줄여서 ‘",
-    {
-     "word": "한식",
-     "annotation": "한식"
-    },
-    "’이라고 부르는데, 외국인 ",
+    " 있는 한국 음식에 대해서도 외국인들은 큰 관심을 보이고 있다. 한국 음식은 줄여서 ‘한식’이라고 부르는데, 외국인 ",
     {
      "word": "관광객",
      "annotation": "관광객"
@@ -1160,12 +1125,7 @@ KIIP.chapter({
      "word": "맛보거나",
      "annotation": "맛보다"
     },
-    " 한식 요리 만들기를 직접 ",
-    {
-     "word": "체험",
-     "annotation": "체험"
-    },
-    "해 볼 수 있는 프로그램도 인기를 끌고 있다."
+    " 한식 요리 만들기를 직접 체험해 볼 수 있는 프로그램도 인기를 끌고 있다."
    ],
    "translation": "Foreigners also show great interest in the several kinds of distinctive Korean food — 비빔밥, kimchi, 떡볶이, 삼겹살, 불고기. Korean food is called 한식 for short, and programmes aimed at foreign visitors, tasting 한식 at a traditional market or trying their hand at cooking it, are popular too.",
    "sentences": [
@@ -1187,12 +1147,7 @@ KIIP.chapter({
     },
     {
      "spans": [
-      "한국 음식은 줄여서 ‘",
-      {
-       "word": "한식",
-       "annotation": "한식"
-      },
-      "’이라고 부르는데, 외국인 ",
+      "한국 음식은 줄여서 ‘한식’이라고 부르는데, 외국인 ",
       {
        "word": "관광객",
        "annotation": "관광객"
@@ -1202,12 +1157,7 @@ KIIP.chapter({
        "word": "맛보거나",
        "annotation": "맛보다"
       },
-      " 한식 요리 만들기를 직접 ",
-      {
-       "word": "체험",
-       "annotation": "체험"
-      },
-      "해 볼 수 있는 프로그램도 인기를 끌고 있다."
+      " 한식 요리 만들기를 직접 체험해 볼 수 있는 프로그램도 인기를 끌고 있다."
      ],
      "translation": "Korean food is called 한식 for short, and programmes aimed at foreign visitors, tasting 한식 at a traditional market or trying their hand at cooking it, are popular too."
     }
@@ -1216,12 +1166,7 @@ KIIP.chapter({
   {
    "type": "paragraph",
    "spans": [
-    "또한 한국의 ",
-    {
-     "word": "스타",
-     "annotation": "스타"
-    },
-    "들이 하는 ",
+    "또한 한국의 스타들이 하는 ",
     {
      "word": "화장법",
      "annotation": "화장법"
@@ -1242,12 +1187,7 @@ KIIP.chapter({
    "sentences": [
     {
      "spans": [
-      "또한 한국의 ",
-      {
-       "word": "스타",
-       "annotation": "스타"
-      },
-      "들이 하는 ",
+      "또한 한국의 스타들이 하는 ",
       {
        "word": "화장법",
        "annotation": "화장법"
@@ -1317,12 +1257,7 @@ KIIP.chapter({
      "word": "현지",
      "annotation": "현지"
     },
-    " 환경에 맞게 ",
-    {
-     "word": "리메이크",
-     "annotation": "리메이크"
-    },
-    "되어 큰 ",
+    " 환경에 맞게 리메이크되어 큰 ",
     {
      "word": "호평",
      "annotation": "호평"
@@ -1385,12 +1320,7 @@ KIIP.chapter({
        "word": "현지",
        "annotation": "현지"
       },
-      " 환경에 맞게 ",
-      {
-       "word": "리메이크",
-       "annotation": "리메이크"
-      },
-      "되어 큰 ",
+      " 환경에 맞게 리메이크되어 큰 ",
       {
        "word": "호평",
        "annotation": "호평"
@@ -1994,27 +1924,6 @@ KIIP.chapter({
    ],
    "surfaces": []
   },
-  "한식": {
-   "headword": "한식",
-   "hanja": "韓食",
-   "meaning": "Korean food",
-   "characters": [
-    {
-     "char": "韓",
-     "reading": "한",
-     "gloss": "Korea — as in 한국, 한복, 한류"
-    },
-    {
-     "char": "食",
-     "reading": "식",
-     "gloss": "food — as in 식사 “meal”, 한식당"
-    }
-   ],
-   "notes": [
-    "Short for 한국 음식, and the name the state uses in promoting it abroad."
-   ],
-   "surfaces": []
-  },
   "대중문화": {
    "headword": "대중문화",
    "hanja": "大衆文化",
@@ -2402,14 +2311,6 @@ KIIP.chapter({
    ],
    "surfaces": []
   },
-  "발라드": {
-   "headword": "발라드",
-   "hanja": null,
-   "meaning": "ballad",
-   "characters": [],
-   "notes": [],
-   "surfaces": []
-  },
   "트로트": {
    "headword": "트로트",
    "hanja": null,
@@ -2576,16 +2477,6 @@ KIIP.chapter({
     }
    ],
    "notes": [],
-   "surfaces": []
-  },
-  "프로": {
-   "headword": "프로",
-   "hanja": null,
-   "meaning": "professional",
-   "characters": [],
-   "notes": [
-    "Short for the English “professional”. Its counterpart is 아마추어. Not the 프로 of 프로그램, which is a different clipping."
-   ],
    "surfaces": []
   },
   "독특하다": {
@@ -2940,25 +2831,6 @@ KIIP.chapter({
    "notes": [],
    "surfaces": []
   },
-  "가수": {
-   "headword": "가수",
-   "hanja": "歌手",
-   "meaning": "a singer",
-   "characters": [
-    {
-     "char": "歌",
-     "reading": "가",
-     "gloss": "song — as in 가요, 유행가"
-    },
-    {
-     "char": "手",
-     "reading": "수",
-     "gloss": "hand, a hand at — as in 선수 “player”"
-    }
-   ],
-   "notes": [],
-   "surfaces": []
-  },
   "진출": {
    "headword": "진출",
    "hanja": "進出",
@@ -3195,35 +3067,6 @@ KIIP.chapter({
    "notes": [],
    "surfaces": []
   },
-  "체험": {
-   "headword": "체험",
-   "hanja": "體驗",
-   "meaning": "first-hand experience",
-   "characters": [
-    {
-     "char": "體",
-     "reading": "체",
-     "gloss": "body — as in 단체, 정체성"
-    },
-    {
-     "char": "驗",
-     "reading": "험",
-     "gloss": "to test — as in 시험 “examination”"
-    }
-   ],
-   "notes": [
-    "체험 is doing a thing oneself; 경험 is having been through it. Chapter 6's 농촌 체험 마을 is the same word."
-   ],
-   "surfaces": []
-  },
-  "스타": {
-   "headword": "스타",
-   "hanja": null,
-   "meaning": "a star, a celebrity",
-   "characters": [],
-   "notes": [],
-   "surfaces": []
-  },
   "화장법": {
    "headword": "화장법",
    "hanja": "化粧法",
@@ -3422,14 +3265,6 @@ KIIP.chapter({
      "gloss": "place — as in 지역, 지위"
     }
    ],
-   "notes": [],
-   "surfaces": []
-  },
-  "리메이크": {
-   "headword": "리메이크",
-   "hanja": null,
-   "meaning": "a remake",
-   "characters": [],
    "notes": [],
    "surfaces": []
   },

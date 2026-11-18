@@ -289,7 +289,17 @@ KIIP.chapter({
      "word": "종교",
      "annotation": "종교"
     },
-    "로, 중국을 거쳐 4세기 무렵 ",
+    "로, 중국을 ",
+    {
+     "word": "거쳐",
+     "annotation": "거치다"
+    },
+    " 4세기 ",
+    {
+     "word": "무렵",
+     "annotation": "무렵"
+    },
+    " ",
     {
      "word": "삼국 시대",
      "annotation": "삼국 시대"
@@ -299,7 +309,12 @@ KIIP.chapter({
      "word": "자비",
      "annotation": "자비"
     },
-    "를 강조하는 불교는 왕과 ",
+    "를 ",
+    {
+     "word": "강조하는",
+     "annotation": "강조하다"
+    },
+    " 불교는 왕과 ",
     {
      "word": "귀족",
      "annotation": "귀족"
@@ -349,12 +364,22 @@ KIIP.chapter({
      "word": "전파",
      "annotation": "전파"
     },
-    "되었다. 특히 14세기 무렵 이후 한국인의 생활에 큰 영향을 미쳤다. 부모에 대한 ",
+    "되었다. 특히 14세기 ",
+    {
+     "word": "무렵",
+     "annotation": "무렵"
+    },
+    " 이후 한국인의 생활에 큰 영향을 미쳤다. 부모에 대한 ",
     {
      "word": "효도",
      "annotation": "효도"
     },
-    ", 웃어른에 대한 ",
+    ", ",
+    {
+     "word": "웃어른",
+     "annotation": "웃어른"
+    },
+    "에 대한 ",
     {
      "word": "예의",
      "annotation": "예의"
@@ -364,7 +389,12 @@ KIIP.chapter({
      "word": "결속",
      "annotation": "결속"
     },
-    ", 조상을 위한 ",
+    ", ",
+    {
+     "word": "조상",
+     "annotation": "조상"
+    },
+    "을 위한 ",
     {
      "word": "제사",
      "annotation": "제사"
@@ -399,7 +429,17 @@ KIIP.chapter({
        "word": "종교",
        "annotation": "종교"
       },
-      "로, 중국을 거쳐 4세기 무렵 ",
+      "로, 중국을 ",
+      {
+       "word": "거쳐",
+       "annotation": "거치다"
+      },
+      " 4세기 ",
+      {
+       "word": "무렵",
+       "annotation": "무렵"
+      },
+      " ",
       {
        "word": "삼국 시대",
        "annotation": "삼국 시대"
@@ -414,7 +454,12 @@ KIIP.chapter({
        "word": "자비",
        "annotation": "자비"
       },
-      "를 강조하는 불교는 왕과 ",
+      "를 ",
+      {
+       "word": "강조하는",
+       "annotation": "강조하다"
+      },
+      " 불교는 왕과 ",
       {
        "word": "귀족",
        "annotation": "귀족"
@@ -480,7 +525,12 @@ KIIP.chapter({
     },
     {
      "spans": [
-      "특히 14세기 무렵 이후 한국인의 생활에 큰 영향을 미쳤다. "
+      "특히 14세기 ",
+      {
+       "word": "무렵",
+       "annotation": "무렵"
+      },
+      " 이후 한국인의 생활에 큰 영향을 미쳤다. "
      ],
      "translation": "From the fourteenth century onwards in particular it bore heavily on how Koreans lived."
     },
@@ -491,7 +541,12 @@ KIIP.chapter({
        "word": "효도",
        "annotation": "효도"
       },
-      ", 웃어른에 대한 ",
+      ", ",
+      {
+       "word": "웃어른",
+       "annotation": "웃어른"
+      },
+      "에 대한 ",
       {
        "word": "예의",
        "annotation": "예의"
@@ -501,7 +556,12 @@ KIIP.chapter({
        "word": "결속",
        "annotation": "결속"
       },
-      ", 조상을 위한 ",
+      ", ",
+      {
+       "word": "조상",
+       "annotation": "조상"
+      },
+      "을 위한 ",
       {
        "word": "제사",
        "annotation": "제사"
@@ -567,7 +627,12 @@ KIIP.chapter({
      "word": "실천",
      "annotation": "실천"
     },
-    "을 강조하는 종교로, ",
+    "을 ",
+    {
+     "word": "강조하는",
+     "annotation": "강조하다"
+    },
+    " 종교로, ",
     {
      "word": "천주교",
      "annotation": "천주교"
@@ -577,12 +642,22 @@ KIIP.chapter({
      "word": "개신교",
      "annotation": "개신교"
     },
-    "로 나뉜다. 천주교는 17세기 무렵에 ",
+    "로 나뉜다. 천주교는 17세기 ",
+    {
+     "word": "무렵",
+     "annotation": "무렵"
+    },
+    "에 ",
     {
      "word": "서양",
      "annotation": "서양"
     },
-    "의 학문과 함께 들어왔다. 천주교를 종교가 아니라 학문으로 받아들인 ",
+    "의 ",
+    {
+     "word": "학문",
+     "annotation": "학문"
+    },
+    "과 함께 들어왔다. 천주교를 종교가 아니라 학문으로 받아들인 ",
     {
      "word": "사례",
      "annotation": "사례"
@@ -622,7 +697,12 @@ KIIP.chapter({
        "word": "실천",
        "annotation": "실천"
       },
-      "을 강조하는 종교로, ",
+      "을 ",
+      {
+       "word": "강조하는",
+       "annotation": "강조하다"
+      },
+      " 종교로, ",
       {
        "word": "천주교",
        "annotation": "천주교"
@@ -638,12 +718,22 @@ KIIP.chapter({
     },
     {
      "spans": [
-      "천주교는 17세기 무렵에 ",
+      "천주교는 17세기 ",
+      {
+       "word": "무렵",
+       "annotation": "무렵"
+      },
+      "에 ",
       {
        "word": "서양",
        "annotation": "서양"
       },
-      "의 학문과 함께 들어왔다. "
+      "의 ",
+      {
+       "word": "학문",
+       "annotation": "학문"
+      },
+      "과 함께 들어왔다. "
      ],
      "translation": "Catholicism arrived around the seventeenth century together with Western learning."
     },
@@ -996,7 +1086,12 @@ KIIP.chapter({
      "word": "행복감",
      "annotation": "행복감"
     },
-    "을 제공한다. 둘째, 사회적 차원에서 종교는 공동체의 ",
+    "을 제공한다. 둘째, 사회적 차원에서 종교는 ",
+    {
+     "word": "공동체",
+     "annotation": "공동체"
+    },
+    "의 ",
     {
      "word": "유지",
      "annotation": "유지"
@@ -1011,7 +1106,12 @@ KIIP.chapter({
      "word": "교리",
      "annotation": "교리"
     },
-    "를 실천하는 과정에서 어려운 이웃을 돕는 활동을 하거나 외국인을 위한 교육과 문화 서비스를 지원하고 있는 것이 대표적인 예이다."
+    "를 ",
+    {
+     "word": "실천하는",
+     "annotation": "실천"
+    },
+    " 과정에서 어려운 이웃을 돕는 활동을 하거나 외국인을 위한 교육과 문화 서비스를 지원하고 있는 것이 대표적인 예이다."
    ],
    "translation": "Korea is a country in which one may believe freely in whatever religion one wishes. By the population survey of 2015, 43.9% of Koreans answered that they had a religion and 56.1% answered that they had none. There is no state religion set by the country, and no religion holding an outright majority. Religion serves two functions here. First, for the individual, it offers a sense of steadiness and of happiness. Second, at the level of society, it helps hold a community together and carry it forward. The clearest instance is the many religious bodies that, in putting their own doctrine into practice, work to help neighbours in difficulty or support education and cultural services for foreign residents.",
    "sentences": [
@@ -1092,7 +1192,12 @@ KIIP.chapter({
     },
     {
      "spans": [
-      "둘째, 사회적 차원에서 종교는 공동체의 ",
+      "둘째, 사회적 차원에서 종교는 ",
+      {
+       "word": "공동체",
+       "annotation": "공동체"
+      },
+      "의 ",
       {
        "word": "유지",
        "annotation": "유지"
@@ -1113,7 +1218,12 @@ KIIP.chapter({
        "word": "교리",
        "annotation": "교리"
       },
-      "를 실천하는 과정에서 어려운 이웃을 돕는 활동을 하거나 외국인을 위한 교육과 문화 서비스를 지원하고 있는 것이 대표적인 예이다."
+      "를 ",
+      {
+       "word": "실천하는",
+       "annotation": "실천"
+      },
+      " 과정에서 어려운 이웃을 돕는 활동을 하거나 외국인을 위한 교육과 문화 서비스를 지원하고 있는 것이 대표적인 예이다."
      ],
      "translation": "The clearest instance is the many religious bodies that, in putting their own doctrine into practice, work to help neighbours in difficulty or support education and cultural services for foreign residents."
     }
@@ -1267,7 +1377,12 @@ KIIP.chapter({
      "word": "다양성",
      "annotation": "다양성"
     },
-    "을 띨 것으로 예상된다. 이와 함께 종교 간의 ",
+    "을 ",
+    {
+     "word": "띨",
+     "annotation": "띠다"
+    },
+    " 것으로 예상된다. 이와 함께 종교 간의 ",
     {
      "word": "상호",
      "annotation": "상호"
@@ -1329,7 +1444,12 @@ KIIP.chapter({
        "word": "다양성",
        "annotation": "다양성"
       },
-      "을 띨 것으로 예상된다. "
+      "을 ",
+      {
+       "word": "띨",
+       "annotation": "띠다"
+      },
+      " 것으로 예상된다. "
      ],
      "translation": "Religion in Korea is expected to grow more various still."
     },
@@ -2112,6 +2232,26 @@ KIIP.chapter({
    ],
    "surfaces": []
   },
+  "거치다": {
+   "headword": "거치다",
+   "hanja": null,
+   "meaning": "to go through, to pass by way of",
+   "characters": [],
+   "notes": [
+    "중국을 거쳐 “by way of China”. Also of stages: 과정을 거치다 “to go through a process”."
+   ],
+   "surfaces": []
+  },
+  "무렵": {
+   "headword": "무렵",
+   "hanja": null,
+   "meaning": "around the time of",
+   "characters": [],
+   "notes": [
+    "A bound noun: 4세기 무렵 “around the 4th century”, 저녁 무렵 “towards evening”."
+   ],
+   "surfaces": []
+  },
   "삼국 시대": {
    "headword": "삼국 시대",
    "hanja": "三國時代",
@@ -2305,6 +2445,16 @@ KIIP.chapter({
    "notes": [],
    "surfaces": []
   },
+  "웃어른": {
+   "headword": "웃어른",
+   "hanja": null,
+   "meaning": "one's elders",
+   "characters": [],
+   "notes": [
+    "Pure Korean: 웃- “upper” + 어른 “adult”. Not 윗어른 — this is one of the few words where the 웃- form is standard."
+   ],
+   "surfaces": []
+  },
   "예의": {
    "headword": "예의",
    "hanja": "禮儀",
@@ -2338,6 +2488,25 @@ KIIP.chapter({
      "char": "束",
      "reading": "속",
      "gloss": "a bundle, to bind — as in 약속 “promise”"
+    }
+   ],
+   "notes": [],
+   "surfaces": []
+  },
+  "조상": {
+   "headword": "조상",
+   "hanja": "祖上",
+   "meaning": "an ancestor",
+   "characters": [
+    {
+     "char": "祖",
+     "reading": "조",
+     "gloss": "forefather — as in 조부 “grandfather”"
+    },
+    {
+     "char": "上",
+     "reading": "상",
+     "gloss": "above — as in 상급 “higher grade”"
     }
    ],
    "notes": [],
@@ -2431,6 +2600,25 @@ KIIP.chapter({
    "notes": [],
    "surfaces": []
   },
+  "강조하다": {
+   "headword": "강조하다",
+   "hanja": "強調",
+   "meaning": "to emphasise, to stress",
+   "characters": [
+    {
+     "char": "強",
+     "reading": "강",
+     "gloss": "strong — as in 강하다 “to be strong”"
+    },
+    {
+     "char": "調",
+     "reading": "조",
+     "gloss": "tune, tone — as in 조사 “survey”, 조절"
+    }
+   ],
+   "notes": [],
+   "surfaces": []
+  },
   "천주교": {
    "headword": "천주교",
    "hanja": "天主敎",
@@ -2487,6 +2675,25 @@ KIIP.chapter({
      "char": "洋",
      "reading": "양",
      "gloss": "ocean — as in 양옥 “Western-style house”"
+    }
+   ],
+   "notes": [],
+   "surfaces": []
+  },
+  "학문": {
+   "headword": "학문",
+   "hanja": "學問",
+   "meaning": "learning, scholarship; a field of study",
+   "characters": [
+    {
+     "char": "學",
+     "reading": "학",
+     "gloss": "to learn — as in 학교, 학생"
+    },
+    {
+     "char": "問",
+     "reading": "문",
+     "gloss": "to ask — as in 질문 “question”, 문제"
     }
    ],
    "notes": [],
@@ -3099,6 +3306,17 @@ KIIP.chapter({
    "notes": [],
    "surfaces": []
   },
+  "띠다": {
+   "headword": "띠다",
+   "hanja": null,
+   "meaning": "to take on, to have (a quality, a colour, a duty)",
+   "characters": [],
+   "notes": [
+    "Pure Korean, from 띠 “a belt”: to wear something about oneself. 다양성을 띠다 “to take on diversity”, 붉은빛을 띠다 “to have a reddish tinge”, 임무를 띠다 “to be charged with a task”.",
+    "Not 띄다 “to catch the eye”, as in 눈에 띄다."
+   ],
+   "surfaces": []
+  },
   "상호": {
    "headword": "상호",
    "hanja": "相互",
@@ -3558,6 +3776,30 @@ KIIP.chapter({
      "char": "護",
      "reading": "호",
      "gloss": "to guard — as in 간호 “nursing”"
+    }
+   ],
+   "notes": [],
+   "surfaces": []
+  },
+  "공동체": {
+   "headword": "공동체",
+   "hanja": "共同體",
+   "meaning": "a community",
+   "characters": [
+    {
+     "char": "共",
+     "reading": "공",
+     "gloss": "together — as in 공공 “public”, 공통"
+    },
+    {
+     "char": "同",
+     "reading": "동",
+     "gloss": "same — as in 동시 “same time”, 동의"
+    },
+    {
+     "char": "體",
+     "reading": "체",
+     "gloss": "body — as in 단체 “group”, 신체"
     }
    ],
    "notes": [],
