@@ -116,42 +116,48 @@ KIIP.chapter({
      "definition": [
       "일자리를 구하기 어려움"
      ],
-     "annotation": "취업난"
+     "annotation": "취업난",
+     "translation": "the difficulty of finding a job"
     },
     {
      "term": "은퇴",
      "definition": [
       "맡은 일에서 물러남"
      ],
-     "annotation": "은퇴"
+     "annotation": "은퇴",
+     "translation": "stepping down from the work one had"
     },
     {
      "term": "자아실현",
      "definition": [
       "개인의 능력을 발휘하고 가치를 이루어 냄"
      ],
-     "annotation": "자아실현"
+     "annotation": "자아실현",
+     "translation": "bringing out one's abilities and achieving something of worth"
     },
     {
      "term": "사회 공헌",
      "definition": [
       "사회의 발전에 도움을 줌"
      ],
-     "annotation": "사회 공헌"
+     "annotation": "사회 공헌",
+     "translation": "helping society to develop"
     },
     {
      "term": "공기업",
      "definition": [
       "국가나 지방자치단체가 사회 공공의 복리를 증진하기 위하여 경영하는 기업"
      ],
-     "annotation": "공기업"
+     "annotation": "공기업",
+     "translation": "an enterprise run by the state or a local government to promote the public good"
     },
     {
      "term": "임금",
      "definition": [
       "어떤 직장에서 계속 일하는 사람이 일의 대가로 받는 돈"
      ],
-     "annotation": "임금"
+     "annotation": "임금",
+     "translation": "the money a person who works steadily at a workplace receives in return for the work"
     }
    ]
   },
@@ -336,21 +342,24 @@ KIIP.chapter({
      "definition": [
       "이미 결혼함"
      ],
-     "annotation": "기혼"
+     "annotation": "기혼",
+     "translation": "being already married"
     },
     {
      "term": "경력 단절",
      "definition": [
       "공부나 직장을 그만두고 나서 새로운 직장에 들어가기까지 경력이 비어있는 상태"
      ],
-     "annotation": "경력 단절"
+     "annotation": "경력 단절",
+     "translation": "a gap in one's career between leaving study or a job and entering a new job"
     },
     {
      "term": "정책",
      "definition": [
       "공공문제를 해결하기 위해 정부가 결정한 일의 계획"
      ],
-     "annotation": "정책"
+     "annotation": "정책",
+     "translation": "a plan of action the government has decided on to solve a public problem"
     }
    ]
   },
@@ -620,21 +629,24 @@ KIIP.chapter({
      "definition": [
       "국가 또는 지방자치단체의 사무를 처리하는 기관"
      ],
-     "annotation": "관공서"
+     "annotation": "관공서",
+     "translation": "an office that handles the business of the state or a local government"
     },
     {
      "term": "탄력적",
      "definition": [
       "상황에 따라 알맞게 대처하는 것"
      ],
-     "annotation": "탄력적"
+     "annotation": "탄력적",
+     "translation": "dealing with things in the way that suits the situation"
     },
     {
      "term": "교대",
      "definition": [
       "어떤 일을 여럿이 나누어서 차례에 따라 맡아 함"
      ],
-     "annotation": "교대"
+     "annotation": "교대",
+     "translation": "several people sharing a task and taking it on in turn"
     }
    ]
   },
@@ -762,21 +774,24 @@ KIIP.chapter({
      "definition": [
       "목적을 이룰 때까지 뒤좇아 구함"
      ],
-     "annotation": "추구"
+     "annotation": "추구",
+     "translation": "going after something until the aim is achieved"
     },
     {
      "term": "경향",
      "definition": [
       "현상이나 행동이 어떤 방향으로 기울어짐"
      ],
-     "annotation": "경향"
+     "annotation": "경향",
+     "translation": "a leaning of events or behaviour in a certain direction"
     },
     {
      "term": "워라밸",
      "definition": [
       "일과 삶의 균형이라는 뜻으로 “Work and Life Balance”의 준말"
      ],
-     "annotation": null
+     "annotation": null,
+     "translation": "short for “Work and Life Balance”, the balance between work and life"
     }
    ]
   },

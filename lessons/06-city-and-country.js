@@ -128,42 +128,48 @@ KIIP.chapter({
      "definition": [
       "도시의 생활 양식이 도시 외 지역으로 확대되는 현상"
      ],
-     "annotation": "도시화"
+     "annotation": "도시화",
+     "translation": "the spread of the urban way of life to areas outside the city"
     },
     {
      "term": "산업화",
      "definition": [
       "공업 등과 같은 생산 활동이 크게 확대되는 현상"
      ],
-     "annotation": "산업화"
+     "annotation": "산업화",
+     "translation": "a great expansion of productive activity such as manufacturing"
     },
     {
      "term": "도시화율",
      "definition": [
       "전체 인구 중 도시에 사는 인구의 비율"
      ],
-     "annotation": "도시화율"
+     "annotation": "도시화율",
+     "translation": "the share of the whole population that lives in cities"
     },
     {
      "term": "국토",
      "definition": [
       "한 나라의 통치권이 미치는 지역"
      ],
-     "annotation": "국토"
+     "annotation": "국토",
+     "translation": "the area over which a country's sovereignty reaches"
     },
     {
      "term": "분산",
      "definition": [
       "나누어 각각 흩어지게 함"
      ],
-     "annotation": "분산"
+     "annotation": "분산",
+     "translation": "dividing something so that each part is scattered"
     },
     {
      "term": "위성 도시",
      "definition": [
       "대도시의 주변에 있는 중소 규모의 도시"
      ],
-     "annotation": "위성 도시"
+     "annotation": "위성 도시",
+     "translation": "a small or medium-sized city on the edge of a large city"
     }
    ]
   },
@@ -439,14 +445,16 @@ KIIP.chapter({
      "definition": [
       "늘리고 넓혀 충실하게 함"
      ],
-     "annotation": "확충"
+     "annotation": "확충",
+     "translation": "increasing and widening something to make it complete"
     },
     {
      "term": "혼잡 통행료",
      "definition": [
       "교통 혼잡 지역을 통행하는 자가용을 대상으로 통행료를 받는 제도"
      ],
-     "annotation": "혼잡 통행료"
+     "annotation": "혼잡 통행료",
+     "translation": "a system that charges a toll on private cars passing through an area of heavy traffic"
     }
    ]
   },
@@ -708,21 +716,24 @@ KIIP.chapter({
      "definition": [
       "곡식의 껍질을 벗기거나 가루로 만들려고 내리침"
      ],
-     "annotation": "찧다"
+     "annotation": "찧다",
+     "translation": "pounding grain to remove the husk or to make flour"
     },
     {
      "term": "촌락",
      "definition": [
       "주로 시골에서 여러 집이 모여 사는 곳"
      ],
-     "annotation": "촌락"
+     "annotation": "촌락",
+     "translation": "a place, mainly in the countryside, where several households live together"
     },
     {
      "term": "직거래",
      "definition": [
       "물건을 파는 사람과 사는 사람이 중간 상인을 거치지 않고 직접 거래"
      ],
-     "annotation": "직거래"
+     "annotation": "직거래",
+     "translation": "the seller and the buyer dealing directly, without going through a middleman"
     }
    ]
   },
@@ -1022,21 +1033,24 @@ KIIP.chapter({
      "definition": [
       "도시에서 다른 일을 하던 사람이 농촌으로 돌아감"
      ],
-     "annotation": "귀농"
+     "annotation": "귀농",
+     "translation": "a person who did other work in the city going back to the farming village"
     },
     {
      "term": "생산성",
      "definition": [
       "효율적으로 생산할 수 있는 정도"
      ],
-     "annotation": "생산성"
+     "annotation": "생산성",
+     "translation": "the degree to which one can produce efficiently"
     },
     {
      "term": "개조",
      "definition": [
       "고쳐서 다시 만듦"
      ],
-     "annotation": "개조"
+     "annotation": "개조",
+     "translation": "repairing something and making it again"
     }
    ]
   },

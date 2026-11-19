@@ -128,14 +128,16 @@ KIIP.chapter({
      "definition": [
       "나이"
      ],
-     "annotation": "연령"
+     "annotation": "연령",
+     "translation": "age"
     },
     {
      "term": "산업화",
      "definition": [
       "생산 활동의 분업화(일을 나누어서 함)와 기계화(기계사용)로 제조(제품 생산)와 서비스 산업의 비율이 높아지는 현상"
      ],
-     "annotation": "산업화"
+     "annotation": "산업화",
+     "translation": "the rise in the share of manufacturing (making products) and service industries, brought about by the division of labour (splitting up work) and mechanisation (use of machines) in production"
     }
    ]
   },
@@ -271,28 +273,32 @@ KIIP.chapter({
      "definition": [
       "둘 이상을 서로 연결하거나 결합하는 관계"
      ],
-     "annotation": "유대관계"
+     "annotation": "유대관계",
+     "translation": "a relationship that links or binds two or more together"
     },
     {
      "term": "제삿날",
      "definition": [
       "조상이 돌아가신 날을 기억하며 음식을 차려 조상에게 드리는 날"
      ],
-     "annotation": "제삿날"
+     "annotation": "제삿날",
+     "translation": "the day on which food is set out and offered to an ancestor, in memory of the day they died"
     },
     {
      "term": "유교",
      "definition": [
       "공자에게서 비롯된 중국의 사상으로 중국·한국·일본 등에 많은 영향을 미침"
      ],
-     "annotation": "유교"
+     "annotation": "유교",
+     "translation": "a Chinese system of thought that began with Confucius and has had great influence on China, Korea, Japan and elsewhere"
     },
     {
      "term": "효 사상",
      "definition": [
       "자식이 부모를 잘 섬기는 것을 중요하게 생각하는 것"
      ],
-     "annotation": "효 사상"
+     "annotation": "효 사상",
+     "translation": "holding it important that children serve their parents well"
     }
    ]
   },
@@ -689,21 +695,24 @@ KIIP.chapter({
      "definition": [
       "서로 부름"
      ],
-     "annotation": "호칭"
+     "annotation": "호칭",
+     "translation": "what people call each other"
     },
     {
      "term": "지칭",
      "definition": [
       "어떤 대상을 가리켜 말함"
      ],
-     "annotation": "지칭"
+     "annotation": "지칭",
+     "translation": "pointing to something and speaking of it"
     },
     {
      "term": "양성평등",
      "definition": [
       "여성과 남성을 차별하지 않고 동등하게 대우함"
      ],
-     "annotation": "양성평등"
+     "annotation": "양성평등",
+     "translation": "treating women and men equally, without discrimination"
     }
    ]
   },

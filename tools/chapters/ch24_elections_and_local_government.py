@@ -32,7 +32,8 @@ CHAPTER = dict(
         SECTION("part", "01 선거는 어떻게 이루어지고 있을까?"),
         HEADING(2, "선거의 의미"),
         GLOSSARY(("선거권연령", "선거권연령은 2019년 12월 공직선거법 개정안 통과로 기존 만 19세에서 "
-                             "만 18세로 하향 조정됨", "선거권연령")),
+                             "만 18세로 하향 조정됨", "선거권연령",
+                  dict(en="The voting age was lowered from 19 to 18 when the amendment to the Public Official Election Act passed in December 2019."))),
         PARAGRAPH("선거는 국민이 자신을 대표할 사람을 직접 뽑는 것으로, 민주주의 국가에서 국민이 정치에 "
           "참여하는 기본적인 방법이다. 한국에서는 {만 18세} 이상의 국민이면 선거에 참여할 수 "
           "있다."),
@@ -88,7 +89,8 @@ CHAPTER = dict(
         HEADING(2, "지방자치제의 의미"),
         GLOSSARY(("지방자치제", "‘국가의 주인은 국민이고 국가와 그 권력은 국민으로부터 나온다.’라는 "
                              "민주주의의 가장 근본적이고 일반적인 원리로부터 나온 제도",
-               "지방자치제")),
+               "지방자치제",
+                  dict(en="a system that comes from the most fundamental and general principle of democracy: “the owners of the state are the people, and the state and its power come from the people.”"))),
         PARAGRAPH("지역 주민이 스스로 자기 지역의 {대표자}를 뽑아서 지역의 정치를 담당하도록 하는 것을 "
           "{지방자치제}라 한다. 각 지역마다 {처한|처하다} 상황이나 {문제점}이 다르기 때문에 "
           "정부에서 각 지역의 {요구}를 모두 {처리}하기가 어렵다. 그래서 각 지역의 {자치단체}와 "
@@ -101,7 +103,8 @@ CHAPTER = dict(
 
         HEADING(2, "지방자치의 모습"),
         GLOSSARY(("광역", "큰 도시와 그 근처의 작은 시와 군을 포함하는 하나의 넓은 행정 단위",
-               "광역")),
+               "광역",
+                  dict(en="one wide administrative unit taking in a large city and the smaller cities and counties around it"))),
         PARAGRAPH("{지방자치}는 각 지역의 {지방자치단체}와 지역 주민의 {협력}과 참여를 통해 이루어진다. "
           "지방자치단체는 {광역}자치단체와 {기초}자치단체로 구분된다. 각 지방자치단체는 "
           "{지방의회}와 {지방자치단체장}을 두고 있다. 4년에 한 번씩 열리는 지방 선거를 통해 "

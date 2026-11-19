@@ -32,10 +32,12 @@ CHAPTER = dict(
               ["4인 가구", 17.0],
               ["5인 이상 가구", 5.4]]),
         FIGURE("가구 유형별 비율(통계청, 2018) 핵가족과 1인 가구의 비율이 높다."),
-        GLOSSARY(("연령", "나이", "연령"),
+        GLOSSARY(("연령", "나이", "연령",
+                  dict(en="age")),
               ("산업화",
               "생산 활동의 분업화(일을 나누어서 함)와 기계화(기계사용)로 제조(제품 생산)와 서비스 산업의 비율이 "
-              "높아지는 현상", "산업화")),
+              "높아지는 현상", "산업화",
+               dict(en="the rise in the share of manufacturing (making products) and service industries, brought about by the division of labour (splitting up work) and mechanisation (use of machines) in production"))),
         HEADING(4, "가족 형태의 변화"),
         PARAGRAPH("한국에서 결혼은 보통 30세 {전후}에 많이 하는 편인데, 최근 들어 30대 {중후반} 정도에 하는 "
           "경우가 늘어나 결혼하는 연령이 점점 높아지고 있다. 과거에는 결혼 후에도 부모와 같이 사는 {자녀}가 "
@@ -45,10 +47,14 @@ CHAPTER = dict(
           "미혼 자녀가 함께 사는 핵가족의 모습을 주로 볼 수 있다. 또한 공부나 일 등을 하는 과정에서 결혼을 "
           "하지 않거나, 결혼을 하더라도 자녀를 낳지 않고 살겠다는 사람들이 늘어나면서 1인 가구나 부부만 사는 "
           "비율이 증가하고 있다."),
-        GLOSSARY(("유대관계", "둘 이상을 서로 연결하거나 결합하는 관계", "유대관계"),
-              ("제삿날", "조상이 돌아가신 날을 기억하며 음식을 차려 조상에게 드리는 날", "제삿날"),
-              ("유교", "공자에게서 비롯된 중국의 사상으로 중국·한국·일본 등에 많은 영향을 미침", "유교"),
-              ("효 사상", "자식이 부모를 잘 섬기는 것을 중요하게 생각하는 것", "효 사상")),
+        GLOSSARY(("유대관계", "둘 이상을 서로 연결하거나 결합하는 관계", "유대관계",
+                  dict(en="a relationship that links or binds two or more together")),
+              ("제삿날", "조상이 돌아가신 날을 기억하며 음식을 차려 조상에게 드리는 날", "제삿날",
+               dict(en="the day on which food is set out and offered to an ancestor, in memory of the day they died")),
+              ("유교", "공자에게서 비롯된 중국의 사상으로 중국·한국·일본 등에 많은 영향을 미침", "유교",
+               dict(en="a Chinese system of thought that began with Confucius and has had great influence on China, Korea, Japan and elsewhere")),
+              ("효 사상", "자식이 부모를 잘 섬기는 것을 중요하게 생각하는 것", "효 사상",
+               dict(en="holding it important that children serve their parents well"))),
         HEADING(4, "가족 문화의 특징"),
         PARAGRAPH("한국인은 개인의 행복뿐만 아니라 가족 {간}의 유대관계를 중요하게 생각한다. 그래서 명절, 조상의 "
           "제삿날, 가족(부모)의 생일, 어버이날 등이 되면 멀리 떨어져 있던 가족들도 한자리에 모이는 경우가 " "많다."),
@@ -112,9 +118,12 @@ CHAPTER = dict(
           "As in the examples above, introduce a distinctive expression to do "
           "with family from your home town, and what it means."),
         SECTION("part", "02 한국의 가족과 친척은 서로를 어떻게 부를까?"),
-        GLOSSARY(("호칭", "서로 부름", "호칭"),
-              ("지칭", "어떤 대상을 가리켜 말함", "지칭"),
-              ("양성평등", "여성과 남성을 차별하지 않고 동등하게 대우함", "양성평등")),
+        GLOSSARY(("호칭", "서로 부름", "호칭",
+                  dict(en="what people call each other")),
+              ("지칭", "어떤 대상을 가리켜 말함", "지칭",
+               dict(en="pointing to something and speaking of it")),
+              ("양성평등", "여성과 남성을 차별하지 않고 동등하게 대우함", "양성평등",
+               dict(en="treating women and men equally, without discrimination"))),
         HEADING(2, "가족 관계 호칭"),
         PARAGRAPH("한국에서는 가족 관계에서 서로를 부르는 호칭이 있다. 부부 간에는 주로 ‘여보’, ‘당신’이라고 부르거나 "
           "아이가 있을 경우 아이의 이름을 사용하여 ‘OO아빠’, ‘OO엄마’라고 부르기도 한다. 배우자의 부모님은 "

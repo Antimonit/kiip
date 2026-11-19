@@ -54,9 +54,12 @@ CHAPTER = dict(
           "119. Then 119 paramedics will come, provide basic "
           "emergency treatment, and take you by ambulance to the "
           "emergency room of a nearby hospital."),
-        GLOSSARY(("정밀하다", "빈틈이 없고 자세하다", "정밀하다"),
-              ("침", "바늘처럼 생긴 가늘고 긴 의료 기구", "침"),
-              ("뜸", "약물을 태우거나 태운 김을 쏘여 자극을 줌으로써 질병을 치료하는 방법", "뜸")),
+        GLOSSARY(("정밀하다", "빈틈이 없고 자세하다", "정밀하다",
+                  dict(en="to be detailed, leaving no gaps")),
+              ("침", "바늘처럼 생긴 가늘고 긴 의료 기구", "침",
+               dict(en="a long, thin medical instrument shaped like a needle")),
+              ("뜸", "약물을 태우거나 태운 김을 쏘여 자극을 줌으로써 질병을 치료하는 방법", "뜸",
+               dict(en="a way of treating illness by burning a medicinal substance, or applying its heat, to stimulate the body"))),
         PARAGRAPH("의료 기관의 종류에는 {동네 의원}, {보건소}, {종합 병원} 등이 있다. 감기에 걸렸거나 소화가 잘 "
           "안 되는 등 병이 심하지 않은 경우에는 동네 의원에 가서 진료를 받는다. 보건소는 지역 주민의 건강과 "
           "질병 예방 및 관리를 위해 국가가 운영하는 공공 보건 기관이다. 예방 {접종|예방 접종}이나 "
@@ -83,9 +86,12 @@ CHAPTER = dict(
           "workplace or regional subscribers can, if certain "
           "conditions are met, receive the same health insurance "
           "benefits as the subscriber as a dependent (피부양자)."),
-        GLOSSARY(("약초", "약으로 쓰는 풀", "약초"),
-              ("응급 처치", "위급한 상황에 있는 환자에게 당장 필요한 치료를 하는 것", "응급 처치"),
-              ("피부양자", "다른 사람에게서 부양을 받는 사람", "피부양자")),
+        GLOSSARY(("약초", "약으로 쓰는 풀", "약초",
+                  dict(en="a plant used as medicine")),
+              ("응급 처치", "위급한 상황에 있는 환자에게 당장 필요한 치료를 하는 것", "응급 처치",
+               dict(en="giving a patient in a critical situation the treatment needed straight away")),
+              ("피부양자", "다른 사람에게서 부양을 받는 사람", "피부양자",
+               dict(en="a person supported by someone else"))),
         SOURCE("▶ 긴급 신고 전화"),
         TABLE([["화재 구조 · 응급 환자 · 긴급 인명 사고", "119"],
                ["범죄", "112"],
@@ -128,18 +134,26 @@ CHAPTER = dict(
           "해야 한다. 2019년 7월 16일부터 한국에 6개월 이상 체류하면 지역 가입자에 해당되어 자동으로 "
           "건강보험에 가입되고 건강 보험료를 납부하게 된다."),
         SECTION("part", "02 안전한 생활을 위해서는 어떻게 해야 할까?"),
-        GLOSSARY(("재난", "뜻밖에 일어난 재앙과 고난", "재난"),
-              ("대비", "앞으로 일어날지 모르는 어떠한 일에 적절히 행동하기 위하여 미리 준비함", "대비"),
+        GLOSSARY(("재난", "뜻밖에 일어난 재앙과 고난", "재난",
+                  dict(en="calamity and hardship that come unexpectedly")),
+              ("대비", "앞으로 일어날지 모르는 어떠한 일에 적절히 행동하기 위하여 미리 준비함", "대비",
+               dict(en="preparing in advance so as to act properly when something that may happen does happen")),
               ("원전", "원자력발전소, 핵분열이나 핵융합 같은 원자력 에너지를 이용하여 전기를 생산해내는 발전소이다", "원전"
-              ),
-              ("안전사고", "안전 교육의 부족, 또는 부주의로 일어나는 사고", "안전사고"),
+              ,
+               dict(en="a nuclear power station: a power station that produces electricity from nuclear energy such as fission or fusion")),
+              ("안전사고", "안전 교육의 부족, 또는 부주의로 일어나는 사고", "안전사고",
+               dict(en="an accident caused by a lack of safety training, or by carelessness")),
               ("매뉴얼",
               "직무를 수행하는 데 필요한 작업상의 지식이나 작업진행 방법 등에 관한 기본적인 사항을 체계적으로 정리한 것",
-              "매뉴얼"),
-              ("대응", "어떤 일이나 사태에 맞추어 태도나 행동을 취함", "대응"),
+              "매뉴얼",
+               dict(en="the basic knowledge of a job and of how its work proceeds, set out systematically")),
+              ("대응", "어떤 일이나 사태에 맞추어 태도나 행동을 취함", "대응",
+               dict(en="taking an attitude or action that fits a matter or situation")),
               ("긴급신고전화", "범죄 112        재난 119        민원 110        감염병 1339",
-              "긴급신고전화"),
-              ("해롭다", "나쁜 점이 있다", "해롭다")),
+              "긴급신고전화",
+               dict(en="crime 112 · disaster 119 · civil complaints 110 · infectious disease 1339")),
+              ("해롭다", "나쁜 점이 있다", "해롭다",
+               dict(en="to have something bad about it"))),
         HEADING(2, "안전한 생활을 위한 방법", translation="Ways to Stay Safe in Daily Life"
           "\n\n" "Korea prepares for various disasters centered around the "
           "Ministry of the Interior and Safety (행정안전부), which "

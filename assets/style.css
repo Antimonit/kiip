@@ -689,6 +689,17 @@ ol.ko-list li::marker { color: var(--ink-faint); }
 .gloss-term { font-family: var(--ko); font-weight: 600; }
 .gloss-def { font-family: var(--ko); color: var(--ink-soft); word-break: keep-all; }
 
+/* a definition in English, out of sight until its article is read side by
+   side — nothing on the page is in English until it is asked for */
+.gloss-tr { display: none; }
+.glossbox.is-en .gloss-tr {
+  display: block;
+  font-family: var(--ui);
+  font-size: 0.92em;
+  color: var(--ink-faint);
+  margin-top: 0.1rem;
+}
+
 @media (max-width: 34rem) {
   .gloss-row { grid-template-columns: 1fr; }
 }

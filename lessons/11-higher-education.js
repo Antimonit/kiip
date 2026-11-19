@@ -131,35 +131,40 @@ KIIP.chapter({
      "definition": [
       "교육에 대한 열정이나 의지, 노력"
      ],
-     "annotation": "교육열"
+     "annotation": "교육열",
+     "translation": "passion, will and effort for education"
     },
     {
      "term": "인재",
      "definition": [
       "어떤 일을 할 수 있는 능력을 갖춘 사람"
      ],
-     "annotation": "인재"
+     "annotation": "인재",
+     "translation": "a person who has the ability to do a certain job"
     },
     {
      "term": "진학률",
      "definition": [
       "전체 졸업생 중 상급학교에 들어가는 학생의 비율"
      ],
-     "annotation": "진학률"
+     "annotation": "진학률",
+     "translation": "the share of all graduates who go on to a higher school"
     },
     {
      "term": "사회적 지위",
      "definition": [
       "개인이 사회 구조 속에서 차지하는 위치"
      ],
-     "annotation": "사회적 지위"
+     "annotation": "사회적 지위",
+     "translation": "the position a person holds in the structure of society"
     },
     {
      "term": "사교육",
      "definition": [
       "공교육(학교 교육)을 보충하기 위하여 학교 교육 밖에서 하는 교육(학원, 과외 등)"
      ],
-     "annotation": "사교육"
+     "annotation": "사교육",
+     "translation": "education outside school (private academies, tutoring and so on) to supplement public education (schooling)"
     }
    ]
   },
@@ -329,28 +334,32 @@ KIIP.chapter({
      "definition": [
       "학생이 초중고 학교에서 어떻게 생활하면서 성장하고 변화했는지를 기록한 문서. 학생의 출석, 결석, 친구 관계, 봉사 활동, 성적 등이 종합적으로 기록되어 있다."
      ],
-     "annotation": "학교 생활 기록부"
+     "annotation": "학교 생활 기록부",
+     "translation": "a document recording how a pupil has lived, grown and changed through primary, middle and high school. It records the pupil's attendance, absences, friendships, volunteer work, marks and so on together."
     },
     {
      "term": "수시",
      "definition": [
       "특별히 정해진 시기가 없이 상황에 따라 시기를 정함"
      ],
-     "annotation": "수시"
+     "annotation": "수시",
+     "translation": "setting the time according to circumstances, with no particular time fixed"
     },
     {
      "term": "모집 요강",
      "definition": [
       "사람 등을 뽑기 위하여 알리는 내용"
      ],
-     "annotation": "모집 요강"
+     "annotation": "모집 요강",
+     "translation": "the details announced for selecting people and the like"
     },
     {
      "term": "재외국민",
      "definition": [
       "국외에 거주하고 있으나 국적을 유지하고 있는 국민"
      ],
-     "annotation": "재외국민"
+     "annotation": "재외국민",
+     "translation": "a citizen who lives abroad but keeps their nationality"
     }
    ]
   },
@@ -543,21 +552,24 @@ KIIP.chapter({
      "definition": [
       "어떤 부문의 학문을 전문적으로 익히고 공부하여 일정한 수준에 오른 사람에게 대학에서 주는 자격. 학사, 석사, 박사가 있다."
      ],
-     "annotation": "학위"
+     "annotation": "학위",
+     "translation": "a qualification a university gives to a person who has studied a field of learning as a specialist and reached a given level. There are bachelor's, master's and doctoral degrees."
     },
     {
      "term": "인문학",
      "definition": [
       "언어, 문학, 역사, 철학 등을 연구하는 학문"
      ],
-     "annotation": "인문학"
+     "annotation": "인문학",
+     "translation": "the study of language, literature, history, philosophy and so on"
     },
     {
      "term": "산업체",
      "definition": [
       "생산하는 업체"
      ],
-     "annotation": "산업체"
+     "annotation": "산업체",
+     "translation": "a business that produces goods"
     }
    ]
   },
@@ -732,7 +744,8 @@ KIIP.chapter({
      "definition": [
       "어떤 영역에서 보통 수준 이상의 수행 능력을 보이는 것"
      ],
-     "annotation": "전문성"
+     "annotation": "전문성",
+     "translation": "showing an ability to perform above the ordinary level in some field"
     }
    ]
   },

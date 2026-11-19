@@ -33,7 +33,8 @@ CHAPTER = dict(
 
         SECTION("part", "01 경제 활동이란 무엇일까?"),
         HEADING(2, "경제 활동의 의미"),
-        GLOSSARY(("의식주", "입고 먹고 집에서 사는 것", "의식주")),
+        GLOSSARY(("의식주", "입고 먹고 집에서 사는 것", "의식주",
+                  dict(en="clothing oneself, eating and living in a home"))),
         PARAGRAPH("사람이 살아가기 위해서는 기본적인 {의식주}와 함께, 다양한 {욕구}와 필요를 "
                   "{채울|채우다} 수 있는 {재화}와 서비스가 {갖추어져|갖추어지다} 있어야 한다. "
                   "한국어 교재, 스마트폰, 화장품 등과 같은 {상품}을 재화라고 하고, 한국어 수업, "
@@ -44,7 +45,8 @@ CHAPTER = dict(
                   "일어난다."),
 
         HEADING(2, "한국의 물가"),
-        GLOSSARY(("공공 요금", "공적인 이익을 목적하는 하는 사업에 대한 요금", "공공 요금")),
+        GLOSSARY(("공공 요금", "공적인 이익을 목적하는 하는 사업에 대한 요금", "공공 요금",
+                  dict(en="charges for services run for the public benefit"))),
         PARAGRAPH("{물가}란 여러 가지 재화나 서비스의 {가치}를 {종합}하여 계산한 {평균적}인 "
                   "가격을 뜻한다. 물가는 사람들의 경제 활동에 큰 영향을 {미친다|미치다}."),
         PARAGRAPH("한국의 물가는 전 세계적으로 어떤 {수준}일까? 한국은 버스나 지하철과 같은 "
@@ -98,8 +100,10 @@ CHAPTER = dict(
         SECTION("part", "02 경제 활동에서 합리적인 선택은 왜 필요할까?"),
         HEADING(2, "경제 활동에 사용되는 한국의 화폐와 그 변화"),
         GLOSSARY(("신분증", "개인의 정보를 나타내는 증명서(주민등록증, 외국인등록증, "
-                            "운전면허증, 여권 등)", "신분증"),
-                 ("수표", "십만원권 수표", "수표")),
+                            "운전면허증, 여권 등)", "신분증",
+                  dict(en="a certificate showing a person's details (resident registration card, alien registration card, driving licence, passport and so on)")),
+                 ("수표", "십만원권 수표", "수표",
+                  dict(en="a 100,000-won cheque"))),
         PARAGRAPH("재화나 서비스를 {사고파는|사고팔다} 경제 활동을 하는 과정에서 {화폐}가 "
                   "사용된다. 한국의 화폐는 {동전}과 {지폐}로 {나뉜다|나뉘다}. 동전은 1원, 5원, "
                   "10원, 50원, 100원, 500원이 있고, 지폐는 1,000원, 5,000원, 10,000원, "
@@ -116,7 +120,8 @@ CHAPTER = dict(
         FIGURE("○○페이 결제 모습"),
 
         HEADING(2, "한국에서 합리적인 경제 활동하기"),
-        GLOSSARY(("능동적", "다른 것의 영향을 받지 않고, 스스로 움직이는 것", "능동적")),
+        GLOSSARY(("능동적", "다른 것의 영향을 받지 않고, 스스로 움직이는 것", "능동적",
+                  dict(en="moving of one's own accord, without being influenced by anything else"))),
         PARAGRAPH("빠르게 변화하는 한국의 경제 상황에서 {능동적}으로 생활하려면 {합리적}으로 "
                   "선택하는 능력을 {길러야|기르다} 한다. 예를 들어, {월급}을 받으면 옷을 살까, "
                   "영화를 볼까, {저축}을 한다면 얼마를 할까 등과 같이 어디에 어떻게 사용하는 "

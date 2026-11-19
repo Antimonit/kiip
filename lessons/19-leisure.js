@@ -151,14 +151,16 @@ KIIP.chapter({
      "definition": [
       "평균적으로 국민 한 사람이 일정 기간(1년)에 벌어들이는 소득"
      ],
-     "annotation": "1인당 국민소득"
+     "annotation": "1인당 국민소득",
+     "translation": "the income one citizen earns on average over a given period (one year)"
     },
     {
      "term": "국민여가활성화기본법",
      "definition": [
       "자유로운 여가활동을 할 수 있는 기반을 만들고 여가활동을 통하여 삶의 질을 향상시킬 수 있도록 지원하는 법"
      ],
-     "annotation": "국민여가활성화기본법"
+     "annotation": "국민여가활성화기본법",
+     "translation": "a law that lays the ground for free leisure activity and supports people in improving their quality of life through it"
     }
    ]
   },
@@ -359,7 +361,8 @@ KIIP.chapter({
      "definition": [
       "취미나 공통의 관심사, 목표를 가지고 정보를 나누면서 함께 즐기는 사람들의 모임"
      ],
-     "annotation": "동호회"
+     "annotation": "동호회",
+     "translation": "a gathering of people who share information and enjoy together a hobby, a common interest or a goal"
     }
    ]
   },
@@ -891,14 +894,16 @@ KIIP.chapter({
      "definition": [
       "지역 주민의 생활 업무를 처리하고, 문화 및 복지 서비스를 지원하는 행정기관"
      ],
-     "annotation": "행정복지센터"
+     "annotation": "행정복지센터",
+     "translation": "an administrative office that handles the everyday business of local residents and supports cultural and welfare services"
     },
     {
      "term": "평생학습관",
      "definition": [
       "지역주민을 대상으로 인문교양, 문화예술, 직업능력 향상, 시민참여 등의 평생학습 프로그램을 운영"
      ],
-     "annotation": "평생학습관"
+     "annotation": "평생학습관",
+     "translation": "runs lifelong learning programmes for local residents in the humanities and general culture, arts and culture, vocational skills, civic participation and so on"
     }
    ]
   },
@@ -1108,7 +1113,8 @@ KIIP.chapter({
      "definition": [
       "웹(WEB)과 카툰(CARTOON)의 합성어로서 인터넷 만화를 지칭함"
      ],
-     "annotation": "웹툰"
+     "annotation": "웹툰",
+     "translation": "a blend of WEB and CARTOON, meaning a comic on the internet"
     }
    ]
   },

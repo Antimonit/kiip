@@ -33,12 +33,16 @@ CHAPTER = dict(
 
         SECTION("part", "01 한국의 주인은 누구일까?"),
         HEADING(2, "정치와 민주주의의 의미"),
-        GLOSSARY(("선거", "어떤 단체의 대표를 뽑음", "선거"),
-              ("통치", "나라나 지역을 다스림", "통치"),
-              ("이해관계", "이익과 손해가 걸려 있는 관계", "이해관계"),
+        GLOSSARY(("선거", "어떤 단체의 대표를 뽑음", "선거",
+                  dict(en="choosing the representative of a group")),
+              ("통치", "나라나 지역을 다스림", "통치",
+               dict(en="governing a country or region")),
+              ("이해관계", "이익과 손해가 걸려 있는 관계", "이해관계",
+               dict(en="a relationship in which gain and loss are at stake")),
               ("민주주의(democracy)", "국민이 권력을 가지고 스스로를 다스린다는 것을 "
                                      "의미하며, 인간의 존엄성, 자유, 평등과 같은 가치를 추구함",
-               "민주주의")),
+               "민주주의",
+               dict(en="means that the people hold power and govern themselves, and pursues values such as human dignity, freedom and equality"))),
         PARAGRAPH("‘{정치}’하면 무엇이 {떠오르는가|떠오르다}? 누군가는 {선거}를 떠올리고 누군가는 "
           "{대통령}을, 누군가는 법을 떠올릴 수도 있다. 정치는 좁게 보면 국가를 {통치}하는 것을 "
           "가리키므로 선거, 대통령, 법 등과도 {밀접한|밀접하다} 관계가 있다. 한편, 넓은 의미의 "
@@ -54,10 +58,14 @@ CHAPTER = dict(
 
         HEADING(2, "한국의 주인은 국민"),
         GLOSSARY(("권리", "어떤 일을 하거나 다른 사람에 대하여 당연히 요구할 수 있는 힘이나 자격",
-               "권리"),
-              ("권력", "다른 사람을 복종시키거나 지배할 수 있는 공식적인 권리와 힘", "권력"),
-              ("명시", "분명하게 보여줌", "명시"),
-              ("주권", "주인으로서 권리", "주권")),
+               "권리",
+                  dict(en="the power or entitlement to do something, or to demand it of others as a matter of course")),
+              ("권력", "다른 사람을 복종시키거나 지배할 수 있는 공식적인 권리와 힘", "권력",
+               dict(en="the official right and force to make others obey or to rule them")),
+              ("명시", "분명하게 보여줌", "명시",
+               dict(en="showing clearly")),
+              ("주권", "주인으로서 권리", "주권",
+               dict(en="the right one has as the owner"))),
         PARAGRAPH("{헌법}은 한국의 최고 법으로 한국을 이끌어 가는 기본 {원리}와 국가 기관의 {구성}, "
           "그리고 한국 국민의 기본적인 {권리}와 {의무} 등을 담고 있다. 한국의 헌법 제1조에는 "
           "‘대한민국이 민주주의를 {기반}으로 한 {공화국}이며, 대한민국 국민은 국가의 "
@@ -98,8 +106,10 @@ CHAPTER = dict(
 
         SECTION("part", "02 한국은 왜 국가 기관의 권력을 나누어 놓았을까?"),
         HEADING(2, "권력 분립의 필요성"),
-        GLOSSARY(("궁극적", "어떤 일의 마지막", "궁극적"),
-              ("기여", "도움이 되도록 함", "기여")),
+        GLOSSARY(("궁극적", "어떤 일의 마지막", "궁극적",
+                  dict(en="the very end of a matter")),
+              ("기여", "도움이 되도록 함", "기여",
+               dict(en="being of help"))),
         PARAGRAPH("국가의 모든 일을 한 사람이 결정한다면 국민의 자유와 권리는 {보장}되기 어렵다. 권력을 "
           "가진 사람이 자신이나 가족, 친구 등에게만 {유리한|유리하다} 결정을 내릴 수도 있다. "
           "따라서 오늘날 한국을 {비롯한|비롯하다} 대부분의 민주주의 국가는 국가 권력이 특정 "
@@ -113,7 +123,8 @@ CHAPTER = dict(
 
         HEADING(2, "삼권 분립을 통한 권력의 견제와 균형"),
         GLOSSARY(("견제", "상대편이 지나치게 많은 세력을 가지거나 마음대로 행동하지 못하도록 함",
-               "견제")),
+               "견제",
+                  dict(en="keeping the other side from gaining too much power or acting as it pleases"))),
         PARAGRAPH("국민이 뽑은 대표들이 모인 입법부(국회)에서 만드는 법은 국가를 {운영}하는 기본적인 "
           "규칙이 된다."),
         PARAGRAPH("행정부(정부)는 입법부에서 {제정}한 법에 따라 국민을 위한 다양한 {정책}과 활동을 "

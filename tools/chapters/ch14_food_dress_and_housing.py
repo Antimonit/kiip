@@ -36,9 +36,12 @@ CHAPTER = dict(
         SECTION("part", "01 한국 음식의 종류와 특징은 무엇일까?"),
         MARGIN("{전골}", "{국물}", "{찌개}"),
         HEADING(2, "한국 음식의 종류와 특징"),
-        GLOSSARY(("토양", "흙(농작물이 자랄 수 있는 흙)", "토양"),
-              ("특유", "특별히 가지고 있음", "특유"),
-              ("발효", "효모 등과 같은 미생물의 작용으로 분해하는 것", "발효")),
+        GLOSSARY(("토양", "흙(농작물이 자랄 수 있는 흙)", "토양",
+                  dict(en="soil (soil in which crops can grow)")),
+              ("특유", "특별히 가지고 있음", "특유",
+               dict(en="having something as one's own special quality")),
+              ("발효", "효모 등과 같은 미생물의 작용으로 분해하는 것", "발효",
+               dict(en="breaking down through the action of micro-organisms such as yeast"))),
         PARAGRAPH("한국인은 “밥 먹었어?”, “식사는 하셨어요?”라는 질문으로 {안부} 인사를 대신하기도 할 "
           "만큼 일상생활에서 음식 먹는 것을 중요하게 여긴다. 한국 음식은 기본적으로 밥, {국}, "
           "{반찬} 등으로 구성된다. 밥과 국은 {숟가락}으로, 반찬은 {젓가락}으로 먹는 것이 "
@@ -63,7 +66,8 @@ CHAPTER = dict(
 
         HEADING(2, "다양한 한국 음식과 한식의 세계화"),
         GLOSSARY(("K-Food", "Korean-Food의 약자로, 한국 음식, 한국 식품 및 한식 문화를 포함한 것",
-               "K-Food")),
+               "K-Food",
+                  dict(en="short for Korean-Food; it covers Korean dishes, Korean food products and the culture of Korean food"))),
         PARAGRAPH("한국에는 밥, 국, 반찬으로 이루어진 기본적인 {식단} 외에 특별히 요리로 만들어 먹는 "
           "음식도 많다. {비빔밥}, {삼계탕}, {불고기}, {삼겹살}, {떡국} 등이 그 예이다. "
           "최근에는 한국 음식이 방송이나 인터넷 등을 통해 해외에 더욱 널리 알려지면서 "

@@ -102,14 +102,16 @@ KIIP.chapter({
      "definition": [
       "고속도로에서 고속으로 주행하기에 알맞도록 제작된 대형 버스"
      ],
-     "annotation": "고속버스"
+     "annotation": "고속버스",
+     "translation": "a large bus built for travelling at high speed on the expressway"
     },
     {
      "term": "시외버스",
      "definition": [
       "도시 밖 특정 지역까지 운행하는 버스"
      ],
-     "annotation": "시외버스"
+     "annotation": "시외버스",
+     "translation": "a bus that runs to a particular place outside the city"
     }
    ]
   },
@@ -253,28 +255,32 @@ KIIP.chapter({
      "definition": [
       "좋은 일에 힘쓰도록 북돋아 줌"
      ],
-     "annotation": "장려"
+     "annotation": "장려",
+     "translation": "encouraging people to work at something good"
     },
     {
      "term": "권장",
      "definition": [
       "바람직한 일을 하도록 권하고 격려함"
      ],
-     "annotation": "권장"
+     "annotation": "권장",
+     "translation": "recommending and encouraging something desirable"
     },
     {
      "term": "전광판",
      "definition": [
       "그림이나 문자가 나타나도록 만든 판"
      ],
-     "annotation": "전광판"
+     "annotation": "전광판",
+     "translation": "a board made to display pictures or text"
     },
     {
      "term": "혼잡",
      "definition": [
       "여럿이 한데 뒤섞이어 어수선함"
      ],
-     "annotation": "혼잡"
+     "annotation": "혼잡",
+     "translation": "many things mixed up together in disorder"
     }
    ]
   },
@@ -491,21 +497,24 @@ KIIP.chapter({
      "definition": [
       "빠른 시간 안에 물건을 배달함"
      ],
-     "annotation": "특송"
+     "annotation": "특송",
+     "translation": "delivering goods within a short time"
     },
     {
      "term": "소화물",
      "definition": [
       "열차나 버스 등을 통해 운반하는 대체로 작고 가벼운 물품"
      ],
-     "annotation": "소화물"
+     "annotation": "소화물",
+     "translation": "goods, mostly small and light, carried by train, bus and the like"
     },
     {
      "term": "보급",
      "definition": [
       "많은 사람들에게 골고루 미치게 하여 누리게 함"
      ],
-     "annotation": "보급"
+     "annotation": "보급",
+     "translation": "spreading something evenly to many people so that they can enjoy it"
     }
    ]
   },
@@ -647,35 +656,40 @@ KIIP.chapter({
      "definition": [
       "서로 연결시켜 주는 조직이나 체계"
      ],
-     "annotation": "통신망"
+     "annotation": "통신망",
+     "translation": "an organisation or system that connects one to another"
     },
     {
      "term": "무선",
      "definition": [
       "전선을 사용하지 않고 전자기파를 이용하여 주고받는 통신 방식"
      ],
-     "annotation": "무선"
+     "annotation": "무선",
+     "translation": "a way of communicating that uses electromagnetic waves, without wires"
     },
     {
      "term": "플랫폼",
      "definition": [
       "누구나 다양하고 방대한 정보를 쉽게 활용할 수 있도록 제공 하는 기반 서비스"
      ],
-     "annotation": "플랫폼"
+     "annotation": "플랫폼",
+     "translation": "a base service that lets anyone make easy use of wide and varied information"
     },
     {
      "term": "활성화",
      "definition": [
       "기능이나 활동이 활발함"
      ],
-     "annotation": "활성화"
+     "annotation": "활성화",
+     "translation": "a function or activity being lively"
     },
     {
      "term": "쟁점",
      "definition": [
       "서로 다투는 중심이 되는 점"
      ],
-     "annotation": "쟁점"
+     "annotation": "쟁점",
+     "translation": "the point at the centre of a dispute"
     }
    ]
   },

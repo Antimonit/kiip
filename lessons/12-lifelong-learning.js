@@ -114,28 +114,32 @@ KIIP.chapter({
      "definition": [
       "첨단 정보통신기술이 경제·사회 전반에 융합되어 혁신적인 변화가 나타나는 차세대 산업혁명"
      ],
-     "annotation": "4차 산업혁명"
+     "annotation": "4차 산업혁명",
+     "translation": "the next industrial revolution, in which advanced information and communication technology merges into the whole economy and society and brings innovative change"
     },
     {
      "term": "기대 수명",
      "definition": [
       "출생한 사람이 출생 이후 생존할 것으로 예상되는 기간"
      ],
-     "annotation": "기대 수명"
+     "annotation": "기대 수명",
+     "translation": "the length of time a person who has been born is expected to live from birth"
     },
     {
      "term": "문해",
      "definition": [
       "문자를 읽고 쓸 수 있는 일 또는 그러한 일을 할 수 있는 능력"
      ],
-     "annotation": "문해"
+     "annotation": "문해",
+     "translation": "being able to read and write, or the ability to do so"
     },
     {
      "term": "보완",
      "definition": [
       "모자라거나 부족한 것을 보충하여 완전하게 함"
      ],
-     "annotation": "보완"
+     "annotation": "보완",
+     "translation": "making something complete by supplying what it lacks or is short of"
     }
    ]
   },
@@ -284,7 +288,8 @@ KIIP.chapter({
      "definition": [
       "사회의 여러 정책이나 시설의 혜택을 받지 못하여 도움이 필요한 계층(저소득층, 장애인 등)"
      ],
-     "annotation": "소외 계층"
+     "annotation": "소외 계층",
+     "translation": "the groups who need help because they do not benefit from society's policies and facilities (people on low incomes, disabled people and so on)"
     },
     {
      "term": "평생 교육 바우처 지원",
@@ -449,7 +454,8 @@ KIIP.chapter({
      "definition": [
       "사회통합프로그램, 국제결혼 안내 프로그램, 결혼 이민자 조기 적응 프로그램 등에 대하여 자세하게 안내하고 있으며, 누리집을 통해 원하는 교육과정에 직접 참여 신청을 할 수 있다. 누리집 접속(www.socinet.go.kr) → 회원가입 → 프로그램 참여 신청, 각종 평가 신청"
      ],
-     "annotation": "사회통합정보망"
+     "annotation": "사회통합정보망",
+     "translation": "It gives detailed guidance on the Social Integration Programme, the International Marriage Guidance Programme, the Early Adaptation Programme for marriage migrants and others, and one can apply through the website to take part in the course one wants. Go to the website (www.socinet.go.kr) → sign up → apply to take part in a programme or to sit an evaluation"
     }
    ]
   },
@@ -628,14 +634,16 @@ KIIP.chapter({
      "definition": [
       "사업 등을 처음으로 이루어 시작함"
      ],
-     "annotation": "창업"
+     "annotation": "창업",
+     "translation": "setting up and starting a business and the like for the first time"
     },
     {
      "term": "재정착",
      "definition": [
       "일정한 곳에 다시 자리를 잡아 머물러 삶"
      ],
-     "annotation": "재정착"
+     "annotation": "재정착",
+     "translation": "settling again in a certain place and living there"
     }
    ]
   },

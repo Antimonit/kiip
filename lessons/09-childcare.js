@@ -110,28 +110,32 @@ KIIP.chapter({
      "definition": [
       "임신확인서를 가지고 가까운 은행에 가도 되고 인터넷이나 전화로도 발급받을 수 있다."
      ],
-     "annotation": "국민행복카드"
+     "annotation": "국민행복카드",
+     "translation": "One can take a certificate of pregnancy to a nearby bank, or have the card issued online or by telephone."
     },
     {
      "term": "산전",
      "definition": [
       "아이를 낳기 전"
      ],
-     "annotation": "산전"
+     "annotation": "산전",
+     "translation": "before a child is born"
     },
     {
      "term": "임산부 교육프로그램",
      "definition": [
       "모유 수유 교실, 임산부 체조 교실, 출산 준비 교실, 아기 마사지 교실 등"
      ],
-     "annotation": "임산부 교육프로그램"
+     "annotation": "임산부 교육프로그램",
+     "translation": "breastfeeding classes, exercise classes for expectant mothers, childbirth preparation classes, baby massage classes and so on"
     },
     {
      "term": "보육",
      "definition": [
       "아이를 보살피고 돌봄"
      ],
-     "annotation": "보육"
+     "annotation": "보육",
+     "translation": "looking after and caring for a child"
     }
    ]
   },
@@ -291,7 +295,8 @@ KIIP.chapter({
      "definition": [
       "기운이나 세력이 점점 더 늘어 가고 나아감"
      ],
-     "annotation": "증진"
+     "annotation": "증진",
+     "translation": "energy or strength growing and advancing little by little"
     }
    ]
   },
@@ -581,21 +586,24 @@ KIIP.chapter({
      "definition": [
       "시간이나 길이를 늘림"
      ],
-     "annotation": "연장"
+     "annotation": "연장",
+     "translation": "making a time or a length longer"
     },
     {
      "term": "전담",
      "definition": [
       "전문적으로 맡음"
      ],
-     "annotation": "전담"
+     "annotation": "전담",
+     "translation": "taking something on as a specialist task"
     },
     {
      "term": "거점",
      "definition": [
       "어떤 활동의 근거가 되는 중요한 지점"
      ],
-     "annotation": "거점"
+     "annotation": "거점",
+     "translation": "an important point that serves as the base for an activity"
     }
    ]
   },
@@ -813,14 +821,16 @@ KIIP.chapter({
      "definition": [
       "일정한 권한을 가지고 통제하거나 지배함"
      ],
-     "annotation": "관할"
+     "annotation": "관할",
+     "translation": "controlling or governing with a given authority"
     },
     {
      "term": "법인",
      "definition": [
       "법적으로 권리와 의무를 가지는 조직"
      ],
-     "annotation": "법인"
+     "annotation": "법인",
+     "translation": "an organisation that has rights and duties in law"
     }
    ]
   },

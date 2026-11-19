@@ -31,10 +31,13 @@ CHAPTER = dict(
 
         SECTION("part", "01 금융기관에는 어떤 것이 있을까?"),
         HEADING(2, "은행에서 하는 일"),
-        GLOSSARY(("금융", "돈이 돌고 도는 것", "금융"),
+        GLOSSARY(("금융", "돈이 돌고 도는 것", "금융",
+                  dict(en="money going round and round")),
                  ("공과금", "국가나 지방자치단체가 국민에게 내도록 하는 것으로 각종 세금, "
-                            "전기요금, 수도요금 등이 있음", "공과금"),
-                 ("납부", "공과금 등을 내는 것", "납부")),
+                            "전기요금, 수도요금 등이 있음", "공과금",
+                  dict(en="what the state or a local government requires citizens to pay: the various taxes, electricity charges, water charges and so on")),
+                 ("납부", "공과금 등을 내는 것", "납부",
+                  dict(en="paying utility charges and the like"))),
         PARAGRAPH("한국의 은행에서는 사람들의 돈을 {맡아|맡다} 주거나 돈을 필요로 하는 사람 또는 "
                   "기업에게 {빌려주기|빌려주다}도 한다. 또한 다른 사람에게 돈을 보내 주기도 "
                   "하며, 한국 돈과 외국 돈을 서로 {바꿔|바꾸다} 주기도 한다. {공과금}, 아파트 "
@@ -44,9 +47,12 @@ CHAPTER = dict(
 
         HEADING(2, "은행의 종류"),
         GLOSSARY(("금융기관", "개인이나 기업의 돈을 맡아 주고 다른 개인이나 기업에게 빌려주는 "
-                              "일 등을 하는 기관", "금융기관"),
-                 ("금리", "맡긴 돈이나 빌린 돈에 붙는 이자", "금리"),
-                 ("수수료", "어떤 일을 맡아서 처리해 준 대가로 받는 요금", "수수료")),
+                              "일 등을 하는 기관", "금융기관",
+                  dict(en="an institution that keeps the money of individuals or businesses and lends it to other individuals or businesses, among other things")),
+                 ("금리", "맡긴 돈이나 빌린 돈에 붙는 이자", "금리",
+                  dict(en="the interest added to money deposited or borrowed")),
+                 ("수수료", "어떤 일을 맡아서 처리해 준 대가로 받는 요금", "수수료",
+                  dict(en="a charge taken in return for handling a matter for someone"))),
         PARAGRAPH("한국에는 다양한 은행이 있다. 우선, 화폐를 발행하는 {한국은행}이 있다. 그리고 "
                   "사람들이 많이 이용하는 은행으로는 {시중은행}과 {지방은행}이 있다. 시중은행은 "
                   "개인이 돈을 맡기거나 {빌리는|빌리다} 대표적인 {금융기관}으로, 전국 곳곳에 "
@@ -95,7 +101,8 @@ CHAPTER = dict(
         SECTION("part", "02 금융 거래는 어떻게 하면 될까?"),
         HEADING(2, "은행 계좌 만들기"),
         GLOSSARY(("금융실명제", "가짜 이름이나 다른 사람이 아닌, 오직 본인의 이름으로만 금융 "
-                                "거래를 할 수 있도록 한 제도", "금융실명제")),
+                                "거래를 할 수 있도록 한 제도", "금융실명제",
+                  dict(en="a system under which financial transactions can be made only in one's own name, not a false name or another person's"))),
         PARAGRAPH("은행 {계좌}를 만들기 위해서는 반드시 본인이 신분증을 가지고 직접 은행을 "
                   "{방문}해야 한다. 한국에서는 모든 금융 거래를 본인 자신의 이름으로만 하도록 "
                   "하는 {금융실명제}가 실시되고 있기 때문이다. 자신의 이름을 다른 사람에게 "
@@ -108,8 +115,10 @@ CHAPTER = dict(
                   "며칠 후에 집이나 직장으로 {배송}된다."),
 
         HEADING(2, "금융 거래 하기"),
-        GLOSSARY(("거래", "돈이나 물건을 주고 받는 것", "거래"),
-                 ("ATM(현금자동입출금기)", "현금을 넣고 뽑을 수 있는 기계", "ATM")),
+        GLOSSARY(("거래", "돈이나 물건을 주고 받는 것", "거래",
+                  dict(en="giving and receiving money or goods")),
+                 ("ATM(현금자동입출금기)", "현금을 넣고 뽑을 수 있는 기계", "ATM",
+                  dict(en="a machine for paying in and taking out cash"))),
         PARAGRAPH("은행에 계좌를 만든 후에는 {ATM}(현금자동입출금기), 인터넷 뱅킹, 스마트폰 "
                   "뱅킹 등 자신이 편리한 방법을 자유롭게 선택하여 {금융 거래}를 할 수 있다."),
         PARAGRAPH("ATM에서는 출금, 입금, {이체}(송금), {계좌조회} 등을 할 수 있다. 주의해야 할 "

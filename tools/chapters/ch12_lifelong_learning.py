@@ -28,10 +28,14 @@ CHAPTER = dict(
               "저출산 현상, 고령화 사회"]]),
         SECTION("part", "01 평생 교육이란 무엇일까?"),
         HEADING(2, "평생 교육의 의미와 영역"),
-        GLOSSARY(("4차 산업혁명", "첨단 정보통신기술이 경제·사회 전반에 융합되어 혁신적인 변화가 나타나는 차세대 산업혁명"),
-              ("기대 수명", "출생한 사람이 출생 이후 생존할 것으로 예상되는 기간"),
-              ("문해", "문자를 읽고 쓸 수 있는 일 또는 그러한 일을 할 수 있는 능력"),
-              ("보완", "모자라거나 부족한 것을 보충하여 완전하게 함")),
+        GLOSSARY(("4차 산업혁명", "첨단 정보통신기술이 경제·사회 전반에 융합되어 혁신적인 변화가 나타나는 차세대 산업혁명",
+                  dict(en="the next industrial revolution, in which advanced information and communication technology merges into the whole economy and society and brings innovative change")),
+              ("기대 수명", "출생한 사람이 출생 이후 생존할 것으로 예상되는 기간",
+               dict(en="the length of time a person who has been born is expected to live from birth")),
+              ("문해", "문자를 읽고 쓸 수 있는 일 또는 그러한 일을 할 수 있는 능력",
+               dict(en="being able to read and write, or the ability to do so")),
+              ("보완", "모자라거나 부족한 것을 보충하여 완전하게 함",
+               dict(en="making something complete by supplying what it lacks or is short of"))),
         TABLE(["영역", "내용"], [["기초 문해 교육", "문자를 읽고 쓰고 셈하는 기초 능력"],
               ["학력 보완 교육", "경제적인 사정 등으로 정규 학교에 진학하지 못한 성인이나 소외 계층에게 학습 기회 제공"],
               ["직업 능력 교육", "근로자의 직무 능력을 향상시키거나 실업자의 취업이나 창업 지원"],
@@ -48,7 +52,8 @@ CHAPTER = dict(
           "등 대상에 따라 적절한 평생 교육 프로그램이 운영되고 있다."),
         HEADING(2, "평생 교육 기관과 지원 제도"),
         GLOSSARY(("평생 학습 계좌제 누리집", "http://www.all.go.kr"),
-              ("소외 계층", "사회의 여러 정책이나 시설의 혜택을 받지 못하여 도움이 필요한 계층(저소득층, 장애인 등)"),
+              ("소외 계층", "사회의 여러 정책이나 시설의 혜택을 받지 못하여 도움이 필요한 계층(저소득층, 장애인 등)",
+               dict(en="the groups who need help because they do not benefit from society's policies and facilities (people on low incomes, disabled people and so on)")),
               ("평생 교육 바우처 지원", "https://www.lllcard.kr")),
         PARAGRAPH("평생 교육은 국가평생 교육진흥원 및 시·도 평생 교육진흥원, 시·군·구 평생 학습관, 학교 부설 평생 "
           "교육원외에도 행정복지센터, 도서관, 문화 시설, 박물관, 사회 복지관, 노인 복지관, 장애인 복지관, "
@@ -85,7 +90,8 @@ CHAPTER = dict(
               "사회통합프로그램, 국제결혼 안내 프로그램, 결혼 이민자 조기 적응 프로그램 등에 대하여 자세하게 안내하고 "
               "있으며, 누리집을 통해 원하는 교육과정에 직접 참여 신청을 할 수 있다. 누리집 "
               "접속(www.socinet.go.kr) → 회원가입 → 프로그램 참여 신청, 각종 평가 신청", None,
-              "(soci-net)")),
+              "(soci-net)",
+                  dict(en="It gives detailed guidance on the Social Integration Programme, the International Marriage Guidance Programme, the Early Adaptation Programme for marriage migrants and others, and one can apply through the website to take part in the course one wants. Go to the website (www.socinet.go.kr) → sign up → apply to take part in a programme or to sit an evaluation"))),
         HEADING(2, "이주민 적응과 정착을 지원하는 교육"),
         PARAGRAPH("이주민의 한국 사회 적응을 돕기 위한 교육 서비스도 확대되고 있다. 대표적으로는 이민자 조기 적응 "
           "프로그램과 사회통합프로그램(KIIP)이 있다. 이민자 조기 적응 프로그램은 국제 결혼을 통해 처음 "
@@ -98,8 +104,10 @@ CHAPTER = dict(
           "방문 교육, 다문화 학생의 정체성 회복 및 사회성 함양 지원, 직업 훈련을 통한 이주 배경 청소년의 자립 "
           "지원, 중도 입국 학생 개인별 특성에 맞춘 맞춤형 서비스 지원 등이 있다."),
         HEADING(2, "이주민 직업 관련 교육"),
-        GLOSSARY(("창업", "사업 등을 처음으로 이루어 시작함"),
-              ("재정착", "일정한 곳에 다시 자리를 잡아 머물러 삶")),
+        GLOSSARY(("창업", "사업 등을 처음으로 이루어 시작함",
+                  dict(en="setting up and starting a business and the like for the first time")),
+              ("재정착", "일정한 곳에 다시 자리를 잡아 머물러 삶",
+               dict(en="settling again in a certain place and living there"))),
         PARAGRAPH("고용노동부에서는 취업이나 창업을 원하는 사람이 직업 교육을 받을 수 있도록 내일배움카드를 발급하여 "
           "지원하고 있다. 컴퓨터, 웹디자인, 네일아트, 피부미용, 바리스타, 제과제빵, 요리 등 취업을 위한 "
           "다양한 교육을 받을 수 있다."),

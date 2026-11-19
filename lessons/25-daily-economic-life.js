@@ -139,7 +139,8 @@ KIIP.chapter({
      "definition": [
       "입고 먹고 집에서 사는 것"
      ],
-     "annotation": "의식주"
+     "annotation": "의식주",
+     "translation": "clothing oneself, eating and living in a home"
     }
    ]
   },
@@ -319,7 +320,8 @@ KIIP.chapter({
      "definition": [
       "공적인 이익을 목적하는 하는 사업에 대한 요금"
      ],
-     "annotation": "공공 요금"
+     "annotation": "공공 요금",
+     "translation": "charges for services run for the public benefit"
     }
    ]
   },
@@ -899,14 +901,16 @@ KIIP.chapter({
      "definition": [
       "개인의 정보를 나타내는 증명서(주민등록증, 외국인등록증, 운전면허증, 여권 등)"
      ],
-     "annotation": "신분증"
+     "annotation": "신분증",
+     "translation": "a certificate showing a person's details (resident registration card, alien registration card, driving licence, passport and so on)"
     },
     {
      "term": "수표",
      "definition": [
       "십만원권 수표"
      ],
-     "annotation": "수표"
+     "annotation": "수표",
+     "translation": "a 100,000-won cheque"
     }
    ]
   },
@@ -1178,7 +1182,8 @@ KIIP.chapter({
      "definition": [
       "다른 것의 영향을 받지 않고, 스스로 움직이는 것"
      ],
-     "annotation": "능동적"
+     "annotation": "능동적",
+     "translation": "moving of one's own accord, without being influenced by anything else"
     }
    ]
   },

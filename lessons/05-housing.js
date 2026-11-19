@@ -145,7 +145,8 @@ KIIP.chapter({
      "definition": [
       "다른 사람의 건물 등을 빌려 쓰는 대가로 내는 돈"
      ],
-     "annotation": "세"
+     "annotation": "세",
+     "translation": "money paid in return for the use of someone else's building and the like"
     }
    ]
   },
@@ -441,28 +442,32 @@ KIIP.chapter({
      "definition": [
       "건물의 한 층에서 발생한 소리가 다른 층에 전달되어 피해를 주는 것"
      ],
-     "annotation": "층간 소음"
+     "annotation": "층간 소음",
+     "translation": "sound made on one floor of a building carrying to another floor and causing harm"
     },
     {
      "term": "쾌적",
      "definition": [
       "기분이 상쾌하고 즐거움"
      ],
-     "annotation": "쾌적"
+     "annotation": "쾌적",
+     "translation": "feeling fresh and pleasant"
     },
     {
      "term": "한적",
      "definition": [
       "한가하고 고요함"
      ],
-     "annotation": "한적"
+     "annotation": "한적",
+     "translation": "being leisurely and quiet"
     },
     {
      "term": "전원 주택",
      "definition": [
       "도시에서 조금 떨어져 있어서 자연의 분위기를 느낄 수 있도록 지은 집"
      ],
-     "annotation": "전원 주택"
+     "annotation": "전원 주택",
+     "translation": "a house built a little way out of the city so that one can feel the atmosphere of nature"
     }
    ]
   },
@@ -713,35 +718,40 @@ KIIP.chapter({
      "definition": [
       "세를 내고 남의 집이나 방 따위를 빌려 쓰는 사람"
      ],
-     "annotation": "세입자"
+     "annotation": "세입자",
+     "translation": "a person who pays rent to use someone else's house or room"
     },
     {
      "term": "파기",
      "definition": [
       "계약이나 약속 등을 깨뜨려 무효로 하는 것"
      ],
-     "annotation": "파기"
+     "annotation": "파기",
+     "translation": "breaking a contract or promise and making it void"
     },
     {
      "term": "확정 일자",
      "definition": [
       "집을 계약한 날짜에 대해 법원이나 행정복지센터(주민센터) 등이 사실임을 증명해 준 날짜"
      ],
-     "annotation": "확정 일자"
+     "annotation": "확정 일자",
+     "translation": "a date, certified as true by a court or a community service centre, on which a housing contract was made"
     },
     {
      "term": "중개",
      "definition": [
       "두 사람 사이에서 일을 맡아 잘 진행되도록 함"
      ],
-     "annotation": "중개"
+     "annotation": "중개",
+     "translation": "taking charge of a matter between two people so that it goes well"
     },
     {
      "term": "부동산 중개 업소",
      "definition": [
       "다른 사람을 위하여 부동산 거래를 대리하거나 중개하고 수수료를 받는 영업소"
      ],
-     "annotation": "부동산 중개 업소"
+     "annotation": "부동산 중개 업소",
+     "translation": "an office that acts for others or mediates in property dealings and takes a fee"
     }
    ]
   },
@@ -967,7 +977,8 @@ KIIP.chapter({
      "definition": [
       "이삿짐 업체에서 이삿짐을 포장한 뒤 목적지까지 날라 주는 서비스"
      ],
-     "annotation": "포장 이사"
+     "annotation": "포장 이사",
+     "translation": "a service in which a removal firm packs the belongings and carries them to the destination"
     }
    ]
   },

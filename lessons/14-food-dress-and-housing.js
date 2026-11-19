@@ -162,21 +162,24 @@ KIIP.chapter({
      "definition": [
       "흙(농작물이 자랄 수 있는 흙)"
      ],
-     "annotation": "토양"
+     "annotation": "토양",
+     "translation": "soil (soil in which crops can grow)"
     },
     {
      "term": "특유",
      "definition": [
       "특별히 가지고 있음"
      ],
-     "annotation": "특유"
+     "annotation": "특유",
+     "translation": "having something as one's own special quality"
     },
     {
      "term": "발효",
      "definition": [
       "효모 등과 같은 미생물의 작용으로 분해하는 것"
      ],
-     "annotation": "발효"
+     "annotation": "발효",
+     "translation": "breaking down through the action of micro-organisms such as yeast"
     }
    ]
   },
@@ -678,7 +681,8 @@ KIIP.chapter({
      "definition": [
       "Korean-Food의 약자로, 한국 음식, 한국 식품 및 한식 문화를 포함한 것"
      ],
-     "annotation": "K-Food"
+     "annotation": "K-Food",
+     "translation": "short for Korean-Food; it covers Korean dishes, Korean food products and the culture of Korean food"
     }
    ]
   },

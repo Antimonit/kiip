@@ -33,19 +33,26 @@ CHAPTER = dict(
 
         SECTION("part", "01 한국에는 어떤 종교가 있을까?"),
         HEADING(2, "전통 신앙"),
-        GLOSSARY(("신성", "신과 같이 거룩하고 성스러움", "신성"),
-              ("천지신명", "하늘과 땅을 다스리는 거룩한 영적 존재", "천지신명"),
-              ("숭배", "우러러 공경함", "숭배")),
+        GLOSSARY(("신성", "신과 같이 거룩하고 성스러움", "신성",
+                  dict(en="being holy and sacred, like a god")),
+              ("천지신명", "하늘과 땅을 다스리는 거룩한 영적 존재", "천지신명",
+               dict(en="the holy spiritual beings that rule heaven and earth")),
+              ("숭배", "우러러 공경함", "숭배",
+               dict(en="looking up to and revering"))),
         PARAGRAPH("옛날 사람들은 태양, 별, 바다, 나무 등과 같은 자연을 {신성}하게 여기거나 "
           "{천지신명}을 {숭배}하는 경우가 많았다. 이 같은 {전통 신앙}은 오랜 기간 이어졌고 "
           "지금도 일부 남아 있다."),
 
         HEADING(2, "불교와 유교"),
-        GLOSSARY(("삼국 시대", "고구려, 백제, 신라 세 나라가 경쟁하던 시대", "삼국 시대"),
-              ("자비", "다른 사람을 사랑하고 가엾게 여김", "자비"),
-              ("서민", "신분이 높지 않은 사람이나 나랏일을 맡아 하지 않는 사람", "서민"),
+        GLOSSARY(("삼국 시대", "고구려, 백제, 신라 세 나라가 경쟁하던 시대", "삼국 시대",
+                  dict(en="the period when the three states of Goguryeo, Baekje and Silla competed")),
+              ("자비", "다른 사람을 사랑하고 가엾게 여김", "자비",
+               dict(en="loving other people and feeling pity for them")),
+              ("서민", "신분이 높지 않은 사람이나 나랏일을 맡아 하지 않는 사람", "서민",
+               dict(en="a person of no high rank, or one who holds no office of state")),
               ("문화유산", "조상이 남긴 문화 중에서 후손에게 물려줄 만한 가치가 있는 것",
-               "문화유산")),
+               "문화유산",
+               dict(en="that part of the culture left by one's ancestors which is worth handing down to later generations"))),
         PARAGRAPH("{불교}는 {석가모니}가 만든 종교로, 중국을 {거쳐|거치다} 4세기 {무렵} {삼국 시대}에 들어왔다. "
           "{자비}를 {강조하는|강조하다} 불교는 왕과 {귀족}은 물론 {서민}의 삶에도 {깊숙이|깊숙하다} "
           "{파고들었다|파고들다}. {절}, {탑}, {불상} 등은 불교와 관련된 {문화유산}이다. "
@@ -56,7 +63,8 @@ CHAPTER = dict(
         FIGURE("전국 각지에 있는 향교"),
 
         HEADING(2, "천주교와 개신교"),
-        GLOSSARY(("서양", "유럽과 아메리카 지역", "서양")),
+        GLOSSARY(("서양", "유럽과 아메리카 지역", "서양",
+                  dict(en="the regions of Europe and the Americas"))),
         PARAGRAPH("{기독교}는 {예수}의 가르침을 따르고 사랑의 {실천}을 {강조하는|강조하다} 종교로, "
           "{천주교}(가톨릭)와 {개신교}로 나뉜다. 천주교는 17세기 {무렵}에 {서양}의 {학문}과 함께 "
           "들어왔다. 천주교를 종교가 아니라 학문으로 받아들인 {사례}는 한국이 거의 "
@@ -83,7 +91,8 @@ CHAPTER = dict(
 
         SECTION("part", "02 종교 간의 배려와 존중이 왜 필요할까?"),
         HEADING(2, "현재 한국의 종교 현황"),
-        GLOSSARY(("교리", "종교의 원리나 가르침", "교리")),
+        GLOSSARY(("교리", "종교의 원리나 가르침", "교리",
+                  dict(en="the principles or teachings of a religion"))),
         CHART("종교 유형별 인구 비율(%)(통계청, 2015) — 원불교, 유교, 천도교와 기타는 "
               "합쳐도 1%에 미치지 못해 여기서는 생략했다.", "%",
               [("무교", 56.1), ("개신교", 19.7), ("불교", 15.5), ("천주교", 7.9)]),
@@ -97,7 +106,8 @@ CHAPTER = dict(
           "외국인을 위한 교육과 문화 서비스를 지원하고 있는 것이 대표적인 예이다."),
 
         HEADING(2, "종교 간의 상호 배려와 존중"),
-        GLOSSARY(("신도", "어떤 종교를 가지고 있는 사람", "신도")),
+        GLOSSARY(("신도", "어떤 종교를 가지고 있는 사람", "신도",
+                  dict(en="a person who has a certain religion"))),
         PARAGRAPH("현재 한국 사회에서는 다양한 종교가 {공존}하고 있고 그것을 유지하려는 노력도 "
           "계속되고 있다. {신도} 수가 많은 불교와 기독교(천주교, 개신교)의 {기념일}은 각각 "
           "휴일로 지정되어 있다. 음력 4월 8일 불교의 기념일인 ‘{부처님 오신 날}’과 양력 12월 "

@@ -45,9 +45,12 @@ CHAPTER = dict(
 
         SECTION("part", "01 금전 거래를 할 때 무엇을 알아 두어야 할까?"),
         GLOSSARY(("계약", "두 명 이상의 사람이 말이나 글로 일정한 약속을 하는 것", "계약",
-                  "a contract"),
-                 ("의사", "무엇을 하고자 하는 생각이나 뜻", "의사", "intention, intent"),
-                 ("무효", "법률 행위의 효과가 생기지 않는 것", "무효", "invalid, null")),
+                  "a contract",
+                  dict(en="two or more people making a definite promise in speech or in writing")),
+                 ("의사", "무엇을 하고자 하는 생각이나 뜻", "의사", "intention, intent",
+                  dict(en="the thought or will to do something")),
+                 ("무효", "법률 행위의 효과가 생기지 않는 것", "무효", "invalid, null",
+                  dict(en="a legal act having no effect"))),
         HEADING(2, "계약의 의미", translation=
                 "What a contract means" "\n\n"
                 "금전 means money. A money transaction means people lending "
@@ -66,11 +69,15 @@ CHAPTER = dict(
         FIGURE("계약은 두 사람의 의사가 일치하면 바로 성립한다."),
 
         GLOSSARY(("계약서", "계약이 성립되었음을 증명하기 위해 작성하는 서류", "계약서",
-                  "a written contract"),
+                  "a written contract",
+                  dict(en="a document drawn up to prove that a contract has been made")),
                  ("차용증", "남의 돈이나 물건을 빌린 것을 증명하는 문서", "차용증",
-                  "a promissory note (IOU)"),
-                 ("영수증", "돈이나 물품 등을 받았음을 증명하는 문서", "영수증", "a receipt"),
-                 ("배상", "손해를 물어줌", "배상", "compensation")),
+                  "a promissory note (IOU)",
+                  dict(en="a document proving that someone else's money or goods were borrowed")),
+                 ("영수증", "돈이나 물품 등을 받았음을 증명하는 문서", "영수증", "a receipt",
+                  dict(en="a document proving that money, goods and the like were received")),
+                 ("배상", "손해를 물어줌", "배상", "compensation",
+                  dict(en="making good a loss"))),
         HEADING(2, "금전 거래를 증명하는 서류", translation=
                 "The papers that prove a money transaction" "\n\n"
                 "A contract can be made by word of mouth between the parties, "
@@ -122,7 +129,8 @@ CHAPTER = dict(
 
         SECTION("part", "02 부동산 거래를 할 때 무엇을 알아 두어야 할까?"),
         GLOSSARY(("등기부 등본", "부동산에 관한 권리 관계를 적어둔 증명서", "등기부 등본",
-                  "a certified copy of the register")),
+                  "a certified copy of the register",
+                  dict(en="a certificate setting out the rights attached to a piece of real estate"))),
         HEADING(2, "부동산과 등기부 등본", translation=
                 "Property and the certified copy of the register" "\n\n"
                 "부동산 means property that cannot be carried about — a home, "
@@ -141,13 +149,17 @@ CHAPTER = dict(
                   "사이트에서도 확인할 수 있다."),
 
         GLOSSARY(("부동산 소유권 이전 등기", "부동산을 소유한 사람이 바뀌었다는 것을 등기소에 신고하는 것",
-                  "부동산 소유권 이전 등기"),
+                  "부동산 소유권 이전 등기",
+                  dict(en="reporting to the registry office that the owner of a piece of real estate has changed")),
                  ("전입신고",
                   "거주지를 옮기는 경우 새로운 거주지의 행정복지센터에 그 사실을 신고하는 일. 전입한 날부터 "
-                  "14일 이내에 해야 함", "전입신고"),
+                  "14일 이내에 해야 함", "전입신고",
+                  dict(en="reporting a move to the community service centre of the new address. It must be done within 14 days of moving in")),
                  ("확정일자", "집을 계약한 날짜에 대해 법원이나 행정복지센터 등이 사실임을 증명해 준 날짜",
-                  "확정일자"),
-                 ("경매", "물건을 사려는 사람이 여럿일 때 값을 가장 높이 부르는 사람에게 파는 일", "경매")),
+                  "확정일자",
+                  dict(en="a date, certified as true by a court, a community service centre or the like, on which a housing contract was made")),
+                 ("경매", "물건을 사려는 사람이 여럿일 때 값을 가장 높이 부르는 사람에게 파는 일", "경매",
+                  dict(en="selling to whoever bids the highest price when several people want to buy a thing"))),
         HEADING(2, "부동산 거래 과정", translation=
                 "How a property transaction goes" "\n\n"
                 "In buying and selling property, a deposit of about 10% of "

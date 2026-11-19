@@ -28,14 +28,20 @@ CHAPTER = dict(
 
         SECTION("part", "01 한국 경제는 어떻게 성장해 왔을까?"),
         HEADING(2, "‘한강의 기적’을 이루다"),
-        GLOSSARY(("폐허", "무너지고 부서져 못 쓰게 됨", "폐허"),
-                 ("복구", "원래 상태로 돌아감", "복구"),
-                 ("수출", "외국에 물건을 파는 것", "수출"),
-                 ("신소재", "미래의 기술을 이끌어갈 새로운 재료", "신소재"),
+        GLOSSARY(("폐허", "무너지고 부서져 못 쓰게 됨", "폐허",
+                  dict(en="having collapsed and been smashed beyond use")),
+                 ("복구", "원래 상태로 돌아감", "복구",
+                  dict(en="returning to the original state")),
+                 ("수출", "외국에 물건을 파는 것", "수출",
+                  dict(en="selling goods to foreign countries")),
+                 ("신소재", "미래의 기술을 이끌어갈 새로운 재료", "신소재",
+                  dict(en="new materials that will lead the technology of the future")),
                  ("외환 위기", "1997년 한국 정부가 가진 외환(외국 돈)이 부족해지면서 겪은 경제 "
-                               "위기", "외환 위기"),
+                               "위기", "외환 위기",
+                  dict(en="the economic crisis of 1997, when the Korean government ran short of foreign exchange (foreign money)")),
                  ("금융 위기", "2008년 미국에서 시작되어 한국을 비롯한 전 세계로 확산된 대규모의 "
-                               "경제 위기", "금융 위기")),
+                               "경제 위기", "금융 위기",
+                  dict(en="the large-scale economic crisis that began in the United States in 2008 and spread across the world, Korea included"))),
         PARAGRAPH("한국은 1950년대에 6·25 전쟁을 겪으면서 {산업} {시설}이 대부분 "
                   "{파괴}되었고, {국토} 전체가 {폐허}가 되었다. 이후 한국은 전쟁으로 인한 피해를 "
                   "{복구}하고 잘 사는 나라를 만들기 위해 {힘썼다|힘쓰다}."),
@@ -52,7 +58,8 @@ CHAPTER = dict(
                   "{넘어섰다|넘어서다}."),
 
         HEADING(2, "경제 성장에서 사람이 중요한 역할을 하다"),
-        GLOSSARY(("교육열", "교육에 대한 열정", "교육열")),
+        GLOSSARY(("교육열", "교육에 대한 열정", "교육열",
+                  dict(en="passion for education"))),
         PARAGRAPH("한국이 빠르게 경제 성장을 할 수 있었던 {요인}은 무엇일까? 그중 몇 가지를 "
                   "{제시}하면 다음과 같다. 첫째, {풍부}한 {노동력}이다. 한국은 {영토}가 좁고 "
                   "{자원}이나 기술, 돈이 많지 않았지만 인구는 많은 편이었다. 이를 경제 성장에 "
@@ -89,11 +96,15 @@ CHAPTER = dict(
 
         SECTION("part", "02 한국은 세계 여러 나라와 어떻게 교류하고 있을까?"),
         HEADING(2, "무역 강국이 된 한국"),
-        GLOSSARY(("수입", "외국에서 물건을 사오는 것", "수입"),
-                 ("첨단 제품", "높은 수준의 과학 기술로 만든 제품", "첨단 제품"),
+        GLOSSARY(("수입", "외국에서 물건을 사오는 것", "수입",
+                  dict(en="buying goods from foreign countries")),
+                 ("첨단 제품", "높은 수준의 과학 기술로 만든 제품", "첨단 제품",
+                  dict(en="products made with a high level of science and technology")),
                  ("자유무역협정(FTA)", "국가 간 상품이나 서비스의 자유로운 수출과 수입을 위한 "
-                                       "약속", "자유무역협정"),
-                 ("관세", "수출되거나 수입되는 물건에 매겨지는 세금", "관세")),
+                                       "약속", "자유무역협정",
+                  dict(en="an agreement between countries for the free export and import of goods and services")),
+                 ("관세", "수출되거나 수입되는 물건에 매겨지는 세금", "관세",
+                  dict(en="a tax charged on goods that are exported or imported"))),
         PARAGRAPH("한국의 수출과 {수입}을 {합친|합치다} {무역} {규모}는 지난 2011년 세계 9번째로 "
                   "1조 달러를 넘어선 이후로 {꾸준히} {상위권}을 유지하고 있다. 2019년에도 "
                   "{수출액} 5,424억 달러, {수입액} 5,302억 달러를 {기록}하였다."),
@@ -114,9 +125,12 @@ CHAPTER = dict(
 
         HEADING(2, "한강의 기적, 이제는 나눔으로"),
         GLOSSARY(("경제협력기구(OECD)", "세계 경제의 발전과 인류의 복지 증진을 위한 경제 기구",
-                  "경제협력개발기구"),
-                 ("저개발 국가", "경제 성장이 정도가 낮은 나라", "저개발 국가"),
-                 ("원조", "물건이나 돈 등으로 도와줌", "원조")),
+                  "경제협력개발기구",
+                  dict(en="an economic body for the development of the world economy and the welfare of humankind")),
+                 ("저개발 국가", "경제 성장이 정도가 낮은 나라", "저개발 국가",
+                  dict(en="a country with a low level of economic growth")),
+                 ("원조", "물건이나 돈 등으로 도와줌", "원조",
+                  dict(en="helping with goods, money and the like"))),
         PARAGRAPH("6·25 전쟁이 끝날 무렵 세계에서 가장 가난한 나라 중 하나였던 한국은 국제 "
                   "사회의 {지원}과 스스로의 노력을 통해 경제 성장의 {기틀}을 마련하였다. 그러한 "
                   "{기반} 위에서 꾸준히 성장을 {거듭해|거듭하다} 온 결과, 이제 {경제 강국}이 된 "

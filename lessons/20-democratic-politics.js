@@ -129,28 +129,32 @@ KIIP.chapter({
      "definition": [
       "어떤 단체의 대표를 뽑음"
      ],
-     "annotation": "선거"
+     "annotation": "선거",
+     "translation": "choosing the representative of a group"
     },
     {
      "term": "통치",
      "definition": [
       "나라나 지역을 다스림"
      ],
-     "annotation": "통치"
+     "annotation": "통치",
+     "translation": "governing a country or region"
     },
     {
      "term": "이해관계",
      "definition": [
       "이익과 손해가 걸려 있는 관계"
      ],
-     "annotation": "이해관계"
+     "annotation": "이해관계",
+     "translation": "a relationship in which gain and loss are at stake"
     },
     {
      "term": "민주주의(democracy)",
      "definition": [
       "국민이 권력을 가지고 스스로를 다스린다는 것을 의미하며, 인간의 존엄성, 자유, 평등과 같은 가치를 추구함"
      ],
-     "annotation": "민주주의"
+     "annotation": "민주주의",
+     "translation": "means that the people hold power and govern themselves, and pursues values such as human dignity, freedom and equality"
     }
    ]
   },
@@ -470,28 +474,32 @@ KIIP.chapter({
      "definition": [
       "어떤 일을 하거나 다른 사람에 대하여 당연히 요구할 수 있는 힘이나 자격"
      ],
-     "annotation": "권리"
+     "annotation": "권리",
+     "translation": "the power or entitlement to do something, or to demand it of others as a matter of course"
     },
     {
      "term": "권력",
      "definition": [
       "다른 사람을 복종시키거나 지배할 수 있는 공식적인 권리와 힘"
      ],
-     "annotation": "권력"
+     "annotation": "권력",
+     "translation": "the official right and force to make others obey or to rule them"
     },
     {
      "term": "명시",
      "definition": [
       "분명하게 보여줌"
      ],
-     "annotation": "명시"
+     "annotation": "명시",
+     "translation": "showing clearly"
     },
     {
      "term": "주권",
      "definition": [
       "주인으로서 권리"
      ],
-     "annotation": "주권"
+     "annotation": "주권",
+     "translation": "the right one has as the owner"
     }
    ]
   },
@@ -912,14 +920,16 @@ KIIP.chapter({
      "definition": [
       "어떤 일의 마지막"
      ],
-     "annotation": "궁극적"
+     "annotation": "궁극적",
+     "translation": "the very end of a matter"
     },
     {
      "term": "기여",
      "definition": [
       "도움이 되도록 함"
      ],
-     "annotation": "기여"
+     "annotation": "기여",
+     "translation": "being of help"
     }
    ]
   },
@@ -1173,7 +1183,8 @@ KIIP.chapter({
      "definition": [
       "상대편이 지나치게 많은 세력을 가지거나 마음대로 행동하지 못하도록 함"
      ],
-     "annotation": "견제"
+     "annotation": "견제",
+     "translation": "keeping the other side from gaining too much power or acting as it pleases"
     }
    ]
   },

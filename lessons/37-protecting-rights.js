@@ -213,14 +213,16 @@ KIIP.chapter({
      "definition": [
       "사람이나 집단들 간에 문제가 일어나서 다투는 것"
      ],
-     "annotation": "분쟁"
+     "annotation": "분쟁",
+     "translation": "people or groups quarrelling because a problem has arisen between them"
     },
     {
      "term": "당사자",
      "definition": [
       "어떤 일에 직접 관계된 사람이나 기관"
      ],
-     "annotation": "당사자"
+     "annotation": "당사자",
+     "translation": "the person or body directly involved in a matter"
     }
    ]
   },
@@ -452,7 +454,8 @@ KIIP.chapter({
      "definition": [
       "전체 가구의 소득액을 순서대로 늘어놓았을 때 중간에 위치한 소득액을 말함. 중위소득은 가족 구성원 수에 따라 달라지는데 2020년 4인 가구의 기준 중위소득은 4,749,174원임"
      ],
-     "annotation": "중위소득"
+     "annotation": "중위소득",
+     "translation": "the income that falls in the middle when the incomes of all households are set out in order. Median income varies with the number of people in the family; in 2020 the standard median income for a household of four was 4,749,174 won"
     }
    ]
   },
@@ -852,14 +855,16 @@ KIIP.chapter({
      "definition": [
       "해당 문제의 직접적인 당사자 외의 사람"
      ],
-     "annotation": "제3자"
+     "annotation": "제3자",
+     "translation": "a person other than those directly involved in the matter"
     },
     {
      "term": "자문",
      "definition": [
       "전문가에게 어떤 일을 더 잘 처리하는 방법을 물어보는 것"
      ],
-     "annotation": "자문"
+     "annotation": "자문",
+     "translation": "asking an expert how to handle something better"
     }
    ]
   },
@@ -1000,21 +1005,24 @@ KIIP.chapter({
      "definition": [
       "부당하게 피해를 입은 사람의 권리나 이익을 회복하도록 하는 일"
      ],
-     "annotation": "구제"
+     "annotation": "구제",
+     "translation": "restoring the rights or interests of a person who has been unfairly harmed"
     },
     {
      "term": "권고",
      "definition": [
       "어떤 행위를 하도록 권하는 것"
      ],
-     "annotation": "권고"
+     "annotation": "권고",
+     "translation": "advising that something be done"
     },
     {
      "term": "부패",
      "definition": [
       "지위에 따른 권한과 영향력을 부당하게 사용하여 사회질서에 반하여 자신의 이익을 취하는 것"
      ],
-     "annotation": "부패"
+     "annotation": "부패",
+     "translation": "unfairly using the authority and influence of one's position to take gain for oneself, against the order of society"
     }
    ]
   },

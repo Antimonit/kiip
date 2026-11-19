@@ -30,7 +30,8 @@ CHAPTER = dict(
         SECTION("part", "01 어디에서 장을 보면 될까?"),
         HEADING(2, "다양한 종류의 시장"),
         GLOSSARY(("흥정", "물건 값이나 양에 대해 의논하는 것. 사는 사람은 값을 깎아 달라고 하거나 "
-                          "더 많은 양을 달라고 하고, 파는 사람은 그렇게 안 하려고 함", "흥정")),
+                          "더 많은 양을 달라고 하고, 파는 사람은 그렇게 안 하려고 함", "흥정",
+                  dict(en="discussing the price or quantity of goods. The buyer asks for a lower price or a larger amount, and the seller tries not to give it"))),
         PARAGRAPH("한국에는 다양한 종류의 시장이 있다. 날마다 열리는 시장을 {상설} "
                   "시장이라고 하는데 {전통 시장}, {대형 마트}, {백화점}, 슈퍼마켓, {편의점} 등이 "
                   "여기에 {해당}한다. 먼저, 전통 시장은 작은 {상점}들이 모여 있는 곳으로 상점 "
@@ -83,10 +84,13 @@ CHAPTER = dict(
 
         SECTION("part", "02 소비자의 권리와 책임에는 어떤 것이 있을까?"),
         HEADING(2, "소비자가 보호 받을 권리"),
-        GLOSSARY(("수리", "고장나거나 잘못된 곳을 고침", "수리"),
-                 ("환불", "이미 낸 돈을 돌려 받음", "환불"),
+        GLOSSARY(("수리", "고장나거나 잘못된 곳을 고침", "수리",
+                  dict(en="mending what is broken or faulty")),
+                 ("환불", "이미 낸 돈을 돌려 받음", "환불",
+                  dict(en="getting back money already paid")),
                  ("소비자기본법", "소비자의 권리와 책임을 정해 놓고 있는 법으로 안정적인 소비 "
-                                  "생활과 경제 발전을 목적으로 함", "소비자기본법")),
+                                  "생활과 경제 발전을 목적으로 함", "소비자기본법",
+                  dict(en="the law that sets out consumers' rights and responsibilities; its aim is stable consumer life and economic development"))),
         PARAGRAPH("{소비자}가 제품을 {구입}하거나 서비스를 이용할 때 피해를 입거나 {불만}을 "
                   "느끼는 경우가 발생한다. 이러한 경우에 소비자는 {수리}, {교환}, {환불}, 피해 "
                   "{보상} 등과 같은 보호를 받을 수 있다."),
@@ -101,8 +105,10 @@ CHAPTER = dict(
         FIGURE("한국소비자원 누리집 (http://www.kca.go.kr)"),
 
         HEADING(2, "소비자의 책임"),
-        GLOSSARY(("유통기한", "상품이 사람들 사이에 안전하게 거래될 수 있는 기한", "유통기한"),
-                 ("영수증", "상품을 구입했음을 증명하는 문서", "영수증")),
+        GLOSSARY(("유통기한", "상품이 사람들 사이에 안전하게 거래될 수 있는 기한", "유통기한",
+                  dict(en="the period within which a product can safely be traded among people")),
+                 ("영수증", "상품을 구입했음을 증명하는 문서", "영수증",
+                  dict(en="a document proving that goods were bought"))),
         PARAGRAPH("소비자는 자신의 안전과 권리 보호를 위해 {책임감}있는 소비자로서 행동해야 "
                   "한다. 예를 들어, 소비자는 상품을 구입할 때 가격과 {품질}을 비교하고, 음식물의 "
                   "경우 {유통기한}을 반드시 확인해야 한다. 그리고 물건 구입 후에는 {영수증}을 "

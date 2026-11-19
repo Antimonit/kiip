@@ -131,21 +131,24 @@ KIIP.chapter({
      "definition": [
       "사회 전체의 이익"
      ],
-     "annotation": "공익"
+     "annotation": "공익",
+     "translation": "the interest of society as a whole"
     },
     {
      "term": "집행",
      "definition": [
       "실제로 시행함"
      ],
-     "annotation": "집행"
+     "annotation": "집행",
+     "translation": "actually carrying something out"
     },
     {
      "term": "대통령제",
      "definition": [
       "대통령을 중심으로 국정이 운영되는 정부 형태"
      ],
-     "annotation": "대통령제"
+     "annotation": "대통령제",
+     "translation": "the form of government in which the affairs of state are run around the president"
     }
    ]
   },
@@ -341,21 +344,24 @@ KIIP.chapter({
      "definition": [
       "여럿 가운데서 뽑힘"
      ],
-     "annotation": "선출"
+     "annotation": "선출",
+     "translation": "being chosen from among several"
     },
     {
      "term": "중임",
      "definition": [
       "어떤 일을 다시 맡음"
      ],
-     "annotation": "중임"
+     "annotation": "중임",
+     "translation": "taking on a post again"
     },
     {
      "term": "임명",
      "definition": [
       "일정한 지위나 임무를 남에게 맡김"
      ],
-     "annotation": "임명"
+     "annotation": "임명",
+     "translation": "entrusting someone with a given position or duty"
     }
    ]
   },
@@ -930,14 +936,16 @@ KIIP.chapter({
      "definition": [
       "어떤 사람이나 기관의 힘이 미치는 범위"
      ],
-     "annotation": "권한"
+     "annotation": "권한",
+     "translation": "the range over which the power of a person or body reaches"
     },
     {
      "term": "조약",
      "definition": [
       "외국과 맺은 약속으로 법과 같은 효력을 가짐"
      ],
-     "annotation": "조약"
+     "annotation": "조약",
+     "translation": "a promise made with a foreign country that has the same force as law"
     }
    ]
   },
@@ -1169,21 +1177,24 @@ KIIP.chapter({
      "definition": [
       "남한과 북한으로 갈려 있는 우리 국토와 우리 겨레가 하나로 되는 일"
      ],
-     "annotation": "남북통일"
+     "annotation": "남북통일",
+     "translation": "our land and our people, divided into South and North Korea, becoming one"
     },
     {
      "term": "검역",
      "definition": [
       "해외에서 전염병이나 해충 등이 들어오는 것을 막기 위해 공항이나 항구에서 검사하는 것"
      ],
-     "annotation": "검역"
+     "annotation": "검역",
+     "translation": "inspection at airports and ports to stop infectious diseases, pests and the like coming in from abroad"
     },
     {
      "term": "치안",
      "definition": [
       "나라를 안전하게 하는 일"
      ],
-     "annotation": "치안"
+     "annotation": "치안",
+     "translation": "keeping the country safe"
     }
    ]
   },

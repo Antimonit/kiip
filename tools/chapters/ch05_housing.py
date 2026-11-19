@@ -54,7 +54,8 @@ CHAPTER = dict(
           "than a 다세대 주택. An apartment (아파트) is multi-unit housing of "
           "5 stories or more, and is often built on a large scale, "
           "ranging from hundreds to thousands of households.\""),
-        GLOSSARY(("세", "다른 사람의 건물 등을 빌려 쓰는 대가로 내는 돈", "세")),
+        GLOSSARY(("세", "다른 사람의 건물 등을 빌려 쓰는 대가로 내는 돈", "세",
+                  dict(en="money paid in return for the use of someone else's building and the like"))),
         PARAGRAPH("한국인이 거주하는 집의 형태는 크게 {단독} 주택(일반 주택, 다가구 주택 등)과 {공동} 주택(다세대 "
           "주택, {연립} 주택, 아파트 등)으로 나눌 수 있다. 단독 주택은 보통 한 가구가 독립적으로 생활할 수 "
           "있도록 집을 한 채씩 각각 {지은} 형태를 말한다. 단독 주택에는 여러 가구가 각각의 독립적인 공간을 "
@@ -84,10 +85,14 @@ CHAPTER = dict(
           "around retirement, or those who want to live in a pleasant "
           "natural environment, build and live in country houses (전원 "
           "주택) in quiet areas on the outskirts of large cities.\""),
-        GLOSSARY(("층간 소음", "건물의 한 층에서 발생한 소리가 다른 층에 전달되어 피해를 주는 것", "층간 소음"),
-              ("쾌적", "기분이 상쾌하고 즐거움", "쾌적"),
-              ("한적", "한가하고 고요함", "한적"),
-              ("전원 주택", "도시에서 조금 떨어져 있어서 자연의 분위기를 느낄 수 있도록 지은 집", "전원 주택")),
+        GLOSSARY(("층간 소음", "건물의 한 층에서 발생한 소리가 다른 층에 전달되어 피해를 주는 것", "층간 소음",
+                  dict(en="sound made on one floor of a building carrying to another floor and causing harm")),
+              ("쾌적", "기분이 상쾌하고 즐거움", "쾌적",
+               dict(en="feeling fresh and pleasant")),
+              ("한적", "한가하고 고요함", "한적",
+               dict(en="being leisurely and quiet")),
+              ("전원 주택", "도시에서 조금 떨어져 있어서 자연의 분위기를 느낄 수 있도록 지은 집", "전원 주택",
+               dict(en="a house built a little way out of the city so that one can feel the atmosphere of nature"))),
         PARAGRAPH("한국의 주거 형태는 빠르게 변화하고 있다. 과거에는 단독 주택이 대부분이었으나 도시에 {인구}가 "
           "집중되면서 단독 주택보다 공동 주택에 살고 있는 가구 수가 많아졌다. 특히 아파트는 {대체로} 교통이 "
           "편리한 곳에 지어지고 놀이터, {체력 단련실} 등 여러 가지 편의 {시설}이 {갖추어져} 있어서 많은 "
@@ -131,13 +136,18 @@ CHAPTER = dict(
           "the contract period ends, it's a good idea to go to the "
           "community welfare center before or after moving and get a "
           "fixed-date certification (확정 일자).\""),
-        GLOSSARY(("세입자", "세를 내고 남의 집이나 방 따위를 빌려 쓰는 사람", "세입자"),
-              ("파기", "계약이나 약속 등을 깨뜨려 무효로 하는 것", "파기"),
+        GLOSSARY(("세입자", "세를 내고 남의 집이나 방 따위를 빌려 쓰는 사람", "세입자",
+                  dict(en="a person who pays rent to use someone else's house or room")),
+              ("파기", "계약이나 약속 등을 깨뜨려 무효로 하는 것", "파기",
+               dict(en="breaking a contract or promise and making it void")),
               ("확정 일자", "집을 계약한 날짜에 대해 법원이나 행정복지센터(주민센터) 등이 사실임을 증명해 준 날짜",
-              "확정 일자"),
-              ("중개", "두 사람 사이에서 일을 맡아 잘 진행되도록 함", "중개"),
+              "확정 일자",
+               dict(en="a date, certified as true by a court or a community service centre, on which a housing contract was made")),
+              ("중개", "두 사람 사이에서 일을 맡아 잘 진행되도록 함", "중개",
+               dict(en="taking charge of a matter between two people so that it goes well")),
               ("부동산 중개 업소", "다른 사람을 위하여 부동산 거래를 대리하거나 중개하고 수수료를 받는 영업소",
-              "부동산 중개 업소")),
+              "부동산 중개 업소",
+               dict(en="an office that acts for others or mediates in property dealings and takes a fee"))),
         PARAGRAPH("한국에서 집에 거주하는 형태는 {자가}, 전세, 월세로 나눌 수 있다. 자가는 자기가 소유한 집에 살고 "
           "있는 것을 말한다. 전세는 집주인에게 {일정한} 돈을 {보증금}으로 {맡기}고 계약 기간 동안 집이나 "
           "방을 빌려 쓰는 방식으로 한국에서만 널리 활용된다. 전세 계약은 보통 2년 단위로 하며, 집주인은 "
@@ -165,7 +175,8 @@ CHAPTER = dict(
           "current financial situation and future plans, examine "
           "whether to buy a house or rent it via jeonse or monthly "
           "rent, and choose the method that suits you best.\""),
-        GLOSSARY(("포장 이사", "이삿짐 업체에서 이삿짐을 포장한 뒤 목적지까지 날라 주는 서비스", "포장 이사")),
+        GLOSSARY(("포장 이사", "이삿짐 업체에서 이삿짐을 포장한 뒤 목적지까지 날라 주는 서비스", "포장 이사",
+                  dict(en="a service in which a removal firm packs the belongings and carries them to the destination"))),
         PARAGRAPH("요즘은 이사를 할 때 대부분 포장 이사를 이용한다. 어디에서 거주할 것인가와 관련하여 중요하게 여기는 "
           "것으로는 교통, 교육 {여건}, {주거} 환경, {편의 시설} 등이 있다. 출퇴근하기 편한지, 다른 "
           "지역으로 이동하기 편한지를 고려하는 사람들은 지하철역 주변이나 교통이 편리한 곳을 선호한다. 자녀 교육을 "

@@ -139,35 +139,40 @@ KIIP.chapter({
      "definition": [
       "살림을 꾸려나가는 것, 살아가는 형편"
      ],
-     "annotation": "생계"
+     "annotation": "생계",
+     "translation": "keeping a household going; the circumstances in which one gets by"
     },
     {
      "term": "실업률",
      "definition": [
       "일할 의지와 능력을 가진 사람들 중에서 취업하지 못하는 사람이 차지하는 비율"
      ],
-     "annotation": "실업률"
+     "annotation": "실업률",
+     "translation": "the share of those with the will and ability to work who cannot find a job"
     },
     {
      "term": "자영업",
      "definition": [
       "자신이 스스로 경영하는 사업"
      ],
-     "annotation": "자영업"
+     "annotation": "자영업",
+     "translation": "a business one runs oneself"
     },
     {
      "term": "치열",
      "definition": [
       "어떤 일의 정도가 맹렬하고 뜨거움"
      ],
-     "annotation": "치열"
+     "annotation": "치열",
+     "translation": "the degree of something being fierce and heated"
     },
     {
      "term": "비정규직",
      "definition": [
       "정규직으로서 보장받지 못하는 계약직, 임시직, 일용직 등"
      ],
-     "annotation": "비정규직"
+     "annotation": "비정규직",
+     "translation": "contract, temporary and day work and the like, without the security of a regular post"
     }
    ]
   },
@@ -432,7 +437,8 @@ KIIP.chapter({
      "definition": [
       "근로자가 필요에 따라 자신의 일할 시간을 선택해 일반적인 근무시간보다 짧게 일하는 방식임"
      ],
-     "annotation": "시간선택제"
+     "annotation": "시간선택제",
+     "translation": "a way of working in which the employee chooses their own hours as needed and works less than ordinary working hours"
     }
    ]
   },
@@ -911,21 +917,24 @@ KIIP.chapter({
      "definition": [
       "어떤 일자리에 사람을 구하는 광고"
      ],
-     "annotation": "구인 광고"
+     "annotation": "구인 광고",
+     "translation": "an advertisement looking for a person to fill a job"
     },
     {
      "term": "한국산업인력공단",
      "definition": [
       "근로자들의 능력을 개발하는 프로그램을 통해 산업에 필요한 인력을 길러내는 국가기관"
      ],
-     "annotation": "한국산업인력공단"
+     "annotation": "한국산업인력공단",
+     "translation": "a state body that trains the workforce industry needs, through programmes that develop workers' skills"
     },
     {
      "term": "이력서",
      "definition": [
       "그동안 쌓은 학력이나 직업 관련 경험을 적은 것"
      ],
-     "annotation": "이력서"
+     "annotation": "이력서",
+     "translation": "a written account of the schooling and work experience one has built up"
     }
    ]
   },
@@ -1189,7 +1198,8 @@ KIIP.chapter({
      "definition": [
       "일자리와 관련된 도움을 주기 위한 정부 부처"
      ],
-     "annotation": "고용노동부"
+     "annotation": "고용노동부",
+     "translation": "the government ministry that gives help with matters of employment"
     }
    ]
   },

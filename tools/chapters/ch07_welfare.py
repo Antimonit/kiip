@@ -70,10 +70,14 @@ CHAPTER = dict(
         BULLET("산재", level=2),
         MARGIN("국민연금공단", "국민연금 업무를 담당하는 기관", "문의:1355, www.nps.or.kr"),
         HEADING(2, "공공부조"),
-        GLOSSARY(("최저 생계비", "생활에 필요한 최소한의 비용"),
-              ("저소득층", "소득이 낮아 경제적 지원이 필요한 사람들"),
-              ("생계", "살아 나가는 형편"),
-              ("긴급", "중요하고 급함")),
+        GLOSSARY(("최저 생계비", "생활에 필요한 최소한의 비용",
+                  dict(en="the minimum cost needed to live")),
+              ("저소득층", "소득이 낮아 경제적 지원이 필요한 사람들",
+               dict(en="people whose income is low and who need financial support")),
+              ("생계", "살아 나가는 형편",
+               dict(en="the circumstances in which one gets by")),
+              ("긴급", "중요하고 급함",
+               dict(en="being important and pressing"))),
         PARAGRAPH("공공부조는 생활이 어려운 사람들의 기본적인 생활 수준을 보장해주기 위해 국가나 지방자치단체에서 생활비, "
           "교육비, 의료비 등을 지원해 주는 제도이다. 소득이 최저 생계비보다 적은 저소득층은 국민 기초생활보장 "
           "제도를 통해 생활비를 지원 받을 수 있다."),
@@ -127,7 +131,8 @@ CHAPTER = dict(
           "marriage immigrants who are pregnant or about to give "
           "birth can receive health management services for "
           "themselves and their newborn baby."),
-        GLOSSARY(("신생아", "갓 태어난 아기", "신생아")),
+        GLOSSARY(("신생아", "갓 태어난 아기", "신생아",
+                  dict(en="a baby who has just been born"))),
         PARAGRAPH("사회 복지 제도 중 공공부조는 원칙적으로 한국 국민에게만 적용된다. 그러나 한국에 살고 있는 외국인 중 "
           "대한민국 국민과 혼인한 사람, 대한민국 국적을 가진 부모나 자녀를 돌보고 있는 사람, 법에 따라 난민으로 "
           "인정된 사람 등은 소득이 최저 생계비보다 적은 경우 최저 생계비, 의료비, 긴급 복지 등을 지원받을 수 "
@@ -158,9 +163,12 @@ CHAPTER = dict(
           "Foreign Worker Support Centers provide Korean language "
           "education for foreign workers and support the protection "
           "of foreign workers' rights and interests (권익)."),
-        GLOSSARY(("다국어", "여러 나라의 언어", "다국어"),
-              ("이주", "다른 나라나 지역으로 옮겨 가서 사는 것", "이주"),
-              ("권익", "권리와 이익", "권익")),
+        GLOSSARY(("다국어", "여러 나라의 언어", "다국어",
+                  dict(en="the languages of several countries")),
+              ("이주", "다른 나라나 지역으로 옮겨 가서 사는 것", "이주",
+               dict(en="moving to another country or region to live")),
+              ("권익", "권리와 이익", "권익",
+               dict(en="rights and interests"))),
         PARAGRAPH("다문화 가족과 외국인을 지원하는 기관으로는 {법무부}의 외국인 종합 안내 센터, {여성가족부}의 "
           "{다누리}콜센터, 다문화 가족 지원 센터, {고용노동부}의 외국인 근로자 지원센터 등이 있다."),
         PARAGRAPH("외국인 종합 안내센터(1345)는 {신분증} 관련 업무, {체류}{허가} 관련 업무, 국적 관련 업무 등 "

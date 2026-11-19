@@ -229,9 +229,16 @@ def GLOSSARY(*entries):
     Each entry is (term, definition) or (term, definition, headword) where
     the third names the entry the term should open. A fourth element is the
     English written beside the term on the page by hand.
+
+    A dict closing the entry carries what is said about the row rather than
+    printed in it: `en`, the definition in English, which the page keeps out
+    of sight until the article is read side by side.
     """
     out = []
     for entry in entries:
+        extra = {}
+        if isinstance(entry[-1], dict):
+            entry, extra = entry[:-1], entry[-1]
         item = {
             "term": entry[0],
             "definition": _spans(entry[1]),
@@ -239,6 +246,8 @@ def GLOSSARY(*entries):
         }
         if len(entry) > 3 and entry[3]:
             item["handwritten"] = entry[3]
+        if extra.get("en"):
+            item["translation"] = extra["en"]
         out.append(item)
     return {"type": "glossary", "entries": out}
 

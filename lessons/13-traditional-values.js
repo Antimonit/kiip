@@ -166,35 +166,40 @@ KIIP.chapter({
      "definition": [
       "중국 공자의 가르침을 기본으로 하는 유학을 종교적으로 표현한 말"
      ],
-     "annotation": "유교"
+     "annotation": "유교",
+     "translation": "the religious name for Confucian learning, which is based on the teaching of Confucius of China"
     },
     {
      "term": "조상",
      "definition": [
       "이미 돌아가신, 부모 위의 어른"
      ],
-     "annotation": "조상"
+     "annotation": "조상",
+     "translation": "an elder above one's parents who has already died"
     },
     {
      "term": "봉안당(납골당)",
      "definition": [
       "죽은 사람의 유골(시신을 태우고 남은 뼈)을 보관해 두는 곳"
      ],
-     "annotation": "봉안당"
+     "annotation": "봉안당",
+     "translation": "a place where the remains (the bones left after the body is cremated) of the dead are kept"
     },
     {
      "term": "추모",
      "definition": [
       "죽은 사람을 그리워함"
      ],
-     "annotation": "추모"
+     "annotation": "추모",
+     "translation": "missing a person who has died"
     },
     {
      "term": "공경",
      "definition": [
       "공손히 받들어 모심"
      ],
-     "annotation": "공경"
+     "annotation": "공경",
+     "translation": "serving and attending someone respectfully"
     }
    ]
   },
@@ -471,14 +476,16 @@ KIIP.chapter({
      "definition": [
       "개인적인 것이 아니라 여러 사람들이나 단체, 국가 등에 관계되는 것"
      ],
-     "annotation": "공적"
+     "annotation": "공적",
+     "translation": "what concerns many people, a group or the state rather than one individual"
     },
     {
      "term": "높임말",
      "definition": [
       "주로 자신보다 나이가 많은 상대에게 공경하는 마음을 담아 하는 말. ‘존댓말’이라고도 함"
      ],
-     "annotation": "높임말"
+     "annotation": "높임말",
+     "translation": "speech that carries respect, used mainly to someone older than oneself. Also called 존댓말"
     }
    ]
   },
@@ -864,35 +871,40 @@ KIIP.chapter({
      "definition": [
       "공동의 목적이나 생활 방식 등을 가진 집단에 소속되어 있다는 생각"
      ],
-     "annotation": "공동체 의식"
+     "annotation": "공동체 의식",
+     "translation": "the sense of belonging to a group that shares an aim or a way of life"
     },
     {
      "term": "두레",
      "definition": [
       "마을 사람들끼리 힘을 모아 공동으로 농사일을 하기 위한 조직"
      ],
-     "annotation": "두레"
+     "annotation": "두레",
+     "translation": "an organisation of villagers pooling their strength to do the farm work together"
     },
     {
      "term": "품앗이",
      "definition": [
       "일을 서로 거들어 주어 품을 지고 갚는 교환노동"
      ],
-     "annotation": "품앗이"
+     "annotation": "품앗이",
+     "translation": "exchange labour: helping each other with work, owing a day's work and repaying it"
     },
     {
      "term": "상부상조",
      "definition": [
       "서로 의지하고 서로 도움"
      ],
-     "annotation": "상부상조"
+     "annotation": "상부상조",
+     "translation": "relying on each other and helping each other"
     },
     {
      "term": "계기",
      "definition": [
       "어떤 일이 일어나도록 하는 결정적인 원인이나 기회"
      ],
-     "annotation": "계기"
+     "annotation": "계기",
+     "translation": "the decisive cause or occasion that makes something happen"
     }
    ]
   },
@@ -1074,28 +1086,32 @@ KIIP.chapter({
      "definition": [
       "성씨 조상, 즉 시조가 태어난 거주지를 뜻함(예: 안동 김씨, 경주 이씨, 밀양 박씨)"
      ],
-     "annotation": "본관"
+     "annotation": "본관",
+     "translation": "the place where the ancestor of a surname, its founder, was born and lived (e.g. the Andong Kims, the Gyeongju Lees, the Miryang Parks)"
     },
     {
      "term": "인연",
      "definition": [
       "사람과 사람 사이의 연결 고리나 관계"
      ],
-     "annotation": "인연"
+     "annotation": "인연",
+     "translation": "the link or relationship between one person and another"
     },
     {
      "term": "향우회",
      "definition": [
       "고향이나 출신 지역이 같은 사람들의 친목 조직"
      ],
-     "annotation": "향우회"
+     "annotation": "향우회",
+     "translation": "a social organisation of people from the same hometown or home region"
     },
     {
      "term": "동문회",
      "definition": [
       "같은 학교를 졸업한 사람들이 모여 만든 조직"
      ],
-     "annotation": "동문회"
+     "annotation": "동문회",
+     "translation": "an organisation formed by people who graduated from the same school"
     }
    ]
   },

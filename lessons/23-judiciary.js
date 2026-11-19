@@ -124,14 +124,16 @@ KIIP.chapter({
      "definition": [
       "말썽을 일으켜 다툼"
      ],
-     "annotation": "분쟁"
+     "annotation": "분쟁",
+     "translation": "causing trouble and quarrelling"
     },
     {
      "term": "처벌",
      "definition": [
       "벌을 줌"
      ],
-     "annotation": "처벌"
+     "annotation": "처벌",
+     "translation": "giving a punishment"
     }
    ]
   },
@@ -321,7 +323,8 @@ KIIP.chapter({
      "definition": [
       "법원이 소송 사건에 대하여 판단하고 결정을 내림"
      ],
-     "annotation": "판결"
+     "annotation": "판결",
+     "translation": "a court judging a lawsuit and giving its decision"
     }
    ]
   },
@@ -903,21 +906,24 @@ KIIP.chapter({
      "definition": [
       "공평하고 올바름"
      ],
-     "annotation": "공정"
+     "annotation": "공정",
+     "translation": "being fair and right"
     },
     {
      "term": "양심",
      "definition": [
       "착하고 나쁨을 구별하는 도덕적 의식이나 마음씨"
      ],
-     "annotation": "양심"
+     "annotation": "양심",
+     "translation": "the moral sense or heart that tells good from bad"
     },
     {
      "term": "재판부",
      "definition": [
       "재판을 담당하고 이끌어가는 판사(들)"
      ],
-     "annotation": "재판부"
+     "annotation": "재판부",
+     "translation": "the judge or judges who take charge of and conduct a trial"
     }
    ]
   },
@@ -1174,14 +1180,16 @@ KIIP.chapter({
      "definition": [
       "가정과 관계된 일"
      ],
-     "annotation": "가사"
+     "annotation": "가사",
+     "translation": "matters to do with the home"
     },
     {
      "term": "상속",
      "definition": [
       "물려주고 이어받는 것"
      ],
-     "annotation": "상속"
+     "annotation": "상속",
+     "translation": "handing down and inheriting"
     }
    ]
   },

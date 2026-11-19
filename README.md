@@ -54,6 +54,10 @@ a `src` in a chapter now stops the build with a note saying so.
 - groups blocks into sections (생각해 봅시다, 학습목표, 관련 단원 확인하기, the
   numbered parts, 알아두면 좋아요, 주요 내용정리, 이야기 나누기);
 - recognises the margin glossary — a term line followed by its definition;
+- carries the English of a margin definition, written beside the row as
+  `dict(en=...)`, which the page shows under the Korean only while the
+  article is read side by side — and reports the rows of a chapter that have
+  none, once the chapter has any;
 - parses each comment into a headword, a hanja breakdown and usage notes,
   keyed by the word it is anchored to, merging multiple comments on one word;
 - treats a long English comment left on a *heading* as a section translation

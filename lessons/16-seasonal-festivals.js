@@ -135,35 +135,40 @@ KIIP.chapter({
      "definition": [
       "새로운 방식(서양식)에 따른 정월(1월) 첫날"
      ],
-     "annotation": "신정"
+     "annotation": "신정",
+     "translation": "the first day of the first month (January) by the new (Western) reckoning"
     },
     {
      "term": "양력",
      "definition": [
       "해(日)의 변화를 기준으로 날짜를 표기하는 방식"
      ],
-     "annotation": "양력"
+     "annotation": "양력",
+     "translation": "the way of writing dates that follows the changes of the sun (日)"
     },
     {
      "term": "음력",
      "definition": [
       "달(月)의 변화를 기준으로 날짜를 표기하는 방식"
      ],
-     "annotation": "음력"
+     "annotation": "음력",
+     "translation": "the way of writing dates that follows the changes of the moon (月)"
     },
     {
      "term": "산소",
      "definition": [
       "조상의 묘지를 높여 부르는 말"
      ],
-     "annotation": "산소"
+     "annotation": "산소",
+     "translation": "a respectful word for an ancestor's grave"
     },
     {
      "term": "세배",
      "definition": [
       "설날 아침, 아랫사람이 윗사람에게 큰절로 인사드리는 것"
      ],
-     "annotation": "세배"
+     "annotation": "세배",
+     "translation": "on the morning of Seollal, a younger person greeting an elder with a deep bow"
     }
    ]
   },
@@ -516,7 +521,8 @@ KIIP.chapter({
      "definition": [
       "건강하게 오래 사는 것"
      ],
-     "annotation": "장수"
+     "annotation": "장수",
+     "translation": "living long and in good health"
     }
    ]
   },
@@ -743,21 +749,24 @@ KIIP.chapter({
      "definition": [
       "농작물이나 성과를 거두어 들임"
      ],
-     "annotation": "수확"
+     "annotation": "수확",
+     "translation": "gathering in crops or results"
     },
     {
      "term": "햅쌀",
      "definition": [
       "그 해에 새로 거둔 쌀"
      ],
-     "annotation": "햅쌀"
+     "annotation": "햅쌀",
+     "translation": "rice newly harvested that year"
     },
     {
      "term": "햇과일",
      "definition": [
       "그 해에 새로 거둔 과일"
      ],
-     "annotation": "햇과일"
+     "annotation": "햇과일",
+     "translation": "fruit newly harvested that year"
     }
    ]
   },
@@ -993,7 +1002,8 @@ KIIP.chapter({
      "definition": [
       "추석날 밤에 여자들이 서로 손을 잡고 둥근 원을 그리면서 뛰는 민속놀이"
      ],
-     "annotation": "강강술래"
+     "annotation": "강강술래",
+     "translation": "a folk game in which women join hands on the night of Chuseok and dance round in a circle"
     }
    ]
   },

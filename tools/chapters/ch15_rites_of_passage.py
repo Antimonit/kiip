@@ -33,10 +33,14 @@ CHAPTER = dict(
 
         SECTION("part", "01 결혼식, 돌잔치, 성년식은 어떤 모습일까?"),
         HEADING(2, "가정의 탄생, 결혼식"),
-        GLOSSARY(("서약", "맹세하고 약속함", "서약"),
-              ("신랑", "갓 결혼하였거나 곧 결혼하는 남자", "신랑"),
-              ("신부", "갓 결혼하였거나 곧 결혼하는 여자", "신부"),
-              ("축의금", "축하하는 마음을 나타내기 위해 내는 돈", "축의금")),
+        GLOSSARY(("서약", "맹세하고 약속함", "서약",
+                  dict(en="swearing and promising")),
+              ("신랑", "갓 결혼하였거나 곧 결혼하는 남자", "신랑",
+               dict(en="a man who has just married or is about to marry")),
+              ("신부", "갓 결혼하였거나 곧 결혼하는 여자", "신부",
+               dict(en="a woman who has just married or is about to marry")),
+              ("축의금", "축하하는 마음을 나타내기 위해 내는 돈", "축의금",
+               dict(en="money given to express congratulations"))),
         PARAGRAPH("남자와 여자가 부부가 되기로 {서약}하는 {의례}를 {결혼식}이라고 한다. 한국에서는 "
           "남녀 모두 만 18세가 되면 결혼할 수 있지만, 만 19세가 안된 {미성년자}의 경우는 "
           "부모의 {동의}가 있어야 결혼할 수 있다. 결혼식을 한다고 해서 {정식}으로 부부가 되는 "
@@ -54,8 +58,10 @@ CHAPTER = dict(
           "즐거워한다."),
 
         HEADING(2, "성인으로 성장, 성년식"),
-        GLOSSARY(("성인", "어른이 된 사람. 일반적으로 만 19세 이상을 가리킴", "성인"),
-              ("자부심", "자기 자신의 가치나 능력을 믿고 당당히 여기는 마음", "자부심")),
+        GLOSSARY(("성인", "어른이 된 사람. 일반적으로 만 19세 이상을 가리킴", "성인",
+                  dict(en="a person who has become an adult. Generally means those aged 19 or over")),
+              ("자부심", "자기 자신의 가치나 능력을 믿고 당당히 여기는 마음", "자부심",
+               dict(en="the feeling of trusting in one's own worth or ability and holding oneself with confidence"))),
         PARAGRAPH("한국에서는 만 19세가 된 {젊은이}에게 {성인}이 되었음을 축하하고 {자부심}을 높이기 "
           "위해 매년 5월 셋째 월요일을 ‘{성년의 날}’로 기념하고 있다. 대체로 고등학교를 졸업한 "
           "이후에 만 19세를 맞이하게 된다. 결혼이나 {선거} 등은 만 18세부터 할 수 있지만 "
@@ -83,13 +89,20 @@ CHAPTER = dict(
 
         SECTION("part", "02 장례식과 제사는 어떤 모습일까?"),
         HEADING(2, "죽은 사람을 떠나 보냄, 장례식"),
-        GLOSSARY(("고인", "죽은 사람", "고인"),
-              ("문상객", "죽은 사람의 가족을 위로하기 위해 장례식장을 방문하는 손님", "문상객"),
-              ("조의금", "위로하는 마음을 나타내기 위해 내는 돈", "조의금"),
-              ("유족", "죽은 사람의 남아있는 가족", "유족"),
-              ("묵념", "머리를 숙여 경건한 마음으로 기도함", "묵념"),
-              ("매장", "시신을 땅에 묻음", "매장"),
-              ("화장", "시신을 불에 태워서 그 남은 뼈를 모아 장례를 지냄", "화장")),
+        GLOSSARY(("고인", "죽은 사람", "고인",
+                  dict(en="a person who has died")),
+              ("문상객", "죽은 사람의 가족을 위로하기 위해 장례식장을 방문하는 손님", "문상객",
+               dict(en="a guest who visits the funeral hall to console the family of the dead")),
+              ("조의금", "위로하는 마음을 나타내기 위해 내는 돈", "조의금",
+               dict(en="money given to express condolence")),
+              ("유족", "죽은 사람의 남아있는 가족", "유족",
+               dict(en="the family a dead person leaves behind")),
+              ("묵념", "머리를 숙여 경건한 마음으로 기도함", "묵념",
+               dict(en="bowing the head and praying in a reverent spirit")),
+              ("매장", "시신을 땅에 묻음", "매장",
+               dict(en="burying the body in the ground")),
+              ("화장", "시신을 불에 태워서 그 남은 뼈를 모아 장례를 지냄", "화장",
+               dict(en="burning the body, gathering the bones that remain and holding the funeral"))),
         PARAGRAPH("사람이 죽었을 때, 예를 갖추어 {고인}을 보내는 의례를 {장례}라고 한다. 일반적으로 "
           "한국에서는 병원 내 또는 단독 {장례식장}에서 3일 동안 장례 {절차}를 진행하며, 첫째 "
           "날과 둘째 날에는 {문상객}을 받는다."),

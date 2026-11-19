@@ -43,9 +43,12 @@ CHAPTER = dict(
 
         SECTION("part", "01 법은 누가, 어디서 만들까?"),
         HEADING(2, "국회라고 불리는 입법부"),
-        GLOSSARY(("득표율", "전체 투표수에서 찬성표를 얻은 비율", "득표율"),
-              ("출마", "선거에 후보로 나섬", "출마"),
-              ("당선", "선거에서 뽑힘", "당선")),
+        GLOSSARY(("득표율", "전체 투표수에서 찬성표를 얻은 비율", "득표율",
+                  dict(en="the share of all votes cast that were won")),
+              ("출마", "선거에 후보로 나섬", "출마",
+               dict(en="standing as a candidate in an election")),
+              ("당선", "선거에서 뽑힘", "당선",
+               dict(en="being chosen in an election"))),
         PARAGRAPH("민주주의 국가에서는 국민이 선거를 통해 뽑은 대표를 중심으로 국가의 일을 결정하고 있다. "
           "국민의 대표가 모여서 나라의 중요한 일을 {논의}하고 그와 관련한 법을 만들거나 고치는 "
           "{기관}을 {입법부}라고 한다. ‘{입법}’은 ‘법을 세운다.’, ‘법을 만든다.’는 의미이다. "
@@ -53,7 +56,8 @@ CHAPTER = dict(
 
         HEADING(2, "국회의 구성"),
         GLOSSARY(("단원제", "입법부가 한 개만 존재하는 방식. 상원과 하원 두 개가 있으면 양원제라고 "
-                        "부름", "단원제")),
+                        "부름", "단원제",
+                  dict(en="the arrangement in which there is only one legislative chamber. With two, an upper and a lower house, it is called a bicameral system"))),
         PARAGRAPH("국회는 4년에 한 번씩 실시되는 {국회의원} {총선거}(총선)를 통해 {선출}된 국회의원으로 "
           "{구성}된다. 국회의원은 각 지역의 대표인 {지역구} 의원과 각 {정당}의 {득표율}에 따라 "
           "선출되는 {비례대표} 의원이 있다. 각 지역구에서는 {출마}한 {후보자} 중 가장 많은 표를 "
@@ -65,11 +69,15 @@ CHAPTER = dict(
         FIGURE("국회의사당 전경"),
 
         HEADING(2, "국회의원의 특권과 의무"),
-        GLOSSARY(("특권", "특별히 주어지는 권리", "특권"),
-              ("회기", "국회가 활동할 수 있는 일정한 기간", "회기"),
+        GLOSSARY(("특권", "특별히 주어지는 권리", "특권",
+                  dict(en="a right that is specially granted")),
+              ("회기", "국회가 활동할 수 있는 일정한 기간", "회기",
+               dict(en="the fixed period during which the National Assembly can sit")),
               ("고위 공직자", "국가의 일을 맡은 사람들 중에 중요하고 높은 관직에 있는 사람",
-               "고위 공직자"),
-              ("청렴", "성품과 행실이 바르고, 뇌물을 받지 않는 등 재물 욕심이 없음", "청렴")),
+               "고위 공직자",
+               dict(en="a person in an important and high post among those who do the work of the state")),
+              ("청렴", "성품과 행실이 바르고, 뇌물을 받지 않는 등 재물 욕심이 없음", "청렴",
+               dict(en="being upright in character and conduct, and without greed for wealth, such as taking no bribes"))),
         PARAGRAPH("국회의원이 국가의 중요한 법을 만들거나 행정부, 사법부 등 다른 국가 기관을 견제하는 "
           "과정에서 {부당한|부당하다} {압력}을 받아서는 안 된다. 이를 위해 국회의원에게는 "
           "{특권}이 주어지기도 한다. 예를 들어 국회의원은 국회가 열리고 있는 {회기} 중에는 "
@@ -103,10 +111,14 @@ CHAPTER = dict(
 
         SECTION("part", "02 국회는 어떤 일을 할까?"),
         HEADING(2, "입법에 관한 일"),
-        GLOSSARY(("법안", "법률로 만들어지기 전 단계의 초안", "법안"),
-              ("재적", "어떤 조직이나 단체에 소속되어 있는 상태", "재적"),
-              ("과반수", "전체의 절반이 넘는 수", "과반수"),
-              ("법안 통과", "법안이 의회(국회)에서 승인되는 것", "법안 통과")),
+        GLOSSARY(("법안", "법률로 만들어지기 전 단계의 초안", "법안",
+                  dict(en="a draft at the stage before it is made into law")),
+              ("재적", "어떤 조직이나 단체에 소속되어 있는 상태", "재적",
+               dict(en="the state of belonging to an organisation or body")),
+              ("과반수", "전체의 절반이 넘는 수", "과반수",
+               dict(en="a number greater than half of the whole")),
+              ("법안 통과", "법안이 의회(국회)에서 승인되는 것", "법안 통과",
+               dict(en="a bill being approved by the assembly (the National Assembly)"))),
         PARAGRAPH("법을 만드는 것(입법)은 국회의 가장 기본적인 일이다. 국회의원 10명 이상이 함께 "
           "{법안}을 {제출}하면 새로운 법을 만들거나 고치는 일이 시작된다. 국회 {재적}의원의 "
           "{과반수}가 {출석}하고 그중 과반수가 {찬성}하면 법안이 {통과}되어 법이 만들어진다. "
@@ -116,9 +128,12 @@ CHAPTER = dict(
         FIGURE("국회 법안 제출 모습"),
 
         HEADING(2, "국가 재정(살림)에 관한 일"),
-        GLOSSARY(("재정", "경제적 활동이나 상태", "재정"),
-              ("예산", "예상되는 수입과 비용", "예산"),
-              ("검토", "사실이나 내용을 따져봄", "검토")),
+        GLOSSARY(("재정", "경제적 활동이나 상태", "재정",
+                  dict(en="economic activity or condition")),
+              ("예산", "예상되는 수입과 비용", "예산",
+               dict(en="expected income and costs")),
+              ("검토", "사실이나 내용을 따져봄", "검토",
+               dict(en="going through the facts or content carefully"))),
         PARAGRAPH("국회는 나라의 {살림}에 필요한 {예산}을 {확정}하는 일을 한다. 정부가 1년 동안 나라를 "
           "이끌어 가는 데 쓸 돈에 대한 계획({예산안})을 {짜서|짜다} 국회에 제출하면 국회는 "
           "그것이 {적절한지|적절하다} 살펴본다. 만약 {건설} 분야에 너무 많은 예산이 "

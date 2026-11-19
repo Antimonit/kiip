@@ -278,7 +278,13 @@
             term.appendChild(document.createTextNode(it.term));
           }
           row.appendChild(term);
-          row.appendChild(fillSpans(el("div", "gloss-def"), it.definition));
+          var def = fillSpans(el("div", "gloss-def"), it.definition);
+          if (it.translation) {
+            var tr = el("div", "gloss-tr", it.translation);
+            tr.lang = "en";
+            def.appendChild(tr);
+          }
+          row.appendChild(def);
           box.appendChild(row);
         });
         host.appendChild(box);
@@ -503,7 +509,10 @@
      turned over together, because they are one piece of reading — 이야기
      나누기 in chapter 28 is an article, a case study, a list of five rules
      and a question, and it took nine buttons before this. A heading starts
-     the next article; a section that has none is one article. */
+     the next article; a section that has none is one article.
+
+     The margin glossary an article opens with is part of it: its
+     definitions have English too, and that comes and goes with the rest. */
 
   function runs() {
     var found = [];
@@ -517,12 +526,15 @@
         var pairs = block.classList.contains("para-pair")
           ? [block]
           : Array.prototype.slice.call(block.querySelectorAll(".para-pair"));
-        if (!pairs.length) return;
+        var box = block.classList.contains("glossbox") &&
+                  block.querySelector(".gloss-tr") ? block : null;
+        if (!pairs.length && !box) return;
         if (!group) {
-          group = { at: block, pairs: [] };
+          group = { at: block, pairs: [], boxes: [] };
           found.push(group);
         }
         group.pairs = group.pairs.concat(pairs);
+        if (box) group.boxes.push(box);
       });
     });
     return found;
@@ -594,7 +606,13 @@
     b.setAttribute("aria-pressed", "false");
     b.addEventListener("click", function () {
       close(true);      // it sits in a row whose height is about to be read
-      setSplit(group.pairs, b, b.getAttribute("aria-pressed") !== "true");
+      var on = b.getAttribute("aria-pressed") !== "true";
+      setSplit(group.pairs, b, on);
+      /* a definition's English is a line under it, so there is no layout to
+         fade through; it turns over when the paragraphs do */
+      window.setTimeout(function () {
+        group.boxes.forEach(function (box) { box.classList.toggle("is-en", on); });
+      }, still() ? 0 : FADE_MS);
     });
     group.at.parentNode.insertBefore(b, group.at);
   });

@@ -154,21 +154,24 @@ KIIP.chapter({
      "definition": [
       "돈이 돌고 도는 것"
      ],
-     "annotation": "금융"
+     "annotation": "금융",
+     "translation": "money going round and round"
     },
     {
      "term": "공과금",
      "definition": [
       "국가나 지방자치단체가 국민에게 내도록 하는 것으로 각종 세금, 전기요금, 수도요금 등이 있음"
      ],
-     "annotation": "공과금"
+     "annotation": "공과금",
+     "translation": "what the state or a local government requires citizens to pay: the various taxes, electricity charges, water charges and so on"
     },
     {
      "term": "납부",
      "definition": [
       "공과금 등을 내는 것"
      ],
-     "annotation": "납부"
+     "annotation": "납부",
+     "translation": "paying utility charges and the like"
     }
    ]
   },
@@ -318,21 +321,24 @@ KIIP.chapter({
      "definition": [
       "개인이나 기업의 돈을 맡아 주고 다른 개인이나 기업에게 빌려주는 일 등을 하는 기관"
      ],
-     "annotation": "금융기관"
+     "annotation": "금융기관",
+     "translation": "an institution that keeps the money of individuals or businesses and lends it to other individuals or businesses, among other things"
     },
     {
      "term": "금리",
      "definition": [
       "맡긴 돈이나 빌린 돈에 붙는 이자"
      ],
-     "annotation": "금리"
+     "annotation": "금리",
+     "translation": "the interest added to money deposited or borrowed"
     },
     {
      "term": "수수료",
      "definition": [
       "어떤 일을 맡아서 처리해 준 대가로 받는 요금"
      ],
-     "annotation": "수수료"
+     "annotation": "수수료",
+     "translation": "a charge taken in return for handling a matter for someone"
     }
    ]
   },
@@ -870,7 +876,8 @@ KIIP.chapter({
      "definition": [
       "가짜 이름이나 다른 사람이 아닌, 오직 본인의 이름으로만 금융 거래를 할 수 있도록 한 제도"
      ],
-     "annotation": "금융실명제"
+     "annotation": "금융실명제",
+     "translation": "a system under which financial transactions can be made only in one's own name, not a false name or another person's"
     }
    ]
   },
@@ -1088,14 +1095,16 @@ KIIP.chapter({
      "definition": [
       "돈이나 물건을 주고 받는 것"
      ],
-     "annotation": "거래"
+     "annotation": "거래",
+     "translation": "giving and receiving money or goods"
     },
     {
      "term": "ATM(현금자동입출금기)",
      "definition": [
       "현금을 넣고 뽑을 수 있는 기계"
      ],
-     "annotation": "ATM"
+     "annotation": "ATM",
+     "translation": "a machine for paying in and taking out cash"
     }
    ]
   },

@@ -33,9 +33,11 @@ CHAPTER = dict(
         SECTION("part", "01 한국에는 어떤 대중문화가 있을까?"),
         HEADING(2, "대중문화의 의미와 대중 매체와의 관계"),
         GLOSSARY(("대중 매체", "불특정의 많은 사람들에 대량의 정보를 전달하는 매체로 텔레비전, "
-                          "신문, 라디오, 인터넷 등을 말함", "대중 매체"),
+                          "신문, 라디오, 인터넷 등을 말함", "대중 매체",
+                  dict(en="media that carry large amounts of information to many unspecified people: television, newspapers, radio, the internet and so on")),
               ("SNS", "Social Network Service의 약자로 특정한 관심이나 활동을 공유하는 "
-                      "사람들 사이의 관계망을 구축해 주는 온라인 서비스", "SNS")),
+                      "사람들 사이의 관계망을 구축해 주는 온라인 서비스", "SNS",
+               dict(en="short for Social Network Service: an online service that builds a network of relationships among people who share particular interests or activities"))),
         PARAGRAPH("많은 사람이 즐기고 {누리는|누리다} 문화를 {대중문화}라고 한다. 대중문화에는 드라마, "
           "영화, 노래, {공연}, {전시}, 스포츠 경기, 게임 등이 있다. 또한 사람들의 옷이나 머리 "
           "모양 등과 같은 일상생활에서 볼 수 있는 {유행}도 여기에 포함된다. 한국의 대중문화는 "
@@ -44,8 +46,10 @@ CHAPTER = dict(
           "수 있고 많은 사람들과 {공유}하기도 한다."),
 
         HEADING(2, "한국의 대중문화"),
-        GLOSSARY(("사극", "역사 또는 역사 인물을 소재로 한 드라마", "사극"),
-              ("멀티플렉스(MULTIPLEX)", "두 개 이상의 스크린을 가진 영화관", "멀티플렉스")),
+        GLOSSARY(("사극", "역사 또는 역사 인물을 소재로 한 드라마", "사극",
+                  dict(en="a drama that takes history or a historical figure as its subject")),
+              ("멀티플렉스(MULTIPLEX)", "두 개 이상의 스크린을 가진 영화관", "멀티플렉스",
+               dict(en="a cinema with two or more screens"))),
         PARAGRAPH("한국인은 드라마를 즐겨 본다. 매일 아침과 저녁, 밤 시간에 방송되는 드라마 수가 "
           "{수십} 편에 이른다. {사극}, 로맨스, 스릴러 등 {장르}도 다양하다. {시청자}들은 배우의 "
           "{대사}나 옷에도 관심을 많이 갖는데 이는 금방 유행되기도 한다."),
@@ -91,7 +95,8 @@ CHAPTER = dict(
         SECTION("part", "02 세계인이 좋아하는 한국 대중문화에는 무엇이 있을까?"),
         HEADING(2, "한류의 시작"),
         GLOSSARY(("한류", "한국의 대중문화, 즉 한국에서 제작된 드라마, 영화, 방송, 음악, 옷, 음식, "
-                      "패션 등이 해외에서 널리 소비되는 문화적 현상", "한류")),
+                      "패션 등이 해외에서 널리 소비되는 문화적 현상", "한류",
+                  dict(en="the cultural phenomenon of Korean popular culture — dramas, films, broadcasts, music, clothes, food, fashion and so on made in Korea — being widely consumed abroad"))),
         PARAGRAPH("‘한국’ 하면 어떤 것이 {떠오르는지|떠오르다}에 대한 질문에 외국인들은 주로 드라마, "
           "K-POP, 한국 음식이라고 답했다. 2000년 {전후}, 한국의 영화와 드라마가 아시아 여러 "
           "나라로 {수출}되면서 한국의 대중문화와 {연예인}에 대한 관심이 높아지게 되었다. 이렇게 "
@@ -100,7 +105,8 @@ CHAPTER = dict(
 
         HEADING(2, "세계인들이 좋아하는 한국 대중문화"),
         GLOSSARY(("예능 프로그램", "오락적인 내용으로 재미와 웃음을 주는 방송프로그램",
-               "예능 프로그램")),
+               "예능 프로그램",
+                  dict(en="a broadcast programme that gives fun and laughter through entertaining content"))),
         PARAGRAPH("한국 가수들이 해외로 {진출}하면서 K-POP(케이팝)의 성장도 눈에 {띈다|띄다}. "
           "K-POP의 인기 {요인}으로는 가수들의 {매력적}인 {외모}와 스타일, 따라 부르기에 신나는 "
           "{가사}와 {리듬}, {뛰어난|뛰어나다} 춤 {실력}을 꼽을 수 있다. K-POP의 인기는 한국에 "

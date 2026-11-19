@@ -43,11 +43,14 @@ CHAPTER = dict(
 
         SECTION("part", "01 한국에서 법은 어떤 의미를 가지고 있을까?"),
         GLOSSARY(("규범", "인간이 마땅히 따르고 지켜야 할 공동의 기준", "규범",
-                  "norm, law, standard"),
+                  "norm, law, standard",
+                  dict(en="the shared standard that people ought to follow and keep")),
                  ("정치인", "정치에 활발히 참여하거나 매우 밀접한 관련을 갖는 직업을 가진 사람. "
-                            "주로 국회의원을 가리키는 경우가 많다.", "정치인", "politician"),
+                            "주로 국회의원을 가리키는 경우가 많다.", "정치인", "politician",
+                  dict(en="a person who takes an active part in politics or whose occupation is very closely tied to it. Mostly refers to members of the National Assembly.")),
                  ("준법 정신", "법률이나 규칙 등을 잘 지키는 정신", "준법 정신",
-                  "law-abiding spirit, respect for law")),
+                  "law-abiding spirit, respect for law",
+                  dict(en="the spirit of keeping laws and rules well"))),
         HEADING(2, "법의 목적과 역할", translation=
                 "What the law is for, and what it does" "\n\n"
                 "The law is a norm made through the wisdom and the agreement "
@@ -124,14 +127,18 @@ CHAPTER = dict(
         FIGURE("순천경찰서, 외국인 유학생 자율방범대 발대식"),
 
         SECTION("part", "02 외국인에게는 어떤 법적 권리와 의무가 있을까?"),
-        GLOSSARY(("인권", "사람으로서 당연히 누려야 할 인간답게 살 권리", "인권", "human rights"),
-                 ("국제법", "국가들 간의 관계를 정해놓은 법", "국제법", "international law"),
+        GLOSSARY(("인권", "사람으로서 당연히 누려야 할 인간답게 살 권리", "인권", "human rights",
+                  dict(en="the right to live as a human being, which everyone is entitled to as a person")),
+                 ("국제법", "국가들 간의 관계를 정해놓은 법", "국제법", "international law",
+                  dict(en="the law that sets out relations between states")),
                  ("출입국관리법",
                   "한국에 입국하거나 한국에서 출국하는 사람들의 출입국 관리 및 한국에 체류하는 외국인 "
-                  "등록 등을 정해 놓은 법", "출입국관리법"),
+                  "등록 등을 정해 놓은 법", "출입국관리법",
+                  dict(en="the law that sets out the control of entry and departure for people entering or leaving Korea, the registration of foreigners staying in Korea, and so on")),
                  ("강제퇴거",
                   "한국에 체류하는 외국인이 질서를 어지럽히거나 안전을 위협할 경우 강제로 본국이나 "
-                  "제3국으로 추방하는 것", "강제퇴거")),
+                  "제3국으로 추방하는 것", "강제퇴거",
+                  dict(en="forcibly expelling a foreigner staying in Korea to their home country or a third country when they disturb order or threaten safety"))),
         HEADING(2, "외국인의 권리", translation=
                 "The rights of foreigners" "\n\n"
                 "Korea guarantees human rights — the basic rights everyone "

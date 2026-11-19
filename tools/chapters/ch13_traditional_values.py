@@ -37,12 +37,17 @@ CHAPTER = dict(
         SECTION("part", "01 효와 예절은 무엇일까?"),
         MARGIN("{불효}", "{효자}", "{효녀}", "{효부}", "{효손}"),
         HEADING(2, "한국의 효(孝)"),
-        GLOSSARY(("유교", "중국 공자의 가르침을 기본으로 하는 유학을 종교적으로 표현한 말", "유교"),
-              ("조상", "이미 돌아가신, 부모 위의 어른", "조상"),
+        GLOSSARY(("유교", "중국 공자의 가르침을 기본으로 하는 유학을 종교적으로 표현한 말", "유교",
+                  dict(en="the religious name for Confucian learning, which is based on the teaching of Confucius of China")),
+              ("조상", "이미 돌아가신, 부모 위의 어른", "조상",
+               dict(en="an elder above one's parents who has already died")),
               ("봉안당(납골당)", "죽은 사람의 유골(시신을 태우고 남은 뼈)을 보관해 두는 곳",
-               "봉안당"),
-              ("추모", "죽은 사람을 그리워함", "추모"),
-              ("공경", "공손히 받들어 모심", "공경")),
+               "봉안당",
+               dict(en="a place where the remains (the bones left after the body is cremated) of the dead are kept")),
+              ("추모", "죽은 사람을 그리워함", "추모",
+               dict(en="missing a person who has died")),
+              ("공경", "공손히 받들어 모심", "공경",
+               dict(en="serving and attending someone respectfully"))),
         PARAGRAPH("한국 사회가 그동안 많은 변화를 겪어 왔지만, 전통적으로 이어져 온 가치와 문화는 "
           "지금도 한국인의 일상생활에 많은 {영향}을 {끼치고|끼치다} 있다. 그 대표적인 예로 "
           "{효}와 {예절}을 꼽을 수 있다."),
@@ -60,9 +65,11 @@ CHAPTER = dict(
 
         HEADING(2, "한국의 예절"),
         GLOSSARY(("공적", "개인적인 것이 아니라 여러 사람들이나 단체, 국가 등에 관계되는 것",
-               "공적"),
+               "공적",
+                  dict(en="what concerns many people, a group or the state rather than one individual")),
               ("높임말", "주로 자신보다 나이가 많은 상대에게 공경하는 마음을 담아 하는 말. "
-                        "‘존댓말’이라고도 함", "높임말")),
+                        "‘존댓말’이라고도 함", "높임말",
+               dict(en="speech that carries respect, used mainly to someone older than oneself. Also called 존댓말"))),
         PARAGRAPH("한국인은 다른 사람과의 관계에서 예절을 중요하게 여긴다. 예절은 다른 사람을 대할 때 "
           "존중하는 마음을 담은 {말투}나 행동을 가리킨다."),
         PARAGRAPH("일반적으로 웃어른과 인사를 나눌 때는 고개를 {숙여|숙이다} 인사한다. 웃어른과 "
@@ -105,11 +112,16 @@ CHAPTER = dict(
         SECTION("part", "02 공동체와 연고를 중요하게 여기는 모습은 어떻게 나타날까?"),
         HEADING(2, "공동체를 중요하게 생각하는 한국인"),
         GLOSSARY(("공동체 의식", "공동의 목적이나 생활 방식 등을 가진 집단에 소속되어 있다는 생각",
-               "공동체 의식"),
-              ("두레", "마을 사람들끼리 힘을 모아 공동으로 농사일을 하기 위한 조직", "두레"),
-              ("품앗이", "일을 서로 거들어 주어 품을 지고 갚는 교환노동", "품앗이"),
-              ("상부상조", "서로 의지하고 서로 도움", "상부상조"),
-              ("계기", "어떤 일이 일어나도록 하는 결정적인 원인이나 기회", "계기")),
+               "공동체 의식",
+                  dict(en="the sense of belonging to a group that shares an aim or a way of life")),
+              ("두레", "마을 사람들끼리 힘을 모아 공동으로 농사일을 하기 위한 조직", "두레",
+               dict(en="an organisation of villagers pooling their strength to do the farm work together")),
+              ("품앗이", "일을 서로 거들어 주어 품을 지고 갚는 교환노동", "품앗이",
+               dict(en="exchange labour: helping each other with work, owing a day's work and repaying it")),
+              ("상부상조", "서로 의지하고 서로 도움", "상부상조",
+               dict(en="relying on each other and helping each other")),
+              ("계기", "어떤 일이 일어나도록 하는 결정적인 원인이나 기회", "계기",
+               dict(en="the decisive cause or occasion that makes something happen"))),
         PARAGRAPH("한국인은 자신과 관련된 이야기를 할 때, ‘우리 엄마’, ‘우리 동네’ 등과 같이 ‘우리’라는 "
           "표현을 자주 사용한다. 이는 과거 {농경} 사회에서 만들어진 {공동체 의식}과 관련이 "
           "깊다. 농사를 지을 때는 많은 일손이 필요하기 때문에 과거에는 가까이서 함께 살면서 "
@@ -124,10 +136,14 @@ CHAPTER = dict(
 
         HEADING(2, "연고를 중시하는 한국인"),
         GLOSSARY(("본관", "성씨 조상, 즉 시조가 태어난 거주지를 뜻함(예: 안동 김씨, 경주 이씨, "
-                      "밀양 박씨)", "본관"),
-              ("인연", "사람과 사람 사이의 연결 고리나 관계", "인연"),
-              ("향우회", "고향이나 출신 지역이 같은 사람들의 친목 조직", "향우회"),
-              ("동문회", "같은 학교를 졸업한 사람들이 모여 만든 조직", "동문회")),
+                      "밀양 박씨)", "본관",
+                  dict(en="the place where the ancestor of a surname, its founder, was born and lived (e.g. the Andong Kims, the Gyeongju Lees, the Miryang Parks)")),
+              ("인연", "사람과 사람 사이의 연결 고리나 관계", "인연",
+               dict(en="the link or relationship between one person and another")),
+              ("향우회", "고향이나 출신 지역이 같은 사람들의 친목 조직", "향우회",
+               dict(en="a social organisation of people from the same hometown or home region")),
+              ("동문회", "같은 학교를 졸업한 사람들이 모여 만든 조직", "동문회",
+               dict(en="an organisation formed by people who graduated from the same school"))),
         PARAGRAPH("한국에서는 처음 만나는 사람으로부터 나이, 사는 곳, 직장 등 개인적인 것에 대한 질문을 "
           "받기도 한다. 이는 {지나친|지나치다} 관심으로 {비춰질|비춰지다} 수도 있다. 그런데 "
           "이러한 질문을 하는 이유는 자신과 비슷한 점이 있는지 찾아보고 그것을 활용하여 "

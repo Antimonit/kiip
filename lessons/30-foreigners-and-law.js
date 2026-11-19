@@ -146,21 +146,24 @@ KIIP.chapter({
      "definition": [
       "인간이 마땅히 따르고 지켜야 할 공동의 기준"
      ],
-     "annotation": "규범"
+     "annotation": "규범",
+     "translation": "the shared standard that people ought to follow and keep"
     },
     {
      "term": "정치인",
      "definition": [
       "정치에 활발히 참여하거나 매우 밀접한 관련을 갖는 직업을 가진 사람. 주로 국회의원을 가리키는 경우가 많다."
      ],
-     "annotation": "정치인"
+     "annotation": "정치인",
+     "translation": "a person who takes an active part in politics or whose occupation is very closely tied to it. Mostly refers to members of the National Assembly."
     },
     {
      "term": "준법 정신",
      "definition": [
       "법률이나 규칙 등을 잘 지키는 정신"
      ],
-     "annotation": "준법 정신"
+     "annotation": "준법 정신",
+     "translation": "the spirit of keeping laws and rules well"
     }
    ]
   },
@@ -689,28 +692,32 @@ KIIP.chapter({
      "definition": [
       "사람으로서 당연히 누려야 할 인간답게 살 권리"
      ],
-     "annotation": "인권"
+     "annotation": "인권",
+     "translation": "the right to live as a human being, which everyone is entitled to as a person"
     },
     {
      "term": "국제법",
      "definition": [
       "국가들 간의 관계를 정해놓은 법"
      ],
-     "annotation": "국제법"
+     "annotation": "국제법",
+     "translation": "the law that sets out relations between states"
     },
     {
      "term": "출입국관리법",
      "definition": [
       "한국에 입국하거나 한국에서 출국하는 사람들의 출입국 관리 및 한국에 체류하는 외국인 등록 등을 정해 놓은 법"
      ],
-     "annotation": "출입국관리법"
+     "annotation": "출입국관리법",
+     "translation": "the law that sets out the control of entry and departure for people entering or leaving Korea, the registration of foreigners staying in Korea, and so on"
     },
     {
      "term": "강제퇴거",
      "definition": [
       "한국에 체류하는 외국인이 질서를 어지럽히거나 안전을 위협할 경우 강제로 본국이나 제3국으로 추방하는 것"
      ],
-     "annotation": "강제퇴거"
+     "annotation": "강제퇴거",
+     "translation": "forcibly expelling a foreigner staying in Korea to their home country or a third country when they disturb order or threaten safety"
     }
    ]
   },

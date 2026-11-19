@@ -32,11 +32,16 @@ CHAPTER = dict(
 
         SECTION("part", "01 설날에는 무엇을 할까?"),
         HEADING(2, "설날, 새해 복 많이 받으세요!"),
-        GLOSSARY(("신정", "새로운 방식(서양식)에 따른 정월(1월) 첫날", "신정"),
-              ("양력", "해(日)의 변화를 기준으로 날짜를 표기하는 방식", "양력"),
-              ("음력", "달(月)의 변화를 기준으로 날짜를 표기하는 방식", "음력"),
-              ("산소", "조상의 묘지를 높여 부르는 말", "산소"),
-              ("세배", "설날 아침, 아랫사람이 윗사람에게 큰절로 인사드리는 것", "세배")),
+        GLOSSARY(("신정", "새로운 방식(서양식)에 따른 정월(1월) 첫날", "신정",
+                  dict(en="the first day of the first month (January) by the new (Western) reckoning")),
+              ("양력", "해(日)의 변화를 기준으로 날짜를 표기하는 방식", "양력",
+               dict(en="the way of writing dates that follows the changes of the sun (日)")),
+              ("음력", "달(月)의 변화를 기준으로 날짜를 표기하는 방식", "음력",
+               dict(en="the way of writing dates that follows the changes of the moon (月)")),
+              ("산소", "조상의 묘지를 높여 부르는 말", "산소",
+               dict(en="a respectful word for an ancestor's grave")),
+              ("세배", "설날 아침, 아랫사람이 윗사람에게 큰절로 인사드리는 것", "세배",
+               dict(en="on the morning of Seollal, a younger person greeting an elder with a deep bow"))),
         PARAGRAPH("한국에서는 “새해 복 많이 받으세요.”라는 새해 인사를 일 년에 두 번씩 한다. "
           "{신정}이라고 불리는 {양력} 1월 1일에 한 번, 그리고 {설날}이라고 불리는 {음력} "
           "1월 1일에 또 한 번을 한다. 신정에는 하루만 쉬지만, 설날에는 전날과 다음 날을 "
@@ -54,7 +59,8 @@ CHAPTER = dict(
         FIGURE("세배하는 모습"),
 
         HEADING(2, "설날의 대표적인 음식과 놀이"),
-        GLOSSARY(("장수", "건강하게 오래 사는 것", "장수")),
+        GLOSSARY(("장수", "건강하게 오래 사는 것", "장수",
+                  dict(en="living long and in good health"))),
         PARAGRAPH("설날 아침에 차례와 세배를 마친 후에는 {떡국}을 먹는다. 떡국은 흰 {가래떡}을 얇게 "
           "{썰어|썰다} 끓인 것으로 설날의 대표적인 음식이다. 흰 가래떡은 건강과 {장수}를 "
           "{상징}하며, 떡국 한 그릇을 먹으면 나이도 한 살 더 먹는다는 의미가 담겨 있다. 그리고 "
@@ -79,9 +85,12 @@ CHAPTER = dict(
 
         SECTION("part", "02 추석에는 무엇을 할까?"),
         HEADING(2, "추석, 더도 말고 덜도 말고 한가위만 같아라!"),
-        GLOSSARY(("수확", "농작물이나 성과를 거두어 들임", "수확"),
-              ("햅쌀", "그 해에 새로 거둔 쌀", "햅쌀"),
-              ("햇과일", "그 해에 새로 거둔 과일", "햇과일")),
+        GLOSSARY(("수확", "농작물이나 성과를 거두어 들임", "수확",
+                  dict(en="gathering in crops or results")),
+              ("햅쌀", "그 해에 새로 거둔 쌀", "햅쌀",
+               dict(en="rice newly harvested that year")),
+              ("햇과일", "그 해에 새로 거둔 과일", "햇과일",
+               dict(en="fruit newly harvested that year"))),
         PARAGRAPH("{추석}은 음력 8월 15일이며, {한가위} 또는 {가배}라고도 불린다. 설날과 함께 한국에서 "
           "가장 큰 명절로 꼽힌다. 추석은 곡식을 {수확}하는 시기로 그 해 농사에 대해 감사하는 "
           "풍습에서 {유래}되었다. 설날과 마찬가지로 추석 전날과 다음 날을 포함한 3일이 "
@@ -96,7 +105,8 @@ CHAPTER = dict(
 
         HEADING(2, "추석의 대표적인 음식과 놀이"),
         GLOSSARY(("강강술래", "추석날 밤에 여자들이 서로 손을 잡고 둥근 원을 그리면서 뛰는 민속놀이",
-               "강강술래")),
+               "강강술래",
+                  dict(en="a folk game in which women join hands on the night of Chuseok and dance round in a circle"))),
         PARAGRAPH("추석의 대표적인 음식은 {송편}이다. 송편은 {멥쌀}가루로 {반죽}을 하고, {녹두}, 콩, "
           "{깨}, 팥 등을 넣고 {반달} 모양으로 {빚어낸|빚다} 떡이다. 송편을 찔 때는 {솔잎}을 "
           "넣는데, 그 이유는 송편끼리 붙는 것을 막아 모양 그대로를 {유지}할 수 있기 때문이다. "

@@ -33,10 +33,12 @@ CHAPTER = dict(
         SECTION("part", "01 한국에는 어떤 여가문화가 있을까?"),
         HEADING(2, "여가가 있는 삶"),
         GLOSSARY(("1인당 국민소득", "평균적으로 국민 한 사람이 일정 기간(1년)에 벌어들이는 소득",
-               "1인당 국민소득"),
+               "1인당 국민소득",
+                  dict(en="the income one citizen earns on average over a given period (one year)")),
               ("국민여가활성화기본법", "자유로운 여가활동을 할 수 있는 기반을 만들고 여가활동을 "
                                     "통하여 삶의 질을 향상시킬 수 있도록 지원하는 법",
-               "국민여가활성화기본법")),
+               "국민여가활성화기본법",
+               dict(en="a law that lays the ground for free leisure activity and supports people in improving their quality of life through it"))),
         PARAGRAPH("일과 생활이 {균형}을 {갖춘|갖추다} 삶을 살아가기 위해서는 자신이 좋아하고 흥미를 "
           "느낄 수 있는 활동에 참여하는 시간이 필요하다. 이를 ‘{여가}’라고 하며, 이와 관련하여 "
           "{형성}된 문화를 ‘{여가문화}’라고 한다. 한국은 2000년대 초·중반 무렵 "
@@ -47,7 +49,8 @@ CHAPTER = dict(
 
         HEADING(2, "한국의 여가"),
         GLOSSARY(("동호회", "취미나 공통의 관심사, 목표를 가지고 정보를 나누면서 함께 즐기는 "
-                        "사람들의 모임", "동호회")),
+                        "사람들의 모임", "동호회",
+                  dict(en="a gathering of people who share information and enjoy together a hobby, a common interest or a goal"))),
         PARAGRAPH("{문화체육관광부}의 ‘2018 국민여가활동 조사’에 따르면 한국인의 {평일}과 {휴일} 여가 "
           "시간이 예전에 비해 증가하였고, {월평균} 여가 {비용} 역시 {상승}한 것으로 나타났다. "
           "이는 과거보다 여가를 더 중요하게 여기고 있음을 보여준다."),
@@ -86,9 +89,11 @@ CHAPTER = dict(
         SECTION("part", "02 여가활동에는 어떻게 참여할 수 있을까?"),
         HEADING(2, "여가활동 참여하기"),
         GLOSSARY(("행정복지센터", "지역 주민의 생활 업무를 처리하고, 문화 및 복지 서비스를 지원하는 "
-                            "행정기관", "행정복지센터"),
+                            "행정기관", "행정복지센터",
+                  dict(en="an administrative office that handles the everyday business of local residents and supports cultural and welfare services")),
               ("평생학습관", "지역주민을 대상으로 인문교양, 문화예술, 직업능력 향상, 시민참여 "
-                          "등의 평생학습 프로그램을 운영", "평생학습관")),
+                          "등의 평생학습 프로그램을 운영", "평생학습관",
+               dict(en="runs lifelong learning programmes for local residents in the humanities and general culture, arts and culture, vocational skills, civic participation and so on"))),
         PARAGRAPH("여가활동에 참여하는 방법은 점점 쉽고 다양해지고 있다. 영화, 스포츠, 공연과 같은 "
           "문화예술 관람을 원하면 직접 방문하여 {입장권}을 살 수도 있고 스마트폰 "
           "{어플}(앱)이나 누리집을 통해 {예매}할 수도 있다."),
@@ -104,7 +109,8 @@ CHAPTER = dict(
 
         HEADING(2, "변화하는 여가문화"),
         GLOSSARY(("웹툰(WEBTOON)", "웹(WEB)과 카툰(CARTOON)의 합성어로서 인터넷 만화를 지칭함",
-               "웹툰")),
+               "웹툰",
+                  dict(en="a blend of WEB and CARTOON, meaning a comic on the internet"))),
         PARAGRAPH("일과 삶의 균형({워라벨}: Work and Life Balance), 휴식이 있는 삶에 대한 {요구}가 "
           "높아지면서 여가문화는 더욱 강조될 것으로 예상된다. 예를 들어, 건강에 대한 관심이 "
           "{지속적}으로 높아짐으로써 {헬스}, 수영, {요가} 등에 대한 {수요}가 계속 늘어날 것이다. "

@@ -1000,6 +1000,16 @@ def emit_payload(cfg, out):
         print("    annotations nothing points at: %s" % orphaned)
     if empty:
         print("    marks with no entry behind them: %s" % empty)
+    rows = [e for b in lesson["blocks"] if b["type"] == "glossary"
+            for e in b["entries"]]
+    # a row that is a web address or a list of numbers has nothing to say
+    bare = [e["term"] for e in rows if not e.get("translation")
+            and re.search("[가-힣]", "".join(
+                x if isinstance(x, str) else x["word"]
+                for x in e["definition"]))]
+    # a chapter nobody has started on is not a chapter with gaps in it
+    if bare and len(bare) < len(rows):
+        print("    glossary rows with no English: %s" % bare)
 
 
 def main():

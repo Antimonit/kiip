@@ -29,11 +29,16 @@ CHAPTER = dict(
               "10. 초·중등 교육", "교육 제도, 초·중등 교육 기관"]]),
         SECTION("part", "01 한국은 왜 대학 진학률이 높을까?"),
         HEADING(2, "한국의 교육열"),
-        GLOSSARY(("교육열", "교육에 대한 열정이나 의지, 노력"),
-              ("인재", "어떤 일을 할 수 있는 능력을 갖춘 사람"),
-              ("진학률", "전체 졸업생 중 상급학교에 들어가는 학생의 비율"),
-              ("사회적 지위", "개인이 사회 구조 속에서 차지하는 위치"),
-              ("사교육", "공교육(학교 교육)을 보충하기 위하여 학교 교육 밖에서 하는 교육(학원, 과외 등)")),
+        GLOSSARY(("교육열", "교육에 대한 열정이나 의지, 노력",
+                  dict(en="passion, will and effort for education")),
+              ("인재", "어떤 일을 할 수 있는 능력을 갖춘 사람",
+               dict(en="a person who has the ability to do a certain job")),
+              ("진학률", "전체 졸업생 중 상급학교에 들어가는 학생의 비율",
+               dict(en="the share of all graduates who go on to a higher school")),
+              ("사회적 지위", "개인이 사회 구조 속에서 차지하는 위치",
+               dict(en="the position a person holds in the structure of society")),
+              ("사교육", "공교육(학교 교육)을 보충하기 위하여 학교 교육 밖에서 하는 교육(학원, 과외 등)",
+               dict(en="education outside school (private academies, tutoring and so on) to supplement public education (schooling)"))),
         CHART("상급학교진학률 현황(교육통계서비스, 2020)(단위: %) — 고등학교에서 고등교육 기관으로의 진학률. "
               "초등학교에서 중학교로는 어느 해나 100.0%, 중학교에서 고등학교로는 99.6~99.7%로 거의 변하지 "
               "않는다.", "%", [["2000년", 62.0],
@@ -54,10 +59,14 @@ CHAPTER = dict(
         HEADING(2, "대학 입학 방법"),
         GLOSSARY(("학교 생활 기록부",
               "학생이 초중고 학교에서 어떻게 생활하면서 성장하고 변화했는지를 기록한 문서. 학생의 출석, 결석, 친구 "
-              "관계, 봉사 활동, 성적 등이 종합적으로 기록되어 있다.", "학교 생활 기록부"),
-              ("수시", "특별히 정해진 시기가 없이 상황에 따라 시기를 정함", "수시"),
-              ("모집 요강", "사람 등을 뽑기 위하여 알리는 내용", "모집 요강"),
-              ("재외국민", "국외에 거주하고 있으나 국적을 유지하고 있는 국민", "재외국민")),
+              "관계, 봉사 활동, 성적 등이 종합적으로 기록되어 있다.", "학교 생활 기록부",
+                  dict(en="a document recording how a pupil has lived, grown and changed through primary, middle and high school. It records the pupil's attendance, absences, friendships, volunteer work, marks and so on together.")),
+              ("수시", "특별히 정해진 시기가 없이 상황에 따라 시기를 정함", "수시",
+               dict(en="setting the time according to circumstances, with no particular time fixed")),
+              ("모집 요강", "사람 등을 뽑기 위하여 알리는 내용", "모집 요강",
+               dict(en="the details announced for selecting people and the like")),
+              ("재외국민", "국외에 거주하고 있으나 국적을 유지하고 있는 국민", "재외국민",
+               dict(en="a citizen who lives abroad but keeps their nationality"))),
         PARAGRAPH("대학에 진학하고자 할 때는 학교 생활 기록부를 중심으로 하는 수시 모집에 지원하거나 대학 수학 능력 "
           "시험에 응시하여 나온 결과인 수능 성적을 중심으로 하는 정시 모집에 지원할 수 있다. 대학 수학 능력 "
           "시험은 고등학교 졸업 예정자나 졸업자 및 이에 해당하는 학력을 가진 사람이면 누구나 볼 수 있고 매년 "
@@ -90,9 +99,12 @@ CHAPTER = dict(
         SECTION("part", "02 한국의 고등 교육 기관에는 어떤 것이 있을까?"),
         GLOSSARY(("학위",
               "어떤 부문의 학문을 전문적으로 익히고 공부하여 일정한 수준에 오른 사람에게 대학에서 주는 자격. 학사, "
-              "석사, 박사가 있다."),
-              ("인문학", "언어, 문학, 역사, 철학 등을 연구하는 학문"),
-              ("산업체", "생산하는 업체")),
+              "석사, 박사가 있다.",
+                  dict(en="a qualification a university gives to a person who has studied a field of learning as a specialist and reached a given level. There are bachelor's, master's and doctoral degrees.")),
+              ("인문학", "언어, 문학, 역사, 철학 등을 연구하는 학문",
+               dict(en="the study of language, literature, history, philosophy and so on")),
+              ("산업체", "생산하는 업체",
+               dict(en="a business that produces goods"))),
         HEADING(2, "고등 교육 기관 유형"),
         PARAGRAPH("한국의 고등 교육 기관으로는 대학교와 대학원이 있다. 대학교에서는 학사 학위를, 대학원에서는 석사 학위와 "
           "박사학위를 받을 수 있다."),
@@ -105,7 +117,8 @@ CHAPTER = dict(
           "높다. 방송통신대학교는 4년제 국립대학교이고 사이버대학교는 2~4년제 사립대학교이다. 이 외에 산업체 "
           "근로자가 회사에 근무하면서 전문적인 지식·기술을 교육 받을 수 있는 기술대학교도 있다."),
         HEADING(2, "대학원"),
-        GLOSSARY(("전문성", "어떤 영역에서 보통 수준 이상의 수행 능력을 보이는 것")),
+        GLOSSARY(("전문성", "어떤 영역에서 보통 수준 이상의 수행 능력을 보이는 것",
+                  dict(en="showing an ability to perform above the ordinary level in some field"))),
         PARAGRAPH("대학교 졸업 후 전문적인 학문이나 기술을 더 연구하고 싶은 경우 대학원에 진학한다. 대학원 과정은 석사 "
           "과정과 박사 과정으로 구성된다. 각각 2~3년 정도씩 공부한 후 논문 제출 자격 종합 시험에 합격하고, "
           "논문이 통과되면 석사학위, 박사학위를 얻게 된다. 특히 박사학위를 받은 사람은 그 분야의 전문가로 " "인정받는다."),

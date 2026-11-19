@@ -32,11 +32,14 @@ CHAPTER = dict(
 
         SECTION("part", "01 한국 교육 제도의 특징은 무엇일까?"),
         HEADING(2, "한국의 교육 제도와 주요 교육 일정(학사 일정)"),
-        GLOSSARY(("무상", "비용이나 대가가 없음", "무상"),
+        GLOSSARY(("무상", "비용이나 대가가 없음", "무상",
+                  dict(en="there being no cost or payment")),
               ("의무 교육", "개인이 국가나 사회의 구성원으로서 의무적으로 받아야 하는 교육, "
                "이와 동시에 국가가 그 구성원에게 의무적으로 제공해야 하는 교육. 한국은 의무 "
-               "교육 기간이 9년이다(초등학교 6년 + 중학교 3년).", "의무 교육"),
-              ("법인", "법적으로 권리와 의무를 가지는 조직", "법인")),
+               "교육 기간이 9년이다(초등학교 6년 + 중학교 3년).", "의무 교육",
+               dict(en="education a person must receive as a member of the state or society, and which the state must at the same time provide to its members. In Korea compulsory education lasts nine years (six of primary school + three of middle school).")),
+              ("법인", "법적으로 권리와 의무를 가지는 조직", "법인",
+               dict(en="an organisation that has rights and duties in law"))),
         PARAGRAPH("한국의 초·중등 교육은 초등학교 6년, 중학교 3년, 고등학교 3년으로 구성되며 교육은 "
           "{무상}으로 제공된다. 이 중, 초등학교 6년과 중학교 3년은 {의무 교육} 기간이다. 교육 "
           "기관은 설립과 운영 주체에 따라 국립(국가), 공립(지방 자치 단체), 사립 학교({법인}이나 "
@@ -59,11 +62,16 @@ CHAPTER = dict(
                ["종업식(졸업식)", "학년을 마치는 날", "1월~2월"]]),
 
         HEADING(2, "학교 교육 활동"),
-        GLOSSARY(("차시", "학교 수업의 기본 단위", "차시"),
-              ("탄력적", "고정되어 있지 않고 유연하게 변할 수 있음", "탄력적"),
-              ("교외", "학교 밖", "교외"),
-              ("정규", "정식으로 된 규정", "정규"),
-              ("방과", "그날의 수업을 마침", "방과")),
+        GLOSSARY(("차시", "학교 수업의 기본 단위", "차시",
+                  dict(en="the basic unit of a school lesson")),
+              ("탄력적", "고정되어 있지 않고 유연하게 변할 수 있음", "탄력적",
+               dict(en="not being fixed, able to change flexibly")),
+              ("교외", "학교 밖", "교외",
+               dict(en="outside the school")),
+              ("정규", "정식으로 된 규정", "정규",
+               dict(en="a rule that is formally laid down")),
+              ("방과", "그날의 수업을 마침", "방과",
+               dict(en="finishing the day's lessons"))),
         PARAGRAPH("초·중등 교육과정은 크게 {교과}(국어, 수학, 사회 등)와 {창의적} 체험 활동(자율, "
           "동아리, 봉사, {진로})으로 구성된다. 초등학교는 1개 {차시} 수업이 40분, 중학교는 "
           "45분, 고등학교는 50분을 {원칙}으로 하되 상황에 따라 {탄력적}으로 운영할 수 있다. "
@@ -96,9 +104,11 @@ CHAPTER = dict(
         SECTION("part", "02 한국의 초·중등 교육 기관에는 어떤 것이 있을까?"),
         HEADING(2, "초등학교 입학과 교육 내용"),
         GLOSSARY(("취학 통지서", "어린이가 학교에 들어가는 것을 허락하거나 알리는 문서",
-               "취학 통지서"),
+               "취학 통지서",
+                  dict(en="a document permitting or announcing a child's entry to school")),
               ("예비 소집일", "입학 등록을 하는 날로 취학 통지서를 챙겨가야 한다.",
-               "예비 소집일")),
+               "예비 소집일",
+               dict(en="the day of enrolment, to which the school entry notice must be brought"))),
         PARAGRAPH("초등학교는 만 6세부터 다닐 수 있다. {취학 통지서}는 아동이 입학하기 전 해의 12월에 "
           "지역의 행정복지센터에서 집으로 보내준다. 여기에는 아동이 입학하게 될 집 근처의 학교 "
           "이름과 주소, {예비 소집일}, 입학식에 대한 정보가 담겨있다. 아동의 성장 상태, 학업 "
@@ -111,10 +121,13 @@ CHAPTER = dict(
         FIGURE("초등학교 입학식"),
 
         HEADING(2, "중·고등학교 입학과 교육 내용"),
-        GLOSSARY(("배정", "나누어 정함", "배정"),
+        GLOSSARY(("배정", "나누어 정함", "배정",
+                  dict(en="dividing up and assigning")),
               ("검정고시", "어떤 자격에 필요한 지식, 학력, 기술 등이 있는지 검사하기 위해 "
-               "실시하는 시험", "검정고시"),
-              ("함양", "능력이나 품성 등을 길러 갖춤", "함양")),
+               "실시하는 시험", "검정고시",
+               dict(en="an examination held to test whether a person has the knowledge, schooling or skill a qualification requires")),
+              ("함양", "능력이나 품성 등을 길러 갖춤", "함양",
+               dict(en="cultivating and acquiring an ability or a quality of character"))),
         MARGIN("상업 → 은행 취업", "농업"),
         PARAGRAPH("중학교는 크게 일반 중학교와 {특성화} 중학교(체육, 예술, 국제중)로 구분된다. 일반 "
           "중학교에 {진학}하는 경우 보통 집에서 가까운 학교에 {배정}되며 특정 분야의 재능이 있는 "

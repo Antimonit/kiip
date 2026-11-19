@@ -144,42 +144,48 @@ KIIP.chapter({
      "definition": [
       "무너지고 부서져 못 쓰게 됨"
      ],
-     "annotation": "폐허"
+     "annotation": "폐허",
+     "translation": "having collapsed and been smashed beyond use"
     },
     {
      "term": "복구",
      "definition": [
       "원래 상태로 돌아감"
      ],
-     "annotation": "복구"
+     "annotation": "복구",
+     "translation": "returning to the original state"
     },
     {
      "term": "수출",
      "definition": [
       "외국에 물건을 파는 것"
      ],
-     "annotation": "수출"
+     "annotation": "수출",
+     "translation": "selling goods to foreign countries"
     },
     {
      "term": "신소재",
      "definition": [
       "미래의 기술을 이끌어갈 새로운 재료"
      ],
-     "annotation": "신소재"
+     "annotation": "신소재",
+     "translation": "new materials that will lead the technology of the future"
     },
     {
      "term": "외환 위기",
      "definition": [
       "1997년 한국 정부가 가진 외환(외국 돈)이 부족해지면서 겪은 경제 위기"
      ],
-     "annotation": "외환 위기"
+     "annotation": "외환 위기",
+     "translation": "the economic crisis of 1997, when the Korean government ran short of foreign exchange (foreign money)"
     },
     {
      "term": "금융 위기",
      "definition": [
       "2008년 미국에서 시작되어 한국을 비롯한 전 세계로 확산된 대규모의 경제 위기"
      ],
-     "annotation": "금융 위기"
+     "annotation": "금융 위기",
+     "translation": "the large-scale economic crisis that began in the United States in 2008 and spread across the world, Korea included"
     }
    ]
   },
@@ -522,7 +528,8 @@ KIIP.chapter({
      "definition": [
       "교육에 대한 열정"
      ],
-     "annotation": "교육열"
+     "annotation": "교육열",
+     "translation": "passion for education"
     }
    ]
   },
@@ -909,28 +916,32 @@ KIIP.chapter({
      "definition": [
       "외국에서 물건을 사오는 것"
      ],
-     "annotation": "수입"
+     "annotation": "수입",
+     "translation": "buying goods from foreign countries"
     },
     {
      "term": "첨단 제품",
      "definition": [
       "높은 수준의 과학 기술로 만든 제품"
      ],
-     "annotation": "첨단 제품"
+     "annotation": "첨단 제품",
+     "translation": "products made with a high level of science and technology"
     },
     {
      "term": "자유무역협정(FTA)",
      "definition": [
       "국가 간 상품이나 서비스의 자유로운 수출과 수입을 위한 약속"
      ],
-     "annotation": "자유무역협정"
+     "annotation": "자유무역협정",
+     "translation": "an agreement between countries for the free export and import of goods and services"
     },
     {
      "term": "관세",
      "definition": [
       "수출되거나 수입되는 물건에 매겨지는 세금"
      ],
-     "annotation": "관세"
+     "annotation": "관세",
+     "translation": "a tax charged on goods that are exported or imported"
     }
    ]
   },
@@ -1255,21 +1266,24 @@ KIIP.chapter({
      "definition": [
       "세계 경제의 발전과 인류의 복지 증진을 위한 경제 기구"
      ],
-     "annotation": "경제협력개발기구"
+     "annotation": "경제협력개발기구",
+     "translation": "an economic body for the development of the world economy and the welfare of humankind"
     },
     {
      "term": "저개발 국가",
      "definition": [
       "경제 성장이 정도가 낮은 나라"
      ],
-     "annotation": "저개발 국가"
+     "annotation": "저개발 국가",
+     "translation": "a country with a low level of economic growth"
     },
     {
      "term": "원조",
      "definition": [
       "물건이나 돈 등으로 도와줌"
      ],
-     "annotation": "원조"
+     "annotation": "원조",
+     "translation": "helping with goods, money and the like"
     }
    ]
   },

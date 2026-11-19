@@ -177,28 +177,32 @@ KIIP.chapter({
      "definition": [
       "보잘 것 없고 작음"
      ],
-     "annotation": "사소하다"
+     "annotation": "사소하다",
+     "translation": "being small and of no account"
     },
     {
      "term": "제재",
      "definition": [
       "일정한 규칙으로 제한하거나 금지함"
      ],
-     "annotation": "제재"
+     "annotation": "제재",
+     "translation": "restricting or forbidding by a set rule"
     },
     {
      "term": "위법",
      "definition": [
       "법을 위반함"
      ],
-     "annotation": "위법"
+     "annotation": "위법",
+     "translation": "breaking the law"
     },
     {
      "term": "자가 격리",
      "definition": [
       "전염병에 걸렸거나 걸렸을 가능성이 있는 사람이 스스로 집에 머물면서 다른 사람으로부터 떨어져 지내는 것"
      ],
-     "annotation": "자가 격리"
+     "annotation": "자가 격리",
+     "translation": "a person who has, or may have, an infectious disease staying at home of their own accord and keeping apart from others"
     }
    ]
   },
@@ -535,21 +539,24 @@ KIIP.chapter({
      "definition": [
       "아무렇게나 마구 내던져 버림"
      ],
-     "annotation": "무단투기"
+     "annotation": "무단투기",
+     "translation": "throwing something away carelessly, anywhere"
     },
     {
      "term": "과태료",
      "definition": [
       "형벌로서 내야 하는 벌금과 달리, 의무를 게을리한 사람에게 내도록 하는 돈"
      ],
-     "annotation": "과태료"
+     "annotation": "과태료",
+     "translation": "money that a person who neglects a duty is made to pay, as distinct from a fine paid as a criminal penalty"
     },
     {
      "term": "신고 포상금제",
      "definition": [
       "쓰레기 무단투기를 한 사람을 신고하면 상으로 돈을 주는 제도"
      ],
-     "annotation": "신고 포상금제"
+     "annotation": "신고 포상금제",
+     "translation": "a system that pays a cash reward for reporting a person who dumps rubbish illegally"
     }
    ]
   },
@@ -667,21 +674,24 @@ KIIP.chapter({
      "definition": [
       "정해진 규칙에 따르지 않고 길을 건넘"
      ],
-     "annotation": "무단횡단"
+     "annotation": "무단횡단",
+     "translation": "crossing the road without following the set rules"
     },
     {
      "term": "범칙금",
      "definition": [
       "교통 규칙을 어겼을 때 내는 돈"
      ],
-     "annotation": "범칙금"
+     "annotation": "범칙금",
+     "translation": "money paid for breaking a traffic rule"
     },
     {
      "term": "건널목",
      "definition": [
       "철로와 도로가 만나는 곳에서 사람들이 길을 건널 수 있도록 만들어 놓은 곳"
      ],
-     "annotation": "건널목"
+     "annotation": "건널목",
+     "translation": "a place made so that people can cross where a railway and a road meet"
     }
    ]
   },
@@ -963,7 +973,8 @@ KIIP.chapter({
      "definition": [
       "감추어져 있던 일이 찾아져 밝혀짐"
      ],
-     "annotation": "적발되다"
+     "annotation": "적발되다",
+     "translation": "something that was hidden being found and brought to light"
     }
    ]
   },
@@ -1232,14 +1243,16 @@ KIIP.chapter({
      "definition": [
       "깔보고 욕되게 함"
      ],
-     "annotation": "모욕"
+     "annotation": "모욕",
+     "translation": "looking down on and insulting someone"
     },
     {
      "term": "따돌림",
      "definition": [
       "누군가를 떼어놓거나 멀리 함"
      ],
-     "annotation": "따돌림"
+     "annotation": "따돌림",
+     "translation": "cutting someone off or keeping them at a distance"
     }
    ]
   },

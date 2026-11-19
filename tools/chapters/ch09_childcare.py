@@ -29,11 +29,15 @@ CHAPTER = dict(
               "4. 대한민국 국민을 위한 복지", "사회보험"]]),
         SECTION("part", "01 출산과 보육을 지원하는 제도에는 무엇이 있을까?"),
         GLOSSARY(("국민행복카드", "임신확인서를 가지고 가까운 은행에 가도 되고 인터넷이나 전화로도 발급받을 수 있다.",
-              "국민행복카드"),
-              ("산전", "아이를 낳기 전", "산전"),
+              "국민행복카드",
+                  dict(en="One can take a certificate of pregnancy to a nearby bank, or have the card issued online or by telephone.")),
+              ("산전", "아이를 낳기 전", "산전",
+               dict(en="before a child is born")),
               ("임산부 교육프로그램", "모유 수유 교실, 임산부 체조 교실, 출산 준비 교실, 아기 마사지 교실 등",
-              "임산부 교육프로그램"),
-              ("보육", "아이를 보살피고 돌봄", "보육")),
+              "임산부 교육프로그램",
+               dict(en="breastfeeding classes, exercise classes for expectant mothers, childbirth preparation classes, baby massage classes and so on")),
+              ("보육", "아이를 보살피고 돌봄", "보육",
+               dict(en="looking after and caring for a child"))),
         HEADING(2, "출산을 지원하는 제도", translation="Systems that Support Childbirth" "\n\n"
           "Korea supports the costs needed for pregnancy, childbirth, "
           "and childcare in order to encourage childbirth and reduce "
@@ -79,7 +83,8 @@ CHAPTER = dict(
           "economic burden of raising children and to promote (증진) "
           "children's rights and welfare. The child allowance is "
           "provided to households with a child under 7 years old."),
-        GLOSSARY(("증진", "기운이나 세력이 점점 더 늘어 가고 나아감", "증진")),
+        GLOSSARY(("증진", "기운이나 세력이 점점 더 늘어 가고 나아감", "증진",
+                  dict(en="energy or strength growing and advancing little by little"))),
         PARAGRAPH("초등학교에 입학하기 전 어린이집이나 유치원을 다니는 국민의 영·유아(0~만 5세 이하) 자녀를 대상으로 "
           "{보육비}나 유아 학비가 지원된다. 은행을 방문하거나 인터넷, 전화로 ‘아이행복카드’를 신청하고 이 "
           "카드로 어린이집 보육비나 유치원 유아 학비를 결제할 수 있다."),
@@ -132,9 +137,12 @@ CHAPTER = dict(
           "(07:30–19:30) and nighttime childcare (19:30–07:30 the "
           "next day) are provided, holiday childcare, and hub-based "
           "nighttime childcare (거점형 야간 보육)."),
-        GLOSSARY(("연장", "시간이나 길이를 늘림", "연장"),
-              ("전담", "전문적으로 맡음", "전담"),
-              ("거점", "어떤 활동의 근거가 되는 중요한 지점", "거점")),
+        GLOSSARY(("연장", "시간이나 길이를 늘림", "연장",
+                  dict(en="making a time or a length longer")),
+              ("전담", "전문적으로 맡음", "전담",
+               dict(en="taking something on as a specialist task")),
+              ("거점", "어떤 활동의 근거가 되는 중요한 지점", "거점",
+               dict(en="an important point that serves as the base for an activity"))),
         PARAGRAPH("어린이집은 0세부터 초등학교 입학 전(만 5세)까지의 영·유아의 보육과 교육을 담당하며 {보건복지부}에서 "
           "지정한 보육 기관이다. 정부나 지방 자치 단체에서 {설립한} 국·공립 어린이집, 민간인이 설립한 {사립} "
           "어린이집, 회사의 직원 자녀를 대상으로 하는 직장 어린이집, 교회나 성당 등과 같은 종교 단체에서 "
@@ -161,8 +169,10 @@ CHAPTER = dict(
           "Because of this, parents wanting to send their children to "
           "a national/public kindergarten often have to wait a long "
           "time after applying."),
-        GLOSSARY(("관할", "일정한 권한을 가지고 통제하거나 지배함", "관할"),
-              ("법인", "법적으로 권리와 의무를 가지는 조직", "법인")),
+        GLOSSARY(("관할", "일정한 권한을 가지고 통제하거나 지배함", "관할",
+                  dict(en="controlling or governing with a given authority")),
+              ("법인", "법적으로 권리와 의무를 가지는 조직", "법인",
+               dict(en="an organisation that has rights and duties in law"))),
         PARAGRAPH("유치원은 만 3세부터 초등학교 입학 전(만 5세)까지의 유아의 교육을 담당하는 교육 기관으로 교육부의 "
           "관할 아래 있다. 정부나 지방 자치 단체에서 설립한 국·공립 유치원과 개인이나 법인, 종교단체가 설립한 "
           "사립 유치원이 있다. 보통 평일 오전 9시~오후 2시 정도까지 운영 되며, 맞벌이 부모의 자녀를 위하여 "

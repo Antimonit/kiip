@@ -30,13 +30,18 @@ CHAPTER = dict(
 
         SECTION("part", "01 한국의 일자리 상황은 어떠할까?"),
         HEADING(2, "일자리 찾기가 쉽지 않네요"),
-        GLOSSARY(("생계", "살림을 꾸려나가는 것, 살아가는 형편", "생계"),
+        GLOSSARY(("생계", "살림을 꾸려나가는 것, 살아가는 형편", "생계",
+                  dict(en="keeping a household going; the circumstances in which one gets by")),
                  ("실업률", "일할 의지와 능력을 가진 사람들 중에서 취업하지 못하는 사람이 "
-                            "차지하는 비율", "실업률"),
-                 ("자영업", "자신이 스스로 경영하는 사업", "자영업"),
-                 ("치열", "어떤 일의 정도가 맹렬하고 뜨거움", "치열"),
+                            "차지하는 비율", "실업률",
+                  dict(en="the share of those with the will and ability to work who cannot find a job")),
+                 ("자영업", "자신이 스스로 경영하는 사업", "자영업",
+                  dict(en="a business one runs oneself")),
+                 ("치열", "어떤 일의 정도가 맹렬하고 뜨거움", "치열",
+                  dict(en="the degree of something being fierce and heated")),
                  ("비정규직", "정규직으로서 보장받지 못하는 계약직, 임시직, 일용직 등",
-                  "비정규직")),
+                  "비정규직",
+                  dict(en="contract, temporary and day work and the like, without the security of a regular post"))),
         PARAGRAPH("사람들은 {직업}을 통해 기본적인 {생계}를 유지하고 자신의 꿈을 이룰 수 있다. "
                   "또한 많은 사람들이 직장에서 안정적으로 일을 하면 나라의 경제 발전에도 "
                   "{기여}할 수 있다. 일하기를 원하는 사람은 많지만 모든 사람이 다 일을 할 수 "
@@ -60,7 +65,8 @@ CHAPTER = dict(
 
         HEADING(2, "일자리 지원을 위한 정부의 노력"),
         GLOSSARY(("시간선택제", "근로자가 필요에 따라 자신의 일할 시간을 선택해 일반적인 "
-                                "근무시간보다 짧게 일하는 방식임", "시간선택제")),
+                                "근무시간보다 짧게 일하는 방식임", "시간선택제",
+                  dict(en="a way of working in which the employee chooses their own hours as needed and works less than ordinary working hours"))),
         PARAGRAPH("일자리를 {둘러싼|둘러싸다} 어려움을 극복하기 위해 한국 정부는 많은 노력을 "
                   "기울이고 있다. {실업자}가 다시 {취직}할 수 있도록 돕기 위해 여러 가지 교육 "
                   "프로그램을 제공하거나 실업자와 근로자의 기본적인 생활을 보장하기 위한 "
@@ -98,10 +104,13 @@ CHAPTER = dict(
 
         SECTION("part", "02 취업하기 위해서는 무엇을 준비해야 할까?"),
         HEADING(2, "외국인이 한국에서 취업하려면"),
-        GLOSSARY(("구인 광고", "어떤 일자리에 사람을 구하는 광고", "구인 광고"),
+        GLOSSARY(("구인 광고", "어떤 일자리에 사람을 구하는 광고", "구인 광고",
+                  dict(en="an advertisement looking for a person to fill a job")),
                  ("한국산업인력공단", "근로자들의 능력을 개발하는 프로그램을 통해 산업에 필요한 "
-                                      "인력을 길러내는 국가기관", "한국산업인력공단"),
-                 ("이력서", "그동안 쌓은 학력이나 직업 관련 경험을 적은 것", "이력서")),
+                                      "인력을 길러내는 국가기관", "한국산업인력공단",
+                  dict(en="a state body that trains the workforce industry needs, through programmes that develop workers' skills")),
+                 ("이력서", "그동안 쌓은 학력이나 직업 관련 경험을 적은 것", "이력서",
+                  dict(en="a written account of the schooling and work experience one has built up"))),
         PARAGRAPH("한국에서는 {체류자격}(사증)이 허용되는 {범위} 내에서 직업을 선택할 수 있다. "
                   "한국에서 오랜 기간 거주할 수 있는 자격이 주어진다면 취업할 수 있는 범위는 "
                   "{넓어진다|넓어지다}. 직업을 갖고자 하는 사람은 적극적으로 자신이 원하는 직업을 "
@@ -121,7 +130,8 @@ CHAPTER = dict(
         FIGURE("한국산업인력공단 누리집 (http://www.hrdkorea.or.kr/)"),
 
         HEADING(2, "취업할 때 반드시 챙겨야 할 점"),
-        GLOSSARY(("고용노동부", "일자리와 관련된 도움을 주기 위한 정부 부처", "고용노동부")),
+        GLOSSARY(("고용노동부", "일자리와 관련된 도움을 주기 위한 정부 부처", "고용노동부",
+                  dict(en="the government ministry that gives help with matters of employment"))),
         PARAGRAPH("취업할 때에는 자신이 취업하려고 하는 {업체}가 하는 일은 무엇이며, {정식}으로 "
                   "등록되어 있는지 확인해야 한다. 취업을 하게 되면 {근로 계약서}를 반드시 "
                   "작성하고, 취업 이후에도 임금이나 근로 조건 등에서 부당한 대우를 받지 않도록 "

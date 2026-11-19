@@ -25,8 +25,10 @@ CHAPTER = dict(
               "46. 수도권 47. 경상 지역 48. 전라 지역 49. 충청 지역 50. 강원, 제주 지역",
               "지역별 특징, 관광 명소와 축제"]]),
         SECTION("part", "01 한국에서 많이 이용하는 교통수단은 무엇일까?"),
-        GLOSSARY(("고속버스", "고속도로에서 고속으로 주행하기에 알맞도록 제작된 대형 버스", None, "express"),
-              ("시외버스", "도시 밖 특정 지역까지 운행하는 버스", None, "intercity")),
+        GLOSSARY(("고속버스", "고속도로에서 고속으로 주행하기에 알맞도록 제작된 대형 버스", None, "express",
+                  dict(en="a large bus built for travelling at high speed on the expressway")),
+              ("시외버스", "도시 밖 특정 지역까지 운행하는 버스", None, "intercity",
+               dict(en="a bus that runs to a particular place outside the city"))),
         HEADING(2, "교통수단의 종류", translation="Types of Transportation" "\n\n"
           "\"Korea has a variety of well-developed public "
           "transportation options. For nearby trips, people mainly "
@@ -55,10 +57,14 @@ CHAPTER = dict(
           "교통수단으로 고속철도(KTX·SRT), 새마을호, 무궁화호 등이 있다. 특히 고속철도는 빠른 속도로 "
           "전국을 2시간대 {생활권}으로 연결시키는 교통수단이다. 물론 대중교통수단 외에 {자가용}을 이용하는 "
           "사람들도 많지만, 대중교통을 잘 활용하면 적은 비용으로 편리하게 이동할 수 있다."),
-        GLOSSARY(("장려", "좋은 일에 힘쓰도록 북돋아 줌", "장려"),
-              ("권장", "바람직한 일을 하도록 권하고 격려함", "권장"),
-              ("전광판", "그림이나 문자가 나타나도록 만든 판", "전광판"),
-              ("혼잡", "여럿이 한데 뒤섞이어 어수선함", "혼잡")),
+        GLOSSARY(("장려", "좋은 일에 힘쓰도록 북돋아 줌", "장려",
+                  dict(en="encouraging people to work at something good")),
+              ("권장", "바람직한 일을 하도록 권하고 격려함", "권장",
+               dict(en="recommending and encouraging something desirable")),
+              ("전광판", "그림이나 문자가 나타나도록 만든 판", "전광판",
+               dict(en="a board made to display pictures or text")),
+              ("혼잡", "여럿이 한데 뒤섞이어 어수선함", "혼잡",
+               dict(en="many things mixed up together in disorder"))),
         HEADING(2, "대중교통 이용을 장려하는 제도", translation=
           "Systems that encourage the use of public transportation" "\n\n"
           "\"In Korea, systems such as the transfer discount system, "
@@ -105,9 +111,12 @@ CHAPTER = dict(
           "자전거의 이름은 ‘따릉이’(서울), ‘타슈’(대전), ‘누비자’(창원), ‘온누리’(순천), ‘타랑께’(광주), ‘어울림’(세종), ‘여수랑’(여수) 등으로 다양하다. 누리집이나 앱으로 예약해서 이용하거나 "
           "대여소에 가서 직접 이용권을 구매한 뒤 바로 이용할 수 있다."),
         SECTION("part", "02 한국에서 많이 사용하는 통신수단은 무엇일까?"),
-        GLOSSARY(("특송", "빠른 시간 안에 물건을 배달함", "특송"),
-              ("소화물", "열차나 버스 등을 통해 운반하는 대체로 작고 가벼운 물품", "소화물"),
-              ("보급", "많은 사람들에게 골고루 미치게 하여 누리게 함", "보급")),
+        GLOSSARY(("특송", "빠른 시간 안에 물건을 배달함", "특송",
+                  dict(en="delivering goods within a short time")),
+              ("소화물", "열차나 버스 등을 통해 운반하는 대체로 작고 가벼운 물품", "소화물",
+               dict(en="goods, mostly small and light, carried by train, bus and the like")),
+              ("보급", "많은 사람들에게 골고루 미치게 하여 누리게 함", "보급",
+               dict(en="spreading something evenly to many people so that they can enjoy it"))),
         HEADING(2, "통신수단의 종류와 이용", translation=
           "Types and use of communication methods" "\n\n"
           "\"In Korea, people mainly exchange information with those "
@@ -139,11 +148,16 @@ CHAPTER = dict(
           "널리 보급되면서 음성 통화나 영상 통화는 물론 사진, 동영상 등도 자유롭게 주고받을 수 있고 다양한 "
           "정보를 {신속하게|신속하다} 검색할 수 있게 되었다."),
         FIGURE("편의점에서도 택배 서비스를 신청할 수 있다."),
-        GLOSSARY(("통신망", "서로 연결시켜 주는 조직이나 체계", "통신망"),
-              ("무선", "전선을 사용하지 않고 전자기파를 이용하여 주고받는 통신 방식", "무선"),
-              ("플랫폼", "누구나 다양하고 방대한 정보를 쉽게 활용할 수 있도록 제공 하는 기반 서비스", "플랫폼"),
-              ("활성화", "기능이나 활동이 활발함", "활성화"),
-              ("쟁점", "서로 다투는 중심이 되는 점", "쟁점")),
+        GLOSSARY(("통신망", "서로 연결시켜 주는 조직이나 체계", "통신망",
+                  dict(en="an organisation or system that connects one to another")),
+              ("무선", "전선을 사용하지 않고 전자기파를 이용하여 주고받는 통신 방식", "무선",
+               dict(en="a way of communicating that uses electromagnetic waves, without wires")),
+              ("플랫폼", "누구나 다양하고 방대한 정보를 쉽게 활용할 수 있도록 제공 하는 기반 서비스", "플랫폼",
+               dict(en="a base service that lets anyone make easy use of wide and varied information")),
+              ("활성화", "기능이나 활동이 활발함", "활성화",
+               dict(en="a function or activity being lively")),
+              ("쟁점", "서로 다투는 중심이 되는 점", "쟁점",
+               dict(en="the point at the centre of a dispute"))),
         HEADING(3, "인터넷을 통한 정보 교환", translation=
           "Information exchange through the internet" "\n\n"
           "\"The internet is a vast communication network connecting "

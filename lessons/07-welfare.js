@@ -414,28 +414,32 @@ KIIP.chapter({
      "definition": [
       "생활에 필요한 최소한의 비용"
      ],
-     "annotation": "최저 생계비"
+     "annotation": "최저 생계비",
+     "translation": "the minimum cost needed to live"
     },
     {
      "term": "저소득층",
      "definition": [
       "소득이 낮아 경제적 지원이 필요한 사람들"
      ],
-     "annotation": "저소득층"
+     "annotation": "저소득층",
+     "translation": "people whose income is low and who need financial support"
     },
     {
      "term": "생계",
      "definition": [
       "살아 나가는 형편"
      ],
-     "annotation": "생계"
+     "annotation": "생계",
+     "translation": "the circumstances in which one gets by"
     },
     {
      "term": "긴급",
      "definition": [
       "중요하고 급함"
      ],
-     "annotation": "긴급"
+     "annotation": "긴급",
+     "translation": "being important and pressing"
     }
    ]
   },
@@ -725,7 +729,8 @@ KIIP.chapter({
      "definition": [
       "갓 태어난 아기"
      ],
-     "annotation": "신생아"
+     "annotation": "신생아",
+     "translation": "a baby who has just been born"
     }
    ]
   },
@@ -846,21 +851,24 @@ KIIP.chapter({
      "definition": [
       "여러 나라의 언어"
      ],
-     "annotation": "다국어"
+     "annotation": "다국어",
+     "translation": "the languages of several countries"
     },
     {
      "term": "이주",
      "definition": [
       "다른 나라나 지역으로 옮겨 가서 사는 것"
      ],
-     "annotation": "이주"
+     "annotation": "이주",
+     "translation": "moving to another country or region to live"
     },
     {
      "term": "권익",
      "definition": [
       "권리와 이익"
      ],
-     "annotation": "권익"
+     "annotation": "권익",
+     "translation": "rights and interests"
     }
    ]
   },

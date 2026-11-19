@@ -122,7 +122,8 @@ KIIP.chapter({
      "definition": [
       "물건 값이나 양에 대해 의논하는 것. 사는 사람은 값을 깎아 달라고 하거나 더 많은 양을 달라고 하고, 파는 사람은 그렇게 안 하려고 함"
      ],
-     "annotation": "흥정"
+     "annotation": "흥정",
+     "translation": "discussing the price or quantity of goods. The buyer asks for a lower price or a larger amount, and the seller tries not to give it"
     }
    ]
   },
@@ -898,21 +899,24 @@ KIIP.chapter({
      "definition": [
       "고장나거나 잘못된 곳을 고침"
      ],
-     "annotation": "수리"
+     "annotation": "수리",
+     "translation": "mending what is broken or faulty"
     },
     {
      "term": "환불",
      "definition": [
       "이미 낸 돈을 돌려 받음"
      ],
-     "annotation": "환불"
+     "annotation": "환불",
+     "translation": "getting back money already paid"
     },
     {
      "term": "소비자기본법",
      "definition": [
       "소비자의 권리와 책임을 정해 놓고 있는 법으로 안정적인 소비 생활과 경제 발전을 목적으로 함"
      ],
-     "annotation": "소비자기본법"
+     "annotation": "소비자기본법",
+     "translation": "the law that sets out consumers' rights and responsibilities; its aim is stable consumer life and economic development"
     }
    ]
   },
@@ -1156,14 +1160,16 @@ KIIP.chapter({
      "definition": [
       "상품이 사람들 사이에 안전하게 거래될 수 있는 기한"
      ],
-     "annotation": "유통기한"
+     "annotation": "유통기한",
+     "translation": "the period within which a product can safely be traded among people"
     },
     {
      "term": "영수증",
      "definition": [
       "상품을 구입했음을 증명하는 문서"
      ],
-     "annotation": "영수증"
+     "annotation": "영수증",
+     "translation": "a document proving that goods were bought"
     }
    ]
   },

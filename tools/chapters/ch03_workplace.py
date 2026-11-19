@@ -27,13 +27,19 @@ CHAPTER = dict(
               ["심화", "경제", "15. 기업과 근로자", "대한민국의 여러 기업들, 대한민국의 근로 조건, 근로자의 권리"]
               ]),
         SECTION("part", "01 한국인은 어떤 일터에서 일할까?"),
-        GLOSSARY(("취업난", "일자리를 구하기 어려움", "취업난"),
-              ("은퇴", "맡은 일에서 물러남", "은퇴"),
-              ("자아실현", "개인의 능력을 발휘하고 가치를 이루어 냄", "자아실현"),
-              ("사회 공헌", "사회의 발전에 도움을 줌", "사회 공헌", "society contribution"),
+        GLOSSARY(("취업난", "일자리를 구하기 어려움", "취업난",
+                  dict(en="the difficulty of finding a job")),
+              ("은퇴", "맡은 일에서 물러남", "은퇴",
+               dict(en="stepping down from the work one had")),
+              ("자아실현", "개인의 능력을 발휘하고 가치를 이루어 냄", "자아실현",
+               dict(en="bringing out one's abilities and achieving something of worth")),
+              ("사회 공헌", "사회의 발전에 도움을 줌", "사회 공헌", "society contribution",
+               dict(en="helping society to develop")),
               ("공기업", "국가나 지방자치단체가 사회 공공의 복리를 증진하기 위하여 경영하는 기업", "공기업",
-              "state-owned company"),
-              ("임금", "어떤 직장에서 계속 일하는 사람이 일의 대가로 받는 돈", "임금", "wage/pay")),
+              "state-owned company",
+               dict(en="an enterprise run by the state or a local government to promote the public good")),
+              ("임금", "어떤 직장에서 계속 일하는 사람이 일의 대가로 받는 돈", "임금", "wage/pay",
+               dict(en="the money a person who works steadily at a workplace receives in return for the work"))),
         HEADING(2, "한국인들이 선호하는 일터", translation=
           "한국인들이 선호하는 일터 (Workplaces Koreans prefer)" "\n\n"
           "\"In Korea, it's possible to work from age 15 and up. "
@@ -71,10 +77,13 @@ CHAPTER = dict(
           "직원에 대한 복지 혜택도 많아서 인기가 높다."),
         PARAGRAPH("그 외에 다소 규모가 작은 중소기업에 취직하거나 일정한 소속이 없이 자유 계약으로 일하는 사람들, 직접 "
           "회사나 가게를 만들어 사업을 하는 사람들도 있다."),
-        GLOSSARY(("기혼", "이미 결혼함", "기혼", "married"),
+        GLOSSARY(("기혼", "이미 결혼함", "기혼", "married",
+                  dict(en="being already married")),
               ("경력 단절", "공부나 직장을 그만두고 나서 새로운 직장에 들어가기까지 경력이 비어있는 상태", None,
-              "career interrupted"),
-              ("정책", "공공문제를 해결하기 위해 정부가 결정한 일의 계획", None, "policy")),
+              "career interrupted",
+               dict(en="a gap in one's career between leaving study or a job and entering a new job")),
+              ("정책", "공공문제를 해결하기 위해 정부가 결정한 일의 계획", None, "policy",
+               dict(en="a plan of action the government has decided on to solve a public problem"))),
         HEADING(2, "여성의 경제 활동", translation="여성의 경제 활동 (Women's Economic Activity)"
           "\n\n" "\"In the past, most working people were men. However, as "
           "university enrollment rates for men and women gradually "
@@ -126,9 +135,12 @@ CHAPTER = dict(
           "가구가 증가하면서 인터넷으로 물건을 주문하면 새벽에 배송해주는 산업도 크게 성장하고 있다. 이에 따라 "
           "새벽배송 일에 종사하는 사람들의 수도 많아졌다."),
         SECTION("part", "02 한국인의 직장 생활은 어떤 모습일까?"),
-        GLOSSARY(("관공서", "국가 또는 지방자치단체의 사무를 처리하는 기관", "관공서"),
-              ("탄력적", "상황에 따라 알맞게 대처하는 것", "탄력적", "Flexible"),
-              ("교대", "어떤 일을 여럿이 나누어서 차례에 따라 맡아 함", "교대")),
+        GLOSSARY(("관공서", "국가 또는 지방자치단체의 사무를 처리하는 기관", "관공서",
+                  dict(en="an office that handles the business of the state or a local government")),
+              ("탄력적", "상황에 따라 알맞게 대처하는 것", "탄력적", "Flexible",
+               dict(en="dealing with things in the way that suits the situation")),
+              ("교대", "어떤 일을 여럿이 나누어서 차례에 따라 맡아 함", "교대",
+               dict(en="several people sharing a task and taking it on in turn"))),
         HEADING(2, "직장 근무 시간과 근무 유형"),
         PARAGRAPH("한국의 관공서나 회사는 일반적으로 오전 9시부터 오후 6시까지 일한다. 낮 12시 전후로 1시간 정도의 "
           "점심시간이 있으므로 하루에 8시간 정도 근무한다. 보통 오후 6시가 되면 퇴근을 하는데, 해야 할 일이 "
@@ -140,9 +152,12 @@ CHAPTER = dict(
           "일을 해야 하는 경우는 평일에 쉬기도 한다. 24시간 운영하는 찜질방, 편의점, PC방이나 경찰서, "
           "소방서, 병원, 항만, 공항 등 24시간 내내 서비스가 제공되어야 하는 곳에서 일하는 경우는 직원들이 "
           "서로 차례를 바꾸어 교대 근무를 한다."),
-        GLOSSARY(("추구", "목적을 이룰 때까지 뒤좇아 구함", None, "pursuit/chase"),
-              ("경향", "현상이나 행동이 어떤 방향으로 기울어짐", None, "trend/tendency"),
-              ("워라밸", "일과 삶의 균형이라는 뜻으로 “Work and Life Balance”의 준말")),
+        GLOSSARY(("추구", "목적을 이룰 때까지 뒤좇아 구함", None, "pursuit/chase",
+                  dict(en="going after something until the aim is achieved")),
+              ("경향", "현상이나 행동이 어떤 방향으로 기울어짐", None, "trend/tendency",
+               dict(en="a leaning of events or behaviour in a certain direction")),
+              ("워라밸", "일과 삶의 균형이라는 뜻으로 “Work and Life Balance”의 준말",
+               dict(en="short for “Work and Life Balance”, the balance between work and life"))),
         HEADING(2, "직장 문화"),
         PARAGRAPH("한국에서는 근무를 마친 후에 종종 회사 직원들끼리 회식을 한다. 회사 직원들끼리 친밀한 관계를 형성하기 "
           "위해서 또는 축하나 위로를 받아야 할 직장 동료가 있을 때 회식을 하는 경우가 많다. 회식하는 날은 "

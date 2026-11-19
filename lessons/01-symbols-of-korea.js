@@ -109,7 +109,8 @@ KIIP.chapter({
        "annotation": "방식"
       }
      ],
-     "annotation": "공식"
+     "annotation": "공식",
+     "translation": "a public way of doing something, recognised by the state or by society"
     }
    ]
   },
@@ -223,35 +224,40 @@ KIIP.chapter({
      "definition": [
       "나라를 상징하는 깃발"
      ],
-     "annotation": "국기"
+     "annotation": "국기",
+     "translation": "the flag that stands for a country"
     },
     {
      "term": "존귀",
      "definition": [
       "높고 귀함"
      ],
-     "annotation": "존귀"
+     "annotation": "존귀",
+     "translation": "being high and precious"
     },
     {
      "term": "조화",
      "definition": [
       "서로 잘 어울림"
      ],
-     "annotation": "조화"
+     "annotation": "조화",
+     "translation": "going well together"
     },
     {
      "term": "평화",
      "definition": [
       "갈등이 없이 평온함"
      ],
-     "annotation": "평화"
+     "annotation": "평화",
+     "translation": "being calm, without conflict"
     },
     {
      "term": "화합",
      "definition": [
       "화목하게 어울림"
      ],
-     "annotation": "화합"
+     "annotation": "화합",
+     "translation": "getting along in harmony"
     }
    ]
   },
@@ -409,7 +415,8 @@ KIIP.chapter({
      "definition": [
       "국가는 '나라'라는 의미와 '나라를 대표하는 노래'라는 두 가지 의미가 있다."
      ],
-     "annotation": "국가"
+     "annotation": "국가",
+     "translation": "국가 has two meanings: “a country” and “the song that represents a country”."
     }
    ]
   },
@@ -584,14 +591,16 @@ KIIP.chapter({
      "definition": [
       "사회적으로 인정을 받고 영향력을 끼칠 수 있는 힘"
      ],
-     "annotation": "권위"
+     "annotation": "권위",
+     "translation": "the power to be recognised by society and to have influence over it"
     },
     {
      "term": "훈장",
      "definition": [
       "국가나 사회에 공로(노력과 수고)가 큰 사람에게 국가에서 표창(널리 알려 칭찬)하기 위하여 주는 것"
      ],
-     "annotation": "훈장"
+     "annotation": "훈장",
+     "translation": "what the state gives to honour (praise publicly) a person who has done great service (effort and toil) for the country or society"
     }
    ]
   },
@@ -697,14 +706,16 @@ KIIP.chapter({
      "definition": [
       "말의 소리를 내는 데 쓰이는 몸의 부분"
      ],
-     "annotation": "발음기관"
+     "annotation": "발음기관",
+     "translation": "the parts of the body used to make the sounds of speech"
     },
     {
      "term": "훈민정음",
      "definition": [
       "백성을 가르치는 바른 소리"
      ],
-     "annotation": "훈민정음"
+     "annotation": "훈민정음",
+     "translation": "the correct sounds for teaching the people"
     },
     {
      "term": "해례본",
@@ -716,14 +727,16 @@ KIIP.chapter({
       },
       " 책"
      ],
-     "annotation": "해례본"
+     "annotation": "해례본",
+     "translation": "a book that explains by giving examples"
     },
     {
      "term": "문맹",
      "definition": [
       "글을 읽거나 쓸 줄 모름"
      ],
-     "annotation": "문맹"
+     "annotation": "문맹",
+     "translation": "not knowing how to read or write"
     }
    ]
   },

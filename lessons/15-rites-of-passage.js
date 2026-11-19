@@ -146,28 +146,32 @@ KIIP.chapter({
      "definition": [
       "맹세하고 약속함"
      ],
-     "annotation": "서약"
+     "annotation": "서약",
+     "translation": "swearing and promising"
     },
     {
      "term": "신랑",
      "definition": [
       "갓 결혼하였거나 곧 결혼하는 남자"
      ],
-     "annotation": "신랑"
+     "annotation": "신랑",
+     "translation": "a man who has just married or is about to marry"
     },
     {
      "term": "신부",
      "definition": [
       "갓 결혼하였거나 곧 결혼하는 여자"
      ],
-     "annotation": "신부"
+     "annotation": "신부",
+     "translation": "a woman who has just married or is about to marry"
     },
     {
      "term": "축의금",
      "definition": [
       "축하하는 마음을 나타내기 위해 내는 돈"
      ],
-     "annotation": "축의금"
+     "annotation": "축의금",
+     "translation": "money given to express congratulations"
     }
    ]
   },
@@ -511,14 +515,16 @@ KIIP.chapter({
      "definition": [
       "어른이 된 사람. 일반적으로 만 19세 이상을 가리킴"
      ],
-     "annotation": "성인"
+     "annotation": "성인",
+     "translation": "a person who has become an adult. Generally means those aged 19 or over"
     },
     {
      "term": "자부심",
      "definition": [
       "자기 자신의 가치나 능력을 믿고 당당히 여기는 마음"
      ],
-     "annotation": "자부심"
+     "annotation": "자부심",
+     "translation": "the feeling of trusting in one's own worth or ability and holding oneself with confidence"
     }
    ]
   },
@@ -748,49 +754,56 @@ KIIP.chapter({
      "definition": [
       "죽은 사람"
      ],
-     "annotation": "고인"
+     "annotation": "고인",
+     "translation": "a person who has died"
     },
     {
      "term": "문상객",
      "definition": [
       "죽은 사람의 가족을 위로하기 위해 장례식장을 방문하는 손님"
      ],
-     "annotation": "문상객"
+     "annotation": "문상객",
+     "translation": "a guest who visits the funeral hall to console the family of the dead"
     },
     {
      "term": "조의금",
      "definition": [
       "위로하는 마음을 나타내기 위해 내는 돈"
      ],
-     "annotation": "조의금"
+     "annotation": "조의금",
+     "translation": "money given to express condolence"
     },
     {
      "term": "유족",
      "definition": [
       "죽은 사람의 남아있는 가족"
      ],
-     "annotation": "유족"
+     "annotation": "유족",
+     "translation": "the family a dead person leaves behind"
     },
     {
      "term": "묵념",
      "definition": [
       "머리를 숙여 경건한 마음으로 기도함"
      ],
-     "annotation": "묵념"
+     "annotation": "묵념",
+     "translation": "bowing the head and praying in a reverent spirit"
     },
     {
      "term": "매장",
      "definition": [
       "시신을 땅에 묻음"
      ],
-     "annotation": "매장"
+     "annotation": "매장",
+     "translation": "burying the body in the ground"
     },
     {
      "term": "화장",
      "definition": [
       "시신을 불에 태워서 그 남은 뼈를 모아 장례를 지냄"
      ],
-     "annotation": "화장"
+     "annotation": "화장",
+     "translation": "burning the body, gathering the bones that remain and holding the funeral"
     }
    ]
   },

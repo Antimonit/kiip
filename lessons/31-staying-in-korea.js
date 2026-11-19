@@ -155,21 +155,24 @@ KIIP.chapter({
      "definition": [
       "어떤 물건을 정상적으로 사용할 수 있는 기간"
      ],
-     "annotation": "유효 기간"
+     "annotation": "유효 기간",
+     "translation": "the period during which a thing can be used normally"
     },
     {
      "term": "공중위생",
      "definition": [
       "다수의 사람들에게 영향을 줄 수 있는 질병을 예방하고 건강을 유지하는 것"
      ],
-     "annotation": "공중위생"
+     "annotation": "공중위생",
+     "translation": "preventing diseases that can affect large numbers of people, and keeping them healthy"
     },
     {
      "term": "방역",
      "definition": [
       "전염병 등을 퍼지지 않도록 예방하는 것"
      ],
-     "annotation": "방역"
+     "annotation": "방역",
+     "translation": "preventing infectious diseases and the like from spreading"
     }
    ]
   },
@@ -465,21 +468,24 @@ KIIP.chapter({
      "definition": [
       "어떤 지역에 오래 머물러 있는 상태"
      ],
-     "annotation": "체류"
+     "annotation": "체류",
+     "translation": "the state of staying a long time in a place"
     },
     {
      "term": "연수",
      "definition": [
       "지식이나 기술을 연구하고 훈련함"
      ],
-     "annotation": "연수"
+     "annotation": "연수",
+     "translation": "studying and training in knowledge or skills"
     },
     {
      "term": "투자",
      "definition": [
       "사업을 하기 위해 돈을 댐"
      ],
-     "annotation": "투자"
+     "annotation": "투자",
+     "translation": "putting up money in order to do business"
     }
    ]
   },
@@ -809,21 +815,24 @@ KIIP.chapter({
      "definition": [
       "한국에 있는 외국인"
      ],
-     "annotation": "재한 외국인"
+     "annotation": "재한 외국인",
+     "translation": "a foreigner in Korea"
     },
     {
      "term": "다문화",
      "definition": [
       "한 사회 안에 다양한 인종, 민족, 집단, 문화 등이 어우러져 사는 현상"
      ],
-     "annotation": "다문화"
+     "annotation": "다문화",
+     "translation": "people of varied races, ethnic groups, communities and cultures living together in one society"
     },
     {
      "term": "세계인의 날",
      "definition": [
       "한국 국민과 재한 외국인이 서로 존중하며 살아갈 수 있도록 2007년 한국에서 법으로 정한 기념일"
      ],
-     "annotation": "세계인의 날"
+     "annotation": "세계인의 날",
+     "translation": "a commemorative day set by law in Korea in 2007 so that Korean citizens and foreigners in Korea can live with respect for each other"
     }
    ]
   },
@@ -1007,14 +1016,16 @@ KIIP.chapter({
      "definition": [
       "여러 나라의 말"
      ],
-     "annotation": "다국어"
+     "annotation": "다국어",
+     "translation": "the languages of several countries"
     },
     {
      "term": "모국어",
      "definition": [
       "자기 나라의 말"
      ],
-     "annotation": "모국어"
+     "annotation": "모국어",
+     "translation": "the language of one's own country"
     }
    ]
   },

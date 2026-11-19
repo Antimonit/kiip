@@ -55,12 +55,18 @@ CHAPTER = dict(
           "counter-urbanization (역도시화) has also emerged, where people "
           "move to areas around large cities in search of a cleaner, "
           "more pleasant environment.\""),
-        GLOSSARY(("도시화", "도시의 생활 양식이 도시 외 지역으로 확대되는 현상", "도시화"),
-              ("산업화", "공업 등과 같은 생산 활동이 크게 확대되는 현상", "산업화"),
-              ("도시화율", "전체 인구 중 도시에 사는 인구의 비율", "도시화율"),
-              ("국토", "한 나라의 통치권이 미치는 지역", "국토"),
-              ("분산", "나누어 각각 흩어지게 함", "분산"),
-              ("위성 도시", "대도시의 주변에 있는 중소 규모의 도시", "위성 도시")),
+        GLOSSARY(("도시화", "도시의 생활 양식이 도시 외 지역으로 확대되는 현상", "도시화",
+                  dict(en="the spread of the urban way of life to areas outside the city")),
+              ("산업화", "공업 등과 같은 생산 활동이 크게 확대되는 현상", "산업화",
+               dict(en="a great expansion of productive activity such as manufacturing")),
+              ("도시화율", "전체 인구 중 도시에 사는 인구의 비율", "도시화율",
+               dict(en="the share of the whole population that lives in cities")),
+              ("국토", "한 나라의 통치권이 미치는 지역", "국토",
+               dict(en="the area over which a country's sovereignty reaches")),
+              ("분산", "나누어 각각 흩어지게 함", "분산",
+               dict(en="dividing something so that each part is scattered")),
+              ("위성 도시", "대도시의 주변에 있는 중소 규모의 도시", "위성 도시",
+               dict(en="a small or medium-sized city on the edge of a large city"))),
         PARAGRAPH("한국의 도시화는 1960년대 이후 산업화가 이루어지면서 {본격적으로|본격적} 시작되었다. "
           "1970년대부터는 인구의 절반 이상이 도시에서 살게 되었고, 현재는 총인구 중 90%가 넘는 사람이 "
           "도시에 거주하고 있다. 도시에는 기업체, 대학, 공공 기관, 의료 시설, 문화 시설 등이 많아 생활이 " "편리하다."),
@@ -94,8 +100,10 @@ CHAPTER = dict(
           "housing, measures such as distributing public rental "
           "housing, building new towns, and urban redevelopment "
           "projects are being implemented.\""),
-        GLOSSARY(("확충", "늘리고 넓혀 충실하게 함", "확충"),
-              ("혼잡 통행료", "교통 혼잡 지역을 통행하는 자가용을 대상으로 통행료를 받는 제도", "혼잡 통행료")),
+        GLOSSARY(("확충", "늘리고 넓혀 충실하게 함", "확충",
+                  dict(en="increasing and widening something to make it complete")),
+              ("혼잡 통행료", "교통 혼잡 지역을 통행하는 자가용을 대상으로 통행료를 받는 제도", "혼잡 통행료",
+               dict(en="a system that charges a toll on private cars passing through an area of heavy traffic"))),
         PARAGRAPH("많은 도시에서 도시 문제가 발생한다. 교통, 환경, 주택 문제 등이 대표적인 예이다. 교통 혼잡, "
           "대중교통 부족, 주차 시설 부족 등과 같은 교통 문제를 해결하기 위해 대중교통수단 확충, 대중교통 환승 "
           "할인, 버스 전용 차로제, 혼잡 통행료 등을 실시하고 있다. {대기} 오염, {수질} 오염 등과 같은 "
@@ -146,9 +154,12 @@ CHAPTER = dict(
           "that promote local tradition and culture using their "
           "natural environment and local specialty products — "
           "sometimes developing these into tourism industries.\""),
-        GLOSSARY(("찧다", "곡식의 껍질을 벗기거나 가루로 만들려고 내리침", "찧다"),
-              ("촌락", "주로 시골에서 여러 집이 모여 사는 곳", "촌락"),
-              ("직거래", "물건을 파는 사람과 사는 사람이 중간 상인을 거치지 않고 직접 거래", "직거래")),
+        GLOSSARY(("찧다", "곡식의 껍질을 벗기거나 가루로 만들려고 내리침", "찧다",
+                  dict(en="pounding grain to remove the husk or to make flour")),
+              ("촌락", "주로 시골에서 여러 집이 모여 사는 곳", "촌락",
+               dict(en="a place, mainly in the countryside, where several households live together")),
+              ("직거래", "물건을 파는 사람과 사는 사람이 중간 상인을 거치지 않고 직접 거래", "직거래",
+               dict(en="the seller and the buyer dealing directly, without going through a middleman"))),
         PARAGRAPH("{농촌}은 {대체로} 함께 {농사}를 지으며 같은 마을에서 오랫동안 살아온 사람들이 많아 사람 간의 "
           "관계가 친밀한 편이다. 농촌에는 회의를 하거나 모여서 쉬는 공간인 마을 {회관}, {농산물}을 안전하게 "
           "오랜 기간 {보관}할 수 있는 농산물 저장 창고, {수확한} 벼를 찧는{정미소}, 주변의 하천에서 물을 "
@@ -183,9 +194,12 @@ CHAPTER = dict(
           "facilities, and convenience facilities such as clinics and "
           "hospitals are being increased. Digitalization education, "
           "such as internet training, is also being carried out."),
-        GLOSSARY(("귀농", "도시에서 다른 일을 하던 사람이 농촌으로 돌아감", "귀농"),
-              ("생산성", "효율적으로 생산할 수 있는 정도", "생산성"),
-              ("개조", "고쳐서 다시 만듦", "개조")),
+        GLOSSARY(("귀농", "도시에서 다른 일을 하던 사람이 농촌으로 돌아감", "귀농",
+                  dict(en="a person who did other work in the city going back to the farming village")),
+              ("생산성", "효율적으로 생산할 수 있는 정도", "생산성",
+               dict(en="the degree to which one can produce efficiently")),
+              ("개조", "고쳐서 다시 만듦", "개조",
+               dict(en="repairing something and making it again"))),
         PARAGRAPH("농촌에도 해결해야 할 문제가 있다. 우선 농촌 인구의 {고령화}로 인한 {일손} 부족을 꼽을 수 있다. "
           "2018년 통계청 조사에 따르면, 농촌에는 만 65세 이상 인구가 약 45%를 {차지할} 정도로 노인이 "
           "많다. 이를 해결하기 위해 농촌 지역의 {지방자치단체}에서는 귀농을 하려는 사람에게 많은 지원을 하고 "

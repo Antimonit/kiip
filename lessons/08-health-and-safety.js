@@ -122,21 +122,24 @@ KIIP.chapter({
      "definition": [
       "빈틈이 없고 자세하다"
      ],
-     "annotation": "정밀하다"
+     "annotation": "정밀하다",
+     "translation": "to be detailed, leaving no gaps"
     },
     {
      "term": "침",
      "definition": [
       "바늘처럼 생긴 가늘고 긴 의료 기구"
      ],
-     "annotation": "침"
+     "annotation": "침",
+     "translation": "a long, thin medical instrument shaped like a needle"
     },
     {
      "term": "뜸",
      "definition": [
       "약물을 태우거나 태운 김을 쏘여 자극을 줌으로써 질병을 치료하는 방법"
      ],
-     "annotation": "뜸"
+     "annotation": "뜸",
+     "translation": "a way of treating illness by burning a medicinal substance, or applying its heat, to stimulate the body"
     }
    ]
   },
@@ -431,21 +434,24 @@ KIIP.chapter({
      "definition": [
       "약으로 쓰는 풀"
      ],
-     "annotation": "약초"
+     "annotation": "약초",
+     "translation": "a plant used as medicine"
     },
     {
      "term": "응급 처치",
      "definition": [
       "위급한 상황에 있는 환자에게 당장 필요한 치료를 하는 것"
      ],
-     "annotation": "응급 처치"
+     "annotation": "응급 처치",
+     "translation": "giving a patient in a critical situation the treatment needed straight away"
     },
     {
      "term": "피부양자",
      "definition": [
       "다른 사람에게서 부양을 받는 사람"
      ],
-     "annotation": "피부양자"
+     "annotation": "피부양자",
+     "translation": "a person supported by someone else"
     }
    ]
   },
@@ -721,56 +727,64 @@ KIIP.chapter({
      "definition": [
       "뜻밖에 일어난 재앙과 고난"
      ],
-     "annotation": "재난"
+     "annotation": "재난",
+     "translation": "calamity and hardship that come unexpectedly"
     },
     {
      "term": "대비",
      "definition": [
       "앞으로 일어날지 모르는 어떠한 일에 적절히 행동하기 위하여 미리 준비함"
      ],
-     "annotation": "대비"
+     "annotation": "대비",
+     "translation": "preparing in advance so as to act properly when something that may happen does happen"
     },
     {
      "term": "원전",
      "definition": [
       "원자력발전소, 핵분열이나 핵융합 같은 원자력 에너지를 이용하여 전기를 생산해내는 발전소이다"
      ],
-     "annotation": "원전"
+     "annotation": "원전",
+     "translation": "a nuclear power station: a power station that produces electricity from nuclear energy such as fission or fusion"
     },
     {
      "term": "안전사고",
      "definition": [
       "안전 교육의 부족, 또는 부주의로 일어나는 사고"
      ],
-     "annotation": "안전사고"
+     "annotation": "안전사고",
+     "translation": "an accident caused by a lack of safety training, or by carelessness"
     },
     {
      "term": "매뉴얼",
      "definition": [
       "직무를 수행하는 데 필요한 작업상의 지식이나 작업진행 방법 등에 관한 기본적인 사항을 체계적으로 정리한 것"
      ],
-     "annotation": "매뉴얼"
+     "annotation": "매뉴얼",
+     "translation": "the basic knowledge of a job and of how its work proceeds, set out systematically"
     },
     {
      "term": "대응",
      "definition": [
       "어떤 일이나 사태에 맞추어 태도나 행동을 취함"
      ],
-     "annotation": "대응"
+     "annotation": "대응",
+     "translation": "taking an attitude or action that fits a matter or situation"
     },
     {
      "term": "긴급신고전화",
      "definition": [
       "범죄 112    재난 119    민원 110    감염병 1339"
      ],
-     "annotation": "긴급신고전화"
+     "annotation": "긴급신고전화",
+     "translation": "crime 112 · disaster 119 · civil complaints 110 · infectious disease 1339"
     },
     {
      "term": "해롭다",
      "definition": [
       "나쁜 점이 있다"
      ],
-     "annotation": "해롭다"
+     "annotation": "해롭다",
+     "translation": "to have something bad about it"
     }
    ]
   },

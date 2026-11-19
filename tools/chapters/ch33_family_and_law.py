@@ -40,7 +40,8 @@ CHAPTER = dict(
 
         SECTION("part", "01 법은 결혼생활에 어떤 영향을 줄까?"),
         GLOSSARY(("혼인 신고", "결혼한 사실을 행정 기관에 공식적으로 신고하는 일", "혼인 신고",
-                  "marriage registration")),
+                  "marriage registration",
+                  dict(en="officially reporting the fact of a marriage to an administrative office"))),
         HEADING(2, "부부로 인정받기 위한 절차", translation=
                 "The steps to being recognised as a married couple" "\n\n"
                 "Marriage is two people who love each other meeting and "
@@ -58,13 +59,16 @@ CHAPTER = dict(
                   "있다."),
         FIGURE("○○시청에 있는 혼인 신고 기념 포토존"),
 
-        GLOSSARY(("처분", "일정한 대상을 어떻게 처리할 것인가에 대해 결정함", "처분"),
+        GLOSSARY(("처분", "일정한 대상을 어떻게 처리할 것인가에 대해 결정함", "처분",
+                  dict(en="deciding how a given thing is to be dealt with")),
                  ("부부 별산제",
                   "부부가 혼인하기 전부터 각자 가졌던 재산 또는 혼인생활 중 자기 이름으로 얻은 재산을 "
                   "각자의 것으로 인정하는 제도", "부부 별산제",
-                  "the separate property system"),
+                  "the separate property system",
+                  dict(en="the system that recognises as each spouse's own the property each held before the marriage, or gained in their own name during it")),
                  ("가사노동", "청소, 빨래, 요리 등 가정을 유지하고 살림을 꾸려나가기 위해 하는 노동",
-                  "가사노동", "domestic chores")),
+                  "가사노동", "domestic chores",
+                  dict(en="the work done to maintain a home and keep the household going: cleaning, laundry, cooking and so on"))),
         HEADING(2, "부부의 권리와 의무", translation=
                 "A married couple’s rights and duties" "\n\n"
                 "In Korea each of a married couple may hold property of "
@@ -128,7 +132,8 @@ CHAPTER = dict(
                   "수 있게 되었다."),
 
         SECTION("part", "02 가족관계에서 생기는 문제를 법으로 어떻게 해결할 수 있을까?"),
-        GLOSSARY(("인격", "사람으로서의 품위와 자격", "인격", "personality, character")),
+        GLOSSARY(("인격", "사람으로서의 품위와 자격", "인격", "personality, character",
+                  dict(en="dignity and standing as a person"))),
         HEADING(2, "가정 폭력의 해결", translation=
                 "Dealing with domestic violence" "\n\n"
                 "A family is the closest and most intimate relationship "
@@ -165,7 +170,8 @@ CHAPTER = dict(
                "다누리 콜센터 1577-1366"),
 
         GLOSSARY(("위자료", "다른 사람의 불법적인 행위로 인해 생긴 정신적 고통이나 피해에 대해 물어주는 돈",
-                  "위자료", "alimony, damages")),
+                  "위자료", "alimony, damages",
+                  dict(en="money paid for the mental suffering or harm caused by another person's unlawful act"))),
         HEADING(2, "이혼의 종류와 방법", translation=
                 "The kinds of divorce, and how it is done" "\n\n"
                 "Where a couple think they can no longer keep their married "

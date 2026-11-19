@@ -126,21 +126,24 @@ KIIP.chapter({
      "definition": [
       "비용이나 대가가 없음"
      ],
-     "annotation": "무상"
+     "annotation": "무상",
+     "translation": "there being no cost or payment"
     },
     {
      "term": "의무 교육",
      "definition": [
       "개인이 국가나 사회의 구성원으로서 의무적으로 받아야 하는 교육, 이와 동시에 국가가 그 구성원에게 의무적으로 제공해야 하는 교육. 한국은 의무 교육 기간이 9년이다(초등학교 6년 + 중학교 3년)."
      ],
-     "annotation": "의무 교육"
+     "annotation": "의무 교육",
+     "translation": "education a person must receive as a member of the state or society, and which the state must at the same time provide to its members. In Korea compulsory education lasts nine years (six of primary school + three of middle school)."
     },
     {
      "term": "법인",
      "definition": [
       "법적으로 권리와 의무를 가지는 조직"
      ],
-     "annotation": "법인"
+     "annotation": "법인",
+     "translation": "an organisation that has rights and duties in law"
     }
    ]
   },
@@ -346,35 +349,40 @@ KIIP.chapter({
      "definition": [
       "학교 수업의 기본 단위"
      ],
-     "annotation": "차시"
+     "annotation": "차시",
+     "translation": "the basic unit of a school lesson"
     },
     {
      "term": "탄력적",
      "definition": [
       "고정되어 있지 않고 유연하게 변할 수 있음"
      ],
-     "annotation": "탄력적"
+     "annotation": "탄력적",
+     "translation": "not being fixed, able to change flexibly"
     },
     {
      "term": "교외",
      "definition": [
       "학교 밖"
      ],
-     "annotation": "교외"
+     "annotation": "교외",
+     "translation": "outside the school"
     },
     {
      "term": "정규",
      "definition": [
       "정식으로 된 규정"
      ],
-     "annotation": "정규"
+     "annotation": "정규",
+     "translation": "a rule that is formally laid down"
     },
     {
      "term": "방과",
      "definition": [
       "그날의 수업을 마침"
      ],
-     "annotation": "방과"
+     "annotation": "방과",
+     "translation": "finishing the day's lessons"
     }
    ]
   },
@@ -694,14 +702,16 @@ KIIP.chapter({
      "definition": [
       "어린이가 학교에 들어가는 것을 허락하거나 알리는 문서"
      ],
-     "annotation": "취학 통지서"
+     "annotation": "취학 통지서",
+     "translation": "a document permitting or announcing a child's entry to school"
     },
     {
      "term": "예비 소집일",
      "definition": [
       "입학 등록을 하는 날로 취학 통지서를 챙겨가야 한다."
      ],
-     "annotation": "예비 소집일"
+     "annotation": "예비 소집일",
+     "translation": "the day of enrolment, to which the school entry notice must be brought"
     }
    ]
   },
@@ -882,21 +892,24 @@ KIIP.chapter({
      "definition": [
       "나누어 정함"
      ],
-     "annotation": "배정"
+     "annotation": "배정",
+     "translation": "dividing up and assigning"
     },
     {
      "term": "검정고시",
      "definition": [
       "어떤 자격에 필요한 지식, 학력, 기술 등이 있는지 검사하기 위해 실시하는 시험"
      ],
-     "annotation": "검정고시"
+     "annotation": "검정고시",
+     "translation": "an examination held to test whether a person has the knowledge, schooling or skill a qualification requires"
     },
     {
      "term": "함양",
      "definition": [
       "능력이나 품성 등을 길러 갖춤"
      ],
-     "annotation": "함양"
+     "annotation": "함양",
+     "translation": "cultivating and acquiring an ability or a quality of character"
     }
    ]
   },

@@ -32,9 +32,12 @@ CHAPTER = dict(
 
         SECTION("part", "01 법은 누가 집행할까?"),
         HEADING(2, "정부라 불리는 행정부"),
-        GLOSSARY(("공익", "사회 전체의 이익", "공익"),
-              ("집행", "실제로 시행함", "집행"),
-              ("대통령제", "대통령을 중심으로 국정이 운영되는 정부 형태", "대통령제")),
+        GLOSSARY(("공익", "사회 전체의 이익", "공익",
+                  dict(en="the interest of society as a whole")),
+              ("집행", "실제로 시행함", "집행",
+               dict(en="actually carrying something out")),
+              ("대통령제", "대통령을 중심으로 국정이 운영되는 정부 형태", "대통령제",
+               dict(en="the form of government in which the affairs of state are run around the president"))),
         PARAGRAPH("국회가 만든 법을 {기반}으로 하여 {공익}을 {실현}할 목적으로 여러 {정책}을 만들고 "
           "실시하는 일을 {행정}이라고 한다. 출·{입국관리}, {여권} {발급}, 도로 건설, 초등학교 "
           "{배정} 등이 행정의 예이다. {행정부}는 이처럼 국민에게 필요한 정책을 직접 {집행}하면서 "
@@ -42,9 +45,12 @@ CHAPTER = dict(
           "중심으로 행정을 이끌어 가는 {대통령제}를 {채택}하고 있다."),
 
         HEADING(2, "정부의 구성"),
-        GLOSSARY(("선출", "여럿 가운데서 뽑힘", "선출"),
-              ("중임", "어떤 일을 다시 맡음", "중임"),
-              ("임명", "일정한 지위나 임무를 남에게 맡김", "임명")),
+        GLOSSARY(("선출", "여럿 가운데서 뽑힘", "선출",
+                  dict(en="being chosen from among several")),
+              ("중임", "어떤 일을 다시 맡음", "중임",
+               dict(en="taking on a post again")),
+              ("임명", "일정한 지위나 임무를 남에게 맡김", "임명",
+               dict(en="entrusting someone with a given position or duty"))),
         PARAGRAPH("한국 정부는 {대통령}을 중심으로 {국무총리}와 여러 개의 {부}, {처}, {청}, {위원회} "
           "등으로 구성된다. 대통령은 정부의 최고 {책임자}로 나라의 중요한 일을 결정하며 외국에 "
           "대해 나라를 대표한다. 대통령은 국민의 {직접 선거}를 통해 {선출}된다. 대통령의 "
@@ -84,8 +90,10 @@ CHAPTER = dict(
 
         SECTION("part", "02 정부는 어떤 일을 할까?"),
         HEADING(2, "대통령의 권한"),
-        GLOSSARY(("권한", "어떤 사람이나 기관의 힘이 미치는 범위", "권한"),
-              ("조약", "외국과 맺은 약속으로 법과 같은 효력을 가짐", "조약")),
+        GLOSSARY(("권한", "어떤 사람이나 기관의 힘이 미치는 범위", "권한",
+                  dict(en="the range over which the power of a person or body reaches")),
+              ("조약", "외국과 맺은 약속으로 법과 같은 효력을 가짐", "조약",
+               dict(en="a promise made with a foreign country that has the same force as law"))),
         PARAGRAPH("한국은 대통령제 국가이다. 대통령은 국가 {운영}에 관한 많은 {권한}을 {행사}할 수 있다. "
           "주요 권한으로는 {국군}을 {지휘}하는 권한, 국무총리와 각 부의 장관 등 {공무원}을 "
           "임명하는 권한이 있다. 또 국회가 만든 법안을 {거부}할 수 있는 권한, {범죄}를 "
@@ -108,10 +116,13 @@ CHAPTER = dict(
 
         HEADING(2, "정부의 역할"),
         GLOSSARY(("남북통일", "남한과 북한으로 갈려 있는 우리 국토와 우리 겨레가 하나로 되는 일",
-               "남북통일"),
+               "남북통일",
+                  dict(en="our land and our people, divided into South and North Korea, becoming one")),
               ("검역", "해외에서 전염병이나 해충 등이 들어오는 것을 막기 위해 공항이나 항구에서 "
-                       "검사하는 것", "검역"),
-              ("치안", "나라를 안전하게 하는 일", "치안")),
+                       "검사하는 것", "검역",
+               dict(en="inspection at airports and ports to stop infectious diseases, pests and the like coming in from abroad")),
+              ("치안", "나라를 안전하게 하는 일", "치안",
+               dict(en="keeping the country safe"))),
         PARAGRAPH("정부는 국민의 자유와 권리 보호, {외교}와 경제 발전, {남북통일} 등의 목적을 실현하기 "
           "위해 노력한다. 그래서 각 부의 장관을 {비롯한|비롯하다} 정부 공무원들은 국민의 삶에 "
           "도움을 주는 정책을 만들고 집행한다."),

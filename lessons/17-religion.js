@@ -154,21 +154,24 @@ KIIP.chapter({
      "definition": [
       "신과 같이 거룩하고 성스러움"
      ],
-     "annotation": "신성"
+     "annotation": "신성",
+     "translation": "being holy and sacred, like a god"
     },
     {
      "term": "천지신명",
      "definition": [
       "하늘과 땅을 다스리는 거룩한 영적 존재"
      ],
-     "annotation": "천지신명"
+     "annotation": "천지신명",
+     "translation": "the holy spiritual beings that rule heaven and earth"
     },
     {
      "term": "숭배",
      "definition": [
       "우러러 공경함"
      ],
-     "annotation": "숭배"
+     "annotation": "숭배",
+     "translation": "looking up to and revering"
     }
    ]
   },
@@ -247,28 +250,32 @@ KIIP.chapter({
      "definition": [
       "고구려, 백제, 신라 세 나라가 경쟁하던 시대"
      ],
-     "annotation": "삼국 시대"
+     "annotation": "삼국 시대",
+     "translation": "the period when the three states of Goguryeo, Baekje and Silla competed"
     },
     {
      "term": "자비",
      "definition": [
       "다른 사람을 사랑하고 가엾게 여김"
      ],
-     "annotation": "자비"
+     "annotation": "자비",
+     "translation": "loving other people and feeling pity for them"
     },
     {
      "term": "서민",
      "definition": [
       "신분이 높지 않은 사람이나 나랏일을 맡아 하지 않는 사람"
      ],
-     "annotation": "서민"
+     "annotation": "서민",
+     "translation": "a person of no high rank, or one who holds no office of state"
     },
     {
      "term": "문화유산",
      "definition": [
       "조상이 남긴 문화 중에서 후손에게 물려줄 만한 가치가 있는 것"
      ],
-     "annotation": "문화유산"
+     "annotation": "문화유산",
+     "translation": "that part of the culture left by one's ancestors which is worth handing down to later generations"
     }
    ]
   },
@@ -596,7 +603,8 @@ KIIP.chapter({
      "definition": [
       "유럽과 아메리카 지역"
      ],
-     "annotation": "서양"
+     "annotation": "서양",
+     "translation": "the regions of Europe and the Americas"
     }
    ]
   },
@@ -1001,7 +1009,8 @@ KIIP.chapter({
      "definition": [
       "종교의 원리나 가르침"
      ],
-     "annotation": "교리"
+     "annotation": "교리",
+     "translation": "the principles or teachings of a religion"
     }
    ]
   },
@@ -1233,7 +1242,8 @@ KIIP.chapter({
      "definition": [
       "어떤 종교를 가지고 있는 사람"
      ],
-     "annotation": "신도"
+     "annotation": "신도",
+     "translation": "a person who has a certain religion"
     }
    ]
   },

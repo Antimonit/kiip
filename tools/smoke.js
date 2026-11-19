@@ -279,7 +279,13 @@ async function checkChapter(file) {
     toggles[0].click();
     await settle();
     const on = d.querySelectorAll(".para-pair.is-split").length;
-    if (!on) problems.push("the control did not put anything side by side");
+    // an article may open with a margin glossary and have no translated
+    // prose under it; its control then turns over the definitions alone
+    const boxes = d.querySelectorAll(".glossbox.is-en").length;
+    if (!on && !boxes) problems.push("the control did not put anything side by side");
+    if (boxes && !d.querySelector(".glossbox.is-en .gloss-tr")) {
+      problems.push("a glossary was switched to English and has none");
+    }
     if (on === d.querySelectorAll(".para-pair").length && toggles.length > 1) {
       problems.push("one control switched every article, not just its own");
     }

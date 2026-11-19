@@ -129,14 +129,16 @@ KIIP.chapter({
      "definition": [
       "불특정의 많은 사람들에 대량의 정보를 전달하는 매체로 텔레비전, 신문, 라디오, 인터넷 등을 말함"
      ],
-     "annotation": "대중 매체"
+     "annotation": "대중 매체",
+     "translation": "media that carry large amounts of information to many unspecified people: television, newspapers, radio, the internet and so on"
     },
     {
      "term": "SNS",
      "definition": [
       "Social Network Service의 약자로 특정한 관심이나 활동을 공유하는 사람들 사이의 관계망을 구축해 주는 온라인 서비스"
      ],
-     "annotation": "SNS"
+     "annotation": "SNS",
+     "translation": "short for Social Network Service: an online service that builds a network of relationships among people who share particular interests or activities"
     }
    ]
   },
@@ -293,14 +295,16 @@ KIIP.chapter({
      "definition": [
       "역사 또는 역사 인물을 소재로 한 드라마"
      ],
-     "annotation": "사극"
+     "annotation": "사극",
+     "translation": "a drama that takes history or a historical figure as its subject"
     },
     {
      "term": "멀티플렉스(MULTIPLEX)",
      "definition": [
       "두 개 이상의 스크린을 가진 영화관"
      ],
-     "annotation": "멀티플렉스"
+     "annotation": "멀티플렉스",
+     "translation": "a cinema with two or more screens"
     }
    ]
   },
@@ -836,7 +840,8 @@ KIIP.chapter({
      "definition": [
       "한국의 대중문화, 즉 한국에서 제작된 드라마, 영화, 방송, 음악, 옷, 음식, 패션 등이 해외에서 널리 소비되는 문화적 현상"
      ],
-     "annotation": "한류"
+     "annotation": "한류",
+     "translation": "the cultural phenomenon of Korean popular culture — dramas, films, broadcasts, music, clothes, food, fashion and so on made in Korea — being widely consumed abroad"
     }
    ]
   },
@@ -961,7 +966,8 @@ KIIP.chapter({
      "definition": [
       "오락적인 내용으로 재미와 웃음을 주는 방송프로그램"
      ],
-     "annotation": "예능 프로그램"
+     "annotation": "예능 프로그램",
+     "translation": "a broadcast programme that gives fun and laughter through entertaining content"
     }
    ]
   },

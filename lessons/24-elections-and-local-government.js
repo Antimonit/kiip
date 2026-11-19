@@ -110,7 +110,8 @@ KIIP.chapter({
      "definition": [
       "선거권연령은 2019년 12월 공직선거법 개정안 통과로 기존 만 19세에서 만 18세로 하향 조정됨"
      ],
-     "annotation": "선거권연령"
+     "annotation": "선거권연령",
+     "translation": "The voting age was lowered from 19 to 18 when the amendment to the Public Official Election Act passed in December 2019."
     }
    ]
   },
@@ -468,7 +469,8 @@ KIIP.chapter({
      "definition": [
       "‘국가의 주인은 국민이고 국가와 그 권력은 국민으로부터 나온다.’라는 민주주의의 가장 근본적이고 일반적인 원리로부터 나온 제도"
      ],
-     "annotation": "지방자치제"
+     "annotation": "지방자치제",
+     "translation": "a system that comes from the most fundamental and general principle of democracy: “the owners of the state are the people, and the state and its power come from the people.”"
     }
    ]
   },
@@ -658,7 +660,8 @@ KIIP.chapter({
      "definition": [
       "큰 도시와 그 근처의 작은 시와 군을 포함하는 하나의 넓은 행정 단위"
      ],
-     "annotation": "광역"
+     "annotation": "광역",
+     "translation": "one wide administrative unit taking in a large city and the smaller cities and counties around it"
     }
    ]
   },

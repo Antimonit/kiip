@@ -40,16 +40,22 @@ CHAPTER = dict(
 
         SECTION("part", "01 한국에서 형법은 어떤 기능을 할까?"),
         GLOSSARY(("범죄", "사회의 안전과 질서를 해치는 반사회적 행위로 법에 규정되어 있음", "범죄",
-                  "a crime, an offence"),
+                  "a crime, an offence",
+                  dict(en="an antisocial act that harms the safety and order of society, as defined in law")),
                  ("형벌", "범죄를 저지른 사람에게 국가가 부과하는 처벌", "형벌",
-                  "a punishment, a penalty"),
+                  "a punishment, a penalty",
+                  dict(en="the punishment the state imposes on a person who has committed a crime")),
                  ("사형", "범죄를 저지른 사람의 생명을 빼앗는 형벌", "사형",
-                  "the death penalty"),
+                  "the death penalty",
+                  dict(en="the penalty that takes the life of a person who has committed a crime")),
                  ("벌금형", "범죄를 저지른 사람의 일부 재산을 빼앗는 형벌", "벌금형",
-                  "a monetary penalty"),
-                 ("절취", "몰래 훔쳐감", "절취", "to steal"),
+                  "a monetary penalty",
+                  dict(en="the penalty that takes part of the property of a person who has committed a crime")),
+                 ("절취", "몰래 훔쳐감", "절취", "to steal",
+                  dict(en="stealing something away in secret")),
                  ("징역형", "일정 기간 동안 교도소에 갇혀 있는 형벌", "징역형",
-                  "a prison sentence")),
+                  "a prison sentence",
+                  dict(en="the penalty of being held in prison for a fixed period"))),
         HEADING(2, "형법의 의미", translation=
                 "What the criminal law means" "\n\n"
                 "To keep order in society and protect people’s freedoms and "
@@ -107,9 +113,11 @@ CHAPTER = dict(
 
         SECTION("part", "02 범죄를 막기 위해 경찰과 검찰은 어떤 일을 할까?"),
         GLOSSARY(("수사", "범죄가 발생한 것으로 여겨질 때 범인과 증거를 찾고 수집함", "수사",
-                  "an investigation"),
+                  "an investigation",
+                  dict(en="searching for and gathering the culprit and the evidence when a crime is thought to have been committed")),
                  ("범죄 용의자", "범죄 혐의가 뚜렷하지는 않으나 가능성이 있어서 조사 대상이 된 사람",
-                  "범죄 용의자", "a criminal suspect")),
+                  "범죄 용의자", "a criminal suspect",
+                  dict(en="a person under investigation because, although the suspicion of crime is not clear, it is possible"))),
         HEADING(2, "법을 집행하는 기관", translation=
                 "The bodies that enforce the law" "\n\n"
                 "A state body that prevents and investigates criminal acts "
@@ -126,9 +134,11 @@ CHAPTER = dict(
                   "{위반한|위반하다} 사실이 있었는지를 {밝혀내는|밝혀내다} 일이 바로 법집행기관의 역할이다. "
                   "한국에서는 {경찰}과 {검찰}이 대표적인 법집행기관이다."),
 
-        GLOSSARY(("단속", "법을 어겼는지를 살피는 것", "단속", "enforcement, a crackdown"),
+        GLOSSARY(("단속", "법을 어겼는지를 살피는 것", "단속", "enforcement, a crackdown",
+                  dict(en="checking whether the law has been broken")),
                  ("지구대", "각 지역의 파출소 3~4개를 하나로 묶어서 지역 내 범죄를 해결할 수 있도록 한 것",
-                  "지구대")),
+                  "지구대",
+                  dict(en="three or four police substations in an area grouped into one so as to deal with crime in the district"))),
         HEADING(2, "경찰의 역할", translation=
                 "What the police do" "\n\n"
                 "When one has been harmed by another or comes to know of a "
@@ -145,7 +155,8 @@ CHAPTER = dict(
                   "있어서 시민이 직접 찾아가 도움을 {요청할|요청하다} 수 있다. 또한, 국번 없이 112에 "
                   "전화하여 경찰의 도움을 받을 수도 있다."),
 
-        GLOSSARY(("청구", "어떤 일을 해 달라고 요청하는 것", "청구", "a claim, an application")),
+        GLOSSARY(("청구", "어떤 일을 해 달라고 요청하는 것", "청구", "a claim, an application",
+                  dict(en="asking for something to be done"))),
         HEADING(2, "검찰의 역할", translation=
                 "What the prosecution does" "\n\n"
                 "The prosecution investigates crime, gathers the evidence "

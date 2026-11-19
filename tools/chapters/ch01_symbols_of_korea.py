@@ -27,7 +27,8 @@ CHAPTER = dict(
               "1. 대한민국의 정체성과 헌법", "대한민국의 정체성"]]),
         SECTION("part", "01 한국의 국기와 국가는 무엇일까?"),
         HEADING(2, "한국의 공식 국가명"),
-        GLOSSARY(("공식", "국가적이나 사회적으로 인정된 {공적인} {방식}", "공식")),
+        GLOSSARY(("공식", "국가적이나 사회적으로 인정된 {공적인} {방식}", "공식",
+                  dict(en="a public way of doing something, recognised by the state or by society"))),
         PARAGRAPH("한국의 공식 국가명은 대한민국이다. 대한민국은 국민 모두가 주인이 되는 나라를 의미하며 대한민국이라는 "
           "국가명을 줄여서 한국이라고 한다. 한자로는 大韓民國, 영어로는 Republic of Korea라고 한다. "
           "남한이나 South Korea라고 하는 경우도 있는데, 이것은 북한과 {구별}하여 부르는 {명칭}이다."),
@@ -35,18 +36,24 @@ CHAPTER = dict(
         FIGURE("태극기"),
         LABELS("건 : 하늘", "감 : 물", "리 : 불", "곤 : 땅", "양 (positive)",
                "음 (negative)"),
-        GLOSSARY(("국기", "나라를 상징하는 깃발"),
-              ("존귀", "높고 귀함", None, "(nobility) (존댓말 귀하다)"),
-              ("조화", "서로 잘 어울림"),
-              ("평화", "갈등이 없이 평온함"),
-              ("화합", "화목하게 어울림", None, "(harmony)")),
+        GLOSSARY(("국기", "나라를 상징하는 깃발",
+                  dict(en="the flag that stands for a country")),
+              ("존귀", "높고 귀함", None, "(nobility) (존댓말 귀하다)",
+               dict(en="being high and precious")),
+              ("조화", "서로 잘 어울림",
+               dict(en="going well together")),
+              ("평화", "갈등이 없이 평온함",
+               dict(en="being calm, without conflict")),
+              ("화합", "화목하게 어울림", None, "(harmony)",
+               dict(en="getting along in harmony"))),
         PARAGRAPH("한국의 국기를 태극기(太極旗)라고 부른다. 태극기는 흰색 바탕에 빨강과 파랑의 태극 모양이 중앙에 있고, "
           "그 주변에 검은색의 4괘가 있다. 흰색은 밝음과 순수, 평화를 의미한다. 빨강은 존귀를, 파랑은 "
           "희망을, 빨강과 파랑이 합쳐진 태극은 {조화로운|조화롭다} 우주를 나타낸다. 4괘는 각각 하늘(건), "
           "땅(곤), 물(감), 불(리)을 가리키며 자연의 조화를 의미한다. 이를 통해 태극기는 평화와 화합을 "
           "{강조}하고 있음을 알 수 있다. {국경일}이나 {국가기념일에}는 태극기를 집 대문이나 창문 등에 " "단다."),
         HEADING(2, "한국의 국가"),
-        GLOSSARY(("국가", "국가는 '나라'라는 의미와 '나라를 대표하는 노래'라는 두 가지 의미가 있다.")),
+        GLOSSARY(("국가", "국가는 '나라'라는 의미와 '나라를 대표하는 노래'라는 두 가지 의미가 있다.",
+                  dict(en="국가 has two meanings: “a country” and “the song that represents a country”."))),
         PARAGRAPH("나라마다 그 나라를 대표하는 노래인 {국가}가 있다. 한국에서는 국가를 애국가라고 하는데, '나라를 사랑하는 "
           "마음을 담은 노래'라는 뜻이다. 1900년대 초에 만들어진 {애국가}는 4절로 구성되어 있다."),
         VERSE("1절: 동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라 만세",
@@ -70,9 +77,11 @@ CHAPTER = dict(
               "세종대왕이 훈민정음(한글)을 반포한 것을 기념하고, 한글의 연구·보급을 장려하기 위하여 정한 날"]]),
         LABELS("경축일 및 평일", "{조기 깃발}", "{조의}(弔意)를 표하는 날", "> 조의금"),
         SECTION("part", "02 한국의 국화와 문자는 무엇일까?"),
-        GLOSSARY(("권위", "사회적으로 인정을 받고 영향력을 끼칠 수 있는 힘", "권위"),
+        GLOSSARY(("권위", "사회적으로 인정을 받고 영향력을 끼칠 수 있는 힘", "권위",
+                  dict(en="the power to be recognised by society and to have influence over it")),
               ("훈장", "국가나 사회에 공로(노력과 수고)가 큰 사람에게 국가에서 표창(널리 알려 칭찬)하기 위하여 주는 것",
-              "훈장")),
+              "훈장",
+               dict(en="what the state gives to honour (praise publicly) a person who has done great service (effort and toil) for the country or society"))),
         HEADING(2, "한국의 국화"),
         PARAGRAPH("한국을 {상징하|상징하다}는 꽃은 무궁화이다. 무궁화는 '영원히 피고 또 피어서 지지 않는 꽃'이라는 "
           "뜻을 담고 있다."),
@@ -80,10 +89,14 @@ CHAPTER = dict(
           "핀다. 무궁화는 오래전부터 나라를 상징하는 꽃으로 사랑받아 왔다. 무궁화와 태극기 모양을 기초로 하여 "
           "국가의 권위를 상징하는 국가 문장이 만들어졌으며 나라의 중요한 문서, 훈장, 대통령 표창장, 여권 등에 "
           "활용되고 있다."),
-        GLOSSARY(("발음기관", "말의 소리를 내는 데 쓰이는 몸의 부분", "발음기관"),
-              ("훈민정음", "백성을 가르치는 바른 소리", "훈민정음"),
-              ("해례본", "예를 들어서 {해설한|해설하다} 책", "해례본"),
-              ("문맹", "글을 읽거나 쓸 줄 모름", "문맹")),
+        GLOSSARY(("발음기관", "말의 소리를 내는 데 쓰이는 몸의 부분", "발음기관",
+                  dict(en="the parts of the body used to make the sounds of speech")),
+              ("훈민정음", "백성을 가르치는 바른 소리", "훈민정음",
+               dict(en="the correct sounds for teaching the people")),
+              ("해례본", "예를 들어서 {해설한|해설하다} 책", "해례본",
+               dict(en="a book that explains by giving examples")),
+              ("문맹", "글을 읽거나 쓸 줄 모름", "문맹",
+               dict(en="not knowing how to read or write"))),
         HEADING(2, "한국의 문자"),
         PARAGRAPH("대한민국 {고유}{문자}인 한글은 1443년 조선의 세종대왕이 만들었다. 한글의 자음은 혀, 목, 입술 "
           "등 발음기관의 모양을, 모음은 하늘(•), 땅(ㅡ), 사람(ㅣ)의 모양을 {본떠|본뜨다} 만들었다."),

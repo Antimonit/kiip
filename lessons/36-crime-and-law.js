@@ -187,42 +187,48 @@ KIIP.chapter({
      "definition": [
       "사회의 안전과 질서를 해치는 반사회적 행위로 법에 규정되어 있음"
      ],
-     "annotation": "범죄"
+     "annotation": "범죄",
+     "translation": "an antisocial act that harms the safety and order of society, as defined in law"
     },
     {
      "term": "형벌",
      "definition": [
       "범죄를 저지른 사람에게 국가가 부과하는 처벌"
      ],
-     "annotation": "형벌"
+     "annotation": "형벌",
+     "translation": "the punishment the state imposes on a person who has committed a crime"
     },
     {
      "term": "사형",
      "definition": [
       "범죄를 저지른 사람의 생명을 빼앗는 형벌"
      ],
-     "annotation": "사형"
+     "annotation": "사형",
+     "translation": "the penalty that takes the life of a person who has committed a crime"
     },
     {
      "term": "벌금형",
      "definition": [
       "범죄를 저지른 사람의 일부 재산을 빼앗는 형벌"
      ],
-     "annotation": "벌금형"
+     "annotation": "벌금형",
+     "translation": "the penalty that takes part of the property of a person who has committed a crime"
     },
     {
      "term": "절취",
      "definition": [
       "몰래 훔쳐감"
      ],
-     "annotation": "절취"
+     "annotation": "절취",
+     "translation": "stealing something away in secret"
     },
     {
      "term": "징역형",
      "definition": [
       "일정 기간 동안 교도소에 갇혀 있는 형벌"
      ],
-     "annotation": "징역형"
+     "annotation": "징역형",
+     "translation": "the penalty of being held in prison for a fixed period"
     }
    ]
   },
@@ -663,14 +669,16 @@ KIIP.chapter({
      "definition": [
       "범죄가 발생한 것으로 여겨질 때 범인과 증거를 찾고 수집함"
      ],
-     "annotation": "수사"
+     "annotation": "수사",
+     "translation": "searching for and gathering the culprit and the evidence when a crime is thought to have been committed"
     },
     {
      "term": "범죄 용의자",
      "definition": [
       "범죄 혐의가 뚜렷하지는 않으나 가능성이 있어서 조사 대상이 된 사람"
      ],
-     "annotation": "범죄 용의자"
+     "annotation": "범죄 용의자",
+     "translation": "a person under investigation because, although the suspicion of crime is not clear, it is possible"
     }
    ]
   },
@@ -811,14 +819,16 @@ KIIP.chapter({
      "definition": [
       "법을 어겼는지를 살피는 것"
      ],
-     "annotation": "단속"
+     "annotation": "단속",
+     "translation": "checking whether the law has been broken"
     },
     {
      "term": "지구대",
      "definition": [
       "각 지역의 파출소 3~4개를 하나로 묶어서 지역 내 범죄를 해결할 수 있도록 한 것"
      ],
-     "annotation": "지구대"
+     "annotation": "지구대",
+     "translation": "three or four police substations in an area grouped into one so as to deal with crime in the district"
     }
    ]
   },
@@ -929,7 +939,8 @@ KIIP.chapter({
      "definition": [
       "어떤 일을 해 달라고 요청하는 것"
      ],
-     "annotation": "청구"
+     "annotation": "청구",
+     "translation": "asking for something to be done"
     }
    ]
   },

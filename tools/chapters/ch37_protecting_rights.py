@@ -47,9 +47,11 @@ CHAPTER = dict(
 
         SECTION("part", "01 재판은 분쟁 해결에 어떤 도움을 줄까?"),
         GLOSSARY(("분쟁", "사람이나 집단들 간에 문제가 일어나서 다투는 것", "분쟁",
-                  "a dispute, a conflict"),
+                  "a dispute, a conflict",
+                  dict(en="people or groups quarrelling because a problem has arisen between them")),
                  ("당사자", "어떤 일에 직접 관계된 사람이나 기관", "당사자",
-                  "the person directly involved")),
+                  "the person directly involved",
+                  dict(en="the person or body directly involved in a matter"))),
         HEADING(2, "재판을 통한 분쟁 해결", translation=
                 "Resolving a dispute through a trial" "\n\n"
                 "A foreigner living in Korea may come into dispute with "
@@ -78,7 +80,8 @@ CHAPTER = dict(
         GLOSSARY(("중위소득",
                   "전체 가구의 소득액을 순서대로 늘어놓았을 때 중간에 위치한 소득액을 말함. 중위소득은 가족 "
                   "구성원 수에 따라 달라지는데 2020년 4인 가구의 기준 중위소득은 4,749,174원임",
-                  "중위소득", "the median income")),
+                  "중위소득", "the median income",
+                  dict(en="the income that falls in the middle when the incomes of all households are set out in order. Median income varies with the number of people in the family; in 2020 the standard median income for a household of four was 4,749,174 won"))),
         HEADING(2, "약자들을 위한 법률 지원: 대한법률구조공단", translation=
                 "Legal support for the weaker party: the Korea Legal Aid "
                 "Corporation" "\n\n"
@@ -146,8 +149,10 @@ CHAPTER = dict(
         SOURCE("[자료] 대법원"),
 
         SECTION("part", "02 재판 외에 분쟁을 해결하는 방법에는 어떤 것이 있을까?"),
-        GLOSSARY(("제3자", "해당 문제의 직접적인 당사자 외의 사람", "제3자"),
-                 ("자문", "전문가에게 어떤 일을 더 잘 처리하는 방법을 물어보는 것", "자문")),
+        GLOSSARY(("제3자", "해당 문제의 직접적인 당사자 외의 사람", "제3자",
+                  dict(en="a person other than those directly involved in the matter")),
+                 ("자문", "전문가에게 어떤 일을 더 잘 처리하는 방법을 물어보는 것", "자문",
+                  dict(en="asking an expert how to handle something better"))),
         HEADING(2, "대안적 분쟁 해결 제도", translation=
                 "Alternative dispute resolution" "\n\n"
                 "Not every dispute has to be resolved through a trial. That "
@@ -167,10 +172,13 @@ CHAPTER = dict(
                   "제공하는 {조정}, 그리고 제3자가 모든 권한을 {부여받아|부여받다} 강제로 해결하는 {중재}가 "
                   "있다."),
 
-        GLOSSARY(("구제", "부당하게 피해를 입은 사람의 권리나 이익을 회복하도록 하는 일", "구제"),
-                 ("권고", "어떤 행위를 하도록 권하는 것", "권고"),
+        GLOSSARY(("구제", "부당하게 피해를 입은 사람의 권리나 이익을 회복하도록 하는 일", "구제",
+                  dict(en="restoring the rights or interests of a person who has been unfairly harmed")),
+                 ("권고", "어떤 행위를 하도록 권하는 것", "권고",
+                  dict(en="advising that something be done")),
                  ("부패", "지위에 따른 권한과 영향력을 부당하게 사용하여 사회질서에 반하여 자신의 이익을 "
-                          "취하는 것", "부패")),
+                          "취하는 것", "부패",
+                  dict(en="unfairly using the authority and influence of one's position to take gain for oneself, against the order of society"))),
         HEADING(2, "권리를 보호해 주는 다양한 기관", translation=
                 "The bodies that protect rights" "\n\n"
                 "Korea runs a number of bodies for the protection of people’s "

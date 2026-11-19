@@ -164,7 +164,8 @@ KIIP.chapter({
      "definition": [
       "결혼한 사실을 행정 기관에 공식적으로 신고하는 일"
      ],
-     "annotation": "혼인 신고"
+     "annotation": "혼인 신고",
+     "translation": "officially reporting the fact of a marriage to an administrative office"
     }
    ]
   },
@@ -269,21 +270,24 @@ KIIP.chapter({
      "definition": [
       "일정한 대상을 어떻게 처리할 것인가에 대해 결정함"
      ],
-     "annotation": "처분"
+     "annotation": "처분",
+     "translation": "deciding how a given thing is to be dealt with"
     },
     {
      "term": "부부 별산제",
      "definition": [
       "부부가 혼인하기 전부터 각자 가졌던 재산 또는 혼인생활 중 자기 이름으로 얻은 재산을 각자의 것으로 인정하는 제도"
      ],
-     "annotation": "부부 별산제"
+     "annotation": "부부 별산제",
+     "translation": "the system that recognises as each spouse's own the property each held before the marriage, or gained in their own name during it"
     },
     {
      "term": "가사노동",
      "definition": [
       "청소, 빨래, 요리 등 가정을 유지하고 살림을 꾸려나가기 위해 하는 노동"
      ],
-     "annotation": "가사노동"
+     "annotation": "가사노동",
+     "translation": "the work done to maintain a home and keep the household going: cleaning, laundry, cooking and so on"
     }
    ]
   },
@@ -670,7 +674,8 @@ KIIP.chapter({
      "definition": [
       "사람으로서의 품위와 자격"
      ],
-     "annotation": "인격"
+     "annotation": "인격",
+     "translation": "dignity and standing as a person"
     }
    ]
   },
@@ -939,7 +944,8 @@ KIIP.chapter({
      "definition": [
       "다른 사람의 불법적인 행위로 인해 생긴 정신적 고통이나 피해에 대해 물어주는 돈"
      ],
-     "annotation": "위자료"
+     "annotation": "위자료",
+     "translation": "money paid for the mental suffering or harm caused by another person's unlawful act"
     }
    ]
   },

@@ -152,14 +152,16 @@ KIIP.chapter({
      "definition": [
       "일정한 요건을 갖춘 외국인에게 주는, 그 나라에서 영구적으로 오랫동안 거주할 수 있는 권리"
      ],
-     "annotation": "영주권"
+     "annotation": "영주권",
+     "translation": "the right, given to a foreigner who meets certain conditions, to live in that country permanently"
     },
     {
      "term": "입대",
      "definition": [
       "군에 들어가 군인이 되는 것"
      ],
-     "annotation": "입대"
+     "annotation": "입대",
+     "translation": "entering the military and becoming a soldier"
     }
    ]
   },
@@ -432,28 +434,32 @@ KIIP.chapter({
      "definition": [
       "아이가 태어난 장소(국가)를 기준으로 아이의 국적을 결정하는 것"
      ],
-     "annotation": "출생지주의"
+     "annotation": "출생지주의",
+     "translation": "deciding a child's nationality by the place (country) where the child was born"
     },
     {
      "term": "혈통주의(속인주의)",
      "definition": [
       "태어난 아이의 부모가 가진 국적을 기준으로 아이의 국적을 결정하는 것"
      ],
-     "annotation": "혈통주의"
+     "annotation": "혈통주의",
+     "translation": "deciding a child's nationality by the nationality the child's parents hold"
     },
     {
      "term": "국적법",
      "definition": [
       "한국 국민이 되는 요건을 정하는 법"
      ],
-     "annotation": "국적법"
+     "annotation": "국적법",
+     "translation": "the law that sets the conditions for becoming a Korean citizen"
     },
     {
      "term": "무국적자",
      "definition": [
       "국적이 없는 사람"
      ],
-     "annotation": "무국적자"
+     "annotation": "무국적자",
+     "translation": "a person with no nationality"
     }
    ]
   },
@@ -744,21 +750,24 @@ KIIP.chapter({
      "definition": [
       "허락하여 할 수 있도록 함"
      ],
-     "annotation": "허가"
+     "annotation": "허가",
+     "translation": "giving permission so that something can be done"
     },
     {
      "term": "배우자",
      "definition": [
       "남편에게는 아내가, 아내에게는 남편이 각각 배우자임"
      ],
-     "annotation": "배우자"
+     "annotation": "배우자",
+     "translation": "to a husband his wife, and to a wife her husband, is the spouse"
     },
     {
      "term": "가족관계등록부",
      "definition": [
       "한국 국민 개개인이 등록한 주소, 성명, 생년월일 등 신분에 관한 사항과 가족관계에 관한 사항 등을 기록한 문서"
      ],
-     "annotation": "가족관계등록부"
+     "annotation": "가족관계등록부",
+     "translation": "a document recording each Korean citizen's registered address, name, date of birth and other matters of personal status, together with their family relationships"
     }
    ]
   },

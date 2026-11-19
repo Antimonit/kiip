@@ -189,21 +189,24 @@ KIIP.chapter({
      "definition": [
       "전체 투표수에서 찬성표를 얻은 비율"
      ],
-     "annotation": "득표율"
+     "annotation": "득표율",
+     "translation": "the share of all votes cast that were won"
     },
     {
      "term": "출마",
      "definition": [
       "선거에 후보로 나섬"
      ],
-     "annotation": "출마"
+     "annotation": "출마",
+     "translation": "standing as a candidate in an election"
     },
     {
      "term": "당선",
      "definition": [
       "선거에서 뽑힘"
      ],
-     "annotation": "당선"
+     "annotation": "당선",
+     "translation": "being chosen in an election"
     }
    ]
   },
@@ -304,7 +307,8 @@ KIIP.chapter({
      "definition": [
       "입법부가 한 개만 존재하는 방식. 상원과 하원 두 개가 있으면 양원제라고 부름"
      ],
-     "annotation": "단원제"
+     "annotation": "단원제",
+     "translation": "the arrangement in which there is only one legislative chamber. With two, an upper and a lower house, it is called a bicameral system"
     }
    ]
   },
@@ -539,28 +543,32 @@ KIIP.chapter({
      "definition": [
       "특별히 주어지는 권리"
      ],
-     "annotation": "특권"
+     "annotation": "특권",
+     "translation": "a right that is specially granted"
     },
     {
      "term": "회기",
      "definition": [
       "국회가 활동할 수 있는 일정한 기간"
      ],
-     "annotation": "회기"
+     "annotation": "회기",
+     "translation": "the fixed period during which the National Assembly can sit"
     },
     {
      "term": "고위 공직자",
      "definition": [
       "국가의 일을 맡은 사람들 중에 중요하고 높은 관직에 있는 사람"
      ],
-     "annotation": "고위 공직자"
+     "annotation": "고위 공직자",
+     "translation": "a person in an important and high post among those who do the work of the state"
     },
     {
      "term": "청렴",
      "definition": [
       "성품과 행실이 바르고, 뇌물을 받지 않는 등 재물 욕심이 없음"
      ],
-     "annotation": "청렴"
+     "annotation": "청렴",
+     "translation": "being upright in character and conduct, and without greed for wealth, such as taking no bribes"
     }
    ]
   },
@@ -916,28 +924,32 @@ KIIP.chapter({
      "definition": [
       "법률로 만들어지기 전 단계의 초안"
      ],
-     "annotation": "법안"
+     "annotation": "법안",
+     "translation": "a draft at the stage before it is made into law"
     },
     {
      "term": "재적",
      "definition": [
       "어떤 조직이나 단체에 소속되어 있는 상태"
      ],
-     "annotation": "재적"
+     "annotation": "재적",
+     "translation": "the state of belonging to an organisation or body"
     },
     {
      "term": "과반수",
      "definition": [
       "전체의 절반이 넘는 수"
      ],
-     "annotation": "과반수"
+     "annotation": "과반수",
+     "translation": "a number greater than half of the whole"
     },
     {
      "term": "법안 통과",
      "definition": [
       "법안이 의회(국회)에서 승인되는 것"
      ],
-     "annotation": "법안 통과"
+     "annotation": "법안 통과",
+     "translation": "a bill being approved by the assembly (the National Assembly)"
     }
    ]
   },
@@ -1086,21 +1098,24 @@ KIIP.chapter({
      "definition": [
       "경제적 활동이나 상태"
      ],
-     "annotation": "재정"
+     "annotation": "재정",
+     "translation": "economic activity or condition"
     },
     {
      "term": "예산",
      "definition": [
       "예상되는 수입과 비용"
      ],
-     "annotation": "예산"
+     "annotation": "예산",
+     "translation": "expected income and costs"
     },
     {
      "term": "검토",
      "definition": [
       "사실이나 내용을 따져봄"
      ],
-     "annotation": "검토"
+     "annotation": "검토",
+     "translation": "going through the facts or content carefully"
     }
    ]
   },
