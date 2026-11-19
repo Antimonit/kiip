@@ -284,12 +284,7 @@ KIIP.chapter({
      "word": "석가모니",
      "annotation": "석가모니"
     },
-    "가 만든 ",
-    {
-     "word": "종교",
-     "annotation": "종교"
-    },
-    "로, 중국을 ",
+    "가 만든 종교로, 중국을 ",
     {
      "word": "거쳐",
      "annotation": "거치다"
@@ -424,12 +419,7 @@ KIIP.chapter({
        "word": "석가모니",
        "annotation": "석가모니"
       },
-      "가 만든 ",
-      {
-       "word": "종교",
-       "annotation": "종교"
-      },
-      "로, 중국을 ",
+      "가 만든 종교로, 중국을 ",
       {
        "word": "거쳐",
        "annotation": "거치다"
@@ -2001,27 +1991,6 @@ KIIP.chapter({
   }
  ],
  "annotations": {
-  "종교": {
-   "headword": "종교",
-   "hanja": "宗敎",
-   "meaning": "religion",
-   "characters": [
-    {
-     "char": "宗",
-     "reading": "종",
-     "gloss": "ancestor, sect — as in 종류 “kind”, 종파"
-    },
-    {
-     "char": "敎",
-     "reading": "교",
-     "gloss": "teaching — as in 교육, 유교, 불교"
-    }
-   ],
-   "notes": [
-    "The 敎 that ends the name of every religion here: 불교, 유교, 천주교, 개신교, 이슬람교."
-   ],
-   "surfaces": []
-  },
   "종교단체": {
    "headword": "종교단체",
    "hanja": "宗敎團體",

@@ -285,13 +285,6 @@ CHAPTER = dict(
     },
 
     extraAnnotations={
-        "종교": dict(
-            hanja="宗敎", meaning="religion",
-            characters=[("宗", "종", "ancestor, sect — as in 종류 “kind”, 종파"),
-                        ("敎", "교", "teaching — as in 교육, 유교, 불교")],
-            notes=["The 敎 that ends the name of every religion here: 불교, "
-                   "유교, 천주교, 개신교, 이슬람교."],
-        ),
         "종교단체": dict(
             hanja="宗敎團體", meaning="a religious body",
             characters=[("團", "단", "group — as in 단체 “organisation”, 집단"),
