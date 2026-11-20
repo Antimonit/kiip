@@ -1675,17 +1675,7 @@ KIIP.chapter({
     {
      "blank": ""
     },
-    "는 일상생활에서 사람들 사이의 서로 다른 ",
-    {
-     "word": "이해관계",
-     "annotation": "이해관계"
-    },
-    "를 ",
-    {
-     "word": "조정",
-     "annotation": "조정"
-    },
-    "하는 것이다."
+    "는 일상생활에서 사람들 사이의 서로 다른 이해관계를 조정하는 것이다."
    ]
   },
   {
@@ -1695,33 +1685,13 @@ KIIP.chapter({
     {
      "blank": ""
     },
-    " ",
-    {
-     "word": "원리",
-     "annotation": "원리"
-    },
-    "에 따라 모든 국민이 차별 없이 자유롭게 한국 사회에 대해 다양한 목소리를 ",
-    {
-     "word": "표출",
-     "annotation": "표출"
-    },
-    "하고 해결 과정에 참여할 수 있다."
+    " 원리에 따라 모든 국민이 차별 없이 자유롭게 한국 사회에 대해 다양한 목소리를 표출하고 해결 과정에 참여할 수 있다."
    ]
   },
   {
    "type": "bullet",
    "spans": [
-    "한국에서는 ",
-    {
-     "word": "특정",
-     "annotation": "특정"
-    },
-    " 개인이나 ",
-    {
-     "word": "정치인",
-     "annotation": "정치인"
-    },
-    "이 아니라 한국 국민이 ",
+    "한국에서는 특정 개인이나 정치인이 아니라 한국 국민이 ",
     {
      "blank": ""
     },
@@ -1736,22 +1706,7 @@ KIIP.chapter({
   {
    "type": "bullet",
    "spans": [
-    "한국은 ",
-    {
-     "word": "민주주의",
-     "annotation": "민주주의"
-    },
-    " ",
-    {
-     "word": "실현",
-     "annotation": "실현"
-    },
-    "을 위해서 국가 ",
-    {
-     "word": "권력",
-     "annotation": "권력"
-    },
-    "을 ",
+    "한국은 민주주의 실현을 위해서 국가 권력을 ",
     {
      "blank": ""
     },
@@ -1773,17 +1728,7 @@ KIIP.chapter({
     {
      "blank": ""
     },
-    " ",
-    {
-     "word": "원칙",
-     "annotation": "원칙"
-    },
-    "이라고 한다. 한국은 국가 권력을 세 개로 ",
-    {
-     "word": "분리",
-     "annotation": "분리"
-    },
-    "해 놓았다는 점에서 ",
+    " 원칙이라고 한다. 한국은 국가 권력을 세 개로 분리해 놓았다는 점에서 ",
     {
      "blank": ""
     },
@@ -1793,53 +1738,19 @@ KIIP.chapter({
   {
    "type": "bullet",
    "spans": [
-    {
-     "word": "입법부",
-     "annotation": "입법부"
-    },
-    "는 국가 ",
-    {
-     "word": "운영",
-     "annotation": "운영"
-    },
-    "의 기본이 되는 법을 ",
+    "입법부는 국가 운영의 기본이 되는 법을 ",
     {
      "blank": ""
     },
-    "하고 ",
-    {
-     "word": "행정부",
-     "annotation": "행정부"
-    },
-    "는 법에 따라 ",
-    {
-     "word": "정책",
-     "annotation": "정책"
-    },
-    "을 ",
+    "하고 행정부는 법에 따라 정책을 ",
     {
      "blank": ""
     },
-    "하며 ",
-    {
-     "word": "사법부",
-     "annotation": "사법부"
-    },
-    "는 법을 ",
-    {
-     "word": "해석",
-     "annotation": "해석"
-    },
-    "하고 ",
+    "하며 사법부는 법을 해석하고 ",
     {
      "blank": ""
     },
-    "하여 ",
-    {
-     "word": "재판",
-     "annotation": "재판"
-    },
-    "을 한다."
+    "하여 재판을 한다."
    ]
   },
   {
@@ -2973,6 +2884,11 @@ KIIP.chapter({
      "char": "政",
      "reading": "정",
      "gloss": "government — as in 정치, 정책"
+    },
+    {
+     "char": "部",
+     "reading": "부",
+     "gloss": "department, branch — as in 입법부, 법무부"
     }
    ],
    "notes": [
@@ -2989,6 +2905,16 @@ KIIP.chapter({
      "char": "司",
      "reading": "사",
      "gloss": "to take charge of — as in 사회자"
+    },
+    {
+     "char": "法",
+     "reading": "법",
+     "gloss": "law — as in 헌법, 법원"
+    },
+    {
+     "char": "部",
+     "reading": "부",
+     "gloss": "department, branch — as in 입법부, 행정부"
     }
    ],
    "notes": [

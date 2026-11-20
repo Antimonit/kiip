@@ -408,8 +408,12 @@ def mark_first(blocks, key, saids, inside):
     where the reader actually meets it. So the numbered articles are
     searched first and the rest of the page only if the word is never said
     in one. `saids` are the forms to look for, in order of preference.
+
+    The sentences of 주요 내용정리 and the quiz pages are never searched:
+    they are there to be recalled with the blanks covered, and a word lit up
+    among them is a distraction that no chapter was meant to have.
     """
-    for scope in (inside, None):
+    for scope in (inside, outside_exercises(blocks)):
         for said in saids:
             for spans in every_span_list(blocks, scope):
                 out, done = [], False
@@ -429,6 +433,17 @@ def mark_first(blocks, key, saids, inside):
                     spans[:] = out
                     return True
     return False
+
+
+def outside_exercises(blocks):
+    """Every block but the sentences and headings of a fill-in section."""
+    keep, in_gaps = {}, False
+    for b in blocks:
+        if b["type"] == "section":
+            in_gaps = b.get("kind") in ("review", "quiz", "exam")
+        keep[id(b)] = not (in_gaps and b["type"] in (
+            "paragraph", "bullet", "heading"))
+    return keep
 
 
 def attach_extras(blocks, extras, heads=None, orphaned=None):
