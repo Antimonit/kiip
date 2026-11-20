@@ -412,7 +412,12 @@ KIIP.chapter({
      "word": "유행가",
      "annotation": "유행가"
     },
-    "’도 자주 등장한다."
+    "’도 자주 ",
+    {
+     "word": "등장한다",
+     "annotation": "등장하다"
+    },
+    "."
    ],
    "translation": "Koreans are fond of music and song too. What they most enjoy listening to is 가요, songs written so that a great many people can enjoy hearing or singing them. 가요 covers many genres — ballad, dance, R&B, hip-hop, trot — and the 유행가, the song that catches on in a particular season, appears often.",
    "sentences": [
@@ -450,7 +455,12 @@ KIIP.chapter({
        "word": "유행가",
        "annotation": "유행가"
       },
-      "’도 자주 등장한다."
+      "’도 자주 ",
+      {
+       "word": "등장한다",
+       "annotation": "등장하다"
+      },
+      "."
      ],
      "translation": "가요 covers many genres — ballad, dance, R&B, hip-hop, trot — and the 유행가, the song that catches on in a particular season, appears often."
     }
@@ -1608,7 +1618,7 @@ KIIP.chapter({
    "spans": [
     "많은 사람들이 즐기고 누리는 문화를 ",
     {
-     "blank": ""
+     "blank": "대중문화"
     },
     "라고 한다."
    ]
@@ -1618,7 +1628,7 @@ KIIP.chapter({
    "spans": [
     "한국 가요 중 특정한 시기에 인기를 끄는 노래를 ",
     {
-     "blank": ""
+     "blank": "유행가"
     },
     "라고 한다."
    ]
@@ -1628,11 +1638,11 @@ KIIP.chapter({
    "spans": [
     "한국의 스포츠 중에서 대표적으로 인기 있는 종목은 ",
     {
-     "blank": ""
+     "blank": "프로 야구"
     },
     ", ",
     {
-     "blank": ""
+     "blank": "프로 축구"
     },
     ", 프로 농구, 프로 배구이다."
    ]
@@ -1647,7 +1657,7 @@ KIIP.chapter({
    "spans": [
     "드라마, 영화, 방송, 음악, 옷 등 한국의 대중문화가 세계 여러 나라로 확산되어 대중적 인기를 얻게 된 현상을 ",
     {
-     "blank": ""
+     "blank": "한류"
     },
     "라고 한다."
    ]
@@ -1657,7 +1667,7 @@ KIIP.chapter({
    "spans": [
     "한국의 가수들이 해외로 진출하면서 ",
     {
-     "blank": ""
+     "blank": "케이팝"
     },
     "이 크게 성장하고 있다."
    ]
@@ -2334,6 +2344,27 @@ KIIP.chapter({
    "characters": [],
    "notes": [
     "유행 “fashion” + 가 “song”."
+   ],
+   "surfaces": []
+  },
+  "등장하다": {
+   "headword": "등장하다",
+   "hanja": "登場하다",
+   "meaning": "to appear, to come on the scene",
+   "characters": [
+    {
+     "char": "登",
+     "reading": "등",
+     "gloss": "to climb, to appear — as in 등록, 등산"
+    },
+    {
+     "char": "場",
+     "reading": "장",
+     "gloss": "place, stage — as in 장면, 시장"
+    }
+   ],
+   "notes": [
+    "Literally to step up onto the stage. Used of people, products and trends alike."
    ],
    "surfaces": []
   },
