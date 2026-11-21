@@ -317,12 +317,7 @@ KIIP.chapter({
      "word": "세배",
      "annotation": "세배"
     },
-    "를 하며 건강과 ",
-    {
-     "word": "장수",
-     "annotation": "장수"
-    },
-    "를 기원한다. 세배를 받은 윗사람은 자녀나 ",
+    "를 하며 건강과 장수를 기원한다. 세배를 받은 윗사람은 자녀나 ",
     {
      "word": "손주",
      "annotation": "손주"
@@ -400,12 +395,7 @@ KIIP.chapter({
        "word": "세배",
        "annotation": "세배"
       },
-      "를 하며 건강과 ",
-      {
-       "word": "장수",
-       "annotation": "장수"
-      },
-      "를 기원한다. "
+      "를 하며 건강과 장수를 기원한다. "
      ],
      "translation": "On the morning of 설날 the 세배 bow is made to the elders of the household — parents, grandparents — with a wish for their health and long life."
     },
