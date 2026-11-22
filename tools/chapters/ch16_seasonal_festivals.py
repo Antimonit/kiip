@@ -193,8 +193,8 @@ CHAPTER = dict(
                 "gives the younger ones, children and grandchildren, words of "
                 "blessing for the year to come, and gives the children money.",
 
-                "새 옷 and shoes are sometimes got ready for 설날, which is "
-                "called 설빔.",
+                "New clothes or shoes, called 설빔, are sometimes got ready "
+                "for 설날.",
 
                 "The way the 설 holiday is spent is changing. The usual sight "
                 "is still of a family gathered from far apart to spend the "

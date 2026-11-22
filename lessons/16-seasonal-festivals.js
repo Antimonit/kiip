@@ -437,7 +437,7 @@ KIIP.chapter({
     },
     "이라 하여 새로 옷이나 신발을 준비하기도 한다."
    ],
-   "translation": "새 옷 and shoes are sometimes got ready for 설날, which is called 설빔.",
+   "translation": "New clothes or shoes, called 설빔, are sometimes got ready for 설날.",
    "sentences": [
     {
      "spans": [
@@ -448,7 +448,7 @@ KIIP.chapter({
       },
       "이라 하여 새로 옷이나 신발을 준비하기도 한다."
      ],
-     "translation": "새 옷 and shoes are sometimes got ready for 설날, which is called 설빔."
+     "translation": "New clothes or shoes, called 설빔, are sometimes got ready for 설날."
     }
    ]
   },
