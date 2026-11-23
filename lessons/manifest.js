@@ -247,5 +247,11 @@ KIIP.manifest([
   "slug": "41-joseon",
   "title": "조선의 건국과 발전",
   "titleEn": "The founding and development of 조선"
+ },
+ {
+  "number": 42,
+  "slug": "42-japanese-occupation-and-independence",
+  "title": "일제 강점과 독립운동",
+  "titleEn": "The Japanese occupation and the independence movement"
  }
 ]);

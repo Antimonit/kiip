@@ -474,7 +474,7 @@ KIIP.contents({
       "근대 국가 수립을 위해 어떤 노력을 펼쳤을까?",
       "한국인은 독립운동을 어떻게 펼쳐 나갔을까?"
      ],
-     "built": false
+     "built": true
     },
     {
      "number": 43,
