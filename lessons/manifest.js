@@ -259,5 +259,11 @@ KIIP.manifest([
   "slug": "43-historical-figures",
   "title": "한국의 역사 인물",
   "titleEn": "Korea’s historical figures"
+ },
+ {
+  "number": 44,
+  "slug": "44-cultural-heritage",
+  "title": "한국의 문화유산",
+  "titleEn": "Korea’s cultural heritage"
  }
 ]);
