@@ -241,5 +241,11 @@ KIIP.manifest([
   "slug": "40-goryeo",
   "title": "고려 시대",
   "titleEn": "The Goryeo period"
+ },
+ {
+  "number": 41,
+  "slug": "41-joseon",
+  "title": "조선의 건국과 발전",
+  "titleEn": "The founding and development of 조선"
  }
 ]);

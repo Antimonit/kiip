@@ -464,7 +464,7 @@ KIIP.contents({
       "조선은 나라의 기틀을 어떻게 마련하였을까?",
       "조선 후기에는 어떤 변화가 나타났을까?"
      ],
-     "built": false
+     "built": true
     },
     {
      "number": 42,
