@@ -454,7 +454,7 @@ KIIP.contents({
       "고려는 어떻게 발전했을까?",
       "고려 시대 사람들은 어떻게 살았을까?"
      ],
-     "built": false
+     "built": true
     },
     {
      "number": 41,

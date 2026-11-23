@@ -235,5 +235,11 @@ KIIP.manifest([
   "slug": "39-three-kingdoms-and-north-south-states",
   "title": "삼국 시대와 남북국 시대",
   "titleEn": "The Three Kingdoms and the North–South States"
+ },
+ {
+  "number": 40,
+  "slug": "40-goryeo",
+  "title": "고려 시대",
+  "titleEn": "The Goryeo period"
  }
 ]);
