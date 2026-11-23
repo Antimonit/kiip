@@ -223,5 +223,11 @@ KIIP.manifest([
   "slug": "37-protecting-rights",
   "title": "권리 보호와 법",
   "titleEn": "Protecting rights and the law"
+ },
+ {
+  "number": 38,
+  "slug": "38-founding-of-gojoseon",
+  "title": "고조선의 건국",
+  "titleEn": "The founding of 고조선"
  }
 ]);

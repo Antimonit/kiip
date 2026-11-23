@@ -434,7 +434,7 @@ KIIP.contents({
       "한국 역사는 어떻게 변해 왔을까?",
       "고조선의 생활 모습은 어떠했을까?"
      ],
-     "built": false
+     "built": true
     },
     {
      "number": 39,
