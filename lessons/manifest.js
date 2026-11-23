@@ -253,5 +253,11 @@ KIIP.manifest([
   "slug": "42-japanese-occupation-and-independence",
   "title": "일제 강점과 독립운동",
   "titleEn": "The Japanese occupation and the independence movement"
+ },
+ {
+  "number": 43,
+  "slug": "43-historical-figures",
+  "title": "한국의 역사 인물",
+  "titleEn": "Korea’s historical figures"
  }
 ]);

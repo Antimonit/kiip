@@ -484,7 +484,7 @@ KIIP.contents({
       "국가를 위기에서 구한 사람들에는 누가 있을까?",
       "한국 역사에서 여성들은 어떤 활동을 했을까?"
      ],
-     "built": false
+     "built": true
     },
     {
      "number": 44,
