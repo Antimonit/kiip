@@ -444,7 +444,7 @@ KIIP.contents({
       "삼국은 어떻게 발전했을까?",
       "남북국 시대에는 어떤 나라들이 발전했을까?"
      ],
-     "built": false
+     "built": true
     },
     {
      "number": 40,

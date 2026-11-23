@@ -229,5 +229,11 @@ KIIP.manifest([
   "slug": "38-founding-of-gojoseon",
   "title": "고조선의 건국",
   "titleEn": "The founding of 고조선"
+ },
+ {
+  "number": 39,
+  "slug": "39-three-kingdoms-and-north-south-states",
+  "title": "삼국 시대와 남북국 시대",
+  "titleEn": "The Three Kingdoms and the North–South States"
  }
 ]);
