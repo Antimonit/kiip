@@ -281,9 +281,9 @@ async function checkChapter(file) {
     const on = d.querySelectorAll(".para-pair.is-split").length;
     // an article may open with a margin glossary and have no translated
     // prose under it; its control then turns over the definitions alone
-    const boxes = d.querySelectorAll(".glossbox.is-en").length;
+    const boxes = d.querySelectorAll(".glossbox.is-en, .table-wrap.is-en").length;
     if (!on && !boxes) problems.push("the control did not put anything side by side");
-    if (boxes && !d.querySelector(".glossbox.is-en .gloss-tr")) {
+    if (boxes && !d.querySelector(".glossbox.is-en .gloss-tr, .table-wrap.is-en .cell-tr")) {
       problems.push("a glossary was switched to English and has none");
     }
     if (on === d.querySelectorAll(".para-pair").length && toggles.length > 1) {

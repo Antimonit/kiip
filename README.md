@@ -76,6 +76,11 @@ a `src` in a chapter now stops the build with a note saying so.
   and margin notes, so a word is marked where it is read;
 - applies the chapter's corrections and lists every one of them on the page.
 
+A table may carry its English as a second grid of the same shape,
+`TABLE(header, rows, en=(header, rows))`. Each English cell is shown under
+its Korean one while the article is read side by side, and a grid that is not
+the shape of the Korean stops the build.
+
 A table cell is plain text, or `CELL(text, columns)` where the book merges it
 across columns, or `CELL(text, down=rows)` where it merges down rows. A
 merged cell is written once, in the first row it covers, and the rows below

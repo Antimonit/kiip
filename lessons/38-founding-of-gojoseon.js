@@ -452,9 +452,18 @@ KIIP.chapter({
   {
    "type": "table",
    "header": [
-    "유럽, 미국 지역",
-    "한국",
-    "아시아 지역"
+    {
+     "text": "유럽, 미국 지역",
+     "translation": "Europe and America"
+    },
+    {
+     "text": "한국",
+     "translation": "Korea"
+    },
+    {
+     "text": "아시아 지역",
+     "translation": "Asia"
+    }
    ],
    "rows": [
     [
@@ -470,13 +479,20 @@ KIIP.chapter({
         "annotation": "문명"
        },
        " 시작"
-      ]
+      ],
+      "translation": "c. 3500 BC Mesopotamian civilisation begins"
      },
      "",
-     "기원전 2500년경 중국 문명, 인도 문명 시작"
+     {
+      "text": "기원전 2500년경 중국 문명, 인도 문명 시작",
+      "translation": "c. 2500 BC Chinese and Indian civilisations begin"
+     }
     ],
     [
-     "기원전 3000년경 이집트 문명 시작",
+     {
+      "text": "기원전 3000년경 이집트 문명 시작",
+      "translation": "c. 3000 BC Egyptian civilisation begins"
+     },
      {
       "spans": [
        "기원전 2333년 고조선 ",
@@ -484,7 +500,8 @@ KIIP.chapter({
         "word": "건국",
         "annotation": "건국"
        }
-      ]
+      ],
+      "translation": "2333 BC 고조선 founded"
      },
      ""
     ],
@@ -501,14 +518,24 @@ KIIP.chapter({
         "word": "수립",
         "annotation": "수립"
        }
-      ]
+      ],
+      "translation": "27 BC Rome: the empire established"
      },
-     "기원전 57년 신라 건국",
-     "기원전 7세기 베트남, 반랑국 건국"
+     {
+      "text": "기원전 57년 신라 건국",
+      "translation": "57 BC 신라 founded"
+     },
+     {
+      "text": "기원전 7세기 베트남, 반랑국 건국",
+      "translation": "7th century BC Vietnam: Văn Lang founded"
+     }
     ],
     [
      "",
-     "기원전 37년 고구려 건국",
+     {
+      "text": "기원전 37년 고구려 건국",
+      "translation": "37 BC 고구려 founded"
+     },
      ""
     ],
     [
@@ -519,10 +546,17 @@ KIIP.chapter({
         "word": "멸망",
         "annotation": "멸망"
        }
-      ]
+      ],
+      "translation": "476 Fall of the Western Roman Empire"
      },
-     "기원전 18년 백제 건국",
-     "기원전 221년 진(秦), 중국 통일"
+     {
+      "text": "기원전 18년 백제 건국",
+      "translation": "18 BC 백제 founded"
+     },
+     {
+      "text": "기원전 221년 진(秦), 중국 통일",
+      "translation": "221 BC Qin unifies China"
+     }
     ],
     [
      "",
@@ -533,13 +567,20 @@ KIIP.chapter({
         "word": "통일",
         "annotation": "통일"
        }
-      ]
+      ],
+      "translation": "676 신라 unifies the Three Kingdoms"
      },
      ""
     ],
     [
-     "1096년 십자군 전쟁 시작",
-     "698년 대조영, 발해 건국",
+     {
+      "text": "1096년 십자군 전쟁 시작",
+      "translation": "1096 The Crusades begin"
+     },
+     {
+      "text": "698년 대조영, 발해 건국",
+      "translation": "698 대조영 founds 발해"
+     },
      {
       "spans": [
        "610년경 이슬람교 ",
@@ -547,12 +588,16 @@ KIIP.chapter({
         "word": "성립",
         "annotation": "성립"
        }
-      ]
+      ],
+      "translation": "c. 610 Islam founded"
      }
     ],
     [
      "",
-     "918년 왕건, 고려 건국",
+     {
+      "text": "918년 왕건, 고려 건국",
+      "translation": "918 왕건 founds 고려"
+     },
      {
       "spans": [
        "890년 캄보디아, 앙코르 ",
@@ -561,13 +606,23 @@ KIIP.chapter({
         "annotation": "왕조"
        },
        " 성립"
-      ]
+      ],
+      "translation": "890 Cambodia: the Angkor dynasty established"
      }
     ],
     [
-     "1337년 영국·프랑스, 백년 전쟁 시작",
-     "1392년 이성계, 조선 건국",
-     "1206년 칭기즈 칸, 몽골 통일"
+     {
+      "text": "1337년 영국·프랑스, 백년 전쟁 시작",
+      "translation": "1337 England and France: the Hundred Years' War begins"
+     },
+     {
+      "text": "1392년 이성계, 조선 건국",
+      "translation": "1392 이성계 founds 조선"
+     },
+     {
+      "text": "1206년 칭기즈 칸, 몽골 통일",
+      "translation": "1206 Genghis Khan unifies Mongolia"
+     }
     ],
     [
      {
@@ -577,7 +632,8 @@ KIIP.chapter({
         "word": "종교 개혁",
         "annotation": "종교 개혁"
        }
-      ]
+      ],
+      "translation": "1517 Luther's Reformation"
      },
      {
       "spans": [
@@ -586,12 +642,19 @@ KIIP.chapter({
         "word": "임진왜란",
         "annotation": "임진왜란"
        }
-      ]
+      ],
+      "translation": "1592 임진왜란"
      },
-     "1590년 도요토미 히데요시, 일본 통일"
+     {
+      "text": "1590년 도요토미 히데요시, 일본 통일",
+      "translation": "1590 Toyotomi Hideyoshi unifies Japan"
+     }
     ],
     [
-     "1600년 영국, 동인도 회사 설립",
+     {
+      "text": "1600년 영국, 동인도 회사 설립",
+      "translation": "1600 England: the East India Company founded"
+     },
      {
       "spans": [
        "1636년 ",
@@ -599,9 +662,13 @@ KIIP.chapter({
         "word": "병자호란",
         "annotation": "병자호란"
        }
-      ]
+      ],
+      "translation": "1636 병자호란"
      },
-     "1868년 일본, 메이지 유신"
+     {
+      "text": "1868년 일본, 메이지 유신",
+      "translation": "1868 Japan: the Meiji Restoration"
+     }
     ],
     [
      {
@@ -611,10 +678,17 @@ KIIP.chapter({
         "word": "혁명",
         "annotation": "혁명"
        }
-      ]
+      ],
+      "translation": "1789 The French Revolution"
      },
-     "1897년 대한 제국 수립",
-     "1912년 쑨원, 중화민국 수립"
+     {
+      "text": "1897년 대한 제국 수립",
+      "translation": "1897 대한 제국 established"
+     },
+     {
+      "text": "1912년 쑨원, 중화민국 수립",
+      "translation": "1912 Sun Yat-sen: the Republic of China established"
+     }
     ],
     [
      "",
@@ -630,12 +704,16 @@ KIIP.chapter({
         "word": "빼앗김",
         "annotation": "빼앗기다"
        }
-      ]
+      ],
+      "translation": "1910 대한 제국 loses its sovereignty"
      },
      ""
     ],
     [
-     "1914년 제1차 세계 대전(~1918)",
+     {
+      "text": "1914년 제1차 세계 대전(~1918)",
+      "translation": "1914 First World War (to 1918)"
+     },
      {
       "spans": [
        "1919년 3·1 운동, 대한민국 ",
@@ -644,12 +722,19 @@ KIIP.chapter({
         "annotation": "임시 정부"
        },
        " 수립"
-      ]
+      ],
+      "translation": "1919 3·1 운동; the Provisional Government of the Republic of Korea established"
      },
-     "1919년 중국, 5·4 운동"
+     {
+      "text": "1919년 중국, 5·4 운동",
+      "translation": "1919 China: the May Fourth Movement"
+     }
     ],
     [
-     "1939년 제2차 세계 대전(~1945)",
+     {
+      "text": "1939년 제2차 세계 대전(~1945)",
+      "translation": "1939 Second World War (to 1945)"
+     },
      {
       "spans": [
        "1945년 8·15 ",
@@ -657,7 +742,8 @@ KIIP.chapter({
         "word": "광복",
         "annotation": "광복"
        }
-      ]
+      ],
+      "translation": "1945 Liberation on 15 August"
      },
      {
       "spans": [
@@ -666,12 +752,16 @@ KIIP.chapter({
         "word": "발발",
         "annotation": "발발"
        }
-      ]
+      ],
+      "translation": "1937 The Sino-Japanese War breaks out"
      }
     ],
     [
      "",
-     "1948년 대한민국 정부 수립",
+     {
+      "text": "1948년 대한민국 정부 수립",
+      "translation": "1948 The government of the Republic of Korea established"
+     },
      ""
     ],
     [
@@ -682,23 +772,45 @@ KIIP.chapter({
         "word": "창설",
         "annotation": "창설"
        }
-      ]
+      ],
+      "translation": "1945 The United Nations (UN) founded"
      },
-     "1950년 6·25 전쟁(~1953)",
-     "1949년 중국, 중화 인민 공화국 수립"
+     {
+      "text": "1950년 6·25 전쟁(~1953)",
+      "translation": "1950 The Korean War (to 1953)"
+     },
+     {
+      "text": "1949년 중국, 중화 인민 공화국 수립",
+      "translation": "1949 China: the People's Republic established"
+     }
     ],
     [
-     "1948년 세계 인권 선언",
-     "1960년 4·19 혁명",
-     "1976년 베트남 사회주의 공화국 수립"
+     {
+      "text": "1948년 세계 인권 선언",
+      "translation": "1948 Universal Declaration of Human Rights"
+     },
+     {
+      "text": "1960년 4·19 혁명",
+      "translation": "1960 The April 19 Revolution"
+     },
+     {
+      "text": "1976년 베트남 사회주의 공화국 수립",
+      "translation": "1976 The Socialist Republic of Vietnam established"
+     }
     ],
     [
      "",
-     "1980년 5·18 민주화 운동",
+     {
+      "text": "1980년 5·18 민주화 운동",
+      "translation": "1980 The May 18 Democratisation Movement"
+     },
      ""
     ],
     [
-     "1990년 독일 통일",
+     {
+      "text": "1990년 독일 통일",
+      "translation": "1990 German reunification"
+     },
      {
       "spans": [
        "1987년 6월 민주 ",
@@ -706,7 +818,8 @@ KIIP.chapter({
         "word": "항쟁",
         "annotation": "항쟁"
        }
-      ]
+      ],
+      "translation": "1987 The June Democratic Struggle"
      },
      {
       "spans": [
@@ -715,7 +828,8 @@ KIIP.chapter({
         "word": "수교",
         "annotation": "수교"
        }
-      ]
+      ],
+      "translation": "1992 China and Vietnam establish diplomatic relations with Korea"
      }
     ],
     [
@@ -726,7 +840,8 @@ KIIP.chapter({
         "word": "해체",
         "annotation": "해체"
        }
-      ]
+      ],
+      "translation": "1991 The Soviet Union dissolved"
      },
      {
       "spans": [
@@ -735,7 +850,8 @@ KIIP.chapter({
         "word": "정상회담",
         "annotation": "정상회담"
        }
-      ]
+      ],
+      "translation": "2000 The first inter-Korean summit"
      },
      ""
     ]

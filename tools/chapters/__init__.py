@@ -180,13 +180,51 @@ def _cell(c):
     return {"spans": _spans(c)} if "{" in c else c
 
 
-def TABLE(header, rows=None):
-    """A table. Called with one argument when the book prints no header row."""
+def TABLE(header, rows=None, en=None):
+    """A table. Called with one argument when the book prints no header row.
+
+    `en` is the table again in English, cell for cell: (header, rows) where
+    the table has a header, or just the rows where it has none. The page
+    keeps it out of sight until the article is read side by side. It must be
+    the shape of the Korean, so that a cell left out cannot shift the rest;
+    an empty Korean cell takes "".
+    """
     if rows is None:
-        return {"type": "table", "rows": [[_cell(c) for c in r]
-                                          for r in header]}
-    return {"type": "table", "header": [_cell(c) for c in header],
-            "rows": [[_cell(c) for c in r] for r in rows]}
+        table = {"type": "table", "rows": [[_cell(c) for c in r]
+                                           for r in header]}
+        if en is not None:
+            _english_rows(table["rows"], en)
+        return table
+    table = {"type": "table", "header": [_cell(c) for c in header],
+             "rows": [[_cell(c) for c in r] for r in rows]}
+    if en is not None:
+        en_header, en_rows = en
+        _english_rows([table["header"]], [en_header])
+        _english_rows(table["rows"], en_rows)
+    return table
+
+
+def _english_rows(rows, english):
+    """Put each English cell on the Korean cell it renders."""
+    if len(rows) != len(english):
+        raise ValueError("a table has %d rows and its English %d"
+                         % (len(rows), len(english)))
+    for y, (row, en_row) in enumerate(zip(rows, english)):
+        if len(row) != len(en_row):
+            raise ValueError("row %d of a table has %d cells and its English "
+                             "%d: %r" % (y + 1, len(row), len(en_row), en_row))
+        for x, (cell, said) in enumerate(zip(row, en_row)):
+            blank = cell == "" or (isinstance(cell, dict)
+                                   and not cell.get("text")
+                                   and not cell.get("spans"))
+            if blank != (not said):
+                raise ValueError("row %d of a table: the Korean cell and its "
+                                 "English do not agree on being empty: %r"
+                                 % (y + 1, said))
+            if said:
+                if isinstance(cell, str):
+                    cell = {"text": cell}
+                row[x] = dict(cell, translation=said)
 
 
 def CELL(text, columns=None, down=None):

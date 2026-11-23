@@ -300,6 +300,11 @@
           var n = el(tag, null,
                      typeof c === "string" ? c : (c.spans ? null : c.text));
           if (typeof c !== "string" && c.spans) fillSpans(n, c.spans);
+          if (c.translation) {
+            var tr0 = el("div", "cell-tr", c.translation);
+            tr0.lang = "en";
+            n.appendChild(tr0);
+          }
           if (c.span) n.colSpan = c.span;
           if (c.spanDown) n.rowSpan = c.spanDown;
           return n;
@@ -320,6 +325,10 @@
           tb.appendChild(tr2);
         });
         t.appendChild(tb);
+        /* English under a cell changes what the widest cell is, so a table
+           that carries any is given even columns, and they hold still when
+           the English comes and goes */
+        if (t.querySelector(".cell-tr")) t.classList.add("has-en");
         wrapEl.appendChild(t);
         host.appendChild(wrapEl);
         return;
@@ -512,7 +521,8 @@
      the next article; a section that has none is one article.
 
      The margin glossary an article opens with is part of it: its
-     definitions have English too, and that comes and goes with the rest. */
+     definitions have English too, and that comes and goes with the rest.
+     So does a table whose cells carry English. */
 
   function runs() {
     var found = [];
@@ -526,8 +536,10 @@
         var pairs = block.classList.contains("para-pair")
           ? [block]
           : Array.prototype.slice.call(block.querySelectorAll(".para-pair"));
-        var box = block.classList.contains("glossbox") &&
-                  block.querySelector(".gloss-tr") ? block : null;
+        var box = (block.classList.contains("glossbox") &&
+                   block.querySelector(".gloss-tr")) ||
+                  (block.classList.contains("table-wrap") &&
+                   block.querySelector(".cell-tr")) ? block : null;
         if (!pairs.length && !box) return;
         if (!group) {
           group = { at: block, pairs: [], boxes: [] };
