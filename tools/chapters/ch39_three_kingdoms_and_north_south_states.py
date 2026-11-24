@@ -205,11 +205,7 @@ CHAPTER = dict(
         GLOSSARY(("관직", "국가가 맡기는 일", "관직",
                   dict(en="work entrusted by the state")),
                  ("유민", "멸망하여 없어진 나라의 백성", "유민",
-                  dict(en="the people of a country that has fallen and ceased to exist")),
-                 ("발해의 기와(위)와 고구려의 기와(아래)",
-                  "기와의 제작 기법, 모양 등을 통해 발해 문화가 고구려의 문화를 계승하였음을 짐작할 수 있다.",
-                  "기와",
-                  dict(en="from the way the roof tiles were made, their shape and so on, one can gather that the culture of 발해 carried on the culture of 고구려."))),
+                  dict(en="the people of a country that has fallen and ceased to exist"))),
         PARAGRAPH("삼국을 통일한 신라는 한반도에 사는 모든 사람이 {한마음}이 되도록 하기 위한 {정책}을 "
                   "{실시하였다|실시하다}. 예를 들어, 옛 백제와 고구려 사람에게도 {관직}을 주거나 그들을 "
                   "{군인}으로 {뽑았다|뽑다}. 또한 {한때} 전쟁을 벌였던 당과도 {화해하고|화해하다} 활발하게 "
@@ -222,7 +218,8 @@ CHAPTER = dict(
                   "{연꽃무늬} {기와} 등을 통해 발해의 수준 높은 불교문화를 {짐작할|짐작하다} 수 있다. 남쪽의 "
                   "통일신라와 북쪽의 발해가 함께 {존재한|존재하다} 시기를 {남북국 시대}라고 한다."),
         FIGURE("통일 신라와 발해 — 북쪽의 발해와 남쪽의 신라를 색으로 나타낸 지도"),
-        FIGURE("발해의 기와(위)와 고구려의 기와(아래) — 연꽃무늬가 새겨진 둥근 기와 사진 두 장"),
+        FIGURE("발해의 기와(위)와 고구려의 기와(아래) — 기와의 제작 기법, 모양 등을 통해 발해 문화가 "
+               "고구려의 문화를 계승하였음을 짐작할 수 있다."),
 
         SECTION("aside", "알아두면 좋아요"),
         HEADING(3, "남북국은 어떤 나라들을 의미할까?", translation=
@@ -974,9 +971,10 @@ CHAPTER = dict(
         "of sites in the 한강 basin are not reproduced. The small print on "
         "the 한강 map is too fine to read in the photographs and is not "
         "transcribed.",
-        "The 충주 고구려비 note on p. 205 and the roof-tile note on p. 206 sit "
-        "in the margin with the glossary and are set as glossary rows, with "
-        "a figure line for each photograph.",
+        "The 충주 고구려비 note on p. 205 sits in the margin with the glossary "
+        "and is set as a glossary row, with a figure line for its "
+        "photograph. The roof-tile note on p. 206 is a caption, and is set "
+        "as one.",
         "The map of 통일 신라 and 발해 and the two roof tiles on p. 206 are "
         "not reproduced; their captions are.",
         "The title of 이야기 나누기 on p. 207 is printed in square brackets, "

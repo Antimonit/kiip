@@ -1359,14 +1359,6 @@ KIIP.chapter({
      ],
      "annotation": "유민",
      "translation": "the people of a country that has fallen and ceased to exist"
-    },
-    {
-     "term": "발해의 기와(위)와 고구려의 기와(아래)",
-     "definition": [
-      "기와의 제작 기법, 모양 등을 통해 발해 문화가 고구려의 문화를 계승하였음을 짐작할 수 있다."
-     ],
-     "annotation": "기와",
-     "translation": "from the way the roof tiles were made, their shape and so on, one can gather that the culture of 발해 carried on the culture of 고구려."
     }
    ]
   },
@@ -1738,7 +1730,7 @@ KIIP.chapter({
   },
   {
    "type": "figure",
-   "text": "발해의 기와(위)와 고구려의 기와(아래) — 연꽃무늬가 새겨진 둥근 기와 사진 두 장"
+   "text": "발해의 기와(위)와 고구려의 기와(아래) — 기와의 제작 기법, 모양 등을 통해 발해 문화가 고구려의 문화를 계승하였음을 짐작할 수 있다."
   },
   {
    "type": "section",
@@ -4833,7 +4825,7 @@ KIIP.chapter({
    "why": "The three maps on p. 205 are set as their printed captions; the maps themselves, the photograph of the 충주 고구려비 and the small map of sites in the 한강 basin are not reproduced. The small print on the 한강 map is too fine to read in the photographs and is not transcribed."
   },
   {
-   "why": "The 충주 고구려비 note on p. 205 and the roof-tile note on p. 206 sit in the margin with the glossary and are set as glossary rows, with a figure line for each photograph."
+   "why": "The 충주 고구려비 note on p. 205 sits in the margin with the glossary and is set as a glossary row, with a figure line for its photograph. The roof-tile note on p. 206 is a caption, and is set as one."
   },
   {
    "why": "The map of 통일 신라 and 발해 and the two roof tiles on p. 206 are not reproduced; their captions are."
