@@ -863,6 +863,12 @@ KIIP.chapter({
    "text": "02 고조선의 생활 모습은 어떠했을까?"
   },
   {
+   "type": "heading",
+   "level": 2,
+   "text": "고조선의 건국",
+   "titleTranslation": "The founding of 고조선"
+  },
+  {
    "type": "glossary",
    "entries": [
     {
@@ -898,12 +904,6 @@ KIIP.chapter({
      "translation": "a tool made of copper, tin and the like"
     }
    ]
-  },
-  {
-   "type": "heading",
-   "level": 2,
-   "text": "고조선의 건국",
-   "titleTranslation": "The founding of 고조선"
   },
   {
    "type": "verse",
@@ -1265,6 +1265,12 @@ KIIP.chapter({
    "text": "고조선의 문화 범위 — 만주와 한반도 지도. 범례: 고조선 관련 문화 범위, 비파형 동검 분포 지역, 탁자식 고인돌 분포 지역"
   },
   {
+   "type": "heading",
+   "level": 2,
+   "text": "고조선의 생활 모습",
+   "titleTranslation": "Life in 고조선"
+  },
+  {
    "type": "glossary",
    "entries": [
     {
@@ -1276,12 +1282,6 @@ KIIP.chapter({
      "translation": "refers to the male servant (노) and the female servant (비), of the lowest standing in society"
     }
    ]
-  },
-  {
-   "type": "heading",
-   "level": 2,
-   "text": "고조선의 생활 모습",
-   "titleTranslation": "Life in 고조선"
   },
   {
    "type": "paragraph",

@@ -148,6 +148,12 @@ KIIP.chapter({
    "text": "01 외국인이 한국에 머무르려면 어떤 절차가 필요할까?"
   },
   {
+   "type": "heading",
+   "level": 2,
+   "text": "외국인이 한국에 들어오는 과정",
+   "titleTranslation": "How a foreigner enters Korea"
+  },
+  {
    "type": "glossary",
    "entries": [
     {
@@ -175,12 +181,6 @@ KIIP.chapter({
      "translation": "preventing infectious diseases and the like from spreading"
     }
    ]
-  },
-  {
-   "type": "heading",
-   "level": 2,
-   "text": "외국인이 한국에 들어오는 과정",
-   "titleTranslation": "How a foreigner enters Korea"
   },
   {
    "type": "paragraph",
@@ -461,6 +461,12 @@ KIIP.chapter({
    "text": "한국 입국자에 대한 코로나19 선별 진료소 검사 모습"
   },
   {
+   "type": "heading",
+   "level": 2,
+   "text": "외국인이 한국에 머무르는 과정",
+   "titleTranslation": "How a foreigner stays in Korea"
+  },
+  {
    "type": "glossary",
    "entries": [
     {
@@ -488,12 +494,6 @@ KIIP.chapter({
      "translation": "putting up money in order to do business"
     }
    ]
-  },
-  {
-   "type": "heading",
-   "level": 2,
-   "text": "외국인이 한국에 머무르는 과정",
-   "titleTranslation": "How a foreigner stays in Korea"
   },
   {
    "type": "paragraph",
@@ -808,6 +808,12 @@ KIIP.chapter({
    "text": "02 외국인의 정착을 돕는 법에는 어떤 것이 있을까?"
   },
   {
+   "type": "heading",
+   "level": 2,
+   "text": "재한 외국인을 지원하는 법",
+   "titleTranslation": "The law that supports foreigners in Korea"
+  },
+  {
    "type": "glossary",
    "entries": [
     {
@@ -835,12 +841,6 @@ KIIP.chapter({
      "translation": "a commemorative day set by law in Korea in 2007 so that Korean citizens and foreigners in Korea can live with respect for each other"
     }
    ]
-  },
-  {
-   "type": "heading",
-   "level": 2,
-   "text": "재한 외국인을 지원하는 법",
-   "titleTranslation": "The law that supports foreigners in Korea"
   },
   {
    "type": "paragraph",
@@ -1009,6 +1009,12 @@ KIIP.chapter({
    "text": "외국인주민을 위한 시민교육 장면 (수원시 외국인복지센터)"
   },
   {
+   "type": "heading",
+   "level": 2,
+   "text": "외국인의 편리한 생활을 돕기 위한 제도",
+   "titleTranslation": "The schemes that make life easier for foreigners"
+  },
+  {
    "type": "glossary",
    "entries": [
     {
@@ -1028,12 +1034,6 @@ KIIP.chapter({
      "translation": "the language of one's own country"
     }
    ]
-  },
-  {
-   "type": "heading",
-   "level": 2,
-   "text": "외국인의 편리한 생활을 돕기 위한 제도",
-   "titleTranslation": "The schemes that make life easier for foreigners"
   },
   {
    "type": "paragraph",

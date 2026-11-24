@@ -40,17 +40,6 @@ CHAPTER = dict(
               [["기본", "법", "30. 외국인과 법", "준법의 중요성"]]),
 
         SECTION("part", "01 경범죄에는 무엇이 있을까?"),
-        GLOSSARY(("사소하다", "보잘 것 없고 작음", "사소하다", "trivial, minor, petty",
-                  dict(en="being small and of no account")),
-                 ("제재", "일정한 규칙으로 제한하거나 금지함", "제재",
-                  "sanctions, restrictions",
-                  dict(en="restricting or forbidding by a set rule")),
-                 ("위법", "법을 위반함", "위법", "illegal",
-                  dict(en="breaking the law")),
-                 ("자가 격리",
-                  "전염병에 걸렸거나 걸렸을 가능성이 있는 사람이 스스로 집에 머물면서 다른 사람으로부터 "
-                  "떨어져 지내는 것", "자가 격리", "self-isolation",
-                  dict(en="a person who has, or may have, an infectious disease staying at home of their own accord and keeping apart from others"))),
         HEADING(2, "경범죄", translation=
                 "Minor offences" "\n\n"
                 "Say ‘crime’ and people generally think of grave crimes — "
@@ -68,6 +57,17 @@ CHAPTER = dict(
                 "minor offence. Someone who leaves the place of "
                 "self-isolation as they please may have to pay a fine, and a "
                 "foreigner may even be made to leave the country."),
+        GLOSSARY(("사소하다", "보잘 것 없고 작음", "사소하다", "trivial, minor, petty",
+                  dict(en="being small and of no account")),
+                 ("제재", "일정한 규칙으로 제한하거나 금지함", "제재",
+                  "sanctions, restrictions",
+                  dict(en="restricting or forbidding by a set rule")),
+                 ("위법", "법을 위반함", "위법", "illegal",
+                  dict(en="breaking the law")),
+                 ("자가 격리",
+                  "전염병에 걸렸거나 걸렸을 가능성이 있는 사람이 스스로 집에 머물면서 다른 사람으로부터 "
+                  "떨어져 지내는 것", "자가 격리", "self-isolation",
+                  dict(en="a person who has, or may have, an infectious disease staying at home of their own accord and keeping apart from others"))),
         PARAGRAPH("일반적으로 {범죄}라고 하면 {살인}, {강도}, {폭행} 등 {중대한|중대하다} 범죄를 "
                   "{떠올린다|떠올리다}. 그러나 {사소한|사소하다} 것처럼 보이는 {행위}라도 남에게 피해를 "
                   "주거나 {공공질서}에 맞지 않는 경우에는 {제재}를 받을 수 있다. 이는 {경범죄}에 "
@@ -79,15 +79,6 @@ CHAPTER = dict(
                   "{처벌}을 받을 수 있다. 자가 격리 장소를 {함부로} {벗어난|벗어나다} 사람은 {벌금}을 낼 "
                   "수도 있고 외국인은 {강제 출국}이 될 수도 있다."),
 
-        GLOSSARY(("무단투기", "아무렇게나 마구 내던져 버림", "무단투기",
-                  "illegal disposal of rubbish",
-                  dict(en="throwing something away carelessly, anywhere")),
-                 ("과태료", "형벌로서 내야 하는 벌금과 달리, 의무를 게을리한 사람에게 내도록 하는 돈",
-                  "과태료", "a fine, a penalty",
-                  dict(en="money that a person who neglects a duty is made to pay, as distinct from a fine paid as a criminal penalty")),
-                 ("신고 포상금제", "쓰레기 무단투기를 한 사람을 신고하면 상으로 돈을 주는 제도",
-                  "신고 포상금제", "the report reward system",
-                  dict(en="a system that pays a cash reward for reporting a person who dumps rubbish illegally"))),
         HEADING(2, "쓰레기 무단투기", translation=
                 "Fly-tipping" "\n\n"
                 "Putting rubbish somewhere other than the appointed place, or "
@@ -98,6 +89,15 @@ CHAPTER = dict(
                 "200,000 won; burying it in the ground, 700,000 won (as of "
                 "2018). Most local authorities across the country run a "
                 "reward scheme for reporting fly-tipping."),
+        GLOSSARY(("무단투기", "아무렇게나 마구 내던져 버림", "무단투기",
+                  "illegal disposal of rubbish",
+                  dict(en="throwing something away carelessly, anywhere")),
+                 ("과태료", "형벌로서 내야 하는 벌금과 달리, 의무를 게을리한 사람에게 내도록 하는 돈",
+                  "과태료", "a fine, a penalty",
+                  dict(en="money that a person who neglects a duty is made to pay, as distinct from a fine paid as a criminal penalty")),
+                 ("신고 포상금제", "쓰레기 무단투기를 한 사람을 신고하면 상으로 돈을 주는 제도",
+                  "신고 포상금제", "the report reward system",
+                  dict(en="a system that pays a cash reward for reporting a person who dumps rubbish illegally"))),
         PARAGRAPH("쓰레기를 정해진 곳에 버리지 않거나 {종량제 봉투}에 넣어 버리지 않는 행위는 경범죄에 "
                   "해당하며 {과태료}를 낼 수 있다. {담배꽁초}나 {휴지}를 아무 데나 버리면 5만 원을, "
                   "쓰레기를 종량제봉투에 넣지 않고 일반 봉투에 넣어서 버리면 20만 원을, 땅에 "
@@ -105,13 +105,6 @@ CHAPTER = dict(
                   "대해 전국 대부분의 지방자치단체에서는 {신고 포상금제}를 실시하고 있다."),
         FIGURE("쓰레기 종량제 봉투 (사진 출처: 〈연합뉴스〉)"),
 
-        GLOSSARY(("무단횡단", "정해진 규칙에 따르지 않고 길을 건넘", "무단횡단", "jaywalking",
-                  dict(en="crossing the road without following the set rules")),
-                 ("범칙금", "교통 규칙을 어겼을 때 내는 돈", "범칙금", "a fine, a penalty",
-                  dict(en="money paid for breaking a traffic rule")),
-                 ("건널목", "철로와 도로가 만나는 곳에서 사람들이 길을 건널 수 있도록 만들어 놓은 곳",
-                  "건널목", "a level crossing",
-                  dict(en="a place made so that people can cross where a railway and a road meet"))),
         HEADING(2, "무단횡단", translation=
                 "Jaywalking" "\n\n"
                 "In crossing the road one should wait for the signal where "
@@ -122,6 +115,13 @@ CHAPTER = dict(
                 "where there is a level crossing either, not only where cars "
                 "pass. Lately people jaywalk without realising it while "
                 "walking and looking at a smartphone, so care is needed."),
+        GLOSSARY(("무단횡단", "정해진 규칙에 따르지 않고 길을 건넘", "무단횡단", "jaywalking",
+                  dict(en="crossing the road without following the set rules")),
+                 ("범칙금", "교통 규칙을 어겼을 때 내는 돈", "범칙금", "a fine, a penalty",
+                  dict(en="money paid for breaking a traffic rule")),
+                 ("건널목", "철로와 도로가 만나는 곳에서 사람들이 길을 건널 수 있도록 만들어 놓은 곳",
+                  "건널목", "a level crossing",
+                  dict(en="a place made so that people can cross where a railway and a road meet"))),
         PARAGRAPH("길을 건널 때는 {횡단보도}가 있는 곳에서 {신호등}의 {신호}를 기다렸다가 건너야 한다. "
                   "그런데 도로에 차가 다니지 않는다고 해서 신호를 {무시하고|무시하다} 횡단보도를 "
                   "건너거나({범칙금} 2만원) 횡단보도가 없는 곳에서 길을 건너는 행위(범칙금 3만원)는 자신과 "
@@ -146,9 +146,6 @@ CHAPTER = dict(
         FIGURE("뒷좌석 안전띠 필수"),
 
         SECTION("part", "02 음주운전과 학교폭력은 무엇일까?"),
-        GLOSSARY(("적발되다", "감추어져 있던 일이 찾아져 밝혀짐", "적발되다",
-                  "to be caught out, to be uncovered",
-                  dict(en="something that was hidden being found and brought to light"))),
         HEADING(2, "음주운전", translation=
                 "Drink-driving" "\n\n"
                 "Drink-driving means driving after taking alcohol, before "
@@ -165,6 +162,9 @@ CHAPTER = dict(
                 "to the test. If one has drunk even a little it is better not "
                 "to drive oneself but to use public transport or a "
                 "substitute-driver service."),
+        GLOSSARY(("적발되다", "감추어져 있던 일이 찾아져 밝혀짐", "적발되다",
+                  "to be caught out, to be uncovered",
+                  dict(en="something that was hidden being found and brought to light"))),
         PARAGRAPH("{음주운전}이란 술을 마신 후 {정상적}인 상태로 {회복되기|회복되다} 이전에 운전하는 행위를 "
                   "말한다. 음주운전을 한 경우에는 사고가 발생하지 않았어도 {도로교통법} {위반}으로 처벌을 "
                   "받는다. 음주운전은 음주운전을 한 사람뿐만 아니라 다른 운전자와 {보행자}의 생명까지 "
@@ -177,10 +177,6 @@ CHAPTER = dict(
                   "{대리운전} 서비스를 이용하는 것이 좋다."),
         FIGURE("교통경찰의 음주 측정"),
 
-        GLOSSARY(("모욕", "깔보고 욕되게 함", "모욕", "insult, to offend",
-                  dict(en="looking down on and insulting someone")),
-                 ("따돌림", "누군가를 떼어놓거나 멀리 함", "따돌림", "being ostracised",
-                  dict(en="cutting someone off or keeping them at a distance"))),
         HEADING(2, "학교폭력", translation=
                 "Violence at school" "\n\n"
                 "Violence at school means acts inside or outside school, "
@@ -198,6 +194,10 @@ CHAPTER = dict(
                 "centre. One can also report it to the police agency’s cyber "
                 "bureau (http://cyberbureau.police.go.kr/) and receive the "
                 "guidance and support needed."),
+        GLOSSARY(("모욕", "깔보고 욕되게 함", "모욕", "insult, to offend",
+                  dict(en="looking down on and insulting someone")),
+                 ("따돌림", "누군가를 떼어놓거나 멀리 함", "따돌림", "being ostracised",
+                  dict(en="cutting someone off or keeping them at a distance"))),
         PARAGRAPH("{학교폭력}이란 학교 {안팎}에서 학생을 {대상}으로 한 {신체적}, 정신적, {재산상} 피해를 "
                   "주는 행위이다. 학교폭력이 발생했을 경우에는 학교, {경찰청}, {교육부}, {여성가족부} 등을 "
                   "통해 도움을 받을 수 있다."),

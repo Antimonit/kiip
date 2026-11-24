@@ -180,6 +180,12 @@ KIIP.chapter({
    "text": "01 한국에서 형법은 어떤 기능을 할까?"
   },
   {
+   "type": "heading",
+   "level": 2,
+   "text": "형법의 의미",
+   "titleTranslation": "What the criminal law means"
+  },
+  {
    "type": "glossary",
    "entries": [
     {
@@ -231,12 +237,6 @@ KIIP.chapter({
      "translation": "the penalty of being held in prison for a fixed period"
     }
    ]
-  },
-  {
-   "type": "heading",
-   "level": 2,
-   "text": "형법의 의미",
-   "titleTranslation": "What the criminal law means"
   },
   {
    "type": "paragraph",
@@ -662,6 +662,12 @@ KIIP.chapter({
    "text": "02 범죄를 막기 위해 경찰과 검찰은 어떤 일을 할까?"
   },
   {
+   "type": "heading",
+   "level": 2,
+   "text": "법을 집행하는 기관",
+   "titleTranslation": "The bodies that enforce the law"
+  },
+  {
    "type": "glossary",
    "entries": [
     {
@@ -681,12 +687,6 @@ KIIP.chapter({
      "translation": "a person under investigation because, although the suspicion of crime is not clear, it is possible"
     }
    ]
-  },
-  {
-   "type": "heading",
-   "level": 2,
-   "text": "법을 집행하는 기관",
-   "titleTranslation": "The bodies that enforce the law"
   },
   {
    "type": "paragraph",
@@ -812,6 +812,12 @@ KIIP.chapter({
    ]
   },
   {
+   "type": "heading",
+   "level": 2,
+   "text": "경찰의 역할",
+   "titleTranslation": "What the police do"
+  },
+  {
    "type": "glossary",
    "entries": [
     {
@@ -831,12 +837,6 @@ KIIP.chapter({
      "translation": "three or four police substations in an area grouped into one so as to deal with crime in the district"
     }
    ]
-  },
-  {
-   "type": "heading",
-   "level": 2,
-   "text": "경찰의 역할",
-   "titleTranslation": "What the police do"
   },
   {
    "type": "paragraph",
@@ -932,6 +932,12 @@ KIIP.chapter({
    ]
   },
   {
+   "type": "heading",
+   "level": 2,
+   "text": "검찰의 역할",
+   "titleTranslation": "What the prosecution does"
+  },
+  {
    "type": "glossary",
    "entries": [
     {
@@ -943,12 +949,6 @@ KIIP.chapter({
      "translation": "asking for something to be done"
     }
    ]
-  },
-  {
-   "type": "heading",
-   "level": 2,
-   "text": "검찰의 역할",
-   "titleTranslation": "What the prosecution does"
   },
   {
    "type": "paragraph",

@@ -40,8 +40,6 @@ CHAPTER = dict(
               [["기본", "역사", "44. 한국의 문화유산", "유교문화의 발전, 조선의 과학 기술"]]),
 
         SECTION("part", "01 조선은 나라의 기틀을 어떻게 마련하였을까?"),
-        GLOSSARY(("성곽", "성과 성의 둘레", "성곽",
-                  dict(en="a fortress and the wall around it"))),
         HEADING(2, "조선의 {건국}", translation=
                 "The founding of 조선" "\n\n"
                 "태조 이성계, who founded 조선 in 1392, moved the capital from "
@@ -57,6 +55,8 @@ CHAPTER = dict(
                 "treated first), trust between friends, and so on. These "
                 "ideas have changed little by little as the times have "
                 "changed, but they still influence Korea today."),
+        GLOSSARY(("성곽", "성과 성의 둘레", "성곽",
+                  dict(en="a fortress and the wall around it"))),
         PARAGRAPH("1392년 조선을 세운 {태조} 이성계는 나라의 모습과 {분위기}를 새롭게 하기 위해 "
                   "{수도}를 개경(개성)에서 한양(한성, 오늘의 서울)으로 옮겼다. 또한 {경복궁}과 "
                   "{종묘}를 {비롯해|비롯하다} {숭례문}(남대문), 동대문 등 {4대문}과 {성곽}도 세웠다."),
@@ -69,10 +69,6 @@ CHAPTER = dict(
         LABELS("함길도(함경도)", "평안도", "황해도", "한성", "강원도", "경기도", "충청도",
                "경상도", "전라도"),
 
-        GLOSSARY(("호패",
-                  "호패에는 신분에 따라 조금씩 다르다. 이름, 출생 연도, 주소, 얼굴빛, 키 등이 적혀 "
-                  "있었다.", "호패",
-                  dict(en="호패 differed a little according to status. The name, year of birth, address, complexion, height and so on were written on them."))),
         HEADING(2, "조선의 발전", translation=
                 "The development of 조선" "\n\n"
                 "태종, the son of 이성계, greatly strengthened the king’s power "
@@ -97,6 +93,10 @@ CHAPTER = dict(
                 "goods, etiquette, military affairs, punishments and so on. "
                 "This code shows that 조선 was a state under the rule of law, "
                 "governed according to the law and not by the king’s word."),
+        GLOSSARY(("호패",
+                  "호패에는 신분에 따라 조금씩 다르다. 이름, 출생 연도, 주소, 얼굴빛, 키 등이 적혀 "
+                  "있었다.", "호패",
+                  dict(en="호패 differed a little according to status. The name, year of birth, address, complexion, height and so on were written on them."))),
         PARAGRAPH("이성계의 아들 태종은 왕의 {권력}을 크게 {강화시켜|강화시키다} 조선이 발전할 수 있는 "
                   "{기틀}을 마련하였다. 또한, 16살 이상의 남자는 모두 {호패}({신분증})를 "
                   "{차고|차다} 다니도록 하는 법을 실시하여 {백성}의 출생, 이동 등과 같은 생활을 "
@@ -135,14 +135,6 @@ CHAPTER = dict(
         FIGURE("『경국대전』 (출처: 서울역사박물관)"),
 
         SECTION("part", "02 조선 후기에는 어떤 변화가 나타났을까?"),
-        GLOSSARY(("임진왜란", "임진년(1592년)에 왜(일본)가 일으킨 전란", "임진왜란",
-                  dict(en="the war started by 왜 (Japan) in the 임진 year (1592)")),
-                 ("의병", "백성들이 자발적으로 조직한 군대", "의병",
-                  dict(en="an army organised by the people of their own accord")),
-                 ("병자호란", "병자년(1636년)에 호(청나라)가 일으킨 전란", "병자호란",
-                  dict(en="the war started by 호 (the Qing) in the 병자 year (1636)")),
-                 ("남한산성", "병자호란 당시 마지막까지 청의 군대에 맞서 싸운 곳", "남한산성",
-                  dict(en="the place where the Qing army was fought to the last during the 병자호란"))),
         HEADING(2, "두 차례의 큰 전쟁을 극복한 조선", translation=
                 "조선 overcomes two great wars" "\n\n"
                 "Japan’s invasion of 조선 in 1592 is called the 임진왜란. The "
@@ -164,6 +156,14 @@ CHAPTER = dict(
                 "to the advance of learning. It was in 정조’s reign, too, "
                 "that 수원 화성 was built, a UNESCO World Heritage site "
                 "regarded as an outstanding piece of architecture."),
+        GLOSSARY(("임진왜란", "임진년(1592년)에 왜(일본)가 일으킨 전란", "임진왜란",
+                  dict(en="the war started by 왜 (Japan) in the 임진 year (1592)")),
+                 ("의병", "백성들이 자발적으로 조직한 군대", "의병",
+                  dict(en="an army organised by the people of their own accord")),
+                 ("병자호란", "병자년(1636년)에 호(청나라)가 일으킨 전란", "병자호란",
+                  dict(en="the war started by 호 (the Qing) in the 병자 year (1636)")),
+                 ("남한산성", "병자호란 당시 마지막까지 청의 군대에 맞서 싸운 곳", "남한산성",
+                  dict(en="the place where the Qing army was fought to the last during the 병자호란"))),
         PARAGRAPH("1592년 일본이 조선을 {침략한|침략하다} 사건을 {임진왜란}이라고 한다. 이순신 등 "
                   "조선의 {수군}(해군)이 일본군의 공격을 잘 {막아냈고|막아내다} 백성들은 {의병}을 "
                   "{조직하여|조직하다} 일본군에 {맞서|맞서다} 싸웠다. 이러한 노력의 결과 일본군으로부터 "
@@ -178,16 +178,6 @@ CHAPTER = dict(
                   "때이다."),
         FIGURE("남한산성의 성문과 성벽 사진"),
 
-        GLOSSARY(("과거", "국가 관리를 뽑기 위해 보는 시험", "과거",
-                  dict(en="the examination held to select state officials")),
-                 ("백정", "소, 돼지 등을 잡는 사람", "백정",
-                  dict(en="a person who slaughters cattle, pigs and the like")),
-                 ("판소리", "소리꾼이 북 장단에 맞추어 들려주는 긴 이야기", "판소리",
-                  dict(en="a long story a singer tells to the rhythm of a drum")),
-                 ("탈놀이", "머리에 탈을 쓰고 노는 놀이", "탈놀이",
-                  dict(en="a performance played wearing a mask on the head")),
-                 ("민화", "백성의 생활 모습을 주로 비전문가가 그린 평범한 그림", "민화",
-                  dict(en="ordinary pictures of the people's life, painted mostly by non-professionals"))),
         HEADING(2, "조선 후기의 사회와 문화", translation=
                 "Society and culture in late 조선" "\n\n"
                 "Status in 조선 was divided broadly into 양반, 중인, 상민 and "
@@ -204,6 +194,16 @@ CHAPTER = dict(
                 "조선, which centred on the culture of the 양반, late 조선 also "
                 "saw a great flowering of the culture of ordinary people, in "
                 "한글 novels, 판소리, 탈놀이, 민화 and the like."),
+        GLOSSARY(("과거", "국가 관리를 뽑기 위해 보는 시험", "과거",
+                  dict(en="the examination held to select state officials")),
+                 ("백정", "소, 돼지 등을 잡는 사람", "백정",
+                  dict(en="a person who slaughters cattle, pigs and the like")),
+                 ("판소리", "소리꾼이 북 장단에 맞추어 들려주는 긴 이야기", "판소리",
+                  dict(en="a long story a singer tells to the rhythm of a drum")),
+                 ("탈놀이", "머리에 탈을 쓰고 노는 놀이", "탈놀이",
+                  dict(en="a performance played wearing a mask on the head")),
+                 ("민화", "백성의 생활 모습을 주로 비전문가가 그린 평범한 그림", "민화",
+                  dict(en="ordinary pictures of the people's life, painted mostly by non-professionals"))),
         PARAGRAPH("조선의 {신분}은 크게 {양반}, {중인}, {상민}, {천민}으로 나누어져 있었다. 양반은 "
                   "{지배층}으로 {과거} 합격을 위해 {글공부}에 {힘썼다|힘쓰다}. 중인은 통역관이나 의사 "
                   "등과 같은 기술 관리였다. 상민은 농민·{수공업자}·상인 등을 가리킨다. 천민은 노비나 "

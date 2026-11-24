@@ -70,8 +70,6 @@ CHAPTER = dict(
               [["기본", "문화", "16. 명절", "추석"]]),
 
         SECTION("part", "01 삼국은 어떻게 발전했을까?"),
-        GLOSSARY(("유역", "강물이 흐르는 지역의 주변", "유역",
-                  dict(en="the land around where a river flows"))),
         HEADING(2, "삼국의 건국", translation=
                 "The founding of the Three Kingdoms" "\n\n"
                 "After 고조선, a number of countries were founded on the "
@@ -82,22 +80,14 @@ CHAPTER = dict(
                 "times competing and at times exchanging with one another, "
                 "in order to hold wider territory. This period is called "
                 "the Three Kingdoms period."),
+        GLOSSARY(("유역", "강물이 흐르는 지역의 주변", "유역",
+                  dict(en="the land around where a river flows"))),
         PARAGRAPH("{고조선} 이후 {한반도}에는 여러 나라가 세워졌다. 주몽은 {압록강} 유역 졸본 지역에 고구려를 "
                   "세웠고, 주몽의 아들로 {알려진|알려지다} 온조는 한강 {유역}으로 내려와 백제를 세웠다. "
                   "{한편}, 박혁거세는 경주 지역에 신라를 세웠다. 이 세 나라는 더 넓은 {영토}를 "
                   "{차지하기|차지하다} 위해 때로는 {경쟁하고|경쟁하다} 때로는 {교류하며|교류하다} "
                   "발전하였다. 이 {시기}를 {삼국 시대}라고 부른다."),
 
-        GLOSSARY(("전성기", "가장 발전한 시기", "전성기",
-                  dict(en="the period of greatest development")),
-                 ("왜", "7세기 말 이전에 일본 또는 일본인을 부르던 호칭. 7세기 말 이후부터 ‘일본’이라고 부름.",
-                  "왜",
-                  dict(en="the name by which Japan or the Japanese were called before the end of the 7th century. From the end of the 7th century on it is called ‘일본’.")),
-                 ("동맹", "둘 이상의 개인이나 단체가 힘을 합치기로 약속함.", "동맹",
-                  dict(en="two or more individuals or groups promising to join forces.")),
-                 ("충주 고구려비(충북 충주)", "5세기에 고구려가 한반도 중부 지역을 차지했다는 기록이 있다.",
-                  "충주 고구려비",
-                  dict(en="it carries a record that 고구려 held the central region of the Korean peninsula in the 5th century."))),
         HEADING(2, "삼국의 발전", translation=
                 "The development of the Three Kingdoms" "\n\n"
                 "Of the Three Kingdoms, the first to reach its heyday was "
@@ -117,6 +107,16 @@ CHAPTER = dict(
                 "화랑도, made up of young men of the nobility and the "
                 "commoners. As a result it took the 한강 basin and laid the "
                 "foundation for unifying the Three Kingdoms."),
+        GLOSSARY(("전성기", "가장 발전한 시기", "전성기",
+                  dict(en="the period of greatest development")),
+                 ("왜", "7세기 말 이전에 일본 또는 일본인을 부르던 호칭. 7세기 말 이후부터 ‘일본’이라고 부름.",
+                  "왜",
+                  dict(en="the name by which Japan or the Japanese were called before the end of the 7th century. From the end of the 7th century on it is called ‘일본’.")),
+                 ("동맹", "둘 이상의 개인이나 단체가 힘을 합치기로 약속함.", "동맹",
+                  dict(en="two or more individuals or groups promising to join forces.")),
+                 ("충주 고구려비(충북 충주)", "5세기에 고구려가 한반도 중부 지역을 차지했다는 기록이 있다.",
+                  "충주 고구려비",
+                  dict(en="it carries a record that 고구려 held the central region of the Korean peninsula in the 5th century."))),
         PARAGRAPH("삼국 중 가장 먼저 {전성기}를 {맞이한|맞이하다} 나라는 백제였다. 4세기에 백제는 한강 북쪽 "
                   "지역은 물론 {남해안}까지 영토를 {넓혔고|넓히다} 중국, 일본 지역과도 "
                   "{활발하게|활발하다} {무역}을 하였다. 특히 {화려하고|화려하다} {섬세한|섬세하다} 문화를 "
@@ -154,10 +154,6 @@ CHAPTER = dict(
         FIGURE("한강 유역의 삼국 시대 유적지 분포 — 한강 주변의 산성과 고분, 유적 발굴 위치를 표시한 지도"),
 
         SECTION("part", "02 남북국 시대에는 어떤 나라들이 발전했을까?"),
-        GLOSSARY(("인재", "재주가 뛰어난 사람", "인재",
-                  dict(en="a person of outstanding ability")),
-                 ("연합", "서로 힘을 합쳐 하나가 됨", "연합",
-                  dict(en="joining forces with each other and becoming one"))),
         HEADING(2, "신라의 삼국 통일", translation=
                 "신라’s unification of the Three Kingdoms" "\n\n"
                 "신라 was the first of the Three Kingdoms to be founded, but "
@@ -171,6 +167,10 @@ CHAPTER = dict(
                 "won one victory after another over 당 at the battle of 매소성, "
                 "the sea battle of 기벌포 and elsewhere, and at last drove 당 "
                 "out and unified the Three Kingdoms (676)."),
+        GLOSSARY(("인재", "재주가 뛰어난 사람", "인재",
+                  dict(en="a person of outstanding ability")),
+                 ("연합", "서로 힘을 합쳐 하나가 됨", "연합",
+                  dict(en="joining forces with each other and becoming one"))),
         PARAGRAPH("신라는 삼국 중 가장 먼저 세워졌지만 {꾸준히} 나라의 {인재}를 {기르고|기르다} 다른 나라와 "
                   "{외교}를 하면서 {성장하였다|성장하다}. 한반도의 중심인 한강 유역을 차지한 이후 신라는 "
                   "중국의 {당나라}와 힘을 {합쳐|합치다} 백제(660년)와 고구려(668년)를 {차례로} "
@@ -179,14 +179,6 @@ CHAPTER = dict(
                   "{벌였다|벌이다}. 신라군은 매소성 {전투}, 기벌포 {해전} 등에서 {잇달아} 당에 "
                   "{승리하였고|승리하다} {마침내} 당을 {몰아내고|몰아내다} 삼국을 통일하였다(676년)."),
 
-        GLOSSARY(("관직", "국가가 맡기는 일", "관직",
-                  dict(en="work entrusted by the state")),
-                 ("유민", "멸망하여 없어진 나라의 백성", "유민",
-                  dict(en="the people of a country that has fallen and ceased to exist")),
-                 ("발해의 기와(위)와 고구려의 기와(아래)",
-                  "기와의 제작 기법, 모양 등을 통해 발해 문화가 고구려의 문화를 계승하였음을 짐작할 수 있다.",
-                  "기와",
-                  dict(en="from the way the roof tiles were made, their shape and so on, one can gather that the culture of 발해 carried on the culture of 고구려."))),
         HEADING(2, "통일 신라와 발해", translation=
                 "Unified 신라 and 발해" "\n\n"
                 "Having unified the Three Kingdoms, 신라 carried out policies "
@@ -210,6 +202,14 @@ CHAPTER = dict(
                 "Buddhist culture of 발해 was. The period in which Unified "
                 "신라 in the south and 발해 in the north existed together is "
                 "called the North–South States period."),
+        GLOSSARY(("관직", "국가가 맡기는 일", "관직",
+                  dict(en="work entrusted by the state")),
+                 ("유민", "멸망하여 없어진 나라의 백성", "유민",
+                  dict(en="the people of a country that has fallen and ceased to exist")),
+                 ("발해의 기와(위)와 고구려의 기와(아래)",
+                  "기와의 제작 기법, 모양 등을 통해 발해 문화가 고구려의 문화를 계승하였음을 짐작할 수 있다.",
+                  "기와",
+                  dict(en="from the way the roof tiles were made, their shape and so on, one can gather that the culture of 발해 carried on the culture of 고구려."))),
         PARAGRAPH("삼국을 통일한 신라는 한반도에 사는 모든 사람이 {한마음}이 되도록 하기 위한 {정책}을 "
                   "{실시하였다|실시하다}. 예를 들어, 옛 백제와 고구려 사람에게도 {관직}을 주거나 그들을 "
                   "{군인}으로 {뽑았다|뽑다}. 또한 {한때} 전쟁을 벌였던 당과도 {화해하고|화해하다} 활발하게 "

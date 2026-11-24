@@ -39,10 +39,6 @@ CHAPTER = dict(
               [["기본", "역사", "43. 한국의 역사 인물", "서희"]]),
 
         SECTION("part", "01 고려는 어떻게 발전했을까?"),
-        GLOSSARY(("신하", "왕을 섬기며 벼슬(나랏일)하는 사람", "신하",
-                  dict(en="a person who serves the king and holds office (does the work of the state)")),
-                 ("계승", "이어 받음", "계승",
-                  dict(en="taking over and carrying on"))),
         HEADING(2, "고려의 건국과 후삼국 통일", translation=
                 "The founding of 고려 and the unification of the Later Three "
                 "Kingdoms" "\n\n"
@@ -60,6 +56,10 @@ CHAPTER = dict(
                 "후백제, and in the end, after receiving the surrender of 신라 "
                 "(935), attacked 후백제 and unified the Later Three Kingdoms "
                 "(936)."),
+        GLOSSARY(("신하", "왕을 섬기며 벼슬(나랏일)하는 사람", "신하",
+                  dict(en="a person who serves the king and holds office (does the work of the state)")),
+                 ("계승", "이어 받음", "계승",
+                  dict(en="taking over and carrying on"))),
         PARAGRAPH("신라 {말기}에는 사회가 {혼란스러웠고|혼란스럽다} 왕의 힘이 약했던 {반면} 지방에서 "
                   "{경제력}이나 {군사력}이 강한 {세력}({호족})의 힘이 커졌다. 호족 중에서 특히 힘이 "
                   "강했던 견훤은 {후백제}(900년)를, 궁예는 {후고구려}를 세웠다(901년). 이로써 나라가 "
@@ -70,14 +70,6 @@ CHAPTER = dict(
                   "뒤(935년) 후백제를 {공격하여|공격하다} 후삼국을 {통일하였다|통일하다}(936년)."),
         FIGURE("후삼국 시대 — 한반도 지도에 고려, 후백제, 신라의 영역이 색으로 나뉘어 있음(황해, 동해)"),
 
-        GLOSSARY(("태조", "왕조의 첫 번째 왕", "태조",
-                  dict(en="the first king of a dynasty")),
-                 ("권장", "무언가를 권하여 하도록 함.", "권장",
-                  dict(en="urging someone to do something")),
-                 ("문신", "나랏일을 하는 신하 중 군인이 아닌 사람", "문신",
-                  dict(en="among the subjects who do the work of the state, one who is not a soldier")),
-                 ("무신", "군인으로서 나랏일을 하는 신하", "무신",
-                  dict(en="a subject who does the work of the state as a soldier"))),
         HEADING(2, "고려의 발전과 변화", translation=
                 "The development of 고려 and its changes" "\n\n"
                 "태조 왕건 of 고려 fixed the rate of tax at 10% and allowed no "
@@ -102,6 +94,14 @@ CHAPTER = dict(
                 "forces with those who wanted to change the society of the "
                 "day, which was in turmoil, brought 고려 down and founded 조선 "
                 "(1392)."),
+        GLOSSARY(("태조", "왕조의 첫 번째 왕", "태조",
+                  dict(en="the first king of a dynasty")),
+                 ("권장", "무언가를 권하여 하도록 함.", "권장",
+                  dict(en="urging someone to do something")),
+                 ("문신", "나랏일을 하는 신하 중 군인이 아닌 사람", "문신",
+                  dict(en="among the subjects who do the work of the state, one who is not a soldier")),
+                 ("무신", "군인으로서 나랏일을 하는 신하", "무신",
+                  dict(en="a subject who does the work of the state as a soldier"))),
         PARAGRAPH("고려 {태조} 왕건은 {백성}의 생활을 {안정시키기|안정시키다} 위해 세금의 {비율}을 "
                   "10%로 정해 놓고 그 이상 {거두지|거두다} 못하도록 했다. 또한 {불교}를 {권장}하여 "
                   "그동안 전쟁으로 {지쳐|지치다} 있던 백성의 마음을 모으고자 하였다."),
@@ -175,11 +175,6 @@ CHAPTER = dict(
                "동경, 합포, 탐라, 우산, 덩저우, 밍저우. 화살표와 함께 적힌 물품: ‘금, 은, 인삼, 종이, "
                "화문석, 부채’, ‘약재, 자기, 비단, 차, 향료, 책, 악기’"),
 
-        GLOSSARY(("고려의 상감 청자", "상감 청자 특유의 맑고 투명한 색과 부드럽고 생동감 넘치는 모습",
-                  "상감 청자",
-                  dict(en="the clear, translucent colour peculiar to inlaid celadon, and its soft and lively look")),
-                 ("정교", "정확하고 치밀함", "정교",
-                  dict(en="being exact and meticulous"))),
         HEADING(2, "고려의 사회 모습", translation=
                 "What 고려 society was like" "\n\n"
                 "The aristocratic culture of 고려 was renowned for its "
@@ -204,6 +199,11 @@ CHAPTER = dict(
                 "judged to have been considerably progressive, in that men "
                 "and women enjoyed rights at almost the same level within "
                 "the family."),
+        GLOSSARY(("고려의 상감 청자", "상감 청자 특유의 맑고 투명한 색과 부드럽고 생동감 넘치는 모습",
+                  "상감 청자",
+                  dict(en="the clear, translucent colour peculiar to inlaid celadon, and its soft and lively look")),
+                 ("정교", "정확하고 치밀함", "정교",
+                  dict(en="being exact and meticulous"))),
         PARAGRAPH("고려의 귀족 문화는 {화려함|화려하다}과 {섬세함|섬세하다}으로 이름이 높았다. 예를 들어, "
                   "{상감 청자}라는 아름답고 {독창적}인 {도자기}를 만들었고 {정교}한 기술을 바탕으로 세계 "
                   "최초의 {금속 활자}를 만들어 문화를 {보급하였다|보급하다}."),

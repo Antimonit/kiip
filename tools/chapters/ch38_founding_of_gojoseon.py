@@ -142,16 +142,6 @@ CHAPTER = dict(
                     "2000 The first inter-Korean summit", ""]])),
 
         SECTION("part", "02 고조선의 생활 모습은 어떠했을까?"),
-        GLOSSARY(("삼국유사",
-                  "고려 시대의 스님 일연이 고구려·백제·신라 3국의 유사(전해 내려오는 이야기)를 모아 "
-                  "만든 역사책", "삼국유사",
-                  dict(en="a history book made by 일연, a monk of the 고려 period, who gathered the 유사 (stories handed down) of the three kingdoms 고구려, 백제 and 신라")),
-                 ("숭배", "우러러 보며 공경함", "숭배",
-                  dict(en="looking up to and revering")),
-                 ("신석기", "돌을 갈아 만든 도구", "신석기",
-                  dict(en="a tool made by grinding stone")),
-                 ("청동기", "구리와 주석 등으로 만든 도구", "청동기",
-                  dict(en="a tool made of copper, tin and the like"))),
         HEADING(2, "고조선의 건국", translation=
                 "The founding of 고조선" "\n\n"
                 "Did a bear really become a person, as the passage above "
@@ -170,6 +160,16 @@ CHAPTER = dict(
                 "made a new tribe with 단군왕검 as its ruler. 단군왕검 "
                 "afterwards founded a country, and that country is 고조선, "
                 "the first state the Korean people founded."),
+        GLOSSARY(("삼국유사",
+                  "고려 시대의 스님 일연이 고구려·백제·신라 3국의 유사(전해 내려오는 이야기)를 모아 "
+                  "만든 역사책", "삼국유사",
+                  dict(en="a history book made by 일연, a monk of the 고려 period, who gathered the 유사 (stories handed down) of the three kingdoms 고구려, 백제 and 신라")),
+                 ("숭배", "우러러 보며 공경함", "숭배",
+                  dict(en="looking up to and revering")),
+                 ("신석기", "돌을 갈아 만든 도구", "신석기",
+                  dict(en="a tool made by grinding stone")),
+                 ("청동기", "구리와 주석 등으로 만든 도구", "청동기",
+                  dict(en="a tool made of copper, tin and the like"))),
         VERSE("하늘에서 내려 온 {환웅}이 인간 세상을 {다스리고|다스리다} 있었는데, 어느 날 곰과 "
               "호랑이가 찾아와 인간이 되게 해 달라고 {빌었다|빌다}. 환웅은 100일 동안 {쑥}과 "
               "{마늘}만 먹으며 {햇빛}을 보지 않으면 인간이 될 수 있다고 했다. 호랑이와 달리, 환웅의 "
@@ -196,13 +196,13 @@ CHAPTER = dict(
         FIGURE("고조선의 문화 범위 — 만주와 한반도 지도. 범례: 고조선 관련 문화 범위, 비파형 동검 분포 "
                "지역, 탁자식 고인돌 분포 지역"),
 
-        GLOSSARY(("노비", "사회적으로 가장 신분이 낮은 남자 종(노)과 여자 종(비)을 가리킴", "노비",
-                  dict(en="refers to the male servant (노) and the female servant (비), of the lowest standing in society"))),
         HEADING(2, "고조선의 생활 모습", translation=
                 "Life in 고조선" "\n\n"
                 "To keep order in society, 고조선 made a law of eight "
                 "provisions (the 8조법). Three of them have come down to the "
                 "present."),
+        GLOSSARY(("노비", "사회적으로 가장 신분이 낮은 남자 종(노)과 여자 종(비)을 가리킴", "노비",
+                  dict(en="refers to the male servant (노) and the female servant (비), of the lowest standing in society"))),
         PARAGRAPH("고조선은 사회 {질서}를 {유지하기|유지하다} 위해 여덟 가지 내용의 법({8조법})을 "
                   "만들었다. 이 중 세 가지 내용이 현재까지 {전해지고|전해지다} 있다."),
         BULLET("사람을 죽인 {자}는 {사형}에 {처한다|처하다}.", ordered=True,

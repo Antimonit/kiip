@@ -43,11 +43,6 @@ CHAPTER = dict(
               [["기본", "법", "30. 외국인과 법", "국적과 관계 없이 보장되는 외국인의 권리"]]),
 
         SECTION("part", "01 한국 국적은 어떤 의미를 가지며 어떤 기준으로 결정될까?"),
-        GLOSSARY(("영주권", "일정한 요건을 갖춘 외국인에게 주는, 그 나라에서 영구적으로 오랫동안 거주할 수 "
-                            "있는 권리", "영주권", "permanent residency (F-5)",
-                  dict(en="the right, given to a foreigner who meets certain conditions, to live in that country permanently")),
-                 ("입대", "군에 들어가 군인이 되는 것", "입대", "to join the army",
-                  dict(en="entering the military and becoming a soldier"))),
         HEADING(2, "국적의 의미", translation=
                 "What nationality means" "\n\n"
                 "Nationality means the standing by which a person is "
@@ -67,6 +62,11 @@ CHAPTER = dict(
                 "of nationality. In those countries a citizen is thereby a "
                 "national of that country and the bearer of every kind of "
                 "right and duty."),
+        GLOSSARY(("영주권", "일정한 요건을 갖춘 외국인에게 주는, 그 나라에서 영구적으로 오랫동안 거주할 수 "
+                            "있는 권리", "영주권", "permanent residency (F-5)",
+                  dict(en="the right, given to a foreigner who meets certain conditions, to live in that country permanently")),
+                 ("입대", "군에 들어가 군인이 되는 것", "입대", "to join the army",
+                  dict(en="entering the military and becoming a soldier"))),
         PARAGRAPH("{국적}이란 한 사람이 어느 {국가}의 국민으로서 {인정받는|인정받다} {자격}을 가리킨다. "
                   "그러므로 한국 국민은 대한민국 국적을 갖고 있는 사람으로서 대한민국 {헌법}이 "
                   "{보장하는|보장하다} 자유와 {권리}를 누릴 수 있고 {일정한|일정하다} {의무}도 "
@@ -79,17 +79,6 @@ CHAPTER = dict(
                   "의무의 {주체}가 된다."),
         FIGURE("대한민국 영주증의 모습 — 체류자격 영주(F-5)"),
 
-        GLOSSARY(("출생지주의(속지주의)", "아이가 태어난 장소(국가)를 기준으로 아이의 국적을 결정하는 것",
-                  "출생지주의", "the territorial principle",
-                  dict(en="deciding a child's nationality by the place (country) where the child was born")),
-                 ("혈통주의(속인주의)", "태어난 아이의 부모가 가진 국적을 기준으로 아이의 국적을 결정하는 것",
-                  "혈통주의", "the personal nationality principle",
-                  dict(en="deciding a child's nationality by the nationality the child's parents hold")),
-                 ("국적법", "한국 국민이 되는 요건을 정하는 법", "국적법",
-                  "the Nationality Act",
-                  dict(en="the law that sets the conditions for becoming a Korean citizen")),
-                 ("무국적자", "국적이 없는 사람", "무국적자", "a stateless person",
-                  dict(en="a person with no nationality"))),
         HEADING(2, "국적을 결정하는 방법", translation=
                 "How nationality is decided" "\n\n"
                 "How nationality is decided differs from country to country. "
@@ -108,6 +97,17 @@ CHAPTER = dict(
                 "born in Korea are, however, or where the parents or the "
                 "child are stateless, being born in Korea is by itself "
                 "enough to become a Korean national."),
+        GLOSSARY(("출생지주의(속지주의)", "아이가 태어난 장소(국가)를 기준으로 아이의 국적을 결정하는 것",
+                  "출생지주의", "the territorial principle",
+                  dict(en="deciding a child's nationality by the place (country) where the child was born")),
+                 ("혈통주의(속인주의)", "태어난 아이의 부모가 가진 국적을 기준으로 아이의 국적을 결정하는 것",
+                  "혈통주의", "the personal nationality principle",
+                  dict(en="deciding a child's nationality by the nationality the child's parents hold")),
+                 ("국적법", "한국 국민이 되는 요건을 정하는 법", "국적법",
+                  "the Nationality Act",
+                  dict(en="the law that sets the conditions for becoming a Korean citizen")),
+                 ("무국적자", "국적이 없는 사람", "무국적자", "a stateless person",
+                  dict(en="a person with no nationality"))),
         PARAGRAPH("국적을 결정하는 방법은 나라마다 차이가 있다. 미국이나 캐나다에서는 태어난 장소(국가)를 "
                   "중요하게 여긴다. 그래서 미국에서 태어난 아이는 미국 국적을 가질 수 있다. 이를 "
                   "{출생지주의}(속지주의)라고 한다. 중국이나 호주 같은 경우에는 태어난 아이의 부모의 국적을 "
@@ -139,14 +139,6 @@ CHAPTER = dict(
                   "{법률안}을 {논의하고|논의하다} 있다."),
 
         SECTION("part", "02 귀화는 어떤 절차로 이루어질까?"),
-        GLOSSARY(("허가", "허락하여 할 수 있도록 함", "허가", "permission",
-                  dict(en="giving permission so that something can be done")),
-                 ("배우자", "남편에게는 아내가, 아내에게는 남편이 각각 배우자임", "배우자", "spouse",
-                  dict(en="to a husband his wife, and to a wife her husband, is the spouse")),
-                 ("가족관계등록부",
-                  "한국 국민 개개인이 등록한 주소, 성명, 생년월일 등 신분에 관한 사항과 가족관계에 관한 "
-                  "사항 등을 기록한 문서", "가족관계등록부",
-                  dict(en="a document recording each Korean citizen's registered address, name, date of birth and other matters of personal status, together with their family relationships"))),
         HEADING(2, "귀화의 유형과 절차", translation=
                 "The kinds of naturalisation, and the procedure" "\n\n"
                 "A foreigner can become a Korean national by meeting the "
@@ -178,6 +170,14 @@ CHAPTER = dict(
                 "outstanding ability in a particular field who is judged "
                 "likely to serve the national interest may apply for special "
                 "naturalisation."),
+        GLOSSARY(("허가", "허락하여 할 수 있도록 함", "허가", "permission",
+                  dict(en="giving permission so that something can be done")),
+                 ("배우자", "남편에게는 아내가, 아내에게는 남편이 각각 배우자임", "배우자", "spouse",
+                  dict(en="to a husband his wife, and to a wife her husband, is the spouse")),
+                 ("가족관계등록부",
+                  "한국 국민 개개인이 등록한 주소, 성명, 생년월일 등 신분에 관한 사항과 가족관계에 관한 "
+                  "사항 등을 기록한 문서", "가족관계등록부",
+                  dict(en="a document recording each Korean citizen's registered address, name, date of birth and other matters of personal status, together with their family relationships"))),
         PARAGRAPH("외국인은 자신의 {의지}와 노력을 통해 {요건}을 {갖춘|갖추다} 후, 법무부 {장관}으로부터 "
                   "{허가}를 받아 한국 국민이 될 수 있다. 이를 {귀화}라고 한다. 귀화에는 {일반귀화}, "
                   "{간이귀화}, {특별귀화}의 3가지 {유형}이 있다."),

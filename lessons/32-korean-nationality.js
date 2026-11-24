@@ -145,6 +145,12 @@ KIIP.chapter({
    "text": "01 한국 국적은 어떤 의미를 가지며 어떤 기준으로 결정될까?"
   },
   {
+   "type": "heading",
+   "level": 2,
+   "text": "국적의 의미",
+   "titleTranslation": "What nationality means"
+  },
+  {
    "type": "glossary",
    "entries": [
     {
@@ -164,12 +170,6 @@ KIIP.chapter({
      "translation": "entering the military and becoming a soldier"
     }
    ]
-  },
-  {
-   "type": "heading",
-   "level": 2,
-   "text": "국적의 의미",
-   "titleTranslation": "What nationality means"
   },
   {
    "type": "paragraph",
@@ -427,6 +427,12 @@ KIIP.chapter({
    "text": "대한민국 영주증의 모습 — 체류자격 영주(F-5)"
   },
   {
+   "type": "heading",
+   "level": 2,
+   "text": "국적을 결정하는 방법",
+   "titleTranslation": "How nationality is decided"
+  },
+  {
    "type": "glossary",
    "entries": [
     {
@@ -462,12 +468,6 @@ KIIP.chapter({
      "translation": "a person with no nationality"
     }
    ]
-  },
-  {
-   "type": "heading",
-   "level": 2,
-   "text": "국적을 결정하는 방법",
-   "titleTranslation": "How nationality is decided"
   },
   {
    "type": "paragraph",
@@ -743,6 +743,12 @@ KIIP.chapter({
    "text": "02 귀화는 어떤 절차로 이루어질까?"
   },
   {
+   "type": "heading",
+   "level": 2,
+   "text": "귀화의 유형과 절차",
+   "titleTranslation": "The kinds of naturalisation, and the procedure"
+  },
+  {
    "type": "glossary",
    "entries": [
     {
@@ -770,12 +776,6 @@ KIIP.chapter({
      "translation": "a document recording each Korean citizen's registered address, name, date of birth and other matters of personal status, together with their family relationships"
     }
    ]
-  },
-  {
-   "type": "heading",
-   "level": 2,
-   "text": "귀화의 유형과 절차",
-   "titleTranslation": "The kinds of naturalisation, and the procedure"
   },
   {
    "type": "paragraph",

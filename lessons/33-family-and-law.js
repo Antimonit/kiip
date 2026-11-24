@@ -157,6 +157,12 @@ KIIP.chapter({
    "text": "01 법은 결혼생활에 어떤 영향을 줄까?"
   },
   {
+   "type": "heading",
+   "level": 2,
+   "text": "부부로 인정받기 위한 절차",
+   "titleTranslation": "The steps to being recognised as a married couple"
+  },
+  {
    "type": "glossary",
    "entries": [
     {
@@ -168,12 +174,6 @@ KIIP.chapter({
      "translation": "officially reporting the fact of a marriage to an administrative office"
     }
    ]
-  },
-  {
-   "type": "heading",
-   "level": 2,
-   "text": "부부로 인정받기 위한 절차",
-   "titleTranslation": "The steps to being recognised as a married couple"
   },
   {
    "type": "paragraph",
@@ -263,6 +263,12 @@ KIIP.chapter({
    "text": "○○시청에 있는 혼인 신고 기념 포토존"
   },
   {
+   "type": "heading",
+   "level": 2,
+   "text": "부부의 권리와 의무",
+   "titleTranslation": "A married couple’s rights and duties"
+  },
+  {
    "type": "glossary",
    "entries": [
     {
@@ -290,12 +296,6 @@ KIIP.chapter({
      "translation": "the work done to maintain a home and keep the household going: cleaning, laundry, cooking and so on"
     }
    ]
-  },
-  {
-   "type": "heading",
-   "level": 2,
-   "text": "부부의 권리와 의무",
-   "titleTranslation": "A married couple’s rights and duties"
   },
   {
    "type": "paragraph",
@@ -667,6 +667,12 @@ KIIP.chapter({
    "text": "02 가족관계에서 생기는 문제를 법으로 어떻게 해결할 수 있을까?"
   },
   {
+   "type": "heading",
+   "level": 2,
+   "text": "가정 폭력의 해결",
+   "titleTranslation": "Dealing with domestic violence"
+  },
+  {
    "type": "glossary",
    "entries": [
     {
@@ -678,12 +684,6 @@ KIIP.chapter({
      "translation": "dignity and standing as a person"
     }
    ]
-  },
-  {
-   "type": "heading",
-   "level": 2,
-   "text": "가정 폭력의 해결",
-   "titleTranslation": "Dealing with domestic violence"
   },
   {
    "type": "paragraph",
@@ -937,6 +937,12 @@ KIIP.chapter({
    ]
   },
   {
+   "type": "heading",
+   "level": 2,
+   "text": "이혼의 종류와 방법",
+   "titleTranslation": "The kinds of divorce, and how it is done"
+  },
+  {
    "type": "glossary",
    "entries": [
     {
@@ -948,12 +954,6 @@ KIIP.chapter({
      "translation": "money paid for the mental suffering or harm caused by another person's unlawful act"
     }
    ]
-  },
-  {
-   "type": "heading",
-   "level": 2,
-   "text": "이혼의 종류와 방법",
-   "titleTranslation": "The kinds of divorce, and how it is done"
   },
   {
    "type": "paragraph",

@@ -145,8 +145,6 @@ CHAPTER = dict(
         FIGURE("허난설헌 초상"),
         FIGURE("『난설헌집』(오죽헌 시립 박물관) — 허난설헌의 시를 모아 만든 책이다."),
 
-        GLOSSARY(("흉년", "농사가 잘 되지 않은 해", "흉년",
-                  dict(en="a year in which the farming has not gone well"))),
         HEADING(2, "재산을 모아 제주도 백성을 구한 상인, 김만덕", translation=
                 "김만덕, the merchant who built a fortune and saved the people "
                 "of Jeju" "\n\n"
@@ -164,6 +162,8 @@ CHAPTER = dict(
                 "had her wish. Even now Jeju has set up the ‘만덕상’ and gives "
                 "a prize every year to people who, like 김만덕, have done much "
                 "good for others."),
+        GLOSSARY(("흉년", "농사가 잘 되지 않은 해", "흉년",
+                  dict(en="a year in which the farming has not gone well"))),
         PARAGRAPH("조선 시대 제주도에서 태어난 {김만덕}은 어려서 부모를 잃고 힘들게 살았다. 이후 "
                   "김만덕은 장사를 하여 {큰돈}을 모았다. 그러던 중 제주도에 심한 {흉년}이 들어 많은 "
                   "사람이 {굶어|굶다} 죽게 되자 김만덕은 그동안 모은 돈으로 쌀을 사서 사람들에게 "

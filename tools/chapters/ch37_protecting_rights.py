@@ -46,12 +46,6 @@ CHAPTER = dict(
                ["법", "19. 직장생활과 법", "국가인권위원회를 통한 근로자 보호"]]),
 
         SECTION("part", "01 재판은 분쟁 해결에 어떤 도움을 줄까?"),
-        GLOSSARY(("분쟁", "사람이나 집단들 간에 문제가 일어나서 다투는 것", "분쟁",
-                  "a dispute, a conflict",
-                  dict(en="people or groups quarrelling because a problem has arisen between them")),
-                 ("당사자", "어떤 일에 직접 관계된 사람이나 기관", "당사자",
-                  "the person directly involved",
-                  dict(en="the person or body directly involved in a matter"))),
         HEADING(2, "재판을 통한 분쟁 해결", translation=
                 "Resolving a dispute through a trial" "\n\n"
                 "A foreigner living in Korea may come into dispute with "
@@ -67,6 +61,12 @@ CHAPTER = dict(
                 "suit even against the state. In such a case the judge of the "
                 "court hears the parties’ arguments and resolves the dispute "
                 "by giving a ruling according to the law."),
+        GLOSSARY(("분쟁", "사람이나 집단들 간에 문제가 일어나서 다투는 것", "분쟁",
+                  "a dispute, a conflict",
+                  dict(en="people or groups quarrelling because a problem has arisen between them")),
+                 ("당사자", "어떤 일에 직접 관계된 사람이나 기관", "당사자",
+                  "the person directly involved",
+                  dict(en="the person or body directly involved in a matter"))),
         PARAGRAPH("외국인이 한국에서 살면서 다른 사람과 {분쟁}을 겪을 수도 있다. 그것이 "
                   "{원만하게|원만하다} 잘 해결되면 좋지만 그렇지 않을 경우에는 법의 도움을 받을 수 있다."),
         PARAGRAPH("법을 통해 분쟁을 해결하고 권리를 보호하는 대표적인 방법은 {소송}이다. 소송은 {법원}에 "
@@ -77,11 +77,6 @@ CHAPTER = dict(
                   "{주장}을 듣고 법에 따라 {판결}을 {내려|내리다} 분쟁을 해결한다."),
         FIGURE("법원의 모습(scourt.go.kr)"),
 
-        GLOSSARY(("중위소득",
-                  "전체 가구의 소득액을 순서대로 늘어놓았을 때 중간에 위치한 소득액을 말함. 중위소득은 가족 "
-                  "구성원 수에 따라 달라지는데 2020년 4인 가구의 기준 중위소득은 4,749,174원임",
-                  "중위소득", "the median income",
-                  dict(en="the income that falls in the middle when the incomes of all households are set out in order. Median income varies with the number of people in the family; in 2020 the standard median income for a household of four was 4,749,174 won"))),
         HEADING(2, "약자들을 위한 법률 지원: 대한법률구조공단", translation=
                 "Legal support for the weaker party: the Korea Legal Aid "
                 "Corporation" "\n\n"
@@ -103,6 +98,11 @@ CHAPTER = dict(
                 "lawyers’ fee scale the Supreme Court sets. To prove one’s "
                 "income, papers such as a health insurance certificate or a "
                 "receipt for earned income tax withholding will do."),
+        GLOSSARY(("중위소득",
+                  "전체 가구의 소득액을 순서대로 늘어놓았을 때 중간에 위치한 소득액을 말함. 중위소득은 가족 "
+                  "구성원 수에 따라 달라지는데 2020년 4인 가구의 기준 중위소득은 4,749,174원임",
+                  "중위소득", "the median income",
+                  dict(en="the income that falls in the middle when the incomes of all households are set out in order. Median income varies with the number of people in the family; in 2020 the standard median income for a household of four was 4,749,174 won"))),
         PARAGRAPH("일반적으로 개인이 혼자서 재판을 준비하기는 쉽지 않으므로 {변호사}와 같은 "
                   "{법률전문가}의 도움을 많이 받는다. 그런데 이 경우 비용이 큰 {부담}이 될 수 있는데 이때 "
                   "{대한법률구조공단}의 도움을 받으면 좋다. 대한법률구조공단은 경제적으로 어렵거나 법을 잘 "
@@ -149,10 +149,6 @@ CHAPTER = dict(
         SOURCE("[자료] 대법원"),
 
         SECTION("part", "02 재판 외에 분쟁을 해결하는 방법에는 어떤 것이 있을까?"),
-        GLOSSARY(("제3자", "해당 문제의 직접적인 당사자 외의 사람", "제3자",
-                  dict(en="a person other than those directly involved in the matter")),
-                 ("자문", "전문가에게 어떤 일을 더 잘 처리하는 방법을 물어보는 것", "자문",
-                  dict(en="asking an expert how to handle something better"))),
         HEADING(2, "대안적 분쟁 해결 제도", translation=
                 "Alternative dispute resolution" "\n\n"
                 "Not every dispute has to be resolved through a trial. That "
@@ -165,6 +161,10 @@ CHAPTER = dict(
                 "offers advice or counsel; and arbitration, where a third "
                 "party is given full authority and settles the matter "
                 "bindingly."),
+        GLOSSARY(("제3자", "해당 문제의 직접적인 당사자 외의 사람", "제3자",
+                  dict(en="a person other than those directly involved in the matter")),
+                 ("자문", "전문가에게 어떤 일을 더 잘 처리하는 방법을 물어보는 것", "자문",
+                  dict(en="asking an expert how to handle something better"))),
         PARAGRAPH("모든 분쟁을 재판을 통해 해결할 필요는 없다. 왜냐하면 재판에는 많은 시간과 비용이 들기 "
                   "때문에 재판 과정 자체가 당사자들에게 큰 고통이 될 수도 있기 때문이다. 한국에서는 재판까지 "
                   "가지 않고도 분쟁을 해결할 수 있는 제도를 마련해 두고 있다. 여기에는 당사자들이 "
@@ -172,13 +172,6 @@ CHAPTER = dict(
                   "제공하는 {조정}, 그리고 제3자가 모든 권한을 {부여받아|부여받다} 강제로 해결하는 {중재}가 "
                   "있다."),
 
-        GLOSSARY(("구제", "부당하게 피해를 입은 사람의 권리나 이익을 회복하도록 하는 일", "구제",
-                  dict(en="restoring the rights or interests of a person who has been unfairly harmed")),
-                 ("권고", "어떤 행위를 하도록 권하는 것", "권고",
-                  dict(en="advising that something be done")),
-                 ("부패", "지위에 따른 권한과 영향력을 부당하게 사용하여 사회질서에 반하여 자신의 이익을 "
-                          "취하는 것", "부패",
-                  dict(en="unfairly using the authority and influence of one's position to take gain for oneself, against the order of society"))),
         HEADING(2, "권리를 보호해 주는 다양한 기관", translation=
                 "The bodies that protect rights" "\n\n"
                 "Korea runs a number of bodies for the protection of people’s "
@@ -202,6 +195,13 @@ CHAPTER = dict(
                 "Korea, and help with bringing a suit. Beyond those, asking "
                 "at a public body such as the local community service centre, "
                 "or at a civic organisation, will get one basic help."),
+        GLOSSARY(("구제", "부당하게 피해를 입은 사람의 권리나 이익을 회복하도록 하는 일", "구제",
+                  dict(en="restoring the rights or interests of a person who has been unfairly harmed")),
+                 ("권고", "어떤 행위를 하도록 권하는 것", "권고",
+                  dict(en="advising that something be done")),
+                 ("부패", "지위에 따른 권한과 영향력을 부당하게 사용하여 사회질서에 반하여 자신의 이익을 "
+                          "취하는 것", "부패",
+                  dict(en="unfairly using the authority and influence of one's position to take gain for oneself, against the order of society"))),
         PARAGRAPH("한국에서는 법원 외에도 국민의 권리 보호를 위해 여러 기관을 운영하고 있다."),
         PARAGRAPH("{국가인권위원회}는 모든 사람들의 기본적인 {인권}을 보호하기 위한 {독립된|독립되다} "
                   "국가기관이다. {인권침해}를 당한 사람은 국가인권위원회에 상담이나 {조사}, {구제} 등을 "

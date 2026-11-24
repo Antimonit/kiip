@@ -43,14 +43,6 @@ CHAPTER = dict(
               [["기본", "법", "30. 외국인과 법", "외국인의 법적 권리와 의무"]]),
 
         SECTION("part", "01 외국인이 한국에 머무르려면 어떤 절차가 필요할까?"),
-        GLOSSARY(("유효 기간", "어떤 물건을 정상적으로 사용할 수 있는 기간", "유효 기간",
-                  dict(en="the period during which a thing can be used normally")),
-                 ("공중위생", "다수의 사람들에게 영향을 줄 수 있는 질병을 예방하고 건강을 유지하는 것",
-                  "공중위생", "public health",
-                  dict(en="preventing diseases that can affect large numbers of people, and keeping them healthy")),
-                 ("방역", "전염병 등을 퍼지지 않도록 예방하는 것", "방역",
-                  "prevention of epidemics",
-                  dict(en="preventing infectious diseases and the like from spreading"))),
         HEADING(2, "외국인이 한국에 들어오는 과정", translation=
                 "How a foreigner enters Korea" "\n\n"
                 "A foreigner wishing to enter Korea must hold a passport "
@@ -70,6 +62,14 @@ CHAPTER = dict(
                 "as with COVID-19 in 2020, everyone entering must take a "
                 "diagnostic test and follow Korea’s disease-control "
                 "measures, such as isolating at home or at a facility."),
+        GLOSSARY(("유효 기간", "어떤 물건을 정상적으로 사용할 수 있는 기간", "유효 기간",
+                  dict(en="the period during which a thing can be used normally")),
+                 ("공중위생", "다수의 사람들에게 영향을 줄 수 있는 질병을 예방하고 건강을 유지하는 것",
+                  "공중위생", "public health",
+                  dict(en="preventing diseases that can affect large numbers of people, and keeping them healthy")),
+                 ("방역", "전염병 등을 퍼지지 않도록 예방하는 것", "방역",
+                  "prevention of epidemics",
+                  dict(en="preventing infectious diseases and the like from spreading"))),
         PARAGRAPH("한국으로 들어오고자 하는 외국인은 {유효 기간}이 남아 있는 {여권}과 비자(VISA)를 "
                   "가지고 있어야 한다. 여권은 외국을 여행하는 사람의 {국적}이나 {신분}을 증명해 주는 "
                   "문서이다. 비자는 ‘{사증}’이라고도 하는데 한국 정부가 외국인의 입국을 "
@@ -83,12 +83,6 @@ CHAPTER = dict(
                   "{방역} {조치}를 따라야 한다."),
         FIGURE("한국 입국자에 대한 코로나19 선별 진료소 검사 모습"),
 
-        GLOSSARY(("체류", "어떤 지역에 오래 머물러 있는 상태", "체류",
-                  dict(en="the state of staying a long time in a place")),
-                 ("연수", "지식이나 기술을 연구하고 훈련함", "연수",
-                  dict(en="studying and training in knowledge or skills")),
-                 ("투자", "사업을 하기 위해 돈을 댐", "투자",
-                  dict(en="putting up money in order to do business"))),
         HEADING(2, "외국인이 한국에 머무르는 과정", translation=
                 "How a foreigner stays in Korea" "\n\n"
                 "To stay in Korea a foreigner must hold a residence status. "
@@ -102,6 +96,12 @@ CHAPTER = dict(
                 "registration, a change of residence must be reported to the "
                 "immigration office or the community service centre within "
                 "14 days of moving in."),
+        GLOSSARY(("체류", "어떤 지역에 오래 머물러 있는 상태", "체류",
+                  dict(en="the state of staying a long time in a place")),
+                 ("연수", "지식이나 기술을 연구하고 훈련함", "연수",
+                  dict(en="studying and training in knowledge or skills")),
+                 ("투자", "사업을 하기 위해 돈을 댐", "투자",
+                  dict(en="putting up money in order to do business"))),
         PARAGRAPH("외국인이 한국에 머무르기 위해서는 {체류} {자격}을 갖추어야 한다. 체류 자격은 체류 "
                   "기간에 따라 다르다. {단기체류}는 관광이나 가족 방문 등을 목적으로 90일 이내로 "
                   "머무르는 것이고, {장기체류}는 유학, {연수}, 결혼, {투자} 등의 목적으로 90일을 "
@@ -141,16 +141,6 @@ CHAPTER = dict(
                "생년월일을 입력하면 즉시 확인 및 출력이 가능하다."),
 
         SECTION("part", "02 외국인의 정착을 돕는 법에는 어떤 것이 있을까?"),
-        GLOSSARY(("재한 외국인", "한국에 있는 외국인", "재한 외국인",
-                  "a foreigner residing in Korea",
-                  dict(en="a foreigner in Korea")),
-                 ("다문화", "한 사회 안에 다양한 인종, 민족, 집단, 문화 등이 어우러져 사는 현상",
-                  "다문화", "multicultural",
-                  dict(en="people of varied races, ethnic groups, communities and cultures living together in one society")),
-                 ("세계인의 날",
-                  "한국 국민과 재한 외국인이 서로 존중하며 살아갈 수 있도록 2007년 한국에서 법으로 정한 "
-                  "기념일", "세계인의 날",
-                  dict(en="a commemorative day set by law in Korea in 2007 so that Korean citizens and foreigners in Korea can live with respect for each other"))),
         HEADING(2, "재한 외국인을 지원하는 법", translation=
                 "The law that supports foreigners in Korea" "\n\n"
                 "Korea supports foreigners so that they can adapt to Korean "
@@ -166,6 +156,16 @@ CHAPTER = dict(
                 "set as Together Day, helping Koreans and foreigners "
                 "residing here to respect each other’s culture and "
                 "traditions."),
+        GLOSSARY(("재한 외국인", "한국에 있는 외국인", "재한 외국인",
+                  "a foreigner residing in Korea",
+                  dict(en="a foreigner in Korea")),
+                 ("다문화", "한 사회 안에 다양한 인종, 민족, 집단, 문화 등이 어우러져 사는 현상",
+                  "다문화", "multicultural",
+                  dict(en="people of varied races, ethnic groups, communities and cultures living together in one society")),
+                 ("세계인의 날",
+                  "한국 국민과 재한 외국인이 서로 존중하며 살아갈 수 있도록 2007년 한국에서 법으로 정한 "
+                  "기념일", "세계인의 날",
+                  dict(en="a commemorative day set by law in Korea in 2007 so that Korean citizens and foreigners in Korea can live with respect for each other"))),
         PARAGRAPH("한국에서는 외국인이 한국 사회에 {적응하고|적응하다} 개인의 능력을 "
                   "{발휘하여|발휘하다} 행복한 생활을 할 수 있도록 지원하고 있다. 대표적인 예가 바로 "
                   "2007년에 만들어진 {재한외국인처우기본법}이다."),
@@ -176,10 +176,6 @@ CHAPTER = dict(
                   "{존중하도록|존중하다} 돕고 있다."),
         FIGURE("외국인주민을 위한 시민교육 장면 (수원시 외국인복지센터)"),
 
-        GLOSSARY(("다국어", "여러 나라의 말", "다국어", "multilingual",
-                  dict(en="the languages of several countries")),
-                 ("모국어", "자기 나라의 말", "모국어", "native language",
-                  dict(en="the language of one's own country"))),
         HEADING(2, "외국인의 편리한 생활을 돕기 위한 제도", translation=
                 "The schemes that make life easier for foreigners" "\n\n"
                 "Schemes that can help foreigners live more conveniently are "
@@ -203,6 +199,10 @@ CHAPTER = dict(
                 "emergency medical support service, and a foreign worker can "
                 "receive it by applying to a medical institution designated "
                 "by one of the 17 cities and provinces."),
+        GLOSSARY(("다국어", "여러 나라의 말", "다국어", "multilingual",
+                  dict(en="the languages of several countries")),
+                 ("모국어", "자기 나라의 말", "모국어", "native language",
+                  dict(en="the language of one's own country"))),
         PARAGRAPH("{재한외국인처우기본법} 등을 {근거}로 외국인이 보다 편리하게 생활하는 데 도움을 줄 수 "
                   "있는 제도가 실시되고 있다. 예를 들어, 외국인의 {언어소통} 문제를 해결하기 위해 "
                   "{법무부}, 여성가족부, 고용노동부 등을 중심으로 {다국어} 전화상담서비스를 실시하고 "

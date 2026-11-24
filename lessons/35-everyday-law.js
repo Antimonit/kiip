@@ -170,6 +170,12 @@ KIIP.chapter({
    "text": "01 경범죄에는 무엇이 있을까?"
   },
   {
+   "type": "heading",
+   "level": 2,
+   "text": "경범죄",
+   "titleTranslation": "Minor offences"
+  },
+  {
    "type": "glossary",
    "entries": [
     {
@@ -205,12 +211,6 @@ KIIP.chapter({
      "translation": "a person who has, or may have, an infectious disease staying at home of their own accord and keeping apart from others"
     }
    ]
-  },
-  {
-   "type": "heading",
-   "level": 2,
-   "text": "경범죄",
-   "titleTranslation": "Minor offences"
   },
   {
    "type": "paragraph",
@@ -532,6 +532,12 @@ KIIP.chapter({
    ]
   },
   {
+   "type": "heading",
+   "level": 2,
+   "text": "쓰레기 무단투기",
+   "titleTranslation": "Fly-tipping"
+  },
+  {
    "type": "glossary",
    "entries": [
     {
@@ -559,12 +565,6 @@ KIIP.chapter({
      "translation": "a system that pays a cash reward for reporting a person who dumps rubbish illegally"
     }
    ]
-  },
-  {
-   "type": "heading",
-   "level": 2,
-   "text": "쓰레기 무단투기",
-   "titleTranslation": "Fly-tipping"
   },
   {
    "type": "paragraph",
@@ -667,6 +667,12 @@ KIIP.chapter({
    "text": "쓰레기 종량제 봉투 (사진 출처: 〈연합뉴스〉)"
   },
   {
+   "type": "heading",
+   "level": 2,
+   "text": "무단횡단",
+   "titleTranslation": "Jaywalking"
+  },
+  {
    "type": "glossary",
    "entries": [
     {
@@ -694,12 +700,6 @@ KIIP.chapter({
      "translation": "a place made so that people can cross where a railway and a road meet"
     }
    ]
-  },
-  {
-   "type": "heading",
-   "level": 2,
-   "text": "무단횡단",
-   "titleTranslation": "Jaywalking"
   },
   {
    "type": "paragraph",
@@ -966,6 +966,12 @@ KIIP.chapter({
    "text": "02 음주운전과 학교폭력은 무엇일까?"
   },
   {
+   "type": "heading",
+   "level": 2,
+   "text": "음주운전",
+   "titleTranslation": "Drink-driving"
+  },
+  {
    "type": "glossary",
    "entries": [
     {
@@ -977,12 +983,6 @@ KIIP.chapter({
      "translation": "something that was hidden being found and brought to light"
     }
    ]
-  },
-  {
-   "type": "heading",
-   "level": 2,
-   "text": "음주운전",
-   "titleTranslation": "Drink-driving"
   },
   {
    "type": "paragraph",
@@ -1236,6 +1236,12 @@ KIIP.chapter({
    "text": "교통경찰의 음주 측정"
   },
   {
+   "type": "heading",
+   "level": 2,
+   "text": "학교폭력",
+   "titleTranslation": "Violence at school"
+  },
+  {
    "type": "glossary",
    "entries": [
     {
@@ -1255,12 +1261,6 @@ KIIP.chapter({
      "translation": "cutting someone off or keeping them at a distance"
     }
    ]
-  },
-  {
-   "type": "heading",
-   "level": 2,
-   "text": "학교폭력",
-   "titleTranslation": "Violence at school"
   },
   {
    "type": "paragraph",

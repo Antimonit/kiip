@@ -152,19 +152,6 @@ KIIP.chapter({
    "text": "01 조선은 나라의 기틀을 어떻게 마련하였을까?"
   },
   {
-   "type": "glossary",
-   "entries": [
-    {
-     "term": "성곽",
-     "definition": [
-      "성과 성의 둘레"
-     ],
-     "annotation": "성곽",
-     "translation": "a fortress and the wall around it"
-    }
-   ]
-  },
-  {
    "type": "heading",
    "level": 2,
    "text": "조선의 건국",
@@ -176,6 +163,19 @@ KIIP.chapter({
     }
    ],
    "titleTranslation": "The founding of 조선"
+  },
+  {
+   "type": "glossary",
+   "entries": [
+    {
+     "term": "성곽",
+     "definition": [
+      "성과 성의 둘레"
+     ],
+     "annotation": "성곽",
+     "translation": "a fortress and the wall around it"
+    }
+   ]
   },
   {
    "type": "paragraph",
@@ -442,6 +442,12 @@ KIIP.chapter({
    ]
   },
   {
+   "type": "heading",
+   "level": 2,
+   "text": "조선의 발전",
+   "titleTranslation": "The development of 조선"
+  },
+  {
    "type": "glossary",
    "entries": [
     {
@@ -453,12 +459,6 @@ KIIP.chapter({
      "translation": "호패 differed a little according to status. The name, year of birth, address, complexion, height and so on were written on them."
     }
    ]
-  },
-  {
-   "type": "heading",
-   "level": 2,
-   "text": "조선의 발전",
-   "titleTranslation": "The development of 조선"
   },
   {
    "type": "paragraph",
@@ -878,6 +878,12 @@ KIIP.chapter({
    "text": "02 조선 후기에는 어떤 변화가 나타났을까?"
   },
   {
+   "type": "heading",
+   "level": 2,
+   "text": "두 차례의 큰 전쟁을 극복한 조선",
+   "titleTranslation": "조선 overcomes two great wars"
+  },
+  {
    "type": "glossary",
    "entries": [
     {
@@ -913,12 +919,6 @@ KIIP.chapter({
      "translation": "the place where the Qing army was fought to the last during the 병자호란"
     }
    ]
-  },
-  {
-   "type": "heading",
-   "level": 2,
-   "text": "두 차례의 큰 전쟁을 극복한 조선",
-   "titleTranslation": "조선 overcomes two great wars"
   },
   {
    "type": "paragraph",
@@ -1213,6 +1213,12 @@ KIIP.chapter({
    "text": "남한산성의 성문과 성벽 사진"
   },
   {
+   "type": "heading",
+   "level": 2,
+   "text": "조선 후기의 사회와 문화",
+   "titleTranslation": "Society and culture in late 조선"
+  },
+  {
    "type": "glossary",
    "entries": [
     {
@@ -1256,12 +1262,6 @@ KIIP.chapter({
      "translation": "ordinary pictures of the people's life, painted mostly by non-professionals"
     }
    ]
-  },
-  {
-   "type": "heading",
-   "level": 2,
-   "text": "조선 후기의 사회와 문화",
-   "titleTranslation": "Society and culture in late 조선"
   },
   {
    "type": "paragraph",

@@ -281,6 +281,12 @@ KIIP.chapter({
    "text": "01 근대 국가 수립을 위해 어떤 노력을 펼쳤을까?"
   },
   {
+   "type": "heading",
+   "level": 2,
+   "text": "흥선 대원군의 정책과 개항",
+   "titleTranslation": "The policies of 흥선 대원군 and the opening of the ports"
+  },
+  {
    "type": "glossary",
    "entries": [
     {
@@ -300,12 +306,6 @@ KIIP.chapter({
      "translation": "opening the ports so that foreign ships can come and go"
     }
    ]
-  },
-  {
-   "type": "heading",
-   "level": 2,
-   "text": "흥선 대원군의 정책과 개항",
-   "titleTranslation": "The policies of 흥선 대원군 and the opening of the ports"
   },
   {
    "type": "paragraph",
@@ -480,6 +480,20 @@ KIIP.chapter({
    "text": "척화비(서울 마포) — 낱말 풀이에 딸린 비석 사진"
   },
   {
+   "type": "heading",
+   "level": 2,
+   "text": "근대 국가 수립을 위한 노력과 일본의 침략",
+   "spans": [
+    "근대 국가 ",
+    {
+     "word": "수립",
+     "annotation": "수립"
+    },
+    "을 위한 노력과 일본의 침략"
+   ],
+   "titleTranslation": "Efforts to found a modern state, and Japan’s aggression"
+  },
+  {
    "type": "glossary",
    "entries": [
     {
@@ -523,20 +537,6 @@ KIIP.chapter({
      "translation": "The 독립 협회 held the rallies called 만민 공동회, criticised the great powers’ political interference and economic aggression, and demanded that the government put the country right."
     }
    ]
-  },
-  {
-   "type": "heading",
-   "level": 2,
-   "text": "근대 국가 수립을 위한 노력과 일본의 침략",
-   "spans": [
-    "근대 국가 ",
-    {
-     "word": "수립",
-     "annotation": "수립"
-    },
-    "을 위한 노력과 일본의 침략"
-   ],
-   "titleTranslation": "Efforts to found a modern state, and Japan’s aggression"
   },
   {
    "type": "paragraph",
@@ -1111,6 +1111,12 @@ KIIP.chapter({
    "text": "02 한국인은 독립운동을 어떻게 펼쳐 나갔을까?"
   },
   {
+   "type": "heading",
+   "level": 2,
+   "text": "일제(일본 제국)의 강압 통치",
+   "titleTranslation": "The coercive rule of 일제 (the Japanese Empire)"
+  },
+  {
    "type": "glossary",
    "entries": [
     {
@@ -1146,12 +1152,6 @@ KIIP.chapter({
      "translation": "women who were forced to live as sexual slaves for Japanese soldiers"
     }
    ]
-  },
-  {
-   "type": "heading",
-   "level": 2,
-   "text": "일제(일본 제국)의 강압 통치",
-   "titleTranslation": "The coercive rule of 일제 (the Japanese Empire)"
   },
   {
    "type": "paragraph",
@@ -1456,6 +1456,12 @@ KIIP.chapter({
    "text": "평화의 소녀상 — 일본군 ‘위안부’ 문제에 대한 진상 규명과 책임 이행 등을 촉구하며 곳곳에 조각상이 세워졌다."
   },
   {
+   "type": "heading",
+   "level": 2,
+   "text": "일제에 맞서 싸운 한국인의 독립운동",
+   "titleTranslation": "The independence movement of the Koreans who fought 일제"
+  },
+  {
    "type": "glossary",
    "entries": [
     {
@@ -1467,12 +1473,6 @@ KIIP.chapter({
      "translation": "He led the Provisional Government of the Republic of Korea and guided the independence movement."
     }
    ]
-  },
-  {
-   "type": "heading",
-   "level": 2,
-   "text": "일제에 맞서 싸운 한국인의 독립운동",
-   "titleTranslation": "The independence movement of the Koreans who fought 일제"
   },
   {
    "type": "paragraph",

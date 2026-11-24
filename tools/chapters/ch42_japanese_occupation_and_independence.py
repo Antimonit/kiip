@@ -54,12 +54,6 @@ CHAPTER = dict(
               [["기본", "역사", "43. 한국의 역사 인물", "유관순"]]),
 
         SECTION("part", "01 근대 국가 수립을 위해 어떤 노력을 펼쳤을까?"),
-        GLOSSARY(("척화비(서울 마포)",
-                  "“서양 오랑캐가 침범하는데 싸우지 않으면 화친(사이좋게 지내는 것)하는 것이요, 화친을 "
-                  "주장하는 일은 나라를 파는 일이다.”라는 글이 새겨져 있다.", "척화비",
-                  dict(en="It is inscribed with the words “Western barbarians are invading; not to fight is to make peace (to get along on good terms), and to argue for peace is to sell the country.”")),
-                 ("개항", "항구를 열어 외국 배가 드나들 수 있게 함.", "개항",
-                  dict(en="opening the ports so that foreign ships can come and go"))),
         HEADING(2, "흥선 대원군의 정책과 개항", translation=
                 "The policies of 흥선 대원군 and the opening of the ports" "\n\n"
                 "In the latter half of the nineteenth century 흥선 대원군 took "
@@ -73,6 +67,12 @@ CHAPTER = dict(
                 "After 흥선 대원군 stepped down, a wind of change blew through "
                 "조선. Just then Japan demanded that 조선 open its doors, and "
                 "조선 opened its ports through the 강화도 Treaty (1876)."),
+        GLOSSARY(("척화비(서울 마포)",
+                  "“서양 오랑캐가 침범하는데 싸우지 않으면 화친(사이좋게 지내는 것)하는 것이요, 화친을 "
+                  "주장하는 일은 나라를 파는 일이다.”라는 글이 새겨져 있다.", "척화비",
+                  dict(en="It is inscribed with the words “Western barbarians are invading; not to fight is to make peace (to get along on good terms), and to argue for peace is to sell the country.”")),
+                 ("개항", "항구를 열어 외국 배가 드나들 수 있게 함.", "개항",
+                  dict(en="opening the ports so that foreign ships can come and go"))),
         PARAGRAPH("19세기 {후반} 12세의 어린 나이로 왕이 된 고종을 대신해 아버지 {흥선 대원군}이 "
                   "정치를 맡았다. 그는 왕의 {권위}를 높이기 위해 {경복궁}을 고쳐 지었고 세금을 "
                   "{합리적}으로 내게 하는 등의 정책을 {펼쳤다|펼치다}. 또한 프랑스, 미국 등 서양 국가의 "
@@ -82,18 +82,6 @@ CHAPTER = dict(
                   "하였다."),
         FIGURE("척화비(서울 마포) — 낱말 풀이에 딸린 비석 사진"),
 
-        GLOSSARY(("문물", "문화의 산물", "문물",
-                  dict(en="the products of culture")),
-                 ("개혁", "새롭게 뜯어고침", "개혁",
-                  dict(en="overhauling something anew")),
-                 ("개화", "새로운 사상이나 문물을 받아들여 발전함", "개화",
-                  dict(en="taking in new ideas and culture and developing")),
-                 ("급진", "급하게 진행함", "급진",
-                  dict(en="going ahead in haste")),
-                 ("만민 공동회",
-                  "독립 협회는 만민 공동회라는 집회를 열어 강대국의 정치적 간섭과 경제 침략을 비판하고, "
-                  "나라를 바로잡을 것을 정부에 요구하였다.", "만민 공동회",
-                  dict(en="The 독립 협회 held the rallies called 만민 공동회, criticised the great powers’ political interference and economic aggression, and demanded that the government put the country right."))),
         HEADING(2, "근대 국가 수립을 위한 노력과 일본의 침략", translation=
                 "Efforts to found a modern state, and Japan’s aggression" "\n\n"
                 "After the opening of the ports, efforts unfolded to take in "
@@ -118,6 +106,18 @@ CHAPTER = dict(
                 "politics. Koreans raised 의병 (righteous armies) and fought "
                 "against Japan’s aggression, but in the end lost their "
                 "sovereignty in 1910."),
+        GLOSSARY(("문물", "문화의 산물", "문물",
+                  dict(en="the products of culture")),
+                 ("개혁", "새롭게 뜯어고침", "개혁",
+                  dict(en="overhauling something anew")),
+                 ("개화", "새로운 사상이나 문물을 받아들여 발전함", "개화",
+                  dict(en="taking in new ideas and culture and developing")),
+                 ("급진", "급하게 진행함", "급진",
+                  dict(en="going ahead in haste")),
+                 ("만민 공동회",
+                  "독립 협회는 만민 공동회라는 집회를 열어 강대국의 정치적 간섭과 경제 침략을 비판하고, "
+                  "나라를 바로잡을 것을 정부에 요구하였다.", "만민 공동회",
+                  dict(en="The 독립 협회 held the rallies called 만민 공동회, criticised the great powers’ political interference and economic aggression, and demanded that the government put the country right."))),
         PARAGRAPH("{개항} 이후 외국의 {문물}을 받아들이거나 나라를 {개혁}하여 근대 국가로 발전시키려는 "
                   "노력이 {전개되었다|전개되다}. 조선이 더 빨리 {개화}해야 한다고 생각했던 일부 "
                   "사람들은 나라 전체의 {틀}을 새로운 시대에 맞게 바꾸려고 {급진}적인 개혁을 "
@@ -153,15 +153,6 @@ CHAPTER = dict(
         FIGURE("황궁우(왼쪽)와 환구단(오른쪽)"),
 
         SECTION("part", "02 한국인은 독립운동을 어떻게 펼쳐 나갔을까?"),
-        GLOSSARY(("강압", "강한 힘으로 내리 누름", "강압",
-                  dict(en="pressing down with strong force")),
-                 ("고문", "몸에 고통을 주면서 질문하는 것", "고문",
-                  dict(en="questioning while inflicting pain on the body")),
-                 ("물자", "물건이나 자원", "물자",
-                  dict(en="goods or resources")),
-                 ("일본군 ‘위안부’", "일본 군인을 위해 강제로 성노예 생활을 해야만 했던 여성",
-                  "위안부",
-                  dict(en="women who were forced to live as sexual slaves for Japanese soldiers"))),
         HEADING(2, "일제(일본 제국)의 강압 통치", translation=
                 "The coercive rule of 일제 (the Japanese Empire)" "\n\n"
                 "After taking away 대한 제국’s sovereignty, Japan ruled by "
@@ -179,6 +170,15 @@ CHAPTER = dict(
                 "were also cases of some Korean women being deceived or taken "
                 "by force and made into ‘comfort women’ for the Japanese "
                 "army."),
+        GLOSSARY(("강압", "강한 힘으로 내리 누름", "강압",
+                  dict(en="pressing down with strong force")),
+                 ("고문", "몸에 고통을 주면서 질문하는 것", "고문",
+                  dict(en="questioning while inflicting pain on the body")),
+                 ("물자", "물건이나 자원", "물자",
+                  dict(en="goods or resources")),
+                 ("일본군 ‘위안부’", "일본 군인을 위해 강제로 성노예 생활을 해야만 했던 여성",
+                  "위안부",
+                  dict(en="women who were forced to live as sexual slaves for Japanese soldiers"))),
         PARAGRAPH("일본은 대한 제국의 {국권}을 {빼앗은|빼앗다} 뒤 {강압}적으로 {통치}하였다. 일본의 "
                   "{지배}에 반대하는 한국인을 {감옥}에 {가두고|가두다} {고문}을 하였다. 또한 한국인이 "
                   "{소유하고|소유하다} 있던 땅을 일본 {토지} 회사나 일본인에게 {싼값}으로 "
@@ -192,9 +192,6 @@ CHAPTER = dict(
         FIGURE("평화의 소녀상 — 일본군 ‘위안부’ 문제에 대한 진상 규명과 책임 이행 등을 촉구하며 곳곳에 "
                "조각상이 세워졌다."),
 
-        GLOSSARY(("김구(1876~1949)", "대한민국 임시 정부를 이끌며 독립운동을 지도하였다.",
-                  "김구",
-                  dict(en="He led the Provisional Government of the Republic of Korea and guided the independence movement."))),
         HEADING(2, "일제에 맞서 싸운 한국인의 독립운동", translation=
                 "The independence movement of the Koreans who fought 일제" "\n\n"
                 "During the Japanese occupation Koreans carried on the "
@@ -217,6 +214,9 @@ CHAPTER = dict(
                 "way at home and abroad was a great help in Korea becoming "
                 "independent. At last, on 15 August 1945, Korea regained its "
                 "sovereignty."),
+        GLOSSARY(("김구(1876~1949)", "대한민국 임시 정부를 이끌며 독립운동을 지도하였다.",
+                  "김구",
+                  dict(en="He led the Provisional Government of the Republic of Korea and guided the independence movement."))),
         PARAGRAPH("일제 강점기에 한국인들은 나라의 국권을 {되찾기|되찾다} 위해 {끊임없이} 독립운동을 펼쳐 "
                   "나갔다. 1919년 {3·1 운동}에는 수백만 명의 사람들이 거리에 나와 독립을 요구하였다. "
                   "이를 {계기}로 {김구} 등이 중심이 되어 중국 상하이에 {대한민국 임시 정부}를 세웠다. "

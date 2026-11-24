@@ -139,6 +139,12 @@ KIIP.chapter({
    "text": "01 한국에서 법은 어떤 의미를 가지고 있을까?"
   },
   {
+   "type": "heading",
+   "level": 2,
+   "text": "법의 목적과 역할",
+   "titleTranslation": "What the law is for, and what it does"
+  },
+  {
    "type": "glossary",
    "entries": [
     {
@@ -166,12 +172,6 @@ KIIP.chapter({
      "translation": "the spirit of keeping laws and rules well"
     }
    ]
-  },
-  {
-   "type": "heading",
-   "level": 2,
-   "text": "법의 목적과 역할",
-   "titleTranslation": "What the law is for, and what it does"
   },
   {
    "type": "paragraph",
@@ -685,6 +685,12 @@ KIIP.chapter({
    "text": "02 외국인에게는 어떤 법적 권리와 의무가 있을까?"
   },
   {
+   "type": "heading",
+   "level": 2,
+   "text": "외국인의 권리",
+   "titleTranslation": "The rights of foreigners"
+  },
+  {
    "type": "glossary",
    "entries": [
     {
@@ -720,12 +726,6 @@ KIIP.chapter({
      "translation": "forcibly expelling a foreigner staying in Korea to their home country or a third country when they disturb order or threaten safety"
     }
    ]
-  },
-  {
-   "type": "heading",
-   "level": 2,
-   "text": "외국인의 권리",
-   "titleTranslation": "The rights of foreigners"
   },
   {
    "type": "paragraph",

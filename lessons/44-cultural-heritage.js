@@ -446,6 +446,12 @@ KIIP.chapter({
    "text": "고려의 부석사 무량수전 (경상북도 영주)"
   },
   {
+   "type": "heading",
+   "level": 2,
+   "text": "유교 문화가 발전하다",
+   "titleTranslation": "Confucian culture develops"
+  },
+  {
    "type": "glossary",
    "entries": [
     {
@@ -457,12 +463,6 @@ KIIP.chapter({
      "translation": "the norms to be kept as a matter of courtesy"
     }
    ]
-  },
-  {
-   "type": "heading",
-   "level": 2,
-   "text": "유교 문화가 발전하다",
-   "titleTranslation": "Confucian culture develops"
   },
   {
    "type": "paragraph",
@@ -685,6 +685,12 @@ KIIP.chapter({
    "text": "02 과학기술을 알 수 있는 문화유산에는 어떤 것들이 있을까?"
   },
   {
+   "type": "heading",
+   "level": 2,
+   "text": "삼국 시대와 고려 시대의 과학기술",
+   "titleTranslation": "Science and technology in the Three Kingdoms and 고려 periods"
+  },
+  {
    "type": "glossary",
    "entries": [
     {
@@ -696,12 +702,6 @@ KIIP.chapter({
      "translation": "observing and measuring"
     }
    ]
-  },
-  {
-   "type": "heading",
-   "level": 2,
-   "text": "삼국 시대와 고려 시대의 과학기술",
-   "titleTranslation": "Science and technology in the Three Kingdoms and 고려 periods"
   },
   {
    "type": "paragraph",

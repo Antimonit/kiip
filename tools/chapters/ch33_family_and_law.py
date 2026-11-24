@@ -39,9 +39,6 @@ CHAPTER = dict(
                 "가족과 친족, 법률혼·사실혼·동거, 이혼의 종류, 이혼의 절차와 방법"]]),
 
         SECTION("part", "01 법은 결혼생활에 어떤 영향을 줄까?"),
-        GLOSSARY(("혼인 신고", "결혼한 사실을 행정 기관에 공식적으로 신고하는 일", "혼인 신고",
-                  "marriage registration",
-                  dict(en="officially reporting the fact of a marriage to an administrative office"))),
         HEADING(2, "부부로 인정받기 위한 절차", translation=
                 "The steps to being recognised as a married couple" "\n\n"
                 "Marriage is two people who love each other meeting and "
@@ -52,6 +49,9 @@ CHAPTER = dict(
                 "the protection of the law once they register. A couple who "
                 "have not registered may be unable to enjoy legal rights "
                 "over property, the raising of children and so on."),
+        GLOSSARY(("혼인 신고", "결혼한 사실을 행정 기관에 공식적으로 신고하는 일", "혼인 신고",
+                  "marriage registration",
+                  dict(en="officially reporting the fact of a marriage to an administrative office"))),
         PARAGRAPH("결혼은 사랑하는 두 사람이 만나 {부부}가 되는 것이다. 두 사람이 법적인 부부로 "
                   "{인정받기|인정받다} 위해서는 시청, 구청, 군청 등에 {혼인 신고}를 해야 한다. 결혼식을 "
                   "올리지 않은 부부라도 혼인 신고를 하면 부부로 인정되고 법의 보호를 받을 수 있다. 혼인 "
@@ -59,16 +59,6 @@ CHAPTER = dict(
                   "있다."),
         FIGURE("○○시청에 있는 혼인 신고 기념 포토존"),
 
-        GLOSSARY(("처분", "일정한 대상을 어떻게 처리할 것인가에 대해 결정함", "처분",
-                  dict(en="deciding how a given thing is to be dealt with")),
-                 ("부부 별산제",
-                  "부부가 혼인하기 전부터 각자 가졌던 재산 또는 혼인생활 중 자기 이름으로 얻은 재산을 "
-                  "각자의 것으로 인정하는 제도", "부부 별산제",
-                  "the separate property system",
-                  dict(en="the system that recognises as each spouse's own the property each held before the marriage, or gained in their own name during it")),
-                 ("가사노동", "청소, 빨래, 요리 등 가정을 유지하고 살림을 꾸려나가기 위해 하는 노동",
-                  "가사노동", "domestic chores",
-                  dict(en="the work done to maintain a home and keep the household going: cleaning, laundry, cooking and so on"))),
         HEADING(2, "부부의 권리와 의무", translation=
                 "A married couple’s rights and duties" "\n\n"
                 "In Korea each of a married couple may hold property of "
@@ -89,6 +79,16 @@ CHAPTER = dict(
                 "the domestic work themselves, someone else would have to be "
                 "employed to take it on, and that cost too would count as "
                 "the cost of living."),
+        GLOSSARY(("처분", "일정한 대상을 어떻게 처리할 것인가에 대해 결정함", "처분",
+                  dict(en="deciding how a given thing is to be dealt with")),
+                 ("부부 별산제",
+                  "부부가 혼인하기 전부터 각자 가졌던 재산 또는 혼인생활 중 자기 이름으로 얻은 재산을 "
+                  "각자의 것으로 인정하는 제도", "부부 별산제",
+                  "the separate property system",
+                  dict(en="the system that recognises as each spouse's own the property each held before the marriage, or gained in their own name during it")),
+                 ("가사노동", "청소, 빨래, 요리 등 가정을 유지하고 살림을 꾸려나가기 위해 하는 노동",
+                  "가사노동", "domestic chores",
+                  dict(en="the work done to maintain a home and keep the household going: cleaning, laundry, cooking and so on"))),
         PARAGRAPH("한국에서는 부부가 각자 자신의 {재산}을 가질 수 있고 자신의 뜻에 따라 그 재산을 "
                   "{처분}할 수 있는 권리가 있다. 이를 {부부 별산제}라고 한다. 그런데 부부 중 어느 한쪽의 "
                   "이름으로 되어 있는 재산이라고 해도 부부가 결혼 후에 함께 노력하여 얻은 것은 {공동} "
@@ -132,8 +132,6 @@ CHAPTER = dict(
                   "수 있게 되었다."),
 
         SECTION("part", "02 가족관계에서 생기는 문제를 법으로 어떻게 해결할 수 있을까?"),
-        GLOSSARY(("인격", "사람으로서의 품위와 자격", "인격", "personality, character",
-                  dict(en="dignity and standing as a person"))),
         HEADING(2, "가정 폭력의 해결", translation=
                 "Dealing with domestic violence" "\n\n"
                 "A family is the closest and most intimate relationship "
@@ -150,6 +148,8 @@ CHAPTER = dict(
                 "them, and not providing the money needed to live. Where "
                 "domestic violence occurs one can report it to the police or "
                 "ask a counselling centre for help."),
+        GLOSSARY(("인격", "사람으로서의 품위와 자격", "인격", "personality, character",
+                  dict(en="dignity and standing as a person"))),
         PARAGRAPH("가족은 가장 가깝고 {친밀한|친밀하다} 관계를 맺고 있지만 그렇다고 해서 {함부로} "
                   "{대하면|대하다} 안 된다. 가족은 서로 {존중하고|존중하다} 각자의 {인격}과 권리를 "
                   "지켜주어야 한다. 만약 가족 {구성원} 사이에 {신체적}, 정신적, {재산적} 피해를 주는 "
@@ -169,9 +169,6 @@ CHAPTER = dict(
                "한국가정법률상담소 1644-7077",
                "다누리 콜센터 1577-1366"),
 
-        GLOSSARY(("위자료", "다른 사람의 불법적인 행위로 인해 생긴 정신적 고통이나 피해에 대해 물어주는 돈",
-                  "위자료", "alimony, damages",
-                  dict(en="money paid for the mental suffering or harm caused by another person's unlawful act"))),
         HEADING(2, "이혼의 종류와 방법", translation=
                 "The kinds of divorce, and how it is done" "\n\n"
                 "Where a couple think they can no longer keep their married "
@@ -192,6 +189,9 @@ CHAPTER = dict(
                 "ask the other for part of the cost of doing so. The side "
                 "that does not raise them is allowed to see them within "
                 "limits."),
+        GLOSSARY(("위자료", "다른 사람의 불법적인 행위로 인해 생긴 정신적 고통이나 피해에 대해 물어주는 돈",
+                  "위자료", "alimony, damages",
+                  dict(en="money paid for the mental suffering or harm caused by another person's unlawful act"))),
         PARAGRAPH("부부가 더 이상 결혼 생활을 유지하기 어렵다고 생각하면 {합의}나 재판을 통해 {이혼}을 할 "
                   "수 있다. {협의 이혼}은 부부가 서로 합의하여 이혼을 하는 것이고, {재판상 이혼}은 부부 중 "
                   "한쪽은 이혼을 원하는데 다른 한쪽이 {동의하지|동의하다} 않을 때 법원의 {판결}에 따라 "

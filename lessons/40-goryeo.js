@@ -157,6 +157,12 @@ KIIP.chapter({
    "text": "01 고려는 어떻게 발전했을까?"
   },
   {
+   "type": "heading",
+   "level": 2,
+   "text": "고려의 건국과 후삼국 통일",
+   "titleTranslation": "The founding of 고려 and the unification of the Later Three Kingdoms"
+  },
+  {
    "type": "glossary",
    "entries": [
     {
@@ -176,12 +182,6 @@ KIIP.chapter({
      "translation": "taking over and carrying on"
     }
    ]
-  },
-  {
-   "type": "heading",
-   "level": 2,
-   "text": "고려의 건국과 후삼국 통일",
-   "titleTranslation": "The founding of 고려 and the unification of the Later Three Kingdoms"
   },
   {
    "type": "paragraph",
@@ -432,6 +432,12 @@ KIIP.chapter({
    "text": "후삼국 시대 — 한반도 지도에 고려, 후백제, 신라의 영역이 색으로 나뉘어 있음(황해, 동해)"
   },
   {
+   "type": "heading",
+   "level": 2,
+   "text": "고려의 발전과 변화",
+   "titleTranslation": "The development of 고려 and its changes"
+  },
+  {
    "type": "glossary",
    "entries": [
     {
@@ -467,12 +473,6 @@ KIIP.chapter({
      "translation": "a subject who does the work of the state as a soldier"
     }
    ]
-  },
-  {
-   "type": "heading",
-   "level": 2,
-   "text": "고려의 발전과 변화",
-   "titleTranslation": "The development of 고려 and its changes"
   },
   {
    "type": "paragraph",
@@ -1325,6 +1325,12 @@ KIIP.chapter({
    "text": "고려의 대외무역 — 지도: 거란(요), 여진, 고려, 일본, 황해, 동해; 서경, 개경, 벽란도, 동경, 합포, 탐라, 우산, 덩저우, 밍저우. 화살표와 함께 적힌 물품: ‘금, 은, 인삼, 종이, 화문석, 부채’, ‘약재, 자기, 비단, 차, 향료, 책, 악기’"
   },
   {
+   "type": "heading",
+   "level": 2,
+   "text": "고려의 사회 모습",
+   "titleTranslation": "What 고려 society was like"
+  },
+  {
    "type": "glossary",
    "entries": [
     {
@@ -1344,12 +1350,6 @@ KIIP.chapter({
      "translation": "being exact and meticulous"
     }
    ]
-  },
-  {
-   "type": "heading",
-   "level": 2,
-   "text": "고려의 사회 모습",
-   "titleTranslation": "What 고려 society was like"
   },
   {
    "type": "paragraph",

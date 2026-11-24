@@ -335,19 +335,6 @@ KIIP.chapter({
    "text": "01 삼국은 어떻게 발전했을까?"
   },
   {
-   "type": "glossary",
-   "entries": [
-    {
-     "term": "유역",
-     "definition": [
-      "강물이 흐르는 지역의 주변"
-     ],
-     "annotation": "유역",
-     "translation": "the land around where a river flows"
-    }
-   ]
-  },
-  {
    "type": "heading",
    "level": 2,
    "text": "삼국의 건국",
@@ -359,6 +346,19 @@ KIIP.chapter({
     }
    ],
    "titleTranslation": "The founding of the Three Kingdoms"
+  },
+  {
+   "type": "glossary",
+   "entries": [
+    {
+     "term": "유역",
+     "definition": [
+      "강물이 흐르는 지역의 주변"
+     ],
+     "annotation": "유역",
+     "translation": "the land around where a river flows"
+    }
+   ]
   },
   {
    "type": "paragraph",
@@ -517,6 +517,12 @@ KIIP.chapter({
    ]
   },
   {
+   "type": "heading",
+   "level": 2,
+   "text": "삼국의 발전",
+   "titleTranslation": "The development of the Three Kingdoms"
+  },
+  {
    "type": "glossary",
    "entries": [
     {
@@ -552,12 +558,6 @@ KIIP.chapter({
      "translation": "it carries a record that 고구려 held the central region of the Korean peninsula in the 5th century."
     }
    ]
-  },
-  {
-   "type": "heading",
-   "level": 2,
-   "text": "삼국의 발전",
-   "titleTranslation": "The development of the Three Kingdoms"
   },
   {
    "type": "paragraph",
@@ -1087,6 +1087,12 @@ KIIP.chapter({
    "text": "02 남북국 시대에는 어떤 나라들이 발전했을까?"
   },
   {
+   "type": "heading",
+   "level": 2,
+   "text": "신라의 삼국 통일",
+   "titleTranslation": "신라’s unification of the Three Kingdoms"
+  },
+  {
    "type": "glossary",
    "entries": [
     {
@@ -1106,12 +1112,6 @@ KIIP.chapter({
      "translation": "joining forces with each other and becoming one"
     }
    ]
-  },
-  {
-   "type": "heading",
-   "level": 2,
-   "text": "신라의 삼국 통일",
-   "titleTranslation": "신라’s unification of the Three Kingdoms"
   },
   {
    "type": "paragraph",
@@ -1336,6 +1336,12 @@ KIIP.chapter({
    ]
   },
   {
+   "type": "heading",
+   "level": 2,
+   "text": "통일 신라와 발해",
+   "titleTranslation": "Unified 신라 and 발해"
+  },
+  {
    "type": "glossary",
    "entries": [
     {
@@ -1363,12 +1369,6 @@ KIIP.chapter({
      "translation": "from the way the roof tiles were made, their shape and so on, one can gather that the culture of 발해 carried on the culture of 고구려."
     }
    ]
-  },
-  {
-   "type": "heading",
-   "level": 2,
-   "text": "통일 신라와 발해",
-   "titleTranslation": "Unified 신라 and 발해"
   },
   {
    "type": "paragraph",

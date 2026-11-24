@@ -1171,6 +1171,12 @@ KIIP.chapter({
    "text": "『난설헌집』(오죽헌 시립 박물관) — 허난설헌의 시를 모아 만든 책이다."
   },
   {
+   "type": "heading",
+   "level": 2,
+   "text": "재산을 모아 제주도 백성을 구한 상인, 김만덕",
+   "titleTranslation": "김만덕, the merchant who built a fortune and saved the people of Jeju"
+  },
+  {
    "type": "glossary",
    "entries": [
     {
@@ -1182,12 +1188,6 @@ KIIP.chapter({
      "translation": "a year in which the farming has not gone well"
     }
    ]
-  },
-  {
-   "type": "heading",
-   "level": 2,
-   "text": "재산을 모아 제주도 백성을 구한 상인, 김만덕",
-   "titleTranslation": "김만덕, the merchant who built a fortune and saved the people of Jeju"
   },
   {
    "type": "paragraph",

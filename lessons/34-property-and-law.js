@@ -131,6 +131,12 @@ KIIP.chapter({
    "text": "01 금전 거래를 할 때 무엇을 알아 두어야 할까?"
   },
   {
+   "type": "heading",
+   "level": 2,
+   "text": "계약의 의미",
+   "titleTranslation": "What a contract means"
+  },
+  {
    "type": "glossary",
    "entries": [
     {
@@ -158,12 +164,6 @@ KIIP.chapter({
      "translation": "a legal act having no effect"
     }
    ]
-  },
-  {
-   "type": "heading",
-   "level": 2,
-   "text": "계약의 의미",
-   "titleTranslation": "What a contract means"
   },
   {
    "type": "paragraph",
@@ -321,6 +321,12 @@ KIIP.chapter({
    "text": "계약은 두 사람의 의사가 일치하면 바로 성립한다."
   },
   {
+   "type": "heading",
+   "level": 2,
+   "text": "금전 거래를 증명하는 서류",
+   "titleTranslation": "The papers that prove a money transaction"
+  },
+  {
    "type": "glossary",
    "entries": [
     {
@@ -356,12 +362,6 @@ KIIP.chapter({
      "translation": "making good a loss"
     }
    ]
-  },
-  {
-   "type": "heading",
-   "level": 2,
-   "text": "금전 거래를 증명하는 서류",
-   "titleTranslation": "The papers that prove a money transaction"
   },
   {
    "type": "paragraph",
@@ -672,6 +672,12 @@ KIIP.chapter({
    "text": "02 부동산 거래를 할 때 무엇을 알아 두어야 할까?"
   },
   {
+   "type": "heading",
+   "level": 2,
+   "text": "부동산과 등기부 등본",
+   "titleTranslation": "Property and the certified copy of the register"
+  },
+  {
    "type": "glossary",
    "entries": [
     {
@@ -683,12 +689,6 @@ KIIP.chapter({
      "translation": "a certificate setting out the rights attached to a piece of real estate"
     }
    ]
-  },
-  {
-   "type": "heading",
-   "level": 2,
-   "text": "부동산과 등기부 등본",
-   "titleTranslation": "Property and the certified copy of the register"
   },
   {
    "type": "paragraph",
@@ -808,6 +808,12 @@ KIIP.chapter({
    ]
   },
   {
+   "type": "heading",
+   "level": 2,
+   "text": "부동산 거래 과정",
+   "titleTranslation": "How a property transaction goes"
+  },
+  {
    "type": "glossary",
    "entries": [
     {
@@ -843,12 +849,6 @@ KIIP.chapter({
      "translation": "selling to whoever bids the highest price when several people want to buy a thing"
     }
    ]
-  },
-  {
-   "type": "heading",
-   "level": 2,
-   "text": "부동산 거래 과정",
-   "titleTranslation": "How a property transaction goes"
   },
   {
    "type": "paragraph",

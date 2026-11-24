@@ -206,6 +206,12 @@ KIIP.chapter({
    "text": "01 재판은 분쟁 해결에 어떤 도움을 줄까?"
   },
   {
+   "type": "heading",
+   "level": 2,
+   "text": "재판을 통한 분쟁 해결",
+   "titleTranslation": "Resolving a dispute through a trial"
+  },
+  {
    "type": "glossary",
    "entries": [
     {
@@ -225,12 +231,6 @@ KIIP.chapter({
      "translation": "the person or body directly involved in a matter"
     }
    ]
-  },
-  {
-   "type": "heading",
-   "level": 2,
-   "text": "재판을 통한 분쟁 해결",
-   "titleTranslation": "Resolving a dispute through a trial"
   },
   {
    "type": "paragraph",
@@ -447,6 +447,12 @@ KIIP.chapter({
    "text": "법원의 모습(scourt.go.kr)"
   },
   {
+   "type": "heading",
+   "level": 2,
+   "text": "약자들을 위한 법률 지원: 대한법률구조공단",
+   "titleTranslation": "Legal support for the weaker party: the Korea Legal Aid Corporation"
+  },
+  {
    "type": "glossary",
    "entries": [
     {
@@ -458,12 +464,6 @@ KIIP.chapter({
      "translation": "the income that falls in the middle when the incomes of all households are set out in order. Median income varies with the number of people in the family; in 2020 the standard median income for a household of four was 4,749,174 won"
     }
    ]
-  },
-  {
-   "type": "heading",
-   "level": 2,
-   "text": "약자들을 위한 법률 지원: 대한법률구조공단",
-   "titleTranslation": "Legal support for the weaker party: the Korea Legal Aid Corporation"
   },
   {
    "type": "paragraph",
@@ -848,6 +848,12 @@ KIIP.chapter({
    "text": "02 재판 외에 분쟁을 해결하는 방법에는 어떤 것이 있을까?"
   },
   {
+   "type": "heading",
+   "level": 2,
+   "text": "대안적 분쟁 해결 제도",
+   "titleTranslation": "Alternative dispute resolution"
+  },
+  {
    "type": "glossary",
    "entries": [
     {
@@ -867,12 +873,6 @@ KIIP.chapter({
      "translation": "asking an expert how to handle something better"
     }
    ]
-  },
-  {
-   "type": "heading",
-   "level": 2,
-   "text": "대안적 분쟁 해결 제도",
-   "titleTranslation": "Alternative dispute resolution"
   },
   {
    "type": "paragraph",
@@ -998,6 +998,12 @@ KIIP.chapter({
    ]
   },
   {
+   "type": "heading",
+   "level": 2,
+   "text": "권리를 보호해 주는 다양한 기관",
+   "titleTranslation": "The bodies that protect rights"
+  },
+  {
    "type": "glossary",
    "entries": [
     {
@@ -1025,12 +1031,6 @@ KIIP.chapter({
      "translation": "unfairly using the authority and influence of one's position to take gain for oneself, against the order of society"
     }
    ]
-  },
-  {
-   "type": "heading",
-   "level": 2,
-   "text": "권리를 보호해 주는 다양한 기관",
-   "titleTranslation": "The bodies that protect rights"
   },
   {
    "type": "paragraph",

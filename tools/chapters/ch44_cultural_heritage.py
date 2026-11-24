@@ -61,8 +61,6 @@ CHAPTER = dict(
         FIGURE("발해의 영광탑 (중국 지린성)"),
         FIGURE("고려의 부석사 무량수전 (경상북도 영주)"),
 
-        GLOSSARY(("예법", "예의로 지켜야 할 규범", "예법",
-                  dict(en="the norms to be kept as a matter of courtesy"))),
         HEADING(2, "유교 문화가 발전하다", translation=
                 "Confucian culture develops" "\n\n"
                 "In the 조선 period an effort was made to build a country in "
@@ -76,6 +74,8 @@ CHAPTER = dict(
                 "were made to follow Confucian etiquette when holding a "
                 "coming-of-age ceremony, a wedding, a funeral or an ancestral "
                 "rite."),
+        GLOSSARY(("예법", "예의로 지켜야 할 규범", "예법",
+                  dict(en="the norms to be kept as a matter of courtesy"))),
         PARAGRAPH("조선 시대에는 유교를 중심으로 사회 {질서}와 {예절}이 {바로 선|바로 서다} 나라를 만들기 "
                   "위해서 노력하였다. 유교의 {이념} 중에서도 특히 {삼강오륜}과 {관혼상제}({성인식}, "
                   "결혼, 죽음, 제사)가 매우 중요하게 {여겨졌다|여겨지다}. 삼강오륜을 가르쳐 {백성}은 "
@@ -86,8 +86,6 @@ CHAPTER = dict(
         FIGURE("성균관 — 조선 시대 유교(유학)를 가르치던 최고의 교육 기관"),
 
         SECTION("part", "02 과학기술을 알 수 있는 문화유산에는 어떤 것들이 있을까?"),
-        GLOSSARY(("관측", "관찰하고 측정함", "관측",
-                  dict(en="observing and measuring"))),
         HEADING(2, "삼국 시대와 고려 시대의 과학기술", translation=
                 "Science and technology in the Three Kingdoms and 고려 "
                 "periods" "\n\n"
@@ -105,6 +103,8 @@ CHAPTER = dict(
                 "have been preserved are recognised as of world standing too. "
                 "In the 고려 period weapons using gunpowder were also "
                 "developed for the first time, through 최무선."),
+        GLOSSARY(("관측", "관찰하고 측정함", "관측",
+                  dict(en="observing and measuring"))),
         PARAGRAPH("삼국 시대에는 {농업}에 필요한 정보를 얻고 왕의 {권위}를 하늘과 연결하기 위해 {천문학}이 "
                   "발달하였다. 대표적인 {천체}(태양, 달, 별) {관측} {기구}로는 신라의 {첨성대}가 "
                   "유명하다. 또한 통일 신라에서는 나무에 글자를 {새겨|새기다} 종이로 {찍어 내는|찍어 내다} "

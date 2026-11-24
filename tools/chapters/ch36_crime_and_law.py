@@ -39,6 +39,14 @@ CHAPTER = dict(
                 "범죄와 성범죄, 형벌의 종류, 형사 재판의 과정 및 권리 보장"]]),
 
         SECTION("part", "01 한국에서 형법은 어떤 기능을 할까?"),
+        HEADING(2, "형법의 의미", translation=
+                "What the criminal law means" "\n\n"
+                "To keep order in society and protect people’s freedoms and "
+                "rights, people’s bad acts must be prevented and punished. "
+                "What serves as the standard for that is the criminal law. "
+                "The criminal law defines as crimes the acts that do people "
+                "great harm and threaten society, and lays down the "
+                "punishments for those who commit them."),
         GLOSSARY(("범죄", "사회의 안전과 질서를 해치는 반사회적 행위로 법에 규정되어 있음", "범죄",
                   "a crime, an offence",
                   dict(en="an antisocial act that harms the safety and order of society, as defined in law")),
@@ -56,14 +64,6 @@ CHAPTER = dict(
                  ("징역형", "일정 기간 동안 교도소에 갇혀 있는 형벌", "징역형",
                   "a prison sentence",
                   dict(en="the penalty of being held in prison for a fixed period"))),
-        HEADING(2, "형법의 의미", translation=
-                "What the criminal law means" "\n\n"
-                "To keep order in society and protect people’s freedoms and "
-                "rights, people’s bad acts must be prevented and punished. "
-                "What serves as the standard for that is the criminal law. "
-                "The criminal law defines as crimes the acts that do people "
-                "great harm and threaten society, and lays down the "
-                "punishments for those who commit them."),
         PARAGRAPH("{사회질서}를 유지하고 사람들의 자유와 권리를 보호하기 위해서는 사람들의 나쁜 행동을 막고 "
                   "{처벌할|처벌하다} 필요가 있다. 이때 기준이 되는 것이 바로 {형법}이다. 형법은 사람들에게 "
                   "큰 피해를 주고 사회에 {위협}이 되는 행위를 {범죄}로 {규정하고|규정하다}, 범죄를 "
@@ -112,12 +112,6 @@ CHAPTER = dict(
         FIGURE("‘4월 2일은 사이버범죄 예방의 날, 4.2데이’ 홍보물"),
 
         SECTION("part", "02 범죄를 막기 위해 경찰과 검찰은 어떤 일을 할까?"),
-        GLOSSARY(("수사", "범죄가 발생한 것으로 여겨질 때 범인과 증거를 찾고 수집함", "수사",
-                  "an investigation",
-                  dict(en="searching for and gathering the culprit and the evidence when a crime is thought to have been committed")),
-                 ("범죄 용의자", "범죄 혐의가 뚜렷하지는 않으나 가능성이 있어서 조사 대상이 된 사람",
-                  "범죄 용의자", "a criminal suspect",
-                  dict(en="a person under investigation because, although the suspicion of crime is not clear, it is possible"))),
         HEADING(2, "법을 집행하는 기관", translation=
                 "The bodies that enforce the law" "\n\n"
                 "A state body that prevents and investigates criminal acts "
@@ -128,17 +122,18 @@ CHAPTER = dict(
                 "whether someone has broken the law is precisely the part a "
                 "law enforcement body plays. In Korea the police and the "
                 "prosecution are the leading law enforcement bodies."),
+        GLOSSARY(("수사", "범죄가 발생한 것으로 여겨질 때 범인과 증거를 찾고 수집함", "수사",
+                  "an investigation",
+                  dict(en="searching for and gathering the culprit and the evidence when a crime is thought to have been committed")),
+                 ("범죄 용의자", "범죄 혐의가 뚜렷하지는 않으나 가능성이 있어서 조사 대상이 된 사람",
+                  "범죄 용의자", "a criminal suspect",
+                  dict(en="a person under investigation because, although the suspicion of crime is not clear, it is possible"))),
         PARAGRAPH("법에 따라 범죄 행위를 예방하고 {수사}하며 사회질서를 유지하는 국가기관을 "
                   "{법집행기관}이라고 한다. 법집행기관은 범죄 피해를 입은 사람들의 신고를 받고 {범죄 용의자}를 "
                   "{조사하며|조사하다} {체포하기도|체포하다} 한다. 이와 같은 과정을 통해, 누군가가 법을 "
                   "{위반한|위반하다} 사실이 있었는지를 {밝혀내는|밝혀내다} 일이 바로 법집행기관의 역할이다. "
                   "한국에서는 {경찰}과 {검찰}이 대표적인 법집행기관이다."),
 
-        GLOSSARY(("단속", "법을 어겼는지를 살피는 것", "단속", "enforcement, a crackdown",
-                  dict(en="checking whether the law has been broken")),
-                 ("지구대", "각 지역의 파출소 3~4개를 하나로 묶어서 지역 내 범죄를 해결할 수 있도록 한 것",
-                  "지구대",
-                  dict(en="three or four police substations in an area grouped into one so as to deal with crime in the district"))),
         HEADING(2, "경찰의 역할", translation=
                 "What the police do" "\n\n"
                 "When one has been harmed by another or comes to know of a "
@@ -149,14 +144,17 @@ CHAPTER = dict(
                 "station and a district unit that citizens can go to "
                 "themselves to ask for help. One can also ring 112, with no "
                 "area code, and have the help of the police."),
+        GLOSSARY(("단속", "법을 어겼는지를 살피는 것", "단속", "enforcement, a crackdown",
+                  dict(en="checking whether the law has been broken")),
+                 ("지구대", "각 지역의 파출소 3~4개를 하나로 묶어서 지역 내 범죄를 해결할 수 있도록 한 것",
+                  "지구대",
+                  dict(en="three or four police substations in an area grouped into one so as to deal with crime in the district"))),
         PARAGRAPH("다른 사람으로부터 피해를 입었거나 범죄 사실을 알게 되었을 때는 경찰에 연락해야 한다. 경찰은 "
                   "국민의 {생명}과 신체, 재산을 보호하는 일, 범죄를 예방하고 수사하는 일, 교통 {단속}, "
                   "음주운전 단속 등을 통해 {공공질서}를 지키는 일을 한다. 지역마다 {경찰서}와 {지구대}가 "
                   "있어서 시민이 직접 찾아가 도움을 {요청할|요청하다} 수 있다. 또한, 국번 없이 112에 "
                   "전화하여 경찰의 도움을 받을 수도 있다."),
 
-        GLOSSARY(("청구", "어떤 일을 해 달라고 요청하는 것", "청구", "a claim, an application",
-                  dict(en="asking for something to be done"))),
         HEADING(2, "검찰의 역할", translation=
                 "What the prosecution does" "\n\n"
                 "The prosecution investigates crime, gathers the evidence "
@@ -169,6 +167,8 @@ CHAPTER = dict(
                 "prosecutor. A prosecutor takes part in the criminal trial "
                 "directly, proving the facts of the crime and applying to the "
                 "court for the punishment of the offender."),
+        GLOSSARY(("청구", "어떤 일을 해 달라고 요청하는 것", "청구", "a claim, an application",
+                  dict(en="asking for something to be done"))),
         PARAGRAPH("{검찰}은 범죄를 수사하고 범죄와 관련한 {증거}를 모아서 {법원}에 재판을 {청구}한다. "
                   "일반적인 범죄의 경우 한국에서는 경찰이나 검찰 모두 수사할 수 있지만 {최종적}으로 범죄가 "
                   "된다고 판단하여 재판에 넘길 수 있는 {권한}은 검찰이 갖고 있다. 검찰 내에서 범죄 관련 "
